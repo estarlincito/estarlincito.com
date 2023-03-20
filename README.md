@@ -1,5 +1,5 @@
 # estarlincito.com
 
-Personal Blog
+Blog Personal
 
-[estarlincito](estarlincito.com).
+### app link: [estarlincito.com](https://estarlincito.com)
