@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Blog } from "contentlayer/generated";
-import { setFormat } from "utils";
+import { setFormat } from "@/app/utils";
 
 const Card = ({
   title,
@@ -14,8 +14,8 @@ const Card = ({
 }: Blog) => {
   return (
     <div className="p-4 md:w-1/3">
-      <div className="h-full overflow-hidden rounded-lg border-[1px] border-opacity-60">
-        <div className="relative w-full bg-neutral-300 md:h-36 lg:h-48">
+      <div className="h-full overflow-hidden rounded-lg border-[1px] border-neutral-300 dark:border-neutral-700 border-opacity-60">
+        <div className="w-full bg-neutral-300 md:h-36 lg:h-48">
           <Image
             src={image}
             alt={`Imagen para ${title}`}

@@ -1,5 +1,5 @@
-import Card from "@/components/posts/Card";
 import { Blog } from "contentlayer/generated";
+import Card from "./Card";
 
 type props = {
   posts: Blog[];

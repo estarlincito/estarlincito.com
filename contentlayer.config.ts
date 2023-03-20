@@ -2,7 +2,7 @@ import { makeSource } from "contentlayer/source-files";
 import { mdxOptions, Blog } from "./config";
 
 const contentLayerConfig = makeSource({
-  contentDirPath: "content",
+  contentDirPath: "app/content",
   documentTypes: [Blog],
   mdx: mdxOptions,
 });

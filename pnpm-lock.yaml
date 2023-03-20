@@ -12,8 +12,6 @@ specifiers:
   eslint-config-prettier: ^8.7.0
   next: 13.2.4
   next-contentlayer: ^0.3.0
-  next-seo: ^5.15.0
-  next-themes: ^0.2.1
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
@@ -48,8 +46,6 @@ devDependencies:
   eslint-config-next: 13.2.4_vgl77cfdswitgr47lm5swmv43m
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   next-contentlayer: 0.3.0_ld2jel3hspngo3u5lti2kgl2sq
-  next-seo: 5.15.0_ld2jel3hspngo3u5lti2kgl2sq
-  next-themes: 0.2.1_ld2jel3hspngo3u5lti2kgl2sq
   postcss: 8.4.21
   reading-time: 1.5.0
   rehype-autolink-headings: 6.1.1
@@ -3611,30 +3607,6 @@ packages:
       - '@effect-ts/otel-node'
       - markdown-wasm
       - supports-color
-    dev: true
-
-  /next-seo/5.15.0_ld2jel3hspngo3u5lti2kgl2sq:
-    resolution: {integrity: sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==}
-    peerDependencies:
-      next: ^8.1.1-canary.54 || >=9.0.0
-      react: '>=16.0.0'
-      react-dom: '>=16.0.0'
-    dependencies:
-      next: 13.2.4_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    dev: true
-
-  /next-themes/0.2.1_ld2jel3hspngo3u5lti2kgl2sq:
-    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
-    peerDependencies:
-      next: '*'
-      react: '*'
-      react-dom: '*'
-    dependencies:
-      next: 13.2.4_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /next/13.2.4_biqbaboplfbrettd7655fr4n2y:
