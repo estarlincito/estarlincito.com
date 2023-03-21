@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Blog } from "contentlayer/generated";
 import { setFormat } from "@/app/utils";
 
-const Card = ({
+const Postcard = ({
   title,
   summary,
   slug,
@@ -26,17 +26,19 @@ const Card = ({
           />
         </div>
         <div className="p-6">
-          <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-neutral-400 dark:text-neutral-400">
-            {category}
+          <h2 className="mb-1 text-xs font-medium tracking-widest text-neutral-400 dark:text-neutral-400 select-none">
+            <Link href={`/blog/${category.toLocaleLowerCase()}`}>
+              {category}
+            </Link>
           </h2>
-          <h1 className="title-font mb-3 text-lg font-medium text-neutral-900 dark:text-neutral-200">
+          <h1 className="mb-3 text-lg font-medium text-neutral-900 dark:text-neutral-200">
             {title}
           </h1>
           <p className="mb-3 leading-relaxed text-neutral-700 dark:text-neutral-300">
             {summary}
           </p>
           <div className="flex flex-wrap items-center ">
-            <Link href={`/blog/${slug}`}>
+            <Link href={slug}>
               <h2 className="inline-flex items-center text-indigo-500 md:mb-2 lg:mb-0">
                 Leer más
                 <svg
@@ -57,7 +59,7 @@ const Card = ({
               dateTime={publishedAt}
               className="mr-3 ml-auto inline-flex items-center border-r-2 border-gray-300 py-1 pr-3 text-sm leading-none text-neutral-400 md:ml-0 lg:ml-auto"
             >
-              {setFormat(publishedAt)}
+              Publicado el {setFormat(publishedAt)}
             </time>
             <span className="inline-flex items-center text-sm leading-none text-neutral-400">
               {readingTime}
@@ -69,4 +71,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default Postcard;

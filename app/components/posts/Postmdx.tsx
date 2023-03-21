@@ -4,8 +4,8 @@ type props = {
   doc: string;
 };
 
-const Mdx = ({ doc }: props) => {
+const Postmdx = ({ doc }: props) => {
   const MDXContent = useMDXComponent(doc);
   return <MDXContent />;
 };
-export default Mdx;
+export default Postmdx;

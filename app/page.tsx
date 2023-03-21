@@ -4,7 +4,9 @@ import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { FaGithubAlt } from "react-icons/fa";
 import { about, avatar, bio, name } from "./components/bio";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/layout/Wrapper";
+import Layouttitle from "./components/layout/Title";
+import Contents from "./components/layout/Contents";
 
 export const metadata: Metadata = {
   title: "Estarlincito",
@@ -14,39 +16,36 @@ export const metadata: Metadata = {
 const HomePage = () => {
   return (
     <Wrapper>
-      <section>
-        <h1 className="font-bold text-3xl font-serif">{name}</h1>
-        <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
-          {about()}
-        </p>
-        <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
-          <Image
-            alt={name}
-            className="rounded-full grayscale"
-            src={avatar}
-            placeholder="blur"
-            width={100}
-            priority
-          />
-          <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-2 text-neutral-600 dark:text-neutral-400">
-            <Link
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://github.com/estarlincito"
-              className="flex items-center gap-2"
-            >
-              <FaGithubAlt />
-              Proyectos web
-            </Link>
-          </div>
+      <div className="flex items-center flex-col">
+        <Image
+          alt={name}
+          className="rounded-full mb-3"
+          src={avatar}
+          placeholder="blur"
+          width={100}
+          priority
+        />
+        <Layouttitle text={name} />
+        <p className="mt-5 italic text-center opacity-80">{about()}</p>
+
+        <div className="mt-5 text-neutral-600 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-300 transition-all">
+          <Link
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/estarlincito"
+            className="flex items-center gap-2"
+          >
+            <FaGithubAlt />
+            Proyectos web
+          </Link>
         </div>
-        <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
-          {bio()}
-        </p>
-        <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
+      </div>
+      <Contents>
+        <p className="mb-5">{bio()}</p>
+        <ul className="flex flex-col md:justify-center md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm">
           <li>
             <Link
-              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+              className="flex items-center hover:text-neutral-500 dark:hover:text-neutral-100 transition-all"
               rel="noopener noreferrer"
               target="_blank"
               href="https://twitter.com/estarlincito"
@@ -57,7 +56,7 @@ const HomePage = () => {
           </li>
           <li>
             <Link
-              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+              className="flex items-center hover:text-neutral-500 dark:hover:text-neutral-100 transition-all"
               rel="noopener noreferrer"
               href="./contact"
             >
@@ -67,7 +66,7 @@ const HomePage = () => {
           </li>
           <li>
             <Link
-              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+              className="flex items-center hover:text-neutral-500 dark:hover:text-neutral-100 transition-all"
               rel="noopener noreferrer"
               href="./blog"
             >
@@ -76,7 +75,7 @@ const HomePage = () => {
             </Link>
           </li>
         </ul>
-      </section>
+      </Contents>
     </Wrapper>
   );
 };

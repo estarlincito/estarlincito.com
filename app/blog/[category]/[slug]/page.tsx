@@ -1,15 +1,17 @@
+import Postlayout from "@/app/components/posts/Postlayout";
+import { getPost } from "@/app/utils";
 import { notFound } from "next/navigation";
-import { allBlogs } from "contentlayer/generated";
-import Layout from "@/app/components/posts/Layout";
 
 type props = {
   params: {
+    category: string;
     slug: string;
   };
 };
 
 export const generateMetadata = ({ params }: props) => {
-  const post = allBlogs.find((post) => post.slug === params.slug);
+  const post = getPost(params);
+
   if (!post) {
     return;
   }
@@ -17,13 +19,13 @@ export const generateMetadata = ({ params }: props) => {
 };
 
 const PostPage = ({ params }: props) => {
-  const post = allBlogs.find((post) => post.slug === params.slug);
+  const post = getPost(params);
 
   if (!post) {
     notFound();
   }
 
-  return <Layout {...post} />;
+  return <Postlayout {...post} />;
 };
 
 export default PostPage;

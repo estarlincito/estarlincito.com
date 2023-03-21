@@ -19,7 +19,7 @@ const Collapse = () => {
 
   return (
     <div className="relative">
-      <div className="grid grid-cols-8 grid-rows-6 absolute w-[80vw] sm:w-[50vw] md:w-[40vw] lg:w-[27vw] h-[90vh] bg-white  rounded-br-lg z-50 dark:bg-[#171616] dark:shadow-md dark:shadow-neutral-800">
+      <div className="fixed grid grid-cols-8 grid-rows-6 w-[70vw] sm:w-[50vw] md:w-[40vw] lg:w-[27vw] h-[100vh] bg-white z-50 dark:bg-[#171616] dark:shadow-md dark:shadow-neutral-800">
         {/* close button */}
         <button
           onClick={handleClose}

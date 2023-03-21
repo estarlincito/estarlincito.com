@@ -11,7 +11,7 @@ const DarkmodeSwitch = () => {
   };
 
   return (
-    <li className="text-2xl text-neutral-900 hover:opacity-70 active:opacity-40 dark:text-neutral-50">
+    <li className="text-2xl text-neutral-900 hover:opacity-70 active:opacity-40 dark:text-neutral-50 cursor-pointer">
       {theme === "dark" ? (
         <MdOutlineDarkMode onClick={handleDark} />
       ) : (

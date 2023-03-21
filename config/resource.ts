@@ -20,7 +20,7 @@ const Author = defineNestedType(() => ({
   },
 }));
 
-const Blog = defineDocumentType(() => ({
+export const Blog = defineDocumentType(() => ({
   name: "Blog",
   filePathPattern: "**.mdx",
   contentType: "mdx",
@@ -46,9 +46,7 @@ const Blog = defineDocumentType(() => ({
     },
     slug: {
       type: "string",
-      resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
+      resolve: (doc) => `/blog/${doc._raw.flattenedPath}`,
     },
   },
 }));
-
-export { Blog };

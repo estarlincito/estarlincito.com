@@ -8,7 +8,7 @@ const RootLayout = ({ children }: Children) => {
   return (
     <ContextProvider>
       <html lang="es">
-        <body className="bg-white dark:bg-black dark:text-white">
+        <body className="bg-white dark:bg-black dark:text-white font-serif">
           <Opacity />
           <Navbar />
           {children}
