@@ -1,17 +1,4 @@
-import me from "../assets/images/avatar.jpeg";
-
-export const name = "Estarlincito";
-export const avatar = me;
-export const about = () => {
-  return (
-    <>
-      Hola, soy Estarlicito. trabajo con el <b>Diseño de páginas web</b>, a
-      veces escribo sobre temas <b>tecnológicos</b>,&nbsp;
-      <b>psicológicos…</b>
-    </>
-  );
-};
-export const bio = () => {
+const Bio = () => {
   return (
     <>
       Soy un diseñador web con más de 5 años de experiencia. Me especializo en
@@ -27,3 +14,5 @@ export const bio = () => {
     </>
   );
 };
+
+export default Bio;

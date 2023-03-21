@@ -1,6 +1,6 @@
 import { allBlogs } from "contentlayer/generated";
 import { Metadata } from "next";
-import List from "../components/posts/Postlist";
+import Postlist from "../components/posts/Postlist";
 
 export const metadata: Metadata = {
   title: "Blog | Estarlincito",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = () => {
-  return <List posts={allBlogs} />;
+  return <Postlist posts={allBlogs} />;
 };
 
 export default BlogPage;

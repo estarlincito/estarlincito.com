@@ -4,7 +4,7 @@ Blog Personal
 
 ### app link: [estarlincito.com](https://estarlincito.com)
 
-Work on mdx
+<!-- Work on mdx -->
 
 <!-- <Image
   alt={`Article Initially Posted`}
@@ -16,3 +16,5 @@ Work on mdx
 <!-- # cover: ''
 # coverWidth: '1411'
 # coverHeight: '682' -->
+
+<!-- me en el menu -->

@@ -3,13 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 import { FaGithubAlt } from "react-icons/fa";
-import { about, avatar, bio, name } from "./components/bio";
 import Wrapper from "./components/layout/Wrapper";
-import Layouttitle from "./components/layout/Title";
+import Title from "./components/layout/Title";
 import Contents from "./components/layout/Contents";
+import { name } from "./components/me/name";
+import { avatar } from "./components/me/avatar";
+import About from "./components/me/About";
+import Bio from "./components/me/Bio";
 
 export const metadata: Metadata = {
-  title: "Estarlincito",
+  title: name,
   description: "Desarrollador Web, escritor y creador.",
 };
 
@@ -25,8 +28,10 @@ const HomePage = () => {
           width={100}
           priority
         />
-        <Layouttitle text={name} />
-        <p className="mt-5 italic text-center opacity-80">{about()}</p>
+        <Title text={name} />
+        <p className="mt-5 italic text-center text-neutral-700 dark:text-neutral-300">
+          <About />
+        </p>
 
         <div className="mt-5 text-neutral-600 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-300 transition-all">
           <Link
@@ -41,7 +46,9 @@ const HomePage = () => {
         </div>
       </div>
       <Contents>
-        <p className="mb-5">{bio()}</p>
+        <p className="mb-5">
+          <Bio />
+        </p>
         <ul className="flex flex-col md:justify-center md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm">
           <li>
             <Link

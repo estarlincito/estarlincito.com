@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Contents from "../components/layout/Contents";
-import Layouttitle from "../components/layout/Title";
+import Title from "../components/layout/Title";
 import Wrapper from "../components/layout/Wrapper";
 
 export const metadata: Metadata = {
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <Wrapper>
-      <Layouttitle text="Ponte en contacto conmigo" />
-      <p className="italic text-sm text-center opacity-80 mt-2">
+      <Title text="Ponte en contacto conmigo" />
+      <p className="italic text-sm text-center text-neutral-600 dark:text-neutral-400 mt-5">
         ¡Construyamos algo juntos!
       </p>
       <Contents>
@@ -53,6 +53,7 @@ const ContactPage = () => {
           <Link
             className="underline font-bold"
             href="https://twitter.com/estarlincito"
+            target="_blank"
           >
             Twitter
           </Link>

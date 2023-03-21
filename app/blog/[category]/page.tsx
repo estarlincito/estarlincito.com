@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import List from "@/app/components/posts/Postlist";
+import Postlist from "@/app/components/posts/Postlist";
 import { getPostsCategory } from "@/app/utils";
 
 type props = {
@@ -28,7 +28,7 @@ const PostPage = ({ params }: props) => {
     notFound();
   }
 
-  return <List posts={posts} />;
+  return <Postlist posts={posts} />;
 };
 
 export default PostPage;
