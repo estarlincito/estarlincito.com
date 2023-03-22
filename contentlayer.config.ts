@@ -2,7 +2,7 @@ import { makeSource } from "contentlayer/source-files";
 import { Blog } from "./config";
 
 const contentLayerConfig = makeSource({
-  contentDirPath: "app/assets/articles",
+  contentDirPath: "src/assets/articles",
   documentTypes: [Blog],
 });
 

@@ -6,6 +6,8 @@ Blog Personal
 
 <!-- Work on mdx -->
 
+<!-- footer  -->
+
 <!-- <Image
   alt={`Article Initially Posted`}
   src={`/images/originally-posted.png`}
@@ -17,4 +19,8 @@ Blog Personal
 # coverWidth: '1411'
 # coverHeight: '682' -->
 
-<!-- me en el menu -->
+<!-- menu una frase randon from mi hightli -->
+
+delete opacity
+build 404
+Footer
