@@ -2,8 +2,6 @@ import { getArticle } from '@/utils';
 import { redirect } from 'next/navigation';
 import { ArticleLayout, Container } from '@UI/organisms';
 
-import img from '@/assets/articles/tecnología/images/diseño-atómico-react/atomic-design-methodology.webp';
-
 type Props = {
   params: {
     category: string;
@@ -32,7 +30,7 @@ const ArticlePage: React.FC<Props> = ({ params }) => {
 
   return (
     <Container>
-      <ArticleLayout article={article} />
+      <ArticleLayout {...article} />
       {/* <aside></aside> */}
     </Container>
   );

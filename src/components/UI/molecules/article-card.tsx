@@ -3,18 +3,17 @@ import { setFormat } from '@/utils';
 import { Blog } from 'contentlayer/generated';
 import Image from 'next/image';
 
-const ArticleCard = ({ article }: { article: Blog }) => {
-  const {
-    title,
-    category,
-    summary,
-    cover,
-    coverWidth,
-    coverHeight,
-    publishedAt,
-    author,
-    slug,
-  } = article;
+const ArticleCard: React.FC<Blog> = ({
+  title,
+  category,
+  summary,
+  cover,
+  coverWidth,
+  coverHeight,
+  publishedAt,
+  author,
+  slug,
+}) => {
   return (
     <div className='bg-neutral-50 shadow-lg rounded-lg'>
       <figure className='h-44 xl:h-60'>

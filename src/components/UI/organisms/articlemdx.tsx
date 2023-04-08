@@ -2,55 +2,63 @@ import { _Link, Paragraph } from '@/components/HOC';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 
-const P = (props: JSX.IntrinsicElements['p']) => {
-  return <Paragraph className='mb-4'>{props.children}</Paragraph>;
+const P: React.FC<JSX.IntrinsicElements['p']> = ({ children }) => {
+  return <Paragraph className='mb-4'>{children}</Paragraph>;
 };
 
-const A = (props: JSX.IntrinsicElements['a']) => {
+const A: React.FC<JSX.IntrinsicElements['a']> = ({ children, href }) => {
   return (
-    <_Link
-      href={props.href !== undefined ? props.href : '/no-found'}
-      target='_blank'
-    >
-      {props.children}
+    <_Link href={href !== undefined ? href : '/no-found'} target='_blank'>
+      {children}
     </_Link>
   );
 };
 
-const H1 = (props: JSX.IntrinsicElements['h1']) => {
+const H1: React.FC<JSX.IntrinsicElements['h1']> = ({ children }) => {
   return (
     <h1 className='my-5 text-2xl font-bold text-neutral-900 dark:text-neutral-300'>
-      {props.children}
+      {children}
     </h1>
   );
 };
 
-const H2 = (props: JSX.IntrinsicElements['h2']) => {
+const H2: React.FC<JSX.IntrinsicElements['h2']> = ({ children }) => {
   return (
     <h2 className='my-5 text-xl font-bold text-neutral-900 dark:text-neutral-300'>
-      {props.children}
+      {children}
     </h2>
   );
 };
 
-const Strong = (props: JSX.IntrinsicElements['strong']) => {
+const Strong: React.FC<JSX.IntrinsicElements['strong']> = ({ children }) => {
   return (
     <strong className='font-bold text-neutral-900 dark:text-neutral-300'>
-      {props.children}
+      {children}
     </strong>
   );
 };
 
-const Blockquote = (props: JSX.IntrinsicElements['blockquote']) => {
+const Blockquote: React.FC<JSX.IntrinsicElements['blockquote']> = ({
+  children,
+}) => {
   return (
     <blockquote className='font-thin border-l-2 pl-3 border-red-400'>
-      {props.children}
+      {children}
     </blockquote>
   );
 };
 
-const _Image = (props: any) => {
-  return <Image className='my-3' alt={props.alt} {...props} />;
+//_Image
+interface PropsImage {
+  alt: string;
+  src: string;
+  width: number;
+  height: number;
+}
+const _Image: React.FC<PropsImage> = ({ alt, src, width, height }) => {
+  return (
+    <Image className='my-3' alt={alt} src={src} width={width} height={height} />
+  );
 };
 
 const mdxComponents = {

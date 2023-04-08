@@ -1,10 +1,16 @@
-import { _Link, Title } from '@/components/HOC';
+import { _Link, Title, Paragraph } from '@/components/HOC';
+import { setFormat } from '@/utils';
 import { Blog } from 'contentlayer/generated';
 import ArticleMdx from './articlemdx';
 import Wrapper from './wrapper';
 
-const ArticleLayout = ({ article }: { article: Blog }) => {
-  const { title, category, body, tags } = article;
+const ArticleLayout: React.FC<Blog> = ({
+  title,
+  category,
+  body,
+  tags,
+  publishedAt,
+}) => {
   return (
     <Wrapper>
       <section>
@@ -18,7 +24,10 @@ const ArticleLayout = ({ article }: { article: Blog }) => {
 
         <ArticleMdx doc={body.code} />
 
-        {/* **Última actualización:** el 24 de marzo del 2023. (de manera dinamica) */}
+        <Paragraph className='my-5'>
+          <b>Última actualización:</b> el{' '}
+          <time dateTime={publishedAt}>{setFormat(publishedAt)}</time>
+        </Paragraph>
       </section>
 
       <section className='mt-12 text-sm w-80'>
