@@ -1,5 +1,5 @@
-export { setFormat } from './setformat';
-export { getArticle } from './getarticle';
-export { getArticleCategory } from './getarticlecategory';
-export { getTags } from './gettags';
-export { sitemap } from './sitemap';
+export { setFormat } from './set-format';
+export { getArticle } from './get-article';
+export { getArticleCategory } from './get-articlecategory';
+export { getTags } from './get-tags';
+export { sitemap } from './site-map';
