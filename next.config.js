@@ -5,7 +5,8 @@ const nextConfig = {
   reactStrictMode: false,
   experimental: { appDir: true, newNextLinkBehavior: false },
   images: {
-    domains: ['images.unsplash.com'],
+    // formats: ['image/avif', 'image/webp'],
+    domains: ['images.unsplash.com', 'raw.githubusercontent.com'],
   },
 };
 

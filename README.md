@@ -24,3 +24,5 @@ Blog Personal
 <!-- ordenar por fecha -->
 
 <!-- <aside></aside> -->
+
+<!-- Display Grid -->

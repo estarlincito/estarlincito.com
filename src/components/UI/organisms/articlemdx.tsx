@@ -1,5 +1,6 @@
 import { _Link, Paragraph } from '@/components/HOC';
 import { useMDXComponent } from 'next-contentlayer/hooks';
+import Image from 'next/image';
 
 const P = (props: JSX.IntrinsicElements['p']) => {
   return <Paragraph className='mb-4'>{props.children}</Paragraph>;
@@ -48,7 +49,12 @@ const Blockquote = (props: JSX.IntrinsicElements['blockquote']) => {
   );
 };
 
+const _Image = (props: any) => {
+  return <Image className='my-3' alt={props.alt} {...props} />;
+};
+
 const mdxComponents = {
+  Image: _Image,
   p: P,
   h1: H1,
   h2: H2,
