@@ -1,84 +1,114 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { MdArrowOutward } from "react-icons/md";
-import { FaGithubAlt } from "react-icons/fa";
-import { Contents, Title, Wrapper } from "@/components/layout";
-import { About, avatar, Bio, name } from "@/components/me";
+import { Metadata } from 'next';
+import { _Link, Paragraph, Title, Hr } from '@/components/HOC';
+import { Container, Wrapper } from '@UI/organisms';
+import avatar from '@/assets/images/avatar.jpeg';
+import Image from 'next/image';
+import { Target } from '@/types';
+import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 
+const name = 'Estarlincito';
+
+//SEO
 export const metadata: Metadata = {
   title: name,
-  description: "Desarrollador Web, escritor y creador.",
+  description: 'Desarrollador Web, escritor y creador.',
 };
+
+//list of links
+type _links = {
+  route: string;
+  label: string;
+  target: Target;
+}[];
+
+const links: _links = [
+  {
+    route: 'https://twitter.com/estarlincito',
+    label: 'Sígueme en Twitter',
+    target: '_blank',
+  },
+  {
+    route: '/blog',
+    label: 'Mira mi Blog',
+    target: '_self',
+  },
+  {
+    route: '/contact',
+    label: 'Contratame',
+    target: '_self',
+  },
+];
 
 const HomePage = () => {
   return (
-    <Wrapper>
-      <div className="flex items-center flex-col">
-        <Image
-          alt={name}
-          className="rounded-full mb-3"
-          src={avatar}
-          placeholder="blur"
-          width={100}
-          priority
-        />
-        <Title text={name} />
-        <p className="mt-5 italic text-center text-neutral-700 dark:text-neutral-300">
-          <About />
-        </p>
+    <Container>
+      <Wrapper>
+        <section className='flex flex-col items-center gap-y-2'>
+          <Image
+            alt={name}
+            className='rounded-full mb-3'
+            src={avatar}
+            placeholder='blur'
+            width={100}
+            priority
+          />
 
-        <div className="mt-5 text-neutral-600 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-300 transition-all">
-          <Link
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/estarlincito"
-            className="flex items-center gap-2"
+          <Title className='text-3xl'>{name}</Title>
+
+          <Paragraph className='text-center p-2 md:w-[500px] md:p-0'>
+            Hola, soy Estarlicito. Trabajo con el <b>Diseño de páginas web</b>,
+            escribo sobre <b>Tecnológia</b>,&nbsp;
+            <b>Psicológia y otros temas.</b>
+          </Paragraph>
+
+          <_Link
+            href='https://github.com/estarlincito'
+            target='_blank'
+            className='flex items-center gap-1 text-sm'
           >
-            <FaGithubAlt />
+            <TbBrandGithubCopilot />
             Proyectos web
-          </Link>
-        </div>
-      </div>
-      <Contents>
-        <p className="mb-5">
-          <Bio />
-        </p>
-        <ul className="flex flex-col md:justify-center md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm">
-          <li>
-            <Link
-              className="flex items-center hover:text-neutral-500 dark:hover:text-neutral-100 transition-all"
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://twitter.com/estarlincito"
-            >
-              <MdArrowOutward />
-              <p className="h-7">Sígueme en Twitter</p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="flex items-center hover:text-neutral-500 dark:hover:text-neutral-100 transition-all"
-              rel="noopener noreferrer"
-              href="./contact"
-            >
-              <MdArrowOutward />
-              <p className="h-7">Contratarme</p>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="flex items-center hover:text-neutral-500 dark:hover:text-neutral-100 transition-all"
-              rel="noopener noreferrer"
-              href="./blog"
-            >
-              <MdArrowOutward />
-              <p className="h-7">Mi Blog</p>
-            </Link>
-          </li>
-        </ul>
-      </Contents>
-    </Wrapper>
+          </_Link>
+        </section>
+
+        <section className='my-5'>
+          <Hr />
+          <Paragraph className='py-5 text-justify'>
+            Soy un diseñador web con más de 5 años de experiencia. Me
+            especializo en la creación de sitios web modernos, interactivos,
+            adaptados a dispositivos móviles y amigables para los motores de
+            búsqueda.
+            <br />
+            Utilizo las últimas tendencias y tecnologías para garantizar que mis
+            diseños sean únicos, atractivos y funcionales. Disfruto buscar
+            soluciones creativas a los desafíos de diseño y me apasiona
+            encontrar formas de mejorar la experiencia de usuario.
+            <br />
+            Me he especializado en HTML5, CSS3, JavaScript y Nextjs. Durante mi
+            carrera he colaborado en muchos proyectos exitosos para clientes de
+            todo el mundo. Estoy orgulloso de mi trabajo y listo para aceptar
+            nuevos desafíos.
+          </Paragraph>
+          <Hr />
+        </section>
+
+        <section>
+          <ul className='md:flex md:justify-center md:gap-x-5'>
+            {links.map((link, index) => (
+              <li key={index}>
+                <_Link
+                  href={link.route}
+                  target={link.target}
+                  className='flex items-center mb-2 md:mb-0 text-sm'
+                >
+                  <TbArrowUpRight /> {link.label}
+                </_Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Wrapper>
+    </Container>
   );
 };
 

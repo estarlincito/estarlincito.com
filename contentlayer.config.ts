@@ -1,9 +1,10 @@
-import { makeSource } from "contentlayer/source-files";
-import { Blog } from "./config";
+import { makeSource } from 'contentlayer/source-files';
+import { Resource, mdxOptions } from './config';
 
 const contentLayerConfig = makeSource({
-  contentDirPath: "src/assets/articles",
-  documentTypes: [Blog],
+  contentDirPath: 'src/assets/articles',
+  documentTypes: [Resource],
+  mdx: mdxOptions,
 });
 
 export default contentLayerConfig;

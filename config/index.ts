@@ -1,1 +1,2 @@
-export * from "./resource";
+export { Resource } from './resource';
+export { mdxOptions } from './mdxOptions';

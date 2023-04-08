@@ -1,2 +1,2 @@
-export { default as ContextProvider } from "./ContextProvider";
-export { useAppContext } from "./useAppContext";
+export { ThemeContext, ThemeProvider } from "./theme-context";
+export { CollapseContext, CollapseProvider } from "./collapse-context";

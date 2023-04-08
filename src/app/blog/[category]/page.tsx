@@ -1,34 +1,45 @@
-import { redirect } from "next/navigation";
-import { getPostsCategory } from "@/utils";
-import { Postlist } from "@/components/posts";
+import { getArticleCategory } from '@/utils';
+import { redirect } from 'next/navigation';
+import { ArticleList, Container } from '@UI/organisms';
+import clsx from 'clsx';
 
-type props = {
+type Props = {
   params: {
     category: string;
   };
 };
 
-export const generateMetadata = ({ params }: props) => {
-  const posts = getPostsCategory(params.category);
+export const generateMetadata = ({ params }: Props) => {
+  const articles = getArticleCategory(params.category);
 
-  if (posts.length === 0) {
+  if (articles.length === 0) {
     return;
   }
   return {
-    title: posts[0].category,
+    title: articles[0].category,
     description:
-      "Artículos informativos, consejos prácticos y enlaces a recursos útiles.",
+      'Artículos informativos, consejos prácticos y enlaces a recursos útiles.',
   };
 };
 
-const PostPage = ({ params }: props) => {
-  const posts = getPostsCategory(params.category);
+const CategoryPage: React.FC<Props> = ({ params }) => {
+  const articles = getArticleCategory(params.category);
 
-  if (posts.length === 0) {
-    redirect("/not-found");
+  if (articles.length === 0) {
+    redirect('/not-found');
   }
 
-  return <Postlist posts={posts} />;
+  return (
+    <Container>
+      <ArticleList
+        articles={articles}
+        justify={clsx(
+          'justify-center',
+          articles.length > 1 && 'md:justify-between'
+        )}
+      />
+    </Container>
+  );
 };
 
-export default PostPage;
+export default CategoryPage;

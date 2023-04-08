@@ -6,7 +6,7 @@ Blog Personal
 
 <!-- Work on mdx -->
 
-<!-- footer  -->
+<!-- footer  like https://paulonteri.com/thoughts/atomic-design-react#atoms-->
 
 <!-- <Image
   alt={`Article Initially Posted`}
@@ -15,12 +15,12 @@ Blog Personal
   height={589}
 /> -->
 
-<!-- # cover: ''
-# coverWidth: '1411'
-# coverHeight: '682' -->
-
 <!-- menu una frase randon from mi hightli -->
 
-delete opacity
-build 404
-Footer
+<!-- Create CMS on app/create/page.tsx(To write article) -->
+
+<!-- new post https://sarunw.com/posts/how-to-change-keyboard-shortcut-for-intellisense-in-vscode/ -->
+
+<!-- ordenar por fecha -->
+
+<!-- <aside></aside> -->

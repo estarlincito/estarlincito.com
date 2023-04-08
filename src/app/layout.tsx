@@ -1,20 +1,23 @@
-import "@/styles/globals.css";
-import { Children } from "@/types";
-import Navbar from "@/components/navbar";
-import { ContextProvider } from "@/context";
-import Opacity from "@/components/Opacity";
+import { Footer, Header, Navbar, Opacity } from '@UI/organisms';
+import '@/styles/globals.css';
+import { CollapseProvider, ThemeProvider } from '@/context';
+import { Children } from '@/types';
 
-const RootLayout = ({ children }: Children) => {
+const RootLayout: React.FC<Children> = ({ children }) => {
   return (
-    <ContextProvider>
-      <html lang="es">
-        <body className="bg-white dark:bg-black dark:text-white font-serif">
+    <html lang='es'>
+      <body className='grid content-between h-screen font-sans bg-white dark:bg-black text-neutral-900 dark:text-neutral-200'>
+        <CollapseProvider>
           <Opacity />
-          <Navbar />
+          {/* <Header /> */}
+          <ThemeProvider>
+            <Navbar />
+          </ThemeProvider>
           {children}
-        </body>
-      </html>
-    </ContextProvider>
+          <Footer />
+        </CollapseProvider>
+      </body>
+    </html>
   );
 };
 

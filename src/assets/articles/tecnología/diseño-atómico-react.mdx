@@ -1,0 +1,113 @@
+---
+title: 'Diseño atómico en aplicaciones de React'
+publishedAt: '2023-03-25'
+updated: '2023-03-25'
+summary: 'Trabaja con mejor organización utilizando el Diseño atómico en tus React Apps'
+category: 'Tecnología'
+author: 'Estarlincito'
+avathar: ''
+cover: 'https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80'
+coverWidth: '1411'
+coverHeight: '682'
+tags: ['dev', 'tech', 'react', 'atomic', 'design']
+---
+
+Si navegas a la [sección](https://reactjs.org/docs/faq-structure.html) de [estructura](https://reactjs.org/docs/faq-structure.html) de [archivos](https://reactjs.org/docs/faq-structure.html) del sitio web de React, la primera frase dice:
+
+> "React no tiene opiniones sobre cómo poner los archivos en carpetas"
+
+No es muy útil si lo miras profundamente en la piel. Sin embargo, lo que esta frase realmente está diciendo no es que a los **creadores de React no les importe dónde pongas tus archivos, sino que a la biblioteca en sí no le importe**. React "reaccionará" de la misma manera a los cambios de su aplicación, sin importar si su aplicación existe completamente en un archivo `index.js` o si cada bit se divide en carpetas y archivos separados. Depende de ti decidir cómo quieres estructurar las cosas.
+
+Ahora, a pesar de que afirman que React no tiene una opinión, ofrecen algunos patrones que puedes seguir hasta que sientas que ya no son aplicables a tus necesidades.
+
+## Diseño atómico
+
+![Diseño atómico](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/giphy.gif)
+
+A medida que construimos aplicaciones escalables en React, a menudo nos enfrentamos a desafíos para mantener la creciente complejidad de las estructuras de componentes. En proyectos donde hay cientos de componentes, no es fácil recordarlo todo. La necesidad de algún tipo de sistema de diseño aparece cuando empezamos a sentirnos abrumados por el recuento de componentes en un proyecto.
+
+Uno de los conceptos interesantes que React ha traído al ecosistema es [la componentización](https://mattrothenberg.github.io/prototyping-playbook/componentization). Sin embargo, en muchos proyectos de React, muchos desarrolladores no aprovechan al máximo este concepto y violan repetidamente el principio DRY. Esto se debe posiblemente a la ausencia de mejores prácticas estándar para los patrones de diseño en React Docs, ya que la mayoría de las bases de código se basan en las opiniones de las personas que contribuyen a ello.
+
+El diseño atómico puede ayudar a resolver estos problemas.
+
+[El diseño atómico](https://paulonteri.com/thoughts/atomic-design-react#atoms) es una metodología para diseñar y desarrollar interfaces de usuario de manera modular, centrándose en la construcción de componentes en lugar de aplicaciones. Es popular en el mundo del diseño y ayuda a construir sistemas de diseño consistentes, sólidos y reutilizables. Esto se debe a que Atomic Design está muy calculado y controlado cuando se trata de los bloques de construcción del diseño. Trabajando de manera similar a un sistema de diseño clásico, Atomic Design evita que los equipos tengan muchas versiones de los mismos componentes o duplicados que ofrecen estilos ligeramente diferentes.
+
+También tenemos a aquellos que dicen que Atomic Design es realmente un modelo mental en lugar de un estilo o marco. Invita a los diseñadores a ver sus páginas y productos como un grupo complejo de organismos, con cada pequeño elemento desempeñando un papel crucial por derecho propio.
+
+La gran ventaja de usar Atomic Design es que puedes hacer que tus aplicaciones se vean y se sientan igual y que cada cambio que hagas en un componente se distribuirá entre tus otros componentes y proyectos, sin necesidad de actualizarlos de forma independiente y teniendo que mantenerlos, si funciona en un proyecto, debería funcionar en todos ellos, sin embargo, si está roto, se romperá en todas las páginas.
+
+React [recomienda](https://reactjs.org/docs/thinking-in-react.html) un enfoque de diseño primero para el desarrollo de la interfaz - En este enfoque, un equipo de diseñadores de UI/UX crearía simulacros para que el equipo de desarrolladores los implemente, el equipo ahora puede dividir los simulacros de la interfaz de usuario en una jerarquía de componentes. Desglosar los componentes basados en algún tipo de jerarquía es una de las bases a la hora de implementar el diseño atómico. Átomos, moléculas, organismos, plantillas y páginas ayudan a construir la jerarquía. Más sobre esto en la siguiente sección.
+
+## Metodología de diseño atómico
+
+![Metodología de diseño atómico](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/atomic-design-methodology.webp)
+
+El sistema de diseño atómico se inspira en la química. Consta de cinco niveles distintos de la siguiente manera:
+
+1. Átomos: bloques de construcción del proyecto, no se pueden descomponen
+2. Moléculas: un grupo de átomos se agrupan y se convierten en nuevas propiedades
+3. Organismos: Grupo de moléculas unidas para formar parte de la interfaz
+4. Plantillas: en su mayoría centradas en la estructura de contenido
+5. Páginas: instancias específicas de plantillas
+
+## Átomos
+
+![Átomos](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/atoms.webp)
+
+Los átomos son los componentes básicos de la materia. Aplicados a las interfaces web, los átomos son nuestras etiquetas HTML, como una etiqueta de formulario, una entrada, animaciones o un botón. Los átomos también pueden incluir elementos más abstractos como paletas de colores, fuentes y aspectos aún más invisibles de una interfaz como animaciones.
+
+Se pueden considerar los componentes más pequeños posibles y se pueden aplicar en cualquier contexto, a nivel mundial o dentro de otros componentes y plantillas, además de tener muchos estados, como este ejemplo de botón: deshabilitado, pasar, diferentes tamaños, etc.
+
+Consejo: Los átomos deben escribirse sin márgenes ni posiciones; solo las moléculas y los organismos pueden establecer las posiciones de los átomos, pero estas pilas no pueden tener ningún estilo de márgenes y posiciones;
+
+Sin embargo, al igual que los átomos en la naturaleza, son bastante abstractos y a menudo no son muy útiles por sí solos.
+
+## Moléculas
+
+![Moléculas](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/molecules.webp)
+
+En química, las moléculas son un grupo de dos o más átomos que se unen y demuestran nuevas cualidades. Considere la molécula de agua. Es una combinación de hidrógeno y oxígeno que, juntos, crean algo nuevo. Con Atomic Design, los diseñadores pueden decir lo mismo sobre los grupos de componentes.
+
+Los átomos no tienen sentido como un solo componente, pero se pueden combinar para formar moléculas. En el desarrollo web, las moléculas son unidades pequeñas y funcionales que tienen la responsabilidad de hacer una cosa.
+
+For example, the `Label`, `Input` and `Button` atoms can be combined to form a `SearchBar` molecule that’s responsible for accepting and passing user input to the application so that a search can be performed on the website.
+
+## Organismos
+
+![Organismos](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/organisms.webp)
+
+Los organismos son la combinación de moléculas que trabajan juntas o incluso con átomos que componen interfaces más elaboradas. En este nivel, los componentes comienzan a tener la forma final, pero aún así se garantiza que sean independientes, portátiles y lo suficientemente reutilizables como para ser reutilizables en cualquier contenido.
+
+Pueden consistir en tipos de moléculas similares y/o diferentes. Por ejemplo, la `NavigationBar` podría consistir en diversos componentes como un `Logo`, `PrimaryNavigation`, `SearchForm`, etc.
+
+Los organismos en juego pueden mostrar la misma molécula una y otra vez, como la mayoría de las listas basadas en cartas, o mostrar muchas moléculas y átomos diferentes. La conclusión es que Atomic Design significa crear una forma de diseñar que es casi **como un rompecabezas flexible**, donde los diseñadores pueden intercambiar organismos dentro de la misma página de acuerdo con lo que se necesita.
+
+La construcción de moléculas a organismos fomenta la creación de componentes independientes, portátiles y reutilizables.
+
+## Plantillas
+
+![Plantillas](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/templates.webp)
+
+Las plantillas consisten principalmente en grupos de organismos cosidos para formar una página web completa. Es aquí donde empezamos a ver el diseño uniéndose y a ver cosas como el diseño en acción.
+
+Con este paso, estamos dejando la analogía bioquímica.
+
+## Páginas
+
+![Páginas](https://github.com/estarlincito/estarlincito.com/blob/main/src/assets/articles/tecnolog%C3%ADa/images/dise%C3%B1o-at%C3%B3mico-react/pages.webp)
+
+Las páginas son instancias específicas de plantillas. Aquí, el contenido de marcador de posición se reemplaza con contenido representativo real para dar una descripción precisa de lo que un usuario verá en última instancia.
+
+Las páginas también son el lugar para probar las variaciones en las plantillas. Por ejemplo, es posible que desee articular cómo se ve un titular que contiene 40 caracteres, pero también demostrar cómo se ven 340 caracteres. ¿Cómo se ve cuando un usuario tiene un artículo en su carrito de compras frente a 10 artículos con un código de descuento aplicado?
+
+Estas son las páginas reales que hemos estado diseñando desde el comienzo del diseño web.
+
+En marcos con enrutamiento basado en archivos como Next.js, estas páginas (las instancias de plantillas se pueden colocar allí). En otros marcos/bibliotecas como en React Native y React Router, podemos tener otra capa/carpeta para manejar los componentes de enrutamiento.
+
+## Conclusión
+
+La fuente original de este contenido son los principios de diseño atómico de Brad Frost. Siéntase libre de [leerlo en su blog](http://bradfrost.com/blog/post/atomic-web-design).
+
+Hay un gran kit de inicio llamado [Atomic React](https://arc.js.org) que te pone en la dirección correcta para implementar Atomic Design en tus aplicaciones react.
+
+#### [Fuente original](https://paulonteri.com/thoughts/atomic-design-react)
