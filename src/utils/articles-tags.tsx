@@ -1,6 +1,6 @@
 import { allBlogs } from 'contentlayer/generated';
 
-export const getTags = () => {
+export const getArticlesTags = () => {
   //to concat all tags array
   const _tags = allBlogs.flatMap((item) => item.tags);
 

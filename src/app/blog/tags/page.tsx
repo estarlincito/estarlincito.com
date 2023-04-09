@@ -1,5 +1,5 @@
 import { _Main } from '@/components/UI/organisms';
-import { getTags } from '@/utils';
+import { getArticlesTags } from '@/utils';
 import { Title, _Link } from '@/components/HOC';
 import { Metadata } from 'next';
 import clsx from 'clsx';
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const TagsPage = () => {
-  const { tags } = getTags();
+  const { tags } = getArticlesTags();
   return (
     <_Main className='grid items-center justify-center'>
       <section className='grid md:grid-cols-[auto,1fr] md:gap-x-5 gap-y-5 items-center'>
@@ -34,7 +34,7 @@ const TagsPage = () => {
                 font='font-normal'
                 className={clsx('text-sky-600', 'dark:text-sky-400')}
               >
-                {tag}{' '}
+                {tag}&nbsp;
                 <span className='font-light text-sm text-neutral-700 dark:text-neutral-300'>
                   ({count})
                 </span>

@@ -1,5 +1,5 @@
 import { _Link, Title, Paragraph } from '@/components/HOC';
-import { setFormat } from '@/utils';
+import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 import ArticleMdx from './articlemdx';
@@ -31,8 +31,8 @@ const ArticleLayout: React.FC<Blog> = ({
         <ArticleMdx doc={body.code} />
 
         <Paragraph className='mt-8'>
-          <b>Última actualización:</b> el{' '}
-          <time dateTime={publishedAt}>{setFormat(publishedAt)}</time>
+          <b>Última actualización:</b> el&nbsp;
+          <time dateTime={publishedAt}>{dateFormat(publishedAt)}</time>
         </Paragraph>
       </section>
 

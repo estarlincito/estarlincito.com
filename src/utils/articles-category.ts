@@ -1,6 +1,6 @@
 import { allBlogs } from 'contentlayer/generated';
 
-export const getArticleCategory = (category: string) => {
+export const getArticlesCategory = (category: string) => {
   return allBlogs.filter(
     (item) => item._raw.sourceFileDir === decodeURI(category)
   );

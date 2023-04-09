@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getArticleCategory } from '@/utils';
+import { getArticlesCategory } from '@/utils';
 import { ArticleList, _Main } from '@UI/organisms';
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const generateMetadata = ({ params }: Props) => {
-  const articles = getArticleCategory(params.category);
+  const articles = getArticlesCategory(params.category);
 
   if (articles.length === 0) {
     return;
@@ -22,7 +22,7 @@ export const generateMetadata = ({ params }: Props) => {
 };
 
 const CategoryPage: React.FC<Props> = ({ params }) => {
-  const articles = getArticleCategory(params.category);
+  const articles = getArticlesCategory(params.category);
 
   if (articles.length === 0) {
     notFound();

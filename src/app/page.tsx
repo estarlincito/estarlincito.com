@@ -5,6 +5,7 @@ import avatar from '@/assets/images/avatar.jpeg';
 import Image from 'next/image';
 import { Target } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
+import clsx from 'clsx';
 
 const name = 'Estarlincito';
 
@@ -43,7 +44,7 @@ const HomePage = () => {
   return (
     <_Main>
       <Wrapper>
-        <section className='flex flex-col items-center gap-y-2'>
+        <section className='flex flex-col items-center gap-y-2 mb-8'>
           <Image
             alt={name}
             className='rounded-full mb-3'
@@ -55,7 +56,12 @@ const HomePage = () => {
 
           <Title className='text-3xl'>{name}</Title>
 
-          <Paragraph className='text-center p-2 md:w-[500px] md:p-0'>
+          <Paragraph
+            className={clsx(
+              'text-center p-2 md:w-[500px] md:p-0 text-base',
+              'text-neutral-600 dark:text-neutral-300'
+            )}
+          >
             Hola, soy Estarlicito. Trabajo con el <b>Diseño de páginas web</b>,
             escribo sobre <b>Tecnológia</b>,&nbsp;
             <b>Psicológia y otros temas.</b>
@@ -64,7 +70,10 @@ const HomePage = () => {
           <_Link
             href='https://github.com/estarlincito'
             target='_blank'
-            className='flex items-center gap-1 text-sm'
+            className={clsx(
+              'flex items-center gap-1 text-sm',
+              'text-neutral-600 dark:text-neutral-300'
+            )}
           >
             <TbBrandGithubCopilot />
             Proyectos web

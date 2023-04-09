@@ -1,5 +1,6 @@
 import { _Link } from '@/components/HOC';
-import { setFormat } from '@/utils';
+import { dateFormat } from '@/utils';
+import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 import Image from 'next/image';
 
@@ -31,18 +32,24 @@ const ArticleCard: React.FC<Blog> = ({
         </_Link>
       </figure>
 
-      <figcaption className='flex flex-col p-5 dark:text-black h-32'>
+      <figcaption
+        className={clsx(
+          'grid grid-flow-row content-between h-28 p-5 gap-y-1',
+          'dark:text-black'
+        )}
+      >
         <_Link href={slug} target='_self' className='text-lg'>
           {title}
         </_Link>
-        <div className='text-sm flex justify-between mt-5'>
+
+        <div className='flex flex-row justify-between text-neutral-700'>
           <h5>
-            Por{' '}
+            Por&nbsp;
             <_Link href='/' target='_self'>
               {author}
             </_Link>
           </h5>
-          <time dateTime={publishedAt}>{setFormat(publishedAt)}</time>
+          <time dateTime={publishedAt}>{dateFormat(publishedAt)}</time>
         </div>
       </figcaption>
     </div>
