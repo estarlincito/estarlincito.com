@@ -10,13 +10,14 @@ interface Props {
   onClick?: MouseEventHandler<HTMLAnchorElement>;
   styled?: 'none';
   className?: string;
+  font?: 'font-sans' | 'font-light ' | 'font-serif ' | 'font-normal';
 }
 const _Link: React.FC<Props> = ({
   href,
   target,
   children,
-  styled,
   className,
+  font,
   onClick,
 }) => {
   return (
@@ -25,9 +26,9 @@ const _Link: React.FC<Props> = ({
         onClick={onClick}
         target={target}
         className={clsx(
-          styled === undefined &&
-            'font-bold hover:text-sky-700 active:text-sky-900 text-sky-600 dark:hover:text-sky-600 dark:active:text-sky-900 dark:text-sky-400',
-
+          font === undefined && 'font-bold',
+          'hover:text-sky-800 active:text-sky-900',
+          'dark:hover:text-sky-600 dark:active:text-sky-700',
           className && className
         )}
       >

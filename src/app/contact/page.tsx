@@ -1,5 +1,5 @@
 import { _Link, Blockquote, Title, Paragraph } from '@/components/HOC';
-import { Container, Wrapper } from '@/components/UI/organisms';
+import { _Main, Wrapper } from '@/components/UI/organisms';
 import { Metadata } from 'next';
 
 //SEO
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <Container>
+    <_Main>
       <Wrapper>
         <section>
           <Title className='text-3xl'>Ponte en contacto conmigo</Title>
@@ -58,7 +58,7 @@ const ContactPage = () => {
           </Paragraph>
         </section>
       </Wrapper>
-    </Container>
+    </_Main>
   );
 };
 

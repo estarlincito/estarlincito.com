@@ -1,6 +1,6 @@
 import { getArticle } from '@/utils';
 import { redirect } from 'next/navigation';
-import { ArticleLayout, Container } from '@UI/organisms';
+import { ArticleLayout, _Main } from '@UI/organisms';
 
 type Props = {
   params: {
@@ -29,10 +29,10 @@ const ArticlePage: React.FC<Props> = ({ params }) => {
   }
 
   return (
-    <Container>
+    <_Main>
       <ArticleLayout {...article} />
       {/* <aside></aside> */}
-    </Container>
+    </_Main>
   );
 };
 

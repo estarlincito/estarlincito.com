@@ -1,4 +1,4 @@
-import { ArticleList, Container } from '@/components/UI/organisms';
+import { ArticleList, _Main } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
 import { Metadata } from 'next';
 
@@ -11,12 +11,9 @@ export const metadata: Metadata = {
 
 const BlogPage = () => {
   return (
-    <Container>
-      <ArticleList
-        justify='justify-center md:justify-between'
-        articles={allBlogs}
-      />
-    </Container>
+    <_Main>
+      <ArticleList articles={allBlogs} />
+    </_Main>
   );
 };
 

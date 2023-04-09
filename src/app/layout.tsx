@@ -2,16 +2,24 @@ import { Footer, Header, Navbar, Opacity } from '@UI/organisms';
 import '@/styles/globals.css';
 import { CollapseProvider, ThemeProvider } from '@/context';
 import { Children } from '@/types';
+import clsx from 'clsx';
+import { Collapse } from '@/components/UI/molecules';
 
 const RootLayout: React.FC<Children> = ({ children }) => {
   return (
     <html lang='es'>
-      <body className='grid content-between h-screen font-sans bg-white dark:bg-black text-neutral-900 dark:text-neutral-200'>
+      <body
+        className={clsx(
+          'font-sans bg-white text-neutral-900',
+          'dark:bg-black dark:text-neutral-200'
+        )}
+      >
         <CollapseProvider>
           <Opacity />
           {/* <Header /> */}
           <ThemeProvider>
             <Navbar />
+            <Collapse />
           </ThemeProvider>
           {children}
           <Footer />

@@ -1,6 +1,6 @@
 export { default as Header } from './header';
 export { default as Navbar } from './navbar';
-export { default as Container } from './container';
+export { default as _Main } from './main';
 export { default as Footer } from './footer';
 export { default as Opacity } from './opacity';
 export { default as Wrapper } from './wrapper';

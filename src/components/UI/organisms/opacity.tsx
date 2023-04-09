@@ -9,8 +9,8 @@ const Opacity = () => {
       {collapse === 'ON' ? (
         <div
           onClick={offCollapse}
-          className='bg-[#000000b2] fixed w-[100vw] h-[100vh]'
-        ></div>
+          className='bg-[#000000d6] fixed z-10 top-0 right-0 left-0 bottom-0'
+        />
       ) : null}
     </>
   );

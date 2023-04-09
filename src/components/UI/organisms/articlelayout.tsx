@@ -1,5 +1,6 @@
 import { _Link, Title, Paragraph } from '@/components/HOC';
 import { setFormat } from '@/utils';
+import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 import ArticleMdx from './articlemdx';
 import Wrapper from './wrapper';
@@ -24,7 +25,7 @@ const ArticleLayout: React.FC<Blog> = ({
 
         <ArticleMdx doc={body.code} />
 
-        <Paragraph className='my-5'>
+        <Paragraph className='mt-8'>
           <b>Última actualización:</b> el{' '}
           <time dateTime={publishedAt}>{setFormat(publishedAt)}</time>
         </Paragraph>
@@ -35,7 +36,12 @@ const ArticleLayout: React.FC<Blog> = ({
         <ul className='flex'>
           {tags.map((tag, id) => (
             <li key={id} className='m-1'>
-              <_Link href={`/blog/tags/${tag}`} target='_self'>
+              <_Link
+                href={`/blog/tags/${tag}`}
+                target='_self'
+                font='font-normal'
+                className={clsx('text-sky-600', 'dark:text-sky-400')}
+              >
                 #{tag}
               </_Link>
             </li>

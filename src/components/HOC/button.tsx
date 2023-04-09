@@ -4,18 +4,15 @@ import { MouseEventHandler, ReactNode } from 'react';
 interface Prosp {
   children: ReactNode;
   onClick: MouseEventHandler<HTMLButtonElement>;
-  styled?: 'none';
   className?: string;
 }
 
-const Button: React.FC<Prosp> = ({ children, onClick, className, styled }) => {
+const Button: React.FC<Prosp> = ({ children, onClick, className }) => {
   return (
     <button
       onClick={onClick}
       className={clsx(
-        styled === undefined &&
-          'hover:text-sky-700 font-bold active:text-sky-900 text-sky-600 dark:hover:text-sky-600 dark:active:text-sky-900 dark:text-sky-400',
-
+        'font-bold hover:text-sky-600 active:text-sky-800',
         className && className
       )}
     >

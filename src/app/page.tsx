@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { _Link, Paragraph, Title, Hr } from '@/components/HOC';
-import { Container, Wrapper } from '@UI/organisms';
+import { _Main, Wrapper } from '@UI/organisms';
 import avatar from '@/assets/images/avatar.jpeg';
 import Image from 'next/image';
 import { Target } from '@/types';
@@ -41,7 +41,7 @@ const links: _links = [
 
 const HomePage = () => {
   return (
-    <Container>
+    <_Main>
       <Wrapper>
         <section className='flex flex-col items-center gap-y-2'>
           <Image
@@ -108,7 +108,7 @@ const HomePage = () => {
           </ul>
         </section>
       </Wrapper>
-    </Container>
+    </_Main>
   );
 };
 

@@ -1,5 +1,4 @@
-import { ArticleList, Container } from '@/components/UI/organisms';
-import clsx from 'clsx';
+import { ArticleList, _Main } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
 import { redirect } from 'next/navigation';
 
@@ -31,15 +30,9 @@ const TagPage: React.FC<Props> = ({ params }) => {
   }
 
   return (
-    <Container>
-      <ArticleList
-        articles={articles}
-        justify={clsx(
-          'justify-center',
-          articles.length > 1 && 'md:justify-between'
-        )}
-      />
-    </Container>
+    <_Main>
+      <ArticleList articles={articles} />
+    </_Main>
   );
 };
 

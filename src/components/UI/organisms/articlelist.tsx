@@ -4,14 +4,17 @@ import { ArticleCard } from '../molecules';
 
 interface Prosp {
   articles: Blog[];
-  justify?: string;
 }
 
-const ArticleList: React.FC<Prosp> = ({ articles, justify }) => {
+const ArticleList: React.FC<Prosp> = ({ articles }) => {
   return (
-    <ul className={clsx('flex flex-wrap', justify && justify)}>
+    <ul
+      className={clsx(
+        'grid grid-cols-[repeat(auto-fill,350px)] gap-5 justify-center'
+      )}
+    >
       {articles.map((article) => (
-        <li key={article._id} className='w-96 md:basis-1/2 lg:basis-1/3 p-3'>
+        <li key={article._id} className=' '>
           <ArticleCard {...article} />
         </li>
       ))}

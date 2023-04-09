@@ -38,12 +38,7 @@ const ArticleCard: React.FC<Blog> = ({
         <div className='text-sm flex justify-between mt-5'>
           <h5>
             Por{' '}
-            <_Link
-              href='/'
-              target='_self'
-              styled='none'
-              className='font-bold text-black'
-            >
+            <_Link href='/' target='_self'>
               {author}
             </_Link>
           </h5>
