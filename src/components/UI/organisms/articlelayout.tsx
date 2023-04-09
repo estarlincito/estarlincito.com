@@ -16,7 +16,12 @@ const ArticleLayout: React.FC<Blog> = ({
     <Wrapper>
       <section>
         <p className='text-center uppercase tracking-wide select-none mb-3'>
-          <_Link href={`/blog/${category.toLocaleLowerCase()}`} target='_self'>
+          <_Link
+            href={`/blog/${category.toLocaleLowerCase()}`}
+            target='_self'
+            font='font-normal'
+            className={clsx('text-sky-600', 'dark:text-sky-400', 'text-sm')}
+          >
             {category}
           </_Link>
         </p>

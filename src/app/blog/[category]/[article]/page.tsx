@@ -1,5 +1,5 @@
 import { getArticle } from '@/utils';
-import { redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { ArticleLayout, _Main } from '@UI/organisms';
 
 type Props = {
@@ -25,7 +25,7 @@ const ArticlePage: React.FC<Props> = ({ params }) => {
   const article = getArticle(params.category, params.article);
 
   if (article === undefined) {
-    redirect('/not-found');
+    notFound();
   }
 
   return (

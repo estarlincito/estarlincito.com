@@ -1,6 +1,6 @@
 import { ArticleList, _Main } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
-import { redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 
 interface Props {
   params: { tag: string };
@@ -26,7 +26,7 @@ const TagPage: React.FC<Props> = ({ params }) => {
   );
 
   if (articles.length === 0) {
-    redirect('/not-found');
+    notFound();
   }
 
   return (
