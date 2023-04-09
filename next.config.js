@@ -6,7 +6,11 @@ const nextConfig = {
   experimental: { appDir: true, newNextLinkBehavior: false },
   images: {
     // formats: ['image/avif', 'image/webp'],
-    domains: ['images.unsplash.com', 'raw.githubusercontent.com'],
+    domains: [
+      'images.unsplash.com',
+      'raw.githubusercontent.com',
+      'images.pexels.com',
+    ],
   },
 };
 

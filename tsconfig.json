@@ -18,7 +18,6 @@
     "paths": {
       "contentlayer/generated": ["./.contentlayer/generated"],
       "@/*": ["./src/*"],
-      "@Pages": ["./src/components/pages"],
       "@UI/*": ["./src/components/UI/*"]
     },
     "plugins": [

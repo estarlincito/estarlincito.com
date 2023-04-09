@@ -28,3 +28,5 @@ Blog Personal
 <!-- Display Grid -->
 <!-- Última actualización: el 13 marzo 2023 -->
 <!-- create a responsive pagination using CSS -->
+
+<!-- Agregar seo de google, facebook, twitter... opengrat-->
