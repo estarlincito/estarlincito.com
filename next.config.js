@@ -1,11 +1,12 @@
 const { withContentlayer } = require('next-contentlayer');
+const withMDX = require('@next/mdx')();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
-  experimental: { appDir: true, newNextLinkBehavior: false },
+  experimental: { appDir: true, mdxRs: true, newNextLinkBehavior: false },
+  pageExtensions: ['ts', 'tsx', 'mdx'],
   images: {
-    // formats: ['image/avif', 'image/webp'],
     domains: [
       'images.unsplash.com',
       'raw.githubusercontent.com',
@@ -14,4 +15,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = withMDX(withContentlayer(nextConfig));

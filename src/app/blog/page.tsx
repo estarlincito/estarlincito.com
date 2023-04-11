@@ -1,4 +1,4 @@
-import { ArticleList, _Main } from '@/components/UI/organisms';
+import { PostList, _Main } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
 import { Metadata } from 'next';
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const BlogPage = () => {
   return (
     <_Main>
-      <ArticleList articles={allBlogs} />
+      <PostList posts={allBlogs} />
     </_Main>
   );
 };

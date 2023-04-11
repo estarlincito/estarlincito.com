@@ -4,8 +4,8 @@ import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 import Image from 'next/image';
 
-const ArticleCard: React.FC<Blog> = ({
-  title,
+const PostCard: React.FC<Blog> = ({
+  teme,
   category,
   summary,
   cover,
@@ -13,15 +13,15 @@ const ArticleCard: React.FC<Blog> = ({
   coverHeight,
   publishedAt,
   author,
-  slug,
+  slug_post,
 }) => {
   return (
     <div className='bg-neutral-50 shadow-lg rounded-lg'>
       <figure className='h-44 xl:h-60'>
-        <_Link href={slug} target='_self'>
+        <_Link href={slug_post} target='_self'>
           <Image
             src={cover}
-            alt={title}
+            alt={teme}
             width={parseInt(coverWidth)}
             height={parseInt(coverHeight)}
             className='rounded-t-lg w-full h-full'
@@ -38,8 +38,8 @@ const ArticleCard: React.FC<Blog> = ({
           'dark:text-black'
         )}
       >
-        <_Link href={slug} target='_self' className='text-lg'>
-          {title}
+        <_Link href={slug_post} target='_self' className='text-lg'>
+          {teme}
         </_Link>
 
         <div className='flex flex-row justify-between text-neutral-700'>
@@ -56,4 +56,4 @@ const ArticleCard: React.FC<Blog> = ({
   );
 };
 
-export default ArticleCard;
+export default PostCard;

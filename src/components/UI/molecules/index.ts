@@ -1,2 +1,2 @@
 export { default as Collapse } from './collapse';
-export { default as ArticleCard } from './article-card';
+export { default as PostCard } from './post-card';

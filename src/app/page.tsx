@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { Target } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
-
 const name = 'Estarlincito';
 
 //SEO

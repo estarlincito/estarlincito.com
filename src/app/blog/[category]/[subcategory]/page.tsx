@@ -1,23 +1,23 @@
 import { notFound } from 'next/navigation';
 import { Post } from '@/utils';
 import { PostList, _Main } from '@UI/organisms';
-import { params_category } from '@/types';
+import { params_subcategory } from '@/types';
 
-export const generateMetadata = ({ params }: params_category) => {
-  const posts = Post.getCategory({ ...params });
+export const generateMetadata = ({ params }: params_subcategory) => {
+  const posts = Post.getSubCategory({ ...params });
 
   if (posts.length === 0) {
     return;
   }
   return {
-    title: posts[0].category,
+    title: posts[0].subcategory,
     description:
       'Artículos informativos, consejos prácticos y enlaces a recursos útiles.',
   };
 };
 
-const CategoryPage: React.FC<params_category> = ({ params }) => {
-  const posts = Post.getCategory({ ...params });
+const SubCategoryPage: React.FC<params_subcategory> = ({ params }) => {
+  const posts = Post.getSubCategory({ ...params });
 
   if (posts.length === 0) {
     notFound();
@@ -30,4 +30,4 @@ const CategoryPage: React.FC<params_category> = ({ params }) => {
   );
 };
 
-export default CategoryPage;
+export default SubCategoryPage;

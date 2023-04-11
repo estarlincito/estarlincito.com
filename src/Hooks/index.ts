@@ -1,3 +1,3 @@
-export { useTheme } from './usetheme';
-export { useCollapse } from './usecollapse';
-export { useLocalStorage } from './uselocalstorage';
+export { useTheme } from './use-theme';
+export { useCollapse } from './use-collapse';
+export { useLocalStorage } from './use-localstorage';

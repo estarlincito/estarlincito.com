@@ -1,4 +1,4 @@
-import { ArticleList, _Main } from '@/components/UI/organisms';
+import { PostList, _Main } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 
@@ -21,17 +21,17 @@ export const generateMetadata = ({ params }: Props) => {
 const TagPage: React.FC<Props> = ({ params }) => {
   const { tag } = params;
 
-  const articles = allBlogs.filter((item) =>
+  const posts = allBlogs.filter((item) =>
     item.tags.some((tagItem) => tagItem === tag)
   );
 
-  if (articles.length === 0) {
+  if (posts.length === 0) {
     notFound();
   }
 
   return (
     <_Main>
-      <ArticleList articles={articles} />
+      <PostList posts={posts} />
     </_Main>
   );
 };

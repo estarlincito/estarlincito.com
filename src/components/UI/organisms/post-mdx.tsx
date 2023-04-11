@@ -71,8 +71,8 @@ const mdxComponents = {
   blockquote: Blockquote,
 };
 
-const ArticleMdx = ({ doc }: { doc: string }) => {
+const PostMdx = ({ doc }: { doc: string }) => {
   const MDXContent = useMDXComponent(doc);
   return <MDXContent components={mdxComponents} />;
 };
-export default ArticleMdx;
+export default PostMdx;
