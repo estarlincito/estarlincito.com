@@ -1,5 +1,5 @@
-import { Blockquote, Paragraph, Title } from '@/components/HOC';
-import { _Main } from '@/components/UI/organisms';
+import { Blockquote, Title } from '@/components/HOC';
+import { Maindoc } from '@/components/UI/organisms';
 import clsx from 'clsx';
 
 export const metadata = {
@@ -21,20 +21,20 @@ const temas = [
 ];
 const AboutPage = () => {
   return (
-    <_Main>
+    <Maindoc>
       <section>
-        <Title className='text-2xl'>Acerca de Estarlincito</Title>
+        <Title text='Acerca de Estarlincito' size='text-2xl' />
         <Blockquote className={clsx('text-neutral-600 dark:text-neutral-300')}>
           Blog de Tecnología, Filosofía, Psicología y Desarrollo Web y mucho más
         </Blockquote>
 
-        <Paragraph className='my-5'>
+        <p className='my-5'>
           Este es un blog que explora la tecnología, la filosofía, la psicología
           y el desarrollo web y mucho más. Aquí encontrarás reflexiones,
           análisis y discusiones sobre cómo la tecnología está cambiando nuestra
           forma de pensar y relacionarnos con el mundo, así como su impacto en
           nuestra psicología y bienestar emocional.
-        </Paragraph>
+        </p>
 
         <div className='my-5'>
           <h3 className='text-lg font-bold'>Temas que se abordan</h3>
@@ -45,7 +45,7 @@ const AboutPage = () => {
           </ul>
         </div>
       </section>
-    </_Main>
+    </Maindoc>
   );
 };
 

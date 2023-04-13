@@ -4,7 +4,7 @@ interface Props {
   children: React.ReactNode;
   className?: string;
 }
-const Main: React.FC<Props> = ({ children, className }) => {
+const Maindoc: React.FC<Props> = ({ children, className }) => {
   return (
     <main
       className={clsx(
@@ -17,4 +17,4 @@ const Main: React.FC<Props> = ({ children, className }) => {
   );
 };
 
-export default Main;
+export default Maindoc;

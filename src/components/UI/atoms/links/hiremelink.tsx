@@ -1,11 +1,11 @@
-import { _Link } from '@/components/HOC';
+import { Linkdoc } from '@/components/HOC';
 import { TbBrandHipchat } from 'react-icons/tb';
 
 const HireMeLink = () => {
   return (
-    <_Link href='/contact' target='_self' className='text-2xl'>
+    <Linkdoc href='/contact' target='_self' size='text-2xl'>
       <TbBrandHipchat />
-    </_Link>
+    </Linkdoc>
   );
 };
 

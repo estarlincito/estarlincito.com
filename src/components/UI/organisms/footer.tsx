@@ -1,4 +1,4 @@
-import { Paragraph, _Link } from '@/components/HOC';
+import { Linkdoc } from '@/components/HOC';
 import { Target } from '@/types';
 import { sitemap } from '@/utils';
 import clsx from 'clsx';
@@ -34,9 +34,9 @@ const List: React.FC<Props> = ({ title, links, target, className }) => {
       <ul className='m-3 text-sm'>
         {links.map(({ route, label }, id) => (
           <li key={id}>
-            <_Link href={route} target={target} font='font-normal'>
+            <Linkdoc href={route} target={target} font='font-normal'>
               {label}
-            </_Link>
+            </Linkdoc>
           </li>
         ))}
       </ul>
@@ -51,13 +51,13 @@ const Copyright = () => {
   const ownYears = `${buildYear}-${currentgeYear}`;
 
   return (
-    <Paragraph className='text-sm mt-5'>
+    <p className='text-sm mt-5'>
       &nbsp; Copyright © {buildYear === currentgeYear ? buildYear : ownYears}
       &nbsp;
-      <_Link href='/' target='_self'>
+      <Linkdoc href='/' target='_self'>
         Estarlincito
-      </_Link>
-    </Paragraph>
+      </Linkdoc>
+    </p>
   );
 };
 
@@ -65,7 +65,7 @@ const Footer = () => {
   return (
     <footer
       className={clsx(
-        'p-16',
+        'p-5 md:p-16',
         'border-t-[1px] border-gray-300 dark:border-gray-800',
         'bg-gray-50 dark:bg-inherit'
       )}

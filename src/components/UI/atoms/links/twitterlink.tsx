@@ -1,15 +1,15 @@
-import { _Link } from '@/components/HOC';
+import { Linkdoc } from '@/components/HOC';
 import { TbBrandTwitter } from 'react-icons/tb';
 
 const TwitterLink = () => {
   return (
-    <_Link
+    <Linkdoc
       href='https://twitter.com/estarlincito'
       target='_blank'
-      className='text-2xl'
+      size='text-2xl'
     >
       <TbBrandTwitter />
-    </_Link>
+    </Linkdoc>
   );
 };
 

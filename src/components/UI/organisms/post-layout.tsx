@@ -1,4 +1,4 @@
-import { _Link, Title, Paragraph } from '@/components/HOC';
+import { Linkdoc, Title } from '@/components/HOC';
 import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
@@ -14,9 +14,9 @@ interface LiProps {
 const Li: React.FC<LiProps> = ({ children, href, className }) => {
   return (
     <li className={className}>
-      <_Link href={href} target='_self' className='flex items-center'>
+      <Linkdoc href={href} target='_self' className='flex items-center'>
         {children}
-      </_Link>
+      </Linkdoc>
     </li>
   );
 };
@@ -37,7 +37,7 @@ const Nav: React.FC<NavProps> = ({
   return (
     <ul
       className={clsx(
-        'flex items-center gap-x-3 mb-3 select-none',
+        'text-sm flex items-center gap-x-3 select-none',
         'text-black/70 dark:text-white/70'
       )}
     >
@@ -63,19 +63,19 @@ interface TagsProps {
 }
 const Tags: React.FC<TagsProps> = ({ tags }) => {
   return (
-    <div className='mt-12 text-sm w-80'>
+    <div className='text-sm w-80'>
       <h5 className='font-bold'>Tags:</h5>
       <ul className='flex'>
         {tags.map((tag, id) => (
           <li key={id} className='m-1'>
-            <_Link
+            <Linkdoc
               href={`/blog/tags/${tag}`}
               target='_self'
               font='font-normal'
               className={clsx('text-sky-600', 'dark:text-sky-400')}
             >
               #{tag}
-            </_Link>
+            </Linkdoc>
           </li>
         ))}
       </ul>
@@ -95,21 +95,22 @@ const PostLayout: React.FC<Blog> = ({
 }) => {
   return (
     <Wrapper>
-      <section>
+      <section className='flex flex-col gap-y-5'>
         <Nav
           category={category}
           subcategory={subcategory}
           slug_category={slug_category}
           slug_subcategory={slug_subcategory}
         />
-        <Title className='text-2xl mb-3'>{teme}</Title>
+
+        <Title text={teme} size='text-2xl' />
 
         <PostMdx doc={body.code} />
 
-        <Paragraph className='mt-8'>
+        <p>
           <b>Última actualización:</b> el&nbsp;
           <time dateTime={publishedAt}>{dateFormat(publishedAt)}</time>
-        </Paragraph>
+        </p>
 
         <Tags tags={tags} />
       </section>

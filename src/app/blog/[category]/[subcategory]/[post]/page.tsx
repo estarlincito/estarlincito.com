@@ -1,6 +1,6 @@
 import { Post } from '@/utils';
 import { notFound } from 'next/navigation';
-import { PostLayout, _Main } from '@UI/organisms';
+import { PostLayout, Maindoc } from '@UI/organisms';
 import { params_post } from '@/types';
 
 //SEO
@@ -24,10 +24,10 @@ const postPage: React.FC<params_post> = ({ params }) => {
   }
 
   return (
-    <_Main>
+    <Maindoc>
       <PostLayout {...post} />
       {/* <aside></aside> */}
-    </_Main>
+    </Maindoc>
   );
 };
 

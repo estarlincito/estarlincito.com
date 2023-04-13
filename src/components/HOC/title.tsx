@@ -1,21 +1,14 @@
 import clsx from 'clsx';
 
 interface Props {
-  children: React.ReactNode;
-  styled?: 'none';
+  text: string;
+  size: 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl';
   className?: string;
 }
 
-const Title: React.FC<Props> = ({ children, styled, className }) => {
+const Title: React.FC<Props> = ({ text, size, className }) => {
   return (
-    <h1
-      className={clsx(
-        styled === undefined && 'font-bold',
-        className && className
-      )}
-    >
-      {children}
-    </h1>
+    <h1 className={clsx('font-bold', size, className && className)}>{text}</h1>
   );
 };
 

@@ -1,4 +1,4 @@
-import { PostList, _Main } from '@/components/UI/organisms';
+import { PostList, Maindoc } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 
@@ -30,9 +30,9 @@ const TagPage: React.FC<Props> = ({ params }) => {
   }
 
   return (
-    <_Main>
+    <Maindoc>
       <PostList posts={posts} />
-    </_Main>
+    </Maindoc>
   );
 };
 

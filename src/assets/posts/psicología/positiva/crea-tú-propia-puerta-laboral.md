@@ -1,0 +1,5 @@
+> Una de las cosas que más me encanta en este mundo es mantener los pies sobre la tierra, no me gustan las cosas por suerte, para mí la suelte es crear tu propia suerte, seguro que lo lees como un trabalenguas haha.
+
+A veces nos afanamos, buscando y buscando trabajos, enviamos montones de curriculums, con la suerte de que entre los montones de curriculum nos vean y nos den esa oportunidad que tanto deseamos, ya sea porque necesitamos ese dinérico para mantener a nuestra familia o incluso a nosotros mismo, y ahí estamos a la suerte de que le caigamos bien, al empleador, a la suerte de cumplir con sus requisitos, a la suerte de que te acepten por tu condición de salud, a la suerte de que te acepten, ya que tienes un 90% de ser rechazado, puesto que no terminaste la universidad o quizás nunca fuiste, a la suerte de que te acepten, por el hecho de que el empleador necesita a alguien con 3 años de experiencia laboral y tú no tienes ni uno, ¿qué podemos hacer?.
+
+## Construye tu propia puerta laborar

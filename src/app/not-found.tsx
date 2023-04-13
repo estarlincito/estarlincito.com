@@ -1,5 +1,5 @@
-import { _Link } from '@/components/HOC';
-import Main from '@/components/UI/organisms/main';
+import { Linkdoc } from '@/components/HOC';
+import Main from '@/components/UI/organisms/maindoc';
 import clsx from 'clsx';
 
 export const metadata = {
@@ -15,13 +15,13 @@ const NotFound = () => {
 
         <p>
           Puedes volver a&nbsp;
-          <_Link
+          <Linkdoc
             target='_self'
             href='http://estarlincito.com'
-            className={clsx('text-sky-600', 'dark:text-sky-400', 'text-sm')}
+            className={clsx('text-sky-600', 'dark:text-sky-400')}
           >
             inicio
-          </_Link>
+          </Linkdoc>
         </p>
       </div>
     </Main>

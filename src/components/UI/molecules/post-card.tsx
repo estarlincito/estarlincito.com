@@ -1,4 +1,4 @@
-import { _Link } from '@/components/HOC';
+import { Linkdoc } from '@/components/HOC';
 import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
@@ -18,7 +18,7 @@ const PostCard: React.FC<Blog> = ({
   return (
     <div className='bg-neutral-50 shadow-lg rounded-lg'>
       <figure className='h-44 xl:h-60'>
-        <_Link href={slug_post} target='_self'>
+        <Linkdoc href={slug_post} target='_self'>
           <Image
             src={cover}
             alt={teme}
@@ -29,7 +29,7 @@ const PostCard: React.FC<Blog> = ({
 
           {/* <div className=''>{summary}</div>
           <div className=''>{category}</div> */}
-        </_Link>
+        </Linkdoc>
       </figure>
 
       <figcaption
@@ -38,16 +38,16 @@ const PostCard: React.FC<Blog> = ({
           'dark:text-black'
         )}
       >
-        <_Link href={slug_post} target='_self' className='text-lg'>
+        <Linkdoc href={slug_post} target='_self' size='text-lg'>
           {teme}
-        </_Link>
+        </Linkdoc>
 
         <div className='flex flex-row justify-between text-neutral-700'>
           <h5>
             Por&nbsp;
-            <_Link href='/' target='_self'>
+            <Linkdoc href='/' target='_self'>
               {author}
-            </_Link>
+            </Linkdoc>
           </h5>
           <time dateTime={publishedAt}>{dateFormat(publishedAt)}</time>
         </div>
