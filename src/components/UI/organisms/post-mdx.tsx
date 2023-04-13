@@ -1,41 +1,21 @@
-import { _Link, Paragraph } from '@/components/HOC';
+import { Linkdoc } from '@/components/HOC';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
 
-const P: React.FC<JSX.IntrinsicElements['p']> = ({ children }) => {
-  return <Paragraph className='mb-4'>{children}</Paragraph>;
-};
-
 const A: React.FC<JSX.IntrinsicElements['a']> = ({ children, href }) => {
   return (
-    <_Link href={href !== undefined ? href : '/no-found'} target='_blank'>
+    <Linkdoc href={href !== undefined ? href : '/no-found'} target='_blank'>
       {children}
-    </_Link>
-  );
-};
-
-const H1: React.FC<JSX.IntrinsicElements['h1']> = ({ children }) => {
-  return (
-    <h1 className='my-5 text-2xl font-bold text-neutral-900 dark:text-neutral-300'>
-      {children}
-    </h1>
+    </Linkdoc>
   );
 };
 
 const H2: React.FC<JSX.IntrinsicElements['h2']> = ({ children }) => {
-  return (
-    <h2 className='my-5 text-xl font-bold text-neutral-900 dark:text-neutral-300'>
-      {children}
-    </h2>
-  );
+  return <h2 className='font-bold'>{children}</h2>;
 };
 
 const Strong: React.FC<JSX.IntrinsicElements['strong']> = ({ children }) => {
-  return (
-    <strong className='font-bold text-neutral-900 dark:text-neutral-300'>
-      {children}
-    </strong>
-  );
+  return <strong className='font-bold'>{children}</strong>;
 };
 
 const Blockquote: React.FC<JSX.IntrinsicElements['blockquote']> = ({
@@ -63,8 +43,6 @@ const _Image: React.FC<PropsImage> = ({ alt, src, width, height }) => {
 
 const mdxComponents = {
   Image: _Image,
-  p: P,
-  h1: H1,
   h2: H2,
   a: A,
   strong: Strong,

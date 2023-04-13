@@ -2,7 +2,7 @@
 import { TbX } from 'react-icons/tb';
 import { DarkmodeToggle } from '@UI/atoms';
 import { useCollapse } from '@/Hooks';
-import { Button, _Link } from '@/components/HOC';
+import { Button, Linkdoc } from '@/components/HOC';
 import { sitemap } from '@/utils';
 import clsx from 'clsx';
 
@@ -30,9 +30,9 @@ const Collapse = () => {
           <ul className='col-start-2 row-start-2'>
             {sitemap.map((link, id) => (
               <li key={id}>
-                <_Link target='_self' onClick={offCollapse} href={link.route}>
+                <Linkdoc target='_self' onClick={offCollapse} href={link.route}>
                   {link.label}
-                </_Link>
+                </Linkdoc>
               </li>
             ))}
           </ul>

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Post } from '@/utils';
-import { PostList, _Main } from '@UI/organisms';
+import { PostList, Maindoc } from '@UI/organisms';
 import { params_category } from '@/types';
 
 export const generateMetadata = ({ params }: params_category) => {
@@ -24,9 +24,9 @@ const CategoryPage: React.FC<params_category> = ({ params }) => {
   }
 
   return (
-    <_Main>
+    <Maindoc>
       <PostList posts={posts} />
-    </_Main>
+    </Maindoc>
   );
 };
 

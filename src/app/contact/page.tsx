@@ -1,5 +1,5 @@
-import { _Link, Blockquote, Title, Paragraph } from '@/components/HOC';
-import { _Main, Wrapper } from '@/components/UI/organisms';
+import { Linkdoc, Blockquote, Title } from '@/components/HOC';
+import { Maindoc, Wrapper } from '@/components/UI/organisms';
 import { Metadata } from 'next';
 
 //SEO
@@ -10,38 +10,40 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <_Main>
+    <Maindoc>
       <Wrapper>
-        <section>
-          <Title className='text-3xl'>Ponte en contacto conmigo</Title>
-          <Blockquote className='mb-5'>¡Construyamos algo juntos!</Blockquote>
+        <section className='flex flex-col gap-y-5'>
+          <div>
+            <Title text='Ponte en contacto conmigo' size='text-3xl' />
+            <Blockquote>¡Construyamos algo juntos!</Blockquote>
+          </div>
 
-          <Paragraph className='my-5 py'>
+          <p>
             Si está buscando ayuda para construir algo que tenga un impacto y
             sostenibilidad, hablemos&nbsp;
             <span role='img' aria-label='Levantando las manos'>
               🙌
             </span>
-          </Paragraph>
+          </p>
 
-          <Paragraph>
+          <p>
             Envíame un correo electrónico a:
             <br />
-            <_Link href='mailto:contacto@estarlincito.com' target='_self'>
+            <Linkdoc href='mailto:contacto@estarlincito.com' target='_self'>
               contacto@estarlincito.com
-            </_Link>
-          </Paragraph>
+            </Linkdoc>
+          </p>
 
-          <Paragraph className='my-5'>
+          <p>
             Siempre estoy aprendiendo y explorando. Con mi experiencia como
             Diseñador web, puedo ayudarte a materializar tus ideas innovadoras
             con Información, análisis y monitoreo tecnológico completos.
-          </Paragraph>
+          </p>
 
-          <Paragraph className='my-5'>
+          <p>
             En general, mi trabajo se centra en la consulta, la innovación,
             solución de problemas tecnológicos y la educación:
-          </Paragraph>
+          </p>
 
           <ul>
             <li>- Diseñador Web</li>
@@ -50,15 +52,15 @@ const ContactPage = () => {
             <li>- Educador Tecnológico</li>
           </ul>
 
-          <Paragraph className='italic my-5'>
+          <p>
             Si solo quieres saludar, Hazme un&nbsp;
-            <_Link href='https://twitter.com/estarlincito' target='_blank'>
+            <Linkdoc href='https://twitter.com/estarlincito' target='_blank'>
               Tweet!
-            </_Link>
-          </Paragraph>
+            </Linkdoc>
+          </p>
         </section>
       </Wrapper>
-    </_Main>
+    </Maindoc>
   );
 };
 
