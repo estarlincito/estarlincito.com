@@ -3,7 +3,7 @@ const withMDX = require('@next/mdx')();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   experimental: { appDir: true, mdxRs: true, newNextLinkBehavior: false },
   pageExtensions: ['ts', 'tsx', 'mdx'],
   images: {

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Target } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
+import top from '@/assets/images/top-langs.svg';
 const name = 'Estarlincito';
 
 //SEO
@@ -43,6 +44,7 @@ const HomePage = () => {
   return (
     <Maindoc>
       <Wrapper>
+        <div></div>
         <section className='flex flex-col items-center gap-y-2 mb-8'>
           <Image
             alt={name}
