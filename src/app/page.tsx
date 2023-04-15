@@ -1,18 +1,17 @@
-import { Metadata } from 'next';
-import { Linkdoc, Title, Hr } from '@/components/HOC';
-import { Maindoc, Wrapper } from '@UI/organisms';
-import avatar from '@/assets/images/avatar.jpeg';
-import Image from 'next/image';
-import { Target } from '@/types';
-import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
-import clsx from 'clsx';
-import top from '@/assets/images/top-langs.svg';
-const name = 'Estarlincito';
+import { Metadata } from "next";
+import { Linkdoc, Title, Hr } from "@/components/HOC";
+import { Maindoc, Wrapper } from "@UI/organisms";
+import avatar from "@/assets/images/avatar.jpeg";
+import Image from "next/image";
+import { Target } from "@/types";
+import { TbArrowUpRight, TbBrandGithubCopilot } from "react-icons/tb";
+import clsx from "clsx";
+const name = "Estarlincito";
 
 //SEO
 export const metadata: Metadata = {
   title: name,
-  description: 'Desarrollador Web, escritor y creador.',
+  description: "Desarrollador Web, escritor y creador.",
 };
 
 //list of links
@@ -24,19 +23,19 @@ type _links = {
 
 const links: _links = [
   {
-    route: 'https://twitter.com/estarlincito',
-    label: 'Sígueme en Twitter',
-    target: '_blank',
+    route: "https://twitter.com/estarlincito",
+    label: "Sígueme en Twitter",
+    target: "_blank",
   },
   {
-    route: '/blog',
-    label: 'Mira mi Blog',
-    target: '_self',
+    route: "/blog",
+    label: "Mira mi Blog",
+    target: "_self",
   },
   {
-    route: '/contact',
-    label: 'Contratame',
-    target: '_self',
+    route: "/contact",
+    label: "Contratame",
+    target: "_self",
   },
 ];
 
@@ -45,22 +44,22 @@ const HomePage = () => {
     <Maindoc>
       <Wrapper>
         <div></div>
-        <section className='flex flex-col items-center gap-y-2 mb-8'>
+        <section className="flex flex-col items-center gap-y-2 mb-8">
           <Image
             alt={name}
-            className='rounded-full mb-3'
+            className="rounded-full mb-3"
             src={avatar}
-            placeholder='blur'
+            placeholder="blur"
             width={100}
             priority
           />
 
-          <Title text={name} size='text-3xl' />
+          <Title text={name} size="text-3xl" />
 
           <p
             className={clsx(
-              'text-center p-2 md:w-[500px] md:p-0 text-base',
-              'text-neutral-600 dark:text-neutral-300'
+              "text-center p-2 md:w-[500px] md:p-0 text-base",
+              "text-neutral-600 dark:text-neutral-300"
             )}
           >
             Hola, soy Estarlicito. Trabajo con el <b>Diseño de páginas web</b>,
@@ -69,11 +68,11 @@ const HomePage = () => {
           </p>
 
           <Linkdoc
-            href='https://github.com/estarlincito'
-            target='_blank'
+            href="https://github.com/estarlincito"
+            target="_blank"
             className={clsx(
-              'flex items-center gap-1',
-              'text-neutral-600 dark:text-neutral-300'
+              "flex items-center gap-1",
+              "text-neutral-600 dark:text-neutral-300"
             )}
           >
             <TbBrandGithubCopilot />
@@ -83,7 +82,7 @@ const HomePage = () => {
 
         <section>
           <Hr />
-          <p className='py-5 text-left'>
+          <p className="py-5 text-left">
             Soy un diseñador web con más de 5 años de experiencia. Me
             especializo en la creación de sitios web modernos, interactivos,
             adaptados a dispositivos móviles y amigables para los motores de
@@ -103,13 +102,13 @@ const HomePage = () => {
           </p>
           <Hr />
 
-          <ul className='mt-5 md:flex md:justify-center md:gap-x-5'>
+          <ul className="mt-5 md:flex md:justify-center md:gap-x-5">
             {links.map((link, index) => (
               <li key={index}>
                 <Linkdoc
                   href={link.route}
                   target={link.target}
-                  className='flex items-center mb-2 md:mb-0'
+                  className="flex items-center mb-2 md:mb-0"
                 >
                   <TbArrowUpRight /> {link.label}
                 </Linkdoc>
