@@ -9,10 +9,12 @@ import { Collapse } from "@/components/UI/molecules";
 const RootLayout: React.FC<Children> = ({ children }) => {
   return (
     <html lang="es">
-      <head>
-        {/* React Dev Tool */}
-        <script type="text/javascript" src="http://localhost:8097" />
-      </head>
+      {process.env.NODE_ENV === "development" ? (
+        <head>
+          {/* React Dev Tool */}
+          <script type="text/javascript" src="http://localhost:8097" />
+        </head>
+      ) : null}
 
       <body
         className={clsx(
