@@ -42,10 +42,10 @@ const HomePage = () => {
     <Maindoc>
       <Wrapper>
         <section className="flex flex-col items-center gap-y-2 mb-8">
-          <figure className="w-32">
+          <figure className="w-32 mb-3">
             <Imagedoc
               alt={name}
-              className="rounded-full mb-3"
+              className="rounded-full"
               src="/images/avatar.jpeg"
             />
           </figure>

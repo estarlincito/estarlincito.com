@@ -16,11 +16,7 @@ const PostCard: React.FC<Blog> = ({
     <div className="shadow-lg rounded-lg">
       <figure className="h-60">
         <Linkdoc href={slug_post} target="_self">
-          <Imagedoc
-            src={cover}
-            alt={teme}
-            className="rounded-t-lg w-full h-full"
-          />
+          <Imagedoc src={cover} alt={teme} className="rounded-t-lg" />
 
           {/* <div className=''>{summary}</div>
           <div className=''>{category}</div> */}
