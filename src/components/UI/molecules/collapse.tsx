@@ -23,14 +23,14 @@ const Collapse = () => {
           )}
         >
           {/* close button */}
-          <Button onClick={offCollapse} className='flex text-2xl'>
+          <Button onClick={offCollapse} className="flex text-2xl">
             <TbX />
           </Button>
           {/* links */}
-          <ul className='col-start-2 row-start-2'>
+          <ul className="col-start-2 row-start-2">
             {sitemap.map((link, id) => (
               <li key={id}>
-                <Linkdoc target='_self' onClick={offCollapse} href={link.route}>
+                <Linkdoc target="_self" onClick={offCollapse} href={link.route}>
                   {link.label}
                 </Linkdoc>
               </li>
@@ -38,7 +38,7 @@ const Collapse = () => {
           </ul>
 
           {/* dark Toggle */}
-          <div className='col-start-1 row-start-6'>
+          <div className="col-start-1 row-start-6">
             <DarkmodeToggle />
           </div>
         </div>

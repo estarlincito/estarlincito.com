@@ -16,15 +16,15 @@ const PostCard: React.FC<Blog> = ({
   slug_post,
 }) => {
   return (
-    <div className='bg-neutral-50 shadow-lg rounded-lg'>
-      <figure className='h-44 xl:h-60'>
-        <Linkdoc href={slug_post} target='_self'>
+    <div className="shadow-lg rounded-lg">
+      <figure className="h-60">
+        <Linkdoc href={slug_post} target="_self">
           <Image
             src={cover}
             alt={teme}
             width={parseInt(coverWidth)}
             height={parseInt(coverHeight)}
-            className='rounded-t-lg w-full h-full'
+            className="rounded-t-lg w-full h-full"
           />
 
           {/* <div className=''>{summary}</div>
@@ -35,17 +35,23 @@ const PostCard: React.FC<Blog> = ({
       <figcaption
         className={clsx(
           'grid grid-flow-row content-between h-28 p-5 gap-y-1',
-          'dark:text-black'
+          'rounded-b-lg',
+          'bg-zinc-100 dark:bg-zinc-800'
         )}
       >
-        <Linkdoc href={slug_post} target='_self' size='text-lg'>
+        <Linkdoc href={slug_post} target="_self" size="text-lg">
           {teme}
         </Linkdoc>
 
-        <div className='flex flex-row justify-between text-neutral-700'>
+        <div
+          className={clsx(
+            'flex flex-row justify-between',
+            'text-neutral-700 dark:text-neutral-400'
+          )}
+        >
           <h5>
             Por&nbsp;
-            <Linkdoc href='/' target='_self'>
+            <Linkdoc href="/" target="_self">
               {author}
             </Linkdoc>
           </h5>
