@@ -1,17 +1,15 @@
-import { Metadata } from "next";
-import { Linkdoc, Title, Hr } from "@/components/HOC";
-import { Maindoc, Wrapper } from "@UI/organisms";
-import avatar from "@/assets/images/avatar.jpeg";
-import Image from "next/image";
-import { Target } from "@/types";
-import { TbArrowUpRight, TbBrandGithubCopilot } from "react-icons/tb";
-import clsx from "clsx";
-const name = "Estarlincito";
+import { Metadata } from 'next';
+import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
+import { Maindoc, Wrapper } from '@UI/organisms';
+import { Target } from '@/types';
+import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
+import clsx from 'clsx';
+const name = 'Estarlincito';
 
 //SEO
 export const metadata: Metadata = {
   title: name,
-  description: "Desarrollador Web, escritor y creador.",
+  description: 'Desarrollador Web, escritor y creador.',
 };
 
 //list of links
@@ -23,19 +21,19 @@ type _links = {
 
 const links: _links = [
   {
-    route: "https://twitter.com/estarlincito",
-    label: "Sígueme en Twitter",
-    target: "_blank",
+    route: 'https://twitter.com/estarlincito',
+    label: 'Sígueme en Twitter',
+    target: '_blank',
   },
   {
-    route: "/blog",
-    label: "Mira mi Blog",
-    target: "_self",
+    route: '/blog',
+    label: 'Mira mi Blog',
+    target: '_self',
   },
   {
-    route: "/contact",
-    label: "Contratame",
-    target: "_self",
+    route: '/contact',
+    label: 'Contratame',
+    target: '_self',
   },
 ];
 
@@ -43,36 +41,32 @@ const HomePage = () => {
   return (
     <Maindoc>
       <Wrapper>
-        <div></div>
         <section className="flex flex-col items-center gap-y-2 mb-8">
-          <Image
-            alt={name}
-            className="rounded-full mb-3"
-            src={avatar}
-            placeholder="blur"
-            width={100}
-            priority
-          />
+          <figure className="w-32">
+            <Imagedoc
+              alt={name}
+              className="rounded-full mb-3"
+              src="/images/avatar.jpeg"
+            />
+          </figure>
 
           <Title text={name} size="text-3xl" />
-
           <p
             className={clsx(
-              "text-center p-2 md:w-[500px] md:p-0 text-base",
-              "text-neutral-600 dark:text-neutral-300"
+              'text-center p-2 md:w-[500px] md:p-0 text-base',
+              'text-neutral-600 dark:text-neutral-300'
             )}
           >
             Hola, soy Estarlicito. Trabajo con el <b>Diseño de páginas web</b>,
             escribo sobre <b>Tecnológia</b>,&nbsp;
             <b>Psicológia y otros temas.</b>
           </p>
-
           <Linkdoc
             href="https://github.com/estarlincito"
             target="_blank"
             className={clsx(
-              "flex items-center gap-1",
-              "text-neutral-600 dark:text-neutral-300"
+              'flex items-center gap-1',
+              'text-neutral-600 dark:text-neutral-300'
             )}
           >
             <TbBrandGithubCopilot />

@@ -1,16 +1,13 @@
-import { Linkdoc } from '@/components/HOC';
+import { Imagedoc, Linkdoc } from '@/components/HOC';
 import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
-import Image from 'next/image';
 
 const PostCard: React.FC<Blog> = ({
   teme,
   category,
   summary,
   cover,
-  coverWidth,
-  coverHeight,
   publishedAt,
   author,
   slug_post,
@@ -19,11 +16,9 @@ const PostCard: React.FC<Blog> = ({
     <div className="shadow-lg rounded-lg">
       <figure className="h-60">
         <Linkdoc href={slug_post} target="_self">
-          <Image
+          <Imagedoc
             src={cover}
             alt={teme}
-            width={parseInt(coverWidth)}
-            height={parseInt(coverHeight)}
             className="rounded-t-lg w-full h-full"
           />
 
