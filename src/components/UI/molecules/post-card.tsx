@@ -13,10 +13,10 @@ const PostCard: React.FC<Blog> = ({
   slug_post,
 }) => {
   return (
-    <div className="shadow-lg rounded-lg">
-      <figure className="h-60">
-        <Linkdoc href={slug_post} target="_self">
-          <Imagedoc src={cover} alt={teme} className="rounded-t-lg" />
+    <div className='shadow-lg rounded-lg'>
+      <figure className='h-60'>
+        <Linkdoc href={slug_post} target='_self'>
+          <Imagedoc src={cover} alt={teme} className='rounded-t-lg' />
 
           {/* <div className=''>{summary}</div>
           <div className=''>{category}</div> */}
@@ -30,19 +30,19 @@ const PostCard: React.FC<Blog> = ({
           'bg-zinc-100 dark:bg-zinc-800'
         )}
       >
-        <Linkdoc href={slug_post} target="_self" size="text-lg">
+        <Linkdoc href={slug_post} target='_self' size='text-lg'>
           {teme}
         </Linkdoc>
 
         <div
           className={clsx(
             'flex flex-row justify-between',
-            'text-neutral-700 dark:text-neutral-400'
+            'text-neutral-700 dark:text-neutral-300'
           )}
         >
           <h5>
             Por&nbsp;
-            <Linkdoc href="/" target="_self">
+            <Linkdoc href='/' target='_self'>
               {author}
             </Linkdoc>
           </h5>

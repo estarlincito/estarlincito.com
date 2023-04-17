@@ -41,16 +41,16 @@ const HomePage = () => {
   return (
     <Maindoc>
       <Wrapper>
-        <section className="flex flex-col items-center gap-y-2 mb-8">
-          <figure className="w-32 mb-3">
+        <section className='flex flex-col items-center gap-y-2 mb-8'>
+          <figure className='w-32 mb-3'>
             <Imagedoc
               alt={name}
-              className="rounded-full"
-              src="/images/avatar.jpeg"
+              className='rounded-full'
+              src='/images/avatar.jpeg'
             />
           </figure>
 
-          <Title text={name} size="text-3xl" />
+          <Title text={name} size='text-3xl' />
           <p
             className={clsx(
               'text-center p-2 md:w-[500px] md:p-0 text-base',
@@ -62,8 +62,8 @@ const HomePage = () => {
             <b>Psicológia y otros temas.</b>
           </p>
           <Linkdoc
-            href="https://github.com/estarlincito"
-            target="_blank"
+            href='https://github.com/estarlincito'
+            target='_blank'
             className={clsx(
               'flex items-center gap-1',
               'text-neutral-600 dark:text-neutral-300'
@@ -76,7 +76,7 @@ const HomePage = () => {
 
         <section>
           <Hr />
-          <p className="py-5 text-left">
+          <p className='py-5 text-left'>
             Soy un diseñador web con más de 5 años de experiencia. Me
             especializo en la creación de sitios web modernos, interactivos,
             adaptados a dispositivos móviles y amigables para los motores de
@@ -96,13 +96,13 @@ const HomePage = () => {
           </p>
           <Hr />
 
-          <ul className="mt-5 md:flex md:justify-center md:gap-x-5">
+          <ul className='mt-5 md:flex md:justify-center md:gap-x-5'>
             {links.map((link, index) => (
               <li key={index}>
                 <Linkdoc
                   href={link.route}
                   target={link.target}
-                  className="flex items-center mb-2 md:mb-0"
+                  className='flex items-center mb-2 md:mb-0'
                 >
                   <TbArrowUpRight /> {link.label}
                 </Linkdoc>

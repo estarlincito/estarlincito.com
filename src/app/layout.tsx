@@ -5,16 +5,22 @@ import { CollapseProvider, ThemeProvider } from '@/context';
 import { Children } from '@/types';
 import clsx from 'clsx';
 import { Collapse } from '@/components/UI/molecules';
+import { Metadata } from 'next';
+import { isDev } from '@/utils';
+
+export const metadata: Metadata = {
+  icons: '/favicons/favicon.ico',
+};
 
 const RootLayout: React.FC<Children> = ({ children }) => {
   return (
-    <html lang="es">
-      {process.env.NODE_ENV === 'development' ? (
+    <html lang='es'>
+      {isDev && (
         <head>
           {/* React Dev Tool */}
-          <script type="text/javascript" src="http://localhost:8097" />
+          <script type='text/javascript' src='http://localhost:8097' />
         </head>
-      ) : null}
+      )}
 
       <body
         className={clsx(
