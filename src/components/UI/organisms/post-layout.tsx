@@ -45,6 +45,11 @@ const Nav: React.FC<NavProps> = ({
         <TbBrandGoogleHome />
       </Li>
 
+      <Li href='/blog'>
+        <TbArrowBadgeRight />
+        <span>Blog</span>
+      </Li>
+
       <Li href={slug_category}>
         <TbArrowBadgeRight />
         <span>{category}</span>
