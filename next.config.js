@@ -7,7 +7,7 @@ const nextConfig = {
 
   experimental: { appDir: true, newNextLinkBehavior: false },
   images: {
-    domains: ['images.unsplash.com', 'images.pexels.com'],
+    domains: ['images.unsplash.com', 'plus.unsplash.com', 'images.pexels.com'],
   },
 };
 
