@@ -1,8 +1,14 @@
-import { Linkdoc, Title } from '@/components/HOC';
+import { IconPlus, Linkdoc, Title } from '@/components/HOC';
 import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
-import { TbArrowBadgeRight, TbBrandGoogleHome } from 'react-icons/tb';
+import {
+  TbArrowBadgeRight,
+  TbBrandGoogleHome,
+  TbClockFilled,
+  TbDiscountCheckFilled,
+  TbEyeFilled,
+} from 'react-icons/tb';
 import PostMdx from './post-mdx';
 import Wrapper from './wrapper';
 
@@ -14,7 +20,11 @@ interface LiProps {
 const Li: React.FC<LiProps> = ({ children, href, className }) => {
   return (
     <li className={className}>
-      <Linkdoc href={href} target='_self' className='flex items-center'>
+      <Linkdoc
+        href={href}
+        target='_self'
+        className='flex flex-row items-center gap-x-[1px]'
+      >
         {children}
       </Linkdoc>
     </li>
@@ -94,6 +104,8 @@ const PostLayout: React.FC<Blog> = ({
   subcategory,
   body,
   tags,
+  check,
+  readingTime,
   publishedAt,
   slug_category,
   slug_subcategory,
@@ -109,6 +121,31 @@ const PostLayout: React.FC<Blog> = ({
         />
 
         <Title text={teme} size='text-2xl' />
+
+        <ul className='flex flex-row gap-x-5'>
+          {check === false ? (
+            <IconPlus>
+              <i className='text-sky-500'>
+                <TbEyeFilled />
+              </i>
+              <span>En revisión</span>
+            </IconPlus>
+          ) : (
+            <IconPlus>
+              <i className='text-sky-500'>
+                <TbDiscountCheckFilled />
+              </i>
+              <span>Verificado</span>
+            </IconPlus>
+          )}
+
+          <IconPlus>
+            <i>
+              <TbClockFilled />
+            </i>
+            <span>{readingTime}</span>
+          </IconPlus>
+        </ul>
 
         <PostMdx doc={body.code} />
 
