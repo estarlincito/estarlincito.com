@@ -4,9 +4,7 @@ import readingTime from 'reading-time';
 //round time
 const displayed = (minutes: number) => {
   const round = Math.ceil(minutes);
-  return round === 1
-    ? `${round} minuto de lectura`
-    : `${round} minutos de lectura`;
+  return round === 1 ? `${round} minuto` : `${round} minutos`;
 };
 
 const computedFields: ComputedFields = {
@@ -52,6 +50,10 @@ export const Resource = defineDocumentType(() => ({
     tags: {
       type: 'list',
       of: { type: 'string' },
+      required: true,
+    },
+    check: {
+      type: 'boolean',
       required: true,
     },
   },
