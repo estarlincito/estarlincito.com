@@ -1,5 +1,4 @@
 import { IconPlus, Linkdoc, Title } from '@/components/HOC';
-import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 import {
@@ -105,57 +104,61 @@ const PostLayout: React.FC<Blog> = ({
   body,
   tags,
   check,
+  author,
+  avathar,
+  cover,
+  coverAlt,
+  updated,
   readingTime,
-  publishedAt,
   slug_category,
   slug_subcategory,
 }) => {
   return (
-    <Wrapper>
-      <section className='flex flex-col gap-y-5'>
-        <Nav
-          category={category}
-          subcategory={subcategory}
-          slug_category={slug_category}
-          slug_subcategory={slug_subcategory}
-        />
+    <Wrapper className='flex flex-col gap-y-5'>
+      <Nav
+        category={category}
+        subcategory={subcategory}
+        slug_category={slug_category}
+        slug_subcategory={slug_subcategory}
+      />
 
-        <Title text={teme} size='text-2xl' />
+      <Title text={teme} size='text-2xl' />
 
-        <ul className='flex flex-row gap-x-5'>
-          {check === false ? (
-            <IconPlus>
-              <i className='text-sky-500'>
-                <TbEyeFilled />
-              </i>
-              <span>En revisión</span>
-            </IconPlus>
-          ) : (
-            <IconPlus>
-              <i className='text-sky-500'>
-                <TbDiscountCheckFilled />
-              </i>
-              <span>Verificado</span>
-            </IconPlus>
-          )}
-
+      <ul className='flex flex-row gap-x-5'>
+        {check === false ? (
           <IconPlus>
-            <i>
-              <TbClockFilled />
+            <i className='text-sky-600 dark:text-sky-400'>
+              <TbEyeFilled />
             </i>
-            <span>{readingTime}</span>
+            <span>En revisión</span>
           </IconPlus>
-        </ul>
+        ) : (
+          <IconPlus>
+            <i className='text-sky-600 dark:text-sky-400'>
+              <TbDiscountCheckFilled />
+            </i>
+            <span>Verificado</span>
+          </IconPlus>
+        )}
 
-        <PostMdx doc={body.code} />
+        <IconPlus>
+          <i className='text-slate-600 dark:text-slate-400'>
+            <TbClockFilled />
+          </i>
+          <span>{readingTime}</span>
+        </IconPlus>
+      </ul>
 
-        <p>
-          <b>Última actualización:</b> el&nbsp;
-          <time dateTime={publishedAt}>{dateFormat(publishedAt)}</time>
-        </p>
+      <PostMdx
+        doc={body.code}
+        author={author}
+        avathar={avathar}
+        cover={cover}
+        coverAlt={coverAlt}
+        updated={updated}
+      />
 
-        <Tags tags={tags} />
-      </section>
+      <Tags tags={tags} />
     </Wrapper>
   );
 };

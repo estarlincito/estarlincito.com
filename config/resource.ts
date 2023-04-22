@@ -47,6 +47,7 @@ export const Resource = defineDocumentType(() => ({
     author: { type: 'string', required: true },
     avathar: { type: 'string', required: true },
     cover: { type: 'string', required: true },
+    coverAlt: { type: 'string', required: true },
     tags: {
       type: 'list',
       of: { type: 'string' },
