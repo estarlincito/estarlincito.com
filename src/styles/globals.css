@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 ol {
-  @apply list-decimal font-bold;
+  @apply list-decimal list-inside font-bold;
 }
 
 ol li {

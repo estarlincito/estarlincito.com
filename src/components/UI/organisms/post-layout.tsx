@@ -77,7 +77,7 @@ interface TagsProps {
 }
 const Tags: React.FC<TagsProps> = ({ tags }) => {
   return (
-    <div className='text-sm w-80'>
+    <div className='text-sm w-80 flex items-center'>
       <h5 className='font-bold'>Tags:</h5>
       <ul className='flex'>
         {tags.map((tag, id) => (

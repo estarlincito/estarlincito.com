@@ -6,14 +6,14 @@ interface Props {
 }
 const Wrapper: React.FC<Props> = ({ children, className }) => {
   return (
-    <section
+    <div
       className={clsx(
         'p-5 md:max-w-3xl m-auto text-left',
         className && className
       )}
     >
       {children}
-    </section>
+    </div>
   );
 };
 
