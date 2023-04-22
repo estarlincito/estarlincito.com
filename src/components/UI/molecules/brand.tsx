@@ -1,4 +1,4 @@
-import { Imagedoc, Linkdoc } from '@/components/HOC';
+import { Linkdoc } from '@/components/HOC';
 import { _Anchor } from '@/types';
 import { Logo } from '@UI/atoms';
 
@@ -9,15 +9,13 @@ interface Props {
 
 const Brand: React.FC<Props> = ({ route, label }) => {
   return (
-    <Linkdoc
-      href={route}
-      target='_self'
-      className='flex flex-row items-center gap-x-3'
-    >
+    <div className='flex flex-row items-center gap-x-3'>
       <Logo />
 
-      <span className='text-lg'>{label}</span>
-    </Linkdoc>
+      <Linkdoc href={route} target='_self'>
+        <span className='text-lg'>{label}</span>
+      </Linkdoc>
+    </div>
   );
 };
 

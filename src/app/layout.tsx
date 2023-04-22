@@ -18,7 +18,7 @@ const RootLayout: React.FC<Children> = ({ children }) => {
       {isDev && (
         <head>
           {/* React Dev Tool */}
-          <script type='text/javascript' src='http://localhost:8097' />
+          {/* <script type='text/javascript' src='http://localhost:8097' /> */}
         </head>
       )}
 

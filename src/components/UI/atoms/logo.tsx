@@ -1,20 +1,23 @@
+import { Linkdoc } from '@/components/HOC';
+
 const Logo = () => {
   return (
-    <svg
-      version='1.0'
-      xmlns='http://www.w3.org/2000/svg'
-      width='25.000000pt'
-      height='25.000000pt'
-      viewBox='0 0 192.000000 192.000000'
-      preserveAspectRatio='xMidYMid meet'
-      className='fill-black dark:fill-white'
-    >
-      <g
-        transform='translate(0.000000,192.000000) scale(0.100000,-0.100000)'
-        stroke='none'
+    <Linkdoc href='/' target='_self'>
+      <svg
+        version='1.0'
+        xmlns='http://www.w3.org/2000/svg'
+        width='25.000000pt'
+        height='25.000000pt'
+        viewBox='0 0 192.000000 192.000000'
+        preserveAspectRatio='xMidYMid meet'
+        className='fill-black dark:fill-white'
       >
-        <path
-          d='M735 1903 c-141 -36 -304 -116 -388 -193 -131 -117 -196 -199 -253
+        <g
+          transform='translate(0.000000,192.000000) scale(0.100000,-0.100000)'
+          stroke='none'
+        >
+          <path
+            d='M735 1903 c-141 -36 -304 -116 -388 -193 -131 -117 -196 -199 -253
  -320 -78 -163 -94 -238 -94 -430 0 -192 16 -267 94 -430 57 -121 122 -203 253
  -320 87 -79 249 -158 395 -194 92 -22 344 -22 436 0 146 36 308 115 395 194
  131 117 196 199 253 320 78 163 94 238 94 430 0 192 -16 267 -94 430 -57 121
@@ -28,9 +31,10 @@ const Logo = () => {
  -131 -334 -93 -119 23 -150 22 -216 -4 -56 -22 -150 -20 -203 4 -36 16 -47 29
  -69 77 -24 52 -27 70 -26 163 0 96 35 336 87 608 l14 73 -43 89 c-33 66 -41
  91 -32 98 27 22 161 84 210 97 29 7 78 14 109 14 46 1 62 -3 87 -24z'
-        />
-      </g>
-    </svg>
+          />
+        </g>
+      </svg>
+    </Linkdoc>
   );
 };
 

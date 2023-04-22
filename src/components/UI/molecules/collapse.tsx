@@ -1,10 +1,11 @@
 'use client';
 import { TbX } from 'react-icons/tb';
-import { DarkmodeToggle } from '@UI/atoms';
+import { DarkmodeToggle, Logo } from '@UI/atoms';
 import { useCollapse } from '@/Hooks';
 import { Button, Linkdoc } from '@/components/HOC';
 import { sitemap } from '@/utils';
 import clsx from 'clsx';
+import Highlight from './highlight';
 
 const Collapse = () => {
   const { collapse, offCollapse } = useCollapse();
@@ -23,22 +24,31 @@ const Collapse = () => {
           )}
         >
           {/* close button */}
-          <Button onClick={offCollapse} className="flex text-2xl">
+          <Button onClick={offCollapse} className='flex text-2xl'>
             <TbX />
           </Button>
+
+          <div className='col-start-8 row-start-1'>
+            <Logo />
+          </div>
           {/* links */}
-          <ul className="col-start-2 row-start-2">
+          <ul className='col-start-2 row-start-2'>
             {sitemap.map((link, id) => (
               <li key={id}>
-                <Linkdoc target="_self" onClick={offCollapse} href={link.route}>
+                <Linkdoc target='_self' onClick={offCollapse} href={link.route}>
                   {link.label}
                 </Linkdoc>
               </li>
             ))}
           </ul>
 
+          {/* highlight */}
+          <div className='col-start-2 row-start-3 mt-8 col-span-6'>
+            <Highlight />
+          </div>
+
           {/* dark Toggle */}
-          <div className="col-start-1 row-start-6">
+          <div className='col-start-1 row-start-6'>
             <DarkmodeToggle />
           </div>
         </div>
