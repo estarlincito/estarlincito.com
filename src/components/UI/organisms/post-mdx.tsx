@@ -1,47 +1,28 @@
-import { Imagedoc, Linkdoc } from '@/components/HOC';
+import { mdxComponents } from '@/components/HOC';
+import { _mdxComponents } from '@/types';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 
-const A: React.FC<JSX.IntrinsicElements['a']> = ({ children, href }) => {
-  return (
-    <Linkdoc href={href !== undefined ? href : '/no-found'} target='_blank'>
-      {children}
-    </Linkdoc>
-  );
-};
+interface Props extends _mdxComponents {
+  doc: string;
+}
 
-const H2: React.FC<JSX.IntrinsicElements['h2']> = ({ children }) => {
-  return <h2 className='font-bold'>{children}</h2>;
-};
-
-const Strong: React.FC<JSX.IntrinsicElements['strong']> = ({ children }) => {
-  return <strong className='font-bold'>{children}</strong>;
-};
-
-const Blockquote: React.FC<JSX.IntrinsicElements['blockquote']> = ({
-  children,
+const PostMdx: React.FC<Props> = ({
+  doc,
+  author,
+  avathar,
+  cover,
+  coverAlt,
+  updated,
 }) => {
-  return (
-    <blockquote className='font-thin border-l-2 pl-3 border-red-400'>
-      {children}
-    </blockquote>
-  );
-};
+  const resorce = mdxComponents({
+    author,
+    avathar,
+    cover,
+    coverAlt,
+    updated,
+  });
 
-const Code: React.FC<JSX.IntrinsicElements['code']> = ({ children }) => {
-  return <code className='text-red-500'>{children}</code>;
-};
-
-const mdxComponents = {
-  Image: Imagedoc,
-  h2: H2,
-  a: A,
-  strong: Strong,
-  blockquote: Blockquote,
-  code: Code,
-};
-
-const PostMdx = ({ doc }: { doc: string }) => {
   const MDXContent = useMDXComponent(doc);
-  return <MDXContent components={mdxComponents} />;
+  return <MDXContent components={resorce} />;
 };
 export default PostMdx;

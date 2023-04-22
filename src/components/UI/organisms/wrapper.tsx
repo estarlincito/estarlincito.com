@@ -1,8 +1,17 @@
-import { Children } from '@/types';
+import clsx from 'clsx';
 
-const Wrapper: React.FC<Children> = ({ children }) => {
+interface Props {
+  children: React.ReactNode;
+  className?: string;
+}
+const Wrapper: React.FC<Props> = ({ children, className }) => {
   return (
-    <section className='p-5 md:max-w-[600px] m-auto text-left'>
+    <section
+      className={clsx(
+        'p-5 md:max-w-3xl m-auto text-left',
+        className && className
+      )}
+    >
       {children}
     </section>
   );
