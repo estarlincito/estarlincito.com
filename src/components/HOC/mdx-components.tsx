@@ -37,6 +37,15 @@ export const mdxComponents = ({
     return <>{children}</>;
   };
 
+  const MdxConclusion: React.FC<Children> = ({ children }) => {
+    return (
+      <>
+        <h2 className='font-bold'>Conclusión</h2>
+        {children}
+      </>
+    );
+  };
+
   const MdxImage: _Image = ({ src, alt, className }) => {
     return <Imagedoc src={src!} alt={alt!} className={className} />;
   };
@@ -98,7 +107,7 @@ export const mdxComponents = ({
   return {
     Intruduction: MdxNoTag,
     Contents: MdxNoTag,
-    Conclusion: MdxNoTag,
+    Conclusion: MdxConclusion,
     Cover: MdxCover,
     Author: MdxAuthor,
     Image: MdxImage,
