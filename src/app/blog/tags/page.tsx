@@ -6,7 +6,7 @@ import clsx from 'clsx';
 
 //SEO
 export const metadata: Metadata = {
-  title: 'Tags | Estarlincito',
+  title: 'Tags',
   description:
     'Desarrollo de tecnologías como HTML, CSS, JS, React, diseño atómico para mejorar la experiencia de usuario y más',
 };

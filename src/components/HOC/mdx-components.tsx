@@ -1,12 +1,11 @@
 import { Blockquote, Linkdoc, Imagedoc } from '@/components/HOC';
-import { _mdxComponents } from '@/types';
+import { Children, _mdxComponents } from '@/types';
 import { dateFormat } from '@/utils';
 import clsx from 'clsx';
 import { TbCalendarDue } from 'react-icons/tb';
 
 //Types
 type _Blockquote = React.FC<JSX.IntrinsicElements['blockquote']>;
-type _Div = React.FC<JSX.IntrinsicElements['div']>;
 type _Image = React.FC<JSX.IntrinsicElements['img']>;
 type _Author = React.FC<JSX.IntrinsicElements['div']>;
 type _A = React.FC<JSX.IntrinsicElements['a']>;
@@ -34,7 +33,7 @@ export const mdxComponents = ({
     );
   };
 
-  const MdxNoTag: _Div = ({ children }) => {
+  const MdxNoTag: React.FC<Children> = ({ children }) => {
     return <>{children}</>;
   };
 
@@ -62,15 +61,13 @@ export const mdxComponents = ({
           <i className='text-slate-600 dark:text-slate-400'>
             <TbCalendarDue />
           </i>
-          <b>Última actualización:</b> el&nbsp;
-          <time dateTime={updated}>{dateFormat(updated)}</time>
+          <span>
+            <b>Última actualización:</b>&nbsp;
+            <time dateTime={updated}>{dateFormat(updated)}</time>
+          </span>
         </div>
       </div>
     );
-  };
-
-  const MdxUpdated: _Author = ({ children }) => {
-    return <>{children}</>;
   };
 
   const MdxH2: _H2 = ({ children }) => {
@@ -104,7 +101,6 @@ export const mdxComponents = ({
     Conclusion: MdxNoTag,
     Cover: MdxCover,
     Author: MdxAuthor,
-    Updated: MdxUpdated,
     Image: MdxImage,
     h2: MdxH2,
     a: MdxA,

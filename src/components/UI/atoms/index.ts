@@ -5,3 +5,5 @@ export { default as MenuToggle } from './bottons/menu-toggle';
 //Links
 export { default as HireMeLink } from './links/hiremelink';
 export { default as TwitterLink } from './links/twitterlink';
+
+export { default as Logo } from './logo';
