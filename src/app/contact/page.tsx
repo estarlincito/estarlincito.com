@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 
 //SEO
 export const metadata: Metadata = {
-  title: 'Contacto | Estarlincito',
+  title: 'Contáctame',
   description: 'Desarrollador Web, escritor y creador.',
 };
 

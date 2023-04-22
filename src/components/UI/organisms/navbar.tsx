@@ -1,8 +1,22 @@
 'use client';
 import { DarkmodeToggle, HireMeLink, MenuToggle, TwitterLink } from '@UI/atoms';
 import clsx from 'clsx';
+import { Brand } from '../molecules';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
+  const [title, setTitle] = useState('');
+  const path = usePathname();
+
+  useEffect(() => {
+    if (path.split('/').length > 4) {
+      setTitle('Artículo');
+    } else {
+      setTitle(document.title);
+    }
+  }, [path]);
+
   return (
     <nav
       className={clsx(
@@ -11,9 +25,10 @@ const Navbar = () => {
         'backdrop-blur dark:bg-black/60 bg-white/60'
       )}
     >
-      <menu className={clsx('col-start-1', 'ml-5')}>
+      <div className={clsx('col-start-1', 'ml-5', 'flex flex-row gap-x-5')}>
         <MenuToggle />
-      </menu>
+        <Brand route={decodeURI(path)} label={title} />
+      </div>
 
       <ul
         className={clsx(

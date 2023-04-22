@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ol {
+  @apply list-decimal font-bold;
+}
+
+ol li {
+  @apply my-5;
+}
+
+ol li p {
+  @apply mb-5 font-normal;
+}
