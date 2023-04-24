@@ -1,6 +1,7 @@
 import { Comment } from '@/types';
 import { distanceToNow } from '@/lib';
 import { useAuth0 } from '@auth0/auth0-react';
+import { Imagedoc } from '../HOC';
 
 type CommentListProps = {
   comments?: Comment[];
@@ -21,13 +22,11 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
           return (
             <div key={comment.created_at} className='flex space-x-4'>
               <div className='flex-shrink-0'>
-                {/* <img
+                <Imagedoc
                   src={comment.user.picture}
                   alt={comment.user.name}
-                  width={40}
-                  height={40}
                   className='rounded-full'
-                /> */}
+                />
               </div>
 
               <div className='flex-grow'>
