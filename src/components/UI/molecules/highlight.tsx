@@ -1,16 +1,10 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { Blockquote } from '@/components/HOC';
-
-interface _highlight {
-  title: string;
-  quote: string;
-  author: string;
-  url: string;
-}
+import { Highlight } from '@/types';
 
 const Highlight = () => {
-  const [highlight, sethighlights] = useState({} as _highlight);
+  const [highlight, sethighlights] = useState({} as Highlight);
 
   useEffect(() => {
     (async () => {
@@ -18,7 +12,7 @@ const Highlight = () => {
         'https://raw.githubusercontent.com/estarlincito/highlights/main/data.json'
       );
 
-      const highlights: _highlight[] = await res.json();
+      const highlights: Highlight[] = await res.json();
       const random = Math.floor(Math.random() * highlights.length);
       sethighlights(highlights[random]);
     })();
@@ -26,10 +20,11 @@ const Highlight = () => {
 
   return (
     <>
-      <Blockquote>&ldquo;{highlight.quote}&rdquo;</Blockquote>
-      <span>
-        <b>{highlight.author}</b>
-      </span>
+      <Blockquote>
+        {highlight.quote}
+        <br />
+        <span className='font-bold'>{highlight.author}</span>
+      </Blockquote>
     </>
   );
 };

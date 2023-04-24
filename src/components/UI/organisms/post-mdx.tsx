@@ -1,12 +1,8 @@
 import { mdxComponents } from '@/components/HOC';
-import { _mdxComponents } from '@/types';
+import { PostMdxProps } from '@/types';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 
-interface Props extends _mdxComponents {
-  doc: string;
-}
-
-const PostMdx: React.FC<Props> = ({
+const PostMdx: React.FC<PostMdxProps> = ({
   doc,
   author,
   avathar,

@@ -1,5 +1,5 @@
 import { Maindoc } from '@/components/UI/organisms';
-import { getTagsPosts } from '@/utils';
+import { getTagsPosts } from '@/lib';
 import { Title, Linkdoc } from '@/components/HOC';
 import { Metadata } from 'next';
 import clsx from 'clsx';
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const TagsPage = () => {
-  const { tags } = getTagsPosts();
+  const tags = getTagsPosts();
   return (
     <Maindoc className='grid items-center justify-center'>
       <section className='grid md:grid-cols-[auto,1fr] md:gap-x-5 gap-y-5 items-center'>

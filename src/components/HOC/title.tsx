@@ -1,12 +1,7 @@
+import { TitleProps } from '@/types';
 import clsx from 'clsx';
 
-interface Props {
-  text: string;
-  size: 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl';
-  className?: string;
-}
-
-const Title: React.FC<Props> = ({ text, size, className }) => {
+const Title: React.FC<TitleProps> = ({ text, size, className }) => {
   return (
     <h1 className={clsx('font-bold', size, className && className)}>{text}</h1>
   );

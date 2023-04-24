@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation';
-import { Post } from '@/utils';
+import { Post } from '@/lib';
 import { PostList, Maindoc } from '@UI/organisms';
-import { params_category } from '@/types';
+import { ParamsCategory } from '@/types';
 
-export const generateMetadata = ({ params }: params_category) => {
+export const generateMetadata = ({ params }: ParamsCategory) => {
   const posts = Post.getCategory({ ...params });
 
   if (posts.length === 0) {
@@ -16,7 +16,7 @@ export const generateMetadata = ({ params }: params_category) => {
   };
 };
 
-const CategoryPage: React.FC<params_category> = ({ params }) => {
+const CategoryPage: React.FC<ParamsCategory> = ({ params }) => {
   const posts = Post.getCategory({ ...params });
 
   if (posts.length === 0) {

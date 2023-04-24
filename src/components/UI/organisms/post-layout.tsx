@@ -1,6 +1,5 @@
 import { IconPlus, Linkdoc, Title } from '@/components/HOC';
 import clsx from 'clsx';
-import { Blog } from 'contentlayer/generated';
 import {
   TbArrowBadgeRight,
   TbBrandGoogleHome,
@@ -10,12 +9,10 @@ import {
 } from 'react-icons/tb';
 import PostMdx from './post-mdx';
 import Wrapper from './wrapper';
+import Comment from '@/components/comment';
+import { LiProps, NavProps, TagsProps } from '@/types';
+import { Blog } from 'contentlayer/generated';
 
-interface LiProps {
-  children: React.ReactNode;
-  href: string;
-  className?: string;
-}
 const Li: React.FC<LiProps> = ({ children, href, className }) => {
   return (
     <li className={className}>
@@ -29,13 +26,6 @@ const Li: React.FC<LiProps> = ({ children, href, className }) => {
     </li>
   );
 };
-
-interface NavProps {
-  category: string;
-  subcategory: string;
-  slug_category: string;
-  slug_subcategory: string;
-}
 
 const Nav: React.FC<NavProps> = ({
   category,
@@ -72,9 +62,6 @@ const Nav: React.FC<NavProps> = ({
   );
 };
 
-interface TagsProps {
-  tags: string[];
-}
 const Tags: React.FC<TagsProps> = ({ tags }) => {
   return (
     <div className='text-sm w-80 flex items-center'>
@@ -159,6 +146,8 @@ const PostLayout: React.FC<Blog> = ({
       />
 
       <Tags tags={tags} />
+
+      <Comment />
     </Wrapper>
   );
 };

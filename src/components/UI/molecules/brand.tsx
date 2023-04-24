@@ -1,13 +1,8 @@
 import { Linkdoc } from '@/components/HOC';
-import { _Anchor } from '@/types';
+import { BrandProps } from '@/types';
 import { Logo } from '@UI/atoms';
 
-interface Props {
-  route: string;
-  label: string;
-}
-
-const Brand: React.FC<Props> = ({ route, label }) => {
+const Brand: React.FC<BrandProps> = ({ route, label }) => {
   return (
     <div className='flex flex-row items-center gap-x-3'>
       <Logo />

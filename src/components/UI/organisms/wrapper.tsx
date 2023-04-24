@@ -1,10 +1,7 @@
+import { WrapperProps } from '@/types';
 import clsx from 'clsx';
 
-interface Props {
-  children: React.ReactNode;
-  className?: string;
-}
-const Wrapper: React.FC<Props> = ({ children, className }) => {
+const Wrapper: React.FC<WrapperProps> = ({ children, className }) => {
   return (
     <div
       className={clsx(

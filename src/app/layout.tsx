@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Footer, Header, Navbar, Opacity } from '@UI/organisms';
 import '@/styles/globals.css';
-import { CollapseProvider, ThemeProvider } from '@/context';
-import { Children } from '@/types';
+import { Auth0, CollapseProvider, ThemeProvider } from '@/context';
+import { ChildrenProps } from '@/types';
 import clsx from 'clsx';
 import { Collapse } from '@/components/UI/molecules';
 import { Metadata } from 'next';
-import { isDev } from '@/utils';
+import { isDev } from '@/lib';
 
 export const metadata: Metadata = {
   icons: '/favicons/favicon.ico',
 };
 
-const RootLayout: React.FC<Children> = ({ children }) => {
+const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <html lang='es'>
       {isDev && (
@@ -28,16 +28,18 @@ const RootLayout: React.FC<Children> = ({ children }) => {
           'dark:bg-black dark:text-neutral-200'
         )}
       >
-        <CollapseProvider>
-          <Opacity />
-          {/* <Header /> */}
-          <ThemeProvider>
-            <Navbar />
-            <Collapse />
-          </ThemeProvider>
-          {children}
-          <Footer />
-        </CollapseProvider>
+        <Auth0>
+          <CollapseProvider>
+            <Opacity />
+            {/* <Header /> */}
+            <ThemeProvider>
+              <Navbar />
+              <Collapse />
+            </ThemeProvider>
+            {children}
+            <Footer />
+          </CollapseProvider>
+        </Auth0>
       </body>
     </html>
   );

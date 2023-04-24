@@ -1,5 +1,5 @@
 import { Imagedoc, Linkdoc } from '@/components/HOC';
-import { dateFormat } from '@/utils';
+import { dateFormat } from '@/lib';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 

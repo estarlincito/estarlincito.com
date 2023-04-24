@@ -1,4 +1,4 @@
-import { Blockquote, Title } from '@/components/HOC';
+import { Title } from '@/components/HOC';
 import { Maindoc } from '@/components/UI/organisms';
 import clsx from 'clsx';
 
@@ -24,9 +24,9 @@ const AboutPage = () => {
     <Maindoc>
       <section>
         <Title text='Acerca de Estarlincito' size='text-2xl' />
-        <Blockquote className={clsx('text-neutral-600 dark:text-neutral-300')}>
+        <p className={clsx('text-neutral-600 dark:text-neutral-300')}>
           Blog de Tecnología, Filosofía, Psicología y Desarrollo Web y mucho más
-        </Blockquote>
+        </p>
 
         <p className='my-5'>
           Este es un blog que explora la tecnología, la filosofía, la psicología

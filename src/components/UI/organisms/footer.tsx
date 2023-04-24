@@ -1,33 +1,25 @@
 import { Linkdoc } from '@/components/HOC';
-import { Target } from '@/types';
-import { sitemap } from '@/utils';
+import { Links, Target, ListProps } from '@/types';
+import { sitemap } from '@/lib';
 import clsx from 'clsx';
 import { allBlogs } from 'contentlayer/generated';
-
-type _links = { route: string; label: string }[];
-interface Props {
-  title: string;
-  links: _links;
-  target: Target;
-  className?: string;
-}
 
 //Blog Category links
 const categorySet = new Set(allBlogs.map(({ category }) => category));
 const _category = Array.from(categorySet);
-const category: _links = _category.map((category) => {
+const category: Links[] = _category.map((category) => {
   return { route: `/blog/${category.toLowerCase()}`, label: category };
 });
 
 //Hireme links
-const hireme: _links = [
+const hireme: Links[] = [
   { route: 'https://linktr.ee/estarlincito', label: 'Linktr' },
   { route: 'https://twitter.com/estarlincito', label: 'Twitter' },
   { route: 'https://github.com/estarlincito', label: 'GitHub' },
   { route: 'https://www.linkedin.com/in/estarlincito', label: 'Linkedin' },
 ];
 
-const List: React.FC<Props> = ({ title, links, target, className }) => {
+const List: React.FC<ListProps> = ({ title, links, target, className }) => {
   return (
     <div className={className}>
       <h3 className='text-lg font-bold'>{title}</h3>

@@ -1,13 +1,10 @@
 import { PostList, Maindoc } from '@/components/UI/organisms';
+import { TagPageProps } from '@/types';
 import { allBlogs } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 
-interface Props {
-  params: { tag: string };
-}
-
 //SEO
-export const generateMetadata = ({ params }: Props) => {
+export const generateMetadata = ({ params }: TagPageProps) => {
   const { tag } = params;
   const title = `${tag.charAt(0).toUpperCase()}${tag.slice(1)} | Estarlincito`;
 
@@ -18,7 +15,7 @@ export const generateMetadata = ({ params }: Props) => {
   };
 };
 
-const TagPage: React.FC<Props> = ({ params }) => {
+const TagPage: React.FC<TagPageProps> = ({ params }) => {
   const { tag } = params;
 
   const posts = allBlogs.filter((item) =>

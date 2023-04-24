@@ -16,5 +16,5 @@ export const getTagsPosts = () => {
     tags.push({ tag: key, count: count[key] });
   }
 
-  return { tags };
+  return tags;
 };

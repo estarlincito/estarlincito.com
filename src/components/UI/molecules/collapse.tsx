@@ -3,7 +3,7 @@ import { TbX } from 'react-icons/tb';
 import { DarkmodeToggle, Logo } from '@UI/atoms';
 import { useCollapse } from '@/Hooks';
 import { Button, Linkdoc } from '@/components/HOC';
-import { sitemap } from '@/utils';
+import { sitemap } from '@/lib';
 import clsx from 'clsx';
 import Highlight from './highlight';
 
@@ -43,7 +43,7 @@ const Collapse = () => {
           </ul>
 
           {/* highlight */}
-          <div className='col-start-2 row-start-3 mt-8 col-span-6'>
+          <div className='col-start-2 row-start-3 pt-16 col-span-6'>
             <Highlight />
           </div>
 

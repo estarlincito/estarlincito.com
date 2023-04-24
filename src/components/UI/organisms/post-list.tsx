@@ -1,13 +1,9 @@
-import { sortByDate } from '@/utils';
+import { sortByDate } from '@/lib';
 import clsx from 'clsx';
-import { Blog } from 'contentlayer/generated';
 import { PostCard } from '../molecules';
+import { PostListProsp } from '@/types';
 
-interface Prosp {
-  posts: Blog[];
-}
-
-const PostList: React.FC<Prosp> = ({ posts }) => {
+const PostList: React.FC<PostListProsp> = ({ posts }) => {
   const _posts = sortByDate(posts);
 
   return (

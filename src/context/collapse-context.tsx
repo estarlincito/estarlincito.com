@@ -1,18 +1,12 @@
 'use client';
-import { Children } from '@/types';
+import { ChildrenProps, Collapse, CollapseContextValue } from '@/types';
 import { createContext, useState } from 'react';
 
-type Collapse = 'ON' | 'OFF';
-interface Context {
-  collapse: Collapse;
-  setCollapse: (collapse: Collapse) => void;
-}
-
 //set context
-export const CollapseContext = createContext({} as Context);
+export const CollapseContext = createContext({} as CollapseContextValue);
 
 //Provider context
-export const CollapseProvider: React.FC<Children> = ({ children }) => {
+export const CollapseProvider: React.FC<ChildrenProps> = ({ children }) => {
   const [collapse, setCollapse] = useState<Collapse>('OFF');
 
   return (

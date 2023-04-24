@@ -1,16 +1,12 @@
+import { ChildrenProps } from '@/types';
 import clsx from 'clsx';
 
-interface Props {
-  children: React.ReactNode;
-  className?: string;
-}
-
-const Blockquote: React.FC<Props> = ({ children, className }) => {
+const Blockquote: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <blockquote
       className={clsx(
-        'font-light text-neutral-700 dark:text-neutral-300',
-        className && className
+        'border-l-2 pl-3 border-slate-600 border:text-slate-400',
+        'font-light text-neutral-600 dark:text-neutral-400'
       )}
     >
       {children}

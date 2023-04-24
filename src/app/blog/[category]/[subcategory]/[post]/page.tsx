@@ -1,10 +1,10 @@
-import { Post } from '@/utils';
+import { Post } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout, Maindoc } from '@UI/organisms';
-import { params_post } from '@/types';
+import { ParamsPost } from '@/types';
 
 //SEO
-export const generateMetadata = ({ params }: params_post) => {
+export const generateMetadata = ({ params }: ParamsPost) => {
   const post = Post.getPost({ ...params });
 
   if (post === undefined) {
@@ -16,7 +16,7 @@ export const generateMetadata = ({ params }: params_post) => {
   };
 };
 
-const postPage: React.FC<params_post> = ({ params }) => {
+const postPage: React.FC<ParamsPost> = ({ params }) => {
   const post = Post.getPost({ ...params });
 
   if (post === undefined) {

@@ -1,10 +1,7 @@
+import { IconPlusProps } from '@/types';
 import clsx from 'clsx';
 
-interface Props {
-  children: React.ReactNode;
-  className?: string;
-}
-const IconPlus: React.FC<Props> = ({ children, className }) => {
+const IconPlus: React.FC<IconPlusProps> = ({ children, className }) => {
   return (
     <li
       className={clsx(

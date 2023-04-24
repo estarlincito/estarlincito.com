@@ -1,17 +1,18 @@
-import { Blockquote, Linkdoc, Imagedoc } from '@/components/HOC';
-import { Children, _mdxComponents } from '@/types';
-import { dateFormat } from '@/utils';
-import clsx from 'clsx';
-import { TbCalendarDue } from 'react-icons/tb';
+import { Linkdoc, Imagedoc, Blockquote } from '@/components/HOC';
+import { dateFormat } from '@/lib';
+import {
+  AProps,
+  ImageProps,
+  AuthorProps,
+  BlockquoteProps,
+  ChildrenProps,
+  CodeProps,
+  H2Props,
+  MDXComponents,
+  StrongProps,
+} from '@/types';
 
-//Types
-type _Blockquote = React.FC<JSX.IntrinsicElements['blockquote']>;
-type _Image = React.FC<JSX.IntrinsicElements['img']>;
-type _Author = React.FC<JSX.IntrinsicElements['div']>;
-type _A = React.FC<JSX.IntrinsicElements['a']>;
-type _H2 = React.FC<JSX.IntrinsicElements['h2']>;
-type _Strong = React.FC<JSX.IntrinsicElements['strong']>;
-type _Code = React.FC<JSX.IntrinsicElements['code']>;
+import { TbCalendarDue } from 'react-icons/tb';
 
 export const mdxComponents = ({
   author,
@@ -19,8 +20,9 @@ export const mdxComponents = ({
   cover,
   coverAlt,
   updated,
-}: _mdxComponents) => {
-  const MdxA: _A = ({ children, href }) => {
+}: MDXComponents) => {
+  //A
+  const MdxA: AProps = ({ children, href }) => {
     const target = href!.includes('https://');
     return (
       <Linkdoc
@@ -33,11 +35,13 @@ export const mdxComponents = ({
     );
   };
 
-  const MdxNoTag: React.FC<Children> = ({ children }) => {
+  // NoTag
+  const MdxNoTag: React.FC<ChildrenProps> = ({ children }) => {
     return <>{children}</>;
   };
 
-  const MdxConclusion: React.FC<Children> = ({ children }) => {
+  //Conclusion
+  const MdxConclusion: React.FC<ChildrenProps> = ({ children }) => {
     return (
       <>
         <h2 className='font-bold'>Conclusión</h2>
@@ -46,15 +50,18 @@ export const mdxComponents = ({
     );
   };
 
-  const MdxImage: _Image = ({ src, alt, className }) => {
+  //Image
+  const MdxImage: ImageProps = ({ src, alt, className }) => {
     return <Imagedoc src={src!} alt={alt!} className={className} />;
   };
 
-  const MdxCover: _Image = () => {
+  //Cover
+  const MdxCover: ImageProps = () => {
     return <Imagedoc src={cover} alt={coverAlt} />;
   };
 
-  const MdxAuthor: _Author = () => {
+  //Author
+  const MdxAuthor: AuthorProps = () => {
     return (
       <div className='ml-5'>
         <div className=' flex flex-row items-center gap-x-5'>
@@ -79,28 +86,23 @@ export const mdxComponents = ({
     );
   };
 
-  const MdxH2: _H2 = ({ children }) => {
+  //H2
+  const MdxH2: H2Props = ({ children }) => {
     return <h2 className='font-bold'>{children}</h2>;
   };
 
-  const MdxStrong: _Strong = ({ children }) => {
+  //Strong
+  const MdxStrong: StrongProps = ({ children }) => {
     return <strong className='font-bold'>{children}</strong>;
   };
 
-  const MdxBlockquote: _Blockquote = ({ children }) => {
-    return (
-      <Blockquote
-        className={clsx(
-          'text-base border-l-2 pl-3',
-          'border-slate-600 dark:border-slate-400'
-        )}
-      >
-        {children}
-      </Blockquote>
-    );
+  //Blockquote
+  const MdxBlockquote: BlockquoteProps = ({ children }) => {
+    return <Blockquote>{children}</Blockquote>;
   };
 
-  const MdxCode: _Code = ({ children }) => {
+  //Code
+  const MdxCode: CodeProps = ({ children }) => {
     return <code className='text-red-500'>{children}</code>;
   };
 

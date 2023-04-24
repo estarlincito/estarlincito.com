@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
 import { Maindoc, Wrapper } from '@UI/organisms';
-import { Target } from '@/types';
+import { Links, Target } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
 const name = 'Estarlincito';
@@ -13,13 +13,8 @@ export const metadata: Metadata = {
 };
 
 //list of links
-type _links = {
-  route: string;
-  label: string;
-  target: Target;
-}[];
 
-const links: _links = [
+const links: Links[] = [
   {
     route: 'https://twitter.com/estarlincito',
     label: 'Sígueme en Twitter',
@@ -101,7 +96,7 @@ const HomePage = () => {
               <li key={index}>
                 <Linkdoc
                   href={link.route}
-                  target={link.target}
+                  target={link.target!}
                   className='flex items-center mb-2 md:mb-0'
                 >
                   <TbArrowUpRight /> {link.label}

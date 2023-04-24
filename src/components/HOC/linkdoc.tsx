@@ -1,8 +1,8 @@
-import { _Anchor } from '@/types';
+import { AnchorProps } from '@/types';
 import { clsx } from 'clsx';
 import Link from 'next/link';
 
-const Linkdoc: React.FC<_Anchor> = ({
+const Linkdoc: React.FC<AnchorProps> = ({
   href,
   target,
   children,
