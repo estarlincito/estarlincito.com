@@ -22,15 +22,10 @@ export interface Comment {
   text: string;
   user: User;
 }
-//Post
-export interface Post {
-  slug?: string;
-  title?: string;
-  author?: string;
-  date?: Date;
-  content?: string;
-  excerpt?: string;
-  [key: string]: any;
+//CommentListProps
+export interface CommentListProps {
+  comments?: Comment[];
+  onDelete: (comment: Comment) => Promise<void>;
 }
 //MDXComponents
 export interface MDXComponents {

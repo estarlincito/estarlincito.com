@@ -5,6 +5,7 @@ import { clearUrl } from './clearUrl';
 
 export const deleteComment = async (req: Request) => {
   const url = clearUrl(req.headers.get('referer')!);
+
   const authorization = req.headers.get('authorization');
   const { comment }: { url: string; comment: Comment } = await req.json();
 
@@ -18,7 +19,7 @@ export const deleteComment = async (req: Request) => {
 
   try {
     // verify user token
-    const user: User = await getUser(authorization);
+    const user: User = await getUser(authorization!);
     if (!user) return new Response('Invalid token.', { status: 400 });
     comment.user.email = user.email;
 
@@ -31,8 +32,8 @@ export const deleteComment = async (req: Request) => {
 
     // delete
     await redis.lrem(url, 0, JSON.stringify(comment));
-    return new Response('end', { status: 200 });
+    return new Response('sucess', { status: 200 });
   } catch (err) {
-    return new Response('', { status: 400 });
+    return new Response('fail', { status: 400 });
   }
 };

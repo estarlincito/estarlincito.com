@@ -1,14 +1,9 @@
-import { Comment } from '@/types';
+import { CommentListProps } from '@/types';
 import { distanceToNow } from '@/lib';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Imagedoc } from '../HOC';
 
-type CommentListProps = {
-  comments?: Comment[];
-  onDelete: (comment: Comment) => Promise<void>;
-};
-
-export default function CommentList({ comments, onDelete }: CommentListProps) {
+const CommentList = ({ comments, onDelete }: CommentListProps) => {
   const { user } = useAuth0();
 
   return (
@@ -22,11 +17,11 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
           return (
             <div key={comment.created_at} className='flex space-x-4'>
               <div className='flex-shrink-0'>
-                <Imagedoc
+                {/* <Imagedoc
                   src={comment.user.picture}
                   alt={comment.user.name}
                   className='rounded-full'
-                />
+                /> */}
               </div>
 
               <div className='flex-grow'>
@@ -53,4 +48,6 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
         })}
     </div>
   );
-}
+};
+
+export default CommentList;

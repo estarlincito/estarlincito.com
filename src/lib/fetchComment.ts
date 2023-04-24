@@ -11,11 +11,10 @@ export const fetchComment = async (req: Request) => {
   }
   try {
     // get data
-    const rawComments = await redis.lrange(url, 0, -1);
+    const rawComments = (await redis.lrange(url, 0, -1)) as Comment[];
 
-    //string data to object
-    const comments = rawComments.map((c: string) => {
-      const comment: Comment = JSON.parse(c);
+    //delete user email
+    const comments = rawComments.map((comment) => {
       delete comment.user.email;
       return comment;
     });

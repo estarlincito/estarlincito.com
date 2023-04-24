@@ -45,6 +45,7 @@ export const useComments = () => {
           'Content-Type': 'application/json',
         },
       });
+
       await mutate();
     } catch (err) {
       console.log(err);
