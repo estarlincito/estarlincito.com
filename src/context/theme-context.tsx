@@ -3,8 +3,6 @@ import { useLocalStorage } from '@/Hooks';
 import { ChildrenProps, Theme, ThemeContextValue } from '@/types';
 import { createContext } from 'react';
 
-//set context
-
 export const ThemeContext = createContext({} as ThemeContextValue);
 
 export const ThemeProvider: React.FC<ChildrenProps> = ({ children }) => {

@@ -1,12 +1,16 @@
 import { Linkdoc, Blockquote, Title } from '@/components/HOC';
 import { Maindoc, Wrapper } from '@/components/UI/organisms';
-import { Metadata } from 'next';
+import { SEO } from '@/lib';
 
 //SEO
-export const metadata: Metadata = {
+export const { metadata } = new SEO({
   title: 'Contáctame',
-  description: 'Desarrollador Web, escritor y creador.',
-};
+  description:
+    'Si está buscando ayuda para construir algo que tenga un impacto y sostenibilidad, hablemos :)',
+  openGraph: { url: 'https://estarlincito.com/contact' },
+  imagesUrl: '/favicons/avathar.png',
+  imagesAlt: 'Avathar',
+});
 
 const ContactPage = () => {
   return (

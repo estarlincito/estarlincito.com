@@ -1,30 +1,26 @@
 import { PostList, Maindoc } from '@/components/UI/organisms';
-import { setMetadata } from '@/lib';
+import { SEO } from '@/lib';
 import { TagPageProps } from '@/types';
 import { allBlogs } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 
 //SEO
-export const generateMetadata = ({ params }: TagPageProps) => {
-  const { tag } = params;
-  const title = `${tag.charAt(0).toUpperCase()}${tag.slice(1)} | Estarlincito`;
-
-  return setMetadata({
-    title,
+export const generateMetadata = ({ params: { tag } }: TagPageProps) => {
+  const { metadata } = new SEO({
+    title: `Tag | ${decodeURI(tag)}`,
     description:
       'Artículos informativos, consejos prácticos y enlaces a recursos útiles.',
-    appUrl: `https://estarlincito.com/blog/tags`,
-    imageUrl:
+    openGraph: { url: `https://estarlincito.com/blog/tags/${tag}` },
+    imagesUrl:
       'https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-    imageAlt: 'imagen de palabras',
+    imagesAlt: 'imagen de palabras',
   });
+  return metadata;
 };
 
-const TagPage: React.FC<TagPageProps> = ({ params }) => {
-  const { tag } = params;
-
+const TagPage: React.FC<TagPageProps> = ({ params: { tag } }) => {
   const posts = allBlogs.filter((item) =>
-    item.tags.some((tagItem) => tagItem === tag)
+    item.tags.some((tagItem) => tagItem === decodeURI(tag))
   );
 
   if (posts.length === 0) {

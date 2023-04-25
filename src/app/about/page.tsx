@@ -1,15 +1,16 @@
 import { Title } from '@/components/HOC';
 import { Maindoc } from '@/components/UI/organisms';
-import { setMetadata } from '@/lib';
+import { SEO } from '@/lib';
 import clsx from 'clsx';
 
-export const metadata = setMetadata({
+//SEO
+export const { metadata } = new SEO({
   title: 'Acerca de Estarlincito',
   description:
     'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más.',
-  appUrl: `https://estarlincito.com/about`,
-  imageUrl: '/favicons/avathar.png',
-  imageAlt: 'Avathar',
+  openGraph: { url: 'https://estarlincito.com/about' },
+  imagesUrl: '/favicons/avathar.png',
+  imagesAlt: 'Avathar',
 });
 
 const temas = [

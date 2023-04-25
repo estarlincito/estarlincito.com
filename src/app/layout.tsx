@@ -4,22 +4,9 @@ import { CollapseProvider, ThemeProvider, Auth0 } from '@/context';
 import { NextAuthProvider } from '@/context';
 import { Collapse } from '@/components/UI/molecules';
 import { ChildrenProps } from '@/types';
-import { Metadata } from 'next';
 import '@/styles/globals.css';
 import { isDev } from '@/lib';
 import clsx from 'clsx';
-
-export const metadata: Metadata = {
-  icons: {
-    icon: '/favicons/favicon.ico',
-    shortcut: '/shortcut-icon.png',
-  },
-  openGraph: {
-    siteName: 'estarlincito.com',
-    locale: 'es-US',
-    type: 'website',
-  },
-};
 
 const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
   return (

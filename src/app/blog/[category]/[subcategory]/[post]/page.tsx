@@ -1,4 +1,4 @@
-import { Post, setMetadata } from '@/lib';
+import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout, Maindoc } from '@UI/organisms';
 import { ParamsPost } from '@/types';
@@ -11,16 +11,20 @@ export const generateMetadata = ({ params }: ParamsPost) => {
     return;
   }
 
-  return setMetadata({
+  const { metadata } = new SEO({
     title: post.teme,
     description: post.summary,
-    type: 'article',
-    publishedTime: post.publishedAt,
-    author: post.author,
-    appUrl: `https://estarlincito.com/blog${post.slug_post}`,
-    imageUrl: post.cover,
-    imageAlt: post.coverAlt,
+    openGraph: {
+      type: 'article',
+      publishedTime: post.publishedAt,
+      authors: post.author,
+      url: `https://estarlincito.com/blog${post.slug_post}`,
+    },
+    imagesUrl: post.cover,
+    imagesAlt: post.coverAlt,
   });
+
+  return metadata;
 };
 
 const postPage: React.FC<ParamsPost> = ({ params }) => {
@@ -33,7 +37,6 @@ const postPage: React.FC<ParamsPost> = ({ params }) => {
   return (
     <Maindoc>
       <PostLayout {...post} />
-      {/* <aside></aside> */}
     </Maindoc>
   );
 };

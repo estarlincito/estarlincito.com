@@ -1,29 +1,21 @@
-import { Metadata } from 'next';
 import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
 import { Maindoc, Wrapper } from '@UI/organisms';
 import { Links } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
-import {
-  LoginButton,
-  LogoutButton,
-  ProfileButton,
-  RegisterButton,
-} from '@/components/nextauth';
-import { setMetadata } from '@/lib';
+import { SEO } from '@/lib';
 const name = 'Estarlincito';
 
 //SEO
-export const metadata = setMetadata({
+export const { metadata } = new SEO({
   title: name,
   description: 'Desarrollador Web, escritor y creador.',
-  appUrl: `https://estarlincito.com`,
-  imageUrl: '/favicons/avathar.png',
-  imageAlt: 'Avathar',
+  openGraph: { url: 'https://estarlincito.com' },
+  imagesUrl: '/favicons/avathar.png',
+  imagesAlt: 'Avathar',
 });
 
 //list of links
-
 const links: Links[] = [
   {
     route: 'https://twitter.com/estarlincito',
@@ -46,12 +38,6 @@ const HomePage = () => {
   return (
     <Maindoc>
       <Wrapper>
-        {/* <div>
-          <LoginButton />
-          <RegisterButton />
-          <LogoutButton />
-          <ProfileButton />
-        </div> */}
         <section className='flex flex-col items-center gap-y-2 mb-8'>
           <figure className='w-32 mb-3'>
             <Imagedoc
