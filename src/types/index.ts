@@ -181,6 +181,17 @@ export interface CollapseContextValue {
   setCollapse: (collapse: Collapse) => void;
 }
 
+//MetadataPorps
+export interface MetadataPorps {
+  title: string;
+  description: string;
+  appUrl: string;
+  imageUrl: string;
+  imageAlt: string;
+  type?: 'article';
+  publishedTime?: string;
+  author?: string;
+}
 ////MDX Components
 export type BlockquoteProps = React.FC<JSX.IntrinsicElements['blockquote']>;
 export type ImageProps = React.FC<JSX.IntrinsicElements['img']>;

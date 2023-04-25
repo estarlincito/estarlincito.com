@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
 import { Maindoc, Wrapper } from '@UI/organisms';
-import { Links, Target } from '@/types';
+import { Links } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
 import {
@@ -10,30 +10,17 @@ import {
   ProfileButton,
   RegisterButton,
 } from '@/components/nextauth';
-const title = 'Estarlincito';
+import { setMetadata } from '@/lib';
+const name = 'Estarlincito';
 
 //SEO
-export const metadata: Metadata = {
-  title,
-  openGraph: {
-    title,
-    description: 'Desarrollador Web, escritor y creador.',
-    url: 'estarlincito.com',
-    images: [
-      {
-        url: '/favicons/avathar.png',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: '/favicons/avathar.png',
-        width: 1800,
-        height: 1600,
-        alt: 'logo',
-      },
-    ],
-  },
-};
+export const metadata = setMetadata({
+  title: name,
+  description: 'Desarrollador Web, escritor y creador.',
+  appUrl: `https://estarlincito.com`,
+  imageUrl: '/favicons/avathar.png',
+  imageAlt: 'Avathar',
+});
 
 //list of links
 
@@ -68,13 +55,13 @@ const HomePage = () => {
         <section className='flex flex-col items-center gap-y-2 mb-8'>
           <figure className='w-32 mb-3'>
             <Imagedoc
-              alt={title}
+              alt={name}
               className='rounded-full'
               src='/images/avatar.jpeg'
             />
           </figure>
 
-          <Title text={title} size='text-3xl' />
+          <Title text={name} size='text-3xl' />
           <p
             className={clsx(
               'text-center p-2 md:w-[500px] md:p-0 text-base',

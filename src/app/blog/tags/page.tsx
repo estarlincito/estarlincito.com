@@ -1,15 +1,20 @@
 import { Maindoc } from '@/components/UI/organisms';
 import { getTagsPosts } from '@/lib';
 import { Title, Linkdoc } from '@/components/HOC';
-import { Metadata } from 'next';
+import { setMetadata } from '@/lib';
 import clsx from 'clsx';
 
 //SEO
-export const metadata: Metadata = {
+
+export const metadata = setMetadata({
   title: 'Tags',
   description:
     'Desarrollo de tecnologías como HTML, CSS, JS, React, diseño atómico para mejorar la experiencia de usuario y más',
-};
+  appUrl: `https://estarlincito.com/tags`,
+  imageUrl:
+    'https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+  imageAlt: 'imagen de palabras',
+});
 
 const TagsPage = () => {
   const tags = getTagsPosts();

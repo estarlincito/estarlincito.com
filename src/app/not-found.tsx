@@ -1,10 +1,15 @@
 import { Linkdoc } from '@/components/HOC';
 import Main from '@/components/UI/organisms/maindoc';
+import { setMetadata } from '@/lib';
 import clsx from 'clsx';
 
-export const metadata = {
+export const metadata = setMetadata({
   title: 'Página no encontrada',
-};
+  description: 'Esta página no existe.',
+  appUrl: `https://not-fount.com`,
+  imageUrl: '/favicons/avathar.png',
+  imageAlt: 'Avathar',
+});
 
 const NotFound = () => {
   return (

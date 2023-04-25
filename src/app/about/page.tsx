@@ -1,12 +1,16 @@
 import { Title } from '@/components/HOC';
 import { Maindoc } from '@/components/UI/organisms';
+import { setMetadata } from '@/lib';
 import clsx from 'clsx';
 
-export const metadata = {
+export const metadata = setMetadata({
   title: 'Acerca de Estarlincito',
   description:
     'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más.',
-};
+  appUrl: `https://estarlincito.com/about`,
+  imageUrl: '/favicons/avathar.png',
+  imageAlt: 'Avathar',
+});
 
 const temas = [
   'Tecnología',

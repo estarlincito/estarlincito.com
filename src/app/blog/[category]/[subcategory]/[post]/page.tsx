@@ -1,4 +1,4 @@
-import { Post, dateFormat } from '@/lib';
+import { Post, setMetadata } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout, Maindoc } from '@UI/organisms';
 import { ParamsPost } from '@/types';
@@ -10,25 +10,17 @@ export const generateMetadata = ({ params }: ParamsPost) => {
   if (post === undefined) {
     return;
   }
-  return {
-    title: post.teme,
 
-    openGraph: {
-      title: post.teme,
-      description: post.summary,
-      url: `http://estarlincito.com${decodeURI(post.slug_post)}`,
-      type: 'article',
-      publishedTime: dateFormat(post.publishedAt),
-      authors: post.author,
-      images: [
-        {
-          url: post.cover,
-          width: 800,
-          height: 600,
-        },
-      ],
-    },
-  };
+  return setMetadata({
+    title: post.teme,
+    description: post.summary,
+    type: 'article',
+    publishedTime: post.publishedAt,
+    author: post.author,
+    appUrl: `https://estarlincito.com/blog${post.slug_post}`,
+    imageUrl: post.cover,
+    imageAlt: post.coverAlt,
+  });
 };
 
 const postPage: React.FC<ParamsPost> = ({ params }) => {
