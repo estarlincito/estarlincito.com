@@ -1,4 +1,4 @@
-import { Post } from '@/lib';
+import { Post, dateFormat } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout, Maindoc } from '@UI/organisms';
 import { ParamsPost } from '@/types';
@@ -12,7 +12,26 @@ export const generateMetadata = ({ params }: ParamsPost) => {
   }
   return {
     title: post.teme,
-    description: post.summary,
+    icons: {
+      icon: '/favicons/favicon.ico',
+      shortcut: '/shortcut-icon.png',
+    },
+
+    openGraph: {
+      title: post.teme,
+      description: post.summary,
+      url: `http://estarlincito.com/${post.slug_post}`,
+      type: 'article',
+      publishedTime: dateFormat(post.publishedAt),
+      authors: post.author,
+      images: [
+        {
+          url: post.cover,
+          width: 800,
+          height: 600,
+        },
+      ],
+    },
   };
 };
 

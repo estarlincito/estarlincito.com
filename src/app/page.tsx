@@ -10,12 +10,29 @@ import {
   ProfileButton,
   RegisterButton,
 } from '@/components/nextauth';
-const name = 'Estarlincito';
+const title = 'Estarlincito';
 
 //SEO
 export const metadata: Metadata = {
-  title: name,
-  description: 'Desarrollador Web, escritor y creador.',
+  title,
+  openGraph: {
+    title,
+    description: 'Desarrollador Web, escritor y creador.',
+    url: 'estarlincito.com',
+    images: [
+      {
+        url: '/favicons/avathar.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/favicons/avathar.png',
+        width: 1800,
+        height: 1600,
+        alt: 'logo',
+      },
+    ],
+  },
 };
 
 //list of links
@@ -51,13 +68,13 @@ const HomePage = () => {
         <section className='flex flex-col items-center gap-y-2 mb-8'>
           <figure className='w-32 mb-3'>
             <Imagedoc
-              alt={name}
+              alt={title}
               className='rounded-full'
               src='/images/avatar.jpeg'
             />
           </figure>
 
-          <Title text={name} size='text-3xl' />
+          <Title text={title} size='text-3xl' />
           <p
             className={clsx(
               'text-center p-2 md:w-[500px] md:p-0 text-base',

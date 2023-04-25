@@ -10,7 +10,15 @@ import { isDev } from '@/lib';
 import clsx from 'clsx';
 
 export const metadata: Metadata = {
-  icons: '/favicons/favicon.ico',
+  icons: {
+    icon: '/favicons/favicon.ico',
+    shortcut: '/shortcut-icon.png',
+  },
+  openGraph: {
+    siteName: 'estarlincito.com',
+    locale: 'es-US',
+    type: 'website',
+  },
 };
 
 const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
