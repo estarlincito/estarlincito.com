@@ -9,16 +9,20 @@ export const useComments = () => {
   const { getAccessTokenSilently } = useAuth0();
   const [text, setText] = useState('');
 
-  const { data: comments, mutate } = useSWR<Comment[]>('/api', fetcher, {
-    fallbackData: [],
-  });
+  const { data: comments, mutate } = useSWR<Comment[]>(
+    '/api/comments',
+    fetcher,
+    {
+      fallbackData: [],
+    }
+  );
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const token = await getAccessTokenSilently();
 
     try {
-      await fetch('/api', {
+      await fetch('/api/comments', {
         method: 'POST',
         body: JSON.stringify({ text }),
         headers: {
@@ -37,7 +41,7 @@ export const useComments = () => {
     const token = await getAccessTokenSilently();
 
     try {
-      await fetch('/api', {
+      await fetch('/api/comments', {
         method: 'DELETE',
         body: JSON.stringify({ comment }),
         headers: {

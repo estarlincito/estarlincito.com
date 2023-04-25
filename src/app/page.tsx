@@ -4,6 +4,12 @@ import { Maindoc, Wrapper } from '@UI/organisms';
 import { Links, Target } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
+import {
+  LoginButton,
+  LogoutButton,
+  ProfileButton,
+  RegisterButton,
+} from '@/components/nextauth';
 const name = 'Estarlincito';
 
 //SEO
@@ -36,6 +42,12 @@ const HomePage = () => {
   return (
     <Maindoc>
       <Wrapper>
+        {/* <div>
+          <LoginButton />
+          <RegisterButton />
+          <LogoutButton />
+          <ProfileButton />
+        </div> */}
         <section className='flex flex-col items-center gap-y-2 mb-8'>
           <figure className='w-32 mb-3'>
             <Imagedoc

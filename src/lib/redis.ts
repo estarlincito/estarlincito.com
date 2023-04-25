@@ -8,6 +8,6 @@ const fixUrl = (url: string) => {
 };
 
 export const redis = new Redis({
-  url: fixUrl(process.env.REDIS_URL!),
-  token: fixUrl(process.env.REDIS_TOKEN!),
+  url: fixUrl(process.env.REDIS_URL),
+  token: fixUrl(process.env.REDIS_TOKEN),
 });

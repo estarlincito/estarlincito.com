@@ -1,13 +1,17 @@
+/* eslint-disable @next/next/no-img-element */
 import { CommentListProps } from '@/types';
 import { distanceToNow } from '@/lib';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Imagedoc } from '../HOC';
 
 const CommentList = ({ comments, onDelete }: CommentListProps) => {
   const { user } = useAuth0();
 
   return (
     <div className='space-y-6 mt-10'>
+      {comments!.length > 0 ? (
+        <h2 className='text-lg my-8'>Comentarios recientes</h2>
+      ) : null}
+
       {comments &&
         comments.map((comment) => {
           const isAuthor = user && user.sub === comment.user.sub;
@@ -17,11 +21,13 @@ const CommentList = ({ comments, onDelete }: CommentListProps) => {
           return (
             <div key={comment.created_at} className='flex space-x-4'>
               <div className='flex-shrink-0'>
-                {/* <Imagedoc
+                <img
                   src={comment.user.picture}
                   alt={comment.user.name}
+                  width={40}
+                  height={40}
                   className='rounded-full'
-                /> */}
+                />
               </div>
 
               <div className='flex-grow'>

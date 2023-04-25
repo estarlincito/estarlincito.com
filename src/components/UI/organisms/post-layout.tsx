@@ -147,7 +147,7 @@ const PostLayout: React.FC<Blog> = ({
 
       <Tags tags={tags} />
 
-      <Comment />
+      {/* <Comment /> */}
     </Wrapper>
   );
 };

@@ -7,7 +7,13 @@ const nextConfig = {
 
   experimental: { appDir: true, newNextLinkBehavior: false },
   images: {
-    domains: ['images.unsplash.com', 'plus.unsplash.com', 'images.pexels.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*',
+        pathname: '/**',
+      },
+    ],
   },
 };
 

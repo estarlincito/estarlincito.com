@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Footer, Header, Navbar, Opacity } from '@UI/organisms';
-import '@/styles/globals.css';
-import { Auth0, CollapseProvider, ThemeProvider } from '@/context';
-import { ChildrenProps } from '@/types';
-import clsx from 'clsx';
+import { Footer, Navbar, Opacity } from '@UI/organisms';
+import { CollapseProvider, ThemeProvider, Auth0 } from '@/context';
+import { NextAuthProvider } from '@/context';
 import { Collapse } from '@/components/UI/molecules';
+import { ChildrenProps } from '@/types';
 import { Metadata } from 'next';
+import '@/styles/globals.css';
 import { isDev } from '@/lib';
+import clsx from 'clsx';
 
 export const metadata: Metadata = {
   icons: '/favicons/favicon.ico',

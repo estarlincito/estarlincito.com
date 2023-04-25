@@ -25,7 +25,13 @@ const Navbar = () => {
         'backdrop-blur dark:bg-black/60 bg-white/60'
       )}
     >
-      <div className={clsx('col-start-1', 'ml-5', 'flex flex-row gap-x-5')}>
+      <div
+        className={clsx(
+          'col-start-1 col-span-2',
+          'ml-5',
+          'flex flex-row gap-x-5'
+        )}
+      >
         <MenuToggle />
         <Brand route={decodeURI(path)} label={title} />
       </div>
