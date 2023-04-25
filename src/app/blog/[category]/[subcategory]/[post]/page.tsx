@@ -20,7 +20,7 @@ export const generateMetadata = ({ params }: ParamsPost) => {
     openGraph: {
       title: post.teme,
       description: post.summary,
-      url: `http://estarlincito.com/${post.slug_post}`,
+      url: `http://estarlincito.com${decodeURI(post.slug_post)}`,
       type: 'article',
       publishedTime: dateFormat(post.publishedAt),
       authors: post.author,
