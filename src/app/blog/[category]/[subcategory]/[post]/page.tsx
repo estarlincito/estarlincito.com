@@ -12,10 +12,6 @@ export const generateMetadata = ({ params }: ParamsPost) => {
   }
   return {
     title: post.teme,
-    icons: {
-      icon: '/favicons/favicon.ico',
-      shortcut: '/shortcut-icon.png',
-    },
 
     openGraph: {
       title: post.teme,
