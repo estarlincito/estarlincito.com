@@ -1,12 +1,13 @@
+import { BlogHeader } from '@/components/UI/molecules';
 import { PostList } from '@/components/UI/organisms';
-import { SEO } from '@/lib';
+import { SEO, descriptions } from '@/lib';
 import { allBlogs } from 'contentlayer/generated';
 
 //SEO
+const description = descriptions('blog');
 export const { metadata } = new SEO({
   title: 'Blog',
-  description:
-    'Lee mis pensamientos sobre desarrollo de software, diseño web criptomonedas y mucho más.',
+  description,
   openGraph: { url: 'https://estarlincito.com/blog' },
   imagesUrl:
     'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
@@ -14,7 +15,12 @@ export const { metadata } = new SEO({
 });
 
 const BlogPage = () => {
-  return <PostList posts={allBlogs} />;
+  return (
+    <>
+      <BlogHeader title='Bienvenid@ a mi Blog' sumary={description} />
+      <PostList posts={allBlogs} />
+    </>
+  );
 };
 
 export default BlogPage;

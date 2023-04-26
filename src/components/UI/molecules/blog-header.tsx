@@ -1,8 +1,9 @@
 import { Blockquote, Title } from '@/components/HOC';
+import { Description } from '@/types';
 
 interface Props {
   title: string;
-  sumary: string;
+  sumary: Description;
 }
 const BlogHeader: React.FC<Props> = ({ title, sumary }) => {
   return (

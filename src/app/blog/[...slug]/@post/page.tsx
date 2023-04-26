@@ -1,7 +1,7 @@
 import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout } from '@UI/organisms';
-import { ParamsProps } from '@/types';
+import { Description, ParamsProps } from '@/types';
 
 //SEO
 export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
@@ -14,7 +14,7 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
 
   const { metadata } = new SEO({
     title: post.teme,
-    description: post.summary,
+    description: post.summary as Description,
     openGraph: {
       type: 'article',
       publishedTime: post.publishedAt,

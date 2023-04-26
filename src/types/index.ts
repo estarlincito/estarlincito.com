@@ -195,3 +195,6 @@ export type AProps = React.FC<JSX.IntrinsicElements['a']>;
 export type H2Props = React.FC<JSX.IntrinsicElements['h2']>;
 export type StrongProps = React.FC<JSX.IntrinsicElements['strong']>;
 export type CodeProps = React.FC<JSX.IntrinsicElements['code']>;
+
+//Description
+export type { Description } from './descriptions';

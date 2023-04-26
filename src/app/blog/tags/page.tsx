@@ -1,12 +1,11 @@
 import { Title, Linkdoc } from '@/components/HOC';
-import { getTagsPosts, SEO } from '@/lib';
+import { descriptions, getTagsPosts, SEO } from '@/lib';
 import clsx from 'clsx';
 
 //SEO
 export const { metadata } = new SEO({
   title: 'Tags',
-  description:
-    'Desarrollo de tecnologías como HTML, CSS, JS, React, diseño atómico para mejorar la experiencia de const usuario y más',
+  description: descriptions('tags'),
   openGraph: { url: 'https://estarlincito.com/tags' },
   imagesUrl:
     'https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixlib=rb-4.0.3&const ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',

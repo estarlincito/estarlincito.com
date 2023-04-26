@@ -4,6 +4,7 @@ export { fetchComment } from './fetchComment';
 export { createComment } from './createComment';
 export { deleteComment } from './deleteComment';
 export { distanceToNow } from './dateRelative';
+export { descriptions } from './descriptions';
 export { SEO } from './seo';
 export { sortByDate } from './sortDate';
 export { Post } from './post';

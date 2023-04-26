@@ -1,12 +1,11 @@
 import { Title } from '@/components/HOC';
-import { SEO } from '@/lib';
+import { SEO, descriptions } from '@/lib';
 import clsx from 'clsx';
 
 //SEO
 export const { metadata } = new SEO({
   title: 'Acerca de Estarlincito',
-  description:
-    'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más.',
+  description: descriptions('about'),
   openGraph: { url: 'https://estarlincito.com/about' },
   imagesUrl: '/favicons/avathar.png',
   imagesAlt: 'Avathar',
@@ -23,6 +22,7 @@ const temas = [
   'Psicología',
   'Filosofía',
 ];
+
 const AboutPage = () => {
   return (
     <section>

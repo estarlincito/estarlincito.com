@@ -1,11 +1,10 @@
 import { Linkdoc, Blockquote, Title } from '@/components/HOC';
-import { SEO } from '@/lib';
+import { SEO, descriptions } from '@/lib';
 
 //SEO
 export const { metadata } = new SEO({
   title: 'Contáctame',
-  description:
-    'Si está buscando ayuda para construir algo que tenga un impacto y sostenibilidad, hablemos :)',
+  description: descriptions('contact'),
   openGraph: { url: 'https://estarlincito.com/contact' },
   imagesUrl: '/favicons/avathar.png',
   imagesAlt: 'Avathar',

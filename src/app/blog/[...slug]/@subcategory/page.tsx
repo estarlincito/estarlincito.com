@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { Post, SEO } from '@/lib';
+import { Post, SEO, descriptions } from '@/lib';
 import { PostList } from '@UI/organisms';
 import { ParamsProps } from '@/types';
 import { BlogHeader } from '@/components/UI/molecules';
@@ -14,8 +14,7 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
 
   const { metadata } = new SEO({
     title: posts[0].subcategory,
-    description:
-      'Artículos informativos, consejos prácticos y enlaces a recursos útiles.',
+    description: descriptions(posts[0].subcategory as 'dynami'),
     openGraph: {
       url: `estarlincito.com/blog${posts[0].subcategory}`,
     },
@@ -37,8 +36,11 @@ const SubCategoryPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
 
   return (
     <>
-      <BlogHeader title={posts[0].subcategory} sumary='' />
-      <PostList posts={posts} />;
+      <BlogHeader
+        title={posts[0].subcategory}
+        sumary={descriptions(posts[0].subcategory as 'dynami')}
+      />
+      <PostList posts={posts} />
     </>
   );
 };

@@ -3,13 +3,13 @@ import { Container, Wrapper } from '@UI/organisms';
 import { Links } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
-import { SEO } from '@/lib';
+import { SEO, descriptions } from '@/lib';
 const name = 'Estarlincito';
 
 //SEO
 export const { metadata } = new SEO({
   title: name,
-  description: 'Desarrollador Web, escritor y creador.',
+  description: descriptions('app'),
   openGraph: { url: 'https://estarlincito.com' },
   imagesUrl: '/favicons/avathar.png',
   imagesAlt: 'Avathar',
