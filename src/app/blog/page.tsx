@@ -1,4 +1,4 @@
-import { PostList, Maindoc } from '@/components/UI/organisms';
+import { PostList } from '@/components/UI/organisms';
 import { SEO } from '@/lib';
 import { allBlogs } from 'contentlayer/generated';
 
@@ -14,11 +14,7 @@ export const { metadata } = new SEO({
 });
 
 const BlogPage = () => {
-  return (
-    <Maindoc>
-      <PostList posts={allBlogs} />
-    </Maindoc>
-  );
+  return <PostList posts={allBlogs} />;
 };
 
 export default BlogPage;

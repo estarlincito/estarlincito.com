@@ -1,5 +1,5 @@
 import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
-import { Maindoc, Wrapper } from '@UI/organisms';
+import { Container, Wrapper } from '@UI/organisms';
 import { Links } from '@/types';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
@@ -36,7 +36,7 @@ const links: Links[] = [
 
 const HomePage = () => {
   return (
-    <Maindoc>
+    <Container className='flex'>
       <Wrapper>
         <section className='flex flex-col items-center gap-y-2 mb-8'>
           <figure className='w-32 mb-3'>
@@ -108,7 +108,7 @@ const HomePage = () => {
           </ul>
         </section>
       </Wrapper>
-    </Maindoc>
+    </Container>
   );
 };
 

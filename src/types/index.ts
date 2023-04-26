@@ -181,6 +181,12 @@ export interface CollapseContextValue {
   setCollapse: (collapse: Collapse) => void;
 }
 
+//Params
+export type Slug = string;
+export interface ParamsProps {
+  params: { slug: Slug[] };
+}
+
 ////MDX Components
 export type BlockquoteProps = React.FC<JSX.IntrinsicElements['blockquote']>;
 export type ImageProps = React.FC<JSX.IntrinsicElements['img']>;

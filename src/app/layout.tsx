@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Footer, Navbar, Opacity } from '@UI/organisms';
 import { CollapseProvider, ThemeProvider, Auth0 } from '@/context';
-import { NextAuthProvider } from '@/context';
 import { Collapse } from '@/components/UI/molecules';
 import { ChildrenProps } from '@/types';
 import '@/styles/globals.css';

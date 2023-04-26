@@ -1,4 +1,4 @@
-import { PostList, Maindoc } from '@/components/UI/organisms';
+import { PostList } from '@/components/UI/organisms';
 import { SEO } from '@/lib';
 import { TagPageProps } from '@/types';
 import { allBlogs } from 'contentlayer/generated';
@@ -27,11 +27,7 @@ const TagPage: React.FC<TagPageProps> = ({ params: { tag } }) => {
     notFound();
   }
 
-  return (
-    <Maindoc>
-      <PostList posts={posts} />
-    </Maindoc>
-  );
+  return <PostList posts={posts} />;
 };
 
 export default TagPage;

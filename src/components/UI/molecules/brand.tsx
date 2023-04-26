@@ -1,18 +1,17 @@
 import { Linkdoc } from '@/components/HOC';
-import { BrandProps } from '@/types';
 import { Logo } from '@UI/atoms';
 
-const Brand: React.FC<BrandProps> = ({ route, label }) => {
+const Brand = () => {
   return (
-    <div className='flex flex-row items-center gap-x-3'>
+    <Linkdoc href='/' target='_self' className='flex flex-row items-center'>
       <span className='hidden md:block'>
         <Logo />
       </span>
 
-      <Linkdoc href={route} target='_self'>
-        <span className='md:text-lg'>{label}</span>
-      </Linkdoc>
-    </div>
+      <span className='ml-1 md:text-xl font-bold flex items-center'>
+        <span className='md:hidden'>E</span>starlincito
+      </span>
+    </Linkdoc>
   );
 };
 

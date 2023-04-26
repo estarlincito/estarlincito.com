@@ -1,11 +1,12 @@
 import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
-import { PostLayout, Maindoc } from '@UI/organisms';
-import { ParamsPost } from '@/types';
+import { PostLayout } from '@UI/organisms';
+import { ParamsProps } from '@/types';
 
 //SEO
-export const generateMetadata = ({ params }: ParamsPost) => {
-  const post = Post.getPost({ ...params });
+export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
+  const _slug = `${slug[0]}/${slug[1]}/${slug[2]}`;
+  const post = Post(_slug, 'POST')[0];
 
   if (post === undefined) {
     return;
@@ -27,18 +28,15 @@ export const generateMetadata = ({ params }: ParamsPost) => {
   return metadata;
 };
 
-const postPage: React.FC<ParamsPost> = ({ params }) => {
-  const post = Post.getPost({ ...params });
+const postPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
+  const _slug = `${slug[0]}/${slug[1]}/${slug[2]}`;
+  const post = Post(_slug, 'POST')[0];
 
   if (post === undefined) {
     notFound();
   }
 
-  return (
-    <Maindoc>
-      <PostLayout {...post} />
-    </Maindoc>
-  );
+  return <PostLayout {...post} />;
 };
 
 export default postPage;

@@ -13,7 +13,7 @@ const PostCard: React.FC<Blog> = ({
   slug_post,
 }) => {
   return (
-    <div className='shadow-lg rounded-lg'>
+    <article className='shadow-lg rounded-lg w-[350px]'>
       <figure className='h-60'>
         <Linkdoc href={slug_post} target='_self'>
           <Imagedoc src={cover} alt={teme} className='rounded-t-lg' />
@@ -49,7 +49,7 @@ const PostCard: React.FC<Blog> = ({
           <time dateTime={publishedAt}>{dateFormat(publishedAt)}</time>
         </div>
       </figcaption>
-    </div>
+    </article>
   );
 };
 

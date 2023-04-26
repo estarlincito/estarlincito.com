@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation';
 import { Post, SEO } from '@/lib';
-import { PostList, Maindoc } from '@UI/organisms';
-import { ParamsCategory } from '@/types';
+import { PostList } from '@UI/organisms';
+import { ParamsProps } from '@/types';
+import { BlogHeader } from '@/components/UI/molecules';
 
-export const generateMetadata = ({ params }: ParamsCategory) => {
-  const posts = Post.getCategory({ ...params });
+export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
+  const posts = Post(slug[0], 'CATEGORY');
 
   if (posts.length === 0) {
     return;
@@ -23,17 +24,18 @@ export const generateMetadata = ({ params }: ParamsCategory) => {
   return metadata;
 };
 
-const CategoryPage: React.FC<ParamsCategory> = ({ params }) => {
-  const posts = Post.getCategory({ ...params });
+const CategoryPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
+  const posts = Post(slug[0], 'CATEGORY');
 
   if (posts.length === 0) {
     notFound();
   }
 
   return (
-    <Maindoc>
+    <>
+      <BlogHeader title={posts[0].category} sumary='' />
       <PostList posts={posts} />
-    </Maindoc>
+    </>
   );
 };
 

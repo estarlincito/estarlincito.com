@@ -1,11 +1,11 @@
 'use client';
-import { TbX } from 'react-icons/tb';
 import { DarkmodeToggle, Logo } from '@UI/atoms';
-import { useCollapse } from '@/Hooks';
 import { Button, Linkdoc } from '@/components/HOC';
+import { useCollapse } from '@/Hooks';
+import { TbX } from 'react-icons/tb';
+import Highlight from './highlight';
 import { sitemap } from '@/lib';
 import clsx from 'clsx';
-import Highlight from './highlight';
 
 const Collapse = () => {
   const { collapse, offCollapse } = useCollapse();
@@ -17,7 +17,6 @@ const Collapse = () => {
           className={clsx(
             'grid grid-cols-8 grid-rows-6',
             'left-0 top-0 fixed w-[70vw] h-[90vh] rounded-br-md z-20 p-5',
-            // 'dark:bg-gray-900 bg-gray-50 ',
             'sm:w-[50vw] md:w-[40vw] lg:w-[27vw]',
             'bg-inherit',
             'border-b-[1px] border-r-[1px] border-gray-300 dark:border-gray-800'
@@ -29,7 +28,9 @@ const Collapse = () => {
           </Button>
 
           <div className='col-start-8 row-start-1'>
-            <Logo />
+            <Linkdoc href='/' target='_self' onClick={offCollapse}>
+              <Logo />
+            </Linkdoc>
           </div>
           {/* links */}
           <ul className='col-start-2 row-start-2'>

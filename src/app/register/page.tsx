@@ -1,5 +1,11 @@
+import { Container } from '@/components/UI/organisms';
+
 const Register = () => {
-  return <>register</>;
+  return (
+    <Container>
+      <>register</>;
+    </Container>
+  );
 };
 
 export default Register;

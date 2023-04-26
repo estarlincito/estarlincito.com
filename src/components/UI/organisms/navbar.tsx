@@ -33,7 +33,7 @@ const Navbar = () => {
         )}
       >
         <MenuToggle />
-        <Brand route={decodeURI(path)} label={title} />
+        <Brand />
       </div>
 
       <ul

@@ -4,11 +4,12 @@ interface Props {
   children: React.ReactNode;
   className?: string;
 }
-const Maindoc: React.FC<Props> = ({ children, className }) => {
+const Container: React.FC<Props> = ({ children, className }) => {
   return (
     <main
       className={clsx(
-        'container mx-auto my-16 min-h-[80vh] pt-5 md:pt-16',
+        'container mx-auto mt-16 py-5 md:py-16',
+        'max-w-6xl min-h-[80vh]',
         className && className
       )}
     >
@@ -17,4 +18,4 @@ const Maindoc: React.FC<Props> = ({ children, className }) => {
   );
 };
 
-export default Maindoc;
+export default Container;
