@@ -5,8 +5,7 @@ import { Description, Slug, SlugProps } from '@/types';
 
 //SEO
 export const postSEO = (slug: Slug) => {
-  const _slug = `${slug[0]}/${slug[1]}/${slug[2]}`;
-  const post = Post(_slug, 'POST')[0];
+  const post = Post(slug, 'POST')[0];
 
   if (post === undefined) {
     return;
@@ -29,8 +28,7 @@ export const postSEO = (slug: Slug) => {
 };
 
 export const PostPage = ({ slug }: SlugProps) => {
-  const _slug = `${slug[0]}/${slug[1]}/${slug[2]}`;
-  const post = Post(_slug, 'POST')[0];
+  const post = Post(slug, 'POST')[0];
 
   if (post === undefined) {
     notFound();

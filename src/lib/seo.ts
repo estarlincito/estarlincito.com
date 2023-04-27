@@ -17,22 +17,20 @@ export class SEO {
 
   metadata = {
     icons: {
-      icon: '/favicons/favicon.ico',
-      shortcut: '/shortcut-icon.png',
+      icon: 'https://estarlincito.com/favicons/favicon.ico',
+      shortcut: 'https://estarlincito.com/favicons/shortcut-icon.png',
     },
     title: this.seo.title,
     description: this.seo.description,
     openGraph: {
       ...this.seo.openGraph,
-      title: this.seo.title,
-      description: this.seo.description,
       images: {
         url: this.seo.imagesUrl,
         width: 800,
         height: 600,
         alt: this.seo.imagesAlt,
       },
-      siteName: 'estarlincito.com',
+      siteName: 'estarlincito',
       locale: 'es-US',
     },
   } as Metadata;

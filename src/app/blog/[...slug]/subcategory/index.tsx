@@ -5,8 +5,7 @@ import { PostList } from '@UI/organisms';
 import { Slug, SlugProps } from '@/types';
 
 export const SubCategorySEO = (slug: Slug) => {
-  const _slug = `${slug[0]}/${slug[1]}`;
-  const posts = Post(_slug, 'SUBCATEGORY');
+  const posts = Post(slug, 'SUBCATEGORY');
 
   if (posts.length === 0) {
     return;
@@ -17,7 +16,7 @@ export const SubCategorySEO = (slug: Slug) => {
     description: descriptions(posts[0].subcategory as 'dynami'),
     openGraph: {
       type: 'website',
-      url: `https://estarlincito.com/blog/${_slug}`,
+      url: `https://estarlincito.com/blog/${`${slug[0]}/${slug[1]}`}`,
     },
     imagesUrl:
       'https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
@@ -28,8 +27,7 @@ export const SubCategorySEO = (slug: Slug) => {
 };
 
 export const SubCategoryPage = ({ slug }: SlugProps) => {
-  const _slug = `${slug[0]}/${slug[1]}`;
-  const posts = Post(_slug, 'SUBCATEGORY');
+  const posts = Post(slug, 'SUBCATEGORY');
 
   if (posts.length === 0) {
     notFound();

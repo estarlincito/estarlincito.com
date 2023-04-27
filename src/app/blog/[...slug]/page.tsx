@@ -29,7 +29,7 @@ const Render = ({ params }: Props) => {
   //Post Page
   if (slug.length === 3) {
     return {
-      metadata: postSEO(slug),
+      seo: postSEO(slug),
       page: <PostPage slug={slug} />,
     };
   }
@@ -37,20 +37,20 @@ const Render = ({ params }: Props) => {
   //No Fount
   if (slug.length > 3) {
     return {
-      metadata: null,
+      seo: null,
       page: notFound(),
     };
   }
 
   return {
-    metadata: null,
+    seo: null,
     page: null,
   };
 };
 
 //SEO
 export const generateMetadata = ({ params }: Props) => {
-  return Render({ params }).metadata;
+  return Render({ params }).seo;
 };
 
 //Render Page

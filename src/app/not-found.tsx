@@ -7,7 +7,7 @@ import clsx from 'clsx';
 export const { metadata } = new SEO({
   title: 'Página no encontrada',
   description: descriptions('nofount'),
-  openGraph: { type: 'website', url: 'https://not-fount.com' },
+  openGraph: { type: 'website', url: 'https://estarlincito.com/not-found' },
   imagesUrl:
     'https://images.pexels.com/photos/4439425/pexels-photo-4439425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   imagesAlt: 'error',

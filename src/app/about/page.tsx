@@ -7,7 +7,7 @@ export const { metadata } = new SEO({
   title: 'Acerca de Estarlincito',
   description: descriptions('about'),
   openGraph: { type: 'website', url: 'https://estarlincito.com/about' },
-  imagesUrl: '/favicons/avathar.png',
+  imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',
 });
 

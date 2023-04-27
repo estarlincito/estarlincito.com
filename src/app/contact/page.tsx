@@ -6,7 +6,7 @@ export const { metadata } = new SEO({
   title: 'Contáctame',
   description: descriptions('contact'),
   openGraph: { type: 'website', url: 'https://estarlincito.com/contact' },
-  imagesUrl: '/favicons/avathar.png',
+  imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',
 });
 
