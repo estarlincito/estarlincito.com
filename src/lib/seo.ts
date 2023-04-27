@@ -34,7 +34,6 @@ export class SEO {
       },
       siteName: 'estarlincito.com',
       locale: 'es-US',
-      type: 'website',
     },
   } as Metadata;
 }

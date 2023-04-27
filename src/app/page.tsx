@@ -10,7 +10,7 @@ const name = 'Estarlincito';
 export const { metadata } = new SEO({
   title: name,
   description: descriptions('app'),
-  openGraph: { url: 'https://estarlincito.com' },
+  openGraph: { type: 'website', url: 'https://estarlincito.com/' },
   imagesUrl: '/favicons/avathar.png',
   imagesAlt: 'Avathar',
 });

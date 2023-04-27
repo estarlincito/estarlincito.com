@@ -5,7 +5,7 @@ import { SEO, descriptions } from '@/lib';
 export const { metadata } = new SEO({
   title: 'Contáctame',
   description: descriptions('contact'),
-  openGraph: { url: 'https://estarlincito.com/contact' },
+  openGraph: { type: 'website', url: 'https://estarlincito.com/contact' },
   imagesUrl: '/favicons/avathar.png',
   imagesAlt: 'Avathar',
 });

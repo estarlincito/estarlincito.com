@@ -1,10 +1,10 @@
-import { notFound } from 'next/navigation';
-import { Post, SEO, descriptions } from '@/lib';
-import { PostList } from '@UI/organisms';
-import { ParamsProps } from '@/types';
 import { BlogHeader } from '@/components/UI/molecules';
+import { Post, SEO, descriptions } from '@/lib';
+import { notFound } from 'next/navigation';
+import { PostList } from '@UI/organisms';
+import { Slug, SlugProps } from '@/types';
 
-export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
+export const CategorySEO = (slug: Slug) => {
   const posts = Post(slug[0], 'CATEGORY');
 
   if (posts.length === 0) {
@@ -14,7 +14,10 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
   const { metadata } = new SEO({
     title: posts[0].category,
     description: descriptions(posts[0].category as 'dynami'),
-    openGraph: { url: `estarlincito.com/blog/${posts[0].category}` },
+    openGraph: {
+      type: 'website',
+      url: `estarlincito.com/blog/${posts[0].category}`,
+    },
     imagesUrl:
       'https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     imagesAlt: 'Una macbook, una ipad...',
@@ -23,7 +26,7 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
   return metadata;
 };
 
-const CategoryPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
+export const CategoryPage = ({ slug }: SlugProps) => {
   const posts = Post(slug[0], 'CATEGORY');
 
   if (posts.length === 0) {
@@ -40,5 +43,3 @@ const CategoryPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
     </>
   );
 };
-
-export default CategoryPage;

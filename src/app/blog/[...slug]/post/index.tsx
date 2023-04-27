@@ -1,10 +1,10 @@
 import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout } from '@UI/organisms';
-import { Description, ParamsProps } from '@/types';
+import { Description, Slug, SlugProps } from '@/types';
 
 //SEO
-export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
+export const postSEO = (slug: Slug) => {
   const _slug = `${slug[0]}/${slug[1]}/${slug[2]}`;
   const post = Post(_slug, 'POST')[0];
 
@@ -28,7 +28,7 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
   return metadata;
 };
 
-const postPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
+export const PostPage = ({ slug }: SlugProps) => {
   const _slug = `${slug[0]}/${slug[1]}/${slug[2]}`;
   const post = Post(_slug, 'POST')[0];
 
@@ -38,5 +38,3 @@ const postPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
 
   return <PostLayout {...post} />;
 };
-
-export default postPage;

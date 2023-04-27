@@ -6,7 +6,7 @@ import clsx from 'clsx';
 export const { metadata } = new SEO({
   title: 'Acerca de Estarlincito',
   description: descriptions('about'),
-  openGraph: { url: 'https://estarlincito.com/about' },
+  openGraph: { type: 'website', url: 'https://estarlincito.com/about' },
   imagesUrl: '/favicons/avathar.png',
   imagesAlt: 'Avathar',
 });

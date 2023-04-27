@@ -1,10 +1,10 @@
-import { notFound } from 'next/navigation';
-import { Post, SEO, descriptions } from '@/lib';
-import { PostList } from '@UI/organisms';
-import { ParamsProps } from '@/types';
 import { BlogHeader } from '@/components/UI/molecules';
+import { Post, SEO, descriptions } from '@/lib';
+import { notFound } from 'next/navigation';
+import { PostList } from '@UI/organisms';
+import { Slug, SlugProps } from '@/types';
 
-export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
+export const SubCategorySEO = (slug: Slug) => {
   const _slug = `${slug[0]}/${slug[1]}`;
   const posts = Post(_slug, 'SUBCATEGORY');
 
@@ -16,7 +16,8 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
     title: posts[0].subcategory,
     description: descriptions(posts[0].subcategory as 'dynami'),
     openGraph: {
-      url: `estarlincito.com/blog${posts[0].subcategory}`,
+      type: 'website',
+      url: `https://estarlincito.com/blog/${_slug}`,
     },
     imagesUrl:
       'https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
@@ -26,7 +27,7 @@ export const generateMetadata = ({ params: { slug } }: ParamsProps) => {
   return metadata;
 };
 
-const SubCategoryPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
+export const SubCategoryPage = ({ slug }: SlugProps) => {
   const _slug = `${slug[0]}/${slug[1]}`;
   const posts = Post(_slug, 'SUBCATEGORY');
 
@@ -44,5 +45,3 @@ const SubCategoryPage: React.FC<ParamsProps> = ({ params: { slug } }) => {
     </>
   );
 };
-
-export default SubCategoryPage;

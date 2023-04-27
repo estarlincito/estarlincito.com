@@ -181,10 +181,10 @@ export interface CollapseContextValue {
   setCollapse: (collapse: Collapse) => void;
 }
 
-//Params
-export type Slug = string;
-export interface ParamsProps {
-  params: { slug: Slug[] };
+//Slug
+export type Slug = string[];
+export interface SlugProps {
+  slug: Slug;
 }
 
 ////MDX Components
