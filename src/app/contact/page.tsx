@@ -3,7 +3,7 @@ import { SEO, descriptions } from '@/lib';
 
 //SEO
 export const { metadata } = new SEO({
-  title: 'Contáctame',
+  title: 'Estarlincito | Contácto',
   description: descriptions('contact'),
   openGraph: { type: 'website', url: 'https://estarlincito.com/contact' },
   imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',

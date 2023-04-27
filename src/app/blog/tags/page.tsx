@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 //SEO
 export const { metadata } = new SEO({
-  title: 'Tags',
+  title: 'Estarlincito | Tags',
   description: descriptions('tags'),
   openGraph: { type: 'website', url: 'https://estarlincito.com/tags' },
   imagesUrl:

@@ -7,7 +7,7 @@ import { notFound } from 'next/navigation';
 //SEO
 export const generateMetadata = ({ params: { tag } }: TagPageProps) => {
   const { metadata } = new SEO({
-    title: `Tag | ${decodeURI(tag)}`,
+    title: `Estarlincito | Tag #${decodeURI(tag)}`,
     description: descriptions('tag'),
     openGraph: {
       type: 'website',

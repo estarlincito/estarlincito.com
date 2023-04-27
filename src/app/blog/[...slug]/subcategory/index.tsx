@@ -12,7 +12,7 @@ export const SubCategorySEO = (slug: Slug) => {
   }
 
   const { metadata } = new SEO({
-    title: posts[0].subcategory,
+    title: `Estarlincito | ${posts[0].subcategory}`,
     description: descriptions(posts[0].subcategory as 'dynami'),
     openGraph: {
       type: 'website',

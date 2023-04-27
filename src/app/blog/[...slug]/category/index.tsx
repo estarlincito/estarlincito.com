@@ -13,7 +13,7 @@ export const CategorySEO = (slug: Slug) => {
   }
 
   const { metadata } = new SEO({
-    title: posts[0].category,
+    title: `Estarlincito | ${posts[0].category}`,
     description: descriptions(posts[0].category as 'dynami'),
     openGraph: {
       type: 'website',

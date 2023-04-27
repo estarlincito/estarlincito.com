@@ -6,7 +6,7 @@ import { allBlogs } from 'contentlayer/generated';
 //SEO
 const description = descriptions('blog');
 export const { metadata } = new SEO({
-  title: 'Blog',
+  title: 'Estarlincito | Blog',
   description,
   openGraph: { type: 'website', url: 'https://estarlincito.com/blog' },
   imagesUrl:
