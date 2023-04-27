@@ -2,18 +2,15 @@ import { CategoryPage, CategorySEO } from './category';
 import { SubCategoryPage, SubCategorySEO } from './subcategory';
 import { PostPage, postSEO } from './post';
 import { notFound } from 'next/navigation';
+import { ParamsProps, RenderProps } from '@/types';
 
-interface Props {
-  params: { slug: string[] };
-}
-
-const Render = ({ params }: Props) => {
+const Render: RenderProps = ({ params }: ParamsProps) => {
   const { slug } = params;
 
   //Category Page
   if (slug.length === 1) {
     return {
-      metadata: CategorySEO(slug),
+      seo: CategorySEO(slug),
       page: <CategoryPage slug={slug} />,
     };
   }
@@ -21,7 +18,7 @@ const Render = ({ params }: Props) => {
   //subCategory Page
   if (slug.length === 2) {
     return {
-      metadata: SubCategorySEO(slug),
+      seo: SubCategorySEO(slug),
       page: <SubCategoryPage slug={slug} />,
     };
   }
@@ -49,12 +46,12 @@ const Render = ({ params }: Props) => {
 };
 
 //SEO
-export const generateMetadata = ({ params }: Props) => {
+export const generateMetadata = ({ params }: ParamsProps) => {
   return Render({ params }).seo;
 };
 
 //Render Page
-const SlugPage = ({ params }: Props) => {
+const SlugPage = ({ params }: ParamsProps) => {
   return Render({ params }).page;
 };
 

@@ -1,4 +1,5 @@
 import { Blog } from 'contentlayer/generated';
+import { Metadata } from 'next';
 import { MouseEventHandler, ReactNode } from 'react';
 //User
 export interface User {
@@ -186,6 +187,15 @@ export type Slug = string[];
 export interface SlugProps {
   slug: Slug;
 }
+//ParamsProps
+export interface ParamsProps {
+  params: { slug: Slug };
+}
+//RenderProps
+export type RenderProps = ({ params }: ParamsProps) => {
+  seo: Metadata | undefined | null;
+  page: JSX.Element | null;
+};
 
 ////MDX Components
 export type BlockquoteProps = React.FC<JSX.IntrinsicElements['blockquote']>;
