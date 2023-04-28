@@ -24,6 +24,8 @@ export class SEO {
     description: this.seo.description,
     openGraph: {
       ...this.seo.openGraph,
+      title: this.seo.title,
+      description: this.seo.description,
       images: {
         url: this.seo.imagesUrl,
         width: 800,
