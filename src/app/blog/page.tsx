@@ -1,10 +1,10 @@
 import { BlogHeader } from '@/components/UI/molecules';
 import { PostList } from '@/components/UI/organisms';
-import { SEO, descriptions } from '@/lib';
 import { allBlogs } from 'contentlayer/generated';
+import { SEO, Descriptions } from '@/lib';
 
 //SEO
-const description = descriptions('blog');
+const description = Descriptions.base.blog;
 export const { metadata } = new SEO({
   title: 'Estarlincito | Blog',
   description,

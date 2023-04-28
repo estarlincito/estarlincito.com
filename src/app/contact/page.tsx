@@ -1,10 +1,10 @@
 import { Linkdoc, Blockquote, Title } from '@/components/HOC';
-import { SEO, descriptions } from '@/lib';
+import { SEO, Descriptions } from '@/lib';
 
 //SEO
 export const { metadata } = new SEO({
   title: 'Estarlincito | Contácto',
-  description: descriptions('contact'),
+  description: Descriptions.base.contact,
   openGraph: { type: 'website', url: 'https://estarlincito.com/contact' },
   imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',

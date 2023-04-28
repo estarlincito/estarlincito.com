@@ -1,11 +1,11 @@
 import { Title } from '@/components/HOC';
-import { SEO, descriptions } from '@/lib';
+import { SEO, Descriptions } from '@/lib';
 import clsx from 'clsx';
 
 //SEO
 export const { metadata } = new SEO({
   title: 'Acerca de Estarlincito',
-  description: descriptions('about'),
+  description: Descriptions.base.about,
   openGraph: { type: 'website', url: 'https://estarlincito.com/about' },
   imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',

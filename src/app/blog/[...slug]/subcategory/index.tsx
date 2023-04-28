@@ -1,8 +1,8 @@
 import { BlogHeader } from '@/components/UI/molecules';
-import { Post, SEO, descriptions } from '@/lib';
+import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostList } from '@UI/organisms';
-import { Slug, SlugProps } from '@/types';
+import { Description, Slug, SlugProps } from '@/types';
 
 export const SubCategorySEO = (slug: Slug) => {
   const posts = Post(slug, 'SUBCATEGORY');
@@ -13,7 +13,7 @@ export const SubCategorySEO = (slug: Slug) => {
 
   const { metadata } = new SEO({
     title: `Estarlincito | ${posts[0].subcategory}`,
-    description: descriptions(posts[0].subcategory as 'dynami'),
+    description: posts[0].subcategory as Description,
     openGraph: {
       type: 'website',
       url: `https://estarlincito.com/blog/${`${slug[0]}/${slug[1]}`}`,
@@ -37,7 +37,7 @@ export const SubCategoryPage = ({ slug }: SlugProps) => {
     <>
       <BlogHeader
         title={posts[0].subcategory}
-        sumary={descriptions(posts[0].subcategory as 'dynami')}
+        sumary={posts[0].subcategory as Description}
       />
       <PostList posts={posts} />
     </>

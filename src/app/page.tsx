@@ -1,15 +1,15 @@
+import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
 import { Container, Wrapper } from '@UI/organisms';
 import { Links } from '@/types';
-import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 import clsx from 'clsx';
-import { SEO, descriptions } from '@/lib';
+import { SEO, Descriptions } from '@/lib';
 const name = 'Estarlincito';
 
 //SEO
 export const { metadata } = new SEO({
   title: name,
-  description: descriptions('app'),
+  description: Descriptions.base.app,
   openGraph: { type: 'website', url: 'https://estarlincito.com/' },
   imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',

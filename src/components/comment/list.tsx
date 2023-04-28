@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { CommentListProps } from '@/types';
-import { distanceToNow } from '@/lib';
+// import { distanceToNow } from '@/lib';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const CommentList = ({ comments, onDelete }: CommentListProps) => {
@@ -34,7 +34,7 @@ const CommentList = ({ comments, onDelete }: CommentListProps) => {
                 <div className='flex space-x-2'>
                   <b>{comment.user.name}</b>
                   <time className='text-gray-400'>
-                    {distanceToNow(comment.created_at)}
+                    {/* {distanceToNow(comment.created_at)} */}
                   </time>
                   {(isAdmin || isAuthor) && (
                     <button
