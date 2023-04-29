@@ -85,7 +85,7 @@ const Tags: React.FC<TagsProps> = ({ tags }) => {
 };
 
 const PostLayout: React.FC<Blog> = ({
-  teme,
+  title,
   category,
   subcategory,
   body,
@@ -109,7 +109,7 @@ const PostLayout: React.FC<Blog> = ({
         slug_subcategory={slug_subcategory}
       />
 
-      <Title text={teme} size='text-2xl' />
+      <Title text={title} size='text-2xl' />
 
       <ul className='flex flex-row gap-x-5'>
         {check === false ? (

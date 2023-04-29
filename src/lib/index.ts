@@ -4,7 +4,6 @@ export { getTagsPosts } from './tagsPosts';
 // export { createComment } from './createComment';
 // export { deleteComment } from './deleteComment';
 // export { distanceToNow } from './dateRelative';
-export { Descriptions } from './descriptions';
 export { SEO } from './seo';
 export { sortByDate } from './sortDate';
 export { Post } from './post';

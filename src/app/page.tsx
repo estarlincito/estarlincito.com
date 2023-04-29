@@ -3,13 +3,13 @@ import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
 import { Container, Wrapper } from '@UI/organisms';
 import { Links } from '@/types';
 import clsx from 'clsx';
-import { SEO, Descriptions } from '@/lib';
+import { SEO } from '@/lib';
 const name = 'Estarlincito';
 
 //SEO
 export const { metadata } = new SEO({
   title: name,
-  description: Descriptions.base.app,
+  description: 'Desarrollador Web, escritor y creador.',
   openGraph: { type: 'website', url: 'https://estarlincito.com/' },
   imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',

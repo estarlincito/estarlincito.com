@@ -1,5 +1,5 @@
 import { PostList } from '@/components/UI/organisms';
-import { SEO, Descriptions } from '@/lib';
+import { SEO } from '@/lib';
 import { TagPageProps } from '@/types';
 import { allBlogs } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
@@ -8,7 +8,8 @@ import { notFound } from 'next/navigation';
 export const generateMetadata = ({ params: { tag } }: TagPageProps) => {
   const { metadata } = new SEO({
     title: `Estarlincito | Tag #${decodeURI(tag)}`,
-    description: Descriptions.base.tag,
+    description:
+      'Artículos informativos, consejos prácticos y enlaces a recursos útiles.',
     openGraph: {
       type: 'website',
       url: `https://estarlincito.com/blog/tags/${tag}`,

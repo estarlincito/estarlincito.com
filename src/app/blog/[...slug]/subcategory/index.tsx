@@ -2,7 +2,7 @@ import { BlogHeader } from '@/components/UI/molecules';
 import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostList } from '@UI/organisms';
-import { Description, Slug, SlugProps } from '@/types';
+import { BlogSeo, Slug, SlugProps } from '@/types';
 
 export const SubCategorySEO = (slug: Slug) => {
   const posts = Post(slug, 'SUBCATEGORY');
@@ -11,16 +11,20 @@ export const SubCategorySEO = (slug: Slug) => {
     return;
   }
 
+  //blogseo
+  const {
+    seoSubCategory: { description, imagesUrl, imagesAlt },
+  } = posts[0].blogseo as BlogSeo;
+
   const { metadata } = new SEO({
     title: `Estarlincito | ${posts[0].subcategory}`,
-    description: posts[0].subcategory as Description,
+    description,
     openGraph: {
       type: 'website',
       url: `https://estarlincito.com/blog/${`${slug[0]}/${slug[1]}`}`,
     },
-    imagesUrl:
-      'https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    imagesAlt: 'teclado, lente, cuaderno',
+    imagesUrl,
+    imagesAlt,
   });
 
   return metadata;
@@ -33,12 +37,13 @@ export const SubCategoryPage = ({ slug }: SlugProps) => {
     notFound();
   }
 
+  const {
+    seoSubCategory: { description },
+  } = posts[0].blogseo as BlogSeo;
+
   return (
     <>
-      <BlogHeader
-        title={posts[0].subcategory}
-        sumary={posts[0].subcategory as Description}
-      />
+      <BlogHeader title={posts[0].subcategory} sumary={description} />
       <PostList posts={posts} />
     </>
   );

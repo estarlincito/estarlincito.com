@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Footer, Navbar, Opacity } from '@UI/organisms';
-import { CollapseProvider, ThemeProvider, Auth0 } from '@/context';
+import { CollapseProvider, ThemeProvider } from '@/context';
 import { Collapse } from '@/components/UI/molecules';
 import { ChildrenProps } from '@/types';
 import '@/styles/globals.css';
@@ -23,18 +23,16 @@ const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
           'dark:bg-black dark:text-neutral-200'
         )}
       >
-        <Auth0>
-          <CollapseProvider>
-            <Opacity />
-            {/* <Header /> */}
-            <ThemeProvider>
-              <Navbar />
-              <Collapse />
-            </ThemeProvider>
-            {children}
-            <Footer />
-          </CollapseProvider>
-        </Auth0>
+        <CollapseProvider>
+          <Opacity />
+          {/* <Header /> */}
+          <ThemeProvider>
+            <Navbar />
+            <Collapse />
+          </ThemeProvider>
+          {children}
+          <Footer />
+        </CollapseProvider>
       </body>
     </html>
   );

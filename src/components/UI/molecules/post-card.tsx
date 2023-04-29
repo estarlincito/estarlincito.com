@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 
 const PostCard: React.FC<Blog> = ({
-  teme,
+  title,
   category,
   summary,
   cover,
@@ -16,7 +16,7 @@ const PostCard: React.FC<Blog> = ({
     <article className='shadow-lg rounded-lg w-[350px]'>
       <figure className='h-60'>
         <Linkdoc href={slug_post} target='_self'>
-          <Imagedoc src={cover} alt={teme} className='rounded-t-lg' />
+          <Imagedoc src={cover} alt={title} className='rounded-t-lg' />
 
           {/* <div className=''>{summary}</div>
           <div className=''>{category}</div> */}
@@ -31,7 +31,7 @@ const PostCard: React.FC<Blog> = ({
         )}
       >
         <Linkdoc href={slug_post} target='_self' size='text-lg'>
-          {teme}
+          {title}
         </Linkdoc>
 
         <div

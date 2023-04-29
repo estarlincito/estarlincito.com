@@ -1,4 +1,3 @@
-import { Description } from '@/types';
 import { Metadata } from 'next';
 import { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
 
@@ -6,7 +5,7 @@ export class SEO {
   constructor(
     public seo: {
       title: string;
-      description: Description;
+      description: string;
       openGraph: OpenGraph;
       imagesUrl: string;
       imagesAlt: string;

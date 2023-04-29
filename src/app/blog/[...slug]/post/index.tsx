@@ -1,7 +1,7 @@
 import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { PostLayout } from '@UI/organisms';
-import { Description, Slug, SlugProps } from '@/types';
+import { Slug, SlugProps } from '@/types';
 
 //SEO
 export const postSEO = (slug: Slug) => {
@@ -12,8 +12,8 @@ export const postSEO = (slug: Slug) => {
   }
 
   const { metadata } = new SEO({
-    title: post.teme,
-    description: post.summary as Description,
+    title: post.title,
+    description: post.summary,
     openGraph: {
       type: 'article',
       publishedTime: post.publishedAt,
