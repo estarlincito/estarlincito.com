@@ -9,7 +9,7 @@ const Imagedoc: React.FC<ImagedocProps> = ({ src, alt, className }) => {
       alt={alt}
       width={2160}
       height={720}
-      className={clsx('w-full h-full', '-order-2', className && className)}
+      className={clsx('w-full h-full', className && className)}
       priority
     />
   );

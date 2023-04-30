@@ -33,7 +33,7 @@ const PostLayout: React.FC<Blog> = ({
       />
       <Title text={title} size='text-2xl' />
       <Check check={check} readingTime={readingTime} />
-      <Imagedoc src={cover} alt={coverAlt} />
+      <Imagedoc className='-order-2' src={cover} alt={coverAlt} />
       <Author author={author} avathar={avathar} updated={updated} />
       <Post doc={body.code} />
       <Tags tags={tags} />
