@@ -7,6 +7,7 @@ interface Props {
   subcategory: string;
   slug_category: string;
   slug_subcategory: string;
+  className: string;
 }
 
 const Nav: React.FC<Props> = ({
@@ -14,13 +15,14 @@ const Nav: React.FC<Props> = ({
   subcategory,
   slug_category,
   slug_subcategory,
+  className,
 }) => {
   return (
     <ul
       className={clsx(
         'text-sm flex items-center gap-x-3 select-none',
         'text-black/70 dark:text-white/70',
-        '-order-6'
+        className && className
       )}
     >
       <Li href='/'>

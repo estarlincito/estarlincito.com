@@ -1,16 +1,18 @@
 import { Imagedoc, Linkdoc } from '@/components/HOC';
 import { dateFormat } from '@/lib';
+import clsx from 'clsx';
 import { TbCalendarDue } from 'react-icons/tb';
 
 interface Props {
   author: string;
   avathar: string;
   updated: string;
+  className?: string;
 }
 
-const Author: React.FC<Props> = ({ author, avathar, updated }) => {
+const Author: React.FC<Props> = ({ author, avathar, updated, className }) => {
   return (
-    <div className='ml-5 mb-3 -order-1'>
+    <div className={clsx('ml-5 mb-3', className && className)}>
       <div className=' flex flex-row items-center gap-x-5'>
         <div className='w-16'>
           <Imagedoc src={avathar} alt='Avathar' className='rounded-full' />

@@ -26,15 +26,23 @@ const PostLayout: React.FC<Blog> = ({
   return (
     <Wrapper className='flex flex-col gap-y-5'>
       <Nav
+        className='-order-6'
         category={category}
         subcategory={subcategory}
         slug_category={slug_category}
         slug_subcategory={slug_subcategory}
       />
-      <Title text={title} size='text-2xl' />
-      <Check check={check} readingTime={readingTime} />
-      <Imagedoc className='-order-2' src={cover} alt={coverAlt} />
-      <Author author={author} avathar={avathar} updated={updated} />
+      <Title className='-order-5' text={title} size='text-2xl' />
+      <Check className='-order-4' check={check} readingTime={readingTime} />
+      <Imagedoc className='-order-3' src={cover} alt={coverAlt} />
+      {/* BlockQuote -order-2 */}
+      <Author
+        className='-order-1'
+        author={author}
+        avathar={avathar}
+        updated={updated}
+      />
+
       <Post doc={body.code} />
       <Tags tags={tags} />
       {/* <Comment /> */}

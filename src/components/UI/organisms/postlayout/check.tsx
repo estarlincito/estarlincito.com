@@ -1,4 +1,5 @@
 import { IconPlus } from '@/components/HOC';
+import clsx from 'clsx';
 import {
   TbClockFilled,
   TbDiscountCheckFilled,
@@ -8,11 +9,12 @@ import {
 interface Props {
   check: boolean;
   readingTime: string;
+  className: string;
 }
 
-const Check: React.FC<Props> = ({ check, readingTime }) => {
+const Check: React.FC<Props> = ({ check, readingTime, className }) => {
   return (
-    <ul className='flex flex-row gap-x-5 -order-4'>
+    <ul className={clsx('flex flex-row gap-x-5', className && className)}>
       {check === false ? (
         <IconPlus>
           <i className='text-sky-600 dark:text-sky-400'>
