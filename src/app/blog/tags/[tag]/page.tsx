@@ -34,7 +34,7 @@ const TagPage: React.FC<TagPageProps> = ({ params: { tag } }) => {
 
   return (
     <Suspense fallback={<LoadingArticle />}>
-      <PostList posts={posts} />;
+      <PostList posts={posts} />
     </Suspense>
   );
 };

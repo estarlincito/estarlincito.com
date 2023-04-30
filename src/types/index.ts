@@ -28,27 +28,6 @@ export interface CommentListProps {
   comments?: Comment[];
   onDelete: (comment: Comment) => Promise<void>;
 }
-//MDXComponents
-export interface MDXComponents {
-  author: string;
-  avathar: string;
-  cover: string;
-  coverAlt: string;
-  updated: string;
-}
-//Links
-export interface Links {
-  route: string;
-  label: string;
-  target?: Target;
-}
-//ListProps
-export interface ListProps {
-  title: string;
-  links: Links[];
-  target: Target;
-  className?: string;
-}
 
 //Theme
 export type Theme = 'dark' | 'light';
@@ -115,31 +94,11 @@ export interface AnchorProps {
 export interface ClassProps {
   className?: string;
 }
-//LiProps
-export interface LiProps {
-  children: React.ReactNode;
-  href: string;
-  className?: string;
-}
-//NavProps
-export interface NavProps {
-  category: string;
-  subcategory: string;
-  slug_category: string;
-  slug_subcategory: string;
-}
-//TagsProps
-export interface TagsProps {
-  tags: string[];
-}
+
 //IconPlusProps
 export interface IconPlusProps {
   children: React.ReactNode;
   className?: string;
-}
-//PostMdxProps
-export interface PostMdxProps extends MDXComponents {
-  doc: string;
 }
 
 //ThemeContextValue
@@ -171,12 +130,7 @@ export type RenderProps = ({ params }: ParamsProps) => {
 };
 
 ////MDX Components
-export type BlockquoteProps = React.FC<JSX.IntrinsicElements['blockquote']>;
-export type ImageProps = React.FC<JSX.IntrinsicElements['img']>;
-export type AuthorProps = React.FC<JSX.IntrinsicElements['div']>;
-export type AProps = React.FC<JSX.IntrinsicElements['a']>;
-export type H2Props = React.FC<JSX.IntrinsicElements['h2']>;
-export type StrongProps = React.FC<JSX.IntrinsicElements['strong']>;
-export type CodeProps = React.FC<JSX.IntrinsicElements['code']>;
+
 export * from './blogSeo';
 export * from './params';
+export * from './links';

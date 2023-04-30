@@ -42,7 +42,7 @@ const PostPage = ({ params }: Props) => {
 
   return (
     <Suspense fallback={<LoadingPost />}>
-      <PostLayout {...blogPost} />;
+      <PostLayout {...blogPost} />
     </Suspense>
   );
 };

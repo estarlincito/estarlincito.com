@@ -1,13 +1,14 @@
 import { BlogHeader } from '@/components/UI/molecules';
+import { LoadingArticle } from '@/components/loading';
 import { PostList } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
-import { SEO } from '@/lib';
 import { Suspense } from 'react';
-import { LoadingArticle } from '@/components/loading';
+import { SEO } from '@/lib';
 
 //SEO
 const description =
   'Lee mis pensamientos sobre desarrollo de software, diseño web, criptomonedas y mucho más.';
+
 export const { metadata } = new SEO({
   title: 'Estarlincito | Blog',
   description,

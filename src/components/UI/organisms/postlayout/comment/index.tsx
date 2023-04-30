@@ -1,6 +1,6 @@
 'use client';
 import { useComments } from '@/Hooks';
-import { Hr } from '../HOC';
+import { Hr } from '@/components/HOC';
 import CommentForm from './form';
 import CommentList from './list';
 

@@ -6,6 +6,6 @@ export { default as Opacity } from './opacity';
 export { default as Wrapper } from './wrapper';
 
 //post
-export { default as PostLayout } from './post-layout';
+export { default as PostLayout } from './postlayout';
 export { default as PostList } from './post-list';
-export { default as PostMdx } from './post-mdx';
+export { default as PostMdx } from './postlayout/post';

@@ -3,7 +3,9 @@ import clsx from 'clsx';
 
 const Title: React.FC<TitleProps> = ({ text, size, className }) => {
   return (
-    <h1 className={clsx('font-bold', size, className && className)}>{text}</h1>
+    <h1 className={clsx('font-bold', '-order-5', size, className && className)}>
+      {text}
+    </h1>
   );
 };
 
