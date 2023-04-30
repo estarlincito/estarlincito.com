@@ -1,8 +1,10 @@
 import { PostList } from '@/components/UI/organisms';
+import { LoadingArticle } from '@/components/loading';
 import { SEO } from '@/lib';
 import { TagPageProps } from '@/types';
 import { allBlogs } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
 //SEO
 export const generateMetadata = ({ params: { tag } }: TagPageProps) => {
@@ -30,7 +32,11 @@ const TagPage: React.FC<TagPageProps> = ({ params: { tag } }) => {
     notFound();
   }
 
-  return <PostList posts={posts} />;
+  return (
+    <Suspense fallback={<LoadingArticle />}>
+      <PostList posts={posts} />;
+    </Suspense>
+  );
 };
 
 export default TagPage;

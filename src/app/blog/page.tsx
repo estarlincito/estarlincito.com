@@ -2,6 +2,8 @@ import { BlogHeader } from '@/components/UI/molecules';
 import { PostList } from '@/components/UI/organisms';
 import { allBlogs } from 'contentlayer/generated';
 import { SEO } from '@/lib';
+import { Suspense } from 'react';
+import { LoadingArticle } from '@/components/loading';
 
 //SEO
 const description =
@@ -19,7 +21,10 @@ const BlogPage = () => {
   return (
     <>
       <BlogHeader title='Bienvenid@ a mi Blog' sumary={description} />
-      <PostList posts={allBlogs} />
+
+      <Suspense fallback={<LoadingArticle />}>
+        <PostList posts={allBlogs} />
+      </Suspense>
     </>
   );
 };

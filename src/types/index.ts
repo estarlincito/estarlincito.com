@@ -54,33 +54,6 @@ export interface ListProps {
 export type Theme = 'dark' | 'light';
 //Target
 export type Target = '_blank' | '_self';
-//SlugCategory
-export interface SlugCategory {
-  category: string;
-}
-//SlugSubcategory
-export interface SlugSubcategory {
-  category: string;
-  subcategory: string;
-}
-//SlugPost
-export interface SlugPost {
-  category: string;
-  subcategory: string;
-  post: string;
-}
-//ParamsCategory
-export interface ParamsCategory {
-  params: SlugCategory;
-}
-//ParamsSubcategory
-export interface ParamsSubcategory {
-  params: SlugSubcategory;
-}
-//ParamsPost
-export interface ParamsPost {
-  params: SlugPost;
-}
 
 //ChildrenProps
 export interface ChildrenProps {
@@ -206,3 +179,4 @@ export type H2Props = React.FC<JSX.IntrinsicElements['h2']>;
 export type StrongProps = React.FC<JSX.IntrinsicElements['strong']>;
 export type CodeProps = React.FC<JSX.IntrinsicElements['code']>;
 export * from './blogSeo';
+export * from './params';

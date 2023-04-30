@@ -9,7 +9,6 @@ import {
 } from 'react-icons/tb';
 import PostMdx from './post-mdx';
 import Wrapper from './wrapper';
-import Comment from '@/components/comment';
 import { LiProps, NavProps, TagsProps } from '@/types';
 import { Blog } from 'contentlayer/generated';
 
