@@ -26,7 +26,7 @@ const Highlight = () => {
       <Blockquote>
         {highlight.quote}
         <br />
-        <span className='font-bold'>{highlight.author}</span>
+        <span className='font-bold'>-{highlight.author}-</span>
       </Blockquote>
     </>
   );
