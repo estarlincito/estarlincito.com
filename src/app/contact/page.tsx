@@ -6,7 +6,7 @@ export const { metadata } = new SEO({
   title: 'Estarlincito | Contácto',
   description:
     'Si está buscando ayuda para construir algo que tenga un impacto y sostenibilidad, hablemos :)',
-  openGraph: { type: 'website', url: 'https://estarlincito.com/contact' },
+  openGraph: { type: 'website', url: 'https://estarlincito.com/contact/' },
   imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
   imagesAlt: 'Avathar',
 });

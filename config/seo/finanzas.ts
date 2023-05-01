@@ -9,7 +9,7 @@ export class Finanzas {
 
   static readonly 'Finanzas Personales' = doc(
     'Aquí encontrarás consejos útiles sobre cómo administrar tus finanzas y cómo alcanzar tus objetivos financieros.',
-    'https://images.unsplash.com/photo-1551636898-47668aa61de2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
-    'Teléfono inteligente de honor junto a la taza y el papel con bolígrafo'
+    'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    'Black Android smartphone'
   );
 }
