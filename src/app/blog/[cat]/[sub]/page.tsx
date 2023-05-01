@@ -27,7 +27,7 @@ export const generateMetadata = ({ params }: Props) => {
     description,
     openGraph: {
       type: 'website',
-      url: `https://estarlincito.com/blog/${`${blogSub[0]}/${blogSub[1]}`}`,
+      url: `https://estarlincito.com/blog/${`${params.cat}/${params.sub}`}`,
     },
     imagesUrl,
     imagesAlt,
