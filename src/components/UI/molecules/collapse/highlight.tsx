@@ -5,16 +5,19 @@ import { Highlight } from '@/types';
 
 const Highlight = () => {
   const [highlight, sethighlights] = useState({} as Highlight);
+  const url =
+    'https://raw.githubusercontent.com/estarlincito/highlights/main/docs/assets/data.json';
 
   useEffect(() => {
     (async () => {
-      const res = await fetch(
-        'https://raw.githubusercontent.com/estarlincito/highlights/main/data.json'
-      );
-
-      const highlights: Highlight[] = await res.json();
-      const random = Math.floor(Math.random() * highlights.length);
-      sethighlights(highlights[random]);
+      try {
+        const res = await fetch(url);
+        const highlights: Highlight[] = await res.json();
+        const random = Math.floor(Math.random() * highlights.length);
+        sethighlights(highlights[random]);
+      } catch (error) {
+        throw new Error(`May the ${url} is wrong`);
+      }
     })();
   }, []);
 

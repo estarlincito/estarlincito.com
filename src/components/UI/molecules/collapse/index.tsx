@@ -3,9 +3,9 @@ import { DarkmodeToggle, Logo } from '@UI/atoms';
 import { Button, Linkdoc } from '@/components/HOC';
 import { useCollapse } from '@/Hooks';
 import { TbX } from 'react-icons/tb';
-import Highlight from './highlight';
 import { sitemap } from '@/lib';
 import clsx from 'clsx';
+import Highlight from './highlight';
 
 const Collapse = () => {
   const { collapse, offCollapse } = useCollapse();
