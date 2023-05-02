@@ -3,7 +3,7 @@ import { Logo } from '@UI/atoms';
 
 const Brand = () => {
   return (
-    <Linkdoc href='/' target='_self' orden='center'>
+    <Linkdoc href='/' target='_self' orden='horizontally'>
       <span className='hidden md:block'>
         <Logo />
       </span>

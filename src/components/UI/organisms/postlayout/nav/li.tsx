@@ -11,7 +11,7 @@ interface Props {
 const Li: React.FC<Props> = ({ children, href }) => {
   return (
     <li>
-      <Linkdoc href={href} target='_self' orden='center'>
+      <Linkdoc href={href} target='_self' orden='horizontally'>
         {children}
       </Linkdoc>
     </li>

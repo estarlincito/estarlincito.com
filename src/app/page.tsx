@@ -61,10 +61,7 @@ const HomePage = () => {
           <Linkdoc
             href='https://github.com/estarlincito'
             target='_blank'
-            // className={clsx(
-            //   'flex items-center gap-1',
-            //   'text-neutral-600 dark:text-neutral-300'
-            // )}
+            orden='vertically'
             color='neutral'
           >
             <TbBrandGithubCopilot />
@@ -100,7 +97,7 @@ const HomePage = () => {
                 <Linkdoc
                   href={link.route}
                   target={link.target!}
-                  // className='flex items-center mb-2 md:mb-0'
+                  orden='horizontally'
                 >
                   <TbArrowUpRight /> {link.label}
                 </Linkdoc>

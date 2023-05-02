@@ -13,7 +13,7 @@ interface Props {
   underline?: boolean;
   color?: 'sky' | 'neutral';
   size?: 'text-base' | 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl';
-  orden?: 'center';
+  orden?: 'horizontally' | 'vertically';
 }
 
 const Linkdoc: React.FC<Props> = ({
@@ -41,7 +41,10 @@ const Linkdoc: React.FC<Props> = ({
           size && size,
           color === 'sky' ? 'text-sky-600 dark:text-sky-400' : '',
           color === 'neutral' ? 'text-neutral-600 dark:text-neutral-300' : '',
-          orden === 'center' ? 'flex flex-row items-center gap-x-[1px]' : '',
+          orden === 'horizontally'
+            ? 'flex flex-row items-center gap-x-[1px]'
+            : '',
+          orden === 'vertically' ? 'flex items-center gap-1' : '',
           underline === true ? 'underline' : ''
         )}
       >
