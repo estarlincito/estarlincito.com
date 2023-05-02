@@ -1,9 +1,10 @@
 import { allBlogs } from 'contentlayer/generated';
 
 interface Params {
-  cat: string;
+  cat?: string;
   sub?: string;
   post?: string;
+  tag?: string;
 }
 
 export class Post {
@@ -11,24 +12,25 @@ export class Post {
     this.params = params;
   }
 
-  //Post Category
-  readonly blogCat = allBlogs.filter(
-    (item) => item.slug_category === decodeURI(`/blog/${this.params.cat}`)
+  //Posts by Category
+  readonly postsCat = allBlogs.filter(
+    (item) => item.urls.cat === `/blog/${this.params.cat}`
   );
 
-  //Post Sub Category
-  readonly blogSub = allBlogs.filter(
-    (item) =>
-      item.slug_subcategory ===
-      decodeURI(`/blog/${this.params.cat}/${this.params.sub}`)
+  //Posts by Sub Category
+  readonly postsSub = allBlogs.filter(
+    (item) => item.urls.sub === `/blog/${this.params.cat}/${this.params.sub}`
   );
 
-  //Post
-  readonly blogPost = allBlogs.find(
+  //Post by url post
+  readonly posts = allBlogs.find(
     (item) =>
-      item.slug_post ===
-      decodeURI(
-        `/blog/${this.params.cat}/${this.params.sub}/${this.params.post}`
-      )
+      item.urls.post ===
+      `/blog/${this.params.cat}/${this.params.sub}/${this.params.post}`
+  );
+
+  //Posts by Tag
+  readonly postsTag = allBlogs.filter((item) =>
+    item.tags.some((tagItem) => tagItem === this.params.tag)
   );
 }

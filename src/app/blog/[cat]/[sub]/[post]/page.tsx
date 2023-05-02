@@ -11,38 +11,38 @@ interface Props {
 
 //SEO
 export const generateMetadata = ({ params }: Props) => {
-  const { blogPost } = new Post(params);
+  const { posts } = new Post(params);
 
-  if (blogPost === undefined) {
+  if (posts === undefined) {
     return;
   }
 
   const { metadata } = new SEO({
-    title: blogPost.title,
-    description: blogPost.summary,
+    title: posts.title,
+    description: posts.summary,
     openGraph: {
       type: 'article',
-      publishedTime: blogPost.publishedAt,
-      authors: blogPost.author,
-      url: `https://estarlincito.com/blog${blogPost.slug_post}`,
+      publishedTime: posts.publishedAt,
+      authors: posts.author,
+      url: `https://estarlincito.com${posts.urls.post}`,
     },
-    imagesUrl: blogPost.cover,
-    imagesAlt: blogPost.coverAlt,
+    imagesUrl: posts.cover,
+    imagesAlt: posts.coverAlt,
   });
 
   return metadata;
 };
 
 const PostPage = ({ params }: Props) => {
-  const { blogPost } = new Post(params);
+  const { posts } = new Post(params);
 
-  if (blogPost === undefined) {
+  if (posts === undefined) {
     notFound();
   }
 
   return (
     <Suspense fallback={<LoadingPost />}>
-      <PostLayout {...blogPost} />
+      <PostLayout {...posts} />
     </Suspense>
   );
 };

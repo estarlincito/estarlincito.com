@@ -1,14 +1,14 @@
 import { Linkdoc } from '@/components/HOC';
 import { Links, Target } from '@/types';
 
-interface ListProps {
+interface Props {
   title: string;
   links: Links[];
   target: Target;
   className?: string;
 }
 
-const List: React.FC<ListProps> = ({ title, links, target, className }) => {
+const List: React.FC<Props> = ({ title, links, target, className }) => {
   return (
     <div className={className}>
       <h3 className='text-lg font-bold'>{title}</h3>

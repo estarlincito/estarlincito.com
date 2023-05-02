@@ -1,9 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import { CommentListProps } from '@/types';
-// import { distanceToNow } from '@/lib';
+import { Comment } from '@/types';
 import { useAuth0 } from '@auth0/auth0-react';
 
-const CommentList = ({ comments, onDelete }: CommentListProps) => {
+//Types
+interface Props {
+  comments?: Comment[];
+  onDelete: (comment: Comment) => Promise<void>;
+}
+
+const CommentList = ({ comments, onDelete }: Props) => {
   const { user } = useAuth0();
 
   return (

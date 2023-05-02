@@ -1,5 +1,12 @@
-import { ButtonProsp } from '@/types';
 import clsx from 'clsx';
+import { MouseEventHandler, ReactNode } from 'react';
+
+//Types
+interface ButtonProsp {
+  children: ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
+  className?: string;
+}
 
 const Button: React.FC<ButtonProsp> = ({ children, onClick, className }) => {
   return (

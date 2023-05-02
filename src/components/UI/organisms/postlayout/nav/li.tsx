@@ -1,8 +1,8 @@
 import { Linkdoc } from '@/components/HOC';
-import { ReactNode } from 'react';
 
-export interface Props {
-  children: ReactNode;
+//Types
+interface Props {
+  children: React.ReactNode;
   href: string;
 }
 

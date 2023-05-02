@@ -1,8 +1,8 @@
-import { ImagedocProps } from '@/types';
+import { ImageProps } from '@/types';
 import clsx from 'clsx';
 import Image from 'next/image';
 
-const Imagedoc: React.FC<ImagedocProps> = ({ src, alt, className }) => {
+const Imagedoc: React.FC<ImageProps> = ({ src, alt, className }) => {
   return (
     <Image
       src={src}

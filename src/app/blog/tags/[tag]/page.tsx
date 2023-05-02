@@ -1,15 +1,18 @@
 import { PostList } from '@/components/UI/organisms';
 import { LoadingArticle } from '@/components/loading';
-import { SEO } from '@/lib';
-import { TagPageProps } from '@/types';
-import { allBlogs } from 'contentlayer/generated';
+import { Post, SEO } from '@/lib';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
+//Types
+interface Props {
+  params: { tag: string };
+}
+
 //SEO
-export const generateMetadata = ({ params: { tag } }: TagPageProps) => {
+export const generateMetadata = ({ params: { tag } }: Props) => {
   const { metadata } = new SEO({
-    title: `Estarlincito | Tag #${decodeURI(tag)}`,
+    title: `Estarlincito | Tag #${tag}`,
     description:
       'Artículos informativos, consejos prácticos y enlaces a recursos útiles.',
     openGraph: {
@@ -23,18 +26,16 @@ export const generateMetadata = ({ params: { tag } }: TagPageProps) => {
   return metadata;
 };
 
-const TagPage: React.FC<TagPageProps> = ({ params: { tag } }) => {
-  const posts = allBlogs.filter((item) =>
-    item.tags.some((tagItem) => tagItem === decodeURI(tag))
-  );
+const TagPage: React.FC<Props> = ({ params }) => {
+  const { postsTag } = new Post(params);
 
-  if (posts.length === 0) {
+  if (postsTag.length === 0) {
     notFound();
   }
 
   return (
     <Suspense fallback={<LoadingArticle />}>
-      <PostList posts={posts} />
+      <PostList posts={postsTag} />
     </Suspense>
   );
 };

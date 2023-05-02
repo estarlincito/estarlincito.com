@@ -1,9 +1,15 @@
 'use client';
 import { useLocalStorage } from '@/Hooks';
-import { ChildrenProps, Theme, ThemeContextValue } from '@/types';
+import { ChildrenProps, Theme } from '@/types';
 import { createContext } from 'react';
 
-export const ThemeContext = createContext({} as ThemeContextValue);
+//Types
+interface ThemeContext {
+  currentTheme: Theme;
+  setCurrentTheme: (currentTheme: Theme) => void;
+}
+
+export const ThemeContext = createContext({} as ThemeContext);
 
 export const ThemeProvider: React.FC<ChildrenProps> = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useLocalStorage<Theme>(

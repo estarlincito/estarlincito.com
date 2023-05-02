@@ -5,16 +5,16 @@ import Li from './li';
 interface Props {
   category: string;
   subcategory: string;
-  slug_category: string;
-  slug_subcategory: string;
+  urlCat: string;
+  urlSub: string;
   className: string;
 }
 
 const Nav: React.FC<Props> = ({
   category,
   subcategory,
-  slug_category,
-  slug_subcategory,
+  urlCat,
+  urlSub,
   className,
 }) => {
   return (
@@ -34,12 +34,12 @@ const Nav: React.FC<Props> = ({
         <span>Blog</span>
       </Li>
 
-      <Li href={slug_category}>
+      <Li href={urlCat}>
         <TbArrowBadgeRight />
         <span>{category}</span>
       </Li>
 
-      <Li href={slug_subcategory}>
+      <Li href={urlSub}>
         <TbArrowBadgeRight />
         <span>{subcategory}</span>
       </Li>

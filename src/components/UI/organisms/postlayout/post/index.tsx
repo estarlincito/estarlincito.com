@@ -1,7 +1,7 @@
 import { mdxComponents } from './mdx-components';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 
-export interface Props {
+interface Props {
   doc: string;
 }
 

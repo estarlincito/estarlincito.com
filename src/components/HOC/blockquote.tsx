@@ -1,9 +1,7 @@
-import { ChildrenProps } from '@/types';
 import clsx from 'clsx';
-import { ReactNode } from 'react';
 
 interface Props {
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
 }
 const Blockquote: React.FC<Props> = ({ children, className }) => {

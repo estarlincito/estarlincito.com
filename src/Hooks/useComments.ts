@@ -1,7 +1,7 @@
-import type { Comment } from '@/types';
 import React, { useState } from 'react';
 import useSWR from 'swr';
 import { useAuth0 } from '@auth0/auth0-react';
+import { Comment } from '@/types';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 

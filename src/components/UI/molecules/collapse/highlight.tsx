@@ -1,7 +1,14 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { Blockquote } from '@/components/HOC';
-import { Highlight } from '@/types';
+
+//Types
+interface Highlight {
+  title: string;
+  quote: string;
+  author: string;
+  url: string;
+}
 
 const Highlight = () => {
   const [highlight, sethighlights] = useState({} as Highlight);

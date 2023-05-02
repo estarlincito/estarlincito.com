@@ -1,7 +1,7 @@
 import { Imagedoc } from '@/components/HOC';
-import { ImagedocProps } from '@/types';
+import { ImageProps } from '@/types';
 
-const Image: React.FC<ImagedocProps> = ({ src, alt, className }) => {
+const Image: React.FC<ImageProps> = ({ src, alt, className }) => {
   return <Imagedoc src={src!} alt={alt!} className={className} />;
 };
 

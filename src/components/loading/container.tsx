@@ -1,10 +1,11 @@
 import clsx from 'clsx';
-import { ReactNode } from 'react';
 
+//Types
 interface Props {
   className: string;
-  children: ReactNode;
+  children: React.ReactNode;
 }
+
 const Container: React.FC<Props> = ({ children, className }) => {
   return <div className={clsx('animate-pulse', className)}>{children}</div>;
 };

@@ -1,7 +1,7 @@
 import { defineDocumentType } from 'contentlayer/source-files';
 import { computedFields } from './computedFields';
 
-export const Resource = defineDocumentType(() => ({
+export const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: '**.mdx',
   contentType: 'mdx',
@@ -16,11 +16,13 @@ export const Resource = defineDocumentType(() => ({
     avathar: { type: 'string', required: true },
     cover: { type: 'string', required: true },
     coverAlt: { type: 'string', required: true },
+
     tags: {
       type: 'list',
       of: { type: 'string' },
       required: true,
     },
+
     check: {
       type: 'boolean',
       required: true,

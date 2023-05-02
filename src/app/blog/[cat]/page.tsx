@@ -1,29 +1,28 @@
 import { BlogHeader } from '@/components/UI/molecules';
+import { LoadingArticle } from '@/components/loading';
 import { notFound } from 'next/navigation';
 import { PostList } from '@UI/organisms';
 import { Post, SEO } from '@/lib';
-import { BlogSeo, ParamsCat } from '@/types';
+import { ParamsCat } from '@/types';
 import { Suspense } from 'react';
-import { LoadingArticle } from '@/components/loading';
 
 interface Props {
   params: ParamsCat;
 }
 
+//SEO
 export const generateMetadata = ({ params }: Props) => {
-  const { blogCat } = new Post(params);
+  const { postsCat } = new Post(params);
 
-  if (blogCat.length === 0) {
+  if (postsCat.length === 0) {
     return;
   }
 
   //blogseo
-  const {
-    seoCategory: { description, imagesUrl, imagesAlt },
-  } = blogCat[0].blogseo as BlogSeo;
+  const { description, imagesUrl, imagesAlt } = postsCat[0].blogseo.cat;
 
   const { metadata } = new SEO({
-    title: `Estarlincito | ${blogCat[0].category}`,
+    title: `Estarlincito | ${postsCat[0].category}`,
     description,
     openGraph: {
       type: 'website',
@@ -37,22 +36,19 @@ export const generateMetadata = ({ params }: Props) => {
 };
 
 const CatPage = ({ params }: Props) => {
-  const { blogCat } = new Post(params);
+  const { postsCat } = new Post(params);
 
-  if (blogCat.length === 0) {
+  if (postsCat.length === 0) {
     notFound();
   }
 
-  const {
-    seoCategory: { description },
-  } = blogCat[0].blogseo as BlogSeo;
+  const { description } = postsCat[0].blogseo.cat;
 
   return (
     <>
-      <BlogHeader title={blogCat[0].category} sumary={description} />
-
+      <BlogHeader title={postsCat[0].category} sumary={description} />
       <Suspense fallback={<LoadingArticle />}>
-        <PostList posts={blogCat} />
+        <PostList posts={postsCat} />
       </Suspense>
     </>
   );

@@ -1,6 +1,24 @@
-import { descriptions } from './seo';
 import { ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
+import seo from './seo';
+
+//Types
+const prop = `{
+  description: string;
+  imagesUrl: string;
+  imagesAlt: string;
+};`;
+
+export const Blogseo = `{
+  cat: ${prop}
+  sub: ${prop}
+}`;
+
+export const Urls = `{
+  cat: string;
+  sub: string;
+  post: string;
+}`;
 
 //round time
 const displayed = (minutes: number) => {
@@ -21,31 +39,25 @@ export const computedFields: ComputedFields = {
     resolve: (doc) => doc.body.raw.split(/\s+/gu).length,
   },
 
-  //slug_category
-  slug_category: {
-    type: 'string',
-    resolve: (doc) => `/blog/${doc.category.toLocaleLowerCase()}`,
-  },
-
-  //slug_subcategory
-  slug_subcategory: {
-    type: 'string',
-    resolve: (doc) => `/blog/${doc._raw.sourceFileDir}`,
-  },
-
-  //slug_post
-  slug_post: {
-    type: 'string',
-    resolve: (doc) => `/blog/${doc._raw.flattenedPath}`,
+  //URLS
+  urls: {
+    type: Urls as 'string',
+    resolve: (doc) => {
+      return {
+        cat: `/blog/${doc.category.toLocaleLowerCase()}`,
+        sub: `/blog/${doc._raw.sourceFileDir}`,
+        post: `/blog/${doc._raw.flattenedPath}`,
+      };
+    },
   },
 
   //BlogSEO
   blogseo: {
-    type: 'json',
+    type: Blogseo as 'string',
     resolve: (doc) => {
       return {
-        seoCategory: descriptions(doc.category),
-        seoSubCategory: descriptions(doc.subcategory),
+        cat: seo(doc.category),
+        sub: seo(doc.subcategory),
       };
     },
   },

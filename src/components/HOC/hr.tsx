@@ -1,7 +1,11 @@
-import { ClassProps } from '@/types';
 import clsx from 'clsx';
 
-const Hr: React.FC<ClassProps> = ({ className }) => {
+//Types
+interface Props {
+  className?: string;
+}
+
+const Hr: React.FC<Props> = ({ className }) => {
   return (
     <hr
       className={clsx(

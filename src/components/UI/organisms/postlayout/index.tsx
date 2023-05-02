@@ -20,8 +20,7 @@ const PostLayout: React.FC<Blog> = ({
   coverAlt,
   updated,
   readingTime,
-  slug_category,
-  slug_subcategory,
+  urls,
 }) => {
   return (
     <Wrapper className='flex flex-col gap-y-5'>
@@ -29,8 +28,8 @@ const PostLayout: React.FC<Blog> = ({
         className='-order-6'
         category={category}
         subcategory={subcategory}
-        slug_category={slug_category}
-        slug_subcategory={slug_subcategory}
+        urlCat={urls.cat}
+        urlSub={urls.sub}
       />
       <Title className='-order-5' text={title} size='text-2xl' />
       <Check className='-order-4' check={check} readingTime={readingTime} />

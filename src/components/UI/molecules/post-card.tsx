@@ -1,25 +1,20 @@
 import { Imagedoc, Linkdoc } from '@/components/HOC';
+import { Blog } from 'contentlayer/generated';
 import { dateFormat } from '@/lib';
 import clsx from 'clsx';
-import { Blog } from 'contentlayer/generated';
 
 const PostCard: React.FC<Blog> = ({
   title,
-  category,
-  summary,
   cover,
   publishedAt,
   author,
-  slug_post,
+  urls,
 }) => {
   return (
     <article className='shadow-lg rounded-lg w-[350px]'>
       <figure className='h-60'>
-        <Linkdoc href={slug_post} target='_self'>
+        <Linkdoc href={urls.post} target='_self'>
           <Imagedoc src={cover} alt={title} className='rounded-t-lg' />
-
-          {/* <div className=''>{summary}</div>
-          <div className=''>{category}</div> */}
         </Linkdoc>
       </figure>
 
@@ -30,7 +25,7 @@ const PostCard: React.FC<Blog> = ({
           'bg-zinc-100 dark:bg-zinc-800'
         )}
       >
-        <Linkdoc href={slug_post} target='_self' size='text-lg'>
+        <Linkdoc href={urls.post} target='_self' size='text-lg'>
           {title}
         </Linkdoc>
 

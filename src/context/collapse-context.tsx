@@ -1,6 +1,14 @@
 'use client';
-import { ChildrenProps, Collapse, CollapseContextValue } from '@/types';
+import { ChildrenProps } from '@/types';
 import { createContext, useState } from 'react';
+
+//Types
+type Collapse = 'ON' | 'OFF';
+
+interface CollapseContextValue {
+  collapse: Collapse;
+  setCollapse: (collapse: Collapse) => void;
+}
 
 //set context
 export const CollapseContext = createContext({} as CollapseContextValue);

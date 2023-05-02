@@ -25,7 +25,7 @@ enum Conten {
   'Finanzas Personales' = 'Finanzas Personales',
 }
 
-export const descriptions = (prop: string) => {
+const seo = (prop: string) => {
   const doc = content[prop as Conten];
 
   if (doc === undefined) {
@@ -34,3 +34,5 @@ export const descriptions = (prop: string) => {
 
   return doc;
 };
+
+export default seo;

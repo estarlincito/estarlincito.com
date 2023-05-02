@@ -1,8 +1,20 @@
-import { AnchorProps } from '@/types';
+import { Target } from '@/types';
 import { clsx } from 'clsx';
 import Link from 'next/link';
+import { MouseEventHandler, ReactNode } from 'react';
 
-const Linkdoc: React.FC<AnchorProps> = ({
+//Types
+interface Props {
+  children: ReactNode;
+  href: string;
+  target: Target;
+  className?: string;
+  onClick?: MouseEventHandler<HTMLAnchorElement>;
+  font?: 'font-light ' | 'font-normal';
+  size?: 'text-base' | 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl';
+}
+
+const Linkdoc: React.FC<Props> = ({
   href,
   target,
   children,

@@ -1,11 +1,13 @@
-import { CommentFormProps } from '@/types';
 import { useAuth0 } from '@auth0/auth0-react';
 
-const CommentForm: React.FC<CommentFormProps> = ({
-  text,
-  setText,
-  onSubmit,
-}) => {
+//Types
+interface Props {
+  text: string;
+  setText: (text: string) => void;
+  onSubmit: (e: React.FormEvent) => Promise<void>;
+}
+
+const CommentForm: React.FC<Props> = ({ text, setText, onSubmit }) => {
   const { isAuthenticated, logout, loginWithPopup } = useAuth0();
 
   return (
