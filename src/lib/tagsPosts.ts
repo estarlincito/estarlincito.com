@@ -1,4 +1,5 @@
 import { allBlogs } from 'contentlayer/generated';
+import { Words } from './checkWords';
 
 export const getTagsPosts = () => {
   //to concat all tags array
@@ -7,6 +8,7 @@ export const getTagsPosts = () => {
   //to count all tags
   const count: { [key: string]: number } = {};
   _tags.forEach((item) => {
+    Words.check(item);
     count[item] = (count[item] || 0) + 1;
   });
 

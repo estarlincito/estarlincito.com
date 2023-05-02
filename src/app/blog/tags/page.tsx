@@ -15,6 +15,7 @@ export const { metadata } = new SEO({
 
 const TagsPage = () => {
   const tags = getTagsPosts();
+
   return (
     <div
       className={clsx(

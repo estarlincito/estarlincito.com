@@ -1,5 +1,7 @@
 import { ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
+import { Words } from '../src/lib/checkWords';
+const { check, fix } = Words;
 import seo from './seo';
 
 //Types
@@ -44,9 +46,9 @@ export const computedFields: ComputedFields = {
     type: Urls as 'string',
     resolve: (doc) => {
       return {
-        cat: `/blog/${doc.category.toLocaleLowerCase()}`,
-        sub: `/blog/${doc._raw.sourceFileDir}`,
-        post: `/blog/${doc._raw.flattenedPath}`,
+        cat: fix(`/blog/${doc.category.toLocaleLowerCase()}`),
+        sub: check(`/blog/${doc._raw.sourceFileDir}`),
+        post: check(`/blog/${doc._raw.flattenedPath}`),
       };
     },
   },
