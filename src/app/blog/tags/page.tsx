@@ -39,7 +39,7 @@ const TagsPage = () => {
               href={`/blog/tags/${tag}`}
               target='_self'
               font='font-normal'
-              className={clsx('text-sky-600', 'dark:text-sky-400')}
+              color='sky'
             >
               {tag}&nbsp;
               <span className='font-light text-sm text-neutral-700 dark:text-neutral-300'>

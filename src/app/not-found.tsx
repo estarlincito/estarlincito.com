@@ -22,11 +22,7 @@ const NotFound = () => {
 
         <p>
           Puedes volver a&nbsp;
-          <Linkdoc
-            target='_self'
-            href='http://estarlincito.com'
-            className={clsx('text-sky-600', 'dark:text-sky-400')}
-          >
+          <Linkdoc target='_self' href='http://estarlincito.com' color='sky'>
             inicio
           </Linkdoc>
         </p>

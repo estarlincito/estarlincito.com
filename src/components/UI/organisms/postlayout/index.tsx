@@ -1,6 +1,7 @@
 import { Imagedoc, Title } from '@/components/HOC';
 import { Blog } from 'contentlayer/generated';
 import Wrapper from '../wrapper';
+import Origin from './origin';
 import Author from './author';
 import Check from './check';
 import Post from './post';
@@ -21,6 +22,7 @@ const PostLayout: React.FC<Blog> = ({
   updated,
   readingTime,
   urls,
+  origin,
 }) => {
   return (
     <Wrapper className='flex flex-col gap-y-5'>
@@ -41,8 +43,8 @@ const PostLayout: React.FC<Blog> = ({
         avathar={avathar}
         updated={updated}
       />
-
       <Post doc={body.code} />
+      <Origin origin={origin} />
       <Tags tags={tags} />
       {/* <Comment /> */}
     </Wrapper>

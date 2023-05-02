@@ -1,7 +1,6 @@
 import { Linkdoc } from '@/components/HOC';
 
-import clsx from 'clsx';
-
+//Types
 interface Props {
   tags: string[];
 }
@@ -17,7 +16,7 @@ const Tags: React.FC<Props> = ({ tags }) => {
               href={`/blog/tags/${tag}`}
               target='_self'
               font='font-normal'
-              className={clsx('text-sky-600', 'dark:text-sky-400')}
+              color='sky'
             >
               #{tag}
             </Linkdoc>
