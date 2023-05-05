@@ -1,6 +1,6 @@
 import { sortByDate } from '@/lib';
-import { PostCard } from '../molecules';
 import { Blog } from 'contentlayer/generated';
+import { PostCard } from '../molecules';
 
 //Types
 interface PostListProsp {

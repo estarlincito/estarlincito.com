@@ -1,7 +1,7 @@
+import { sitemap } from '@/lib';
 import { catsLinks } from './catsLinks';
 import Copyright from './copyright';
 import { hireme } from './hireme';
-import { sitemap } from '@/lib';
 import List from './list';
 
 const Nav = () => {

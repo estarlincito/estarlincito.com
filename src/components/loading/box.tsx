@@ -1,7 +1,10 @@
 import clsx from 'clsx';
+
+//Types
 interface Props {
   className?: string;
 }
+
 const Box: React.FC<Props> = ({ className }) => {
   return (
     <div

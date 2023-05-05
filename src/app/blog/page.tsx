@@ -1,9 +1,9 @@
 import { BlogHeader } from '@/components/UI/molecules';
-import { LoadingArticle } from '@/components/loading';
 import { PostList } from '@/components/UI/organisms';
+import { LoadingArticle } from '@/components/loading';
+import { SEO } from '@/lib';
 import { allBlogs } from 'contentlayer/generated';
 import { Suspense } from 'react';
-import { SEO } from '@/lib';
 
 //SEO
 const description =

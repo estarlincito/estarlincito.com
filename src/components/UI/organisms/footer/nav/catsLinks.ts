@@ -1,5 +1,5 @@
-import { allBlogs } from 'contentlayer/generated';
 import { Links } from '@/types';
+import { allBlogs } from 'contentlayer/generated';
 
 const allCat = Object.entries(
   allBlogs.reduce((cat: { [key: string]: string }, item) => {

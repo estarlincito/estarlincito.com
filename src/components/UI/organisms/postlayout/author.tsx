@@ -3,6 +3,7 @@ import { dateFormat } from '@/lib';
 import clsx from 'clsx';
 import { TbCalendarDue } from 'react-icons/tb';
 
+//Types
 interface Props {
   author: string;
   avathar: string;

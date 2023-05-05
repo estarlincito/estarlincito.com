@@ -1,22 +1,14 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Footer, Navbar, Opacity } from '@UI/organisms';
-import { CollapseProvider, ThemeProvider } from '@/context';
 import { Collapse } from '@/components/UI/molecules';
-import { ChildrenProps } from '@/types';
+import { CollapseProvider, ThemeProvider } from '@/context';
 import '@/styles/globals.css';
-import { isDev } from '@/lib';
+import { ChildrenProps } from '@/types';
+import { Footer, Navbar, Opacity } from '@UI/organisms';
 import clsx from 'clsx';
 
 const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
   return (
     <html lang='es'>
-      {isDev && (
-        <head>
-          {/* React Dev Tool */}
-          {/* <script type='text/javascript' src='http://localhost:8097' /> */}
-        </head>
-      )}
-
       <body
         className={clsx(
           'font-sans bg-white text-neutral-900',

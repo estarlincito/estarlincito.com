@@ -1,5 +1,5 @@
-import { Title, Linkdoc } from '@/components/HOC';
-import { getTagsPosts, SEO } from '@/lib';
+import { Linkdoc, Title } from '@/components/HOC';
+import { Post, SEO } from '@/lib';
 import clsx from 'clsx';
 
 //SEO
@@ -14,7 +14,7 @@ export const { metadata } = new SEO({
 });
 
 const TagsPage = () => {
-  const tags = getTagsPosts();
+  const { allTags } = Post;
 
   return (
     <div
@@ -33,7 +33,7 @@ const TagsPage = () => {
       />
 
       <ul className='grid md:grid-cols-3 gap-2'>
-        {tags.map(({ tag, count }, id) => (
+        {allTags.map(({ tag, count }, id) => (
           <li key={id} className=''>
             <Linkdoc
               href={`/blog/tags/${tag}`}

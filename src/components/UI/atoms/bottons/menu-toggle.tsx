@@ -1,7 +1,7 @@
 'use client';
 import { useCollapse } from '@/Hooks';
-import { TbMenu } from 'react-icons/tb';
 import { Button } from '@/components/HOC';
+import { TbMenu } from 'react-icons/tb';
 
 const MenuToggle = () => {
   const { OnCollapse } = useCollapse();

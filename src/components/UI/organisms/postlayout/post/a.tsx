@@ -3,7 +3,7 @@ import { Linkdoc } from '@/components/HOC';
 const A: React.FC<JSX.IntrinsicElements['a']> = ({ children, href }) => {
   const target = href!.includes('https://estarlincito.com');
 
-  //https only mode
+  //https mode only
   if (href!.includes('http://')) {
     throw new Error("You have 'http://' please change");
   }

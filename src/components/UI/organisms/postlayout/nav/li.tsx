@@ -1,6 +1,5 @@
 'use client';
 import { Linkdoc } from '@/components/HOC';
-import { usePathname } from 'next/navigation';
 
 //Types
 interface Props {

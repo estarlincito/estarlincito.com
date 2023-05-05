@@ -1,4 +1,4 @@
-import { Linkdoc, Blockquote, Title } from '@/components/HOC';
+import { Blockquote, Linkdoc, Title } from '@/components/HOC';
 import { SEO } from '@/lib';
 
 //SEO

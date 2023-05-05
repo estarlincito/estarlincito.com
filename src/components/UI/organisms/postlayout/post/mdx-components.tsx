@@ -1,11 +1,11 @@
-import Conclusion from './conclusion';
-import Blockquote from './blockquote';
-import Strong from './strong';
-import Empty from './empty';
-import Image from './image';
-import Code from './code';
-import H2 from './h2';
 import A from './a';
+import Blockquote from './blockquote';
+import Code from './code';
+import Conclusion from './conclusion';
+import Empty from './empty';
+import H2 from './h2';
+import Image from './image';
+import Strong from './strong';
 
 export const mdxComponents = {
   Intruduction: Empty,

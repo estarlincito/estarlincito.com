@@ -1,8 +1,8 @@
 import { ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
-import { Words } from '../src/lib/checkWords';
-const { check, fix } = Words;
+import { Words } from '../src/lib/words';
 import seo from './seo';
+const { check, fix } = Words;
 
 //Types
 const prop = `{

@@ -1,7 +1,6 @@
 import { Linkdoc } from '@/components/HOC';
 import Main from '@/components/UI/organisms/container';
 import { SEO } from '@/lib';
-import clsx from 'clsx';
 
 //SEO
 export const { metadata } = new SEO({

@@ -1,9 +1,9 @@
 'use client';
 import { DarkmodeToggle, HireMeLink, MenuToggle, TwitterLink } from '@UI/atoms';
 import clsx from 'clsx';
-import { Brand } from '../molecules';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { Brand } from '../molecules';
 
 const Navbar = () => {
   const [title, setTitle] = useState('');

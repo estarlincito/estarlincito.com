@@ -1,5 +1,5 @@
-import { TbArrowBadgeRight, TbBrandGoogleHome } from 'react-icons/tb';
 import clsx from 'clsx';
+import { TbArrowBadgeRight, TbBrandGoogleHome } from 'react-icons/tb';
 import Li from './li';
 
 interface Props {

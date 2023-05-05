@@ -1,12 +1,6 @@
 export * from './dateFormat';
-export * from './tagsPosts';
-export * from './seo';
-export * from './sortDate';
 export * from './post';
-export * from './dev';
+export * from './seo';
 export * from './siteMap';
-export * from './checkWords';
-// export * from './fetchComment';
-// export * from './createComment';
-// export * from './deleteComment';
-// export * from './dateRelative';
+export * from './sortDate';
+export * from './words';

@@ -1,9 +1,9 @@
 import { BlogHeader } from '@/components/UI/molecules';
 import { LoadingArticle } from '@/components/loading';
-import { notFound } from 'next/navigation';
-import { PostList } from '@UI/organisms';
 import { Post, SEO } from '@/lib';
 import { ParamsCat } from '@/types';
+import { PostList } from '@UI/organisms';
+import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
 interface Props {

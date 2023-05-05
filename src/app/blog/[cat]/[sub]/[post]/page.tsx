@@ -1,9 +1,9 @@
-import { Post, SEO } from '@/lib';
-import { notFound } from 'next/navigation';
-import { PostLayout } from '@UI/organisms';
-import { ParamsPost } from '@/types';
-import { Suspense } from 'react';
 import { LoadingPost } from '@/components/loading';
+import { Post, SEO } from '@/lib';
+import { ParamsPost } from '@/types';
+import { PostLayout } from '@UI/organisms';
+import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
 interface Props {
   params: ParamsPost;

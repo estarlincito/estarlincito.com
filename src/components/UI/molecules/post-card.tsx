@@ -1,7 +1,7 @@
 import { Imagedoc, Linkdoc } from '@/components/HOC';
-import { Blog } from 'contentlayer/generated';
 import { dateFormat } from '@/lib';
 import clsx from 'clsx';
+import { Blog } from 'contentlayer/generated';
 
 const PostCard: React.FC<Blog> = ({
   title,

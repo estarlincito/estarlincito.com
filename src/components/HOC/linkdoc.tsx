@@ -1,7 +1,7 @@
-import { MouseEventHandler, ReactNode } from 'react';
 import { Target } from '@/types';
-import Link from 'next/link';
 import { clsx } from 'clsx';
+import Link from 'next/link';
+import { MouseEventHandler, ReactNode } from 'react';
 
 //Types
 interface Props {

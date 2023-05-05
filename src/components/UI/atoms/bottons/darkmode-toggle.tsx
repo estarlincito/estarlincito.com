@@ -1,5 +1,5 @@
 'use client';
-import { TbSun, TbMoon } from 'react-icons/tb';
+import { TbMoon, TbSun } from 'react-icons/tb';
 
 import { Button } from '@/components/HOC';
 import { useTheme } from '@/Hooks';

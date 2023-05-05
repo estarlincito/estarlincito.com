@@ -1,12 +1,12 @@
 import { Imagedoc, Title } from '@/components/HOC';
 import { Blog } from 'contentlayer/generated';
 import Wrapper from '../wrapper';
-import Origin from './origin';
 import Author from './author';
 import Check from './check';
+import Nav from './nav';
+import Origin from './origin';
 import Post from './post';
 import Tags from './tags';
-import Nav from './nav';
 
 const PostLayout: React.FC<Blog> = ({
   title,

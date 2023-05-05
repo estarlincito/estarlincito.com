@@ -1,6 +1,7 @@
-import Container from './container';
-import Box from './box';
 import { Wrapper } from '@UI/organisms';
+import Box from './box';
+import Container from './container';
+
 const LoadingPost = () => {
   return (
     <Wrapper>

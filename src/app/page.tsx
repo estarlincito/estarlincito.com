@@ -1,9 +1,9 @@
-import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
-import { Linkdoc, Title, Hr, Imagedoc } from '@/components/HOC';
-import { Container, Wrapper } from '@UI/organisms';
-import { Links } from '@/types';
-import clsx from 'clsx';
+import { Hr, Imagedoc, Linkdoc, Title } from '@/components/HOC';
 import { SEO } from '@/lib';
+import { Links } from '@/types';
+import { Container, Wrapper } from '@UI/organisms';
+import clsx from 'clsx';
+import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 const name = 'Estarlincito';
 
 //SEO
