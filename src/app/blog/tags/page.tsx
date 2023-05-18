@@ -20,7 +20,8 @@ const TagsPage = () => {
     <div
       className={clsx(
         'min-h-[80vh]',
-        'md:flex md:items-center md:justify-center md:gap-x-5'
+        'md:flex md:items-center md:justify-center md:gap-x-10',
+        'flex flex-rows'
       )}
     >
       <Title
@@ -34,7 +35,7 @@ const TagsPage = () => {
 
       <ul className='grid md:grid-cols-3 gap-2'>
         {allTags.map(({ tag, count }, id) => (
-          <li key={id} className=''>
+          <li key={id}>
             <Linkdoc
               href={`/blog/tags/${tag}`}
               target='_self'

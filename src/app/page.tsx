@@ -93,7 +93,7 @@ const HomePage = () => {
 
           <ul className='mt-5 md:flex md:justify-center md:gap-x-5'>
             {links.map((link, index) => (
-              <li key={index}>
+              <li key={index} className='mb-1 md:mb-0'>
                 <Linkdoc
                   href={link.route}
                   target={link.target!}
