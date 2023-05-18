@@ -20,8 +20,8 @@ const TagsPage = () => {
     <div
       className={clsx(
         'min-h-[80vh]',
-        'md:flex md:items-center md:justify-center md:gap-x-10',
-        'flex flex-rows'
+        'flex flex-col items-center gap-10',
+        'md:flex-row md:justify-center'
       )}
     >
       <Title
