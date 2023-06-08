@@ -5,15 +5,16 @@ export const useLocalStorage = <T>(key: string, initialValue: T) => {
 
   //wen app is load
   useEffect(() => {
-    if (localStorage.getItem(key)) {
-      setStore(localStorage.getItem(key) as T);
+    const items = localStorage.getItem(key);
+    if (items === null) {
+      return;
     }
+    setStore(JSON.parse(items));
   }, [key]);
 
   //wen store change
   useEffect(() => {
-    const value = typeof store !== 'string' ? JSON.stringify(store) : store;
-    localStorage.setItem(key, value);
+    localStorage.setItem(key, JSON.stringify(store));
   }, [key, store]);
 
   return [store, setStore] as const;
