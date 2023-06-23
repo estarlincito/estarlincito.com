@@ -1,5 +1,5 @@
 import { allBlogs } from 'contentlayer/generated';
-import { Words } from './words';
+import Words from './words';
 
 const allTags = () => {
   //to concat all tags array
@@ -28,7 +28,7 @@ interface Params {
   tag?: string;
 }
 
-export class Post {
+class Post {
   constructor(public params: Params) {
     this.params = params;
   }
@@ -44,7 +44,7 @@ export class Post {
   );
 
   //Post by url post
-  readonly posts = allBlogs.find(
+  readonly post = allBlogs.find(
     (item) =>
       item.urls.post ===
       `/blog/${this.params.cat}/${this.params.sub}/${this.params.post}`
@@ -58,3 +58,5 @@ export class Post {
   //All tags
   static readonly allTags = allTags();
 }
+
+export default Post;

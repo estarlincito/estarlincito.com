@@ -1,2 +1,2 @@
-//Target
-export type Target = '_blank' | '_self';
+type Target = '_blank' | '_self';
+export default Target;

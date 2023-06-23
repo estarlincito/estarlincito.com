@@ -1,8 +1,8 @@
 'use client';
-import { ThemeContext } from '@/context';
+import { ThemeContext } from '@/context/theme';
 import { useContext } from 'react';
 
-export const useTheme = () => {
+const useTheme = () => {
   const themeContext = useContext(ThemeContext);
   if (themeContext === undefined) {
     throw new Error('Check if ThemeContext code is corret');
@@ -25,3 +25,5 @@ export const useTheme = () => {
 
   return { currentTheme, themeToggle };
 };
+
+export default useTheme;

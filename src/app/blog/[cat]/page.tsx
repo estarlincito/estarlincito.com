@@ -1,8 +1,9 @@
-import { BlogHeader } from '@/components/UI/molecules';
-import { LoadingArticle } from '@/components/loading';
-import { Post, SEO } from '@/lib';
-import { ParamsCat } from '@/types';
-import { PostList } from '@UI/organisms';
+import Post from '@/lib/post';
+import SEO from '@/lib/seo';
+import { ParamsCat } from '@/types/params';
+import BlogHeader from '@BlogComponents/blog-header';
+import LoadingArticle from '@BlogComponents/loading/article';
+import PostList from '@BlogComponents/post-list';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 

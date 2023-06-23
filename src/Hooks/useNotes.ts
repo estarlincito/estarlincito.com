@@ -1,7 +1,7 @@
 'use client';
-import { Note } from '@/types/note';
+import Note from '@/types/note';
 import { ChangeEventHandler, FormEventHandler, useState } from 'react';
-import { useLocalStorage } from './useLocalstorage';
+import useLocalStorage from './useLocalstorage';
 
 const useNote = () => {
   const [notes, setNotes] = useLocalStorage('notes', [] as Note[]);

@@ -1,8 +1,8 @@
 'use client';
-import { CollapseContext } from '@/context';
+import { CollapseContext } from '@/context/collapse';
 import { useContext } from 'react';
 
-export const useCollapse = () => {
+const useCollapse = () => {
   const collapseContext = useContext(CollapseContext);
 
   if (collapseContext === undefined) {
@@ -21,3 +21,5 @@ export const useCollapse = () => {
 
   return { collapse, OnCollapse, offCollapse };
 };
+
+export default useCollapse;

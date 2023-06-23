@@ -1,6 +1,6 @@
-import { Linkdoc } from '@/components/HOC';
-import Main from '@/components/UI/organisms/container';
-import { SEO } from '@/lib';
+import Linkdoc from '@/components/UI/linkdoc';
+import Main from '@/components/container';
+import SEO from '@/lib/seo';
 
 //SEO
 export const { metadata } = new SEO({

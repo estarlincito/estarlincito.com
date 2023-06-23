@@ -1,5 +1,7 @@
-import { Linkdoc, Title } from '@/components/HOC';
-import { Post, SEO } from '@/lib';
+import Linkdoc from '@/components/UI/linkdoc';
+import Title from '@/components/UI/title';
+import Post from '@/lib/post';
+import SEO from '@/lib/seo';
 import clsx from 'clsx';
 
 //SEO

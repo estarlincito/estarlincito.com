@@ -1,5 +1,6 @@
 import { makeSource } from 'contentlayer/source-files';
-import { Blog, mdxOptions } from './config';
+import Blog from './config/blog';
+import mdxOptions from './config/mdxOptions';
 
 const contentLayerConfig = makeSource({
   contentDirPath: './public/posts',

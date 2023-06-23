@@ -25,10 +25,12 @@ const fields: FieldDefs = {
   },
 };
 
-export const Blog = defineDocumentType(() => ({
+const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: '**.mdx',
   contentType: 'mdx',
   fields,
   computedFields,
 }));
+
+export default Blog;

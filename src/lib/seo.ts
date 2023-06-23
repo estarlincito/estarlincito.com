@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
 
-export class SEO {
+class SEO {
   constructor(
     public seo: {
       title: string;
@@ -36,3 +36,5 @@ export class SEO {
     },
   } as Metadata;
 }
+
+export default SEO;

@@ -1,8 +1,8 @@
-import { Container } from '@/components/UI/organisms';
-import { ChildrenProps } from '@/types';
+import Container from '@/components/container';
+import ChildrenProps from '@/types/children';
 
-const BlogLayout: React.FC<ChildrenProps> = ({ children }) => {
-  return <Container>{children}</Container>;
+const BlogLayout = (props: ChildrenProps) => {
+  return <Container>{props.children}</Container>;
 };
 
 export default BlogLayout;

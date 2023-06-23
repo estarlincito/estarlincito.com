@@ -1,14 +1,16 @@
-import { Blockquote, Linkdoc, Title } from '@/components/HOC';
-import { SEO } from '@/lib';
+import Blockquote from '@/components/UI/blockquote';
+import Linkdoc from '@/components/UI/linkdoc';
+import Title from '@/components/UI/title';
+import Contact from '@/constants/contact';
+import SEO from '@/lib/seo';
 
 //SEO
 export const { metadata } = new SEO({
-  title: 'Estarlincito | Contácto',
-  description:
-    'Si está buscando ayuda para construir algo que tenga un impacto y sostenibilidad, hablemos :)',
-  openGraph: { type: 'website', url: 'https://estarlincito.com/contact/' },
-  imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
-  imagesAlt: 'Avathar',
+  title: Contact.seo.title,
+  description: Contact.seo.description,
+  openGraph: Contact.seo.openGraph,
+  imagesUrl: Contact.seo.imagesUrl,
+  imagesAlt: Contact.seo.imagesAlt,
 });
 
 const ContactPage = () => {
@@ -16,46 +18,36 @@ const ContactPage = () => {
     <section className='flex flex-col gap-y-5'>
       <div>
         <Title text='Ponte en contacto conmigo' size='text-3xl' />
-        <Blockquote>¡Construyamos algo juntos!</Blockquote>
+        <Blockquote>{Contact.quote}</Blockquote>
       </div>
 
       <p>
-        Si está buscando ayuda para construir algo que tenga un impacto y
-        sostenibilidad, hablemos&nbsp;
+        {Contact.talkme.main}
         <span role='img' aria-label='Levantando las manos'>
           🙌
         </span>
       </p>
 
       <p>
-        Envíame un correo electrónico a:
+        {Contact.talkme.sendme}
         <br />
-        <Linkdoc href='mailto:contacto@estarlincito.com' target='_self'>
-          contacto@estarlincito.com
+        <Linkdoc href={Contact.talkme.mailto} target='_self'>
+          {Contact.talkme.email}
         </Linkdoc>
       </p>
 
-      <p>
-        Siempre estoy aprendiendo y explorando. Con mi experiencia como
-        Diseñador web, puedo ayudarte a materializar tus ideas innovadoras con
-        Información, análisis y monitoreo tecnológico completos.
-      </p>
-
-      <p>
-        En general, mi trabajo se centra en la consulta, la innovación, solución
-        de problemas tecnológicos y la educación:
-      </p>
+      <p>{Contact.talkme.able}</p>
+      <p>{Contact.talkme.general}</p>
 
       <ul>
-        <li>- Diseñador Web</li>
-        <li>- Soporte Técnico</li>
-        <li>- Hacker Ético</li>
-        <li>- Educador Tecnológico</li>
+        {Contact.talkme.list.map((cat, id) => (
+          <li key={id}>- {cat}</li>
+        ))}
       </ul>
 
       <p>
-        Si solo quieres saludar, Hazme un&nbsp;
-        <Linkdoc href='https://twitter.com/estarlincito' target='_blank'>
+        {Contact.talkme.hello}
+        <Linkdoc href={Contact.talkme.twitterlink} target='_blank'>
           Tweet!
         </Linkdoc>
       </p>

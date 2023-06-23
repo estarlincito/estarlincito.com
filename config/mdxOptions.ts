@@ -6,4 +6,4 @@ const mdxOptions: MDXOptions = {
   rehypePlugins: [],
 };
 
-export { mdxOptions };
+export default mdxOptions;

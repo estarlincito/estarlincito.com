@@ -1,50 +1,32 @@
-import { Title } from '@/components/HOC';
-import { SEO } from '@/lib';
+import Title from '@/components/UI/title';
+import About from '@/constants/about';
+import SEO from '@/lib/seo';
 import clsx from 'clsx';
 
 //SEO
 export const { metadata } = new SEO({
-  title: 'Acerca de Estarlincito',
-  description:
-    'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más.',
-  openGraph: { type: 'website', url: 'https://estarlincito.com/about/' },
-  imagesUrl: 'https://estarlincito.com/images/avatar.jpeg',
-  imagesAlt: 'Avathar',
+  title: About.seo.title,
+  description: About.seo.description,
+  openGraph: About.seo.openGraph,
+  imagesUrl: About.seo.imagesUrl,
+  imagesAlt: About.seo.imagesAlt,
 });
-
-const temas = [
-  'Tecnología',
-  'Privacidad en línea',
-  'Desarrollo web',
-  'Diseño Web',
-  'SEO',
-  'React',
-  'Nextjs',
-  'Psicología',
-  'Filosofía',
-];
 
 const AboutPage = () => {
   return (
     <section>
       <Title text='Acerca de Estarlincito' size='text-2xl' />
       <p className={clsx('text-neutral-600 dark:text-neutral-300')}>
-        Blog de Tecnología, Filosofía, Psicología y Desarrollo Web y mucho más
+        {About.seo.description}
       </p>
 
-      <p className='my-5'>
-        Este es un blog que explora la tecnología, la filosofía, la psicología y
-        el desarrollo web y mucho más. Aquí encontrarás reflexiones, análisis y
-        discusiones sobre cómo la tecnología está cambiando nuestra forma de
-        pensar y relacionarnos con el mundo, así como su impacto en nuestra
-        psicología y bienestar emocional.
-      </p>
+      <p className='my-5'>{About.moreinf}</p>
 
       <div className='my-5'>
-        <h3 className='text-lg font-bold'>Temas que se abordan</h3>
+        <h3 className='text-lg font-bold'>{About.temeabout}</h3>
         <ul>
-          {temas.map((tema, id) => (
-            <li key={id}></li>
+          {About.temas.map((tema, id) => (
+            <li key={id}>{tema}</li>
           ))}
         </ul>
       </div>

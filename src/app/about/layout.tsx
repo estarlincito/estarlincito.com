@@ -1,7 +1,7 @@
-import { Container } from '@/components/UI/organisms';
-import { ChildrenProps } from '@/types';
+import Container from '@/components/container';
+import ChildrenProps from '@/types/children';
 
-const BlogLayout: React.FC<ChildrenProps> = ({ children }) => {
+const BlogLayout = ({ children }: ChildrenProps) => {
   return <Container>{children}</Container>;
 };
 

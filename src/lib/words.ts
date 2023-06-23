@@ -7,7 +7,7 @@ class Puntuations {
   static readonly n = ['ñ', 'ń'];
 }
 
-export class Words {
+class Words {
   //Check
   static check(text: string) {
     Object.entries(Puntuations).forEach(([_, value]) => {
@@ -35,3 +35,5 @@ export class Words {
     return text;
   }
 }
+
+export default Words;

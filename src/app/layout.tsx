@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-sync-scripts */
-import { Collapse } from '@/components/UI/molecules';
-import { CollapseProvider, ThemeProvider } from '@/context';
+import Collapse from '@/components/collapse';
+import Footer from '@/components/footer';
+import Navbar from '@/components/navbar';
+import Opacity from '@/components/opacity';
+import { CollapseProvider } from '@/context/collapse';
+import { ThemeProvider } from '@/context/theme';
 import '@/styles/globals.css';
-import { ChildrenProps } from '@/types';
-import { Footer, Navbar, Opacity } from '@UI/organisms';
+import ChildrenProps from '@/types/children';
 import clsx from 'clsx';
 
-const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
+const RootLayout = (props: ChildrenProps) => {
   return (
     <html lang='es'>
       <body
@@ -22,7 +25,7 @@ const RootLayout: React.FC<ChildrenProps> = ({ children }) => {
             <Navbar />
             <Collapse />
           </ThemeProvider>
-          {children}
+          {props.children}
           <Footer />
         </CollapseProvider>
       </body>

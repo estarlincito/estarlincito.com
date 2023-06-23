@@ -1,7 +1,8 @@
-import { LoadingPost } from '@/components/loading';
-import { Post, SEO } from '@/lib';
-import { ParamsPost } from '@/types';
-import { PostLayout } from '@UI/organisms';
+import Post from '@/lib/post';
+import SEO from '@/lib/seo';
+import { ParamsPost } from '@/types/params';
+import LoadingPost from '@BlogComponents/loading/post';
+import PostLayout from '@BlogComponents/postlayout';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
@@ -11,38 +12,38 @@ interface Props {
 
 //SEO
 export const generateMetadata = ({ params }: Props) => {
-  const { posts } = new Post(params);
+  const { post } = new Post(params);
 
-  if (posts === undefined) {
+  if (post === undefined) {
     return;
   }
 
   const { metadata } = new SEO({
-    title: posts.title,
-    description: posts.summary,
+    title: post.title,
+    description: post.summary,
     openGraph: {
       type: 'article',
-      publishedTime: posts.publishedAt,
-      authors: posts.author,
-      url: `https://estarlincito.com${posts.urls.post}`,
+      publishedTime: post.publishedAt,
+      authors: post.author,
+      url: `https://estarlincito.com${post.urls.post}`,
     },
-    imagesUrl: posts.cover,
-    imagesAlt: posts.coverAlt,
+    imagesUrl: post.cover,
+    imagesAlt: post.coverAlt,
   });
 
   return metadata;
 };
 
 const PostPage = ({ params }: Props) => {
-  const { posts } = new Post(params);
+  const { post } = new Post(params);
 
-  if (posts === undefined) {
+  if (post === undefined) {
     notFound();
   }
 
   return (
     <Suspense fallback={<LoadingPost />}>
-      <PostLayout {...posts} />
+      <PostLayout {...post} />
     </Suspense>
   );
 };

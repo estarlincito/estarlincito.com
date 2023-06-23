@@ -1,9 +1,9 @@
-import { BlogHeader } from '@/components/UI/molecules';
-import { PostList } from '@/components/UI/organisms';
-import { LoadingArticle } from '@/components/loading';
-import { SEO } from '@/lib';
+import SEO from '@/lib/seo';
 import { allBlogs } from 'contentlayer/generated';
 import { Suspense } from 'react';
+import BlogHeader from './components/blog-header';
+import LoadingArticle from './components/loading/article';
+import PostList from './components/post-list';
 
 //SEO
 const description =

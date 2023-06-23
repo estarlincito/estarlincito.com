@@ -1,10 +1,9 @@
 import { ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
-import { Words } from '../src/lib/words';
+import Words from '../src/lib/words';
 import seo from './seo';
 const { check, fix } = Words;
 
-//Types
 const prop = `{
   description: string;
   imagesUrl: string;

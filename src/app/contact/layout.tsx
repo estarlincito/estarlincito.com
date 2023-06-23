@@ -1,10 +1,11 @@
-import { Container, Wrapper } from '@/components/UI/organisms';
-import { ChildrenProps } from '@/types';
+import Container from '@/components/container';
+import Wrapper from '@/components/wrapper';
+import ChildrenProps from '@/types/children';
 
-const ContactLayout: React.FC<ChildrenProps> = ({ children }) => {
+const ContactLayout = (props: ChildrenProps) => {
   return (
     <Container>
-      <Wrapper>{children}</Wrapper>
+      <Wrapper>{props.children}</Wrapper>
     </Container>
   );
 };
