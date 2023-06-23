@@ -1,5 +1,5 @@
 'use client';
-import useLocalStorage from '@/Hooks/useLocalstorage';
+import useLocalStorage from '@/hooks/useLocalstorage';
 import ChildrenProps from '@/types/children';
 import Theme from '@/types/theme';
 import { createContext } from 'react';

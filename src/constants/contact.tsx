@@ -17,13 +17,28 @@ class Seo {
 const quote = '¡Construyamos algo juntos!';
 
 const talkme = {
-  main: 'Si está buscando ayuda para construir algo que tenga un impacto y sostenibilidad, hablemos&nbsp;',
-  sendme: 'Envíame un correo electrónico a:',
+  main: (
+    <>
+      Si está buscando ayuda para construir algo que tenga un impacto y
+      sostenibilidad, hablemos&nbsp;
+    </>
+  ),
+  sendme: <>Envíame un correo electrónico a:</>,
   mailto: 'mailto:contacto@estarlincito.com',
-  email: 'contacto@estarlincito.com',
-  able: ' Siempre estoy aprendiendo y explorando. Con mi experiencia como Diseñador web, puedo ayudarte a materializar tus ideas innovadoras con Información, análisis y monitoreo tecnológico completos.',
-  general:
-    'En general, mi trabajo se centra en la consulta, la innovación, solución de problemas tecnológicos y la educación:',
+  email: <>contacto@estarlincito.com</>,
+  able: (
+    <>
+      Siempre estoy aprendiendo y explorando. Con mi experiencia como Diseñador
+      web, puedo ayudarte a materializar tus ideas innovadoras con Información,
+      análisis y monitoreo tecnológico completos.
+    </>
+  ),
+  general: (
+    <>
+      En general, mi trabajo se centra en la consulta, la innovación, solución
+      de problemas tecnológicos y la educación:
+    </>
+  ),
 
   list: [
     'Diseñador Web',
@@ -32,7 +47,7 @@ const talkme = {
     'Educador Tecnológico',
   ],
 
-  hello: 'Si solo quieres saludar, Hazme un&nbsp;',
+  hello: <>Si solo quieres saludar, Hazme un&nbsp;</>,
 
   twitterlink: 'https://twitter.com/estarlincito',
 };

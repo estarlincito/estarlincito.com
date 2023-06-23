@@ -3,7 +3,6 @@ import About from '@/constants/about';
 import SEO from '@/lib/seo';
 import clsx from 'clsx';
 
-//SEO
 export const { metadata } = new SEO({
   title: About.seo.title,
   description: About.seo.description,
@@ -15,7 +14,7 @@ export const { metadata } = new SEO({
 const AboutPage = () => {
   return (
     <section>
-      <Title text='Acerca de Estarlincito' size='text-2xl' />
+      <Title text='Acerca de Estarlincito' size='text-2xl' className='mb-3' />
       <p className={clsx('text-neutral-600 dark:text-neutral-300')}>
         {About.seo.description}
       </p>

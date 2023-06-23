@@ -1,3 +1,4 @@
+import Blogc from '@/constants/blogc';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
 import { ParamsCat } from '@/types/params';
@@ -11,7 +12,6 @@ interface Props {
   params: ParamsCat;
 }
 
-//SEO
 export const generateMetadata = ({ params }: Props) => {
   const { postsCat } = new Post(params);
 
@@ -23,12 +23,9 @@ export const generateMetadata = ({ params }: Props) => {
   const { description, imagesUrl, imagesAlt } = postsCat[0].blogseo.cat;
 
   const { metadata } = new SEO({
-    title: `Estarlincito | ${postsCat[0].category}`,
+    title: Blogc.seo.title(postsCat[0].category),
     description,
-    openGraph: {
-      type: 'website',
-      url: `https://estarlincito.com/blog/${params.cat}`,
-    },
+    openGraph: Blogc.seo.openGraph(params.cat),
     imagesUrl,
     imagesAlt,
   });

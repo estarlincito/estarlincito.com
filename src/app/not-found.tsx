@@ -2,7 +2,6 @@ import Linkdoc from '@/components/UI/linkdoc';
 import Main from '@/components/container';
 import SEO from '@/lib/seo';
 
-//SEO
 export const { metadata } = new SEO({
   title: 'Página no encontrada',
   description: 'Esta página no existe.',

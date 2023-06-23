@@ -9,7 +9,6 @@ import SEO from '@/lib/seo';
 import clsx from 'clsx';
 import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
 
-//SEO
 export const { metadata } = new SEO({
   title: Home.seo.title,
   description: Home.seo.description,

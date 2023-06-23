@@ -26,10 +26,17 @@ const temas = [
   'Filosofía',
 ];
 
-const moreinf =
-  'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más. Aquí encontrarás reflexiones, análisis y discusiones sobre cómo la tecnología está cambiando nuestra forma de pensar y relacionarnos con el mundo, así como su impacto en nuestra psicología y bienestar emocional.';
+const moreinf = (
+  <>
+    Este es un blog que explora la tecnología, la filosofía, la psicología y el
+    desarrollo web y mucho más. Aquí encontrarás reflexiones, análisis y
+    discusiones sobre cómo la tecnología está cambiando nuestra forma de pensar
+    y relacionarnos con el mundo, así como su impacto en nuestra psicología y
+    bienestar emocional.
+  </>
+);
 
-const temeabout = 'Temas que se abordan';
+const temeabout = <>Temas que se abordan</>;
 
 class About {
   static readonly seo = { ...Seo };

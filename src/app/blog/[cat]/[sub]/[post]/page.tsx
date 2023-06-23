@@ -10,7 +10,6 @@ interface Props {
   params: ParamsPost;
 }
 
-//SEO
 export const generateMetadata = ({ params }: Props) => {
   const { post } = new Post(params);
 

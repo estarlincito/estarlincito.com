@@ -25,7 +25,11 @@ const PostLayout = (props: Blog) => {
         check={props.check}
         readingTime={props.readingTime}
       />
-      <Imagedoc className='-order-3' src={props.cover} alt={props.coverAlt} />
+      <Imagedoc
+        className='-order-3 rounded-sm'
+        src={props.cover}
+        alt={props.coverAlt}
+      />
       {/* BlockQuote -order-2 */}
       <Author
         className='-order-1'

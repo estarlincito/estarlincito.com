@@ -9,7 +9,6 @@ interface TagPageProps {
   params: { tag: string };
 }
 
-//SEO
 export const generateMetadata = (props: TagPageProps) => {
   const { metadata } = new SEO({
     title: `Estarlincito | Tag #${props.params.tag}`,

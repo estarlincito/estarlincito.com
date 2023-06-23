@@ -4,7 +4,6 @@ import Title from '@/components/UI/title';
 import Contact from '@/constants/contact';
 import SEO from '@/lib/seo';
 
-//SEO
 export const { metadata } = new SEO({
   title: Contact.seo.title,
   description: Contact.seo.description,
@@ -17,7 +16,11 @@ const ContactPage = () => {
   return (
     <section className='flex flex-col gap-y-5'>
       <div>
-        <Title text='Ponte en contacto conmigo' size='text-3xl' />
+        <Title
+          text='Ponte en contacto conmigo'
+          size='text-3xl'
+          className='mb-3'
+        />
         <Blockquote>{Contact.quote}</Blockquote>
       </div>
 
@@ -41,7 +44,9 @@ const ContactPage = () => {
 
       <ul>
         {Contact.talkme.list.map((cat, id) => (
-          <li key={id}>- {cat}</li>
+          <li className='font-light list-disc ml-3' key={id}>
+            {cat}
+          </li>
         ))}
       </ul>
 

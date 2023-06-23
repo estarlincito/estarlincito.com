@@ -1,9 +1,9 @@
 'use client';
-import useCollapse from '@/Hooks/useCollapse';
 import Button from '@/components/UI/button';
 import Linkdoc from '@/components/UI/linkdoc';
 import DarkmodeToggle from '@/components/darkmode-toggle';
 import Logo from '@/components/logo';
+import useCollapse from '@/hooks/useCollapse';
 import sitemap from '@/lib/siteMap';
 import clsx from 'clsx';
 import { TbX } from 'react-icons/tb';

@@ -1,10 +1,10 @@
+import Blogc from '@/constants/blogc';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
 import { ParamsSub } from '@/types/params';
 import BlogHeader from '@BlogComponents/blog-header';
 import LoadingArticle from '@BlogComponents/loading/article';
 import PostList from '@BlogComponents/post-list';
-
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
@@ -12,7 +12,6 @@ interface Props {
   params: ParamsSub;
 }
 
-//SEO
 export const generateMetadata = ({ params }: Props) => {
   const { postsSub } = new Post(params);
 
@@ -24,12 +23,9 @@ export const generateMetadata = ({ params }: Props) => {
   const { description, imagesUrl, imagesAlt } = postsSub[0].blogseo.sub;
 
   const { metadata } = new SEO({
-    title: `Estarlincito | ${postsSub[0].subcategory}`,
+    title: Blogc.seo.title(postsSub[0].subcategory),
     description,
-    openGraph: {
-      type: 'website',
-      url: `https://estarlincito.com/blog/${`${params.cat}/${params.sub}`}`,
-    },
+    openGraph: Blogc.seo.openGraph(`${params.cat}/${params.sub}`),
     imagesUrl,
     imagesAlt,
   });

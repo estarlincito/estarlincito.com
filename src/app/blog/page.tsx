@@ -1,3 +1,4 @@
+import Blog from '@/constants/blog';
 import SEO from '@/lib/seo';
 import { allBlogs } from 'contentlayer/generated';
 import { Suspense } from 'react';
@@ -5,23 +6,18 @@ import BlogHeader from './components/blog-header';
 import LoadingArticle from './components/loading/article';
 import PostList from './components/post-list';
 
-//SEO
-const description =
-  'Lee mis pensamientos sobre desarrollo de software, diseño web, criptomonedas y mucho más.';
-
 export const { metadata } = new SEO({
-  title: 'Estarlincito | Blog',
-  description,
-  openGraph: { type: 'website', url: 'https://estarlincito.com/blog/' },
-  imagesUrl:
-    'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
-  imagesAlt: 'Una macbook y una taza',
+  title: Blog.seo.title,
+  description: Blog.seo.description,
+  openGraph: Blog.seo.openGraph,
+  imagesUrl: Blog.seo.imagesUrl,
+  imagesAlt: Blog.seo.imagesAlt,
 });
 
 const BlogPage = () => {
   return (
     <>
-      <BlogHeader title='Bienvenid@ a mi Blog' sumary={description} />
+      <BlogHeader title={Blog.titleH} sumary={Blog.seo.description} />
 
       <Suspense fallback={<LoadingArticle />}>
         <PostList posts={allBlogs} />

@@ -20,7 +20,6 @@ const RootLayout = (props: ChildrenProps) => {
       >
         <CollapseProvider>
           <Opacity />
-          {/* <Header /> */}
           <ThemeProvider>
             <Navbar />
             <Collapse />

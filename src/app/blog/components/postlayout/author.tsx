@@ -13,7 +13,7 @@ interface AuthorProps {
 
 const Author = (props: AuthorProps) => {
   return (
-    <div className={clsx('ml-5 mb-3', props.className && props.className)}>
+    <div className={clsx('ml-5 mb-5 mt-5', props.className && props.className)}>
       <div className=' flex flex-row items-center gap-x-5'>
         <div className='w-16'>
           <Imagedoc
@@ -30,7 +30,7 @@ const Author = (props: AuthorProps) => {
         </p>
       </div>
 
-      <div className='mt-2 flex flex-row items-center gap-x-2'>
+      <div className='mt-3 flex flex-row items-center gap-x-2'>
         <i className='text-slate-600 dark:text-slate-400'>
           <TbCalendarDue />
         </i>

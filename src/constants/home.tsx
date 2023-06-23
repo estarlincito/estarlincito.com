@@ -31,9 +31,10 @@ const links: Links[] = [
 
 const aboutme = (
   <>
-    Hola, soy Estarlicito. Trabajo con el <b>Diseño de páginas web</b>, escribo
-    sobre <b>Tecnológia</b>,&nbsp;
-    <b>Psicológia y otros temas.</b>
+    Hola, soy <b>Estarlicito</b>. Trabajo con el&nbsp;
+    <em>Diseño de páginas web</em>, escribo sobre
+    <em>Tecnológia</em>,&nbsp;
+    <em>Psicológia y otros temas.</em>
   </>
 );
 

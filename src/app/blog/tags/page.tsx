@@ -4,7 +4,6 @@ import Post from '@/lib/post';
 import SEO from '@/lib/seo';
 import clsx from 'clsx';
 
-//SEO
 export const { metadata } = new SEO({
   title: 'Estarlincito | Tags',
   description:
