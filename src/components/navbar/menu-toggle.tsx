@@ -1,6 +1,6 @@
 'use client';
 import Button from '@/components/UI/button';
-import useCollapse from '@/hooks/useCollapse';
+import useCollapse from '@/Hooks/useCollapse';
 import { TbMenu } from 'react-icons/tb';
 
 const MenuToggle = () => {

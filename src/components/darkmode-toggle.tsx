@@ -1,6 +1,7 @@
 'use client';
 import Button from '@/components/UI/button';
-import useTheme from '@/hooks/useTheme';
+import useTheme from '@/Hooks/useTheme';
+
 import { TbMoon, TbSun } from 'react-icons/tb';
 
 const DarkmodeToggle = () => {

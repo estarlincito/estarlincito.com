@@ -1,5 +1,5 @@
 'use client';
-import useCollapse from '@/hooks/useCollapse';
+import useCollapse from '@/Hooks/useCollapse';
 
 const Opacity = () => {
   const { collapse, offCollapse } = useCollapse();
