@@ -1,11 +1,10 @@
+import gpt from '@/lib/gpt';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   const { question } = await request.json();
-
-  //const answer = await gpt(question);
-  console.log(question);
-  return NextResponse.json({ question: question });
+  const answer = await gpt(question);
+  return NextResponse.json(answer);
 }
 
 export async function GET() {
