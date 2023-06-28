@@ -5,7 +5,11 @@ const isDev = process.env.NODE_ENV === 'development';
 const nextConfig = {
   reactStrictMode: !isDev,
 
-  experimental: { appDir: true, newNextLinkBehavior: false },
+  experimental: {
+    appDir: true,
+    newNextLinkBehavior: false,
+    serverActions: true,
+  },
   images: {
     remotePatterns: [
       {
