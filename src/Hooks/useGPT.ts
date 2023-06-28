@@ -26,7 +26,10 @@ const useGPT = () => {
         cache: 'no-store',
         method: 'POST',
         body: JSON.stringify({
-          question: get('type') + get('search'),
+          question:
+            get('type') === ''
+              ? get('search')
+              : `${get('type')}: '${get('search')}'`,
         }),
       });
 
