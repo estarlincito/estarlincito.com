@@ -11,6 +11,7 @@ const Type = () => {
       <option value='fix'>Fix</option>
       <option value='this in Spanish'>This in Spanish</option>
       <option value='this in English'>This in English</option>
+      <option value='que significa'>Que significa?</option>
       <option value=''>None</option>
     </select>
   );
