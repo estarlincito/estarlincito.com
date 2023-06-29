@@ -9,7 +9,8 @@ const Container = (props: ContainerProps) => {
   return (
     <main
       className={clsx(
-        'container mx-auto mt-16 py-5 md:py-16',
+        'container mx-auto mt-16',
+        'py-5 md:py-16',
         'max-w-6xl min-h-[80vh]',
         props.className && props.className
       )}

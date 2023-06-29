@@ -1,19 +1,17 @@
 import Container from '@/components/container';
 import { GPTProvider } from '@/context/gpt';
-import Gpt from './components/gpt';
+import Box from './components/box';
 
 export const metadata = {
-  title: 'Estarlincito gpt',
+  title: 'Estarlincito | GPT',
   description: 'If you need something help ask to gpt',
 };
 
-interface GPTPageProps {}
-
-const GPTPage = (props: GPTPageProps) => {
+const GPTPage = () => {
   return (
-    <Container className='flex justify-center'>
+    <Container>
       <GPTProvider>
-        <Gpt />
+        <Box />
       </GPTProvider>
     </Container>
   );
