@@ -3,7 +3,7 @@ import useGPT from '@/Hooks/useGPT';
 import Boxl from '../boxl';
 import Quote from './quote';
 
-const Header = async () => {
+const Header = () => {
   const { chat } = useGPT();
 
   return (
