@@ -4,7 +4,7 @@ import Box from './components/box';
 
 export const metadata = {
   title: 'Estarlincito | GPT',
-  description: 'If you need something help ask to gpt',
+  description: 'If you need help, ask for help!',
 };
 
 const GPTPage = () => {

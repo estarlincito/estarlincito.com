@@ -5,6 +5,7 @@ import Navbar from '@/components/navbar';
 import Opacity from '@/components/opacity';
 import { CollapseProvider } from '@/context/collapse';
 import { ThemeProvider } from '@/context/theme';
+import Toaster from '@/lib/toaster';
 import '@/styles/globals.css';
 import ChildrenProps from '@/types/children';
 import clsx from 'clsx';
@@ -27,6 +28,16 @@ const RootLayout = (props: ChildrenProps) => {
           {props.children}
           <Footer />
         </CollapseProvider>
+        <Toaster
+          position='top-center'
+          reverseOrder={false}
+          toastOptions={{
+            style: {
+              // color: 'white',
+              // background: 'black',
+            },
+          }}
+        />
       </body>
     </html>
   );

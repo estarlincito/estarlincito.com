@@ -3,6 +3,7 @@ import endpoint from '@/constants/endpoint';
 import { GPTContext } from '@/context/gpt';
 import Quote from '@/types/quote';
 import { useContext, useEffect, useRef, useState } from 'react';
+import { toast } from 'react-hot-toast';
 
 const useGPT = () => {
   const gptContext = useContext(GPTContext);
@@ -45,7 +46,8 @@ const useGPT = () => {
 
   //copy questions or answer
   const copyChat = (text: string) => {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(text.replaceAll('\n', ''));
+    toast.success('Copied');
   };
 
   //reset form
