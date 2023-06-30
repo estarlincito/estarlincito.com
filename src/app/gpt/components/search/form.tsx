@@ -11,7 +11,7 @@ const Formsearch = () => {
         'border border-gray-200 rounded-sm',
         'dark:border-gray-700',
         'p-3',
-        'flex justify-between'
+        'grid grid-cols-12 gap-1'
       )}
       action={handleAction}
       ref={reset}
@@ -22,7 +22,10 @@ const Formsearch = () => {
           'outline-none rounded-sm text-gray-400',
           'text-black',
           'dark:bg-black',
-          'cursor-pointer'
+          'cursor-pointer',
+          'hidden',
+          'md:block',
+          'col-span-3'
         )}
       >
         <option value=''>None</option>
@@ -39,17 +42,20 @@ const Formsearch = () => {
         placeholder='Send a message.'
         required
         className={clsx(
-          'w-[400px] ml-2 p-3 outline-none font-light rounded-sm',
+          'max-w-[400px] p-3 outline-none font-light rounded-sm',
           'text-black',
-          'dark:bg-black dark:text-white'
+          'dark:bg-black dark:text-white',
+          'md:col-span-8',
+          'col-span-11'
         )}
       />
 
       <button
         className={clsx(
-          'text-xl p-2',
+          'text-xl p-3',
           'text-gray-400 hover:text-gray-500 active:hover:text-gray-900',
-          'dark:text-gray-600 dark:hover:text-gray-400 dark:active:hover:text-gray-200'
+          'dark:text-gray-600 dark:hover:text-gray-400 dark:active:hover:text-gray-200',
+          'col-span-1'
         )}
       >
         <TbSend />
