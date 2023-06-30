@@ -1,4 +1,4 @@
-import sitemap from '@/lib/siteMap';
+import sitemap from '@/constants/siteMap';
 import catsLinks from './catsLinks';
 import Copyright from './copyright';
 import hireme from './hireme';

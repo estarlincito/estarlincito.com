@@ -19,7 +19,8 @@
       "contentlayer/generated": ["./.contentlayer/generated"],
       "@/*": ["./src/*"],
       "@UI/*": ["./src/components/UI/*"],
-      "@BlogComponents/*": ["./src/app/blog/components/*"]
+      "@BlogComponents/*": ["./src/app/blog/components/*"],
+      "@Constants/*": ["./src/constants/*"]
     },
     "plugins": [
       {

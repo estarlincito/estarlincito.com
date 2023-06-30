@@ -29,7 +29,7 @@ const seo = (prop: string) => {
   const doc = content[prop as Conten];
 
   if (doc === undefined) {
-    throw new Error('This properties not fount on on F descriptions');
+    throw new Error('This properties not fount on descriptions');
   }
 
   return doc;

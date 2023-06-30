@@ -1,5 +1,6 @@
 'use client';
 import useGPT from '@/Hooks/useGPT';
+import { options } from '@Constants/gpt';
 import clsx from 'clsx';
 import { TbSend } from 'react-icons/tb';
 
@@ -28,12 +29,11 @@ const Formsearch = () => {
           'col-span-3'
         )}
       >
-        <option value=''>None</option>
-        <option value='spelling'>Spelling</option>
-        <option value='fix'>Fix</option>
-        <option value='this in Spanish'>This in Spanish</option>
-        <option value='this in English'>This in English</option>
-        <option value='que significa'>Que significa?</option>
+        {options.map(({ value, label }, id) => (
+          <option value={value} key={id}>
+            {label}
+          </option>
+        ))}
       </select>
 
       <input
