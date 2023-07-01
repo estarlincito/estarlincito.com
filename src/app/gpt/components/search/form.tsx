@@ -52,7 +52,7 @@ const Formsearch = () => {
 
       <button
         className={clsx(
-          'text-xl p-3',
+          'text-xl',
           'text-gray-400 hover:text-gray-500 active:hover:text-gray-900',
           'dark:text-gray-600 dark:hover:text-gray-400 dark:active:hover:text-gray-200',
           'col-span-1'
