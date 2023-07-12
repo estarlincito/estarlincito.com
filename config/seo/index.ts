@@ -1,6 +1,7 @@
 import { Filosofia } from './filosofia';
 import { Finanzas } from './finanzas';
 import { Psicologia } from './psicologia';
+import { Relaciones } from './relaciones';
 import { Tecnologia } from './tecnologia';
 
 const content = {
@@ -8,6 +9,7 @@ const content = {
   ...Psicologia,
   ...Filosofia,
   ...Finanzas,
+  ...Relaciones,
 };
 
 enum Conten {
@@ -23,6 +25,8 @@ enum Conten {
   'Filosofía de la religión' = 'Filosofía de la religión',
   'Finanzas' = 'Finanzas',
   'Finanzas Personales' = 'Finanzas Personales',
+  'Relaciones' = 'Relaciones',
+  'Pareja' = 'Pareja',
 }
 
 const seo = (prop: string) => {
