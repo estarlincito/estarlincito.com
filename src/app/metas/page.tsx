@@ -20,9 +20,11 @@ const Metas = () => {
         <Blockquote>{MetasC.seo.description}</Blockquote>
       </div>
       <hr />
-      {MetasC.metas.map(({ meta, motivo, id }) => (
-        <Card meta={meta} motivo={motivo} key={id} />
-      ))}
+      <div className='flex flex-col gap-y-5'>
+        {MetasC.metas.map(({ meta, motivo, id }) => (
+          <Card meta={meta} motivo={motivo} key={id} />
+        ))}
+      </div>
     </section>
   );
 };

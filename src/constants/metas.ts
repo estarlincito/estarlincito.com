@@ -17,19 +17,33 @@ class Seo {
 
 const metas = [
   {
-    meta: 'Mejorar la gramática de mí inglés',
-    motivo: 'Quiero hacerlo para conseguir un empleo de dev',
-    id: 0,
+    meta: 'Vivir acorde al presente 💖💖💖💖',
+    motivo:
+      'No te detengas en el pasado, no sueñes con el futuro, concentra la mente en el presente',
+    id: 1,
   },
   {
     meta: 'Mejorar la confianza en mí mismo',
     motivo: 'Lo quiero hacer por amor propio',
-    id: 1,
+    id: 2,
   },
   {
     meta: 'Seguir haciendo las cosas por mí',
     motivo: 'Es la única vía de salir adelante',
-    id: 2,
+    id: 3,
+  },
+
+  {
+    meta: 'Mi vida es una audaz aventura, o no es nada',
+    motivo:
+      'Avanza un pequeño paso cada día haciendo alguna de las pequeñas cosas que temes hacer. Tu miedo solo tiene un enorme poder sobre ti cuando no lo enfrentas. Aprende a usas el poder del amor y la bondad para vencerlo',
+    id: 4,
+  },
+
+  {
+    meta: 'Mejorar la gramática de mí inglés',
+    motivo: 'Quiero hacerlo para conseguir un empleo de dev',
+    id: 5,
   },
 ];
 
