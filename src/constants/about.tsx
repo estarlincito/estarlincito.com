@@ -38,11 +38,9 @@ const moreinf = (
 
 const temeabout = <>Temas que se abordan</>;
 
-class About {
+export default class About {
   static readonly seo = { ...Seo };
   static readonly temas = temas;
   static readonly moreinf = moreinf;
   static readonly temeabout = temeabout;
 }
-
-export default About;

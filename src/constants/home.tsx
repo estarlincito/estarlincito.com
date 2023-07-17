@@ -57,11 +57,9 @@ const moreinf = (
   </>
 );
 
-class Home {
+export default class Home {
   static readonly seo = { ...Seo };
   static readonly links = links;
   static readonly aboutme = aboutme;
   static readonly moreinf = moreinf;
 }
-
-export default Home;

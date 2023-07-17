@@ -9,8 +9,6 @@ const title = (comp: string) => {
   return 'Estarlincito | ' + comp;
 };
 
-class Blogc {
+export default class Blogc {
   static readonly seo = { title, openGraph };
 }
-
-export default Blogc;

@@ -52,10 +52,8 @@ const talkme = {
   twitterlink: 'https://twitter.com/estarlincito',
 };
 
-class Contact {
+export default class Contact {
   static readonly seo = { ...Seo };
   static readonly quote = quote;
   static readonly talkme = talkme;
 }
-
-export default Contact;

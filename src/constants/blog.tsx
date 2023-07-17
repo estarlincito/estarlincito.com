@@ -15,9 +15,7 @@ class Seo {
   static readonly imagesAlt = 'Una macbook y una taza';
 }
 
-class Blog {
+export default class Blog {
   static readonly seo = { ...Seo };
   static readonly titleH = 'Bienvenid@ a mi Blog';
 }
-
-export default Blog;

@@ -1,6 +1,6 @@
 'use client';
 import useGPT from '@/Hooks/useGPT';
-import { options } from '@Constants/gpt';
+import GPT from '@Constants/gpt';
 import clsx from 'clsx';
 import { TbSend } from 'react-icons/tb';
 
@@ -29,7 +29,7 @@ const Formsearch = () => {
           'col-span-3'
         )}
       >
-        {options.map(({ value, label }, id) => (
+        {GPT.options.map(({ value, label }, id) => (
           <option value={value} key={id}>
             {label}
           </option>
