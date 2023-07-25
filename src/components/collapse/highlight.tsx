@@ -28,13 +28,13 @@ const Highlight = () => {
   }, []);
 
   return (
-    <>
-      <Blockquote>
-        {highlight.quote}
-        <br />
+    <Blockquote>
+      {highlight.quote}
+      <br />
+      {highlight.author === '...' ? null : (
         <span className='font-bold'>-{highlight.author}-</span>
-      </Blockquote>
-    </>
+      )}
+    </Blockquote>
   );
 };
 
