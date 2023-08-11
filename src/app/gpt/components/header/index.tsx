@@ -10,7 +10,7 @@ const Header = () => {
     <>
       {chat.length === 1 ? (
         <Boxl>
-          <h1 className='font-bold text-lg'>GPT</h1>
+          <h1 className='font-bold text-lg'>GPT001</h1>
           <Quote />
         </Boxl>
       ) : null}

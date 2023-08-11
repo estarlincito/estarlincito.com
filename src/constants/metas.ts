@@ -17,9 +17,8 @@ class Seo {
 
 const metas = [
   {
-    meta: 'Vivir acorde al presente 💖💖💖💖',
-    motivo:
-      'No te detengas en el pasado, no sueñes con el futuro, concentra la mente en el presente',
+    meta: 'Seguir siendo una buena persona',
+    motivo: 'Sin importar lo que pase seguiré siendo auténtico y buena persona',
     id: 1,
   },
   {
@@ -39,11 +38,28 @@ const metas = [
       'Avanza un pequeño paso cada día haciendo alguna de las pequeñas cosas que temes hacer. Tu miedo solo tiene un enorme poder sobre ti cuando no lo enfrentas. Aprende a usas el poder del amor y la bondad para vencerlo',
     id: 4,
   },
-
+  {
+    meta: 'No te quiero para mí, te quiero conmigo',
+    motivo:
+      'El amor no es posesión, es la unión de dos personas completamente distintas, o con algunos puntos en común, que se aceptan tal y como son',
+    id: 5,
+  },
+  {
+    meta: 'Seguir cultivando la aceptación',
+    motivo:
+      'Acepta. No es resignación, pero nada te hace perder más energía que el resistir y pelear por una situación que no puedes cambiar -Dalai Lama-',
+    id: 6,
+  },
   {
     meta: 'Mejorar la gramática de mí inglés',
     motivo: 'Quiero hacerlo para conseguir un empleo de dev',
-    id: 5,
+    id: 7,
+  },
+  {
+    meta: 'Vivir acorde al presente 💖💖💖💖',
+    motivo:
+      'No te detengas en el pasado, no sueñes con el futuro, concentra la mente en el presente',
+    id: 8,
   },
 ];
 
