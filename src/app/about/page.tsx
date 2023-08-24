@@ -1,7 +1,9 @@
+import List from '@/components/UI/list';
 import Title from '@/components/UI/title';
+import Wrapper from '@/components/wrapper';
 import About from '@/constants/about';
 import SEO from '@/lib/seo';
-import clsx from 'clsx';
+import { Blockquote, Text } from '@radix-ui/themes';
 
 export const { metadata } = new SEO({
   title: About.seo.title,
@@ -13,23 +15,15 @@ export const { metadata } = new SEO({
 
 const AboutPage = () => {
   return (
-    <section>
-      <Title text='Acerca de Estarlincito' size='text-2xl' className='mb-3' />
-      <p className={clsx('text-neutral-600 dark:text-neutral-300')}>
-        {About.seo.description}
-      </p>
+    <Wrapper>
+      <Title text='Acerca de Estarlincito' />
 
-      <p className='my-5'>{About.moreinf}</p>
+      <Blockquote>{About.seo.description}</Blockquote>
 
-      <div className='my-5'>
-        <h3 className='text-lg font-bold'>{About.temeabout}</h3>
-        <ul>
-          {About.temas.map((tema, id) => (
-            <li key={id}>{tema}</li>
-          ))}
-        </ul>
-      </div>
-    </section>
+      <Text>{About.moreinf}</Text>
+
+      <List title={About.temeabout} arr={About.temas} dash />
+    </Wrapper>
   );
 };
 

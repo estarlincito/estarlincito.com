@@ -1,6 +1,7 @@
 'use client';
 import useGPT from '@/Hooks/useGPT';
-import clsx from 'clsx';
+import { Flex, Separator } from '@radix-ui/themes';
+import Styled from '../../gpt.module.scss';
 import Bot from './bot';
 import Human from './human';
 
@@ -8,25 +9,19 @@ const Chat = () => {
   const { chat, smooth } = useGPT();
 
   return (
-    <div
-      ref={smooth}
-      className={clsx(
-        'p-8 overflow-scroll scroll-smooth',
-        'flex flex-col gap-y-5'
-      )}
-    >
+    <Flex p='8' gap='5' direction='column' ref={smooth} className={Styled.chat}>
       {chat.length === 1 ? null : (
         <>
           {chat.slice(1, chat.length).map(({ answer, question }, id) => (
-            <div key={id} className='flex flex-col gap-y-8'>
+            <Flex key={id} direction='column' gap='3'>
               <Human question={question} />
               <Bot answer={answer} />
-              <hr className='bg-gray-500 border-none h-[1px]' />
-            </div>
+              <Separator size='4' mt='5' />
+            </Flex>
           ))}
         </>
       )}
-    </div>
+    </Flex>
   );
 };
 

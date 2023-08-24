@@ -1,4 +1,4 @@
-import Linkdoc from '@/components/UI/linkdoc';
+import { Link, Text } from '@radix-ui/themes';
 
 const Copyright = () => {
   const date = new Date();
@@ -7,13 +7,13 @@ const Copyright = () => {
   const ownYears = `${buildYear}-${currentgeYear}`;
 
   return (
-    <p className='text-sm mt-5'>
+    <Text as='p' size='3' mt='5'>
       &nbsp; Copyright © {buildYear === currentgeYear ? buildYear : ownYears}
       &nbsp;
-      <Linkdoc href='/' target='_self'>
+      <Link color='gray' weight='bold' href='/' target='_self'>
         Estarlincito
-      </Linkdoc>
-    </p>
+      </Link>
+    </Text>
   );
 };
 

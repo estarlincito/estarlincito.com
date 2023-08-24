@@ -1,6 +1,6 @@
 import Imagedoc from '@/components/UI/imagedoc';
-import Linkdoc from '@/components/UI/linkdoc';
 import dateFormat from '@/lib/dateFormat';
+import { Link } from '@radix-ui/themes';
 import clsx from 'clsx';
 import { Blog } from 'contentlayer/generated';
 
@@ -8,37 +8,37 @@ const PostCard = (props: Blog) => {
   return (
     <article className='shadow-lg rounded-lg w-[350px]'>
       <figure className='h-60'>
-        <Linkdoc href={props.urls.post} target='_self'>
+        <Link href={props.urls.post} target='_self'>
           <Imagedoc
             src={props.cover}
             alt={props.title}
             className='rounded-t-lg'
           />
-        </Linkdoc>
+        </Link>
       </figure>
 
       <figcaption
         className={clsx(
           'grid grid-flow-row content-between h-28 p-5 gap-y-1',
-          'rounded-b-lg',
-          'bg-zinc-100 dark:bg-zinc-800'
+          'rounded-b-lg'
         )}
       >
-        <Linkdoc href={props.urls.post} target='_self' size='text-lg'>
-          {props.title}
-        </Linkdoc>
-
-        <div
-          className={clsx(
-            'flex flex-row justify-between',
-            'text-neutral-700 dark:text-neutral-300'
-          )}
+        <Link
+          href={props.urls.post}
+          size='3'
+          target='_self'
+          weight='bold'
+          color='gray'
         >
+          {props.title}
+        </Link>
+
+        <div className={clsx('flex flex-row justify-between')}>
           <h5>
             Por&nbsp;
-            <Linkdoc href='/' target='_self'>
+            <Link href='/' target='_self' color='gray' weight='bold'>
               {props.author}
-            </Linkdoc>
+            </Link>
           </h5>
           <time dateTime={props.publishedAt}>
             {dateFormat(props.publishedAt)}

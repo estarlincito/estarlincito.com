@@ -1,7 +1,5 @@
-import Bquote from '@/components/UI/blockquote';
-
 const Blockquote = (props: any) => {
-  return <Bquote className='-order-2'>{props.children}</Bquote>;
+  return <Blockquote className='-order-2'>{props.children}</Blockquote>;
 };
 
 export default Blockquote;

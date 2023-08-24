@@ -1,0 +1,34 @@
+/* theme-config.css */
+
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/blue-dark.css';
+
+.radix-themes {
+  --space-1: calc(4px * var(--scaling));
+  --space-2: calc(8px * var(--scaling));
+  --space-3: calc(12px * var(--scaling));
+  --space-4: calc(16px * var(--scaling));
+  --space-5: calc(24px * var(--scaling));
+  --space-6: calc(32px * var(--scaling));
+  --space-7: calc(40px * var(--scaling));
+  --space-8: calc(48px * var(--scaling));
+  --space-9: calc(64px * var(--scaling));
+}
+
+li {
+  list-style: none;
+}
+
+/* ol {
+  @apply list-decimal list-inside font-bold;
+}
+
+ol li {
+  @apply my-5;
+}
+
+ol li p {
+  @apply mb-5 font-normal;
+} */

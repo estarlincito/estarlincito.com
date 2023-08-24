@@ -1,8 +1,11 @@
-import Container from '@/components/container';
 import GPT from '@/constants/gpt';
 import { GPTProvider } from '@/context/gpt';
 import SEO from '@/lib/seo';
-import Box from './components/box';
+import { Box } from '@radix-ui/themes';
+import Chat from './components/chat';
+import Header from './components/header';
+import Search from './components/search';
+import Styled from './gpt.module.scss';
 
 export const { metadata } = new SEO({
   title: GPT.seo.title,
@@ -14,11 +17,13 @@ export const { metadata } = new SEO({
 
 const GPTPage = () => {
   return (
-    <Container>
-      <GPTProvider>
-        <Box />
-      </GPTProvider>
-    </Container>
+    <GPTProvider>
+      <Box className={Styled.gpt}>
+        <Header />
+        <Chat />
+        <Search />
+      </Box>
+    </GPTProvider>
   );
 };
 

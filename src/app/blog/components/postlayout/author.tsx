@@ -1,8 +1,6 @@
-import Imagedoc from '@/components/UI/imagedoc';
-import Linkdoc from '@/components/UI/linkdoc';
 import dateFormat from '@/lib/dateFormat';
-import clsx from 'clsx';
-import { TbCalendarDue } from 'react-icons/tb';
+import { CalendarIcon } from '@radix-ui/react-icons';
+import { Avatar, Box, Flex, Link, Strong, Text } from '@radix-ui/themes';
 
 interface AuthorProps {
   author: string;
@@ -13,33 +11,41 @@ interface AuthorProps {
 
 const Author = (props: AuthorProps) => {
   return (
-    <div className={clsx('ml-5 mb-5 mt-5', props.className && props.className)}>
-      <div className=' flex flex-row items-center gap-x-5'>
-        <div className='w-16'>
-          <Imagedoc
+    <Box className={props.className && props.className} ml='5' mb='5' mt='5'>
+      <Flex direction='row' align='center' gap='5'>
+        <Box width='8'>
+          <Avatar
+            fallback='E'
             src={props.avathar}
             alt='Avathar'
-            className='rounded-full'
+            radius='full'
+            size='4'
           />
-        </div>
-        <p>
+        </Box>
+        <Text as='p'>
           Publicado por{' '}
-          <Linkdoc target='_self' href='https://estarlincito.com'>
+          <Link
+            target='_self'
+            href='https://estarlincito.com'
+            color='gray'
+            weight='bold'
+          >
             {props.author}
-          </Linkdoc>
-        </p>
-      </div>
+          </Link>
+        </Text>
+      </Flex>
 
-      <div className='mt-3 flex flex-row items-center gap-x-2'>
-        <i className='text-slate-600 dark:text-slate-400'>
-          <TbCalendarDue />
-        </i>
-        <span>
-          <b>Última actualización:</b>&nbsp;
+      <Flex mt='3' direction='row' align='center' gap='2'>
+        <Text as='span' color='gray'>
+          <CalendarIcon />
+        </Text>
+
+        <Text as='span'>
+          <Strong>Última actualización:</Strong>&nbsp;
           <time dateTime={props.updated}>{dateFormat(props.updated)}</time>
-        </span>
-      </div>
-    </div>
+        </Text>
+      </Flex>
+    </Box>
   );
 };
 

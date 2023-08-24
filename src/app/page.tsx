@@ -1,13 +1,7 @@
-import Hr from '@/components/UI/hr';
-import Imagedoc from '@/components/UI/imagedoc';
-import Linkdoc from '@/components/UI/linkdoc';
-import Title from '@/components/UI/title';
-import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import Home from '@/constants/home';
 import SEO from '@/lib/seo';
-import clsx from 'clsx';
-import { TbArrowUpRight, TbBrandGithubCopilot } from 'react-icons/tb';
+import { Avatar, Box, Flex, Link, Separator, Text } from '@radix-ui/themes';
 
 export const { metadata } = new SEO({
   title: Home.seo.title,
@@ -17,60 +11,52 @@ export const { metadata } = new SEO({
   imagesAlt: Home.seo.imagesAlt,
 });
 
+const Welcome = () => {
+  return (
+    <Flex direction='column' align='center' gap='3'>
+      <Avatar radius='full' size='9' src='/images/avatar.jpeg' fallback='E' />
+
+      <Box className='max-w-lg text-center'>
+        <Text>{Home.aboutme}</Text>
+      </Box>
+
+      <Link href='https://github.com/estarlincito' target='_blank'>
+        Mira mis proyectos web
+      </Link>
+    </Flex>
+  );
+};
+
+const Moreinf = () => {
+  return (
+    <Flex direction='column' align='center' gap='3'>
+      <Separator my='3' size='4' />
+      <Text>{Home.moreinf}</Text>
+    </Flex>
+  );
+};
+
+const Nav = () => {
+  return (
+    <ul className='mt-5 md:flex md:justify-center md:gap-x-5'>
+      {Home.links.map((link, index) => (
+        <li key={index} className='mb-1 md:mb-0'>
+          <Link href={link.route} target={link.target!}>
+            {link.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
 const HomePage = () => {
   return (
-    <Container className='flex'>
-      <Wrapper>
-        <section className='flex flex-col items-center gap-y-2 mb-8'>
-          <figure className='w-32 mb-3'>
-            <Imagedoc
-              alt={Home.seo.title}
-              className='rounded-full'
-              src='/images/avatar.jpeg'
-            />
-          </figure>
-
-          <Title text={Home.seo.title} size='text-3xl' />
-          <p
-            className={clsx(
-              'text-center p-2 md:w-[500px] md:p-0 text-base',
-              'text-neutral-600 dark:text-neutral-300'
-            )}
-          >
-            {Home.aboutme}
-          </p>
-          <Linkdoc
-            href='https://github.com/estarlincito'
-            target='_blank'
-            orden='vertically'
-            color='neutral'
-          >
-            <TbBrandGithubCopilot />
-            Proyectos web
-          </Linkdoc>
-        </section>
-
-        <section>
-          <Hr />
-          <p className='py-5 text-left'>{Home.moreinf}</p>
-          <Hr />
-
-          <ul className='mt-5 md:flex md:justify-center md:gap-x-5'>
-            {Home.links.map((link, index) => (
-              <li key={index} className='mb-1 md:mb-0'>
-                <Linkdoc
-                  href={link.route}
-                  target={link.target!}
-                  orden='horizontally'
-                >
-                  <TbArrowUpRight /> {link.label}
-                </Linkdoc>
-              </li>
-            ))}
-          </ul>
-        </section>
-      </Wrapper>
-    </Container>
+    <Wrapper>
+      <Welcome />
+      <Moreinf />
+      <Nav />
+    </Wrapper>
   );
 };
 

@@ -1,5 +1,6 @@
+import { Text } from '@radix-ui/themes';
 import { TbMoodBoy } from 'react-icons/tb';
-import BoxChat from './box';
+import Boxchat from './boxchat';
 import CopyChat from './copy';
 
 interface HumanProps {
@@ -8,15 +9,15 @@ interface HumanProps {
 
 const Human = ({ question }: HumanProps) => {
   return (
-    <BoxChat>
-      <span>
+    <Boxchat>
+      <Text as='span'>
         <TbMoodBoy />
-      </span>
+      </Text>
 
-      <p>{question}</p>
+      <Text as='p'>{question}</Text>
 
       <CopyChat text={question} />
-    </BoxChat>
+    </Boxchat>
   );
 };
 

@@ -1,4 +1,4 @@
-import Linkdoc from '@/components/UI/linkdoc';
+import { Flex, Heading, Link } from '@radix-ui/themes';
 
 interface TagsProps {
   tags: string[];
@@ -6,23 +6,21 @@ interface TagsProps {
 
 const Tags = (props: TagsProps) => {
   return (
-    <div className='text-sm w-80 flex items-center'>
-      <h5 className='font-bold'>Tags:</h5>
+    <Flex align='center'>
+      <Heading as='h5' size='4' weight='bold'>
+        Tags:
+      </Heading>
+
       <ul className='flex'>
         {props.tags.map((tag, id) => (
           <li key={id} className='m-1'>
-            <Linkdoc
-              href={`/blog/tags/${tag}`}
-              target='_self'
-              font='font-normal'
-              color='sky'
-            >
+            <Link href={`/blog/tags/${tag}`} target='_self' size='2'>
               #{tag}
-            </Linkdoc>
+            </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </Flex>
   );
 };
 

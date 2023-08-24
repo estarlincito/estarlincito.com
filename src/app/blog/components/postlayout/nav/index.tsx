@@ -1,6 +1,19 @@
+import { Flex, Link as Linkr } from '@radix-ui/themes';
 import clsx from 'clsx';
-import { TbArrowBadgeRight, TbBrandGoogleHome } from 'react-icons/tb';
-import Link from './link';
+import { TbBrandGoogleHome } from 'react-icons/tb';
+
+interface LinkProps {
+  route: string;
+  children: React.ReactNode;
+}
+
+const Link = ({ route, children }: LinkProps) => {
+  return (
+    <Linkr size='2' color='gray' href={route} target='_self'>
+      {children}
+    </Linkr>
+  );
+};
 
 interface NavProps {
   category: string;
@@ -12,32 +25,21 @@ interface NavProps {
 
 const Nav = (props: NavProps) => {
   return (
-    <ul
-      className={clsx(
-        'text-sm flex items-center gap-x-3 select-none',
-        'text-black/70 dark:text-white/70',
-        props.className && props.className
-      )}
+    <Flex
+      align='center'
+      gap='3'
+      className={clsx('select-none', props.className && props.className)}
     >
-      <Link href='/'>
+      <Link route='/'>
         <TbBrandGoogleHome />
       </Link>
 
-      <Link href='/blog'>
-        <TbArrowBadgeRight />
-        <span>Blog</span>
-      </Link>
+      <Link route='/blog'>Blog</Link>
 
-      <Link href={props.urlCat}>
-        <TbArrowBadgeRight />
-        <span>{props.category}</span>
-      </Link>
+      <Link route={props.urlCat}>{props.category}</Link>
 
-      <Link href={props.urlSub}>
-        <TbArrowBadgeRight />
-        <span>{props.subcategory}</span>
-      </Link>
-    </ul>
+      <Link route={props.urlSub}>{props.subcategory}</Link>
+    </Flex>
   );
 };
 

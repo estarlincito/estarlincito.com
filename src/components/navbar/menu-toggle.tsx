@@ -1,15 +1,15 @@
 'use client';
-import Button from '@/components/UI/button';
 import useCollapse from '@/Hooks/useCollapse';
-import { TbMenu } from 'react-icons/tb';
+import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import IconButton from '@UI/Iconbutton';
 
 const MenuToggle = () => {
   const { OnCollapse } = useCollapse();
 
   return (
-    <Button onClick={OnCollapse} className='text-2xl'>
-      <TbMenu />
-    </Button>
+    <IconButton onClick={OnCollapse}>
+      <HamburgerMenuIcon width='18' height='18' />
+    </IconButton>
   );
 };
 export default MenuToggle;

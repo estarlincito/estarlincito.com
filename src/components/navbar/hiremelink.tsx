@@ -1,11 +1,14 @@
-import Linkdoc from '@/components/UI/linkdoc';
-import { TbBrandHipchat } from 'react-icons/tb';
+import { ChatBubbleIcon } from '@radix-ui/react-icons';
+import { Link } from '@radix-ui/themes';
+import IconButton from '@UI/Iconbutton';
 
 const HireMeLink = () => {
   return (
-    <Linkdoc href='/contact' target='_self' size='text-2xl'>
-      <TbBrandHipchat />
-    </Linkdoc>
+    <Link href='/contact' target='_self'>
+      <IconButton>
+        <ChatBubbleIcon width='18' height='18' />
+      </IconButton>
+    </Link>
   );
 };
 

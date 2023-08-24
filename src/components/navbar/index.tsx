@@ -1,12 +1,13 @@
 'use client';
 import DarkmodeToggle from '@/components/darkmode-toggle';
 import TwitterLink from '@/components/navbar/twitterlink';
-import clsx from 'clsx';
+import { Flex } from '@radix-ui/themes';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Brand from './brand';
 import HireMeLink from './hiremelink';
 import MenuToggle from './menu-toggle';
+import styled from './navbar.module.scss';
 
 const Navbar = () => {
   const [title, setTitle] = useState('');
@@ -21,41 +22,17 @@ const Navbar = () => {
   }, [path]);
 
   return (
-    <nav
-      className={clsx(
-        'fixed left-0 right-0 top-0 grid items-center h-16 grid-cols-5 select-none',
-        'border-b-[1px] border-gray-300 dark:border-gray-800',
-        'backdrop-blur dark:bg-black/60 bg-white/60'
-      )}
-    >
-      <div
-        className={clsx(
-          'col-start-1 col-span-2',
-          'ml-5',
-          'flex flex-row gap-x-5'
-        )}
-      >
+    <nav className={styled.nav}>
+      <Flex direction='row' ml='5' align='center' gap='5'>
         <MenuToggle />
         <Brand />
-      </div>
+      </Flex>
 
-      <ul
-        className={clsx(
-          'col-start-5',
-          'grid  grid-flow-col justify-end gap-x-3 mr-5'
-        )}
-      >
-        <li>
-          <DarkmodeToggle />
-        </li>
-
-        <li>
-          <HireMeLink />
-        </li>
-        <li>
-          <TwitterLink />
-        </li>
-      </ul>
+      <Flex direction='row' mr='5' align='center' gap='5'>
+        <DarkmodeToggle />
+        <HireMeLink />
+        <TwitterLink />
+      </Flex>
     </nav>
   );
 };

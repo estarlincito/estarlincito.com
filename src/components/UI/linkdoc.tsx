@@ -1,6 +1,7 @@
 import Target from '@/types/target';
+import { Link } from '@radix-ui/themes';
 import { clsx } from 'clsx';
-import Link from 'next/link';
+
 import { MouseEventHandler, ReactNode } from 'react';
 
 interface LinkdocProps {

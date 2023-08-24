@@ -1,7 +1,11 @@
+import { Heading } from '@radix-ui/themes';
+
 const Conclusion = (props: any) => {
   return (
     <>
-      <h2 className='font-bold mt-16'>Conclusión:</h2>
+      <Heading as='h2' weight='bold' mt='9'>
+        Conclusión:
+      </Heading>
       {props.children}
     </>
   );

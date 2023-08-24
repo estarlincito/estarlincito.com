@@ -24,7 +24,7 @@ const links: Links[] = [
   },
   {
     route: '/contact',
-    label: 'Contratame',
+    label: 'Contrátame',
     target: '_self',
   },
 ];

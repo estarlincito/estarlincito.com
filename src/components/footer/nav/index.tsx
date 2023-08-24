@@ -1,19 +1,24 @@
+import Footer from '@/constants/footer';
 import sitemap from '@/constants/siteMap';
-import catsLinks from './catsLinks';
+import { Box } from '@radix-ui/themes';
 import Copyright from './copyright';
-import hireme from './hireme';
 import List from './list';
+import Styled from './nav.module.scss';
 
 const Nav = () => {
   return (
-    <div className='max-w-7xl mx-auto'>
-      <div className='grid sm:grid-flow-col sm:justify-center gap-8'>
-        <List title='Categorias' links={catsLinks} target='_self' />
-        <List title='Puedes encontrarme' links={hireme} target='_blank' />
+    <Box>
+      <Box className={Styled.nav}>
+        <List title='Categorias' links={Footer.catsLinks} target='_self' />
+        <List
+          title='Puedes encontrarme'
+          links={Footer.hireme}
+          target='_blank'
+        />
         <List title='Sitemap' links={sitemap} target='_self' />
-      </div>
+      </Box>
       <Copyright />
-    </div>
+    </Box>
   );
 };
 

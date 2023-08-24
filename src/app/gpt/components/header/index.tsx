@@ -1,6 +1,7 @@
 'use client';
 import useGPT from '@/Hooks/useGPT';
-import Boxl from '../boxl';
+import { Box, Heading } from '@radix-ui/themes';
+import Styled from '../../gpt.module.scss';
 import Quote from './quote';
 
 const Header = () => {
@@ -9,10 +10,10 @@ const Header = () => {
   return (
     <>
       {chat.length === 1 ? (
-        <Boxl>
-          <h1 className='font-bold text-lg'>GPT001</h1>
+        <Box className={Styled.box}>
+          <Heading size='4'>GPT001</Heading>
           <Quote />
-        </Boxl>
+        </Box>
       ) : null}
     </>
   );

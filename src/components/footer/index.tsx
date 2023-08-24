@@ -1,16 +1,13 @@
-import clsx from 'clsx';
+import { Box, Separator } from '@radix-ui/themes';
 import Nav from './nav';
 
 const Footer = () => {
   return (
-    <footer
-      className={clsx(
-        'p-5 md:p-16',
-        'border-t-[1px] border-gray-300 dark:border-gray-800',
-        'bg-gray-50 dark:bg-inherit'
-      )}
-    >
-      <Nav />
+    <footer>
+      <Box p='5'>
+        <Separator my='5' size='4' />
+        <Nav />
+      </Box>
     </footer>
   );
 };

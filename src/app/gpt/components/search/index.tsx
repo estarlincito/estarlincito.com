@@ -1,11 +1,12 @@
-import Boxl from '../boxl';
+import { Box } from '@radix-ui/themes';
+import Styled from '../../gpt.module.scss';
 import Formsearch from './form';
 
 const Search = () => {
   return (
-    <Boxl>
+    <Box className={Styled.box}>
       <Formsearch />
-    </Boxl>
+    </Box>
   );
 };
 

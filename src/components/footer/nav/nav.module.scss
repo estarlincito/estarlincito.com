@@ -1,0 +1,14 @@
+// <ul className='m-3 text-sm'>
+@import '@/styles/mixins';
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+
+  @include for-phone-only {
+    display: grid;
+    justify-content: start;
+  }
+}

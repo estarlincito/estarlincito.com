@@ -1,3 +1,5 @@
+import { Card as Cardr, Text } from '@radix-ui/themes';
+
 interface CardProps {
   meta: string;
   motivo: string;
@@ -5,14 +7,14 @@ interface CardProps {
 
 const Card = ({ meta, motivo }: CardProps) => {
   return (
-    <div>
-      <h5>
-        - <b>{meta}</b>
-      </h5>
-      <em className='pl-5 font-light text-neutral-600 dark:text-neutral-300'>
+    <Cardr variant='classic'>
+      <Text as='div' size='2' weight='bold'>
+        {meta}
+      </Text>
+      <Text mt='1' as='div' color='gray' size='2'>
         {motivo}
-      </em>
-    </div>
+      </Text>
+    </Cardr>
   );
 };
 

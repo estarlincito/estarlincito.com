@@ -36,7 +36,7 @@ const talkme = {
   general: (
     <>
       En general, mi trabajo se centra en la consulta, la innovación, solución
-      de problemas tecnológicos y la educación:
+      de problemas tecnológicos y la educación.
     </>
   ),
 

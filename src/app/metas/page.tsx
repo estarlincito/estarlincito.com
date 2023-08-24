@@ -1,31 +1,31 @@
-import Blockquote from '@/components/UI/blockquote';
 import Title from '@/components/UI/title';
-import MetasC from '@/constants/metas';
+import Wrapper from '@/components/wrapper';
+import Metasc from '@/constants/metas';
 import SEO from '@/lib/seo';
+import { Blockquote, Flex, Separator } from '@radix-ui/themes';
 import Card from './components/card';
 
 export const { metadata } = new SEO({
-  title: MetasC.seo.title,
-  description: MetasC.seo.description,
-  openGraph: MetasC.seo.openGraph,
-  imagesUrl: MetasC.seo.imagesUrl,
-  imagesAlt: MetasC.seo.imagesAlt,
+  title: Metasc.seo.title,
+  description: Metasc.seo.description,
+  openGraph: Metasc.seo.openGraph,
+  imagesUrl: Metasc.seo.imagesUrl,
+  imagesAlt: Metasc.seo.imagesAlt,
 });
 
 const Metas = () => {
   return (
-    <section className='flex flex-col gap-y-5'>
-      <div>
-        <Title text='Metas' size='text-3xl' className='mb-3' />
-        <Blockquote>{MetasC.seo.description}</Blockquote>
-      </div>
-      <hr />
-      <div className='flex flex-col gap-y-5'>
-        {MetasC.metas.map(({ meta, motivo, id }) => (
+    <Wrapper>
+      <Title text='Metas' />
+      <Blockquote>{Metasc.seo.description}</Blockquote>
+      <Separator size='4' />
+
+      <Flex direction='column' gap='5'>
+        {Metasc.metas.map(({ meta, motivo, id }) => (
           <Card meta={meta} motivo={motivo} key={id} />
         ))}
-      </div>
-    </section>
+      </Flex>
+    </Wrapper>
   );
 };
 

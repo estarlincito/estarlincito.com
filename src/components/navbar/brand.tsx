@@ -1,17 +1,12 @@
-import Linkdoc from '@/components/UI/linkdoc';
-import Logo from '@/components/logo';
+import { Link, Text } from '@radix-ui/themes';
 
 const Brand = () => {
   return (
-    <Linkdoc href='/' target='_self' orden='horizontally'>
-      <span className='hidden md:block'>
-        <Logo />
-      </span>
-
-      <span className='ml-1 md:text-xl font-bold flex items-center'>
-        <span className='md:hidden'>E</span>starlincito
-      </span>
-    </Linkdoc>
+    <Link href='/' target='_self'>
+      <Text as='span' ml='1' size={{ md: '7' }} weight='bold'>
+        Estarlincito
+      </Text>
+    </Link>
   );
 };
 

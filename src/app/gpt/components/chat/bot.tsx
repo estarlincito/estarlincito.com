@@ -1,5 +1,6 @@
+import { Text } from '@radix-ui/themes';
 import { TbAlien } from 'react-icons/tb';
-import BoxChat from './box';
+import Boxchat from './boxchat';
 import CopyChat from './copy';
 
 interface BotProps {
@@ -8,13 +9,17 @@ interface BotProps {
 
 const Bot = ({ answer }: BotProps) => {
   return (
-    <BoxChat>
-      <span>
+    <Boxchat>
+      <Text as='span'>
         <TbAlien />
-      </span>
-      <p className='font-serif'>{answer}</p>
+      </Text>
+
+      <Text as='p' className='font-serif'>
+        {answer}
+      </Text>
+
       <CopyChat text={answer!} />
-    </BoxChat>
+    </Boxchat>
   );
 };
 

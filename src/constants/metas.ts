@@ -63,7 +63,7 @@ const metas = [
   },
 ];
 
-export default class MetasC {
+export default class Metas {
   static readonly seo = { ...Seo };
   static readonly metas = metas;
 }

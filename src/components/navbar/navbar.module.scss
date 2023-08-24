@@ -1,0 +1,13 @@
+.nav {
+  background-color: var(--gray-1);
+  display: flex;
+  border-bottom: 1px solid var(--gray-5);
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 70px;
+  user-select: none;
+  z-index: 1;
+}

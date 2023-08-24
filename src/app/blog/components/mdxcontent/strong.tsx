@@ -1,5 +1,5 @@
 const Strong = (props: any) => {
-  return <strong className='font-bold'>{props.children}</strong>;
+  return <Strong>{props.children}</Strong>;
 };
 
 export default Strong;

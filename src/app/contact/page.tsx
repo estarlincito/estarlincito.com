@@ -1,8 +1,8 @@
-import Blockquote from '@/components/UI/blockquote';
-import Linkdoc from '@/components/UI/linkdoc';
 import Title from '@/components/UI/title';
+import Wrapper from '@/components/wrapper';
 import Contact from '@/constants/contact';
 import SEO from '@/lib/seo';
+import { Blockquote, Link, Text } from '@radix-ui/themes';
 
 export const { metadata } = new SEO({
   title: Contact.seo.title,
@@ -14,49 +14,38 @@ export const { metadata } = new SEO({
 
 const ContactPage = () => {
   return (
-    <section className='flex flex-col gap-y-5'>
-      <div>
-        <Title
-          text='Ponte en contacto conmigo'
-          size='text-3xl'
-          className='mb-3'
-        />
-        <Blockquote>{Contact.quote}</Blockquote>
-      </div>
+    <Wrapper>
+      <Title text='Ponte en contacto conmigo' />
+      <Blockquote>{Contact.quote}</Blockquote>
 
-      <p>
+      <Text>
         {Contact.talkme.main}
         <span role='img' aria-label='Levantando las manos'>
           🙌
         </span>
-      </p>
-
-      <p>
+        <br />
+        <br />
         {Contact.talkme.sendme}
         <br />
-        <Linkdoc href={Contact.talkme.mailto} target='_self'>
+        <Link href={Contact.talkme.mailto} target='_self'>
           {Contact.talkme.email}
-        </Linkdoc>
-      </p>
+        </Link>
+      </Text>
 
-      <p>{Contact.talkme.able}</p>
-      <p>{Contact.talkme.general}</p>
+      <Text>
+        {Contact.talkme.able}
+        <br />
+        <br />
+        {Contact.talkme.general}
+      </Text>
 
-      <ul>
-        {Contact.talkme.list.map((cat, id) => (
-          <li className='font-light list-disc ml-3' key={id}>
-            {cat}
-          </li>
-        ))}
-      </ul>
-
-      <p>
+      <Text>
         {Contact.talkme.hello}
-        <Linkdoc href={Contact.talkme.twitterlink} target='_blank'>
+        <Link href={Contact.talkme.twitterlink} target='_blank'>
           Tweet!
-        </Linkdoc>
-      </p>
-    </section>
+        </Link>
+      </Text>
+    </Wrapper>
   );
 };
 

@@ -19,7 +19,6 @@ export const generateMetadata = ({ params }: Props) => {
     return;
   }
 
-  //blogseo
   const { description, imagesUrl, imagesAlt } = postsCat[0].blogseo.cat;
 
   const { metadata } = new SEO({

@@ -1,6 +1,6 @@
 import Linkdoc from '@/components/UI/linkdoc';
-import Main from '@/components/container';
 import SEO from '@/lib/seo';
+import { Box, Grid, Heading } from '@radix-ui/themes';
 
 export const { metadata } = new SEO({
   title: 'Página no encontrada',
@@ -13,9 +13,9 @@ export const { metadata } = new SEO({
 
 const NotFound = () => {
   return (
-    <Main className='grid justify-center items-center'>
-      <div>
-        <h3 className=' text-3xl'>Lo sentimos…</h3>
+    <Grid align='center'>
+      <Box>
+        <Heading>Lo sentimos…</Heading>
         <p className='text-2xl'>Esta página no existe.</p>
 
         <p>
@@ -24,8 +24,8 @@ const NotFound = () => {
             inicio
           </Linkdoc>
         </p>
-      </div>
-    </Main>
+      </Box>
+    </Grid>
   );
 };
 

@@ -1,5 +1,5 @@
 'use client';
-import Blockquote from '@/components/UI/blockquote';
+import { Blockquote, Text } from '@radix-ui/themes';
 import { useEffect, useState } from 'react';
 
 interface Highlight {
@@ -32,7 +32,9 @@ const Highlight = () => {
       {highlight.quote}
       <br />
       {highlight.author === '...' ? null : (
-        <span className='font-bold'>-{highlight.author}-</span>
+        <Text as='span' weight='bold'>
+          -{highlight.author}-
+        </Text>
       )}
     </Blockquote>
   );

@@ -1,5 +1,4 @@
-import Linkdoc from '@/components/UI/linkdoc';
-import Strong from '../mdxcontent/strong';
+import { Link, Strong } from '@radix-ui/themes';
 
 interface OriginProps {
   origin: string;
@@ -12,9 +11,9 @@ const Origin = (props: OriginProps) => {
       {url === null ? null : (
         <p>
           <Strong>Fuente original:</Strong>{' '}
-          <Linkdoc href={url.href} target='_blank' color='sky'>
+          <Link href={url.href} target='_blank'>
             {url.hostname.replaceAll('www.', '')}
-          </Linkdoc>
+          </Link>
         </p>
       )}
     </>

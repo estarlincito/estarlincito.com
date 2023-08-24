@@ -1,7 +1,7 @@
 'use client';
 import useGPT from '@/Hooks/useGPT';
-import clsx from 'clsx';
-import { TbCopy } from 'react-icons/tb';
+import { CopyIcon } from '@radix-ui/react-icons';
+import { IconButton } from '@radix-ui/themes';
 
 interface CopyChatProps {
   text: string;
@@ -11,17 +11,14 @@ const CopyChat = ({ text }: CopyChatProps) => {
   const { copyChat } = useGPT();
 
   return (
-    <button
+    <IconButton
+      variant='ghost'
       onClick={() => {
         copyChat(text);
       }}
-      className={clsx(
-        'text-gray-400 hover:text-gray-500 active:hover:text-gray-900',
-        'dark:text-gray-600 dark:hover:text-gray-400 dark:active:hover:text-gray-200'
-      )}
     >
-      <TbCopy />
-    </button>
+      <CopyIcon />
+    </IconButton>
   );
 };
 

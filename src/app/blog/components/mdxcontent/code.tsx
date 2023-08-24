@@ -1,5 +1,5 @@
 const Code = (props: any) => {
-  return <code className='text-red-500'>{props.children}</code>;
+  return <Code>{props.children}</Code>;
 };
 
 export default Code;

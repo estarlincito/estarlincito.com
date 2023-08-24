@@ -1,48 +1,51 @@
-import IconPlus from '@/components/UI/iconplus';
-import clsx from 'clsx';
-import {
-  TbClockFilled,
-  TbDiscountCheckFilled,
-  TbEyeFilled,
-} from 'react-icons/tb';
+import * as Icons from '@radix-ui/react-icons';
+import { Flex, Text } from '@radix-ui/themes';
+
+interface InfProps {
+  color: 'sky' | 'gray';
+  label: string;
+  children: React.ReactNode;
+}
+
+const Inf = ({ color, label, children }: InfProps) => {
+  return (
+    <Flex align='center' gap='1'>
+      <Text as='span' color={color}>
+        {children}
+      </Text>
+      <Text as='span'>{label}</Text>
+    </Flex>
+  );
+};
 
 interface CheckProps {
   check: boolean;
   readingTime: string;
-  className: string;
+  className?: string;
 }
 
 const Check = (props: CheckProps) => {
   return (
-    <ul
-      className={clsx(
-        'flex flex-row gap-x-5',
-        props.className && props.className
-      )}
+    <Flex
+      className={props.className && props.className}
+      direction='row'
+      gap='4'
+      width='9'
     >
       {props.check === false ? (
-        <IconPlus>
-          <i className='text-sky-600 dark:text-sky-400'>
-            <TbEyeFilled />
-          </i>
-          <span>En revisión</span>
-        </IconPlus>
+        <Inf label='En revisión' color='sky'>
+          <Icons.EyeOpenIcon />
+        </Inf>
       ) : (
-        <IconPlus>
-          <i className='text-sky-600 dark:text-sky-400'>
-            <TbDiscountCheckFilled />
-          </i>
-          <span>Verificado</span>
-        </IconPlus>
+        <Inf label='Verificado' color='sky'>
+          <Icons.CheckCircledIcon />
+        </Inf>
       )}
 
-      <IconPlus>
-        <i className='text-slate-600 dark:text-slate-400'>
-          <TbClockFilled />
-        </i>
-        <span>{props.readingTime}</span>
-      </IconPlus>
-    </ul>
+      <Inf label={props.readingTime} color='gray'>
+        <Icons.ClockIcon />
+      </Inf>
+    </Flex>
   );
 };
 

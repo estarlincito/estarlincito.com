@@ -1,17 +1,11 @@
-import clsx from 'clsx';
+import { Heading } from '@radix-ui/themes';
 
 interface TitleProps {
   text: string;
-  size: 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl';
-  className?: string;
 }
 
-const Title = (props: TitleProps) => {
-  const { text, size, className } = props;
-
-  return (
-    <h1 className={clsx('font-bold', size, className && className)}>{text}</h1>
-  );
+const Title = ({ text }: TitleProps) => {
+  return <Heading size='7'>{text}</Heading>;
 };
 
 export default Title;

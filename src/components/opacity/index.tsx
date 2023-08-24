@@ -1,5 +1,7 @@
 'use client';
 import useCollapse from '@/Hooks/useCollapse';
+import { Box } from '@radix-ui/themes';
+import styled from './opacity.module.scss';
 
 const Opacity = () => {
   const { collapse, offCollapse } = useCollapse();
@@ -7,10 +9,7 @@ const Opacity = () => {
   return (
     <>
       {collapse === 'ON' ? (
-        <div
-          onClick={offCollapse}
-          className='bg-[#000000d6] fixed z-10 top-0 right-0 left-0 bottom-0'
-        />
+        <Box onClick={offCollapse} className={styled.opacity} />
       ) : null}
     </>
   );

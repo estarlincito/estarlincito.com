@@ -1,6 +1,6 @@
-import Linkdoc from '@/components/UI/linkdoc';
 import Links from '@/types/links';
 import Target from '@/types/target';
+import { Box, Heading, Link } from '@radix-ui/themes';
 
 interface ListProps {
   title: string;
@@ -13,18 +13,18 @@ const List = (props: ListProps) => {
   const { title, links, target, className } = props;
 
   return (
-    <div className={className}>
-      <h3 className='text-lg font-bold'>{title}</h3>
-      <ul className='m-3 text-sm'>
+    <Box className={className}>
+      <Heading size='4'>{title}</Heading>
+      <ul>
         {links.map(({ route, label }, id) => (
           <li key={id}>
-            <Linkdoc href={route} target={target} font='font-normal'>
+            <Link href={route} target={target} color='gray' weight='bold'>
               {label}
-            </Linkdoc>
+            </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </Box>
   );
 };
 

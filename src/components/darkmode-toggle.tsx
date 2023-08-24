@@ -1,21 +1,20 @@
 'use client';
-import Button from '@/components/UI/button';
 import useTheme from '@/Hooks/useTheme';
-
-import { TbMoon, TbSun } from 'react-icons/tb';
+import * as Icons from '@radix-ui/react-icons';
+import IconButton from './UI/Iconbutton';
 
 const DarkmodeToggle = () => {
   const { currentTheme, themeToggle } = useTheme();
   return (
     <>
       {currentTheme === 'dark' ? (
-        <Button onClick={themeToggle} className='text-2xl'>
-          <TbSun />
-        </Button>
+        <IconButton onClick={themeToggle}>
+          <Icons.SunIcon width='18' height='18' />
+        </IconButton>
       ) : (
-        <Button onClick={themeToggle} className='text-2xl'>
-          <TbMoon />
-        </Button>
+        <IconButton onClick={themeToggle}>
+          <Icons.MoonIcon width='18' height='18' />
+        </IconButton>
       )}
     </>
   );
