@@ -1,5 +1,12 @@
+import { Blockquote as Blockquoter } from '@radix-ui/themes';
+
 const Blockquote = (props: any) => {
-  return <Blockquote className='-order-2'>{props.children}</Blockquote>;
+  return (
+    <>
+      <Blockquoter>{props.children} </Blockquoter>
+      <br />
+    </>
+  );
 };
 
 export default Blockquote;

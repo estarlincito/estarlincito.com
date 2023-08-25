@@ -1,20 +1,18 @@
 import Title from '@/components/UI/title';
-import { Blockquote } from '@radix-ui/themes';
-import clsx from 'clsx';
+import { Blockquote, Box } from '@radix-ui/themes';
 
 interface BlogHeaderProps {
   title: string;
   sumary: string;
-  unmargin?: boolean;
 }
 
 const BlogHeader = (props: BlogHeaderProps) => {
   return (
-    <div className={clsx('mb-16', props.unmargin === undefined ? 'mx-8' : '')}>
+    <Box mb='9' mx='2'>
       <Title text={props.title} />
       <br />
       <Blockquote>{props.sumary}</Blockquote>
-    </div>
+    </Box>
   );
 };
 

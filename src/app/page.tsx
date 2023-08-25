@@ -2,6 +2,7 @@ import Wrapper from '@/components/wrapper';
 import Home from '@/constants/home';
 import SEO from '@/lib/seo';
 import { Avatar, Box, Flex, Link, Separator, Text } from '@radix-ui/themes';
+import Styled from './page.module.scss';
 
 export const { metadata } = new SEO({
   title: Home.seo.title,
@@ -16,7 +17,7 @@ const Welcome = () => {
     <Flex direction='column' align='center' gap='3'>
       <Avatar radius='full' size='9' src='/images/avatar.jpeg' fallback='E' />
 
-      <Box className='max-w-lg text-center'>
+      <Box className={Styled.welcome}>
         <Text>{Home.aboutme}</Text>
       </Box>
 
@@ -38,9 +39,9 @@ const Moreinf = () => {
 
 const Nav = () => {
   return (
-    <ul className='mt-5 md:flex md:justify-center md:gap-x-5'>
+    <ul className={Styled.nav}>
       {Home.links.map((link, index) => (
-        <li key={index} className='mb-1 md:mb-0'>
+        <li key={index}>
           <Link href={link.route} target={link.target!}>
             {link.label}
           </Link>

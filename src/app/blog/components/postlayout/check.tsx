@@ -21,17 +21,11 @@ const Inf = ({ color, label, children }: InfProps) => {
 interface CheckProps {
   check: boolean;
   readingTime: string;
-  className?: string;
 }
 
 const Check = (props: CheckProps) => {
   return (
-    <Flex
-      className={props.className && props.className}
-      direction='row'
-      gap='4'
-      width='9'
-    >
+    <Flex direction='row' gap='4'>
       {props.check === false ? (
         <Inf label='En revisión' color='sky'>
           <Icons.EyeOpenIcon />

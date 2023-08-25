@@ -1,17 +1,17 @@
 .gpt {
-  max-width: 450px;
+  max-width: 46.875rem;
   margin: auto;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .box {
-  border-radius: 5px;
-  padding: 20px;
-  border: 1px solid var(--gray-8);
+  border-radius: 0.3125rem;
+  padding: 2.5rem;
+  border: 0.0625rem solid var(--gray-8);
 }
 
 .chat {

@@ -16,13 +16,13 @@ const ContactPage = () => {
   return (
     <Wrapper>
       <Title text='Ponte en contacto conmigo' />
-      <Blockquote>{Contact.quote}</Blockquote>
+      <Blockquote mb='7'>{Contact.quote}</Blockquote>
 
       <Text>
         {Contact.talkme.main}
-        <span role='img' aria-label='Levantando las manos'>
+        <Text as='span' role='img' aria-label='Levantando las manos'>
           🙌
-        </span>
+        </Text>
         <br />
         <br />
         {Contact.talkme.sendme}

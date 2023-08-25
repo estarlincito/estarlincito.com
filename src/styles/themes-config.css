@@ -1,5 +1,83 @@
 /* theme-config.css */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+  font-weight: bold;
+}
+
+ol li {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+ol li p {
+  margin-bottom: 0.625rem;
+}
+
+.-rounded-lg {
+  border-radius: 0.5rem; /* 8px */
+}
+.-order-1 {
+  order: 1;
+}
+.-order-2 {
+  order: 2;
+}
+.-order-3 {
+  order: 3;
+}
+.-order-4 {
+  order: 4;
+}
+.-order-5 {
+  order: 5;
+}
+.-order-6 {
+  order: 6;
+}
+.-order-7 {
+  order: 7;
+}
+.-order-8 {
+  order: 8;
+}
+.-order-9 {
+  order: 9;
+}
+.-order-10 {
+  order: 10;
+}
+.-order-11 {
+  order: 11;
+}
+.-order-12 {
+  order: 12;
+}
+.-order-first {
+  order: -9999;
+}
+.-order-last {
+  order: 9999;
+}
+.-order-none {
+  order: 0;
+}
+
 @import '@radix-ui/colors/gray.css';
 @import '@radix-ui/colors/blue.css';
 @import '@radix-ui/colors/gray-dark.css';
@@ -16,19 +94,3 @@
   --space-8: calc(48px * var(--scaling));
   --space-9: calc(64px * var(--scaling));
 }
-
-li {
-  list-style: none;
-}
-
-/* ol {
-  @apply list-decimal list-inside font-bold;
-}
-
-ol li {
-  @apply my-5;
-}
-
-ol li p {
-  @apply mb-5 font-normal;
-} */

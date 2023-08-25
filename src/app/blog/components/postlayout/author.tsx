@@ -6,12 +6,11 @@ interface AuthorProps {
   author: string;
   avathar: string;
   updated: string;
-  className?: string;
 }
 
 const Author = (props: AuthorProps) => {
   return (
-    <Box className={props.className && props.className} ml='5' mb='5' mt='5'>
+    <Box ml='5' mb='5' mt='5'>
       <Flex direction='row' align='center' gap='5'>
         <Box width='8'>
           <Avatar

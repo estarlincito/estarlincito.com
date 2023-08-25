@@ -1,6 +1,6 @@
 import useCollapse from '@/Hooks/useCollapse';
 import sitemap from '@/constants/siteMap';
-import { Link } from '@radix-ui/themes';
+import { Link, Strong } from '@radix-ui/themes';
 
 const Nav = () => {
   const { offCollapse } = useCollapse();
@@ -9,7 +9,7 @@ const Nav = () => {
       {sitemap.map((link, id) => (
         <li key={id}>
           <Link target='_self' onClick={offCollapse} href={link.route}>
-            {link.label}
+            <Strong>{link.label}</Strong>
           </Link>
         </li>
       ))}

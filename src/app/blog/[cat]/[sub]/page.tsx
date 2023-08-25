@@ -1,10 +1,10 @@
+import PostList from '@/app/blog/components/postlist';
 import Blogc from '@/constants/blogc';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
 import { ParamsSub } from '@/types/params';
 import BlogHeader from '@BlogComponents/blog-header';
 import LoadingArticle from '@BlogComponents/loading/article';
-import PostList from '@BlogComponents/post-list';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 

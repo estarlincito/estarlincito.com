@@ -1,4 +1,4 @@
-import { Flex, Heading, Link } from '@radix-ui/themes';
+import { Flex, Heading, Link, Text } from '@radix-ui/themes';
 
 interface TagsProps {
   tags: string[];
@@ -11,15 +11,15 @@ const Tags = (props: TagsProps) => {
         Tags:
       </Heading>
 
-      <ul className='flex'>
+      <Flex>
         {props.tags.map((tag, id) => (
-          <li key={id} className='m-1'>
+          <Text as='span' m='1' key={id}>
             <Link href={`/blog/tags/${tag}`} target='_self' size='2'>
               #{tag}
             </Link>
-          </li>
+          </Text>
         ))}
-      </ul>
+      </Flex>
     </Flex>
   );
 };

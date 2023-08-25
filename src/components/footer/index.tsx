@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <Box p='5'>
-        <Separator my='5' size='4' />
+        <Separator mt='5' size='4' />
         <Nav />
       </Box>
     </footer>

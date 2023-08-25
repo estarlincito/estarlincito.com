@@ -1,0 +1,17 @@
+@import '@/styles/mixins';
+
+.welcome {
+  max-width: 500px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin-top: 20px;
+
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}

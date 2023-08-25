@@ -1,5 +1,4 @@
-import { Flex, Link as Linkr } from '@radix-ui/themes';
-import clsx from 'clsx';
+import { Flex, Link as Linkr, Strong } from '@radix-ui/themes';
 import { TbBrandGoogleHome } from 'react-icons/tb';
 
 interface LinkProps {
@@ -20,25 +19,26 @@ interface NavProps {
   subcategory: string;
   urlCat: string;
   urlSub: string;
-  className: string;
 }
 
 const Nav = (props: NavProps) => {
   return (
-    <Flex
-      align='center'
-      gap='3'
-      className={clsx('select-none', props.className && props.className)}
-    >
+    <Flex align='center' gap='3'>
       <Link route='/'>
         <TbBrandGoogleHome />
       </Link>
 
-      <Link route='/blog'>Blog</Link>
+      <Link route='/blog'>
+        <Strong>Blog</Strong>
+      </Link>
 
-      <Link route={props.urlCat}>{props.category}</Link>
+      <Link route={props.urlCat}>
+        <Strong>{props.category}</Strong>
+      </Link>
 
-      <Link route={props.urlSub}>{props.subcategory}</Link>
+      <Link route={props.urlSub}>
+        <Strong>{props.subcategory}</Strong>
+      </Link>
     </Flex>
   );
 };

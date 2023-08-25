@@ -1,8 +1,10 @@
 import Blog from '@/constants/blog';
+import allPosts from '@/lib/allPosts';
 import SEO from '@/lib/seo';
 import { Suspense } from 'react';
 import BlogHeader from './components/blog-header';
 import LoadingArticle from './components/loading/article';
+import PostList from './components/postlist';
 
 export const { metadata } = new SEO({
   title: Blog.seo.title,
@@ -18,10 +20,7 @@ const BlogPage = () => {
       <BlogHeader title={Blog.titleH} sumary={Blog.seo.description} />
 
       <Suspense fallback={<LoadingArticle />}>
-        {/* <PostList posts={allPosts} /> */}
-        <br />
-        <br />
-        <div>Por ahora esta sección está en mantenimiento</div>
+        <PostList posts={allPosts} />
       </Suspense>
     </>
   );

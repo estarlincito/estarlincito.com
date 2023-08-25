@@ -16,9 +16,9 @@ export const { metadata } = new SEO({
 const AboutPage = () => {
   return (
     <Wrapper>
-      <Title text='Acerca de Estarlincito' />
+      <Title text='Acerca de Mí' />
 
-      <Blockquote>{About.seo.description}</Blockquote>
+      <Blockquote mb='7'>{About.seo.description}</Blockquote>
 
       <Text>{About.moreinf}</Text>
 
