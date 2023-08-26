@@ -12,7 +12,7 @@ const Formsearch = () => {
   const { handleAction, reset } = useGPT();
   return (
     <form action={handleAction} ref={reset} className={Styled.form}>
-      <Select.Root defaultValue='none' name='type' required>
+      <Select.Root defaultValue='none' name='type'>
         <Select.Trigger />
         <Select.Content>
           {GPT.options.map(({ value, label }, id) => (
