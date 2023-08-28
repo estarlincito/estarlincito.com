@@ -5,8 +5,11 @@ import Navbar from '@/components/navbar';
 import Opacity from '@/components/opacity';
 import { CollapseProvider } from '@/context/collapse';
 import { ThemeProvider } from '@/context/theme';
+import Toaster from '@/lib/toaster';
+
 import '@/styles/themes-config.css';
 import ChildrenProps from '@/types/children';
+
 import { Container, Theme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 
@@ -27,6 +30,16 @@ const RootLayout = (props: ChildrenProps) => {
             </CollapseProvider>
           </Container>
         </Theme>
+        <Toaster
+          position='top-center'
+          reverseOrder={false}
+          toastOptions={{
+            style: {
+              color: 'white',
+              background: 'black',
+            },
+          }}
+        />
       </body>
     </html>
   );

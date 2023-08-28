@@ -1,6 +1,7 @@
 'use client';
 import useGPT from '@/Hooks/useGPT';
 import GPT from '@Constants/gpt';
+import * as Form from '@radix-ui/react-form';
 import {
   DoubleArrowRightIcon,
   MagnifyingGlassIcon,
@@ -11,8 +12,8 @@ import Styled from './search.module.scss';
 const Formsearch = () => {
   const { handleAction, reset } = useGPT();
   return (
-    <form action={handleAction} ref={reset} className={Styled.form}>
-      <Select.Root defaultValue='none' name='type'>
+    <Form.Root className={Styled.form} action={handleAction} ref={reset}>
+      <Select.Root name='type'>
         <Select.Trigger />
         <Select.Content>
           {GPT.options.map(({ value, label }, id) => (
@@ -30,10 +31,12 @@ const Formsearch = () => {
         <TextField.Input name='search' placeholder='Ask any...' required />
       </TextField.Root>
 
-      <IconButton variant='outline'>
-        <DoubleArrowRightIcon width='16' height='16' />
-      </IconButton>
-    </form>
+      <Form.Submit asChild>
+        <IconButton variant='outline'>
+          <DoubleArrowRightIcon width='16' height='16' />
+        </IconButton>
+      </Form.Submit>
+    </Form.Root>
   );
 };
 
