@@ -29,6 +29,12 @@ const me = [
       'En últimas, no se trata de resolver sus problemas. Se trata de darse cuenta de que no hay problemas. Sólo situaciones que manejar o que dejar así y aceptar como parte de la condición de ser del momento presente hasta que cambien o se puedan manejar. Los problemas son creados por la mente y necesitan el tiempo para sobrevivir.',
     id: 2,
   },
+  {
+    consejo: 'Ordinario + Extraordinario',
+    razon:
+      'Una persona ordinaria y extraordinaria recibe una identidad única que ella misma construye a partir de sus habilidades, intereses, experiencias y valores. Esta identidad le permite a la persona destacarse entre la multitud y tener un sentido de propósito en la vida. La identidad de una persona ordinaria y extraordinaria se caracteriza por su originalidad y creatividad, y se define por su autenticidad y compromiso con los demás.',
+    id: 3,
+  },
 ];
 
 export default class Me {

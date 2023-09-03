@@ -13,7 +13,7 @@ const useGPT = () => {
   }
 
   const { chat, setChat } = gptContext;
-  const reset = useRef<HTMLFormElement>(null);
+  const [input, setInput] = useState('');
   const smooth = useRef<HTMLDivElement>(null);
   const [quote, setquote] = useState({} as Quote);
 
@@ -42,16 +42,20 @@ const useGPT = () => {
     } catch (error) {
       throw new Error('Error whent try to send new quote to local api');
     }
+
+    //reset input
+    setInput('');
   };
 
+  //handlechange
+  const handlechange = (e: React.FormEvent<HTMLInputElement>) => {
+    setInput(e.currentTarget.value);
+  };
   //copy questions or answer
   const copyChat = (text: string) => {
     navigator.clipboard.writeText(text.replaceAll('\n', ''));
     toast.success('Copied');
   };
-
-  //reset form
-  reset.current?.reset();
 
   //to scroll down
   useEffect(() => {
@@ -78,7 +82,7 @@ const useGPT = () => {
     })();
   }, []);
 
-  return { handleAction, chat, reset, smooth, copyChat, quote };
+  return { handleAction, chat, handlechange, input, smooth, copyChat, quote };
 };
 
 export default useGPT;

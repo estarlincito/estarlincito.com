@@ -10,9 +10,9 @@ import { IconButton, Select, TextField } from '@radix-ui/themes';
 import Styled from './search.module.scss';
 
 const Formsearch = () => {
-  const { handleAction, reset } = useGPT();
+  const { handleAction, handlechange, input } = useGPT();
   return (
-    <Form.Root className={Styled.form} action={handleAction} ref={reset}>
+    <Form.Root className={Styled.form} action={handleAction}>
       <Select.Root name='type'>
         <Select.Trigger />
         <Select.Content>
@@ -28,7 +28,13 @@ const Formsearch = () => {
         <TextField.Slot>
           <MagnifyingGlassIcon height='16' width='16' />
         </TextField.Slot>
-        <TextField.Input name='search' placeholder='Ask any...' required />
+        <TextField.Input
+          onChange={handlechange}
+          name='search'
+          placeholder='Ask any...'
+          value={input}
+          required
+        />
       </TextField.Root>
 
       <Form.Submit asChild>
