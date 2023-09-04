@@ -34,6 +34,7 @@ const Formsearch = () => {
           placeholder='Ask any...'
           value={input}
           required
+          size='2'
         />
       </TextField.Root>
 
