@@ -14,7 +14,7 @@ const Formsearch = () => {
   return (
     <Form.Root className={Styled.form} action={handleAction}>
       <Select.Root name='type'>
-        <Select.Trigger />
+        <Select.Trigger className={Styled.trigger} />
         <Select.Content>
           {GPT.options.map(({ value, label }, id) => (
             <Select.Item key={id} value={value}>
@@ -34,7 +34,6 @@ const Formsearch = () => {
           placeholder='Ask any...'
           value={input}
           required
-          size='2'
         />
       </TextField.Root>
 
