@@ -78,6 +78,10 @@ ol li p {
   order: 0;
 }
 
+.rt-reset-button {
+  cursor: pointer;
+}
+
 @import '@radix-ui/colors/gray.css';
 @import '@radix-ui/colors/blue.css';
 @import '@radix-ui/colors/gray-dark.css';

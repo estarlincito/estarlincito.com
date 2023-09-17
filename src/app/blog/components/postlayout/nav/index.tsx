@@ -1,5 +1,6 @@
+import IconButton from '@/components/UI/Iconbutton';
+import { HomeIcon } from '@radix-ui/react-icons';
 import { Flex, Link as Linkr, Strong } from '@radix-ui/themes';
-import { TbBrandGoogleHome } from 'react-icons/tb';
 
 interface LinkProps {
   route: string;
@@ -25,7 +26,9 @@ const Nav = (props: NavProps) => {
   return (
     <Flex align='center' gap='3'>
       <Link route='/'>
-        <TbBrandGoogleHome />
+        <IconButton>
+          <HomeIcon width='16' height='16' />
+        </IconButton>
       </Link>
 
       <Link route='/blog'>
