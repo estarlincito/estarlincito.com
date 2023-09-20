@@ -12,7 +12,7 @@ interface Highlight {
 const Highlight = () => {
   const [highlight, sethighlights] = useState({} as Highlight);
   const url =
-    'https://raw.githubusercontent.com/estarlincito/highlights/main/docs/assets/data.json';
+    'https://raw.githubusercontent.com/estarlincito/iDB/quotes/data_es.json';
 
   useEffect(() => {
     (async () => {
