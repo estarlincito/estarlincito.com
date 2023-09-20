@@ -11,7 +11,9 @@ const Header = () => {
     <>
       {chat.length === 1 ? (
         <Box className={Styled.box}>
-          <Heading size='4'>GPT001</Heading>
+          <Heading size='4' mb='1'>
+            GPT001
+          </Heading>
           <Quote />
         </Box>
       ) : null}

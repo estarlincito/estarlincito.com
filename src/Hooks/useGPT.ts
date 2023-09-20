@@ -68,7 +68,7 @@ const useGPT = () => {
   //Quote
   useEffect(() => {
     const url =
-      'https://raw.githubusercontent.com/estarlincito/quotes001/main/src/assets/quotes.json';
+      'https://raw.githubusercontent.com/estarlincito/iDB/quotes/data_en.json';
 
     (async () => {
       try {
