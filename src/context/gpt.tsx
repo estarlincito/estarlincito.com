@@ -1,11 +1,11 @@
 'use client';
 import ChildrenProps from '@/types/children';
-import Chat from '@/types/gpt';
+import Messages from '@/types/gpt';
 import { createContext, useState } from 'react';
 
 interface GPTContextValue {
-  chat: Chat[];
-  setChat: (chat: Chat[]) => void;
+  chat: Messages[];
+  setChat: (chat: Messages[]) => void;
 }
 
 //set context
@@ -13,7 +13,7 @@ export const GPTContext = createContext({} as GPTContextValue);
 
 //Provider context
 export const GPTProvider = (props: ChildrenProps) => {
-  const [chat, setChat] = useState<Chat[]>([{ answer: '', question: '' }]);
+  const [chat, setChat] = useState<Messages[]>([]);
 
   return (
     <GPTContext.Provider value={{ chat, setChat }}>

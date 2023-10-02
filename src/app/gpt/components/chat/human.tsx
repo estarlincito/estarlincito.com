@@ -4,19 +4,20 @@ import Boxchat from './boxchat';
 import CopyChat from './copy';
 
 interface HumanProps {
-  question: string;
+  content: string;
+  role: 'user' | 'assistant';
 }
 
-const Human = ({ question }: HumanProps) => {
+const Human = ({ content }: HumanProps) => {
   return (
     <Boxchat>
       <Text as='span'>
         <TbMoodBoy />
       </Text>
 
-      <Text as='p'>{question}</Text>
+      <Text as='p'>{content}</Text>
 
-      <CopyChat text={question} />
+      <CopyChat text={content} />
     </Boxchat>
   );
 };

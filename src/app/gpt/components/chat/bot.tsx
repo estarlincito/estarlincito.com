@@ -4,10 +4,10 @@ import Boxchat from './boxchat';
 import CopyChat from './copy';
 
 interface BotProps {
-  answer?: string;
+  assistant?: string;
 }
 
-const Bot = ({ answer }: BotProps) => {
+const Bot = ({ assistant }: BotProps) => {
   return (
     <Boxchat>
       <Text as='span'>
@@ -15,10 +15,10 @@ const Bot = ({ answer }: BotProps) => {
       </Text>
 
       <Text as='p' className='font-serif'>
-        {answer}
+        {assistant}
       </Text>
 
-      <CopyChat text={answer!} />
+      <CopyChat text={assistant!} />
     </Boxchat>
   );
 };

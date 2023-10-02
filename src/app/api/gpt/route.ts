@@ -1,11 +1,11 @@
-import gpt from '@/lib/gpt';
-import Chat from '@/types/gpt';
+import { gpt } from '@/lib/gpt';
+import Messages from '@/types/gpt';
 import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
-  const { question } = await request.json();
-  const { answer } = await gpt(question);
-  return NextResponse.json({ question, answer } as Chat);
+  const { prompt } = await request.json();
+  const messages = (await gpt(prompt)) as unknown as Messages;
+  return NextResponse.json({ messages });
 }
 
 export async function GET() {

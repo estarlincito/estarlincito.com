@@ -30,15 +30,15 @@ const useGPT = () => {
         cache: 'no-store',
         method: 'POST',
         body: JSON.stringify({
-          question:
+          prompt:
             get('type') === ''
               ? get('search')
               : `${get('type')}: '${get('search')}'`,
         }),
       });
 
-      const { question, answer } = await res.json();
-      setChat([...chat, { question, answer }]);
+      const { messages } = await res.json();
+      setChat(messages);
     } catch (error) {
       throw new Error('Error whent try to send new quote to local api');
     }
@@ -51,7 +51,7 @@ const useGPT = () => {
   const handlechange = (e: React.FormEvent<HTMLInputElement>) => {
     setInput(e.currentTarget.value);
   };
-  //copy questions or answer
+  //copy questions or assistant
   const copyChat = (text: string) => {
     navigator.clipboard.writeText(text.replaceAll('\n', ''));
     toast.success('Copied');

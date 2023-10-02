@@ -3,7 +3,6 @@ import Home from '@/constants/home';
 import SEO from '@/lib/seo';
 import { Avatar, Box, Flex, Link, Separator, Text } from '@radix-ui/themes';
 import Styled from './page.module.scss';
-
 export const { metadata } = new SEO({
   title: Home.seo.title,
   description: Home.seo.description,

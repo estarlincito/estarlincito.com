@@ -1,6 +1,6 @@
-interface Chat {
-  question: string;
-  answer?: string;
+interface Messages {
+  role: 'user' | 'assistant';
+  content: string;
 }
 
-export default Chat;
+export default Messages;

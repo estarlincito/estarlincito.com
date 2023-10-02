@@ -1,3 +1,4 @@
+import { cookieStore, create } from '@/actions/cookies';
 import { Configuration, OpenAIApi } from 'openai';
 
 const isEnv = (env: string) => {
@@ -16,21 +17,54 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-export const gpt = async (input: string) => {
-  const response = await openai.createCompletion({
-    model: 'text-davinci-003',
-    prompt: input,
-    temperature: 0.7,
-    max_tokens: 1500,
-    top_p: 1,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-    stop: [' Human:', ' AI:'],
-  });
+export class Messages {
+  readonly initailsValue = (prompt: string) => {
+    const initailsValue: [{ role: 'user'; content: string }] = [
+      { role: 'user', content: prompt },
+    ];
+    return initailsValue;
+  };
 
-  const { data } = response;
+  readonly messagesStore = JSON.parse(
+    cookieStore('GPT_CHAT_ESTARLINCITO.COM', JSON.stringify([]))
+  ) as [];
 
-  return { answer: data.choices[0].text };
+  readonly updatedMessages = (prompt: string, response: any) => {
+    const answer = response['data']['choices'][0]['message']?.content ?? '';
+
+    const updated = [
+      ...this.messagesStore,
+      {
+        role: 'user',
+        content: prompt,
+      },
+      {
+        role: 'assistant',
+        content: answer,
+      },
+    ];
+    create('GPT_CHAT_ESTARLINCITO.COM', JSON.stringify(updated));
+
+    return updated;
+  };
+}
+
+export const gpt = async (prompt: string) => {
+  const { initailsValue, messagesStore, updatedMessages } = new Messages();
+  const _initailsValue = initailsValue(prompt);
+
+  try {
+    const response = await openai.createChatCompletion({
+      model: 'gpt-3.5-turbo',
+      messages:
+        messagesStore.length === 0
+          ? _initailsValue
+          : [...messagesStore, _initailsValue[0]],
+    });
+
+    const messages = updatedMessages(prompt, response);
+    return messages;
+  } catch (error) {
+    throw new Error('Please check the Openai API');
+  }
 };
-
-export default gpt;
