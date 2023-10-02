@@ -1,15 +1,16 @@
-'use client';
-import useGPT from '@/Hooks/useGPT';
 import { Box, Heading } from '@radix-ui/themes';
+import { Message } from 'ai';
 import Styled from '../../gpt.module.scss';
 import Quote from './quote';
 
-const Header = () => {
-  const { chat } = useGPT();
+interface HeaderPros {
+  messages: Message[];
+}
 
+const Header = ({ messages }: HeaderPros) => {
   return (
     <>
-      {chat.length === 1 ? (
+      {messages.length === 0 ? (
         <Box className={Styled.box}>
           <Heading size='4' mb='1'>
             GPT001

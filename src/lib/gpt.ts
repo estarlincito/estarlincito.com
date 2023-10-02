@@ -1,5 +1,6 @@
-import { cookieStore, create } from '@/actions/cookies';
-import { Configuration, OpenAIApi } from 'openai';
+import Messages from '@/types/gpt';
+import { OpenAIStream, StreamingTextResponse } from 'ai';
+import { Configuration, OpenAIApi } from 'openai-edge';
 
 const isEnv = (env: string) => {
   try {
@@ -17,53 +18,17 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-export class Messages {
-  readonly initailsValue = (prompt: string) => {
-    const initailsValue: [{ role: 'user'; content: string }] = [
-      { role: 'user', content: prompt },
-    ];
-    return initailsValue;
-  };
-
-  readonly messagesStore = JSON.parse(
-    cookieStore('GPT_CHAT_ESTARLINCITO.COM', JSON.stringify([]))
-  ) as [];
-
-  readonly updatedMessages = (prompt: string, response: any) => {
-    const answer = response['data']['choices'][0]['message']?.content ?? '';
-
-    const updated = [
-      ...this.messagesStore,
-      {
-        role: 'user',
-        content: prompt,
-      },
-      {
-        role: 'assistant',
-        content: answer,
-      },
-    ];
-    create('GPT_CHAT_ESTARLINCITO.COM', JSON.stringify(updated));
-
-    return updated;
-  };
-}
-
-export const gpt = async (prompt: string) => {
-  const { initailsValue, messagesStore, updatedMessages } = new Messages();
-  const _initailsValue = initailsValue(prompt);
-
+export const gpt = async (messages: Messages[]) => {
   try {
     const response = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo',
-      messages:
-        messagesStore.length === 0
-          ? _initailsValue
-          : [...messagesStore, _initailsValue[0]],
+      stream: true,
+      messages: messages,
     });
 
-    const messages = updatedMessages(prompt, response);
-    return messages;
+    const stream = OpenAIStream(response);
+
+    return new StreamingTextResponse(stream);
   } catch (error) {
     throw new Error('Please check the Openai API');
   }

@@ -1,3 +1,5 @@
+@import '@/styles/mixins';
+
 .gpt {
   max-width: 46.875rem;
   margin: auto;
@@ -9,7 +11,27 @@
 }
 
 .box {
-  border-radius: 0.3125rem;
+  border-radius: 0.5125rem;
   padding: 2.5rem;
   border: 0.0625rem solid var(--gray-8);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 30% 55% 10%;
+  justify-content: space-between;
+
+  @include for-phone-only {
+    grid-template-columns: 85% 10%;
+  }
+
+  input {
+    font-size: 16px;
+  }
+}
+
+.trigger {
+  @include for-phone-only {
+    display: none;
+  }
 }
