@@ -1,4 +1,3 @@
-'use client';
 import { Flex, ScrollArea } from '@radix-ui/themes';
 import { Message } from 'ai';
 import Content from './content';
