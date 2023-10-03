@@ -1,15 +1,11 @@
-import GPT from '@Constants/gpt';
 import * as Form from '@radix-ui/react-form';
-import {
-  DoubleArrowRightIcon,
-  MagnifyingGlassIcon,
-} from '@radix-ui/react-icons';
-import { Box, IconButton, Select, TextField } from '@radix-ui/themes';
+import { DoubleArrowRightIcon } from '@radix-ui/react-icons';
+import { Flex, IconButton, Text, TextArea } from '@radix-ui/themes';
 import { ChangeEventHandler, FormEventHandler } from 'react';
 import Styled from '../../gpt.module.scss';
 
 interface FormsearchProps {
-  handleInputChange: ChangeEventHandler<HTMLInputElement> | undefined;
+  handleInputChange: ChangeEventHandler<HTMLTextAreaElement> | undefined;
   handleSubmit: FormEventHandler<HTMLFormElement> | undefined;
   input: string;
   isLoading: boolean;
@@ -22,39 +18,27 @@ const Formsearch = ({
   isLoading,
 }: FormsearchProps) => {
   return (
-    <Box className={Styled.box}>
-      <Form.Root className={Styled.form} onSubmit={handleSubmit}>
-        <Select.Root disabled={isLoading}>
-          <Select.Trigger className={Styled.trigger} />
-          <Select.Content>
-            {GPT.options.map(({ value, label }, id) => (
-              <Select.Item key={id} value={value}>
-                {label}
-              </Select.Item>
-            ))}
-          </Select.Content>
-        </Select.Root>
-
-        <TextField.Root>
-          <TextField.Slot>
-            <MagnifyingGlassIcon height='16' width='16' />
-          </TextField.Slot>
-          <TextField.Input
-            disabled={isLoading}
-            onChange={handleInputChange}
-            placeholder='Ask any...'
-            value={input}
-            required
-          />
-        </TextField.Root>
+    <Form.Root className={Styled.form} onSubmit={handleSubmit}>
+      <Flex direction='row' align='center' justify='between' m='3'>
+        <Text>
+          <b>Ask any...</b>
+        </Text>
 
         <Form.Submit asChild disabled={isLoading}>
           <IconButton variant='outline'>
             <DoubleArrowRightIcon width='16' height='16' />
           </IconButton>
         </Form.Submit>
-      </Form.Root>
-    </Box>
+      </Flex>
+
+      <TextArea
+        placeholder='Write here!'
+        disabled={isLoading}
+        onChange={handleInputChange}
+        value={input}
+        required
+      />
+    </Form.Root>
   );
 };
 

@@ -17,14 +17,6 @@
 }
 
 .form {
-  display: grid;
-  grid-template-columns: 30% 55% 10%;
-  justify-content: space-between;
-
-  @include for-phone-only {
-    grid-template-columns: 85% 10%;
-  }
-
   input {
     font-size: 16px;
   }
@@ -34,4 +26,14 @@
   @include for-phone-only {
     display: none;
   }
+}
+
+.user {
+  max-width: 80%;
+  justify-self: end;
+}
+
+.assistant {
+  max-width: 80%;
+  justify-self: start;
 }
