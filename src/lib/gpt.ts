@@ -23,6 +23,7 @@ export const gpt = async (messages: Messages[]) => {
     const response = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo',
       stream: true,
+      max_tokens: 2096,
       messages: messages,
     });
 
