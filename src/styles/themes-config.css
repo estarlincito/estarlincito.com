@@ -98,3 +98,7 @@ ol li p {
   --space-8: calc(48px * var(--scaling));
   --space-9: calc(64px * var(--scaling));
 }
+
+.cursor-default {
+  cursor: default;
+}

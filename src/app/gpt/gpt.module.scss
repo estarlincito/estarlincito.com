@@ -31,9 +31,11 @@
 .user {
   max-width: 80%;
   justify-self: end;
+  cursor: default;
 }
 
 .assistant {
   max-width: 80%;
   justify-self: start;
+  cursor: default;
 }
