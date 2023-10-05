@@ -12,6 +12,8 @@ const isEnv = (env: string) => {
   }
 };
 
+// New
+
 const configuration = new Configuration({
   apiKey: isEnv(process.env.GPT),
 });
