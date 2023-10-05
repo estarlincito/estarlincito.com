@@ -19,18 +19,14 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 export const gpt = async (messages: Messages[]) => {
-  try {
-    const response = await openai.createChatCompletion({
-      model: 'gpt-3.5-turbo',
-      stream: true,
-      max_tokens: 2096,
-      messages: messages,
-    });
+  const response = await openai.createChatCompletion({
+    model: 'gpt-3.5-turbo',
+    stream: true,
+    max_tokens: 2096,
+    messages: messages,
+  });
 
-    const stream = OpenAIStream(response);
+  const stream = OpenAIStream(response);
 
-    return new StreamingTextResponse(stream);
-  } catch (error) {
-    throw new Error('Please check the Openai API');
-  }
+  return new StreamingTextResponse(stream);
 };
