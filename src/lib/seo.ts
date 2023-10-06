@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
+import isDev from './isDev';
 
 class SEO {
   constructor(
@@ -21,6 +22,9 @@ class SEO {
     },
     title: this.seo.title,
     description: this.seo.description,
+    metadataBase: new URL(
+      isDev === true ? 'http://localhost:3000' : 'https://estarlincito.com'
+    ),
     openGraph: {
       ...this.seo.openGraph,
       title: this.seo.title,

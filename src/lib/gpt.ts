@@ -2,8 +2,6 @@ import Messages from '@/types/gpt';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 import { Configuration, OpenAIApi } from 'openai-edge';
 
-export const runtime = 'edge';
-
 const isEnv = (env: string) => {
   try {
     if (env.length > 0) {
