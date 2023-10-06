@@ -1,6 +1,6 @@
 import Messages from '@/types/gpt';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
-import { Configuration, OpenAIApi } from 'openai-edge';
+import OpenAI from 'openai';
 
 const isEnv = (env: string) => {
   try {
@@ -12,16 +12,12 @@ const isEnv = (env: string) => {
   }
 };
 
-// New
-
-const configuration = new Configuration({
+const openai = new OpenAI({
   apiKey: isEnv(process.env.GPT),
 });
 
-const openai = new OpenAIApi(configuration);
-
 export const gpt = async (messages: Messages[]) => {
-  const response = await openai.createChatCompletion({
+  const response = await openai.chat.completions.create({
     model: 'gpt-3.5-turbo',
     stream: true,
     max_tokens: 2096,
