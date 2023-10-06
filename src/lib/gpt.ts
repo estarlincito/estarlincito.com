@@ -1,32 +1,34 @@
-// import Messages from '@/types/gpt';
-// import OpenAI from 'openai';
+import Messages from '@/types/gpt';
+import { OpenAIStream, StreamingTextResponse } from 'ai';
+import { Configuration, OpenAIApi } from 'openai-edge';
 
-// const isEnv = (env: string) => {
-//   try {
-//     if (env.length > 0) {
-//       return env;
-//     }
-//   } catch (error) {
-//     throw new Error('Env not fount');
-//   }
-// };
+export const runtime = 'edge';
 
-// const openai = new OpenAI({
-//   apiKey: isEnv(process.env.GPT),
-// });
+const isEnv = (env: string) => {
+  try {
+    if (env.length > 0) {
+      return env;
+    }
+  } catch (error) {
+    throw new Error('Env not fount');
+  }
+};
 
-// export const gpt = async (messages: Messages[]) => {
-//   const response = await openai.chat.completions.create({
-//     model: 'gpt-3.5-turbo',
-//     stream: true,
-//     max_tokens: 2096,
-//     messages: messages,
-//   });
+const configuration = new Configuration({
+  apiKey: isEnv(process.env.GPT),
+});
 
-//   // const stream = OpenAIStream(response);
+const openai = new OpenAIApi(configuration);
 
-//   // return new StreamingTextResponse(stream);
+export const gpt = async (messages: Messages[]) => {
+  const response = await openai.createChatCompletion({
+    model: 'gpt-3.5-turbo',
+    stream: true,
+    max_tokens: 2096,
+    messages: messages,
+  });
 
-//   console.log(response);
-//   return response;
-// };
+  const stream = OpenAIStream(response);
+
+  return new StreamingTextResponse(stream);
+};
