@@ -3,6 +3,7 @@ import Home from '@/constants/home';
 import SEO from '@/lib/seo';
 import { Avatar, Box, Flex, Link, Separator, Text } from '@radix-ui/themes';
 import Styled from './page.module.scss';
+
 export const { metadata } = new SEO({
   title: Home.seo.title,
   description: Home.seo.description,
@@ -12,6 +13,7 @@ export const { metadata } = new SEO({
 });
 
 const Welcome = () => {
+  console.log(Home.seo);
   return (
     <Flex direction='column' align='center' gap='3'>
       <Avatar radius='full' size='9' src='/images/avatar.jpeg' fallback='E' />

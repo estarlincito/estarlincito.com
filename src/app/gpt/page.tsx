@@ -1,12 +1,6 @@
-'use client';
 import GPT from '@/constants/gpt';
 import SEO from '@/lib/seo';
-import { Box } from '@radix-ui/themes';
-import { useChat } from 'ai/react';
-import Formsearch from './components/formsearch';
-import Header from './components/header';
-import Messages from './components/messages';
-import Styled from './gpt.module.scss';
+import Gpt from './components/gpt';
 
 export const { metadata } = new SEO({
   title: GPT.seo.title,
@@ -17,21 +11,7 @@ export const { metadata } = new SEO({
 });
 
 const GPTPage = () => {
-  const { handleInputChange, handleSubmit, isLoading, input, messages } =
-    useChat();
-
-  return (
-    <Box className={Styled.gpt}>
-      <Header messages={messages} />
-      <Messages messages={messages} />
-      <Formsearch
-        handleInputChange={handleInputChange}
-        handleSubmit={handleSubmit}
-        input={input}
-        isLoading={isLoading}
-      />
-    </Box>
-  );
+  return <Gpt />;
 };
 
 export default GPTPage;

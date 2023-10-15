@@ -1,7 +1,7 @@
 import Links from '@/types/links';
 
 class Seo {
-  static readonly title: 'Estarlincito';
+  static readonly title = 'Estarlincito';
   static readonly description = 'Desarrollador Web, escritor y creador.';
   static readonly openGraph = {
     type: 'website',

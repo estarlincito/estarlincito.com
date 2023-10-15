@@ -29,6 +29,7 @@ class SEO {
       ...this.seo.openGraph,
       title: this.seo.title,
       description: this.seo.description,
+
       images: {
         url: this.seo.imagesUrl,
         width: 800,
