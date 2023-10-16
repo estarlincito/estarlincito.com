@@ -13,7 +13,6 @@ export const { metadata } = new SEO({
 });
 
 const Welcome = () => {
-  console.log(Home.seo);
   return (
     <Flex direction='column' align='center' gap='3'>
       <Avatar radius='full' size='9' src='/images/avatar.jpeg' fallback='E' />

@@ -1,4 +1,20 @@
 /* theme-config.css */
+@import '@radix-ui/colors/gray.css';
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/gray-dark.css';
+@import '@radix-ui/colors/blue-dark.css';
+
+.radix-themes {
+  --space-1: calc(4px * var(--scaling));
+  --space-2: calc(8px * var(--scaling));
+  --space-3: calc(12px * var(--scaling));
+  --space-4: calc(16px * var(--scaling));
+  --space-5: calc(24px * var(--scaling));
+  --space-6: calc(32px * var(--scaling));
+  --space-7: calc(40px * var(--scaling));
+  --space-8: calc(48px * var(--scaling));
+  --space-9: calc(64px * var(--scaling));
+}
 
 * {
   padding: 0;
@@ -6,7 +22,7 @@
 }
 
 li {
-  list-style: none;
+  list-style-type: none;
 }
 
 img {
@@ -15,18 +31,17 @@ img {
 }
 
 ol {
-  list-style: decimal;
   list-style-position: inside;
-  font-weight: bold;
-}
 
-ol li {
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
-}
+  > li {
+    margin-top: 0.425rem;
+    margin-bottom: 0.425rem;
+    list-style-type: decimal;
 
-ol li p {
-  margin-bottom: 0.625rem;
+    > p {
+      margin-bottom: 0.625rem;
+    }
+  }
 }
 
 .-rounded-lg {
@@ -80,23 +95,6 @@ ol li p {
 
 .rt-reset-button {
   cursor: pointer;
-}
-
-@import '@radix-ui/colors/gray.css';
-@import '@radix-ui/colors/blue.css';
-@import '@radix-ui/colors/gray-dark.css';
-@import '@radix-ui/colors/blue-dark.css';
-
-.radix-themes {
-  --space-1: calc(4px * var(--scaling));
-  --space-2: calc(8px * var(--scaling));
-  --space-3: calc(12px * var(--scaling));
-  --space-4: calc(16px * var(--scaling));
-  --space-5: calc(24px * var(--scaling));
-  --space-6: calc(32px * var(--scaling));
-  --space-7: calc(40px * var(--scaling));
-  --space-8: calc(48px * var(--scaling));
-  --space-9: calc(64px * var(--scaling));
 }
 
 .cursor-default {

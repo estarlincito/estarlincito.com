@@ -3,13 +3,13 @@ import Wrapper from '@/components/wrapper';
 import { Heading } from '@radix-ui/themes';
 import { Blog } from 'contentlayer/generated';
 import Post from '../mdxcontent';
+import Author from './author';
 import Check from './check';
 import Nav from './nav';
 import Origin from './origin';
 import Tags from './tags';
 
 const PostLayout = (props: Blog) => {
-  console.log(props.body.code);
   return (
     <Wrapper>
       <Nav
@@ -25,11 +25,11 @@ const PostLayout = (props: Blog) => {
 
       <Imagen className='-rounded-lg' src={props.cover} alt={props.coverAlt} />
 
-      {/* <Author
+      <Author
         author={props.author}
         avathar={props.avathar}
         updated={props.updated}
-      /> */}
+      />
 
       <Post doc={props.body.code} />
       <Origin origin={props.origin} />

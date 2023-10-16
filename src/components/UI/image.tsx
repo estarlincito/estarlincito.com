@@ -1,5 +1,4 @@
 import ImageProps from '@/types/image';
-import clsx from 'clsx';
 import Imagen from 'next/image';
 
 const Image = ({ src, alt, className }: ImageProps) => {
@@ -9,7 +8,7 @@ const Image = ({ src, alt, className }: ImageProps) => {
       alt={alt}
       width={2160}
       height={720}
-      className={clsx(className && className)}
+      className={className && className}
       priority
     />
   );

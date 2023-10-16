@@ -20,7 +20,8 @@
     "openai": "^4.11.1",
     "openai-edge": "^1.2.2",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "turbo": "^1.10.15"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.4",
