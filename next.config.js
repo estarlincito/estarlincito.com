@@ -10,11 +10,12 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
 
-  experimental: {
-    appDir: true,
-    newNextLinkBehavior: false,
-    serverActions: true,
-  },
+  // experimental: {
+  //   // appDir: true,
+  //   // newNextLinkBehavior: false,
+  //   // serverActions: true,
+  // },
+
   images: {
     remotePatterns: [
       {

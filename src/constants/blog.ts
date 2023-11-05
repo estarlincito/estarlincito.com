@@ -2,7 +2,7 @@ class Seo {
   static readonly title = 'Estarlincito | Blog';
 
   static readonly description =
-    'Lee mis pensamientos sobre desarrollo de software, diseño web, criptomonedas y mucho más.';
+    'Sumérgete en mis reflexiones psicológicas mientras exploramos el fascinante mundo del desarrollo de software, diseño web, criptomonedas y mucho más.';
 
   static readonly openGraph = {
     type: 'website',
