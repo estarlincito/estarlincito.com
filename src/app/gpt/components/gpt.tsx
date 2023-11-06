@@ -3,8 +3,9 @@ import useLocalStorage from '@/Hooks/useLocalstorage';
 import decode from '@/lib/decode';
 import encode from '@/lib/encode';
 import { Box } from '@radix-ui/themes';
+import { Message } from 'ai';
 import { useChat } from 'ai/react';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import Styled from '../gpt.module.scss';
 import Formsearch from './formsearch';
 import Header from './header';
@@ -22,24 +23,25 @@ const Gpt = () => {
 
   const [gpt001, setGpt001] = useLocalStorage(
     'gpt001',
-    encode(JSON.stringify([]))
+    encode(JSON.stringify(messages))
   );
 
   useEffect(() => {
+    if (messages.length === 0) {
+      return;
+    }
     setGpt001(encode(JSON.stringify(messages)));
   }, [messages, setGpt001]);
 
-  const msm = JSON.parse(decode(gpt001));
-
-  useEffect(() => {
-    console.log(msm);
+  useMemo(() => {
+    const msm: Message[] = JSON.parse(decode(gpt001));
     setMessages(msm);
-  }, []);
+  }, [gpt001, setMessages]);
 
   return (
     <Box className={Styled.gpt}>
-      <Header messages={msm} />
-      <Messages messages={msm} />
+      <Header messages={messages} />
+      <Messages messages={messages} />
       <Formsearch
         handleInputChange={handleInputChange}
         handleSubmit={handleSubmit}

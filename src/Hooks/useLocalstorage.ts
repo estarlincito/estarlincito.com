@@ -9,6 +9,7 @@ const useLocalStorage = <T>(key: string, initialValue: T) => {
     if (items === null) {
       return;
     }
+
     setStore(JSON.parse(items));
   }, [key]);
 
