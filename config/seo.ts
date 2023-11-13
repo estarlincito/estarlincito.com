@@ -108,6 +108,18 @@ class Doc {
     'https://images.unsplash.com/photo-1559608622-d443df453289?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'Mujer formando corazón con ambas manos.'
   );
+
+  static readonly 'Cultura' = F(
+    'Sumérgete en la riqueza cultural a través de perspectivas frescas y reflexiones. Un viaje vibrante a través de la diversidad y expresiones artísticas.',
+    'https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'templo marrón y verde en la cima de la montaña durante el día'
+  );
+
+  static readonly 'Actualidad y psicología' = F(
+    'Explorando el fascinante cruce entre actualidad y psicología: descubre perspectivas innovadoras y reflexiones profundas para entender el mundo en constante cambio.',
+    'https://images.unsplash.com/photo-1518731429075-f91c8025641e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'Foto de enfoque selectivo de una persona poniendo la mano sobre la puesta de sol.'
+  );
 }
 
 enum Conten {
