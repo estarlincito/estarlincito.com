@@ -1,5 +1,5 @@
 'use client';
-import { Blockquote, Text } from '@radix-ui/themes';
+import { Blockquote, Em, Strong } from '@radix-ui/themes';
 import { useEffect, useState } from 'react';
 
 interface Highlight {
@@ -29,13 +29,18 @@ const Highlight = () => {
 
   return (
     <Blockquote>
-      {highlight.quote}
+      {/* {highlight.quote}
       <br />
       {highlight.author === '...' ? null : (
         <Text as='span' weight='bold'>
           -{highlight.author}-
         </Text>
-      )}
+      )} */}
+
+      <Em>
+        Si tus planes no gustan, si tus sueños no encajan en moldes ajenos,
+        hazlo: <Strong>vete solo.</Strong>
+      </Em>
     </Blockquote>
   );
 };
