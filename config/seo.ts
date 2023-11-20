@@ -120,6 +120,12 @@ class Doc {
     'https://images.unsplash.com/photo-1518731429075-f91c8025641e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'Foto de enfoque selectivo de una persona poniendo la mano sobre la puesta de sol.'
   );
+
+  static readonly 'Historias y reflexiones' = F(
+    'Relatos e reflexiones que inspiran y emocionan. Un espacio donde las historias se unen con reflexiones profundas, invitándote a descubrir nuevas perspectivas y crecimiento personal.',
+    'https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'Mujer con chaqueta de punto gris sosteniendo una taza'
+  );
 }
 
 enum Conten {
