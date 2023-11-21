@@ -1,3 +1,4 @@
+import { DotFilledIcon } from '@radix-ui/react-icons';
 import { Flex, Link as Linkr, Strong } from '@radix-ui/themes';
 
 interface LinkProps {
@@ -22,7 +23,7 @@ interface NavProps {
 
 const Nav = (props: NavProps) => {
   return (
-    <Flex align='center' gap='3'>
+    <Flex align='center' gap='1'>
       {/* <Link route='/'>
         <IconButton>
           <HomeIcon width='16' height='16' />
@@ -36,6 +37,8 @@ const Nav = (props: NavProps) => {
       <Link route={props.urlCat}>
         <Strong>{props.category}</Strong>
       </Link>
+
+      <DotFilledIcon width='14' height='14' />
 
       <Link route={props.urlSub}>
         <Strong>{props.subcategory}</Strong>
