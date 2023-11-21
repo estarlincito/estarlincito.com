@@ -55,6 +55,12 @@ class Doc {
     'Mujer relajada, sosteniendo un teléfono móvil'
   );
 
+  static readonly 'Psicología de la personalidad' = F(
+    'Adéntrate en el fascinante mundo de la singularidad humana a través de la psicología de la personalidad.',
+    'https://images.pexels.com/photos/7176297/pexels-photo-7176297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    'Cliente escucha psicólogo'
+  );
+
   static readonly Relaciones = F(
     'Consejos e información sobre todos los temas relacionados con las relaciones y el amor',
     'https://images.unsplash.com/photo-1531747056595-07f6cbbe10ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2338&q=80',
