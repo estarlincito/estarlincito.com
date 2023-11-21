@@ -1,5 +1,3 @@
-import IconButton from '@/components/UI/Iconbutton';
-import { HomeIcon } from '@radix-ui/react-icons';
 import { Flex, Link as Linkr, Strong } from '@radix-ui/themes';
 
 interface LinkProps {
@@ -25,7 +23,7 @@ interface NavProps {
 const Nav = (props: NavProps) => {
   return (
     <Flex align='center' gap='3'>
-      <Link route='/'>
+      {/* <Link route='/'>
         <IconButton>
           <HomeIcon width='16' height='16' />
         </IconButton>
@@ -33,7 +31,7 @@ const Nav = (props: NavProps) => {
 
       <Link route='/blog'>
         <Strong>Blog</Strong>
-      </Link>
+      </Link> */}
 
       <Link route={props.urlCat}>
         <Strong>{props.category}</Strong>
