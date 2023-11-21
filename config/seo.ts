@@ -103,6 +103,12 @@ class Doc {
     'mujer estirándose en la cima de la montaña durante el amanecer'
   );
 
+  static readonly 'Emociones' = F(
+    'Las emociones son nuestra paleta de vida. Explora con nosotros el poder y la profundidad de cada sentimiento en este espacio dedicado a comprender y gestionar nuestras emociones.',
+    'https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'una mujer mirando por una ventana con persianas'
+  );
+
   static readonly 'Autoestima' = F(
     'Descubre el camino hacia una autoestima saludable y empoderadora. Exploramos consejos prácticos, reflexiones inspiradoras y herramientas efectivas para fortalecer tu confianza y amor propio.',
     'https://images.unsplash.com/photo-1559608622-d443df453289?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
