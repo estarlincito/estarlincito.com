@@ -37,8 +37,8 @@ const Highlight = () => {
       )} */}
 
       <Em>
-        Si tus planes no gustan, si tus sueños no encajan en moldes ajenos,
-        hazlo: <Strong>vete solo.</Strong>
+        Por eso, más que intentar ser diferente, intenta{' '}
+        <Strong>ser bueno</Strong>, puesto que siendo bueno serás diferente.
       </Em>
     </Blockquote>
   );
