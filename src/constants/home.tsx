@@ -34,7 +34,7 @@ const aboutme = (
   <>
     Hello, soy <Strong>Estarlicito</Strong>. Me dedico al <Em>Diseño web</Em>
     ,&nbsp;
-    <Em>Soporte IT</Em>, y escribo sobre <Em>Tecnología</Em>,&nbsp;
+    <Em>Soporte IT</Em> y escribo sobre <Em>Tecnología</Em>,&nbsp;
     <Em>Psicología</Em> y más.
   </>
 );
