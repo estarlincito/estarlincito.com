@@ -76,7 +76,7 @@ const moreinf = (
     También me desenvuelvo bien como&nbsp;
     <Link
       href='https://es.wikipedia.org/wiki/Soporte_técnico'
-      label='IT Support'
+      label='Soporte IT'
     />
     , resolviendo problemas informáticos, desde errores hasta instalación de
     sistemas operativos.
