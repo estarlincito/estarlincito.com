@@ -22,7 +22,7 @@ const Author = (props: AuthorProps) => {
           />
         </Box>
         <Text as='p'>
-          Publicado por{' '}
+          Publicado por&nbsp;
           <Link
             target='_self'
             href='https://estarlincito.com'

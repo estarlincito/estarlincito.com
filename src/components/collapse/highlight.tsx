@@ -37,7 +37,7 @@ const Highlight = () => {
       )} */}
 
       <Em>
-        Por eso, más que intentar ser diferente, intenta{' '}
+        Por eso, más que intentar ser diferente, intenta&nbsp;
         <Strong>ser bueno</Strong>, puesto que siendo bueno serás diferente.
       </Em>
     </Blockquote>

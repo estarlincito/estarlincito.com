@@ -10,7 +10,7 @@ const Origin = (props: OriginProps) => {
     <>
       {url === null ? null : (
         <p>
-          <Strong>Fuente original:</Strong>{' '}
+          <Strong>Fuente original:</Strong>&nbsp;
           <Link href={url.href} target='_blank'>
             {url.hostname.replaceAll('www.', '')}
           </Link>
