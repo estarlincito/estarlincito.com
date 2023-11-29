@@ -1,9 +1,9 @@
+import Container from '@/components/container';
 import Blog from '@/constants/blog';
 import allPosts from '@/lib/allPosts';
 import SEO from '@/lib/seo';
 import { Suspense } from 'react';
 import BlogHeader from './components/blog-header';
-import LoadingArticle from './components/loading/article';
 import PostList from './components/postlist';
 
 export const { metadata } = new SEO({
@@ -16,13 +16,12 @@ export const { metadata } = new SEO({
 
 const BlogPage = () => {
   return (
-    <>
+    <Container size='4'>
       <BlogHeader title={Blog.titleH} sumary={Blog.seo.description} />
-
-      <Suspense fallback={<LoadingArticle />}>
+      <Suspense fallback={<></>}>
         <PostList posts={allPosts} />
       </Suspense>
-    </>
+    </Container>
   );
 };
 

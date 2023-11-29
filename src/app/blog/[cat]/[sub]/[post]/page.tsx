@@ -1,7 +1,7 @@
+import Container from '@/components/container';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
 import { ParamsPost } from '@/types/params';
-import LoadingPost from '@BlogComponents/loading/post';
 import PostLayout from '@BlogComponents/postlayout';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
@@ -41,9 +41,11 @@ const PostPage = ({ params }: Props) => {
   }
 
   return (
-    <Suspense fallback={<LoadingPost />}>
-      <PostLayout {...post} />
-    </Suspense>
+    <Container size='3'>
+      <Suspense fallback={<></>}>
+        <PostLayout {...post} />
+      </Suspense>
+    </Container>
   );
 };
 

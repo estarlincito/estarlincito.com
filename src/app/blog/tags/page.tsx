@@ -1,4 +1,5 @@
 import Title from '@/components/UI/title';
+import Container from '@/components/container';
 import Tags from '@/constants/tags';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
@@ -17,22 +18,24 @@ const TagsPage = () => {
   const { allTags } = Post;
 
   return (
-    <Box className={Styled.tags}>
-      <Title text='Tags' />
+    <Container size='3'>
+      <Box className={Styled.tags}>
+        <Title text='Tags' />
 
-      <ul>
-        {allTags.map(({ tag, count }, id) => (
-          <li key={id}>
-            <Link href={`/blog/tags/${tag}`} target='_self'>
-              {tag}&nbsp;
-              <Text as='span' color='gray'>
-                ({count})
-              </Text>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </Box>
+        <ul>
+          {allTags.map(({ tag, count }, id) => (
+            <li key={id}>
+              <Link href={`/blog/tags/${tag}`} target='_self'>
+                {tag}&nbsp;
+                <Text as='span' color='gray'>
+                  ({count})
+                </Text>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Box>
+    </Container>
   );
 };
 

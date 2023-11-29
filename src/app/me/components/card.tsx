@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card = ({ consejo, razon }: CardProps) => {
   return (
-    <Cardr variant='classic'>
+    <Cardr variant='classic' className='cursor-default'>
       <Text as='div' size='2' weight='bold'>
         {consejo}
       </Text>

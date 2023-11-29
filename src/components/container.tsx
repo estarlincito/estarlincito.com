@@ -1,22 +1,14 @@
-import clsx from 'clsx';
-
+import { Container as Containerr } from '@radix-ui/themes';
 interface ContainerProps {
   children: React.ReactNode;
-  className?: string;
+  size: '1' | '2' | '3' | '4';
 }
 
 const Container = (props: ContainerProps) => {
   return (
-    <main
-      className={clsx(
-        'container mx-auto mt-16',
-        'py-5 md:py-16',
-        'max-w-6xl min-h-[80vh]',
-        props.className && props.className
-      )}
-    >
+    <Containerr size={props.size} p='5' mt='9'>
       {props.children}
-    </main>
+    </Containerr>
   );
 };
 

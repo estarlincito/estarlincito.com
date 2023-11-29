@@ -1,3 +1,4 @@
+import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import Home from '@/constants/home';
 import SEO from '@/lib/seo';
@@ -53,11 +54,13 @@ const Nav = () => {
 
 const HomePage = () => {
   return (
-    <Wrapper>
-      <Welcome />
-      <Moreinf />
-      <Nav />
-    </Wrapper>
+    <Container size='3'>
+      <Wrapper>
+        <Welcome />
+        <Moreinf />
+        <Nav />
+      </Wrapper>
+    </Container>
   );
 };
 

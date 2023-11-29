@@ -10,7 +10,7 @@ import Toaster from '@/lib/toaster';
 import '@/styles/themes-config.css';
 import ChildrenProps from '@/types/children';
 
-import { Container, Theme } from '@radix-ui/themes';
+import { Theme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 
 const RootLayout = (props: ChildrenProps) => {
@@ -18,17 +18,15 @@ const RootLayout = (props: ChildrenProps) => {
     <html lang='es' suppressHydrationWarning>
       <body>
         <Theme appearance='light'>
-          <Container size='3' p='5' mt='9'>
-            <CollapseProvider>
-              <Opacity />
-              <ThemeProvider>
-                <Navbar />
-                <Collapse />
-              </ThemeProvider>
-              {props.children}
-              <Footer />
-            </CollapseProvider>
-          </Container>
+          <CollapseProvider>
+            <Opacity />
+            <ThemeProvider>
+              <Navbar />
+              <Collapse />
+            </ThemeProvider>
+            {props.children}
+            <Footer />
+          </CollapseProvider>
         </Theme>
         <Toaster
           position='top-center'

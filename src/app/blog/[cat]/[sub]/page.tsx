@@ -1,10 +1,10 @@
 import PostList from '@/app/blog/components/postlist';
+import Container from '@/components/container';
 import Blogc from '@/constants/blogc';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
 import { ParamsSub } from '@/types/params';
 import BlogHeader from '@BlogComponents/blog-header';
-import LoadingArticle from '@BlogComponents/loading/article';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
@@ -42,12 +42,12 @@ const SubPage = ({ params }: Props) => {
   const { description } = postsSub[0].blogseo.sub;
 
   return (
-    <>
+    <Container size='4'>
       <BlogHeader title={postsSub[0].subcategory} sumary={description} />
-      <Suspense fallback={<LoadingArticle />}>
+      <Suspense fallback={<></>}>
         <PostList posts={postsSub} />
       </Suspense>
-    </>
+    </Container>
   );
 };
 

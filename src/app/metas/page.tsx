@@ -1,4 +1,5 @@
 import Title from '@/components/UI/title';
+import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import Metasc from '@/constants/metas';
 import SEO from '@/lib/seo';
@@ -15,17 +16,19 @@ export const { metadata } = new SEO({
 
 const Metas = () => {
   return (
-    <Wrapper>
-      <Title text='Metas' />
-      <Blockquote>{Metasc.seo.description}</Blockquote>
-      <Separator size='4' />
+    <Container size='3'>
+      <Wrapper>
+        <Title text='Metas' />
+        <Blockquote>{Metasc.seo.description}</Blockquote>
+        <Separator size='4' />
 
-      <Flex direction='column' gap='5'>
-        {Metasc.metas.map(({ meta, motivo, id }) => (
-          <Card meta={meta} motivo={motivo} key={id} />
-        ))}
-      </Flex>
-    </Wrapper>
+        <Flex direction='column' gap='5'>
+          {Metasc.metas.map(({ meta, motivo, id }) => (
+            <Card meta={meta} motivo={motivo} key={id} />
+          ))}
+        </Flex>
+      </Wrapper>
+    </Container>
   );
 };
 

@@ -1,9 +1,10 @@
 import PostList from '@/app/blog/components/postlist';
+import Container from '@/components/container';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
-import LoadingArticle from '@BlogComponents/loading/article';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
+import BlogHeader from '../../components/blog-header';
 
 interface TagPageProps {
   params: { tag: string };
@@ -33,9 +34,12 @@ const TagPage = (props: TagPageProps) => {
   }
 
   return (
-    <Suspense fallback={<LoadingArticle />}>
-      <PostList posts={postsTag} />
-    </Suspense>
+    <Container size='4'>
+      <BlogHeader title={`#${props.params.tag}`} sumary={''} />
+      <Suspense fallback={<></>}>
+        <PostList posts={postsTag} />
+      </Suspense>
+    </Container>
   );
 };
 

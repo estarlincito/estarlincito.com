@@ -1,7 +1,7 @@
 class Seo {
   static readonly title = 'Estarlincito | Me';
 
-  static readonly description = 'Consejos para vivir en el momento presente';
+  static readonly description = 'ʕ•ᴥ•ʔ';
 
   static readonly openGraph = {
     type: 'website',
@@ -17,23 +17,28 @@ class Seo {
 
 const me = [
   {
-    consejo: '¿Hay alegría, facilidad y liviandad en lo que hago?',
+    consejo: 'No mendigues la atención de nadie y mucho menos amor',
     razon:
-      'Si no las hay, entonces el tiempo está ocultando el momento presente, y la vida se percibe como una carga o un esfuerzo.',
+      ' Al final es simple, la persona que te merece es aquella que teniendo la libertad de elegir, se acerca a ti, te aprecia y te dedica tiempo y pensamientos.',
     id: 1,
   },
-
+  {
+    consejo: 'Si tus planes no gustan, vete solo: alguien te encontrará',
+    razon:
+      'Si tus planes no gustan, si tus sueños no encajan en moldes ajenos, hazlo: vete solo',
+    id: 2,
+  },
+  {
+    consejo: 'El carácter exepcional de las buenas personas',
+    razon:
+      'Por eso, más que intentar ser diferente, intenta ser bueno, puesto que siendo bueno serás diferente.',
+    id: 3,
+  },
   {
     consejo: 'Todos los problemas son iluciones de la mente',
     razon:
       'En últimas, no se trata de resolver sus problemas. Se trata de darse cuenta de que no hay problemas. Sólo situaciones que manejar o que dejar así y aceptar como parte de la condición de ser del momento presente hasta que cambien o se puedan manejar. Los problemas son creados por la mente y necesitan el tiempo para sobrevivir.',
-    id: 2,
-  },
-  {
-    consejo: 'Ordinario + Extraordinario',
-    razon:
-      'Una persona ordinaria y extraordinaria recibe una identidad única que ella misma construye a partir de sus habilidades, intereses, experiencias y valores. Esta identidad le permite a la persona destacarse entre la multitud y tener un sentido de propósito en la vida. La identidad de una persona ordinaria y extraordinaria se caracteriza por su originalidad y creatividad, y se define por su autenticidad y compromiso con los demás.',
-    id: 3,
+    id: 4,
   },
 ];
 

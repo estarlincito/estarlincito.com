@@ -1,4 +1,5 @@
 import Title from '@/components/UI/title';
+import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import Contact from '@/constants/contact';
 import SEO from '@/lib/seo';
@@ -14,38 +15,40 @@ export const { metadata } = new SEO({
 
 const ContactPage = () => {
   return (
-    <Wrapper>
-      <Title text='Ponte en contacto conmigo' />
-      <Blockquote mb='7'>{Contact.quote}</Blockquote>
+    <Container size='3'>
+      <Wrapper>
+        <Title text='Ponte en contacto conmigo' />
+        <Blockquote mb='7'>{Contact.quote}</Blockquote>
 
-      <Text>
-        {Contact.talkme.main}
-        <Text as='span' role='img' aria-label='Levantando las manos'>
-          🙌
+        <Text>
+          {Contact.talkme.main}
+          <Text as='span' role='img' aria-label='Levantando las manos'>
+            🙌
+          </Text>
+          <br />
+          <br />
+          {Contact.talkme.sendme}
+          <br />
+          <Link href={Contact.talkme.mailto} target='_self'>
+            {Contact.talkme.email}
+          </Link>
         </Text>
-        <br />
-        <br />
-        {Contact.talkme.sendme}
-        <br />
-        <Link href={Contact.talkme.mailto} target='_self'>
-          {Contact.talkme.email}
-        </Link>
-      </Text>
 
-      <Text>
-        {Contact.talkme.able}
-        <br />
-        <br />
-        {Contact.talkme.general}
-      </Text>
+        <Text>
+          {Contact.talkme.able}
+          <br />
+          <br />
+          {Contact.talkme.general}
+        </Text>
 
-      <Text>
-        {Contact.talkme.hello}
-        <Link href={Contact.talkme.twitterlink} target='_blank'>
-          Tweet!
-        </Link>
-      </Text>
-    </Wrapper>
+        <Text>
+          {Contact.talkme.hello}
+          <Link href={Contact.talkme.twitterlink} target='_blank'>
+            Tweet!
+          </Link>
+        </Text>
+      </Wrapper>
+    </Container>
   );
 };
 

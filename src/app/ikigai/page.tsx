@@ -1,4 +1,5 @@
 import Title from '@/components/UI/title';
+import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import ikigaiC from '@/constants/ikigai';
 import SEO from '@/lib/seo';
@@ -15,17 +16,19 @@ export const { metadata } = new SEO({
 
 const Ikigai = () => {
   return (
-    <Wrapper>
-      <Title text='Ikigai' />
-      <Blockquote>{ikigaiC.seo.description}</Blockquote>
-      <Separator size='4' />
+    <Container size='3'>
+      <Wrapper>
+        <Title text='Ikigai' />
+        <Blockquote>{ikigaiC.seo.description}</Blockquote>
+        <Separator size='4' />
 
-      <Flex direction='column' gap='5'>
-        {ikigaiC.ikigai.map(({ principle, details, id }) => (
-          <Card principle={principle} details={details} key={id} />
-        ))}
-      </Flex>
-    </Wrapper>
+        <Flex direction='column' gap='5'>
+          {ikigaiC.ikigai.map(({ principle, details, id }) => (
+            <Card principle={principle} details={details} key={id} />
+          ))}
+        </Flex>
+      </Wrapper>
+    </Container>
   );
 };
 

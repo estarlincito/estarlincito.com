@@ -1,5 +1,6 @@
 import List from '@/components/UI/list';
 import Title from '@/components/UI/title';
+import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import About from '@/constants/about';
 import SEO from '@/lib/seo';
@@ -15,15 +16,17 @@ export const { metadata } = new SEO({
 
 const AboutPage = () => {
   return (
-    <Wrapper>
-      <Title text='Acerca de Mí' />
+    <Container size='3'>
+      <Wrapper>
+        <Title text='Acerca de Mí' />
 
-      <Blockquote mb='7'>{About.seo.description}</Blockquote>
+        <Blockquote mb='7'>{About.seo.description}</Blockquote>
 
-      <Text>{About.moreinf}</Text>
+        <Text>{About.moreinf}</Text>
 
-      <List title={About.temeabout} arr={About.temas} dash />
-    </Wrapper>
+        <List title={About.temeabout} arr={About.temas} dash />
+      </Wrapper>
+    </Container>
   );
 };
 
