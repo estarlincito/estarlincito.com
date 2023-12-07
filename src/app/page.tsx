@@ -22,8 +22,8 @@ const Welcome = () => {
         <Text>{Home.aboutme}</Text>
       </Box>
 
-      <Link href='https://github.com/estarlincito' target='_blank'>
-        Mira mis proyectos web
+      <Link href='/blog' target='_self'>
+        Mira mi Blog
       </Link>
     </Flex>
   );

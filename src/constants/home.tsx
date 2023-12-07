@@ -19,10 +19,11 @@ const links: Links[] = [
     target: '_blank',
   },
   {
-    route: '/blog',
-    label: 'Mira mi Blog',
-    target: '_self',
+    route: 'https://github.com/estarlincito',
+    label: ' Mira mis proyectos web',
+    target: '_blank',
   },
+
   {
     route: '/contact',
     label: 'Contrátame',
