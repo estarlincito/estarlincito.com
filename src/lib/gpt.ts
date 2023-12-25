@@ -23,7 +23,7 @@ export const gpt = async (messages: Messages[]) => {
     model: 'gpt-3.5-turbo',
     stream: true,
     max_tokens: 2096,
-    messages: messages,
+    messages: [messages[messages.length - 1]],
   });
 
   const stream = OpenAIStream(response);

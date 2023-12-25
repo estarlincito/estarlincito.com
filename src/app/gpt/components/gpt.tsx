@@ -5,16 +5,21 @@ import encode from '@/lib/encode';
 import { Box } from '@radix-ui/themes';
 import { Message } from 'ai';
 import { useChat } from 'ai/react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import Styled from '../gpt.module.scss';
 import Formsearch from './formsearch';
 import Header from './header';
 import Messages from './messages';
 
 const Gpt = () => {
-  const { handleInputChange, handleSubmit, isLoading, input, messages } =
-    useChat();
-  const [storeMsm, setStoreMsm] = useState(messages);
+  const {
+    handleInputChange,
+    handleSubmit,
+    isLoading,
+    input,
+    messages,
+    setMessages,
+  } = useChat();
 
   const [gpt001, setGpt001] = useLocalStorage(
     'gpt001',
@@ -30,14 +35,13 @@ const Gpt = () => {
 
   useMemo(() => {
     const msm: Message[] = JSON.parse(decode(gpt001));
-    //remove function of get intelligent chat, because the maximum character is 4000 tokens
-    setStoreMsm(msm);
-  }, [gpt001]);
+    setMessages(msm);
+  }, [gpt001, setMessages]);
 
   return (
     <Box className={Styled.gpt}>
-      <Header messages={storeMsm} />
-      <Messages messages={storeMsm} />
+      <Header messages={messages} />
+      <Messages messages={messages} />
       <Formsearch
         handleInputChange={handleInputChange}
         handleSubmit={handleSubmit}
