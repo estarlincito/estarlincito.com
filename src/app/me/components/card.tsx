@@ -1,15 +1,15 @@
 import { Card as Cardr, Text } from '@radix-ui/themes';
 
 interface CardProps {
-  consejo: string;
+  principio: string;
   razon: string;
 }
 
-const Card = ({ consejo, razon }: CardProps) => {
+const Card = ({ principio, razon }: CardProps) => {
   return (
-    <Cardr variant='classic' className='cursor-default'>
+    <Cardr variant='surface' className='cursor-default'>
       <Text as='div' size='2' weight='bold'>
-        {consejo}
+        {principio}
       </Text>
       <Text mt='1' as='div' color='gray' size='2'>
         {razon}

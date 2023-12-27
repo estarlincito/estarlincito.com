@@ -18,13 +18,13 @@ const Me = () => {
   return (
     <Container size='3'>
       <Wrapper>
-        <Title text='Me' />
+        <Title text='ʕ•ᴥ•ʔ me' />
         <Blockquote>{Mec.seo.description}</Blockquote>
         <Separator size='4' />
 
         <Flex direction='column' gap='5'>
-          {Mec.me.map(({ consejo, razon, id }) => (
-            <Card consejo={consejo} razon={razon} key={id} />
+          {Mec.me.map(({ principio, razon, id }) => (
+            <Card principio={principio} razon={razon} key={id} />
           ))}
         </Flex>
       </Wrapper>
