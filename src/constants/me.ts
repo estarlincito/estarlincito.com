@@ -1,7 +1,8 @@
 class Seo {
-  static readonly title = 'Estarlincito | Me';
+  static readonly title = 'Estarlincito | ʕ•ᴥ•ʔ me';
 
-  static readonly description = 'Principios para conservar mi amor propio.';
+  static readonly description =
+    'Esto en realidad es para recordarme que todo lo que necesito en la vida es amor propio para ser feliz: amor propio, para gestionar mis emociones: amor propio, baja autoestima: amor propio...';
 
   static readonly openGraph = {
     type: 'website',
@@ -27,12 +28,6 @@ const me = [
     razon:
       'La verdad, suelo usar esa palabra para trabajar en mi interior, es como una forma de mejorar en mi crecimiento personal, recordarme a mí mismo, felicitarme, regalarme un helado, recordarme que yo estoy primero en mi vida. (amor propio).',
     id: 2,
-  },
-  {
-    principio: 'ʕ•ᴥ•ʔ me',
-    razon:
-      'Esto en realidad es para recordarme que todo lo que necesito en la vida es amor propio para ser feliz: amor propio, para gestionar mis emociones: amor propio, baja autoestima: amor propio...',
-    id: 3,
   },
   {
     principio: 'Decisiones',
