@@ -17,7 +17,7 @@ class Seo {
 
 const me = [
   {
-    principio: 'ʕ ● ᴥ ●ʔ',
+    principio: 'ʕ•ᴥ•ʔ',
     razon:
       'Este osito, lo suelo utilizar para acordarme de que debo confiar en mí más que en nadie, de que las cosas que me propongo las puedo lograr, para recordarme que vale la pena ser buena persona a pesar de las cosas malas que me pasen en la vida... (amor propio).',
     id: 1,
@@ -29,7 +29,7 @@ const me = [
     id: 2,
   },
   {
-    principio: 'ʕ ● ᴥ ●ʔ me',
+    principio: 'ʕ•ᴥ•ʔ me',
     razon:
       'Esto en realidad es para recordarme que todo lo que necesito en la vida es amor propio para ser feliz: amor propio, para gestionar mis emociones: amor propio, baja autoestima: amor propio...',
     id: 3,
