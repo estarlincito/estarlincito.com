@@ -21,7 +21,9 @@ const Content = ({ content, role }: Message) => {
           </Text>
         )}
 
-        <Text as='p'>{content}</Text>
+        <Text as='p' className='gpt_content'>
+          {content}
+        </Text>
         <CopyChat text={content} />
       </Flex>
     </Card>

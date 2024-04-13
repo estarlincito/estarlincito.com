@@ -1,4 +1,4 @@
-import Quote from '@/types/quote';
+import type Quote from '@/types/quote';
 import { Em, Text } from '@radix-ui/themes';
 import { useEffect, useState } from 'react';
 

@@ -8,7 +8,8 @@ interface CopyMessageProps {
 
 const CopyMessage = ({ text }: CopyMessageProps) => {
   const copyMessage = (text: string) => {
-    navigator.clipboard.writeText(text.replaceAll('\n', ''));
+    navigator.clipboard.writeText(text);
+    //navigator.clipboard.writeText(text.replaceAll('\n', ''));
     toast.success('Copied');
   };
 
