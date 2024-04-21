@@ -14,10 +14,15 @@ class Seo {
 
 const links: Links[] = [
   {
-    route: 'https://twitter.com/estarlincito',
-    label: 'Sígueme en Twitter',
-    target: '_blank',
+    route: '/me',
+    label: 'ʕ•ᴥ•ʔ me',
+    target: '_self',
   },
+  // {
+  //   route: 'https://twitter.com/estarlincito',
+  //   label: 'Sígueme en Twitter',
+  //   target: '_blank',
+  // },
   {
     route: 'https://github.com/estarlincito',
     label: ' Mira mis proyectos web',
