@@ -23,7 +23,7 @@ const PostLayout = (props: Blog) => {
 
       <Check check={props.check} readingTime={props.readingTime} />
 
-      <Imagen className='-rounded-lg' src={props.cover} alt={props.coverAlt} />
+      <Imagen src={props.cover} alt={props.coverAlt} />
 
       <Author
         author={props.author}

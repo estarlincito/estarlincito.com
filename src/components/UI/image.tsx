@@ -1,16 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 import ImageProps from '@/types/image';
-import Imagen from 'next/image';
+import { AspectRatio } from '@radix-ui/themes';
 
-const Image = ({ src, alt, className }: ImageProps) => {
+const Image = ({ src, alt }: ImageProps) => {
   return (
-    <Imagen
-      src={src}
-      alt={alt}
-      width={2160}
-      height={720}
-      className={className && className}
-      priority
-    />
+    <AspectRatio ratio={16 / 10}>
+      <img
+        src={src}
+        alt={alt}
+        style={{
+          objectFit: 'cover',
+          width: '100%',
+          height: '100%',
+          borderRadius: 'var(--radius-2)',
+        }}
+      />
+    </AspectRatio>
   );
 };
 
