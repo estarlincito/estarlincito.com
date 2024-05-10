@@ -138,6 +138,12 @@ class Doc {
     'https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     'Mujer con chaqueta de punto gris sosteniendo una taza'
   );
+
+  static readonly 'Reflexiones' = F(
+    'Aquí encontrarás algunas de mis reflexiones y lecciones que he aprendido de la vida.',
+    'https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg',
+    'Joven reflexionando'
+  );
 }
 
 enum Conten {
@@ -155,6 +161,7 @@ enum Conten {
   'Finanzas Personales' = 'Finanzas Personales',
   'Relaciones' = 'Relaciones',
   'Pareja' = 'Pareja',
+  'Reflexiones' = 'Reflexiones',
 }
 
 const seo = (prop: string) => {
