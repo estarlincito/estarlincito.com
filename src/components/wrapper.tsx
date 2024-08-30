@@ -2,7 +2,7 @@ import { Flex } from '@radix-ui/themes';
 
 interface WrapperProps {
   children: React.ReactNode;
-  align: 'center' | 'start' | 'end' | 'baseline' | 'stretch';
+  align?: 'center' | 'start' | 'end' | 'baseline' | 'stretch';
 }
 
 const Wrapper = (props: WrapperProps) => {

@@ -3,8 +3,7 @@ import Container from '@/components/container';
 import Tags from '@/constants/tags';
 import Post from '@/lib/post';
 import SEO from '@/lib/seo';
-import { Box, Link, Text } from '@radix-ui/themes';
-import Styled from './tags.module.scss';
+import { Flex, Link, Text } from '@radix-ui/themes';
 
 export const { metadata } = new SEO({
   title: Tags.seo.title,
@@ -19,7 +18,14 @@ const TagsPage = () => {
 
   return (
     <Container size='3'>
-      <Box className={Styled.tags}>
+      <Flex
+        style={{ backgroundColor: 'Highlight' }}
+        justify='center'
+        align='center'
+        gap={{ sm: '5', initial: '6' }}
+        minHeight='80vh'
+        direction={{ sm: 'column' }}
+      >
         <Title text='Tags' />
 
         <ul>
@@ -34,7 +40,7 @@ const TagsPage = () => {
             </li>
           ))}
         </ul>
-      </Box>
+      </Flex>
     </Container>
   );
 };

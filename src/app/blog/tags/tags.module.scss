@@ -1,11 +1,11 @@
 @import '@/styles/mixins';
 
 .tags {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  min-height: 80vh;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 30px;
+  // min-height: 80vh;
 
   @include for-phone-only {
     flex-direction: column;

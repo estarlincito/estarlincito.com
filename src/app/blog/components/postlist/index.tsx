@@ -1,7 +1,7 @@
 import sortByDate from '@/lib/sortDate';
+import { Box, Grid } from '@radix-ui/themes';
 import { Blog } from 'contentlayer/generated';
 import PostCard from '../postcard';
-import Styled from './postlist.module.scss';
 
 interface PostListProps {
   posts: Blog[];
@@ -11,13 +11,13 @@ const PostList = ({ posts }: PostListProps) => {
   const _posts = sortByDate(posts);
 
   return (
-    <ul className={Styled.postlist}>
+    <Grid gap='1.25rem' justify='center' columns={'repeat(auto-fill, 350px)'}>
       {_posts.map((post, id) => (
-        <li key={id}>
+        <Box as='div' key={id}>
           <PostCard {...post} />
-        </li>
+        </Box>
       ))}
-    </ul>
+    </Grid>
   );
 };
 

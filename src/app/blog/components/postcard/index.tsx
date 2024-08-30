@@ -1,19 +1,18 @@
-import Imagedoc from '@/components/UI/image';
+import Image from '@/components/UI/image';
 import dateFormat from '@/lib/dateFormat';
-import { Flex, Link, Text } from '@radix-ui/themes';
+import { Box, Card, Flex, Grid, Link, Text } from '@radix-ui/themes';
 import { Blog } from 'contentlayer/generated';
-import Styled from './postcard.module.scss';
 
 const PostCard = (props: Blog) => {
   return (
-    <article className={Styled.postcard}>
-      <figure>
+    <Card variant='surface'>
+      <Box height='15rem'>
         <Link href={props.urls.post} target='_self'>
-          <Imagedoc src={props.cover} alt={props.title} />
+          <Image src={props.cover} alt={props.title} />
         </Link>
-      </figure>
+      </Box>
 
-      <figcaption>
+      <Grid gap='1' height='7rem' p='2'>
         <Link
           href={props.urls.post}
           size='3'
@@ -36,8 +35,8 @@ const PostCard = (props: Blog) => {
             {dateFormat(props.publishedAt)}
           </time>
         </Flex>
-      </figcaption>
-    </article>
+      </Grid>
+    </Card>
   );
 };
 
