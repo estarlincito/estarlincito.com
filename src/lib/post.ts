@@ -1,9 +1,9 @@
-import allPosts from './allPosts';
+import { allBlogs } from 'contentlayer/generated';
 import Words from './words';
 
 const allTags = () => {
   //to concat all tags array
-  const _tags = allPosts.flatMap((item) => item.tags);
+  const _tags = allBlogs.flatMap((item) => item.tags);
 
   //to count all tags
   const count: { [key: string]: number } = {};
@@ -34,24 +34,24 @@ class Post {
   }
 
   //Category
-  readonly postsCat = allPosts.filter(
+  readonly postsCat = allBlogs.filter(
     (item) => item.urls.cat === `/blog/${this.params.cat}`
   );
 
   //SubCategory
-  readonly postsSub = allPosts.filter(
+  readonly postsSub = allBlogs.filter(
     (item) => item.urls.sub === `/blog/${this.params.cat}/${this.params.sub}`
   );
 
   //Post
-  readonly post = allPosts.find(
+  readonly post = allBlogs.find(
     (item) =>
       item.urls.post ===
       `/blog/${this.params.cat}/${this.params.sub}/${this.params.post}`
   );
 
   //Tag
-  readonly postsTag = allPosts.filter((item) =>
+  readonly postsTag = allBlogs.filter((item) =>
     item.tags.some((tagItem) => tagItem === this.params.tag)
   );
 

@@ -1,5 +1,5 @@
-import allPosts from '@/lib/allPosts';
 import Links from '@/types/links';
+import { allBlogs } from 'contentlayer/generated';
 
 const hireme: Links[] = [
   { route: 'https://linktr.ee/estarlincito', label: 'Linktr' },
@@ -9,7 +9,7 @@ const hireme: Links[] = [
 ];
 
 const allCat = Object.entries(
-  allPosts.reduce((cat: { [key: string]: string }, item) => {
+  allBlogs.reduce((cat: { [key: string]: string }, item) => {
     cat[item.urls.cat] = item.category;
     return cat;
   }, {})

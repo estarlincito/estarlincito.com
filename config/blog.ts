@@ -23,11 +23,6 @@ const fields: FieldDefs = {
     type: 'boolean',
     required: true,
   },
-
-  show: {
-    type: 'boolean',
-    required: true,
-  },
 };
 
 const Blog = defineDocumentType(() => ({

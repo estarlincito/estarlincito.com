@@ -1,7 +1,7 @@
 import Container from '@/components/container';
 import Blog from '@/constants/blog';
-import allPosts from '@/lib/allPosts';
 import SEO from '@/lib/seo';
+import { allBlogs } from 'contentlayer/generated';
 import { Suspense } from 'react';
 import BlogHeader from './components/blog-header';
 import PostList from './components/postlist';
@@ -19,7 +19,7 @@ const BlogPage = () => {
     <Container size='4'>
       <BlogHeader title={Blog.titleH} sumary={Blog.seo.description} />
       <Suspense fallback={<></>}>
-        <PostList posts={allPosts} />
+        <PostList posts={allBlogs} />
       </Suspense>
     </Container>
   );
