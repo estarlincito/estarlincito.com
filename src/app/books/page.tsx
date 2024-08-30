@@ -349,7 +349,7 @@ const copyMessage = (text: string) => {
 const Metas = () => {
   return (
     <Container size='3'>
-      <Wrapper>
+      <Wrapper align='start'>
         <Title text='Books List' />
         <Blockquote>{'buuuuu'}</Blockquote>
         <Separator size='4' />

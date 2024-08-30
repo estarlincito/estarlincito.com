@@ -11,7 +11,7 @@ import Tags from './tags';
 
 const PostLayout = (props: Blog) => {
   return (
-    <Wrapper>
+    <Wrapper align='start'>
       <Nav
         category={props.category}
         subcategory={props.subcategory}

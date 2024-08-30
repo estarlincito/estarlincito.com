@@ -16,7 +16,7 @@ export const { metadata } = new SEO({
 const ContactPage = () => {
   return (
     <Container size='3'>
-      <Wrapper>
+      <Wrapper align='start'>
         <Title text='Ponte en contacto conmigo' />
         <Blockquote mb='7'>{Contact.quote}</Blockquote>
 

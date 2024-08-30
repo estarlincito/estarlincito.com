@@ -55,7 +55,7 @@ const Nav = () => {
 const HomePage = () => {
   return (
     <Container size='3'>
-      <Wrapper>
+      <Wrapper align='center'>
         <Welcome />
         <Moreinf />
         <Nav />

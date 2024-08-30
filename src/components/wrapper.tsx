@@ -2,11 +2,19 @@ import { Flex } from '@radix-ui/themes';
 
 interface WrapperProps {
   children: React.ReactNode;
+  align: 'center' | 'start' | 'end' | 'baseline' | 'stretch';
 }
 
 const Wrapper = (props: WrapperProps) => {
   return (
-    <Flex direction='column' gap='5' p='5'>
+    <Flex
+      direction='column'
+      gap='5'
+      p='5'
+      align={props.align}
+      justify={'center'}
+      minHeight={'90vh'}
+    >
       {props.children}
     </Flex>
   );

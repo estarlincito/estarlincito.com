@@ -17,7 +17,7 @@ export const { metadata } = new SEO({
 const AboutPage = () => {
   return (
     <Container size='3'>
-      <Wrapper>
+      <Wrapper align='start'>
         <Title text='Acerca de Mí' />
 
         <Blockquote mb='7'>{About.seo.description}</Blockquote>

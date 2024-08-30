@@ -6,7 +6,7 @@ interface ContainerProps {
 
 const Container = (props: ContainerProps) => {
   return (
-    <Containerr size={props.size} p='5' mt='9'>
+    <Containerr minHeight={'80vh'} size={props.size} p='5' mt='9'>
       {props.children}
     </Containerr>
   );
