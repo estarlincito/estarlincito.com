@@ -1,6 +1,6 @@
 import Title from '@/components/UI/title';
-import Template from './Template';
 import TasgList from './tagsList';
+import Template from './template';
 
 const TagsLayout = () => {
   return (
