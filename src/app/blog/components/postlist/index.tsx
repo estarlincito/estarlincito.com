@@ -11,7 +11,7 @@ const PostList = ({ posts }: PostListProps) => {
   const _posts = sortByDate(posts);
 
   return (
-    <Grid gap='1.25rem' justify='center' columns={'repeat(auto-fill, 350px)'}>
+    <Grid gap='1.25rem' justify='center' columns='repeat(auto-fill, 350px)'>
       {_posts.map((post, id) => (
         <Box as='div' key={id}>
           <PostCard {...post} />
