@@ -74,7 +74,8 @@ const moreinf = (
     ,&nbsp;
     <Link href='https://es.wikipedia.org/wiki/JavaScript' label='JavaScript' />
     &nbsp;y librerías como&nbsp;
-    <Link href='https://es.react.dev' label='React' />
+    <Link href='https://es.react.dev' label='React' /> o framework como&nbsp;
+    <Link href='https://nextjs.org' label='Next.js' />
     , he trabajado en proyectos exitosos para clientes de todo el mundo y estoy
     listo para más desafíos.
     <br />
