@@ -30,12 +30,12 @@ const createUnorderedList = (
   return <Table.Row key={startIndex}>{_listItems}</Table.Row>;
 };
 
-const TasgList = () => {
-  for (let i = 0; i < allTags.length; i += 3) {
-    const unorderedList = createUnorderedList(allTags, i);
-    _allTags.push(unorderedList);
-  }
+for (let i = 0; i < allTags.length; i += 3) {
+  const unorderedList = createUnorderedList(allTags, i);
+  _allTags.push(unorderedList);
+}
 
+const TasgList = () => {
   return (
     <Table.Root size='1'>
       <Table.Body>{_allTags}</Table.Body>
