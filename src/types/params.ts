@@ -1,11 +1,5 @@
-export interface ParamsCat {
-  cat: string;
-}
+export type Slug = string[];
 
-export interface ParamsSub extends ParamsCat {
-  sub: string;
-}
-
-export interface ParamsPost extends ParamsSub {
-  post: string;
+export interface Params {
+  slug: Slug;
 }

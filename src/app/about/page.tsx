@@ -10,21 +10,21 @@ export const { metadata } = new SEO({
   title: About.seo.title,
   description: About.seo.description,
   openGraph: About.seo.openGraph,
-  imagesUrl: About.seo.imagesUrl,
-  imagesAlt: About.seo.imagesAlt,
+  image_url: About.seo.image_url,
+  image_alt: About.seo.image_alt,
 });
 
 const AboutPage = () => {
   return (
     <Container size='3'>
       <Wrapper align='start'>
-        <Title text='Acerca de Mí' />
+        <Title text={About.seo.title} />
 
         <Blockquote mb='7'>{About.seo.description}</Blockquote>
 
-        <Text>{About.moreinf}</Text>
+        <Text>{About.par1}</Text>
 
-        <List title={About.temeabout} arr={About.temas} dash />
+        <List title={About.par2} arr={About.temas} dash />
       </Wrapper>
     </Container>
   );

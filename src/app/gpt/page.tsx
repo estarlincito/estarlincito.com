@@ -7,8 +7,8 @@ export const { metadata } = new SEO({
   title: GPT.seo.title,
   description: GPT.seo.description,
   openGraph: GPT.seo.openGraph,
-  imagesUrl: GPT.seo.imagesUrl,
-  imagesAlt: GPT.seo.imagesAlt,
+  image_url: GPT.seo.image_url,
+  image_alt: GPT.seo.image_alt,
 });
 
 const GPTPage = () => {

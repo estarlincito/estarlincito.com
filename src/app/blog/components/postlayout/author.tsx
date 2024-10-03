@@ -22,7 +22,7 @@ const Author = (props: AuthorProps) => {
           />
         </Box>
         <Text as='p'>
-          Publicado por&nbsp;
+          By&nbsp;
           <Link
             target='_self'
             href='https://estarlincito.com'
@@ -40,7 +40,7 @@ const Author = (props: AuthorProps) => {
         </Text>
 
         <Text as='span'>
-          <Strong>Última actualización:</Strong>&nbsp;
+          <Strong>Last update:</Strong>&nbsp;
           <time dateTime={props.updated}>{dateFormat(props.updated)}</time>
         </Text>
       </Flex>

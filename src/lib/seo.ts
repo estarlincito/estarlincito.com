@@ -8,8 +8,8 @@ class SEO {
       title: string;
       description: string;
       openGraph: OpenGraph;
-      imagesUrl: string;
-      imagesAlt: string;
+      image_url: string;
+      image_alt: string;
     }
   ) {
     this.seo = seo;
@@ -31,10 +31,10 @@ class SEO {
       description: this.seo.description,
 
       images: {
-        url: this.seo.imagesUrl,
+        url: this.seo.image_url,
         width: 800,
         height: 600,
-        alt: this.seo.imagesAlt,
+        alt: this.seo.image_alt,
       },
       siteName: 'estarlincito',
       locale: 'es-US',

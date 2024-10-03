@@ -9,8 +9,8 @@ export const { metadata } = new SEO({
   title: Contact.seo.title,
   description: Contact.seo.description,
   openGraph: Contact.seo.openGraph,
-  imagesUrl: Contact.seo.imagesUrl,
-  imagesAlt: Contact.seo.imagesAlt,
+  image_url: Contact.seo.image_url,
+  image_alt: Contact.seo.image_alt,
 });
 
 const ContactPage = () => {

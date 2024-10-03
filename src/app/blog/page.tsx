@@ -10,8 +10,8 @@ export const { metadata } = new SEO({
   title: Blog.seo.title,
   description: Blog.seo.description,
   openGraph: Blog.seo.openGraph,
-  imagesUrl: Blog.seo.imagesUrl,
-  imagesAlt: Blog.seo.imagesAlt,
+  image_url: Blog.seo.image_url,
+  image_alt: Blog.seo.image_alt,
 });
 
 const BlogPage = () => {

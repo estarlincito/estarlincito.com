@@ -1,9 +1,9 @@
 import { format, parseISO } from 'date-fns';
-import { es } from 'date-fns/locale';
+import { enUS } from 'date-fns/locale';
 
 const dateFormat = (publishedAt: string) => {
-  return format(parseISO(publishedAt), 'dd  MMMM, yyyy', {
-    locale: es,
+  return format(parseISO(publishedAt), 'MMM dd, yyyy', {
+    locale: enUS,
   });
 };
 

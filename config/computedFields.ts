@@ -1,13 +1,12 @@
 import { ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
-import Words from '../src/lib/words';
 import seo from './seo';
-const { check, fix } = Words;
+import Content from './types/categories';
 
 const prop = `{
   description: string;
-  imagesUrl: string;
-  imagesAlt: string;
+  image_url: string;
+  image_alt: string;
 };`;
 
 export const Blogseo = `{
@@ -24,7 +23,7 @@ export const Urls = `{
 //round time
 const displayed = (minutes: number) => {
   const round = Math.ceil(minutes);
-  return round === 1 ? `${round} minuto` : `${round} minutos`;
+  return round === 1 ? `${round} minute` : `${round} minutes`;
 };
 
 export const computedFields: ComputedFields = {
@@ -44,10 +43,45 @@ export const computedFields: ComputedFields = {
   urls: {
     type: Urls as 'string',
     resolve: (doc) => {
+      const categories = {
+        Technology: 'technology',
+        Smartphone: 'smartphone',
+        'Web Design': 'web-design',
+        'Web Development': 'web-development',
+        'Software Development': 'software-development',
+        Psychology: 'psychology',
+        'Critical Psychology': 'critical-psychology',
+        'Positive Psychology': 'positive-psychology',
+        'Personality Psychology': 'personality-psychology',
+        'Current events and psychology': 'current-events-psychology',
+        Philosophy: 'philosophy',
+        'Philosophy of Religion': 'philosophy-religion',
+        'Philosophy of Life and Spirituality': 'philosophy-life-spirituality',
+        Finance: 'finance',
+        'Personal Finance': 'personal-finance',
+        Relationships: 'relationships',
+        Couple: 'couple',
+        Emotions: 'emotions',
+        'Self-Esteem': 'self-esteem',
+        Culture: 'culture',
+        'Current Affairs and Psychology': 'current-affairs-psychology',
+        'Stories and Reflections': 'stories-reflections',
+        Wellness: 'wellness',
+        Reflections: 'reflections',
+      };
+
+      const post = `/blog/${doc._raw.flattenedPath}`;
+
+      const cat = `/blog/${categories[doc.category as Content]}`;
+
+      const sub = `/blog/${categories[doc.category as Content]}/${
+        categories[doc.subcategory as Content]
+      }`;
+
       return {
-        cat: fix(`/blog/${doc.category.toLocaleLowerCase()}`),
-        sub: check(`/blog/${doc._raw.sourceFileDir}`),
-        post: check(`/blog/${doc._raw.flattenedPath}`),
+        post,
+        cat,
+        sub,
       };
     },
   },

@@ -24,16 +24,6 @@ interface NavProps {
 const Nav = (props: NavProps) => {
   return (
     <Flex align='center' gap='1'>
-      {/* <Link route='/'>
-        <IconButton>
-          <HomeIcon width='16' height='16' />
-        </IconButton>
-      </Link>
-
-      <Link route='/blog'>
-        <Strong>Blog</Strong>
-      </Link> */}
-
       <Link route={props.urlCat}>
         <Strong>{props.category}</Strong>
       </Link>

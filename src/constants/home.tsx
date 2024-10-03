@@ -8,8 +8,8 @@ class Seo {
     type: 'website',
     url: 'https://estarlincito.com/',
   };
-  static readonly imagesUrl = 'https://estarlincito.com/images/avatar.jpeg';
-  static readonly imagesAlt = 'Avathar';
+  static readonly image_url = 'https://estarlincito.com/images/avatar.jpeg';
+  static readonly image_alt = 'Avathar';
 }
 
 const links: Links[] = [
@@ -25,7 +25,7 @@ const links: Links[] = [
   // },
   {
     route: 'https://github.com/estarlincito',
-    label: ' Mira mis proyectos web',
+    label: 'Mira mis proyectos web',
     target: '_blank',
   },
 

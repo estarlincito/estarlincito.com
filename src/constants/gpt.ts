@@ -17,10 +17,10 @@ class Seo {
     url: 'https://estarlincito.com/gpt/',
   };
 
-  static readonly imagesUrl =
+  static readonly image_url =
     'https://images.unsplash.com/photo-1633311905139-7b6088a69e33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3432&q=80';
 
-  static readonly imagesAlt = 'a yellow letter sitting on top of a black floor';
+  static readonly image_alt = 'a yellow letter sitting on top of a black floor';
 }
 
 export default class GPT {

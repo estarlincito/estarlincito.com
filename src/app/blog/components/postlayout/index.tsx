@@ -6,8 +6,6 @@ import Post from '../mdxcontent';
 import Author from './author';
 import Check from './check';
 import Nav from './nav';
-import Origin from './origin';
-import Tags from './tags';
 
 const PostLayout = (props: Blog) => {
   return (
@@ -32,8 +30,6 @@ const PostLayout = (props: Blog) => {
       />
 
       <Post doc={props.body.code} />
-      <Origin origin={props.origin} />
-      <Tags tags={props.tags} />
     </Wrapper>
   );
 };

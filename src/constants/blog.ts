@@ -9,10 +9,10 @@ class Seo {
     url: 'https://estarlincito.com/blog/',
   };
 
-  static readonly imagesUrl =
+  static readonly image_url =
     'https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80';
 
-  static readonly imagesAlt = 'Una macbook y una taza';
+  static readonly image_alt = 'Una macbook y una taza';
 }
 
 export default class Blog {

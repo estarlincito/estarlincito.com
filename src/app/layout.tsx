@@ -17,7 +17,7 @@ const AppThemeProvider = dynamic(() => import('@/context/theme'), {
 
 const RootLayout = (props: ChildrenProps) => {
   return (
-    <html lang='es' suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body>
         <Theme>
           <CollapseProvider>

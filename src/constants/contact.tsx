@@ -9,9 +9,9 @@ class Seo {
     url: 'https://estarlincito.com/contact/',
   };
 
-  static readonly imagesUrl = 'https://estarlincito.com/images/avatar.jpeg';
+  static readonly image_url = 'https://estarlincito.com/images/avatar.jpeg';
 
-  static readonly imagesAlt = 'Avathar';
+  static readonly image_alt = 'Avathar';
 }
 
 const quote = '¡Construyamos algo juntos!';

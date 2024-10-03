@@ -9,8 +9,8 @@ export const { metadata } = new SEO({
   title: Home.seo.title,
   description: Home.seo.description,
   openGraph: Home.seo.openGraph,
-  imagesUrl: Home.seo.imagesUrl,
-  imagesAlt: Home.seo.imagesAlt,
+  image_url: Home.seo.image_url,
+  image_alt: Home.seo.image_alt,
 });
 
 const Welcome = () => {
