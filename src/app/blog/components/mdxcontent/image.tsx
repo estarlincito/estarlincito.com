@@ -1,6 +1,6 @@
-import Imagen from '@/components/UI/image';
 import ImageProps from '@/types/image';
 import { Box } from '@radix-ui/themes';
+import Imagen from '@UI/image';
 
 const Image = (props: ImageProps) => {
   const { src, alt } = props;

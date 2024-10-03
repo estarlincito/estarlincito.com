@@ -1,6 +1,6 @@
-import Image from '@/components/UI/image';
 import dateFormat from '@/lib/dateFormat';
 import { Box, Card, Flex, Grid, Link, Text } from '@radix-ui/themes';
+import Image from '@UI/image';
 import { Blog } from 'contentlayer/generated';
 
 const PostCard = (props: Blog) => {

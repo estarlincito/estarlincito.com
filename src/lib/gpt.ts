@@ -30,19 +30,3 @@ export const gpt = async (messages: Messages[]) => {
 
   return new StreamingTextResponse(stream);
 };
-
-const function_list = [
-  {
-    name: 'google_for_answers',
-    description:
-      'Search Google with fully-formed http URL to enhance knowledge.',
-    parameters: {
-      type: 'object',
-      properties: {
-        url: {
-          type: 'string',
-        },
-      },
-    },
-  },
-];

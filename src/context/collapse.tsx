@@ -6,6 +6,8 @@ type Collapse = 'ON' | 'OFF';
 
 interface CollapseContextValue {
   collapse: Collapse;
+
+  // eslint-disable-next-line no-unused-vars
   setCollapse: (collapse: Collapse) => void;
 }
 

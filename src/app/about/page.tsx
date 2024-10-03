@@ -1,10 +1,10 @@
-import List from '@/components/UI/list';
-import Title from '@/components/UI/title';
 import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import About from '@/constants/about';
 import SEO from '@/lib/seo';
 import { Blockquote, Text } from '@radix-ui/themes';
+import List from '@UI/list';
+import Title from '@UI/title';
 
 export const { metadata } = new SEO({
   title: About.seo.title,
@@ -24,7 +24,7 @@ const AboutPage = () => {
 
         <Text>{About.par1}</Text>
 
-        <List title={About.par2} arr={About.temas} dash />
+        <List title={About.par2} arr={About.topics} dash />
       </Wrapper>
     </Container>
   );

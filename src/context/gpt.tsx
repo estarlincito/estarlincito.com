@@ -5,6 +5,7 @@ import { createContext, useState } from 'react';
 
 interface GPTContextValue {
   chat: Messages[];
+  // eslint-disable-next-line no-unused-vars
   setChat: (chat: Messages[]) => void;
 }
 

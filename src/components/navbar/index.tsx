@@ -4,24 +4,12 @@ import TwitterLink from '@/components/navbar/twitterlink';
 import ChildrenProps from '@/types/children';
 import { Flex } from '@radix-ui/themes';
 import clsx from 'clsx';
-import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Brand from './brand';
 import HireMeLink from './hiremelink';
 import MenuToggle from './menu-toggle';
 
 const Navbar = () => {
-  const [title, setTitle] = useState('');
-  const path = usePathname();
-
-  useEffect(() => {
-    if (path.split('/').length > 4) {
-      setTitle('Artículo');
-    } else {
-      setTitle(document.title);
-    }
-  }, [path]);
-
   const Nav = ({ children }: ChildrenProps) => {
     return (
       <Flex

@@ -1,13 +1,13 @@
 import useQuotes from '@/Hooks/useQuotes';
-import { Em, Text } from '@radix-ui/themes';
+import { Blockquote, Em } from '@radix-ui/themes';
 
 const Quote = () => {
   const { quote } = useQuotes();
 
   return (
-    <Text>
+    <Blockquote>
       <Em>{quote}</Em>
-    </Text>
+    </Blockquote>
   );
 };
 

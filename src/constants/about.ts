@@ -1,8 +1,8 @@
 class Seo {
-  static readonly title = 'Acerca de Mí';
+  static readonly title = 'About Me';
 
   static readonly description =
-    'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más.';
+    'This is a blog that explores technology, philosophy, psychology, web development, and much more';
 
   static readonly openGraph = {
     type: 'website',
@@ -13,26 +13,26 @@ class Seo {
   static readonly image_alt: 'Avathar';
 }
 
-const temas = [
-  'Psicología',
-  'Filosofía',
-  'Tecnología',
-  'Privacidad en línea',
-  'Desarrollo web',
-  'Diseño Web',
+const topics = [
+  'Psychology',
+  'Philosophy',
+  'Technology',
+  'Online Privacy',
+  'Web Development',
+  'Web Design',
   'SEO',
   'React',
-  'Nextjs',
+  'Next.js',
 ];
 
 const par1 =
-  'Este es un blog que explora la tecnología, la filosofía, la psicología y el desarrollo web y mucho más. Aquí encontrarás reflexiones, análisis y discusiones sobre cómo la tecnología está cambiando nuestra forma de pensar y relacionarnos con el mundo, así como su impacto en nuestra psicología y bienestar emocional.';
+  'This is a blog that explores technology, philosophy, psychology, web development, and much more. Here, you will find reflections, analyses, and discussions on how technology is changing the way we think and interact with the world, as well as its impact on our psychology and emotional well-being.';
 
-const par2 = 'Temas que se abordan';
+const par2 = 'Topics Covered';
 
 export default class About {
   static readonly seo = { ...Seo };
-  static readonly temas = temas;
+  static readonly topics = topics;
   static readonly par1 = par1;
   static readonly par2 = par2;
 }

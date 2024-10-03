@@ -5,8 +5,8 @@ import * as Icons from '@radix-ui/react-icons';
 import { Box, Flex, Link } from '@radix-ui/themes';
 import DarkmodeToggle from '../darkmode-toggle';
 import styled from './collapse.module.scss';
-import Highlight from './highlight';
 import Nav from './nav';
+import Quote from './quote';
 
 const Collapse = () => {
   const { collapse, offCollapse } = useCollapse();
@@ -30,7 +30,7 @@ const Collapse = () => {
           </Box>
 
           <Box className='ml-2'>
-            <Highlight />
+            <Quote />
           </Box>
 
           <Box className='self-end'>

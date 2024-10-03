@@ -1,4 +1,5 @@
 import { Container as Containerr } from '@radix-ui/themes';
+import React from 'react';
 interface ContainerProps {
   children: React.ReactNode;
   size: '1' | '2' | '3' | '4';

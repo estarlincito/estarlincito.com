@@ -1,5 +1,6 @@
 import * as Icons from '@radix-ui/react-icons';
 import { Flex, Text } from '@radix-ui/themes';
+import React from 'react';
 
 interface InfProps {
   color: 'sky' | 'gray';

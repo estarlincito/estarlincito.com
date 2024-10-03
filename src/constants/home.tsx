@@ -3,7 +3,7 @@ import { Strong } from '@radix-ui/themes';
 
 class Seo {
   static readonly title = 'Estarlincito';
-  static readonly description = 'Desarrollador Web, escritor y creador.';
+  static readonly description = 'Web developer, writer, and content creator';
   static readonly openGraph = {
     type: 'website',
     url: 'https://estarlincito.com/',

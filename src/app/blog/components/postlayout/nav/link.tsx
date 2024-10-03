@@ -1,4 +1,5 @@
-import Linkdoc from '@/components/UI/linkdoc';
+import Linkdoc from '@UI/linkdoc';
+import React from 'react';
 
 interface LinkProps {
   children: React.ReactNode;

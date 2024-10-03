@@ -1,15 +1,16 @@
 import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import SEO from '@/lib/seo';
-import { Box, Link, Text } from '@radix-ui/themes';
+import { Box, Link, Strong, Text } from '@radix-ui/themes';
 
 export const { metadata } = new SEO({
-  title: 'Página no encontrada',
-  description: 'Esta página no existe.',
+  title: 'Page not found',
+  description:
+    'Looks like that page took a little detour and doesn’t exist anymore.',
   openGraph: { type: 'website', url: 'https://estarlincito.com/not-found' },
   image_url:
-    'https://images.pexels.com/photos/4439425/pexels-photo-4439425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  image_alt: 'error',
+    'https://cdn.pixabay.com/photo/2018/01/04/15/51/404-error-3060993_1280.png',
+  image_alt: 'Oops!',
 });
 
 const NotFound = () => {
@@ -17,18 +18,20 @@ const NotFound = () => {
     <Container size='1'>
       <Wrapper align='center'>
         <Box>
-          <Text size='9'>404</Text>
+          <Text size='9'>Oops!</Text>
           <br />
-          <br />
-          <Text>Lo sentimos…</Text>
-          <br />
-          <Text>Esta página no existe.</Text>
           <br />
           <Text>
-            Puedes volver a&nbsp;
+            Looks like that page took a little detour and doesn’t exist anymore.
+          </Text>
+          <br />
+          <br />
+          <Text>
+            No worries! Head back to&nbsp;
             <Link target='_self' href='http://estarlincito.com' color='sky'>
-              Home
+              <Strong>Home</Strong>
             </Link>
+            &nbsp; and keep exploring!
           </Text>
         </Box>
       </Wrapper>

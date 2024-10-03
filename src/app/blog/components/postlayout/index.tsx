@@ -1,6 +1,6 @@
-import Imagen from '@/components/UI/image';
 import Wrapper from '@/components/wrapper';
 import { Heading } from '@radix-ui/themes';
+import Imagen from '@UI/image';
 import { Blog } from 'contentlayer/generated';
 import Post from '../mdxcontent';
 import Author from './author';

@@ -1,5 +1,6 @@
 import { DotFilledIcon } from '@radix-ui/react-icons';
 import { Flex, Link as Linkr, Strong } from '@radix-ui/themes';
+import React from 'react';
 
 interface LinkProps {
   route: string;

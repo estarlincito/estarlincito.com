@@ -1,9 +1,9 @@
-import Title from '@/components/UI/title';
 import Container from '@/components/container';
 import Wrapper from '@/components/wrapper';
 import Contact from '@/constants/contact';
 import SEO from '@/lib/seo';
 import { Blockquote, Link, Text } from '@radix-ui/themes';
+import Title from '@UI/title';
 
 export const { metadata } = new SEO({
   title: Contact.seo.title,
@@ -22,7 +22,7 @@ const ContactPage = () => {
 
         <Text>
           {Contact.talkme.main}
-          <Text as='span' role='img' aria-label='Levantando las manos'>
+          <Text as='span' role='img' aria-label='Raising hands'>
             🙌
           </Text>
           <br />

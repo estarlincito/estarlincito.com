@@ -1,4 +1,4 @@
-import Title from '@/components/UI/title';
+import Title from '@UI/title';
 import { Blockquote, Box } from '@radix-ui/themes';
 
 interface BlogHeaderProps {
