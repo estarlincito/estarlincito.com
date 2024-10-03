@@ -54,9 +54,9 @@ const Nav = () => {
   return (
     <Flex direction='column' gap='5'>
       <Box className={Styled.nav}>
-        <Navlinks title='Categories' links={Footer.catsLinks} target='_self' />
-        <Navlinks title='Hire me:' links={Footer.hireme} target='_blank' />
         <Navlinks title='Sitemap' links={sitemap} target='_self' />
+        <Navlinks title='Hire me:' links={Footer.hireme} target='_blank' />
+        <Navlinks title='Categories' links={Footer.catsLinks} target='_self' />
       </Box>
       <Copyright />
     </Flex>

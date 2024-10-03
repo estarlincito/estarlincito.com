@@ -23,7 +23,7 @@ const Welcome = () => {
       </Box>
 
       <Link href='/blog' target='_self'>
-        Mira mi Blog
+        Look at my blog!
       </Link>
     </Flex>
   );

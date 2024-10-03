@@ -29,7 +29,7 @@ const PostCard = (props: Blog) => {
 
           <Flex direction='row' justify='between'>
             <Text as='span'>
-              Por&nbsp;
+              By&nbsp;
               <Link href='/' target='_self' color='gray' weight='bold'>
                 {props.author}
               </Link>

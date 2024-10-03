@@ -1,8 +1,8 @@
 class Seo {
-  static readonly title = 'Estarlincito | Contácto';
+  static readonly title = 'Estarlincito | Contact';
 
   static readonly description =
-    'Si está buscando ayuda para construir algo que tenga un impacto y sostenibilidad, hablemos :)';
+    "If you're looking for help building something impactful and sustainable, let's talk :)";
 
   static readonly openGraph = {
     type: 'website',
@@ -14,40 +14,39 @@ class Seo {
   static readonly image_alt = 'Avathar';
 }
 
-const quote = '¡Construyamos algo juntos!';
+const quote = "Let's create together!";
 
 const talkme = {
   main: (
     <>
-      Si está buscando ayuda para construir algo que tenga un impacto y
-      sostenibilidad, hablemos&nbsp;
+      If you&apos;re looking for help building something impactful and
+      sustainable, let&apos;s talk!&nbsp;&nbsp;
     </>
   ),
-  sendme: <>Envíame un correo electrónico a:</>,
-  mailto: 'mailto:contacto@estarlincito.com',
-  email: <>contacto@estarlincito.com</>,
+  sendme: <>Email me at:</>,
+  mailto: 'mailto:contact@estarlincito.com',
+  email: <>contact@estarlincito.com</>,
   able: (
     <>
-      Siempre estoy aprendiendo y explorando. Con mi experiencia como Diseñador
-      web, puedo ayudarte a materializar tus ideas innovadoras con Información,
-      análisis y monitoreo tecnológico completos.
+      I&apos;m always learning and exploring. With my experience as a web
+      designer, I can help you bring your innovative ideas to life with
+      comprehensive information, analysis, and technological monitoring.
     </>
   ),
   general: (
     <>
-      En general, mi trabajo se centra en la consulta, la innovación, solución
-      de problemas tecnológicos y la educación.
+      In general, my work focuses on consulting, innovation, technological
+      problem-solving, and education.
     </>
   ),
 
   list: [
-    'Diseñador Web',
-    'Soporte Técnico',
-    'Hacker Ético',
-    'Educador Tecnológico',
+    'Web Designer',
+    'Technical Support',
+    'Ethical Hacker',
+    'Tech Educator',
   ],
-
-  hello: <>Si solo quieres saludar, Hazme un&nbsp;</>,
+  hello: <>If you just want to say hello, send me a&nbsp;</>,
 
   twitterlink: 'https://twitter.com/estarlincito',
 };

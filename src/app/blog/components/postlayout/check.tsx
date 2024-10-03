@@ -27,11 +27,11 @@ const Check = (props: CheckProps) => {
   return (
     <Flex direction='row' gap='4'>
       {props.check === false ? (
-        <Inf label='En revisión' color='sky'>
+        <Inf label='Under review' color='sky'>
           <Icons.EyeOpenIcon />
         </Inf>
       ) : (
-        <Inf label='Verificado' color='sky'>
+        <Inf label='Verified' color='sky'>
           <Icons.CheckCircledIcon />
         </Inf>
       )}

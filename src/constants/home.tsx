@@ -1,5 +1,5 @@
 import Links from '@/types/links';
-import { Em, Link as Link_, Strong } from '@radix-ui/themes';
+import { Strong } from '@radix-ui/themes';
 
 class Seo {
   static readonly title = 'Estarlincito';
@@ -18,75 +18,40 @@ const links: Links[] = [
     label: 'GPT001',
     target: '_self',
   },
-  // {
-  //   route: 'https://twitter.com/estarlincito',
-  //   label: 'Sígueme en Twitter',
-  //   target: '_blank',
-  // },
   {
     route: 'https://github.com/estarlincito',
-    label: 'Mira mis proyectos web',
+    label: 'Web projects!',
     target: '_blank',
   },
 
   {
     route: '/contact',
-    label: 'Contrátame',
+    label: 'Hire me!',
     target: '_self',
   },
 ];
 
 const aboutme = (
   <>
-    Hello, soy <Strong>Estarlicito</Strong>. Me dedico al <Em>Diseño web</Em>
-    ,&nbsp;
-    <Em>Soporte IT</Em> y escribo sobre <Em>Tecnología</Em>,&nbsp;
-    <Em>Psicología</Em> y más.
+    Hello, I&apos;m <Strong>Estarlin R</Strong>. I specialize in Web Design, IT
+    Support, and I write about; Technology, Psychology, and more.
   </>
 );
 
-const Link = ({ href, label }: { href: string; label: string }) => {
-  return (
-    <Link_ color='gray' href={href} target='_blank'>
-      <Strong>{label}</Strong>
-    </Link_>
-  );
-};
-
 const moreinf = (
   <>
-    Soy una persona que encuentra su pasión en la &nbsp;
-    <Link href='https://es.wikipedia.org/wiki/Psicología' label='psicología' />
-    &nbsp; y el&nbsp;
-    <Link
-      href='https://es.wikipedia.org/wiki/Proceso_para_el_desarrollo_de_software'
-      label='desarrollo de software'
-    />
-    . Aunque tengo habilidades tecnológicas, pienso que la vida es una audaz
-    aventura o no es nada.
+    I am a person who finds passion in psychology and software development.
+    Although I have technological skills, I believe that life is a bold
+    adventure, or it is nothing at all.
     <br />
     <br />
-    Me especializo en crear sitios web modernos y fáciles de usar en cualquier
-    dispositivo. Con experiencia en&nbsp;
-    <Link href='https://es.wikipedia.org/wiki/HTML5' label='HTML5' />
-    ,&nbsp;
-    <Link href='https://es.wikipedia.org/wiki/CSS' label='CSS3' />
-    ,&nbsp;
-    <Link href='https://es.wikipedia.org/wiki/JavaScript' label='JavaScript' />
-    &nbsp;y librerías como&nbsp;
-    <Link href='https://es.react.dev' label='React' /> o framework como&nbsp;
-    <Link href='https://nextjs.org' label='Next.js' />
-    , he trabajado en proyectos exitosos para clientes de todo el mundo y estoy
-    listo para más desafíos.
+    I specialize in creating modern and user-friendly websites that work on any
+    device. With experience in HTML5, CSS3, JavaScript, and libraries like React
+    or frameworks like Next.js, I have worked on successful projects for clients
+    worldwide and am ready for more challenges.
     <br />
-    <br />
-    También me desenvuelvo bien como&nbsp;
-    <Link
-      href='https://es.wikipedia.org/wiki/Soporte_técnico'
-      label='Soporte IT'
-    />
-    , resolviendo problemas informáticos, desde errores hasta instalación de
-    sistemas operativos.
+    <br />I also excel in IT support, troubleshooting computer issues ranging
+    from errors to operating system installations.
   </>
 );
 

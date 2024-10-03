@@ -17,7 +17,7 @@ const ContactPage = () => {
   return (
     <Container size='3'>
       <Wrapper align='start'>
-        <Title text='Ponte en contacto conmigo' />
+        <Title text='Get in Touch!' />
         <Blockquote mb='7'>{Contact.quote}</Blockquote>
 
         <Text>
