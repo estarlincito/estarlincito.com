@@ -5,6 +5,7 @@ import { Blog } from 'contentlayer/generated';
 import Post from '../mdxcontent';
 import Author from './author';
 import Check from './check';
+import CopyURL from './copy_url';
 import Nav from './nav';
 
 const PostLayout = (props: Blog) => {
@@ -30,6 +31,7 @@ const PostLayout = (props: Blog) => {
       />
 
       <Post doc={props.body.code} />
+      <CopyURL url={`https://estarlincito.com/${props.urls.post}`} />
     </Wrapper>
   );
 };

@@ -2,7 +2,7 @@ import { Card, Flex, Text } from '@radix-ui/themes';
 import { Message } from 'ai';
 import { TbAlien, TbMoodBoy } from 'react-icons/tb';
 import Styled from '../../gpt.module.scss';
-import CopyChat from './copy';
+import CopyMessage from './copy_message';
 
 const Content = ({ content, role }: Message) => {
   return (
@@ -24,7 +24,7 @@ const Content = ({ content, role }: Message) => {
         <Text as='p' className='gpt_content'>
           {content}
         </Text>
-        <CopyChat text={content} />
+        <CopyMessage text={content} />
       </Flex>
     </Card>
   );
