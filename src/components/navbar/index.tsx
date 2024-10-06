@@ -3,7 +3,6 @@ import DarkmodeToggle from '@/components/darkmode-toggle';
 import TwitterLink from '@/components/navbar/twitterlink';
 import ChildrenProps from '@/types/children';
 import { Flex } from '@radix-ui/themes';
-import clsx from 'clsx';
 import React from 'react';
 import Brand from './brand';
 import HireMeLink from './hiremelink';
@@ -41,8 +40,8 @@ const Navbar = () => {
     return (
       <Flex
         direction='row'
-        mr={clsx(m === 'r' ? '5' : '0')}
-        ml={clsx(m === 'l' ? '5' : '0')}
+        mr={m === 'r' ? '5' : '0'}
+        ml={m === 'l' ? '5' : '0'}
         align='center'
         gap='5'
         asChild
