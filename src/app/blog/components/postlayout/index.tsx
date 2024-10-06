@@ -31,7 +31,7 @@ const PostLayout = (props: Blog) => {
       />
 
       <Post doc={props.body.code} />
-      <CopyURL url={`https://estarlincito.com/${props.urls.post}`} />
+      <CopyURL url={`https://estarlincito.com${props.urls.post}`} />
     </Wrapper>
   );
 };
