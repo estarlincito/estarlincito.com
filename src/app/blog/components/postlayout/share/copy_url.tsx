@@ -1,24 +1,21 @@
 'use client';
-// import IconButton from '@/components/UI/Iconbutton';
 import clipboard from '@/lib/clipboard';
 import { Link1Icon } from '@radix-ui/react-icons';
-import { IconButton } from '@radix-ui/themes';
+import IconBTN from './Icon_btn';
 
 interface Props {
   url: string;
 }
+
 const CopyURL = ({ url }: Props) => {
   return (
-    <IconButton
-      variant='ghost'
-      size='3'
-      my='4'
+    <IconBTN
       onClick={() => {
         clipboard(url, 'URL has been copied to clipboard!');
       }}
     >
       <Link1Icon />
-    </IconButton>
+    </IconBTN>
   );
 };
 

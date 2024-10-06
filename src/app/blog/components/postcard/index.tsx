@@ -6,7 +6,6 @@ import { Blog } from 'contentlayer/generated';
 const PostCard = (props: Blog) => {
   return (
     <Card variant='surface' style={{ padding: 0 }}>
-      <article></article>
       <Box height='15rem' asChild>
         <figure>
           <Link href={props.urls.post} target='_self'>
@@ -15,7 +14,7 @@ const PostCard = (props: Blog) => {
         </figure>
       </Box>
 
-      <Grid gap='1' height='7rem' p='2' asChild>
+      <Grid gap='1' height='7rem' p='3' asChild>
         <figcaption>
           <Link
             href={props.urls.post}

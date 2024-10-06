@@ -5,8 +5,8 @@ import { Blog } from 'contentlayer/generated';
 import Post from '../mdxcontent';
 import Author from './author';
 import Check from './check';
-import CopyURL from './copy_url';
 import Nav from './nav';
+import Share from './share';
 
 const PostLayout = (props: Blog) => {
   return (
@@ -19,9 +19,7 @@ const PostLayout = (props: Blog) => {
       />
 
       <Heading size='8'>{props.title}</Heading>
-
       <Check check={props.check} readingTime={props.readingTime} />
-
       <Imagen src={props.cover} alt={props.coverAlt} />
 
       <Author
@@ -31,7 +29,12 @@ const PostLayout = (props: Blog) => {
       />
 
       <Post doc={props.body.code} />
-      <CopyURL url={`https://estarlincito.com${props.urls.post}`} />
+
+      <Share
+        category={props.category}
+        summary={props.summary}
+        url={props.urls.post}
+      />
     </Wrapper>
   );
 };
