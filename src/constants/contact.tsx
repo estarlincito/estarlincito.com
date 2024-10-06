@@ -48,7 +48,7 @@ const talkme = {
   ],
   hello: <>If you just want to say hello, send me a&nbsp;</>,
 
-  twitterlink: 'https://twitter.com/estarlincito',
+  twitterlink: 'https://x.com/est4rlin_',
 };
 
 export default class Contact {

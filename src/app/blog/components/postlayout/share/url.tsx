@@ -7,7 +7,7 @@ interface Props {
   url: string;
 }
 
-const CopyURL = ({ url }: Props) => {
+const URL = ({ url }: Props) => {
   return (
     <IconBTN
       onClick={() => {
@@ -19,4 +19,4 @@ const CopyURL = ({ url }: Props) => {
   );
 };
 
-export default CopyURL;
+export default URL;

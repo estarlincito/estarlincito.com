@@ -3,7 +3,7 @@ import { allBlogs } from 'contentlayer/generated';
 
 const hireme: Links[] = [
   { route: 'https://linktr.ee/estarlincito', label: 'Linktr' },
-  { route: 'https://twitter.com/estarlincito', label: 'Twitter' },
+  { route: 'https://x.com/est4rlin_', label: 'Twitter' },
   { route: 'https://www.linkedin.com/in/estarlincito', label: 'Linkedin' },
 ];
 

@@ -11,10 +11,7 @@ const Wa = ({ url, summary }: WaProps) => {
   const line_break = '%0A';
   const contents = `_${summary}_${line_break}${line_break}estarlincito.com${url}`;
   return (
-    <Link
-      href={`whatsapp://send?text=${contents}`}
-      data-action='share/whatsapp/share'
-    >
+    <Link href={`whatsapp://send?text=${contents}`}>
       <IconBTN>
         <FaWhatsapp />
       </IconBTN>

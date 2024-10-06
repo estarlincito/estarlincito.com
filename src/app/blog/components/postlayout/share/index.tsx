@@ -1,5 +1,6 @@
 import { Box, Flex, Heading } from '@radix-ui/themes';
-import CopyURL from './copy_url';
+import Threads from './threads';
+import URL from './url';
 import Wa from './wa';
 import X from './x';
 
@@ -19,7 +20,8 @@ const Share = ({ category, summary, url }: ShareProps) => {
       <Flex gap='3'>
         <Wa url={url} summary={summary} />
         <X url={url} summary={summary} tag={category} />
-        <CopyURL url={`https://estarlincito.com${url}`} />
+        <Threads url={url} summary={summary} tag={category} />
+        <URL url={`https://estarlincito.com${url}`} />
       </Flex>
     </Box>
   );
