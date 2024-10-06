@@ -14,7 +14,7 @@ const CopyURL = ({ url }: Props) => {
       size='3'
       my='4'
       onClick={() => {
-        clipboard(url, 'Post URL Copied');
+        clipboard(url, 'URL has been copied to clipboard!');
       }}
     >
       <Link1Icon />

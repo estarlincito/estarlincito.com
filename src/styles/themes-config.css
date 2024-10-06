@@ -21,10 +21,6 @@
   margin: 0;
 }
 
-.gpt_content {
-  white-space: pre-wrap;
-}
-
 li {
   list-style-type: none;
 }

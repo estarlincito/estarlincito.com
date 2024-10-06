@@ -2,11 +2,10 @@
 import useLocalStorage from '@/Hooks/useLocalstorage';
 import decode from '@/lib/decode';
 import encode from '@/lib/encode';
-import { Box } from '@radix-ui/themes';
+import { Flex } from '@radix-ui/themes';
 import { Message } from 'ai';
 import { useChat } from 'ai/react';
 import { useEffect, useMemo } from 'react';
-import Styled from '../gpt.module.scss';
 import Formsearch from './formsearch';
 import Header from './header';
 import Messages from './messages';
@@ -39,7 +38,14 @@ const Gpt = () => {
   }, [gpt001, setMessages]);
 
   return (
-    <Box className={Styled.gpt}>
+    <Flex
+      direction='column'
+      justify='between'
+      maxWidth='46.875rem'
+      height='80vh'
+      p='0.625rem'
+      m='auto'
+    >
       <Header messages={messages} />
       <Messages messages={messages} />
       <Formsearch
@@ -48,7 +54,7 @@ const Gpt = () => {
         input={input}
         isLoading={isLoading}
       />
-    </Box>
+    </Flex>
   );
 };
 

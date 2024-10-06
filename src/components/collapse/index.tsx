@@ -2,9 +2,8 @@
 import useCollapse from '@/Hooks/useCollapse';
 import IconButton from '@UI/Iconbutton';
 import * as Icons from '@radix-ui/react-icons';
-import { Box, Flex, Link } from '@radix-ui/themes';
+import { Box, Flex, Grid, Link } from '@radix-ui/themes';
 import DarkmodeToggle from '../darkmode-toggle';
-import styled from './collapse.module.scss';
 import Nav from './nav';
 import Quote from './quote';
 
@@ -14,7 +13,21 @@ const Collapse = () => {
   return (
     <>
       {collapse === 'ON' ? (
-        <Box className={styled.collapse}>
+        <Grid
+          position='fixed'
+          left='0'
+          top='0'
+          p='4'
+          width={{ initial: '70vw', md: '50vw', lg: '30vw' }}
+          height='90vh'
+          style={{
+            zIndex: 3,
+            backgroundColor: 'var(--gray-1)',
+            borderRadius: '0px 0px 10px 0px',
+            borderRight: '1px solid var(--gray-5)',
+            borderBottom: '1px solid var(--gray-5)',
+          }}
+        >
           <Flex direction='row' align='stretch' justify='between'>
             <IconButton onClick={offCollapse}>
               <Icons.Cross1Icon />
@@ -36,7 +49,7 @@ const Collapse = () => {
           <Box className='self-end'>
             <DarkmodeToggle />
           </Box>
-        </Box>
+        </Grid>
       ) : null}
     </>
   );

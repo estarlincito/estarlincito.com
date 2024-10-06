@@ -11,7 +11,7 @@ const CopyMessage = ({ text }: CopyMessageProps) => {
     <IconButton
       variant='ghost'
       onClick={() => {
-        clipboard(text, 'Copied');
+        clipboard(text, 'Text has been copied to clipboard!');
       }}
     >
       <CopyIcon />

@@ -4,14 +4,13 @@ import Links from '@/types/links';
 import Target from '@/types/target';
 import { Box, Flex, Heading, Link, Text } from '@radix-ui/themes';
 
-import Styled from './nav.module.scss';
-
-interface NavlinksProps {
+interface LinkListProps {
   title: string;
   links: Links[];
   target: Target;
 }
-const Navlinks = ({ title, links, target }: NavlinksProps) => {
+
+const LinkList = ({ title, links, target }: LinkListProps) => {
   return (
     <Box>
       <Heading size='4'>{title}</Heading>
@@ -30,6 +29,21 @@ const Navlinks = ({ title, links, target }: NavlinksProps) => {
         ))}
       </Flex>
     </Box>
+  );
+};
+
+const NavLinks = () => {
+  return (
+    <Flex
+      justify={{ initial: 'start', md: 'center' }}
+      direction={{ initial: 'column', md: 'row' }}
+      gap='6'
+      pt='6'
+    >
+      <LinkList title='Sitemap' links={sitemap} target='_self' />
+      <LinkList title='Hire me:' links={Footer.hireme} target='_blank' />
+      <LinkList title='Categories' links={Footer.catsLinks} target='_self' />
+    </Flex>
   );
 };
 
@@ -53,11 +67,7 @@ const Copyright = () => {
 const Nav = () => {
   return (
     <Flex direction='column' gap='5'>
-      <Box className={Styled.nav}>
-        <Navlinks title='Sitemap' links={sitemap} target='_self' />
-        <Navlinks title='Hire me:' links={Footer.hireme} target='_blank' />
-        <Navlinks title='Categories' links={Footer.catsLinks} target='_self' />
-      </Box>
+      <NavLinks />
       <Copyright />
     </Flex>
   );
