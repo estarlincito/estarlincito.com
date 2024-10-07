@@ -47,5 +47,3 @@ const get_posts = (slug: Slug) => {
 };
 
 export default get_posts;
-
-//Return Post or Cat

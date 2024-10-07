@@ -23,5 +23,4 @@ const Threads = ({ summary, url, tag }: ThreadsProps) => {
   );
 };
 
-//https://threads.net/intent/post?text=[yourtext]
 export default Threads;
