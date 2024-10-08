@@ -33,8 +33,8 @@ const links: Links[] = [
 
 const aboutme = (
   <>
-    Hello, I&apos;m <Strong>Estarlin R</Strong>. I specialize in Web Design, IT
-    Support, and I write about; Technology, Psychology, and more.
+    Hello, I&apos;m <Strong>Estarlincito</Strong>. I specialize in Web Design,
+    IT Support, and I write about; Technology, Psychology, and more.
   </>
 );
 
