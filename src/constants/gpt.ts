@@ -8,13 +8,13 @@ const options: { value: string; label: string }[] = [
 ];
 
 class Seo {
-  static readonly title = 'Estarlincito | GPT001';
+  static readonly title = 'Estarlincito | GPTBOT';
 
   static readonly description = 'If you need help, ask for help!';
 
   static readonly openGraph = {
     type: 'website',
-    url: 'https://estarlincito.com/gpt/',
+    url: 'https://estarlincito.com/gptbot/',
   };
 
   static readonly image_url =

@@ -14,8 +14,8 @@ class Seo {
 
 const links: Links[] = [
   {
-    route: '/gpt',
-    label: 'GPT001',
+    route: '/gptbot',
+    label: 'GPTBOT',
     target: '_self',
   },
   {

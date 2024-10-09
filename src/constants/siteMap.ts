@@ -1,7 +1,8 @@
 const sitemap = [
   { label: 'Home', route: '/' },
   { label: 'Blog', route: '/blog' },
-  { label: 'GPT001', route: '/gpt001' },
+  { label: 'GPTBOT', route: '/gptbot' },
+  { label: 'Qoutes', route: '/qoutes' },
   // { label: 'About me', route: '/about' },
   { label: 'Contact', route: '/contact' },
 ];

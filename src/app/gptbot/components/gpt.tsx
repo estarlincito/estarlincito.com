@@ -20,8 +20,8 @@ const Gpt = () => {
     setMessages,
   } = useChat();
 
-  const [gpt001, setGpt001] = useLocalStorage(
-    'gpt001',
+  const [gptbot, setGptbot] = useLocalStorage(
+    'gptbot',
     encode(JSON.stringify(messages))
   );
 
@@ -29,13 +29,13 @@ const Gpt = () => {
     if (messages.length === 0) {
       return;
     }
-    setGpt001(encode(JSON.stringify(messages)));
-  }, [messages, setGpt001]);
+    setGptbot(encode(JSON.stringify(messages)));
+  }, [messages, setGptbot]);
 
   useMemo(() => {
-    const msm: Message[] = JSON.parse(decode(gpt001));
+    const msm: Message[] = JSON.parse(decode(gptbot));
     setMessages(msm);
-  }, [gpt001, setMessages]);
+  }, [gptbot, setMessages]);
 
   return (
     <Flex
