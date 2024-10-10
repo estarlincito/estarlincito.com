@@ -18,7 +18,7 @@ const Header = ({ messages }: HeaderPros) => {
           }}
         >
           <Heading size='4' mb='1'>
-            GPT001
+            GptBot
           </Heading>
           <Quote />
         </Box>

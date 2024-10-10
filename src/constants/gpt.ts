@@ -8,7 +8,7 @@ const options: { value: string; label: string }[] = [
 ];
 
 class Seo {
-  static readonly title = 'Estarlincito | GPTBOT';
+  static readonly title = 'Estarlincito | GptBot';
 
   static readonly description = 'If you need help, ask for help!';
 

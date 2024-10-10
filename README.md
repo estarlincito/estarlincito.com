@@ -53,11 +53,11 @@ This is a blog that explores philosophy, psychology, web development, technology
 
 > link: [**estarlincito.com/gptbot**](https://estarlincito.com/gptbot)
 
-GPTBOT is a task automation platform that enhances daily productivity through AI-powered interactions. By integrating OpenAI's API, GPTBOT provides advanced natural language processing capabilities, enabling it to automate tasks such as content generation, answering queries, and problem-solving with ease.
+GptBot is a task automation platform that enhances daily productivity through AI-powered interactions. By integrating OpenAI's API, GptBot provides advanced natural language processing capabilities, enabling it to automate tasks such as content generation, answering queries, and problem-solving with ease.
 
 The platform also utilizes Vercel AI’s SDK to build conversational user interfaces in JavaScript and TypeScript, creating a chat app-like experience for users. This allows for smooth, intuitive communication with the AI, making task management both efficient and user-friendly, without requiring real-time streaming.
 
-By combining powerful AI with a streamlined chat-based interface, GPTBOT offers an optimized solution for handling daily workflows and boosting productivity.
+By combining powerful AI with a streamlined chat-based interface, GptBot offers an optimized solution for handling daily workflows and boosting productivity.
 
 ## About Qoutes
 
