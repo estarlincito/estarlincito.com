@@ -2,11 +2,11 @@ import useQuotes from '@/Hooks/useQuotes';
 import { Blockquote, Em } from '@radix-ui/themes';
 
 const Quote = () => {
-  const { quote } = useQuotes();
+  const { random } = useQuotes();
 
   return (
     <Blockquote>
-      <Em>{quote}</Em>
+      <Em>{random.quote}</Em>
     </Blockquote>
   );
 };

@@ -2,7 +2,8 @@ import Quote from '@/types/quote';
 import { useEffect, useState } from 'react';
 
 const useQuotes = () => {
-  const [quote, setquote] = useState({} as Quote);
+  const [quotes, setQuotes] = useState([] as Quote[]);
+  const [random, setRandom] = useState({} as Quote);
 
   useEffect(() => {
     const url =
@@ -11,16 +12,19 @@ const useQuotes = () => {
     (async () => {
       try {
         const res = await fetch(url);
-        const quote: Quote[] = await res.json();
-        const random = Math.floor(Math.random() * quote.length);
-        setquote(quote[random]);
+        const quotes: Quote[] = await res.json();
+        setQuotes(quotes);
+
+        //Random Quote
+        const random = Math.floor(Math.random() * quotes.length);
+        setRandom(quotes[random]);
       } catch (error) {
         throw new Error(`May the ${url} is wrong`);
       }
     })();
   }, []);
 
-  return quote;
+  return { random, quotes };
 };
 
 export default useQuotes;

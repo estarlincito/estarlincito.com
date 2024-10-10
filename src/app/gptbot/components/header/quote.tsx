@@ -2,11 +2,11 @@ import useQuotes from '@/Hooks/useQuotes';
 import { Em, Text } from '@radix-ui/themes';
 
 const Quote = () => {
-  const { quote } = useQuotes();
+  const { random } = useQuotes();
 
   return (
     <Text>
-      <Em>{quote}</Em>
+      <Em>{random.quote}</Em>
     </Text>
   );
 };
