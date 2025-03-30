@@ -1,0 +1,21 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      "@dbschema/edgeql-js": ["./dbschema/edgeql-js"],
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "**/*.mdx",
+    "**/*.ts",
+    "**/*.tsx",
+    ".contentlayer/generated",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "eslint.config.js"
+  ],
+  "exclude": ["node_modules", "public"]
+}

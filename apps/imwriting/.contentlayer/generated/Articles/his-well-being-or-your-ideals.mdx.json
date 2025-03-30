@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Psychology",
+  "check": true,
+  "cover": "https://images.pexels.com/photos/2609463/pexels-photo-2609463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "coverAlt": "Photo of two women sitting on a rock in front of a body of water and a mountain.",
+  "description": "The challenge of the ego and beliefs in each individual's freedom of choice.",
+  "modifiedTime": "2023-12-07T04:00:00.000Z",
+  "publishedTime": "2023-12-07T04:00:00.000Z",
+  "subcategory": "Personality Psychology",
+  "tags": [
+    ""
+  ],
+  "title": "His well-being or your ideals?",
+  "body": {
+    "raw": "\n<Introduction>\n\n> The challenge of the ego and beliefs in each individual's freedom of choice.\n\n</Introduction>\n\n<Contents>\n\nThe ego sometimes makes us wish that people would act according to our values, principles, and thoughts, regardless of whether those individuals are doing well or feel comfortable with who they are. It’s as if we care more about our own well-being to the point of wanting to change others simply because we believe they would be better off doing things the way we do.\n\nWe must remember that everyone has their own way of seeing life, and we should never forget that it’s best for people to feel good about themselves. If someone feels good about their tattoos, let them be; if they enjoy going to clubs, let them do that too. It’s not that we shouldn’t offer advice if we see someone taking a risky path that endangers their life, but remember, if they are happy as they are, why try to change who they are?\n\n> _&quot;The only thing you can change about another person is the way you see them&quot;_ <br/> **-Estarlincito-**\n\n<Image\n  alt='Photo of two women wearing blue and red sports t-shirts and sunglasses on a brown surface.'\n  src='https://images.pexels.com/photos/58592/pexels-photo-58592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'\n/>\n\nOnce, I had a heated conversation with a girl who held very strong beliefs about the Bible. I was trying to prove that I was right, but in the midst of it all, she told me that thanks to religion, she had gotten through a very difficult time in her life. And there it was, the answer. It’s true that I don’t agree with biblical teachings, but if that was what kept her going, I had to respect her stance and not try to change her mind at all costs. In the end, what mattered most was her peace of mind, and if she found that peace in religion, then that was truly the best.\n\nI learned that it’s not good to sacrifice someone else's well-being just to get them to agree with our thoughts. At the crossroads between our convictions and the well-being of others, we discover that true greatness lies in acceptance and mutual respect. Allowing each person to flourish in their authenticity is the path to enriching harmony. In the art of loving and understanding differences, we find authentic freedom and genuine human connection.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var g=Object.create;var s=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var w=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var n in e)s(t,n,{get:e[n],enumerable:!0})},h=(t,e,n,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of f(e))!p.call(t,i)&&i!==n&&s(t,i,{get:()=>e[i],enumerable:!(a=u(e,i))||a.enumerable});return t};var y=(t,e,n)=>(n=t!=null?g(m(t)):{},h(e||!t||!t.__esModule?s(n,\"default\",{value:t,enumerable:!0}):n,t)),v=t=>h(s({},\"__esModule\",{value:!0}),t);var l=w((T,c)=>{c.exports=_jsx_runtime});var k={};b(k,{default:()=>j,frontmatter:()=>I});var o=y(l()),I={title:\"His well-being or your ideals?\",category:\"Psychology\",subcategory:\"Personality Psychology\",publishedTime:\"12-07-2023\",modifiedTime:\"12-07-2023\",description:\"The challenge of the ego and beliefs in each individual's freedom of choice.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://images.pexels.com/photos/2609463/pexels-photo-2609463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",coverAlt:\"Photo of two women sitting on a rock in front of a body of water and a mountain.\",check:!0,tags:[\"\"]};function d(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},t.components),{Introduction:n,Contents:a,Image:i}=e;return a||r(\"Contents\",!0),i||r(\"Image\",!0),n||r(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"The challenge of the ego and beliefs in each individual's freedom of choice.\"}),`\n`]})}),`\n`,(0,o.jsxs)(a,{children:[(0,o.jsx)(e.p,{children:\"The ego sometimes makes us wish that people would act according to our values, principles, and thoughts, regardless of whether those individuals are doing well or feel comfortable with who they are. It\\u2019s as if we care more about our own well-being to the point of wanting to change others simply because we believe they would be better off doing things the way we do.\"}),(0,o.jsx)(e.p,{children:\"We must remember that everyone has their own way of seeing life, and we should never forget that it\\u2019s best for people to feel good about themselves. If someone feels good about their tattoos, let them be; if they enjoy going to clubs, let them do that too. It\\u2019s not that we shouldn\\u2019t offer advice if we see someone taking a risky path that endangers their life, but remember, if they are happy as they are, why try to change who they are?\"}),(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsxs)(e.p,{children:[(0,o.jsx)(e.em,{children:'\"The only thing you can change about another person is the way you see them\"'}),\" \",(0,o.jsx)(\"br\",{}),\" \",(0,o.jsx)(e.strong,{children:\"-Estarlincito-\"})]}),`\n`]}),(0,o.jsx)(i,{alt:\"Photo of two women wearing blue and red sports t-shirts and sunglasses on a brown surface.\",src:\"https://images.pexels.com/photos/58592/pexels-photo-58592.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\"}),(0,o.jsx)(e.p,{children:\"Once, I had a heated conversation with a girl who held very strong beliefs about the Bible. I was trying to prove that I was right, but in the midst of it all, she told me that thanks to religion, she had gotten through a very difficult time in her life. And there it was, the answer. It\\u2019s true that I don\\u2019t agree with biblical teachings, but if that was what kept her going, I had to respect her stance and not try to change her mind at all costs. In the end, what mattered most was her peace of mind, and if she found that peace in religion, then that was truly the best.\"}),(0,o.jsx)(e.p,{children:\"I learned that it\\u2019s not good to sacrifice someone else's well-being just to get them to agree with our thoughts. At the crossroads between our convictions and the well-being of others, we discover that true greatness lies in acceptance and mutual respect. Allowing each person to flourish in their authenticity is the path to enriching harmony. In the art of loving and understanding differences, we find authentic freedom and genuine human connection.\"})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(d,t)})):d(t)}var j=x;function r(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(k);})();\n;return Component;"
+  },
+  "_id": "his-well-being-or-your-ideals.mdx",
+  "_raw": {
+    "sourceFilePath": "his-well-being-or-your-ideals.mdx",
+    "sourceFileName": "his-well-being-or-your-ideals.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "his-well-being-or-your-ideals"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "The challenge of the ego and beliefs in each individual's freedom of choice.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/his-well-being-or-your-ideals",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "The challenge of the ego and beliefs in each individual's freedom of choice.",
+        "images": [
+          {
+            "alt": "Photo of two women sitting on a rock in front of a body of water and a mountain.",
+            "url": "https://images.pexels.com/photos/2609463/pexels-photo-2609463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-12-07T04:00:00.000Z",
+        "publishedTime": "2023-12-07T04:00:00.000Z",
+        "section": "Psychology",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "His well-being or your ideals?",
+        "url": "https://imwriting.estarlincito.com/articles/his-well-being-or-your-ideals",
+        "type": "article"
+      },
+      "title": "His well-being or your ideals?"
+    },
+    "category": {
+      "description": "Here you will find useful information on topics such as emotional well-being, personal development, and mental health.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/psychology",
+      "openGraph": {
+        "title": "Psychology",
+        "description": "Here you will find useful information on topics such as emotional well-being, personal development, and mental health.",
+        "images": [
+          {
+            "alt": "People forming a heart with their hands",
+            "url": "https://images.unsplash.com/photo-1586807480822-0e95ba6666ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/psychology",
+        "type": "website"
+      },
+      "title": "Psychology"
+    },
+    "pathnames": {
+      "article": "/articles/his-well-being-or-your-ideals",
+      "category": "/articles/psychology",
+      "subcategory": "/articles/psychology/personality-psychology"
+    },
+    "subcategory": {
+      "description": "Dive into the fascinating world of human uniqueness through personality psychology.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/psychology/personality-psychology",
+      "openGraph": {
+        "title": "Personality Psychology",
+        "description": "Dive into the fascinating world of human uniqueness through personality psychology.",
+        "images": [
+          {
+            "alt": "Client listening to a psychologist",
+            "url": "https://images.pexels.com/photos/7176297/pexels-photo-7176297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/psychology/personality-psychology",
+        "type": "website"
+      },
+      "title": "Personality Psychology"
+    }
+  },
+  "readingTime": "2 minutes",
+  "wordCount": 392
+}

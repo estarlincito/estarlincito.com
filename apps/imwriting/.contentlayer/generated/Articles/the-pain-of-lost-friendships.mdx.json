@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "coverAlt": "A woman sitting in a black chair in front of a glass window with white curtains.",
+  "description": "In the journey of pain and loneliness, I discovered my strength.",
+  "modifiedTime": "2024-01-12T04:00:00.000Z",
+  "publishedTime": "2024-01-12T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "The pain of lost friendships",
+  "body": {
+    "raw": "\n<Introduction>\n\n> In the journey of pain and loneliness, I discovered my strength.\n\n</Introduction>\n\n<Contents>\n\nI remember it was an intense pain, something burning in my chest at all costs. I longed to find someone who would empathize with me; I craved a video, a psychological article, anything to ease my pain.\n\nOne day, home alone, I wrote to a friend just to say hello, being the only person I reached out to. I awaited her response, which was very kind. I wanted to continue the conversation, but my sensitivity told me it wouldn’t last long, so I let the conversation fizzle out.\n\nThe sharp pain set in after the conversation ended: the pain of disappointment, created by my own expectations that others should act as I do. In other words, I wanted them to meet my expectations, which is wrong. I should do things with love without expecting anything in return, accept people as they are, and not expect anything from others but rather everything from myself.\n\n> _&quot;Face life with determination. Friends come and go, accept reality, put a bun on life. Live fully.&quot;_ <br/> **-Estarlincito-**\n\n<Image\n  alt='A woman silhouetted holding her hair | The expression \"putting a bun on life\" symbolizes the creativity and control one can exert over experiences, regardless of changes in relationships.'\n  src='https://images.unsplash.com/photo-1502777448210-2a71991d2093?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'\n/>\n\nThe anguish persisted, and I wondered why I had no friends. I reflected on my past and remembered being a devoted child in church, fearing the Bible for considering it sacred. I followed what the Bible and my former religion dictated, including the prohibition against having friends from the outside world. I made a great effort to comply with this, getting to know people in the church and leaving those outside behind.\n\nWhen I left the church, I lost the friends I had there. Now I only have acquaintances who know me, with no one to share my sorrows or joys. In other words, by following the church's mandates, I didn’t make friends outside, and upon leaving, I lost the friends I had inside.\n\nThe wound of abandonment plays a fundamental role here, as those who bear it wear the mask of dependence. The attitudes of a dependent person include expecting a little affection to last a lifetime, feeling bad when things don’t go as they hoped, and seeking self-love externally. When it comes to emotional relationships, they suffer because they expect more from others than from themselves.\n\n\"Rise up.\" People can come and go from our lives, but true friends, those who stay, are an invaluable treasure. I cannot lose sight of my best friend: myself. I am not alone; I have my own strength and resilience. I must become my best ally, trust in my abilities, and expect everything from myself. Because, believe it or not, what I seek will come when I least expect it, bringing new opportunities and meaningful connections.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var w=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var o in e)r(t,o,{get:e[o],enumerable:!0})},h=(t,e,o,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of u(e))!g.call(t,i)&&i!==o&&r(t,i,{get:()=>e[i],enumerable:!(a=f(e,i))||a.enumerable});return t};var b=(t,e,o)=>(o=t!=null?m(p(t)):{},h(e||!t||!t.__esModule?r(o,\"default\",{value:t,enumerable:!0}):o,t)),I=t=>h(r({},\"__esModule\",{value:!0}),t);var l=w((M,d)=>{d.exports=_jsx_runtime});var k={};y(k,{default:()=>j,frontmatter:()=>x});var n=b(l()),x={title:\"The pain of lost friendships\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"01-12-2024\",modifiedTime:\"01-12-2024\",description:\"In the journey of pain and loneliness, I discovered my strength.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",coverAlt:\"A woman sitting in a black chair in front of a glass window with white curtains.\",check:!0,tags:[\"\"]};function c(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},t.components),{Introduction:o,Contents:a,Image:i}=e;return a||s(\"Contents\",!0),i||s(\"Image\",!0),o||s(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(o,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"In the journey of pain and loneliness, I discovered my strength.\"}),`\n`]})}),`\n`,(0,n.jsxs)(a,{children:[(0,n.jsx)(e.p,{children:\"I remember it was an intense pain, something burning in my chest at all costs. I longed to find someone who would empathize with me; I craved a video, a psychological article, anything to ease my pain.\"}),(0,n.jsx)(e.p,{children:\"One day, home alone, I wrote to a friend just to say hello, being the only person I reached out to. I awaited her response, which was very kind. I wanted to continue the conversation, but my sensitivity told me it wouldn\\u2019t last long, so I let the conversation fizzle out.\"}),(0,n.jsx)(e.p,{children:\"The sharp pain set in after the conversation ended: the pain of disappointment, created by my own expectations that others should act as I do. In other words, I wanted them to meet my expectations, which is wrong. I should do things with love without expecting anything in return, accept people as they are, and not expect anything from others but rather everything from myself.\"}),(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.em,{children:'\"Face life with determination. Friends come and go, accept reality, put a bun on life. Live fully.\"'}),\" \",(0,n.jsx)(\"br\",{}),\" \",(0,n.jsx)(e.strong,{children:\"-Estarlincito-\"})]}),`\n`]}),(0,n.jsx)(i,{alt:'A woman silhouetted holding her hair | The expression \"putting a bun on life\" symbolizes the creativity and control one can exert over experiences, regardless of changes in relationships.',src:\"https://images.unsplash.com/photo-1502777448210-2a71991d2093?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"}),(0,n.jsx)(e.p,{children:\"The anguish persisted, and I wondered why I had no friends. I reflected on my past and remembered being a devoted child in church, fearing the Bible for considering it sacred. I followed what the Bible and my former religion dictated, including the prohibition against having friends from the outside world. I made a great effort to comply with this, getting to know people in the church and leaving those outside behind.\"}),(0,n.jsx)(e.p,{children:\"When I left the church, I lost the friends I had there. Now I only have acquaintances who know me, with no one to share my sorrows or joys. In other words, by following the church's mandates, I didn\\u2019t make friends outside, and upon leaving, I lost the friends I had inside.\"}),(0,n.jsx)(e.p,{children:\"The wound of abandonment plays a fundamental role here, as those who bear it wear the mask of dependence. The attitudes of a dependent person include expecting a little affection to last a lifetime, feeling bad when things don\\u2019t go as they hoped, and seeking self-love externally. When it comes to emotional relationships, they suffer because they expect more from others than from themselves.\"}),(0,n.jsx)(e.p,{children:'\"Rise up.\" People can come and go from our lives, but true friends, those who stay, are an invaluable treasure. I cannot lose sight of my best friend: myself. I am not alone; I have my own strength and resilience. I must become my best ally, trust in my abilities, and expect everything from myself. Because, believe it or not, what I seek will come when I least expect it, bringing new opportunities and meaningful connections.'})]})]})}function v(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(c,t)})):c(t)}var j=v;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return I(k);})();\n;return Component;"
+  },
+  "_id": "the-pain-of-lost-friendships.mdx",
+  "_raw": {
+    "sourceFilePath": "the-pain-of-lost-friendships.mdx",
+    "sourceFileName": "the-pain-of-lost-friendships.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-pain-of-lost-friendships"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "In the journey of pain and loneliness, I discovered my strength.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-pain-of-lost-friendships",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "In the journey of pain and loneliness, I discovered my strength.",
+        "images": [
+          {
+            "alt": "A woman sitting in a black chair in front of a glass window with white curtains.",
+            "url": "https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-01-12T04:00:00.000Z",
+        "publishedTime": "2024-01-12T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "The pain of lost friendships",
+        "url": "https://imwriting.estarlincito.com/articles/the-pain-of-lost-friendships",
+        "type": "article"
+      },
+      "title": "The pain of lost friendships"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/the-pain-of-lost-friendships",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 487
+}

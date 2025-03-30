@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Philosophy",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2020/12/21/19/05/window-5850628_1280.png",
+  "coverAlt": "Illustration of a woman standing in front of a window.",
+  "description": "Have you ever felt responsible for someone else's sadness or anger?",
+  "modifiedTime": "2024-04-18T04:00:00.000Z",
+  "publishedTime": "2024-04-18T04:00:00.000Z",
+  "subcategory": "Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Individual responsibility and shared well-being",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Have you ever felt responsible for someone else's sadness or anger? ️\n\n</Introduction>\n\n<Contents>\n\n_We are responsible for our own emotions, but we cannot control those of others. Our actions and words can influence the feelings of others, but it’s important to remember that each person is responsible for their own emotional well-being._ **-Estarlincito-**\n\n_We don’t have to solve people’s lives or be rescuers for everyone who needs it. We can accompany, offer affection, but rescuing means carrying the burden for the other; bringing them to live in your home, feeding them, solving their life problems—it will never lead to something healthy. Each person needs space for their circumstances to help them grow. We can support, not solve._ **-Anamar Orihuela-**\n\n</Contents>\n",
+    "code": "var Component=(()=>{var m=Object.create;var i=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),v=(o,e)=>{for(var t in e)i(o,t,{get:e[t],enumerable:!0})},a=(o,e,t,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of u(e))!g.call(o,s)&&s!==t&&i(o,s,{get:()=>e[s],enumerable:!(r=p(e,s))||r.enumerable});return o};var w=(o,e,t)=>(t=o!=null?m(f(o)):{},a(e||!o||!o.__esModule?i(t,\"default\",{value:o,enumerable:!0}):t,o)),y=o=>a(i({},\"__esModule\",{value:!0}),o);var l=b((C,c)=>{c.exports=_jsx_runtime});var k={};v(k,{default:()=>_,frontmatter:()=>x});var n=w(l()),x={title:\"Individual responsibility and shared well-being\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"04-18-2024\",modifiedTime:\"04-18-2024\",description:\"Have you ever felt responsible for someone else's sadness or anger?\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/12/21/19/05/window-5850628_1280.png\",coverAlt:\"Illustration of a woman standing in front of a window.\",check:!0,tags:[\"\"]};function h(o){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},o.components),{Introduction:t,Contents:r}=e;return r||d(\"Contents\",!0),t||d(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"Have you ever felt responsible for someone else's sadness or anger? \\uFE0F\"}),`\n`]})}),`\n`,(0,n.jsxs)(r,{children:[(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.em,{children:\"We are responsible for our own emotions, but we cannot control those of others. Our actions and words can influence the feelings of others, but it\\u2019s important to remember that each person is responsible for their own emotional well-being.\"}),\" \",(0,n.jsx)(e.strong,{children:\"-Estarlincito-\"})]}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.em,{children:\"We don\\u2019t have to solve people\\u2019s lives or be rescuers for everyone who needs it. We can accompany, offer affection, but rescuing means carrying the burden for the other; bringing them to live in your home, feeding them, solving their life problems\\u2014it will never lead to something healthy. Each person needs space for their circumstances to help them grow. We can support, not solve.\"}),\" \",(0,n.jsx)(e.strong,{children:\"-Anamar Orihuela-\"})]})]})]})}function j(o={}){let{wrapper:e}=o.components||{};return e?(0,n.jsx)(e,Object.assign({},o,{children:(0,n.jsx)(h,o)})):h(o)}var _=j;function d(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return y(k);})();\n;return Component;"
+  },
+  "_id": "individual-responsibility-and-shared-well-being.mdx",
+  "_raw": {
+    "sourceFilePath": "individual-responsibility-and-shared-well-being.mdx",
+    "sourceFileName": "individual-responsibility-and-shared-well-being.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "individual-responsibility-and-shared-well-being"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Have you ever felt responsible for someone else's sadness or anger?",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/individual-responsibility-and-shared-well-being",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Have you ever felt responsible for someone else's sadness or anger?",
+        "images": [
+          {
+            "alt": "Illustration of a woman standing in front of a window.",
+            "url": "https://cdn.pixabay.com/photo/2020/12/21/19/05/window-5850628_1280.png",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-04-18T04:00:00.000Z",
+        "publishedTime": "2024-04-18T04:00:00.000Z",
+        "section": "Philosophy",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Individual responsibility and shared well-being",
+        "url": "https://imwriting.estarlincito.com/articles/individual-responsibility-and-shared-well-being",
+        "type": "article"
+      },
+      "title": "Individual responsibility and shared well-being"
+    },
+    "category": {
+      "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
+      "openGraph": {
+        "title": "Philosophy",
+        "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+        "images": [
+          {
+            "alt": "A collection of books on a wooden shelf.",
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy",
+        "type": "website"
+      },
+      "title": "Philosophy"
+    },
+    "pathnames": {
+      "article": "/articles/individual-responsibility-and-shared-well-being",
+      "category": "/articles/philosophy",
+      "subcategory": "/articles/philosophy/reflections"
+    },
+    "subcategory": {
+      "description": "Here you will find some of my reflections and lessons I have learned from life.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+      "openGraph": {
+        "title": "Reflections",
+        "description": "Here you will find some of my reflections and lessons I have learned from life.",
+        "images": [
+          {
+            "alt": "Young person reflecting",
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+        "type": "website"
+      },
+      "title": "Reflections"
+    }
+  },
+  "readingTime": "1 minute",
+  "wordCount": 125
+}

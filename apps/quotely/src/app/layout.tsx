@@ -1,0 +1,40 @@
+import '@/styles/themes-config.css';
+import '@radix-ui/themes/styles.css';
+import '@/styles/globals.css';
+
+import { Theme } from '@radix-ui/themes';
+import { Toaster } from '@repo/ui';
+import type React from 'react';
+
+import Footer from '@/components/layout/footer';
+import Navbar from '@/components/layout/navbar';
+import AppThemeProvider from '@/context/theme';
+import type Children from '@/types/children';
+
+const RootLayout = ({ children }: Children) => {
+  return (
+    <html lang='en' suppressHydrationWarning>
+      <body>
+        <Theme accentColor='yellow' radius='full'>
+          <Navbar />
+          {children}
+          <AppThemeProvider>
+            <Footer />
+          </AppThemeProvider>
+        </Theme>
+        <Toaster
+          position='top-center'
+          reverseOrder={false}
+          toastOptions={{
+            style: {
+              background: 'black',
+              color: 'white',
+            },
+          }}
+        />
+      </body>
+    </html>
+  );
+};
+
+export default RootLayout;

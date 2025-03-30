@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2023/01/04/09/25/boho-7696303_1280.jpg",
+  "coverAlt": "Boho Bohemian Nature",
+  "description": "Liam the bunny grew up accepting crumbs of affection, believing it was all he deserved. But with the help of a kind friend, he learned to embrace his true worth.",
+  "modifiedTime": "2024-10-06T04:00:00.000Z",
+  "publishedTime": "2024-10-06T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Liam's Journey: From Scraps to Abundance",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Liam the bunny grew up accepting crumbs of affection, believing it was all he deserved. But with the help of a kind friend, he learned to embrace his true worth.\n\n</Introduction>\n\n<Contents>\n\n<Audio\n  src='/assets/liams-journey-from-scraps-to-abundance/audio.mp3'\n  type='audio/mp3'\n/>\n\nOnce upon a time, there was a little bunny named Liam, who never really knew his parents. They had disappeared when he was just a tiny kit, leaving him to hop from one burrow to another, always under the care of different animals. Liam grew up feeling out of place, moving from one temporary family to the next. Each burrow was warm enough, but it lacked something essential: the gentle nuzzles, the comforting whispers, and the love that only a parent could give.\n\nAs he grew older, Liam learned not to expect too much from the world. He had grown accustomed to getting only small crumbs of affection—a quick pat on the head from a busy squirrel, a kind word from an owl passing by. Though he longed for more, he believed that tiny gestures were all he deserved. The other animals noticed his soft eyes, always a little sad, as if the weight of his lonely past had dimmed the sparkle in them.\n\nOne day, while Liam was nibbling on some clover near a sunny meadow, he met a kind rabbit named Clara. Clara was different from the other animals in the forest. She had a gentle energy about her, always hopping up to Liam with a bright smile and asking him how his day was going. At first, Liam didn’t think much of it—he assumed, like others before her, she would eventually forget about him or only come around when it was convenient.\n\n<Image\n  alt='Clara and liam'\n  src='/assets/liams-journey-from-scraps-to-abundance/image.jpeg'\n/>\n\nBut Clara didn’t disappear. She always seemed genuinely interested in Liam’s thoughts and how he felt. Slowly, Liam began to open up, though still wary. Then, one afternoon, as they sat together under the shade of a tall oak tree, Clara turned to him with a warm look in her eyes and said:\n\n“Liam, I’ve noticed something. You’re such a kind and wonderful bunny, but it seems like you think you only deserve a little bit of love and care. That’s just not true. You deserve so much more than the crumbs of affection that others have given you.”\n\nLiam’s little nose twitched with surprise. No one had ever told him something like that before. The words hung in the air, and for a moment, he didn’t know what to say. Deep down, he had always felt like he didn’t matter enough to expect more. But Clara’s words echoed in his heart, and slowly, a new thought started to grow—maybe he did deserve more.\n\nAs days turned into weeks, Liam began to reflect on his life. He realized he had spent too long accepting just small scraps of kindness, thinking that was all the world had to offer him. He started to understand that his worth didn’t depend on how much affection others gave him but on how much he valued himself. Encouraged by Clara’s friendship, Liam began to seek out relationships where he was truly valued.\n\nLiam also learned to set boundaries with animals who only came around when it suited them. He stopped letting others take advantage of his gentle nature, and instead, surrounded himself with those who genuinely cared about him. Clara stayed by his side, but this time, Liam no longer saw her as someone filling an empty space. She was a friend—someone who offered him affection, not because he needed it desperately, but because he had learned to give that love to himself first.\n\n<Image\n  alt='liam and the new family'\n  src='/assets/liams-journey-from-scraps-to-abundance/image1.jpeg'\n/>\n\nAs the seasons passed, Liam found a group of friends who appreciated him for the kind, thoughtful bunny he was. His once sad eyes began to sparkle with newfound confidence. The loneliness that had once clouded his heart lifted, replaced by a sense of belonging and self-worth. He had learned that true affection didn’t need to be begged for and that he was worthy of love just as he was.\n\nAnd so, in the peaceful meadows and quiet woods, Liam the bunny lived a happy life, no longer chasing after crumbs but enjoying the fullness of love and friendship that came when he finally believed he deserved it.\n\nTHE END.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var s=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var w=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var n in e)s(t,n,{get:e[n],enumerable:!0})},d=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of p(e))!g.call(t,o)&&o!==n&&s(t,o,{get:()=>e[o],enumerable:!(i=f(e,o))||i.enumerable});return t};var v=(t,e,n)=>(n=t!=null?c(w(t)):{},d(e||!t||!t.__esModule?s(n,\"default\",{value:t,enumerable:!0}):n,t)),k=t=>d(s({},\"__esModule\",{value:!0}),t);var u=y((A,l)=>{l.exports=_jsx_runtime});var C={};b(C,{default:()=>x,frontmatter:()=>j});var a=v(u()),j={title:\"Liam's Journey: From Scraps to Abundance\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"10-06-2024\",modifiedTime:\"10-06-2024\",description:\"Liam the bunny grew up accepting crumbs of affection, believing it was all he deserved. But with the help of a kind friend, he learned to embrace his true worth.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2023/01/04/09/25/boho-7696303_1280.jpg\",coverAlt:\"Boho Bohemian Nature\",check:!0,tags:[\"\"]};function m(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},t.components),{Introduction:n,Contents:i,Audio:o,Image:h}=e;return o||r(\"Audio\",!0),i||r(\"Contents\",!0),h||r(\"Image\",!0),n||r(\"Introduction\",!0),(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(n,{children:(0,a.jsxs)(e.blockquote,{children:[`\n`,(0,a.jsx)(e.p,{children:\"Liam the bunny grew up accepting crumbs of affection, believing it was all he deserved. But with the help of a kind friend, he learned to embrace his true worth.\"}),`\n`]})}),`\n`,(0,a.jsxs)(i,{children:[(0,a.jsx)(o,{src:\"/assets/liams-journey-from-scraps-to-abundance/audio.mp3\",type:\"audio/mp3\"}),(0,a.jsx)(e.p,{children:\"Once upon a time, there was a little bunny named Liam, who never really knew his parents. They had disappeared when he was just a tiny kit, leaving him to hop from one burrow to another, always under the care of different animals. Liam grew up feeling out of place, moving from one temporary family to the next. Each burrow was warm enough, but it lacked something essential: the gentle nuzzles, the comforting whispers, and the love that only a parent could give.\"}),(0,a.jsx)(e.p,{children:\"As he grew older, Liam learned not to expect too much from the world. He had grown accustomed to getting only small crumbs of affection\\u2014a quick pat on the head from a busy squirrel, a kind word from an owl passing by. Though he longed for more, he believed that tiny gestures were all he deserved. The other animals noticed his soft eyes, always a little sad, as if the weight of his lonely past had dimmed the sparkle in them.\"}),(0,a.jsx)(e.p,{children:\"One day, while Liam was nibbling on some clover near a sunny meadow, he met a kind rabbit named Clara. Clara was different from the other animals in the forest. She had a gentle energy about her, always hopping up to Liam with a bright smile and asking him how his day was going. At first, Liam didn\\u2019t think much of it\\u2014he assumed, like others before her, she would eventually forget about him or only come around when it was convenient.\"}),(0,a.jsx)(h,{alt:\"Clara and liam\",src:\"/assets/liams-journey-from-scraps-to-abundance/image.jpeg\"}),(0,a.jsx)(e.p,{children:\"But Clara didn\\u2019t disappear. She always seemed genuinely interested in Liam\\u2019s thoughts and how he felt. Slowly, Liam began to open up, though still wary. Then, one afternoon, as they sat together under the shade of a tall oak tree, Clara turned to him with a warm look in her eyes and said:\"}),(0,a.jsx)(e.p,{children:\"\\u201CLiam, I\\u2019ve noticed something. You\\u2019re such a kind and wonderful bunny, but it seems like you think you only deserve a little bit of love and care. That\\u2019s just not true. You deserve so much more than the crumbs of affection that others have given you.\\u201D\"}),(0,a.jsx)(e.p,{children:\"Liam\\u2019s little nose twitched with surprise. No one had ever told him something like that before. The words hung in the air, and for a moment, he didn\\u2019t know what to say. Deep down, he had always felt like he didn\\u2019t matter enough to expect more. But Clara\\u2019s words echoed in his heart, and slowly, a new thought started to grow\\u2014maybe he did deserve more.\"}),(0,a.jsx)(e.p,{children:\"As days turned into weeks, Liam began to reflect on his life. He realized he had spent too long accepting just small scraps of kindness, thinking that was all the world had to offer him. He started to understand that his worth didn\\u2019t depend on how much affection others gave him but on how much he valued himself. Encouraged by Clara\\u2019s friendship, Liam began to seek out relationships where he was truly valued.\"}),(0,a.jsx)(e.p,{children:\"Liam also learned to set boundaries with animals who only came around when it suited them. He stopped letting others take advantage of his gentle nature, and instead, surrounded himself with those who genuinely cared about him. Clara stayed by his side, but this time, Liam no longer saw her as someone filling an empty space. She was a friend\\u2014someone who offered him affection, not because he needed it desperately, but because he had learned to give that love to himself first.\"}),(0,a.jsx)(h,{alt:\"liam and the new family\",src:\"/assets/liams-journey-from-scraps-to-abundance/image1.jpeg\"}),(0,a.jsx)(e.p,{children:\"As the seasons passed, Liam found a group of friends who appreciated him for the kind, thoughtful bunny he was. His once sad eyes began to sparkle with newfound confidence. The loneliness that had once clouded his heart lifted, replaced by a sense of belonging and self-worth. He had learned that true affection didn\\u2019t need to be begged for and that he was worthy of love just as he was.\"}),(0,a.jsx)(e.p,{children:\"And so, in the peaceful meadows and quiet woods, Liam the bunny lived a happy life, no longer chasing after crumbs but enjoying the fullness of love and friendship that came when he finally believed he deserved it.\"}),(0,a.jsx)(e.p,{children:\"THE END.\"})]})]})}function L(t={}){let{wrapper:e}=t.components||{};return e?(0,a.jsx)(e,Object.assign({},t,{children:(0,a.jsx)(m,t)})):m(t)}var x=L;function r(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(C);})();\n;return Component;"
+  },
+  "_id": "liams-journey-from-scraps-to-abundance.mdx",
+  "_raw": {
+    "sourceFilePath": "liams-journey-from-scraps-to-abundance.mdx",
+    "sourceFileName": "liams-journey-from-scraps-to-abundance.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "liams-journey-from-scraps-to-abundance"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Liam the bunny grew up accepting crumbs of affection, believing it was all he deserved. But with the help of a kind friend, he learned to embrace his true worth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/liams-journey-from-scraps-to-abundance",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Liam the bunny grew up accepting crumbs of affection, believing it was all he deserved. But with the help of a kind friend, he learned to embrace his true worth.",
+        "images": [
+          {
+            "alt": "Boho Bohemian Nature",
+            "url": "https://cdn.pixabay.com/photo/2023/01/04/09/25/boho-7696303_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-06T04:00:00.000Z",
+        "publishedTime": "2024-10-06T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Liam's Journey: From Scraps to Abundance",
+        "url": "https://imwriting.estarlincito.com/articles/liams-journey-from-scraps-to-abundance",
+        "type": "article"
+      },
+      "title": "Liam's Journey: From Scraps to Abundance"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/liams-journey-from-scraps-to-abundance",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "4 minutes",
+  "wordCount": 729
+}

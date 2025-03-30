@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "/assets/the-journey-of-a-tech-enthusiast/image.jpeg",
+  "coverAlt": "a young boy named Estarlincito",
+  "description": "Dive into the inspiring story of Estarlincito, a young programmer who proves that passion and determination can turn dreams into reality!",
+  "modifiedTime": "2024-10-05T04:00:00.000Z",
+  "publishedTime": "2024-10-05T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "The Journey of a Tech Enthusiast",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Dive into the inspiring story of Estarlincito, a young programmer who proves that passion and determination can turn dreams into reality!\n\n</Introduction>\n\n<Contents>\n\n<Audio\n  src='/assets/the-journey-of-a-tech-enthusiast/audio.mp3'\n  type='audio/mp3'\n/>\n\n**Once upon a time**, in a vast and colorful digital kingdom, there was a young boy named Estarlincito. From a very young age, he felt a deep connection with computers and telephones. Although he didn't own a phone, his curiosity drove him to explore the technological world.\n\nIt all began when he was just seven years old. One day, he saw someone talking on the phone and wondered, \"How does that work?\" From that moment on, his mind was filled with questions and a desire to uncover the secrets hidden behind each device.\n\nBy the age of twelve, Estarlincito started to repair phones. He would take apart every gadget that came into his hands, marveling at how they worked inside. He also bought broken computers, even though he never managed to get them to turn on. However, that didn’t discourage him; at school, he used the available computers to learn and practice. There, he discovered his passion for web development and began creating web pages with HTML, even from his phone.\n\nHe loved experimenting with operating systems and solving software-related problems. The satisfaction he felt when programming and creating new web pages was immense. Each time he succeeded in getting a page to work correctly, a smile would light up his face.\n\nAs time went on, Estarlincito became a skilled programmer. Open to technology, he exchanged his knowledge and skills for money, which allowed him to continue learning and growing in his passion. He understood that when one truly wants something, it can be achieved. His story became an example for everyone around him, showing that with effort and dedication, goals can be reached.\n\n**And so**, Estarlincito, the brave programmer, continued his journey in the vast universe of technology, driven by his love for computing and the belief that dreams can come true.\n\n**The End.**\n\n</Contents>\n",
+    "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var g=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),f=(t,e)=>{for(var o in e)r(t,o,{get:e[o],enumerable:!0})},h=(t,e,o,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of u(e))!w.call(t,i)&&i!==o&&r(t,i,{get:()=>e[i],enumerable:!(a=g(e,i))||a.enumerable});return t};var v=(t,e,o)=>(o=t!=null?m(p(t)):{},h(e||!t||!t.__esModule?r(o,\"default\",{value:t,enumerable:!0}):o,t)),b=t=>h(r({},\"__esModule\",{value:!0}),t);var c=y((T,d)=>{d.exports=_jsx_runtime});var E={};f(E,{default:()=>j,frontmatter:()=>k});var n=v(c()),k={title:\"The Journey of a Tech Enthusiast\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"10-05-2024\",modifiedTime:\"10-05-2024\",description:\"Dive into the inspiring story of Estarlincito, a young programmer who proves that passion and determination can turn dreams into reality!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/the-journey-of-a-tech-enthusiast/image.jpeg\",coverAlt:\"a young boy named Estarlincito\",check:!0,tags:[\"\"]};function l(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",strong:\"strong\"},t.components),{Introduction:o,Contents:a,Audio:i}=e;return i||s(\"Audio\",!0),a||s(\"Contents\",!0),o||s(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(o,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"Dive into the inspiring story of Estarlincito, a young programmer who proves that passion and determination can turn dreams into reality!\"}),`\n`]})}),`\n`,(0,n.jsxs)(a,{children:[(0,n.jsx)(i,{src:\"/assets/the-journey-of-a-tech-enthusiast/audio.mp3\",type:\"audio/mp3\"}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:\"Once upon a time\"}),\", in a vast and colorful digital kingdom, there was a young boy named Estarlincito. From a very young age, he felt a deep connection with computers and telephones. Although he didn't own a phone, his curiosity drove him to explore the technological world.\"]}),(0,n.jsx)(e.p,{children:'It all began when he was just seven years old. One day, he saw someone talking on the phone and wondered, \"How does that work?\" From that moment on, his mind was filled with questions and a desire to uncover the secrets hidden behind each device.'}),(0,n.jsx)(e.p,{children:\"By the age of twelve, Estarlincito started to repair phones. He would take apart every gadget that came into his hands, marveling at how they worked inside. He also bought broken computers, even though he never managed to get them to turn on. However, that didn\\u2019t discourage him; at school, he used the available computers to learn and practice. There, he discovered his passion for web development and began creating web pages with HTML, even from his phone.\"}),(0,n.jsx)(e.p,{children:\"He loved experimenting with operating systems and solving software-related problems. The satisfaction he felt when programming and creating new web pages was immense. Each time he succeeded in getting a page to work correctly, a smile would light up his face.\"}),(0,n.jsx)(e.p,{children:\"As time went on, Estarlincito became a skilled programmer. Open to technology, he exchanged his knowledge and skills for money, which allowed him to continue learning and growing in his passion. He understood that when one truly wants something, it can be achieved. His story became an example for everyone around him, showing that with effort and dedication, goals can be reached.\"}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.strong,{children:\"And so\"}),\", Estarlincito, the brave programmer, continued his journey in the vast universe of technology, driven by his love for computing and the belief that dreams can come true.\"]}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.strong,{children:\"The End.\"})})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(l,t)})):l(t)}var j=x;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(E);})();\n;return Component;"
+  },
+  "_id": "the-journey-of-a-tech-enthusiast.mdx",
+  "_raw": {
+    "sourceFilePath": "the-journey-of-a-tech-enthusiast.mdx",
+    "sourceFileName": "the-journey-of-a-tech-enthusiast.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-journey-of-a-tech-enthusiast"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Dive into the inspiring story of Estarlincito, a young programmer who proves that passion and determination can turn dreams into reality!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-journey-of-a-tech-enthusiast",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Dive into the inspiring story of Estarlincito, a young programmer who proves that passion and determination can turn dreams into reality!",
+        "images": [
+          {
+            "alt": "a young boy named Estarlincito",
+            "url": "/assets/the-journey-of-a-tech-enthusiast/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-05T04:00:00.000Z",
+        "publishedTime": "2024-10-05T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "The Journey of a Tech Enthusiast",
+        "url": "https://imwriting.estarlincito.com/articles/the-journey-of-a-tech-enthusiast",
+        "type": "article"
+      },
+      "title": "The Journey of a Tech Enthusiast"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/the-journey-of-a-tech-enthusiast",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "2 minutes",
+  "wordCount": 337
+}

@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Wellness",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2024/07/23/13/08/moon-8915326_1280.png",
+  "coverAlt": "Moon Stars Paddle",
+  "description": "Stop depending on others for your happiness. Cultivate inner strength and create a fulfilling life on your own terms.",
+  "modifiedTime": "2024-10-03T04:00:00.000Z",
+  "publishedTime": "2024-10-03T04:00:00.000Z",
+  "subcategory": "Emotions",
+  "tags": [
+    ""
+  ],
+  "title": "Empower Your Happiness: Take Control of Your Wellbeing",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Stop depending on others for your happiness. Cultivate inner strength and create a fulfilling life on your own terms.\n\n</Introduction>\n\n<Contents>\n\nTo truly thrive, give yourself the love you've been seeking from others—that is the essence of self-love.\n\nIf you've ever felt abandoned, it's time to stop seeking affection outside yourself. The love and validation you need are already within you, waiting to be embraced.\n\nRelease the anxiety of begging for small scraps of affection. Don’t let people into your life who approach only for their own gain—unless they're paying for your services. Instead, surround yourself with those who genuinely care, add value, and offer something real and meaningful.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var f=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var y=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),v=(o,e)=>{for(var n in e)s(o,n,{get:e[n],enumerable:!0})},a=(o,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of h(e))!m.call(o,i)&&i!==n&&s(o,i,{get:()=>e[i],enumerable:!(r=p(e,i))||r.enumerable});return o};var b=(o,e,n)=>(n=o!=null?f(g(o)):{},a(e||!o||!o.__esModule?s(n,\"default\",{value:o,enumerable:!0}):n,o)),x=o=>a(s({},\"__esModule\",{value:!0}),o);var c=y((E,l)=>{l.exports=_jsx_runtime});var k={};v(k,{default:()=>_,frontmatter:()=>w});var t=b(c()),w={title:\"Empower Your Happiness: Take Control of Your Wellbeing\",category:\"Wellness\",subcategory:\"Emotions\",publishedTime:\"10-03-2024\",modifiedTime:\"10-03-2024\",description:\"Stop depending on others for your happiness. Cultivate inner strength and create a fulfilling life on your own terms.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2024/07/23/13/08/moon-8915326_1280.png\",coverAlt:\"Moon Stars Paddle\",check:!0,tags:[\"\"]};function u(o){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},o.components),{Introduction:n,Contents:r}=e;return r||d(\"Contents\",!0),n||d(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"Stop depending on others for your happiness. Cultivate inner strength and create a fulfilling life on your own terms.\"}),`\n`]})}),`\n`,(0,t.jsxs)(r,{children:[(0,t.jsx)(e.p,{children:\"To truly thrive, give yourself the love you've been seeking from others\\u2014that is the essence of self-love.\"}),(0,t.jsx)(e.p,{children:\"If you've ever felt abandoned, it's time to stop seeking affection outside yourself. The love and validation you need are already within you, waiting to be embraced.\"}),(0,t.jsx)(e.p,{children:\"Release the anxiety of begging for small scraps of affection. Don\\u2019t let people into your life who approach only for their own gain\\u2014unless they're paying for your services. Instead, surround yourself with those who genuinely care, add value, and offer something real and meaningful.\"})]})]})}function j(o={}){let{wrapper:e}=o.components||{};return e?(0,t.jsx)(e,Object.assign({},o,{children:(0,t.jsx)(u,o)})):u(o)}var _=j;function d(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(k);})();\n;return Component;"
+  },
+  "_id": "empower-your-happiness-take-control-of-your-wellbeing.mdx",
+  "_raw": {
+    "sourceFilePath": "empower-your-happiness-take-control-of-your-wellbeing.mdx",
+    "sourceFileName": "empower-your-happiness-take-control-of-your-wellbeing.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "empower-your-happiness-take-control-of-your-wellbeing"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Stop depending on others for your happiness. Cultivate inner strength and create a fulfilling life on your own terms.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/empower-your-happiness-take-control-of-your-wellbeing",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Stop depending on others for your happiness. Cultivate inner strength and create a fulfilling life on your own terms.",
+        "images": [
+          {
+            "alt": "Moon Stars Paddle",
+            "url": "https://cdn.pixabay.com/photo/2024/07/23/13/08/moon-8915326_1280.png",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-03T04:00:00.000Z",
+        "publishedTime": "2024-10-03T04:00:00.000Z",
+        "section": "Wellness",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Empower Your Happiness: Take Control of Your Wellbeing",
+        "url": "https://imwriting.estarlincito.com/articles/empower-your-happiness-take-control-of-your-wellbeing",
+        "type": "article"
+      },
+      "title": "Empower Your Happiness: Take Control of Your Wellbeing"
+    },
+    "category": {
+      "description": "Discover the path to a full and balanced life in our wellness blog. We explore self-care practices, tips for a healthy mind and body, and guide you on the journey to holistic wellness.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/wellness",
+      "openGraph": {
+        "title": "Wellness",
+        "description": "Discover the path to a full and balanced life in our wellness blog. We explore self-care practices, tips for a healthy mind and body, and guide you on the journey to holistic wellness.",
+        "images": [
+          {
+            "alt": "Woman stretching at the top of a mountain during sunrise",
+            "url": "https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/wellness",
+        "type": "website"
+      },
+      "title": "Wellness"
+    },
+    "pathnames": {
+      "article": "/articles/empower-your-happiness-take-control-of-your-wellbeing",
+      "category": "/articles/wellness",
+      "subcategory": "/articles/wellness/emotions"
+    },
+    "subcategory": {
+      "description": "Emotions are our palette of life. Explore with us the power and depth of each feeling in this space dedicated to understanding and managing our emotions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/wellness/emotions",
+      "openGraph": {
+        "title": "Emotions",
+        "description": "Emotions are our palette of life. Explore with us the power and depth of each feeling in this space dedicated to understanding and managing our emotions.",
+        "images": [
+          {
+            "alt": "A woman looking out of a window with blinds",
+            "url": "https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/wellness/emotions",
+        "type": "website"
+      },
+      "title": "Emotions"
+    }
+  },
+  "readingTime": "1 minute",
+  "wordCount": 114
+}

@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2023/11/15/08/21/bike-8389496_1280.jpg",
+  "coverAlt": "woman traveling by bicycle.",
+  "description": "Good people are beacons of light in relationships, shining even in the darkest moments.",
+  "modifiedTime": "2023-11-20T04:00:00.000Z",
+  "publishedTime": "2023-11-20T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "No matter what you're going through, keep being a good person",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Good people are beacons of light in relationships, shining even in the darkest moments.\n\n</Introduction>\n\n<Contents>\n\nWhy should you be carried away by hate, rejection, or the stompings society gives you? Why should you change and become a bad person when true satisfaction comes from knowing that you are doing the right thing? When joy springs from your heart despite someone hurting you, you continue to show that kindness and good ethics. People love you because they know they can trust you; because in your soul, there is no malice, only goodness.\n\nUnintentionally, you realize that someone needs a listening ear, and with love, you lend them yours; you listen and empathize with them.\n\nWithout saying a word, you understand that certain souls need a breath of life because they are going through difficult times and may be thinking that the best option is to die. But there you are to help them understand that the most important thing is to be alive, to live life, and to breathe every second. You are there to tell that person not to let their ego blind them by holding a grudge against their neighbor, because the truth is that it only harms oneself and the other person.\n\n<Image\n  alt='Woman with beautiful flowers in her hand.'\n  src='https://cdn.pixabay.com/photo/2024/04/04/11/29/woman-8674934_1280.png'\n/>\n\nYou are there to remind them that if your love was not reciprocated, it’s okay, and that the person who rejected you is not a bad person; they simply want someone different in their life. You have to remember that they are free to choose whom they want in their life, and that people in a relationship do not need each other but prefer each other.\n\nSo, you don’t have to hold a grudge against that person for not fulfilling your dreams, nor treat them with indifference; just let them go. Someone will find you when you least expect it.\n\n> _&quot;I don’t know any other sign of superiority than kindness&quot;_ <br/> **-Ludwig Van Beethoven-**\n\nWhy should you speak badly of someone who spoke poorly to you, without knowing exactly what motivated them to express themselves that way with you? You know we are human, and as humans, sometimes when we are angry with someone, we want to take it out on everyone.\n\nMy message with these words is to keep looking ahead, despite the difficulties; never stop being a good person, continue giving and doing things with love. Never regret your kindness, even if sometimes you feel it is not recognized or valued by others. Your light does not depend on how others perceive you, but on how you illuminate each interaction and the impact you leave in the world.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var a=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var y=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of y(e))!p.call(t,i)&&i!==n&&a(t,i,{get:()=>e[i],enumerable:!(r=m(e,i))||r.enumerable});return t};var b=(t,e,n)=>(n=t!=null?c(g(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),v=t=>s(a({},\"__esModule\",{value:!0}),t);var u=f((C,d)=>{d.exports=_jsx_runtime});var _={};w(_,{default:()=>j,frontmatter:()=>k});var o=b(u()),k={title:\"No matter what you're going through, keep being a good person\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"11-20-2023\",modifiedTime:\"11-20-2023\",description:\"Good people are beacons of light in relationships, shining even in the darkest moments.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2023/11/15/08/21/bike-8389496_1280.jpg\",coverAlt:\"woman traveling by bicycle.\",check:!0,tags:[\"\"]};function l(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},t.components),{Introduction:n,Contents:r,Image:i}=e;return r||h(\"Contents\",!0),i||h(\"Image\",!0),n||h(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"Good people are beacons of light in relationships, shining even in the darkest moments.\"}),`\n`]})}),`\n`,(0,o.jsxs)(r,{children:[(0,o.jsx)(e.p,{children:\"Why should you be carried away by hate, rejection, or the stompings society gives you? Why should you change and become a bad person when true satisfaction comes from knowing that you are doing the right thing? When joy springs from your heart despite someone hurting you, you continue to show that kindness and good ethics. People love you because they know they can trust you; because in your soul, there is no malice, only goodness.\"}),(0,o.jsx)(e.p,{children:\"Unintentionally, you realize that someone needs a listening ear, and with love, you lend them yours; you listen and empathize with them.\"}),(0,o.jsx)(e.p,{children:\"Without saying a word, you understand that certain souls need a breath of life because they are going through difficult times and may be thinking that the best option is to die. But there you are to help them understand that the most important thing is to be alive, to live life, and to breathe every second. You are there to tell that person not to let their ego blind them by holding a grudge against their neighbor, because the truth is that it only harms oneself and the other person.\"}),(0,o.jsx)(i,{alt:\"Woman with beautiful flowers in her hand.\",src:\"https://cdn.pixabay.com/photo/2024/04/04/11/29/woman-8674934_1280.png\"}),(0,o.jsx)(e.p,{children:\"You are there to remind them that if your love was not reciprocated, it\\u2019s okay, and that the person who rejected you is not a bad person; they simply want someone different in their life. You have to remember that they are free to choose whom they want in their life, and that people in a relationship do not need each other but prefer each other.\"}),(0,o.jsx)(e.p,{children:\"So, you don\\u2019t have to hold a grudge against that person for not fulfilling your dreams, nor treat them with indifference; just let them go. Someone will find you when you least expect it.\"}),(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsxs)(e.p,{children:[(0,o.jsx)(e.em,{children:'\"I don\\u2019t know any other sign of superiority than kindness\"'}),\" \",(0,o.jsx)(\"br\",{}),\" \",(0,o.jsx)(e.strong,{children:\"-Ludwig Van Beethoven-\"})]}),`\n`]}),(0,o.jsx)(e.p,{children:\"Why should you speak badly of someone who spoke poorly to you, without knowing exactly what motivated them to express themselves that way with you? You know we are human, and as humans, sometimes when we are angry with someone, we want to take it out on everyone.\"}),(0,o.jsx)(e.p,{children:\"My message with these words is to keep looking ahead, despite the difficulties; never stop being a good person, continue giving and doing things with love. Never regret your kindness, even if sometimes you feel it is not recognized or valued by others. Your light does not depend on how others perceive you, but on how you illuminate each interaction and the impact you leave in the world.\"})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(l,t)})):l(t)}var j=x;function h(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(_);})();\n;return Component;"
+  },
+  "_id": "no-matter-what-youre-going-through-keep-being-a-good-person.mdx",
+  "_raw": {
+    "sourceFilePath": "no-matter-what-youre-going-through-keep-being-a-good-person.mdx",
+    "sourceFileName": "no-matter-what-youre-going-through-keep-being-a-good-person.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "no-matter-what-youre-going-through-keep-being-a-good-person"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Good people are beacons of light in relationships, shining even in the darkest moments.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/no-matter-what-youre-going-through-keep-being-a-good-person",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Good people are beacons of light in relationships, shining even in the darkest moments.",
+        "images": [
+          {
+            "alt": "woman traveling by bicycle.",
+            "url": "https://cdn.pixabay.com/photo/2023/11/15/08/21/bike-8389496_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-11-20T04:00:00.000Z",
+        "publishedTime": "2023-11-20T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "No matter what you're going through, keep being a good person",
+        "url": "https://imwriting.estarlincito.com/articles/no-matter-what-youre-going-through-keep-being-a-good-person",
+        "type": "article"
+      },
+      "title": "No matter what you're going through, keep being a good person"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/no-matter-what-youre-going-through-keep-being-a-good-person",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 451
+}

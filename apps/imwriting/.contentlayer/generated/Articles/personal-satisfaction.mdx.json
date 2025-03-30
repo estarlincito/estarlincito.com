@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2023/12/20/16/21/baking-8460297_1280.png",
+  "coverAlt": "Man baking Christmas cookies.",
+  "description": "How do people refer to that when things are going well in life?",
+  "modifiedTime": "2024-04-22T04:00:00.000Z",
+  "publishedTime": "2024-02-11T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Personal Satisfaction",
+  "body": {
+    "raw": "\n<Introduction>\n\n> How do people refer to that when things are going well in life?\n\n</Introduction>\n\n<Contents>\n\nThat moment when you feel that everything is going well in life, you’re happy, and you feel comfortable with what you have. If you only have plain rice, you enjoy it fully, but if it’s rice with chicken, you enjoy it even more. You feel good in the clothes you wear because you’re no longer dressing to impress the world; now you do it for yourself.\n\nYou have the freedom to do what you want, as you have freed yourself from the religious filters that once tormented you, telling you what was right and what was wrong. Before, you followed the opinions of others instead of your own. Living happily means living without filters, living freely. You’ve set aside your prejudices, those that prevented you from accepting others because they didn’t fit your religious ideals. Now you understand that each person has their own truth and that we should accept one another as we are, even if our ideals differ.\n\n<Image\n  alt='man reading'\n  src='https://cdn.pixabay.com/photo/2024/04/09/12/01/man-8685735_1280.png'\n/>\n\nYou know that not everyone will accept you, which is why you don’t seek external validation; you validate yourself. You are grateful for good friends, those who stand by you in good times and bad, like your best friend, your mother, who, even if you leave her on read, is driven by her love for you to reach out again, without resentment.\n\nYou no longer need, you now prefer. You don’t need an iPhone; you prefer it. You control your sexual desires, so you don’t need sex; you prefer it. You don’t need a house, someone to accompany you in life, cars, or other things; you simply prefer them. This keeps you grounded because if you don’t get them, you will still be happy anyway. Needing comes from dependence, while preferring means it doesn’t matter whether you achieve it or not.\n\nWhen everything is going well in life, and you live it as a bold adventure—because life is precisely that, a bold adventure or nothing—with its challenges and obstacles, you are there to face them and move forward, trusting in that inner magic that helps you focus and reach your goals. In the end, you feel that satisfaction, that beautiful sensation that you’re doing things right.\n\n> _&quot;True wealth lies in living without filters, preferring authenticity over external validation, and finding happiness in the simple things in life.&quot;_<br/>**-Estarlincito-**\n\n<Image\n  alt='man meditating'\n  src='https://cdn.pixabay.com/photo/2023/11/15/08/20/meditation-8389494_1280.jpg'\n/>\n\nYou do the right thing because it makes you feel good and keeps your conscience clear. What’s the point of doing wrong for financial gain, only to be tormented or scared by what you did? No, the best thing is to have a peaceful mind, even if you have little financially, as that brings you mental peace. You may have little, but you enjoy it more than someone who has a lot but lives in torment. That well-being of knowing that people can trust someone like you is invaluable. It’s true that you need money, but that need doesn’t lead you to do wrong. This gives people the chance to trust your ethics, as you prefer to do what’s right over what’s wrong. In the end, that brings immense well-being. It’s also part of that true personal satisfaction.\n\nBeing a unique person, unafraid of what others say, having your own style, being genuine and true, telling the truth even to your best friends because you prefer the truth—even if it hurts—over a harmful lie, that vibe that keeps you well and brings joy to everyone you meet, that which lies deep in your soul, being a good person without fear of speaking up or making mistakes; because if you do, you know how to apologize. All of that motivates you to feel good, knowing you’re doing what’s right.\n\nMoreover, isn’t time the true luxury? Doing with it whatever you please, having the freedom to live peacefully, making life your best friend and enjoying every second of it.\n\nTrue fulfillment lies in embracing our authenticity, freeing ourselves from the filters imposed by external expectations, and finding happiness in life’s simple wonders. By living with integrity, facing challenges with courage, and prioritizing honesty and well-being over the pursuit of material wealth, we cultivate a meaningful and satisfying existence. Let’s inspire others to embrace their uniqueness, live passionately, and appreciate each moment as a bold and precious adventure.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var r=Object.defineProperty;var y=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var m=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),w=(o,e)=>{for(var n in e)r(o,n,{get:e[n],enumerable:!0})},h=(o,e,n,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of g(e))!p.call(o,i)&&i!==n&&r(o,i,{get:()=>e[i],enumerable:!(a=y(e,i))||a.enumerable});return o};var v=(o,e,n)=>(n=o!=null?c(f(o)):{},h(e||!o||!o.__esModule?r(n,\"default\",{value:o,enumerable:!0}):n,o)),b=o=>h(r({},\"__esModule\",{value:!0}),o);var u=m((I,l)=>{l.exports=_jsx_runtime});var Y={};w(Y,{default:()=>j,frontmatter:()=>k});var t=v(u()),k={title:\"Personal Satisfaction\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"02-11-2024\",modifiedTime:\"04-22-2024\",description:\"How do people refer to that when things are going well in life?\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2023/12/20/16/21/baking-8460297_1280.png\",coverAlt:\"Man baking Christmas cookies.\",check:!0,tags:[\"\"]};function d(o){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},o.components),{Introduction:n,Contents:a,Image:i}=e;return a||s(\"Contents\",!0),i||s(\"Image\",!0),n||s(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"How do people refer to that when things are going well in life?\"}),`\n`]})}),`\n`,(0,t.jsxs)(a,{children:[(0,t.jsx)(e.p,{children:\"That moment when you feel that everything is going well in life, you\\u2019re happy, and you feel comfortable with what you have. If you only have plain rice, you enjoy it fully, but if it\\u2019s rice with chicken, you enjoy it even more. You feel good in the clothes you wear because you\\u2019re no longer dressing to impress the world; now you do it for yourself.\"}),(0,t.jsx)(e.p,{children:\"You have the freedom to do what you want, as you have freed yourself from the religious filters that once tormented you, telling you what was right and what was wrong. Before, you followed the opinions of others instead of your own. Living happily means living without filters, living freely. You\\u2019ve set aside your prejudices, those that prevented you from accepting others because they didn\\u2019t fit your religious ideals. Now you understand that each person has their own truth and that we should accept one another as we are, even if our ideals differ.\"}),(0,t.jsx)(i,{alt:\"man reading\",src:\"https://cdn.pixabay.com/photo/2024/04/09/12/01/man-8685735_1280.png\"}),(0,t.jsx)(e.p,{children:\"You know that not everyone will accept you, which is why you don\\u2019t seek external validation; you validate yourself. You are grateful for good friends, those who stand by you in good times and bad, like your best friend, your mother, who, even if you leave her on read, is driven by her love for you to reach out again, without resentment.\"}),(0,t.jsx)(e.p,{children:\"You no longer need, you now prefer. You don\\u2019t need an iPhone; you prefer it. You control your sexual desires, so you don\\u2019t need sex; you prefer it. You don\\u2019t need a house, someone to accompany you in life, cars, or other things; you simply prefer them. This keeps you grounded because if you don\\u2019t get them, you will still be happy anyway. Needing comes from dependence, while preferring means it doesn\\u2019t matter whether you achieve it or not.\"}),(0,t.jsx)(e.p,{children:\"When everything is going well in life, and you live it as a bold adventure\\u2014because life is precisely that, a bold adventure or nothing\\u2014with its challenges and obstacles, you are there to face them and move forward, trusting in that inner magic that helps you focus and reach your goals. In the end, you feel that satisfaction, that beautiful sensation that you\\u2019re doing things right.\"}),(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:'\"True wealth lies in living without filters, preferring authenticity over external validation, and finding happiness in the simple things in life.\"'}),(0,t.jsx)(\"br\",{}),(0,t.jsx)(e.strong,{children:\"-Estarlincito-\"})]}),`\n`]}),(0,t.jsx)(i,{alt:\"man meditating\",src:\"https://cdn.pixabay.com/photo/2023/11/15/08/20/meditation-8389494_1280.jpg\"}),(0,t.jsx)(e.p,{children:\"You do the right thing because it makes you feel good and keeps your conscience clear. What\\u2019s the point of doing wrong for financial gain, only to be tormented or scared by what you did? No, the best thing is to have a peaceful mind, even if you have little financially, as that brings you mental peace. You may have little, but you enjoy it more than someone who has a lot but lives in torment. That well-being of knowing that people can trust someone like you is invaluable. It\\u2019s true that you need money, but that need doesn\\u2019t lead you to do wrong. This gives people the chance to trust your ethics, as you prefer to do what\\u2019s right over what\\u2019s wrong. In the end, that brings immense well-being. It\\u2019s also part of that true personal satisfaction.\"}),(0,t.jsx)(e.p,{children:\"Being a unique person, unafraid of what others say, having your own style, being genuine and true, telling the truth even to your best friends because you prefer the truth\\u2014even if it hurts\\u2014over a harmful lie, that vibe that keeps you well and brings joy to everyone you meet, that which lies deep in your soul, being a good person without fear of speaking up or making mistakes; because if you do, you know how to apologize. All of that motivates you to feel good, knowing you\\u2019re doing what\\u2019s right.\"}),(0,t.jsx)(e.p,{children:\"Moreover, isn\\u2019t time the true luxury? Doing with it whatever you please, having the freedom to live peacefully, making life your best friend and enjoying every second of it.\"}),(0,t.jsx)(e.p,{children:\"True fulfillment lies in embracing our authenticity, freeing ourselves from the filters imposed by external expectations, and finding happiness in life\\u2019s simple wonders. By living with integrity, facing challenges with courage, and prioritizing honesty and well-being over the pursuit of material wealth, we cultivate a meaningful and satisfying existence. Let\\u2019s inspire others to embrace their uniqueness, live passionately, and appreciate each moment as a bold and precious adventure.\"})]})]})}function x(o={}){let{wrapper:e}=o.components||{};return e?(0,t.jsx)(e,Object.assign({},o,{children:(0,t.jsx)(d,o)})):d(o)}var j=x;function s(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(Y);})();\n;return Component;"
+  },
+  "_id": "personal-satisfaction.mdx",
+  "_raw": {
+    "sourceFilePath": "personal-satisfaction.mdx",
+    "sourceFileName": "personal-satisfaction.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "personal-satisfaction"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "How do people refer to that when things are going well in life?",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/personal-satisfaction",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "How do people refer to that when things are going well in life?",
+        "images": [
+          {
+            "alt": "Man baking Christmas cookies.",
+            "url": "https://cdn.pixabay.com/photo/2023/12/20/16/21/baking-8460297_1280.png",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-04-22T04:00:00.000Z",
+        "publishedTime": "2024-02-11T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Personal Satisfaction",
+        "url": "https://imwriting.estarlincito.com/articles/personal-satisfaction",
+        "type": "article"
+      },
+      "title": "Personal Satisfaction"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/personal-satisfaction",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "4 minutes",
+  "wordCount": 743
+}

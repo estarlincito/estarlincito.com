@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "/assets/practicing-future-simple-paths-of-possibility/image.jpeg",
+  "coverAlt": "a vibrant village at the edge of a vast forest",
+  "description": "Look ahead to the endless possibilities that await with the future simple tense. Visualize the steps you’ll take toward a brighter future.",
+  "modifiedTime": "2024-12-13T04:00:00.000Z",
+  "publishedTime": "2024-12-13T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Practicing Future Simple: Paths of Possibility",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Look ahead to the endless possibilities that await with the future simple tense. Visualize the steps you’ll take toward a brighter future.\n\n</Introduction>\n\n<Contents>\n\nIn a vibrant village at the edge of a vast forest, people were planning their futures with hope and determination. **I will follow** my dreams no matter the obstacles. **You will explore** new horizons with courage. **He will create** a masterpiece that inspires the world. **She will overcome** her fears and embrace her true self. **It will guide** us, this compass we all share. **We will build** a brighter tomorrow together. **They will share** their stories and light the way for others.\n\nYet, there were doubts to confront. **I will not abandon** my goals even when the road seems hard. **You will not give up**, even if success feels distant. **He will not ignore** the lessons of his past. **She will not let** fear dictate her actions. **It will not falter**, this compass pointing us toward our destiny. **We will not forget** the strength of unity. **They will not stop** until they reach their goals.\n\nThe village leader asked thought-provoking questions. **Will I find** the courage to take the first step? **Will you seize** the opportunities that come your way? **Will he fulfill** the potential he carries within? **Will she inspire** others with her actions? **Will it continue**, this guiding force that leads us forward? **Will we create** a future full of hope and joy? **Will they become** the leaders of a better world?\n\nSome questions delved deeper into hidden fears and aspirations. **Will I not achieve** what I set out to do? **Will you not discover** your unique path? **Will he not learn** from the challenges he faces? **Will she not find** her strength in adversity? **Will it not shine**, this light that guides us in the dark? **Will we not realize** our collective power to create change? **Will they not succeed**, given their determination and resilience?\n\n<Image\n  alt='a vibrant village at the edge of a vast forest'\n  src='/assets/practicing-future-simple-paths-of-possibility/image1.jpeg'\n/>\n\nAs the evening settled over the village, the people shared their visions for the future. **I will take** the first step tomorrow with confidence. **You will inspire** others with your kindness. **He will design** a plan that changes lives. **She will embrace** every opportunity with open arms. **It will remain**, the compass, steady and true. **We will celebrate** our progress, no matter how small. **They will carry** the lessons of today into the future.\n\nThe villagers realized that the future simple tense captured the essence of hope, commitment, and action. Every promise they made to themselves and to one another became a foundation for the lives they would build.\n\nTHE END.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var g=Object.create;var s=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var m=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),y=(i,e)=>{for(var r in e)s(i,r,{get:e[r],enumerable:!0})},a=(i,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of p(e))!w.call(i,n)&&n!==r&&s(i,n,{get:()=>e[n],enumerable:!(o=u(e,n))||o.enumerable});return i};var v=(i,e,r)=>(r=i!=null?g(f(i)):{},a(e||!i||!i.__esModule?s(r,\"default\",{value:i,enumerable:!0}):r,i)),b=i=>a(s({},\"__esModule\",{value:!0}),i);var c=m((T,h)=>{h.exports=_jsx_runtime});var j={};y(j,{default:()=>I,frontmatter:()=>W});var t=v(c()),W={title:\"Practicing Future Simple: Paths of Possibility\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"12-13-2024\",modifiedTime:\"12-13-2024\",description:\"Look ahead to the endless possibilities that await with the future simple tense. Visualize the steps you\\u2019ll take toward a brighter future.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/practicing-future-simple-paths-of-possibility/image.jpeg\",coverAlt:\"a vibrant village at the edge of a vast forest\",check:!0,tags:[\"\"]};function d(i){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",strong:\"strong\"},i.components),{Introduction:r,Contents:o,Image:n}=e;return o||l(\"Contents\",!0),n||l(\"Image\",!0),r||l(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(r,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"Look ahead to the endless possibilities that await with the future simple tense. Visualize the steps you\\u2019ll take toward a brighter future.\"}),`\n`]})}),`\n`,(0,t.jsxs)(o,{children:[(0,t.jsxs)(e.p,{children:[\"In a vibrant village at the edge of a vast forest, people were planning their futures with hope and determination. \",(0,t.jsx)(e.strong,{children:\"I will follow\"}),\" my dreams no matter the obstacles. \",(0,t.jsx)(e.strong,{children:\"You will explore\"}),\" new horizons with courage. \",(0,t.jsx)(e.strong,{children:\"He will create\"}),\" a masterpiece that inspires the world. \",(0,t.jsx)(e.strong,{children:\"She will overcome\"}),\" her fears and embrace her true self. \",(0,t.jsx)(e.strong,{children:\"It will guide\"}),\" us, this compass we all share. \",(0,t.jsx)(e.strong,{children:\"We will build\"}),\" a brighter tomorrow together. \",(0,t.jsx)(e.strong,{children:\"They will share\"}),\" their stories and light the way for others.\"]}),(0,t.jsxs)(e.p,{children:[\"Yet, there were doubts to confront. \",(0,t.jsx)(e.strong,{children:\"I will not abandon\"}),\" my goals even when the road seems hard. \",(0,t.jsx)(e.strong,{children:\"You will not give up\"}),\", even if success feels distant. \",(0,t.jsx)(e.strong,{children:\"He will not ignore\"}),\" the lessons of his past. \",(0,t.jsx)(e.strong,{children:\"She will not let\"}),\" fear dictate her actions. \",(0,t.jsx)(e.strong,{children:\"It will not falter\"}),\", this compass pointing us toward our destiny. \",(0,t.jsx)(e.strong,{children:\"We will not forget\"}),\" the strength of unity. \",(0,t.jsx)(e.strong,{children:\"They will not stop\"}),\" until they reach their goals.\"]}),(0,t.jsxs)(e.p,{children:[\"The village leader asked thought-provoking questions. \",(0,t.jsx)(e.strong,{children:\"Will I find\"}),\" the courage to take the first step? \",(0,t.jsx)(e.strong,{children:\"Will you seize\"}),\" the opportunities that come your way? \",(0,t.jsx)(e.strong,{children:\"Will he fulfill\"}),\" the potential he carries within? \",(0,t.jsx)(e.strong,{children:\"Will she inspire\"}),\" others with her actions? \",(0,t.jsx)(e.strong,{children:\"Will it continue\"}),\", this guiding force that leads us forward? \",(0,t.jsx)(e.strong,{children:\"Will we create\"}),\" a future full of hope and joy? \",(0,t.jsx)(e.strong,{children:\"Will they become\"}),\" the leaders of a better world?\"]}),(0,t.jsxs)(e.p,{children:[\"Some questions delved deeper into hidden fears and aspirations. \",(0,t.jsx)(e.strong,{children:\"Will I not achieve\"}),\" what I set out to do? \",(0,t.jsx)(e.strong,{children:\"Will you not discover\"}),\" your unique path? \",(0,t.jsx)(e.strong,{children:\"Will he not learn\"}),\" from the challenges he faces? \",(0,t.jsx)(e.strong,{children:\"Will she not find\"}),\" her strength in adversity? \",(0,t.jsx)(e.strong,{children:\"Will it not shine\"}),\", this light that guides us in the dark? \",(0,t.jsx)(e.strong,{children:\"Will we not realize\"}),\" our collective power to create change? \",(0,t.jsx)(e.strong,{children:\"Will they not succeed\"}),\", given their determination and resilience?\"]}),(0,t.jsx)(n,{alt:\"a vibrant village at the edge of a vast forest\",src:\"/assets/practicing-future-simple-paths-of-possibility/image1.jpeg\"}),(0,t.jsxs)(e.p,{children:[\"As the evening settled over the village, the people shared their visions for the future. \",(0,t.jsx)(e.strong,{children:\"I will take\"}),\" the first step tomorrow with confidence. \",(0,t.jsx)(e.strong,{children:\"You will inspire\"}),\" others with your kindness. \",(0,t.jsx)(e.strong,{children:\"He will design\"}),\" a plan that changes lives. \",(0,t.jsx)(e.strong,{children:\"She will embrace\"}),\" every opportunity with open arms. \",(0,t.jsx)(e.strong,{children:\"It will remain\"}),\", the compass, steady and true. \",(0,t.jsx)(e.strong,{children:\"We will celebrate\"}),\" our progress, no matter how small. \",(0,t.jsx)(e.strong,{children:\"They will carry\"}),\" the lessons of today into the future.\"]}),(0,t.jsx)(e.p,{children:\"The villagers realized that the future simple tense captured the essence of hope, commitment, and action. Every promise they made to themselves and to one another became a foundation for the lives they would build.\"}),(0,t.jsx)(e.p,{children:\"THE END.\"})]})]})}function k(i={}){let{wrapper:e}=i.components||{};return e?(0,t.jsx)(e,Object.assign({},i,{children:(0,t.jsx)(d,i)})):d(i)}var I=k;function l(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(j);})();\n;return Component;"
+  },
+  "_id": "practicing-future-simple-paths-of-possibility.mdx",
+  "_raw": {
+    "sourceFilePath": "practicing-future-simple-paths-of-possibility.mdx",
+    "sourceFileName": "practicing-future-simple-paths-of-possibility.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "practicing-future-simple-paths-of-possibility"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Look ahead to the endless possibilities that await with the future simple tense. Visualize the steps you’ll take toward a brighter future.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/practicing-future-simple-paths-of-possibility",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Look ahead to the endless possibilities that await with the future simple tense. Visualize the steps you’ll take toward a brighter future.",
+        "images": [
+          {
+            "alt": "a vibrant village at the edge of a vast forest",
+            "url": "/assets/practicing-future-simple-paths-of-possibility/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-12-13T04:00:00.000Z",
+        "publishedTime": "2024-12-13T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Practicing Future Simple: Paths of Possibility",
+        "url": "https://imwriting.estarlincito.com/articles/practicing-future-simple-paths-of-possibility",
+        "type": "article"
+      },
+      "title": "Practicing Future Simple: Paths of Possibility"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/practicing-future-simple-paths-of-possibility",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 451
+}

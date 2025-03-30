@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Philosophy",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2024/07/25/14/06/team-8921427_1280.png",
+  "coverAlt": "Team Feedback Office",
+  "description": "Surround yourself with those who uplift you, and watch how their energy helps you achieve your dreams and goals.",
+  "modifiedTime": "2024-10-07T04:00:00.000Z",
+  "publishedTime": "2024-10-07T04:00:00.000Z",
+  "subcategory": "Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Cultivating a Supportive Circle for Personal Growth",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Surround yourself with those who uplift you, and watch how their energy helps you achieve your dreams and goals.\n\n</Introduction>\n\n<Contents>\n\n_Surround yourself with those who not only believe in your potential but actively encourage and uplift you towards your dreams. When you're in the company of people who genuinely want to see you grow and succeed, their support becomes a powerful force, aligning you with your purpose and drawing your goals closer. The energy you create together not only fuels your progress but also makes the journey toward your aspirations feel attainable and inevitable._\n\n_In this nurturing environment, challenges become opportunities for growth, and setbacks transform into stepping stones. With the right people by your side, you cultivate resilience and deepen your connections, making the pursuit of your dreams not just an individual journey but a shared adventure. Choose your circle wisely, and watch how it amplifies your path to success!_\n\n</Contents>\n",
+    "code": "var Component=(()=>{var d=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var y=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),w=(o,e)=>{for(var n in e)a(o,n,{get:e[n],enumerable:!0})},s=(o,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of y(e))!g.call(o,i)&&i!==n&&a(o,i,{get:()=>e[i],enumerable:!(r=p(e,i))||r.enumerable});return o};var b=(o,e,n)=>(n=o!=null?d(m(o)):{},s(e||!o||!o.__esModule?a(n,\"default\",{value:o,enumerable:!0}):n,o)),v=o=>s(a({},\"__esModule\",{value:!0}),o);var c=f((M,u)=>{u.exports=_jsx_runtime});var _={};w(_,{default:()=>k,frontmatter:()=>j});var t=b(c()),j={title:\"Cultivating a Supportive Circle for Personal Growth\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"10-07-2024\",modifiedTime:\"10-07-2024\",description:\"Surround yourself with those who uplift you, and watch how their energy helps you achieve your dreams and goals.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2024/07/25/14/06/team-8921427_1280.png\",coverAlt:\"Team Feedback Office\",check:!0,tags:[\"\"]};function l(o){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},o.components),{Introduction:n,Contents:r}=e;return r||h(\"Contents\",!0),n||h(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"Surround yourself with those who uplift you, and watch how their energy helps you achieve your dreams and goals.\"}),`\n`]})}),`\n`,(0,t.jsxs)(r,{children:[(0,t.jsx)(e.p,{children:(0,t.jsx)(e.em,{children:\"Surround yourself with those who not only believe in your potential but actively encourage and uplift you towards your dreams. When you're in the company of people who genuinely want to see you grow and succeed, their support becomes a powerful force, aligning you with your purpose and drawing your goals closer. The energy you create together not only fuels your progress but also makes the journey toward your aspirations feel attainable and inevitable.\"})}),(0,t.jsx)(e.p,{children:(0,t.jsx)(e.em,{children:\"In this nurturing environment, challenges become opportunities for growth, and setbacks transform into stepping stones. With the right people by your side, you cultivate resilience and deepen your connections, making the pursuit of your dreams not just an individual journey but a shared adventure. Choose your circle wisely, and watch how it amplifies your path to success!\"})})]})]})}function x(o={}){let{wrapper:e}=o.components||{};return e?(0,t.jsx)(e,Object.assign({},o,{children:(0,t.jsx)(l,o)})):l(o)}var k=x;function h(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(_);})();\n;return Component;"
+  },
+  "_id": "cultivating-a-supportive-circle-for-personal-growth.mdx",
+  "_raw": {
+    "sourceFilePath": "cultivating-a-supportive-circle-for-personal-growth.mdx",
+    "sourceFileName": "cultivating-a-supportive-circle-for-personal-growth.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "cultivating-a-supportive-circle-for-personal-growth"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Surround yourself with those who uplift you, and watch how their energy helps you achieve your dreams and goals.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/cultivating-a-supportive-circle-for-personal-growth",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Surround yourself with those who uplift you, and watch how their energy helps you achieve your dreams and goals.",
+        "images": [
+          {
+            "alt": "Team Feedback Office",
+            "url": "https://cdn.pixabay.com/photo/2024/07/25/14/06/team-8921427_1280.png",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-07T04:00:00.000Z",
+        "publishedTime": "2024-10-07T04:00:00.000Z",
+        "section": "Philosophy",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Cultivating a Supportive Circle for Personal Growth",
+        "url": "https://imwriting.estarlincito.com/articles/cultivating-a-supportive-circle-for-personal-growth",
+        "type": "article"
+      },
+      "title": "Cultivating a Supportive Circle for Personal Growth"
+    },
+    "category": {
+      "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
+      "openGraph": {
+        "title": "Philosophy",
+        "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+        "images": [
+          {
+            "alt": "A collection of books on a wooden shelf.",
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy",
+        "type": "website"
+      },
+      "title": "Philosophy"
+    },
+    "pathnames": {
+      "article": "/articles/cultivating-a-supportive-circle-for-personal-growth",
+      "category": "/articles/philosophy",
+      "subcategory": "/articles/philosophy/reflections"
+    },
+    "subcategory": {
+      "description": "Here you will find some of my reflections and lessons I have learned from life.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+      "openGraph": {
+        "title": "Reflections",
+        "description": "Here you will find some of my reflections and lessons I have learned from life.",
+        "images": [
+          {
+            "alt": "Young person reflecting",
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+        "type": "website"
+      },
+      "title": "Reflections"
+    }
+  },
+  "readingTime": "1 minute",
+  "wordCount": 157
+}

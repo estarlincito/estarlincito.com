@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Relationships",
+  "check": true,
+  "cover": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80",
+  "coverAlt": "A woman on a bicycle reaching back her hand towards the man behind her.",
+  "description": "What Madness It Is to Fall in Love with You",
+  "modifiedTime": "2023-07-12T04:00:00.000Z",
+  "publishedTime": "2023-07-12T04:00:00.000Z",
+  "subcategory": "Couple",
+  "tags": [
+    ""
+  ],
+  "title": "The Lady I Am in Love With",
+  "body": {
+    "raw": "\n<Introduction>\n\n> I am in love, almost obsessed; the truth is, I don't know how to explain it.\n\n</Introduction>\n\n<Contents>\n\nIt happens that I have seen a lady at my workplace. I greeted her as I usually greet everyone, but to my surprise, I felt that kindness, that genuine smile, and above all, that tenderness and humility—a unique lady who doesn’t like to draw attention.\n\nShe has a sweet and cheerful face, with little makeup, yet beautiful and one of a kind. She has chestnut hair, and that authentic smile that makes you fall at her feet just by looking at her.\n\n<Image\n  alt='Silhouette of a man and a woman facing each other during the golden hour.'\n  src='https://images.unsplash.com/photo-1511405889574-b01de1da5441?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80'\n/>\n\nAs I always do when I'm in love, I tried to stand out a lot, and I probably made it very clear that I'm in love. I say this because it seems that the lady doesn't appreciate my way of flirting with her, possibly because she has a commitment, as I saw a ring on her right hand. Still, I kept flirting and occasionally caressing her face as if I wanted to touch her. However, I know that if she is committed, it's best to abandon that project because it's not good for a lady in a relationship to stray from her path and show that her current partner is not worth much and that her own words carry little weight. Additionally, knowing a bit about human behavior, when someone enters into a relationship like this, there are usually couple problems, and when there's hidden emotional pain, those relationships tend to end very quickly. Furthermore, if the lady leaves her partner to be with me, she might leave me for someone else in the future.\n\nMy problem now is that I have emotional pain because I feel that I can't move forward and form a relationship. I have this discomfort in my chest, and when I pass by her, I want to hold her hands or caress her face. If I see her talking to another man, I feel bad because, in my mind, that attention should be given to me and not to others. Yet, I'm fully aware that she needs her freedom and that a partner should be a choice and not a necessity.\n\nThe truth is, I don't know why I like that girl; it's something inexplicable.\nPerhaps she has something captivating that makes me nervous when I'm around\nher. I'm aware that all of this is just speculation, so I'd better try to find\nout the truth about the situation.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},h=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of f(e))!w.call(t,o)&&o!==n&&r(t,o,{get:()=>e[o],enumerable:!(i=m(e,o))||i.enumerable});return t};var I=(t,e,n)=>(n=t!=null?u(p(t)):{},h(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),g=t=>h(r({},\"__esModule\",{value:!0}),t);var d=b((D,l)=>{l.exports=_jsx_runtime});var j={};y(j,{default:()=>k,frontmatter:()=>v});var a=I(d()),v={title:\"The Lady I Am in Love With\",category:\"Relationships\",subcategory:\"Couple\",publishedTime:\"07-12-2023\",modifiedTime:\"07-12-2023\",description:\"What Madness It Is to Fall in Love with You\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80\",coverAlt:\"A woman on a bicycle reaching back her hand towards the man behind her.\",check:!0,tags:[\"\"]};function c(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},t.components),{Introduction:n,Contents:i,Image:o}=e;return i||s(\"Contents\",!0),o||s(\"Image\",!0),n||s(\"Introduction\",!0),(0,a.jsxs)(a.Fragment,{children:[(0,a.jsx)(n,{children:(0,a.jsxs)(e.blockquote,{children:[`\n`,(0,a.jsx)(e.p,{children:\"I am in love, almost obsessed; the truth is, I don't know how to explain it.\"}),`\n`]})}),`\n`,(0,a.jsxs)(i,{children:[(0,a.jsx)(e.p,{children:\"It happens that I have seen a lady at my workplace. I greeted her as I usually greet everyone, but to my surprise, I felt that kindness, that genuine smile, and above all, that tenderness and humility\\u2014a unique lady who doesn\\u2019t like to draw attention.\"}),(0,a.jsx)(e.p,{children:\"She has a sweet and cheerful face, with little makeup, yet beautiful and one of a kind. She has chestnut hair, and that authentic smile that makes you fall at her feet just by looking at her.\"}),(0,a.jsx)(o,{alt:\"Silhouette of a man and a woman facing each other during the golden hour.\",src:\"https://images.unsplash.com/photo-1511405889574-b01de1da5441?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80\"}),(0,a.jsx)(e.p,{children:\"As I always do when I'm in love, I tried to stand out a lot, and I probably made it very clear that I'm in love. I say this because it seems that the lady doesn't appreciate my way of flirting with her, possibly because she has a commitment, as I saw a ring on her right hand. Still, I kept flirting and occasionally caressing her face as if I wanted to touch her. However, I know that if she is committed, it's best to abandon that project because it's not good for a lady in a relationship to stray from her path and show that her current partner is not worth much and that her own words carry little weight. Additionally, knowing a bit about human behavior, when someone enters into a relationship like this, there are usually couple problems, and when there's hidden emotional pain, those relationships tend to end very quickly. Furthermore, if the lady leaves her partner to be with me, she might leave me for someone else in the future.\"}),(0,a.jsx)(e.p,{children:\"My problem now is that I have emotional pain because I feel that I can't move forward and form a relationship. I have this discomfort in my chest, and when I pass by her, I want to hold her hands or caress her face. If I see her talking to another man, I feel bad because, in my mind, that attention should be given to me and not to others. Yet, I'm fully aware that she needs her freedom and that a partner should be a choice and not a necessity.\"}),(0,a.jsx)(e.p,{children:`The truth is, I don't know why I like that girl; it's something inexplicable.\nPerhaps she has something captivating that makes me nervous when I'm around\nher. I'm aware that all of this is just speculation, so I'd better try to find\nout the truth about the situation.`})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,a.jsx)(e,Object.assign({},t,{children:(0,a.jsx)(c,t)})):c(t)}var k=x;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return g(j);})();\n;return Component;"
+  },
+  "_id": "the-lady-i-am-in-love-with.mdx",
+  "_raw": {
+    "sourceFilePath": "the-lady-i-am-in-love-with.mdx",
+    "sourceFileName": "the-lady-i-am-in-love-with.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-lady-i-am-in-love-with"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "What Madness It Is to Fall in Love with You",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-lady-i-am-in-love-with",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "What Madness It Is to Fall in Love with You",
+        "images": [
+          {
+            "alt": "A woman on a bicycle reaching back her hand towards the man behind her.",
+            "url": "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2342&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-07-12T04:00:00.000Z",
+        "publishedTime": "2023-07-12T04:00:00.000Z",
+        "section": "Relationships",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "The Lady I Am in Love With",
+        "url": "https://imwriting.estarlincito.com/articles/the-lady-i-am-in-love-with",
+        "type": "article"
+      },
+      "title": "The Lady I Am in Love With"
+    },
+    "category": {
+      "description": "Tips and information on all topics related to relationships and love.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/relationships",
+      "openGraph": {
+        "title": "Relationships",
+        "description": "Tips and information on all topics related to relationships and love.",
+        "images": [
+          {
+            "alt": "Man and woman dancing in the center of the trees",
+            "url": "https://images.unsplash.com/photo-1531747056595-07f6cbbe10ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2338&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/relationships",
+        "type": "website"
+      },
+      "title": "Relationships"
+    },
+    "pathnames": {
+      "article": "/articles/the-lady-i-am-in-love-with",
+      "category": "/articles/relationships",
+      "subcategory": "/articles/relationships/couple"
+    },
+    "subcategory": {
+      "description": "Advice for couples who want to be best friends",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/relationships/couple",
+      "openGraph": {
+        "title": "Couple",
+        "description": "Advice for couples who want to be best friends",
+        "images": [
+          {
+            "alt": "Woman riding on the man’s back",
+            "url": "https://images.unsplash.com/photo-1501901609772-df0848060b33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/relationships/couple",
+        "type": "website"
+      },
+      "title": "Couple"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 436
+}

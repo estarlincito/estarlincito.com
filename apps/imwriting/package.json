@@ -1,0 +1,51 @@
+{
+  "type": "module",
+  "name": "imwriting",
+  "version": "v1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "lint:fix": "eslint --fix",
+    "check-unused": "depcheck",
+    "find-deadcode": "ts-prune --ignore '.next|dbschema|src/shared-ui'"
+  },
+  "dependencies": {
+    "@estarlincito/utils": "latest",
+    "@radix-ui/colors": "latest",
+    "@radix-ui/react-icons": "latest",
+    "@radix-ui/themes": "latest",
+    "@repo/constants": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "next": "latest",
+    "next-themes": "latest",
+    "prettier": "latest",
+    "radix-ui": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-markdown": "latest"
+  },
+  "devDependencies": {
+    "@estarlincito/eslint": "latest",
+    "@stylezjs/postcss-plugin": "^0.0.3",
+    "@stylezjs/stylez": "^0.0.1",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "contentlayer": "latest",
+    "depcheck": "latest",
+    "eslint": "latest",
+    "globals": "latest",
+    "next-contentlayer": "latest",
+    "react-hot-toast": "latest",
+    "react-icons": "latest",
+    "reading-time": "latest",
+    "remark-gfm": "latest",
+    "ts-prune": "latest",
+    "typescript": "latest",
+    "yaml": "latest"
+  }
+}

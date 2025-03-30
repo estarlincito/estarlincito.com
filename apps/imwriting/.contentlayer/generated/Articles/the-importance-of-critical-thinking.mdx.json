@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Psychology",
+  "check": true,
+  "cover": "https://images.unsplash.com/photo-1680204438725-9a098e57f970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+  "coverAlt": "Develop your critical thinking",
+  "description": "Critical thinking is a cognitive process that involves the objective and reflective evaluation of information in order to make informed judgments and decisions.",
+  "modifiedTime": "2023-04-21T04:00:00.000Z",
+  "publishedTime": "2023-04-17T04:00:00.000Z",
+  "subcategory": "Critical Psychology",
+  "tags": [
+    ""
+  ],
+  "title": "The importance of Critical Thinking",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Critical thinking is a cognitive process that involves the objective and reflective evaluation of information in order to make informed judgments and decisions.\n\n</Introduction>\n\n<Contents>\n\nToday, critical thinking has become an increasingly sought-after skill in the job market, especially in the fields of business and technology. Employers look for candidates who can effectively analyze information, ask relevant questions, and make informed decisions.\n\nMoreover, critical thinking is fundamental for personal and academic development. By using this skill, individuals can evaluate information more objectively and make more informed decisions. It also fosters creativity and innovation, as it allows people to think unconventionally and find innovative solutions to problems.\n\nIn summary, critical thinking is an essential skill in everyday life and in the professional world. It enables us to evaluate information effectively, make informed decisions, and find innovative solutions to problems. Therefore, it is important to foster this skill in all areas of life.\n\n<Image\n  alt='Critical thinking'\n  src='https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'\n/>\n\nAdditionally, critical thinking is not only crucial in the workplace and academia but also in daily life. For example, it can help us make more informed decisions about our health, finances, or even our interpersonal relationships.\n\nOne of the keys to developing critical thinking is learning to question information and not accepting it at face value. It is valuable to evaluate the source of information, consider different perspectives, and reflect on our own beliefs and biases.\n\nIt is also important to keep in mind that critical thinking is not a skill that is acquired overnight. It requires practice and constant dedication to develop and improve. We can start by questioning our own decisions.\n\nCritical thinking is an essential skill in everyday, professional, and academic life. Fostering and developing it allows us to make more informed decisions and find innovative solutions to problems. Additionally, it helps us evaluate information objectively and reflectively, enabling us to live more consciously and satisfactorily.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var u=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,v=Object.prototype.hasOwnProperty;var g=(e,i)=>()=>(i||e((i={exports:{}}).exports,i),i.exports),y=(e,i)=>{for(var t in i)s(e,t,{get:i[t],enumerable:!0})},l=(e,i,t,a)=>{if(i&&typeof i==\"object\"||typeof i==\"function\")for(let o of h(i))!v.call(e,o)&&o!==t&&s(e,o,{get:()=>i[o],enumerable:!(a=u(i,o))||a.enumerable});return e};var k=(e,i,t)=>(t=e!=null?m(p(e)):{},l(i||!e||!e.__esModule?s(t,\"default\",{value:e,enumerable:!0}):t,e)),b=e=>l(s({},\"__esModule\",{value:!0}),e);var d=g((C,c)=>{c.exports=_jsx_runtime});var M={};y(M,{default:()=>w,frontmatter:()=>x});var n=k(d()),x={title:\"The importance of Critical Thinking\",category:\"Psychology\",subcategory:\"Critical Psychology\",publishedTime:\"04-17-2023\",modifiedTime:\"04-21-2023\",description:\"Critical thinking is a cognitive process that involves the objective and reflective evaluation of information in order to make informed judgments and decisions.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://images.unsplash.com/photo-1680204438725-9a098e57f970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80\",coverAlt:\"Develop your critical thinking\",check:!0,tags:[\"\"]};function f(e){let i=Object.assign({blockquote:\"blockquote\",p:\"p\"},e.components),{Introduction:t,Contents:a,Image:o}=i;return a||r(\"Contents\",!0),o||r(\"Image\",!0),t||r(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(t,{children:(0,n.jsxs)(i.blockquote,{children:[`\n`,(0,n.jsx)(i.p,{children:\"Critical thinking is a cognitive process that involves the objective and reflective evaluation of information in order to make informed judgments and decisions.\"}),`\n`]})}),`\n`,(0,n.jsxs)(a,{children:[(0,n.jsx)(i.p,{children:\"Today, critical thinking has become an increasingly sought-after skill in the job market, especially in the fields of business and technology. Employers look for candidates who can effectively analyze information, ask relevant questions, and make informed decisions.\"}),(0,n.jsx)(i.p,{children:\"Moreover, critical thinking is fundamental for personal and academic development. By using this skill, individuals can evaluate information more objectively and make more informed decisions. It also fosters creativity and innovation, as it allows people to think unconventionally and find innovative solutions to problems.\"}),(0,n.jsx)(i.p,{children:\"In summary, critical thinking is an essential skill in everyday life and in the professional world. It enables us to evaluate information effectively, make informed decisions, and find innovative solutions to problems. Therefore, it is important to foster this skill in all areas of life.\"}),(0,n.jsx)(o,{alt:\"Critical thinking\",src:\"https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80\"}),(0,n.jsx)(i.p,{children:\"Additionally, critical thinking is not only crucial in the workplace and academia but also in daily life. For example, it can help us make more informed decisions about our health, finances, or even our interpersonal relationships.\"}),(0,n.jsx)(i.p,{children:\"One of the keys to developing critical thinking is learning to question information and not accepting it at face value. It is valuable to evaluate the source of information, consider different perspectives, and reflect on our own beliefs and biases.\"}),(0,n.jsx)(i.p,{children:\"It is also important to keep in mind that critical thinking is not a skill that is acquired overnight. It requires practice and constant dedication to develop and improve. We can start by questioning our own decisions.\"}),(0,n.jsx)(i.p,{children:\"Critical thinking is an essential skill in everyday, professional, and academic life. Fostering and developing it allows us to make more informed decisions and find innovative solutions to problems. Additionally, it helps us evaluate information objectively and reflectively, enabling us to live more consciously and satisfactorily.\"})]})]})}function j(e={}){let{wrapper:i}=e.components||{};return i?(0,n.jsx)(i,Object.assign({},e,{children:(0,n.jsx)(f,e)})):f(e)}var w=j;function r(e,i){throw new Error(\"Expected \"+(i?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(M);})();\n;return Component;"
+  },
+  "_id": "the-importance-of-critical-thinking.mdx",
+  "_raw": {
+    "sourceFilePath": "the-importance-of-critical-thinking.mdx",
+    "sourceFileName": "the-importance-of-critical-thinking.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-importance-of-critical-thinking"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Critical thinking is a cognitive process that involves the objective and reflective evaluation of information in order to make informed judgments and decisions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-importance-of-critical-thinking",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Critical thinking is a cognitive process that involves the objective and reflective evaluation of information in order to make informed judgments and decisions.",
+        "images": [
+          {
+            "alt": "Develop your critical thinking",
+            "url": "https://images.unsplash.com/photo-1680204438725-9a098e57f970?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-04-21T04:00:00.000Z",
+        "publishedTime": "2023-04-17T04:00:00.000Z",
+        "section": "Psychology",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "The importance of Critical Thinking",
+        "url": "https://imwriting.estarlincito.com/articles/the-importance-of-critical-thinking",
+        "type": "article"
+      },
+      "title": "The importance of Critical Thinking"
+    },
+    "category": {
+      "description": "Here you will find useful information on topics such as emotional well-being, personal development, and mental health.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/psychology",
+      "openGraph": {
+        "title": "Psychology",
+        "description": "Here you will find useful information on topics such as emotional well-being, personal development, and mental health.",
+        "images": [
+          {
+            "alt": "People forming a heart with their hands",
+            "url": "https://images.unsplash.com/photo-1586807480822-0e95ba6666ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/psychology",
+        "type": "website"
+      },
+      "title": "Psychology"
+    },
+    "pathnames": {
+      "article": "/articles/the-importance-of-critical-thinking",
+      "category": "/articles/psychology",
+      "subcategory": "/articles/psychology/critical-psychology"
+    },
+    "subcategory": {
+      "description": "I am very glad you made it here. I hope you find useful and valuable information about critical psychology.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/psychology/critical-psychology",
+      "openGraph": {
+        "title": "Critical Psychology",
+        "description": "I am very glad you made it here. I hope you find useful and valuable information about critical psychology.",
+        "images": [
+          {
+            "alt": "Woman in a long-sleeve black shirt using a MacBook",
+            "url": "https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/psychology/critical-psychology",
+        "type": "website"
+      },
+      "title": "Critical Psychology"
+    }
+  },
+  "readingTime": "2 minutes",
+  "wordCount": 320
+}

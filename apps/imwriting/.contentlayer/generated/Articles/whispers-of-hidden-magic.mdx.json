@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Philosophy",
+  "check": true,
+  "cover": "/assets/whispers-of-hidden-magic/image.jpeg",
+  "coverAlt": "Female Friendships Are The Best",
+  "description": "Uncover a world where secrets breathe and enchantments linger, revealing the extraordinary in the everyday. Dive into the mystery!",
+  "modifiedTime": "2024-10-04T04:00:00.000Z",
+  "publishedTime": "2024-10-04T04:00:00.000Z",
+  "subcategory": "Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Whispers of Hidden Magic",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Uncover a world where secrets breathe and enchantments linger, revealing the extraordinary in the everyday. Dive into the mystery!\n\n</Introduction>\n\n<Contents>\n\n<Audio src='/assets/whispers-of-hidden-magic/audio.mp3' type='audio/mp3' />\n\n_There are magical people, I swear. I've seen them. They hide in the corners of the\nplanet, disguised as normal. Blending in is their specialty, trying to behave like\neveryone else. That’s why it’s sometimes so hard to find them, but once you discover\nthem, there’s no turning back. You can’t shake their memory. Don’t tell anyone, but\nthey say their magic is so strong that if it touches you once, it captures you forever._\n**-Anonymous-**\n\n_These extraordinary souls leave an unforgettable mark, changing how you see the world. Their presence is rare but undeniable, and once you cross paths, you're never the same. Keep your heart open—magic is closer than you think._\n\n</Contents>\n",
+    "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var y=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var r in e)s(t,r,{get:e[r],enumerable:!0})},c=(t,e,r,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of y(e))!g.call(t,o)&&o!==r&&s(t,o,{get:()=>e[o],enumerable:!(i=m(e,o))||i.enumerable});return t};var b=(t,e,r)=>(r=t!=null?u(p(t)):{},c(e||!t||!t.__esModule?s(r,\"default\",{value:t,enumerable:!0}):r,t)),x=t=>c(s({},\"__esModule\",{value:!0}),t);var d=f((A,h)=>{h.exports=_jsx_runtime});var T={};v(T,{default:()=>k,frontmatter:()=>w});var n=b(d()),w={title:\"Whispers of Hidden Magic\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"10-04-2024\",modifiedTime:\"10-04-2024\",description:\"Uncover a world where secrets breathe and enchantments linger, revealing the extraordinary in the everyday. Dive into the mystery!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/whispers-of-hidden-magic/image.jpeg\",coverAlt:\"Female Friendships Are The Best\",check:!0,tags:[\"\"]};function l(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},t.components),{Introduction:r,Contents:i,Audio:o}=e;return o||a(\"Audio\",!0),i||a(\"Contents\",!0),r||a(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(r,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"Uncover a world where secrets breathe and enchantments linger, revealing the extraordinary in the everyday. Dive into the mystery!\"}),`\n`]})}),`\n`,(0,n.jsxs)(i,{children:[(0,n.jsx)(o,{src:\"/assets/whispers-of-hidden-magic/audio.mp3\",type:\"audio/mp3\"}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.em,{children:`There are magical people, I swear. I've seen them. They hide in the corners of the\nplanet, disguised as normal. Blending in is their specialty, trying to behave like\neveryone else. That\\u2019s why it\\u2019s sometimes so hard to find them, but once you discover\nthem, there\\u2019s no turning back. You can\\u2019t shake their memory. Don\\u2019t tell anyone, but\nthey say their magic is so strong that if it touches you once, it captures you forever.`}),`\n`,(0,n.jsx)(e.strong,{children:\"-Anonymous-\"})]}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"These extraordinary souls leave an unforgettable mark, changing how you see the world. Their presence is rare but undeniable, and once you cross paths, you're never the same. Keep your heart open\\u2014magic is closer than you think.\"})})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(l,t)})):l(t)}var k=j;function a(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(T);})();\n;return Component;"
+  },
+  "_id": "whispers-of-hidden-magic.mdx",
+  "_raw": {
+    "sourceFilePath": "whispers-of-hidden-magic.mdx",
+    "sourceFileName": "whispers-of-hidden-magic.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "whispers-of-hidden-magic"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Uncover a world where secrets breathe and enchantments linger, revealing the extraordinary in the everyday. Dive into the mystery!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/whispers-of-hidden-magic",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Uncover a world where secrets breathe and enchantments linger, revealing the extraordinary in the everyday. Dive into the mystery!",
+        "images": [
+          {
+            "alt": "Female Friendships Are The Best",
+            "url": "/assets/whispers-of-hidden-magic/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-04T04:00:00.000Z",
+        "publishedTime": "2024-10-04T04:00:00.000Z",
+        "section": "Philosophy",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Whispers of Hidden Magic",
+        "url": "https://imwriting.estarlincito.com/articles/whispers-of-hidden-magic",
+        "type": "article"
+      },
+      "title": "Whispers of Hidden Magic"
+    },
+    "category": {
+      "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
+      "openGraph": {
+        "title": "Philosophy",
+        "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+        "images": [
+          {
+            "alt": "A collection of books on a wooden shelf.",
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy",
+        "type": "website"
+      },
+      "title": "Philosophy"
+    },
+    "pathnames": {
+      "article": "/articles/whispers-of-hidden-magic",
+      "category": "/articles/philosophy",
+      "subcategory": "/articles/philosophy/reflections"
+    },
+    "subcategory": {
+      "description": "Here you will find some of my reflections and lessons I have learned from life.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+      "openGraph": {
+        "title": "Reflections",
+        "description": "Here you will find some of my reflections and lessons I have learned from life.",
+        "images": [
+          {
+            "alt": "Young person reflecting",
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+        "type": "website"
+      },
+      "title": "Reflections"
+    }
+  },
+  "readingTime": "1 minute",
+  "wordCount": 143
+}

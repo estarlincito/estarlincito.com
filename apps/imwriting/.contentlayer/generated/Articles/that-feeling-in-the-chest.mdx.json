@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Wellness",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2024/04/19/14/44/woman-8706492_1280.png",
+  "coverAlt": "Woman thinking about space with stars.",
+  "description": "What if that feeling in your chest, that discomfort, is haunting you? Maybe reading this post could be your way to find relief.",
+  "modifiedTime": "2023-11-20T04:00:00.000Z",
+  "publishedTime": "2023-11-20T04:00:00.000Z",
+  "subcategory": "Emotions",
+  "tags": [
+    ""
+  ],
+  "title": "That feeling in the chest",
+  "body": {
+    "raw": "\n<Introduction>\n\n> What if that feeling in your chest, that discomfort, is haunting you? Maybe reading this post could be your way to find relief.\n\n</Introduction>\n\n<Contents>\n\nWhat is that sensation that runs through my body? That which makes me angry, but above all, that sharp pain in my chest. That pain that doesn't disappear even when I hug my pillows, but persists in my chest, causing me fear. What will I do with that sharp pain?\n\nAh, I know! It’s the discomfort of disappointment for having gotten my hopes up with that lady. It’s like they say in my country: I was building castles in the sand. They were beautiful castles where I lived with that princess with brown skin and lovely eyes. I remember we went for walks through those castles; everything was so beautiful.\n\nOne day, a strong breeze swept across the island. The castles tried to hold on, but the breeze knocked them down. Unfortunately, I was on the top floor, so I fell from the highest point. Sadly, I had nothing to protect me: no helmet, no parachute, nothing.\n\nMy pains... I don’t know how, but I fell and only fractured inside. I landed on all that sand and unintentionally entered a dream where I only remembered that illusion and my life with that beautiful brown-skinned girl.\n\n> _&quot;It's not good to get stuck in dreams and forget to live&quot; <br/> **―J.K. Rowling―**_\n\n<Image\n  alt='Girl, clouds, moon.'\n  src='https://cdn.pixabay.com/photo/2023/12/07/11/04/girl-8435330_1280.png'\n/>\n\nA man who was passing by took pity on me; he took me to his home, and he and his loved one helped me wake up from that deep sleep. But the discomfort in my chest persisted, so I went to the nearest clinic to see what was wrong with me. I don’t know the name of the machine, but a doctor used it to look inside me and realized that the discomfort was due to my disappointments. She told me there was a problem of indifference since I had lost all my friends. What happened was that, as a Jehovah's Witness who followed all the practices of that religion, I had good friends. But after my thoughts changed, I lost all those friends. So I carried the burden of losing those friends along with the disappointment of having built castles on the sand with that brown-skinned girl.\n\nThe discomfort persisted, so I went to a place where they had a good ointment to soothe it, and it worked. It disappeared for a few days, but then it returned. I kept searching until I discovered something related to the study of human behavior (Psychology). I enjoyed reading about this topic, and it turned out to be very helpful. I learned to do things out of love instead of seeking the approval of others. This understanding freed me from the anger and hatred I felt toward those friends who had abandoned me. It allowed me to explore my past to understand my past actions, get to know myself better, appreciate people more, and empathize more, leading to a more conscious and fulfilling life. It taught me the importance of not allowing my ego to dominate my life but to take control of my own destiny. It instilled discipline, goal-setting, and objectives. It also made me understand that the discomfort I was experiencing stemmed from denying my reality, so I began to read about how to accept it in order to free myself from that persistent pain.\n\nI learned that life doesn’t wait for someone to add color; instead, it gives us the brush to create on that blank canvas, to paint landscapes overflowing with love and joy. The most valuable thing I discovered was learning to live in the present, to steer my path without letting my ego take control. The ego loves to flutter in the past or the future, thus unleashing that pain in the chest. But thanks to the power of acceptance, today the canvas is here, fresh and ready to be painted with the art of living each moment.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var n in e)s(t,n,{get:e[n],enumerable:!0})},h=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of u(e))!g.call(t,a)&&a!==n&&s(t,a,{get:()=>e[a],enumerable:!(i=p(e,a))||i.enumerable});return t};var b=(t,e,n)=>(n=t!=null?m(f(t)):{},h(e||!t||!t.__esModule?s(n,\"default\",{value:t,enumerable:!0}):n,t)),I=t=>h(s({},\"__esModule\",{value:!0}),t);var l=y((_,d)=>{d.exports=_jsx_runtime});var j={};w(j,{default:()=>x,frontmatter:()=>k});var o=b(l()),k={title:\"That feeling in the chest\",category:\"Wellness\",subcategory:\"Emotions\",publishedTime:\"11-20-2023\",modifiedTime:\"11-20-2023\",description:\"What if that feeling in your chest, that discomfort, is haunting you? Maybe reading this post could be your way to find relief.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2024/04/19/14/44/woman-8706492_1280.png\",coverAlt:\"Woman thinking about space with stars.\",check:!0,tags:[\"\"]};function c(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},t.components),{Introduction:n,Contents:i,Image:a}=e;return i||r(\"Contents\",!0),a||r(\"Image\",!0),n||r(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"What if that feeling in your chest, that discomfort, is haunting you? Maybe reading this post could be your way to find relief.\"}),`\n`]})}),`\n`,(0,o.jsxs)(i,{children:[(0,o.jsx)(e.p,{children:\"What is that sensation that runs through my body? That which makes me angry, but above all, that sharp pain in my chest. That pain that doesn't disappear even when I hug my pillows, but persists in my chest, causing me fear. What will I do with that sharp pain?\"}),(0,o.jsx)(e.p,{children:\"Ah, I know! It\\u2019s the discomfort of disappointment for having gotten my hopes up with that lady. It\\u2019s like they say in my country: I was building castles in the sand. They were beautiful castles where I lived with that princess with brown skin and lovely eyes. I remember we went for walks through those castles; everything was so beautiful.\"}),(0,o.jsx)(e.p,{children:\"One day, a strong breeze swept across the island. The castles tried to hold on, but the breeze knocked them down. Unfortunately, I was on the top floor, so I fell from the highest point. Sadly, I had nothing to protect me: no helmet, no parachute, nothing.\"}),(0,o.jsx)(e.p,{children:\"My pains... I don\\u2019t know how, but I fell and only fractured inside. I landed on all that sand and unintentionally entered a dream where I only remembered that illusion and my life with that beautiful brown-skinned girl.\"}),(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:(0,o.jsxs)(e.em,{children:[`\"It's not good to get stuck in dreams and forget to live\" `,(0,o.jsx)(\"br\",{}),\" \",(0,o.jsx)(e.strong,{children:\"\\u2015J.K. Rowling\\u2015\"})]})}),`\n`]}),(0,o.jsx)(a,{alt:\"Girl, clouds, moon.\",src:\"https://cdn.pixabay.com/photo/2023/12/07/11/04/girl-8435330_1280.png\"}),(0,o.jsx)(e.p,{children:\"A man who was passing by took pity on me; he took me to his home, and he and his loved one helped me wake up from that deep sleep. But the discomfort in my chest persisted, so I went to the nearest clinic to see what was wrong with me. I don\\u2019t know the name of the machine, but a doctor used it to look inside me and realized that the discomfort was due to my disappointments. She told me there was a problem of indifference since I had lost all my friends. What happened was that, as a Jehovah's Witness who followed all the practices of that religion, I had good friends. But after my thoughts changed, I lost all those friends. So I carried the burden of losing those friends along with the disappointment of having built castles on the sand with that brown-skinned girl.\"}),(0,o.jsx)(e.p,{children:\"The discomfort persisted, so I went to a place where they had a good ointment to soothe it, and it worked. It disappeared for a few days, but then it returned. I kept searching until I discovered something related to the study of human behavior (Psychology). I enjoyed reading about this topic, and it turned out to be very helpful. I learned to do things out of love instead of seeking the approval of others. This understanding freed me from the anger and hatred I felt toward those friends who had abandoned me. It allowed me to explore my past to understand my past actions, get to know myself better, appreciate people more, and empathize more, leading to a more conscious and fulfilling life. It taught me the importance of not allowing my ego to dominate my life but to take control of my own destiny. It instilled discipline, goal-setting, and objectives. It also made me understand that the discomfort I was experiencing stemmed from denying my reality, so I began to read about how to accept it in order to free myself from that persistent pain.\"}),(0,o.jsx)(e.p,{children:\"I learned that life doesn\\u2019t wait for someone to add color; instead, it gives us the brush to create on that blank canvas, to paint landscapes overflowing with love and joy. The most valuable thing I discovered was learning to live in the present, to steer my path without letting my ego take control. The ego loves to flutter in the past or the future, thus unleashing that pain in the chest. But thanks to the power of acceptance, today the canvas is here, fresh and ready to be painted with the art of living each moment.\"})]})]})}function v(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(c,t)})):c(t)}var x=v;function r(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return I(j);})();\n;return Component;"
+  },
+  "_id": "that-feeling-in-the-chest.mdx",
+  "_raw": {
+    "sourceFilePath": "that-feeling-in-the-chest.mdx",
+    "sourceFileName": "that-feeling-in-the-chest.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "that-feeling-in-the-chest"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "What if that feeling in your chest, that discomfort, is haunting you? Maybe reading this post could be your way to find relief.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/that-feeling-in-the-chest",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "What if that feeling in your chest, that discomfort, is haunting you? Maybe reading this post could be your way to find relief.",
+        "images": [
+          {
+            "alt": "Woman thinking about space with stars.",
+            "url": "https://cdn.pixabay.com/photo/2024/04/19/14/44/woman-8706492_1280.png",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-11-20T04:00:00.000Z",
+        "publishedTime": "2023-11-20T04:00:00.000Z",
+        "section": "Wellness",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "That feeling in the chest",
+        "url": "https://imwriting.estarlincito.com/articles/that-feeling-in-the-chest",
+        "type": "article"
+      },
+      "title": "That feeling in the chest"
+    },
+    "category": {
+      "description": "Discover the path to a full and balanced life in our wellness blog. We explore self-care practices, tips for a healthy mind and body, and guide you on the journey to holistic wellness.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/wellness",
+      "openGraph": {
+        "title": "Wellness",
+        "description": "Discover the path to a full and balanced life in our wellness blog. We explore self-care practices, tips for a healthy mind and body, and guide you on the journey to holistic wellness.",
+        "images": [
+          {
+            "alt": "Woman stretching at the top of a mountain during sunrise",
+            "url": "https://images.unsplash.com/photo-1524863479829-916d8e77f114?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/wellness",
+        "type": "website"
+      },
+      "title": "Wellness"
+    },
+    "pathnames": {
+      "article": "/articles/that-feeling-in-the-chest",
+      "category": "/articles/wellness",
+      "subcategory": "/articles/wellness/emotions"
+    },
+    "subcategory": {
+      "description": "Emotions are our palette of life. Explore with us the power and depth of each feeling in this space dedicated to understanding and managing our emotions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/wellness/emotions",
+      "openGraph": {
+        "title": "Emotions",
+        "description": "Emotions are our palette of life. Explore with us the power and depth of each feeling in this space dedicated to understanding and managing our emotions.",
+        "images": [
+          {
+            "alt": "A woman looking out of a window with blinds",
+            "url": "https://images.unsplash.com/photo-1520350094754-f0fdcac35c1c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/wellness/emotions",
+        "type": "website"
+      },
+      "title": "Emotions"
+    }
+  },
+  "readingTime": "4 minutes",
+  "wordCount": 679
+}

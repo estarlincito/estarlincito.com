@@ -36,3 +36,15 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+
+
+# typescript
+*.tsbuildinfo
+
+# others
+next-env.d.ts
+/.contentlayer
+dbschema/edgeql-js
+wrangler.toml
+wrangler.jsonc

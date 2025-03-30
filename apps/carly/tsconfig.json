@@ -1,0 +1,19 @@
+{
+  "extends": "@repo/typescript-config/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "**/*.mdx",
+    "**/*.ts",
+    "**/*.tsx",
+    ".contentlayer/generated",
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "eslint.config.js"
+  ],
+  "exclude": ["node_modules", "public"]
+}

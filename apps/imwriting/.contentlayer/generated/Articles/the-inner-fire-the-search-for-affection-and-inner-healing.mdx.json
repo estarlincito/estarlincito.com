@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "/assets/the-inner-fire-the-search-for-affection-and-inner-healing/image.jpeg",
+  "coverAlt": "Narrucito hidding his inner fire",
+  "description": "Narucito struggled to extinguish the fire of emotional emptiness that consumed him, seeking external affection, unaware that the solution lay within himself.",
+  "modifiedTime": "2024-09-05T04:00:00.000Z",
+  "publishedTime": "2024-09-05T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "The Inner Fire: The Search for Affection and Inner Healing",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Narucito struggled to extinguish the fire of emotional emptiness that consumed him, seeking external affection, unaware that the solution lay within himself.\n\n</Introduction>\n\n<Contents>\n\n<Audio\n  src='/assets/the-inner-fire-the-search-for-affection-and-inner-healing/audio.mp3'\n  type='audio/mp3'\n/>\n\nOnce upon a time, there was a boy named Narucito, who on the outside seemed like any other. He played, smiled, and was loved by everyone. However, inside him, something burned constantly, like a small flame that never went out. This flame was not visible to others, but Narucito felt it every day. It was a burn inside him, an emptiness that made him feel lonely, even when surrounded by people.\n\nNarucito didn’t understand where this inner fire came from, but over time, he realized it was the hunger for affection he had never received from his parents. They, although physically present, were always busy, distant, or preoccupied with their own problems. Narucito longed for their hugs, their attention, a word of comfort, but he rarely found it. So, over time, he began to seek that affection from others.\n\nHe grew up trying to extinguish the fire within by seeking approval from his friends, teachers, and even strangers. He responded to messages instantly, did everything possible to please others, thinking that if he kept them close, maybe one day that internal burn would go out. However, the more he sought that validation, the larger the fire grew. Because although others responded, they never completely filled the emptiness he felt.\n\nThe problem was that Narucito was looking for something external to heal an internal wound. He didn’t realize that this void couldn’t be filled with others’ attention. The fire that burned him could only be extinguished when he learned to give himself the affection he so longed for.\n\n<Image\n  alt='Now Narucito is loving himself'\n  src='/assets/the-inner-fire-the-search-for-affection-and-inner-healing/image1.jpeg'\n/>\n\nYears passed, and Narucito, now an adult, continued to struggle against that fire. He hadn’t managed to overcome it and still felt the need to respond quickly, to not ignore anyone, as if every message was an opportunity to fill that void. But the fire remained, slowly growing, because the real solution was not external, but something he needed to find within himself.\n\nOne day, while looking at his reflection in the mirror, Narucito realized that the fire wasn’t destroying him, but it was slowly consuming him. Then he understood that if he didn’t find a way to **love himself**, that fire would continue to burn forever.\n\nThe story of Narucito is a reminder that, although we seek affection from others, true peace and healing can only be found when we learn to fill our own void with **self-love**.\n\nTHE END.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var f=Object.create;var a=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},l=(t,e,i,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of g(e))!w.call(t,o)&&o!==i&&a(t,o,{get:()=>e[o],enumerable:!(r=m(e,o))||r.enumerable});return t};var v=(t,e,i)=>(i=t!=null?f(p(t)):{},l(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),x=t=>l(a({},\"__esModule\",{value:!0}),t);var c=y((_,d)=>{d.exports=_jsx_runtime});var T={};b(T,{default:()=>j,frontmatter:()=>k});var n=v(c()),k={title:\"The Inner Fire: The Search for Affection and Inner Healing\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"09-05-2024\",modifiedTime:\"09-05-2024\",description:\"Narucito struggled to extinguish the fire of emotional emptiness that consumed him, seeking external affection, unaware that the solution lay within himself.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/the-inner-fire-the-search-for-affection-and-inner-healing/image.jpeg\",coverAlt:\"Narrucito hidding his inner fire\",check:!0,tags:[\"\"]};function u(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",strong:\"strong\"},t.components),{Introduction:i,Contents:r,Audio:o,Image:h}=e;return o||s(\"Audio\",!0),r||s(\"Contents\",!0),h||s(\"Image\",!0),i||s(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(i,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"Narucito struggled to extinguish the fire of emotional emptiness that consumed him, seeking external affection, unaware that the solution lay within himself.\"}),`\n`]})}),`\n`,(0,n.jsxs)(r,{children:[(0,n.jsx)(o,{src:\"/assets/the-inner-fire-the-search-for-affection-and-inner-healing/audio.mp3\",type:\"audio/mp3\"}),(0,n.jsx)(e.p,{children:\"Once upon a time, there was a boy named Narucito, who on the outside seemed like any other. He played, smiled, and was loved by everyone. However, inside him, something burned constantly, like a small flame that never went out. This flame was not visible to others, but Narucito felt it every day. It was a burn inside him, an emptiness that made him feel lonely, even when surrounded by people.\"}),(0,n.jsx)(e.p,{children:\"Narucito didn\\u2019t understand where this inner fire came from, but over time, he realized it was the hunger for affection he had never received from his parents. They, although physically present, were always busy, distant, or preoccupied with their own problems. Narucito longed for their hugs, their attention, a word of comfort, but he rarely found it. So, over time, he began to seek that affection from others.\"}),(0,n.jsx)(e.p,{children:\"He grew up trying to extinguish the fire within by seeking approval from his friends, teachers, and even strangers. He responded to messages instantly, did everything possible to please others, thinking that if he kept them close, maybe one day that internal burn would go out. However, the more he sought that validation, the larger the fire grew. Because although others responded, they never completely filled the emptiness he felt.\"}),(0,n.jsx)(e.p,{children:\"The problem was that Narucito was looking for something external to heal an internal wound. He didn\\u2019t realize that this void couldn\\u2019t be filled with others\\u2019 attention. The fire that burned him could only be extinguished when he learned to give himself the affection he so longed for.\"}),(0,n.jsx)(h,{alt:\"Now Narucito is loving himself\",src:\"/assets/the-inner-fire-the-search-for-affection-and-inner-healing/image1.jpeg\"}),(0,n.jsx)(e.p,{children:\"Years passed, and Narucito, now an adult, continued to struggle against that fire. He hadn\\u2019t managed to overcome it and still felt the need to respond quickly, to not ignore anyone, as if every message was an opportunity to fill that void. But the fire remained, slowly growing, because the real solution was not external, but something he needed to find within himself.\"}),(0,n.jsxs)(e.p,{children:[\"One day, while looking at his reflection in the mirror, Narucito realized that the fire wasn\\u2019t destroying him, but it was slowly consuming him. Then he understood that if he didn\\u2019t find a way to \",(0,n.jsx)(e.strong,{children:\"love himself\"}),\", that fire would continue to burn forever.\"]}),(0,n.jsxs)(e.p,{children:[\"The story of Narucito is a reminder that, although we seek affection from others, true peace and healing can only be found when we learn to fill our own void with \",(0,n.jsx)(e.strong,{children:\"self-love\"}),\".\"]}),(0,n.jsx)(e.p,{children:\"THE END.\"})]})]})}function N(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(u,t)})):u(t)}var j=N;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(T);})();\n;return Component;"
+  },
+  "_id": "the-inner-fire-the-search-for-affection-and-inner-healing.mdx",
+  "_raw": {
+    "sourceFilePath": "the-inner-fire-the-search-for-affection-and-inner-healing.mdx",
+    "sourceFileName": "the-inner-fire-the-search-for-affection-and-inner-healing.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-inner-fire-the-search-for-affection-and-inner-healing"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Narucito struggled to extinguish the fire of emotional emptiness that consumed him, seeking external affection, unaware that the solution lay within himself.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-inner-fire-the-search-for-affection-and-inner-healing",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Narucito struggled to extinguish the fire of emotional emptiness that consumed him, seeking external affection, unaware that the solution lay within himself.",
+        "images": [
+          {
+            "alt": "Narrucito hidding his inner fire",
+            "url": "/assets/the-inner-fire-the-search-for-affection-and-inner-healing/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-09-05T04:00:00.000Z",
+        "publishedTime": "2024-09-05T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "The Inner Fire: The Search for Affection and Inner Healing",
+        "url": "https://imwriting.estarlincito.com/articles/the-inner-fire-the-search-for-affection-and-inner-healing",
+        "type": "article"
+      },
+      "title": "The Inner Fire: The Search for Affection and Inner Healing"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/the-inner-fire-the-search-for-affection-and-inner-healing",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 439
+}

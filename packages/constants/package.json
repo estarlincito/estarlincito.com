@@ -1,0 +1,23 @@
+{
+  "name": "@repo/constants",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@estarlincito/eslint": "^1.7.7",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^22.13.9",
+    "eslint": "^9.21.0",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "@estarlincito/utils": "^2.4.2"
+  }
+}

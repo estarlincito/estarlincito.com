@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "/assets/when-i-truly-loved-myself/image.jpeg",
+  "coverAlt": "A young girl self-loving",
+  "description": "A prose poem by Charles Chaplin",
+  "modifiedTime": "2023-03-21T04:00:00.000Z",
+  "publishedTime": "2023-03-14T04:00:00.000Z",
+  "subcategory": "Current events and psychology",
+  "tags": [
+    ""
+  ],
+  "title": "When I truly loved myself",
+  "body": {
+    "raw": "\n<Introduction>\n\n> And if you fell off the world and don’t know how to return? The following poem by [Charles Chaplin](https://wikipedia.org/wiki/Charles_Chaplin) may help you get back up.\n\n</Introduction>\n\n<Contents>\n\n<Audio src='/assets/when-i-truly-loved-myself/audio.mp3' type='audio/mp3' />\n\nWhen I truly loved myself, I understood that, in any circumstance, I was in the right place, at the right time, and in the exact moment, and then I could relax.  \n**Today I know that has a name… Self-esteem**\n\nWhen I truly loved myself, I could perceive that my anguish and emotional suffering were nothing but a signal that I was going against my own truths.  \n**Today I know that is… Authenticity**\n\nWhen I truly loved myself, I stopped wishing my life were different and began to accept everything that happens and contributes to my growth.  \n**Today that is called… Maturity**\n\nWhen I truly loved myself, I began to perceive that it is offensive to try to force a situation or person just to achieve what I desire, even knowing it is not the right time, or the person is not ready, including myself.  \n**Today I know that is called… Respect**\n\nWhen I truly loved myself, I began to free myself from everything that was not healthy: people, situations, and anything that pushed me down. At first, my reasoning called that attitude selfishness.  \n**Today it is called… Self-love**\n\nWhen I truly loved myself, I stopped fearing free time and gave up making big plans; I abandoned mega-future projects. Today I do what I find right, what I like, when I want, and at my own pace.  \n**Today I know that is… Simplicity and Ease**\n\n<Image\n  alt='Students taking an exam'\n  src='/assets/when-i-truly-loved-myself/image1.jpeg'\n/>\n\nWhen I truly loved myself, I gave up wanting to always be right, and thus I made fewer mistakes.  \n**Today I discovered that is… Humility**\n\nWhen I truly loved myself, I stopped reliving the past and worrying about the future. Now, I stay in the present, which is where life happens.  \nToday I live one day at a time.  \n**And that is called… Fulfillment**\n\nWhen I truly loved myself, I realized that my mind can torment and disappoint me. But when I place it at the service of my heart, it has a great and valuable ally.  \n**All of that is… Knowing How to Live**\n\nI hope I’ve helped you. Feel free to read this poem as many times as you wish; if you feel you’ve lost your way, come back and read it again.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var y=Object.create;var r=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),I=(n,e)=>{for(var a in e)r(n,a,{get:e[a],enumerable:!0})},d=(n,e,a,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of p(e))!f.call(n,i)&&i!==a&&r(n,i,{get:()=>e[i],enumerable:!(o=m(e,i))||o.enumerable});return n};var v=(n,e,a)=>(a=n!=null?y(g(n)):{},d(e||!n||!n.__esModule?r(a,\"default\",{value:n,enumerable:!0}):a,n)),b=n=>d(r({},\"__esModule\",{value:!0}),n);var c=w((A,h)=>{h.exports=_jsx_runtime});var C={};I(C,{default:()=>j,frontmatter:()=>k});var t=v(c()),k={title:\"When I truly loved myself\",category:\"Culture\",subcategory:\"Current events and psychology\",publishedTime:\"03-14-2023\",modifiedTime:\"03-21-2023\",description:\"A prose poem by Charles Chaplin\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/when-i-truly-loved-myself/image.jpeg\",coverAlt:\"A young girl self-loving\",check:!0,tags:[\"\"]};function u(n){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",a:\"a\",br:\"br\",strong:\"strong\"},n.components),{Introduction:a,Contents:o,Audio:i,Image:l}=e;return i||s(\"Audio\",!0),o||s(\"Contents\",!0),l||s(\"Image\",!0),a||s(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(a,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsxs)(e.p,{children:[\"And if you fell off the world and don\\u2019t know how to return? The following poem by \",(0,t.jsx)(e.a,{href:\"https://wikipedia.org/wiki/Charles_Chaplin\",children:\"Charles Chaplin\"}),\" may help you get back up.\"]}),`\n`]})}),`\n`,(0,t.jsxs)(o,{children:[(0,t.jsx)(i,{src:\"/assets/when-i-truly-loved-myself/audio.mp3\",type:\"audio/mp3\"}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I understood that, in any circumstance, I was in the right place, at the right time, and in the exact moment, and then I could relax.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today I know that has a name\\u2026 Self-esteem\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I could perceive that my anguish and emotional suffering were nothing but a signal that I was going against my own truths.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today I know that is\\u2026 Authenticity\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I stopped wishing my life were different and began to accept everything that happens and contributes to my growth.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today that is called\\u2026 Maturity\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I began to perceive that it is offensive to try to force a situation or person just to achieve what I desire, even knowing it is not the right time, or the person is not ready, including myself.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today I know that is called\\u2026 Respect\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I began to free myself from everything that was not healthy: people, situations, and anything that pushed me down. At first, my reasoning called that attitude selfishness.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today it is called\\u2026 Self-love\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I stopped fearing free time and gave up making big plans; I abandoned mega-future projects. Today I do what I find right, what I like, when I want, and at my own pace.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today I know that is\\u2026 Simplicity and Ease\"})]}),(0,t.jsx)(l,{alt:\"Students taking an exam\",src:\"/assets/when-i-truly-loved-myself/image1.jpeg\"}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I gave up wanting to always be right, and thus I made fewer mistakes.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"Today I discovered that is\\u2026 Humility\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I stopped reliving the past and worrying about the future. Now, I stay in the present, which is where life happens.\",(0,t.jsx)(e.br,{}),`\n`,\"Today I live one day at a time.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"And that is called\\u2026 Fulfillment\"})]}),(0,t.jsxs)(e.p,{children:[\"When I truly loved myself, I realized that my mind can torment and disappoint me. But when I place it at the service of my heart, it has a great and valuable ally.\",(0,t.jsx)(e.br,{}),`\n`,(0,t.jsx)(e.strong,{children:\"All of that is\\u2026 Knowing How to Live\"})]}),(0,t.jsx)(e.p,{children:\"I hope I\\u2019ve helped you. Feel free to read this poem as many times as you wish; if you feel you\\u2019ve lost your way, come back and read it again.\"})]})]})}function x(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(u,n)})):u(n)}var j=x;function s(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(C);})();\n;return Component;"
+  },
+  "_id": "when-i-truly-loved-myself.mdx",
+  "_raw": {
+    "sourceFilePath": "when-i-truly-loved-myself.mdx",
+    "sourceFileName": "when-i-truly-loved-myself.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "when-i-truly-loved-myself"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "A prose poem by Charles Chaplin",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/when-i-truly-loved-myself",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "A prose poem by Charles Chaplin",
+        "images": [
+          {
+            "alt": "A young girl self-loving",
+            "url": "/assets/when-i-truly-loved-myself/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-03-21T04:00:00.000Z",
+        "publishedTime": "2023-03-14T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "When I truly loved myself",
+        "url": "https://imwriting.estarlincito.com/articles/when-i-truly-loved-myself",
+        "type": "article"
+      },
+      "title": "When I truly loved myself"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/when-i-truly-loved-myself",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/current-events-and-psychology"
+    },
+    "subcategory": {
+      "description": "Dive into the fascinating world of human uniqueness through current events and psychology.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/current-events-and-psychology",
+      "openGraph": {
+        "title": "Current events and psychology",
+        "description": "Dive into the fascinating world of human uniqueness through current events and psychology.",
+        "images": [
+          {
+            "alt": "Client listening to a psychologist",
+            "url": "https://images.pexels.com/photos/7176297/pexels-photo-7176297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/current-events-and-psychology",
+        "type": "website"
+      },
+      "title": "Current events and psychology"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 412
+}

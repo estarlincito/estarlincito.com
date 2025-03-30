@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Philosophy",
+  "check": true,
+  "cover": "/assets/actions-over-words/image.jpeg",
+  "coverAlt": "Man Run Young",
+  "description": "In a world of empty promises, true leadership shines through actions. Discover how embodying your values creates trust and inspires others.",
+  "modifiedTime": "2024-10-08T04:00:00.000Z",
+  "publishedTime": "2024-10-08T04:00:00.000Z",
+  "subcategory": "Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Actions Over Words",
+  "body": {
+    "raw": "\n<Introduction>\n\n> In a world of empty promises, true leadership shines through actions. Discover how embodying your values creates trust and inspires others.\n\n</Introduction>\n\n<Contents>\n\n<Audio src='/assets/actions-over-words/audio.mp3' type='audio/mp3' />\n\n_Our words hold power, but it is our actions that define us. In a world filled with rhetoric and promises, it is the consistent demonstration of our values through our behaviors that truly resonates. A leader's strength lies not in their ability to articulate grand visions, but in their unwavering commitment to embody those visions daily. When we speak of integrity, it is the alignment of our words and deeds that earns the trust of those around us._\n\n_Character is not shaped by what others perceive but by the choices we make when no one is watching. Each decision, each interaction, is a chance to exemplify the principles we stand for. As John Wooden wisely stated, we cannot control our reputation, but we can cultivate our character through our actions. It is in this cultivation that we inspire others—not through lofty speeches or elaborate plans, but by being a living example of the change we wish to see._\n\n_In the end, it is the behaviors we model that create the fabric of our cultures, both in our personal lives and within our organizations. When we commit to showing up authentically and consistently, we build environments where trust flourishes and collaboration thrives. Let us remember: what we do speaks so much louder than what we say, and in that simplicity lies the path to true leadership and lasting impact._\n\n</Contents>\n",
+    "code": "var Component=(()=>{var l=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var w=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),f=(t,e)=>{for(var i in e)r(t,i,{get:e[i],enumerable:!0})},h=(t,e,i,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of m(e))!g.call(t,n)&&n!==i&&r(t,n,{get:()=>e[n],enumerable:!(s=p(e,n))||s.enumerable});return t};var y=(t,e,i)=>(i=t!=null?l(w(t)):{},h(e||!t||!t.__esModule?r(i,\"default\",{value:t,enumerable:!0}):i,t)),v=t=>h(r({},\"__esModule\",{value:!0}),t);var u=b((A,c)=>{c.exports=_jsx_runtime});var _={};f(_,{default:()=>k,frontmatter:()=>x});var o=y(u()),x={title:\"Actions Over Words\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"10-08-2024\",modifiedTime:\"10-08-2024\",description:\"In a world of empty promises, true leadership shines through actions. Discover how embodying your values creates trust and inspires others.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/actions-over-words/image.jpeg\",coverAlt:\"Man Run Young\",check:!0,tags:[\"\"]};function d(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},t.components),{Introduction:i,Contents:s,Audio:n}=e;return n||a(\"Audio\",!0),s||a(\"Contents\",!0),i||a(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(i,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"In a world of empty promises, true leadership shines through actions. Discover how embodying your values creates trust and inspires others.\"}),`\n`]})}),`\n`,(0,o.jsxs)(s,{children:[(0,o.jsx)(n,{src:\"/assets/actions-over-words/audio.mp3\",type:\"audio/mp3\"}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"Our words hold power, but it is our actions that define us. In a world filled with rhetoric and promises, it is the consistent demonstration of our values through our behaviors that truly resonates. A leader's strength lies not in their ability to articulate grand visions, but in their unwavering commitment to embody those visions daily. When we speak of integrity, it is the alignment of our words and deeds that earns the trust of those around us.\"})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"Character is not shaped by what others perceive but by the choices we make when no one is watching. Each decision, each interaction, is a chance to exemplify the principles we stand for. As John Wooden wisely stated, we cannot control our reputation, but we can cultivate our character through our actions. It is in this cultivation that we inspire others\\u2014not through lofty speeches or elaborate plans, but by being a living example of the change we wish to see.\"})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"In the end, it is the behaviors we model that create the fabric of our cultures, both in our personal lives and within our organizations. When we commit to showing up authentically and consistently, we build environments where trust flourishes and collaboration thrives. Let us remember: what we do speaks so much louder than what we say, and in that simplicity lies the path to true leadership and lasting impact.\"})})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(d,t)})):d(t)}var k=j;function a(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(_);})();\n;return Component;"
+  },
+  "_id": "actions-over-words.mdx",
+  "_raw": {
+    "sourceFilePath": "actions-over-words.mdx",
+    "sourceFileName": "actions-over-words.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "actions-over-words"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "In a world of empty promises, true leadership shines through actions. Discover how embodying your values creates trust and inspires others.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/actions-over-words",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "In a world of empty promises, true leadership shines through actions. Discover how embodying your values creates trust and inspires others.",
+        "images": [
+          {
+            "alt": "Man Run Young",
+            "url": "/assets/actions-over-words/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-08T04:00:00.000Z",
+        "publishedTime": "2024-10-08T04:00:00.000Z",
+        "section": "Philosophy",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Actions Over Words",
+        "url": "https://imwriting.estarlincito.com/articles/actions-over-words",
+        "type": "article"
+      },
+      "title": "Actions Over Words"
+    },
+    "category": {
+      "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
+      "openGraph": {
+        "title": "Philosophy",
+        "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+        "images": [
+          {
+            "alt": "A collection of books on a wooden shelf.",
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy",
+        "type": "website"
+      },
+      "title": "Philosophy"
+    },
+    "pathnames": {
+      "article": "/articles/actions-over-words",
+      "category": "/articles/philosophy",
+      "subcategory": "/articles/philosophy/reflections"
+    },
+    "subcategory": {
+      "description": "Here you will find some of my reflections and lessons I have learned from life.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+      "openGraph": {
+        "title": "Reflections",
+        "description": "Here you will find some of my reflections and lessons I have learned from life.",
+        "images": [
+          {
+            "alt": "Young person reflecting",
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+        "type": "website"
+      },
+      "title": "Reflections"
+    }
+  },
+  "readingTime": "2 minutes",
+  "wordCount": 260
+}

@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  "coverAlt": "Silhouette photo of a man and a woman.",
+  "description": "Discover a unique encounter, shared dreams, and lessons about love and freedom.",
+  "modifiedTime": "2023-12-04T04:00:00.000Z",
+  "publishedTime": "2023-12-04T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "The Charm of the Ephemeral",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Discover a unique encounter, shared dreams, and lessons about love and freedom.\n\n</Introduction>\n\n<Contents>\n\nOne morning, I was walking through the botanical garden, enjoying the view of a beautiful landscape. As I strolled, I saw that young lady, a woman with curly hair. I was so enchanted that I greeted her with a \"good morning,\" and she kindly returned my smile while wishing me a good day as well.\n\nJust seeing that lady made my day even more positive. I realized this on my way home when I almost got hit by a man driving while crossing the street. He shouted, \"Idiot, watch where you’re going!\" I apologized and thanked him for stopping in time. He replied that it was fine and apologized for calling me an idiot.\n\nWhen I got home, I relaxed by watching a movie and then prepared dinner, all with calmness and passion. My mind kept drifting back to the curly-haired lady, though I was struggling against idealizing her. The day passed, I took a shower as night fell, and then went to bed.\n\nIn my dreams... I found myself in an unknown place, walking alongside the lady with curly hair. Being close to her, I began to fantasize, and as a hopeless romantic, I asked her to dry me with her mouth. What a perversion on my part. She did, leading me into another dream within my dream, as her soft lips heightened my idealization and her curly hair enchanted me even more.\n\n<Image\n  alt='Photo of a woman wearing a black t-shirt.'\n  src='https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'\n/>\n\nThe interruption came at 2:00 a.m. when a neighbor knocked on my door asking for some sugar. I was startled when I opened it, as I kept seeing the curly-haired lady everywhere. I gave her the sugar, and she left, thanking me.\n\nI tried to go back to sleep, wishing to return to that dream, but I couldn’t. Eventually, I fell asleep, and at dawn, I got ready to go to the botanical garden again. To my surprise, there came the curly-haired lady, running just like I was.\n\nI decided to talk to her when she sat down to rest. I greeted her, and she responded. I asked her name, and she told me they call her Rosalía. She wanted to know my name too, and I said, \"Estarlincito.\"\n\nMy confession... \"Rosalía, I must confess that your curly hair impresses me, and your lips make me want to look at you more and more.\" She blushed, thanked me, and I, feeling nervous, shared the dream I had about her. She couldn’t stop smiling. I took the opportunity to invite her to the boardwalk, and to my good fortune, she accepted.\n\nAt the boardwalk... I enjoyed the view and felt even better with Rosalía by my side. We spent the afternoon joking, eating ice cream, walking, and chatting. As night fell, I walked her home. When we said goodbye, she kissed me on the right cheek, and I turned my face, prompting her to kiss me directly on the lips. That day, the dream became a reality.\n\n<Image\n  alt='A man and a woman kissing in the rain.'\n  src='https://images.unsplash.com/photo-1451444635319-e5e247fbb88d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'\n/>\n\nOn the way home... I was the happiest man in the world. I began to glimpse the possibility of having Rosalía by my side forever. That night, I slept like a child, very content and happy.\n\nAt dawn, I returned to the botanical garden with the hope of seeing Rosalía again. When I saw her, my heart filled with joy. She said to me, \"Estarlincito, I need to tell you something.\" I got a little scared and suggested we sit down to talk.\n\nShe told me that she felt very good with me, but that she had to stop seeing me because she didn’t want to give me false hopes. She explained that she needed to focus on herself and her studies, as she was going through a tough time after recently breaking up with her ex. She didn’t want me to suffer because of her.\n\n<Image\n  alt='A man and a woman with a bonfire sitting on the beach.'\n  src='https://images.unsplash.com/photo-1503516459261-40c66117780a?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'\n/>\n\nI accepted her decision, even though it affected me. I thanked her for her honesty and spent a rough day at home. I read psychological articles to manage my discomfort and realized that I had to respect her choice. Love is about freedom—allowing people to be free and choose what makes them happy, even if we are not part of that.\n\nI continued with my daily routine, and when I saw Rosalía again in the botanical garden, I assured her that I understood her situation. I expressed that her words didn’t make her a bad person; on the contrary, they made her a good person who didn’t want to hurt me. I offered my support if she needed it.\n\nI learned that love is not possession but freedom. If someone is seeking something in their life that doesn’t include us, we must let them go with love and without malice. Love desires for the other person to be happy, even if that means not being together.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var r=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var f=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports),y=(a,e)=>{for(var o in e)r(a,o,{get:e[o],enumerable:!0})},s=(a,e,o,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of g(e))!w.call(a,n)&&n!==o&&r(a,n,{get:()=>e[n],enumerable:!(i=p(e,n))||i.enumerable});return a};var I=(a,e,o)=>(o=a!=null?c(u(a)):{},s(e||!a||!a.__esModule?r(o,\"default\",{value:a,enumerable:!0}):o,a)),b=a=>s(r({},\"__esModule\",{value:!0}),a);var l=f((M,d)=>{d.exports=_jsx_runtime});var j={};y(j,{default:()=>x,frontmatter:()=>k});var t=I(l()),k={title:\"The Charm of the Ephemeral\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"12-04-2023\",modifiedTime:\"12-04-2023\",description:\"Discover a unique encounter, shared dreams, and lessons about love and freedom.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",coverAlt:\"Silhouette photo of a man and a woman.\",check:!0,tags:[\"\"]};function m(a){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},a.components),{Introduction:o,Contents:i,Image:n}=e;return i||h(\"Contents\",!0),n||h(\"Image\",!0),o||h(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(o,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"Discover a unique encounter, shared dreams, and lessons about love and freedom.\"}),`\n`]})}),`\n`,(0,t.jsxs)(i,{children:[(0,t.jsx)(e.p,{children:'One morning, I was walking through the botanical garden, enjoying the view of a beautiful landscape. As I strolled, I saw that young lady, a woman with curly hair. I was so enchanted that I greeted her with a \"good morning,\" and she kindly returned my smile while wishing me a good day as well.'}),(0,t.jsx)(e.p,{children:'Just seeing that lady made my day even more positive. I realized this on my way home when I almost got hit by a man driving while crossing the street. He shouted, \"Idiot, watch where you\\u2019re going!\" I apologized and thanked him for stopping in time. He replied that it was fine and apologized for calling me an idiot.'}),(0,t.jsx)(e.p,{children:\"When I got home, I relaxed by watching a movie and then prepared dinner, all with calmness and passion. My mind kept drifting back to the curly-haired lady, though I was struggling against idealizing her. The day passed, I took a shower as night fell, and then went to bed.\"}),(0,t.jsx)(e.p,{children:\"In my dreams... I found myself in an unknown place, walking alongside the lady with curly hair. Being close to her, I began to fantasize, and as a hopeless romantic, I asked her to dry me with her mouth. What a perversion on my part. She did, leading me into another dream within my dream, as her soft lips heightened my idealization and her curly hair enchanted me even more.\"}),(0,t.jsx)(n,{alt:\"Photo of a woman wearing a black t-shirt.\",src:\"https://images.pexels.com/photos/4668537/pexels-photo-4668537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\"}),(0,t.jsx)(e.p,{children:\"The interruption came at 2:00 a.m. when a neighbor knocked on my door asking for some sugar. I was startled when I opened it, as I kept seeing the curly-haired lady everywhere. I gave her the sugar, and she left, thanking me.\"}),(0,t.jsx)(e.p,{children:\"I tried to go back to sleep, wishing to return to that dream, but I couldn\\u2019t. Eventually, I fell asleep, and at dawn, I got ready to go to the botanical garden again. To my surprise, there came the curly-haired lady, running just like I was.\"}),(0,t.jsx)(e.p,{children:'I decided to talk to her when she sat down to rest. I greeted her, and she responded. I asked her name, and she told me they call her Rosal\\xEDa. She wanted to know my name too, and I said, \"Estarlincito.\"'}),(0,t.jsx)(e.p,{children:'My confession... \"Rosal\\xEDa, I must confess that your curly hair impresses me, and your lips make me want to look at you more and more.\" She blushed, thanked me, and I, feeling nervous, shared the dream I had about her. She couldn\\u2019t stop smiling. I took the opportunity to invite her to the boardwalk, and to my good fortune, she accepted.'}),(0,t.jsx)(e.p,{children:\"At the boardwalk... I enjoyed the view and felt even better with Rosal\\xEDa by my side. We spent the afternoon joking, eating ice cream, walking, and chatting. As night fell, I walked her home. When we said goodbye, she kissed me on the right cheek, and I turned my face, prompting her to kiss me directly on the lips. That day, the dream became a reality.\"}),(0,t.jsx)(n,{alt:\"A man and a woman kissing in the rain.\",src:\"https://images.unsplash.com/photo-1451444635319-e5e247fbb88d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"}),(0,t.jsx)(e.p,{children:\"On the way home... I was the happiest man in the world. I began to glimpse the possibility of having Rosal\\xEDa by my side forever. That night, I slept like a child, very content and happy.\"}),(0,t.jsx)(e.p,{children:'At dawn, I returned to the botanical garden with the hope of seeing Rosal\\xEDa again. When I saw her, my heart filled with joy. She said to me, \"Estarlincito, I need to tell you something.\" I got a little scared and suggested we sit down to talk.'}),(0,t.jsx)(e.p,{children:\"She told me that she felt very good with me, but that she had to stop seeing me because she didn\\u2019t want to give me false hopes. She explained that she needed to focus on herself and her studies, as she was going through a tough time after recently breaking up with her ex. She didn\\u2019t want me to suffer because of her.\"}),(0,t.jsx)(n,{alt:\"A man and a woman with a bonfire sitting on the beach.\",src:\"https://images.unsplash.com/photo-1503516459261-40c66117780a?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\"}),(0,t.jsx)(e.p,{children:\"I accepted her decision, even though it affected me. I thanked her for her honesty and spent a rough day at home. I read psychological articles to manage my discomfort and realized that I had to respect her choice. Love is about freedom\\u2014allowing people to be free and choose what makes them happy, even if we are not part of that.\"}),(0,t.jsx)(e.p,{children:\"I continued with my daily routine, and when I saw Rosal\\xEDa again in the botanical garden, I assured her that I understood her situation. I expressed that her words didn\\u2019t make her a bad person; on the contrary, they made her a good person who didn\\u2019t want to hurt me. I offered my support if she needed it.\"}),(0,t.jsx)(e.p,{children:\"I learned that love is not possession but freedom. If someone is seeking something in their life that doesn\\u2019t include us, we must let them go with love and without malice. Love desires for the other person to be happy, even if that means not being together.\"})]})]})}function v(a={}){let{wrapper:e}=a.components||{};return e?(0,t.jsx)(e,Object.assign({},a,{children:(0,t.jsx)(m,a)})):m(a)}var x=v;function h(a,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+a+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(j);})();\n;return Component;"
+  },
+  "_id": "the-charm-of-the-ephemeral.mdx",
+  "_raw": {
+    "sourceFilePath": "the-charm-of-the-ephemeral.mdx",
+    "sourceFileName": "the-charm-of-the-ephemeral.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-charm-of-the-ephemeral"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Discover a unique encounter, shared dreams, and lessons about love and freedom.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-charm-of-the-ephemeral",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Discover a unique encounter, shared dreams, and lessons about love and freedom.",
+        "images": [
+          {
+            "alt": "Silhouette photo of a man and a woman.",
+            "url": "https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2023-12-04T04:00:00.000Z",
+        "publishedTime": "2023-12-04T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "The Charm of the Ephemeral",
+        "url": "https://imwriting.estarlincito.com/articles/the-charm-of-the-ephemeral",
+        "type": "article"
+      },
+      "title": "The Charm of the Ephemeral"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/the-charm-of-the-ephemeral",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "5 minutes",
+  "wordCount": 859
+}

@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Philosophy",
+  "check": true,
+  "cover": "/assets/dont-give-up-create-your-own-path/image.jpeg",
+  "coverAlt": "Man building their own path",
+  "description": "Turn obstacles into opportunities to reach your full potential!",
+  "modifiedTime": "2024-05-12T04:00:00.000Z",
+  "publishedTime": "2024-05-12T04:00:00.000Z",
+  "subcategory": "Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Don’t give up; create your own path",
+  "body": {
+    "raw": "\n<Introduction>\n\n> Turn obstacles into opportunities to reach your full potential!\n\n</Introduction>\n\n<Contents>\n\n<Audio\n  src='/assets/dont-give-up-create-your-own-path/audio.mp3'\n  type='audio/mp3'\n/>\n\n_I like it when things get tough; that’s when you realize you need to unleash your full potential, to push harder than before, and that if a door doesn’t open, you must keep knocking. If no one answers, you’ll know you need to create your own door._\n\n_In those challenging moments, we often uncover hidden strengths and resources. It’s as if adversity sharpens our focus, urging us to innovate and adapt. Each hurdle presents a chance to redefine our limits, proving that resilience is the key to transformation._\n\n</Contents>\n",
+    "code": "var Component=(()=>{var h=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var n in e)s(t,n,{get:e[n],enumerable:!0})},u=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!f.call(t,r)&&r!==n&&s(t,r,{get:()=>e[r],enumerable:!(i=p(e,r))||i.enumerable});return t};var w=(t,e,n)=>(n=t!=null?h(g(t)):{},u(e||!t||!t.__esModule?s(n,\"default\",{value:t,enumerable:!0}):n,t)),v=t=>u(s({},\"__esModule\",{value:!0}),t);var d=y((M,c)=>{c.exports=_jsx_runtime});var _={};b(_,{default:()=>j,frontmatter:()=>k});var o=w(d()),k={title:\"Don\\u2019t give up; create your own path\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-12-2024\",modifiedTime:\"05-12-2024\",description:\"Turn obstacles into opportunities to reach your full potential!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/dont-give-up-create-your-own-path/image.jpeg\",coverAlt:\"Man building their own path\",check:!0,tags:[\"\"]};function l(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},t.components),{Introduction:n,Contents:i,Audio:r}=e;return r||a(\"Audio\",!0),i||a(\"Contents\",!0),n||a(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"Turn obstacles into opportunities to reach your full potential!\"}),`\n`]})}),`\n`,(0,o.jsxs)(i,{children:[(0,o.jsx)(r,{src:\"/assets/dont-give-up-create-your-own-path/audio.mp3\",type:\"audio/mp3\"}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"I like it when things get tough; that\\u2019s when you realize you need to unleash your full potential, to push harder than before, and that if a door doesn\\u2019t open, you must keep knocking. If no one answers, you\\u2019ll know you need to create your own door.\"})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"In those challenging moments, we often uncover hidden strengths and resources. It\\u2019s as if adversity sharpens our focus, urging us to innovate and adapt. Each hurdle presents a chance to redefine our limits, proving that resilience is the key to transformation.\"})})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(l,t)})):l(t)}var j=x;function a(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(_);})();\n;return Component;"
+  },
+  "_id": "dont-give-up-create-your-own-path.mdx",
+  "_raw": {
+    "sourceFilePath": "dont-give-up-create-your-own-path.mdx",
+    "sourceFileName": "dont-give-up-create-your-own-path.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "dont-give-up-create-your-own-path"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "Turn obstacles into opportunities to reach your full potential!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/dont-give-up-create-your-own-path",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "Turn obstacles into opportunities to reach your full potential!",
+        "images": [
+          {
+            "alt": "Man building their own path",
+            "url": "/assets/dont-give-up-create-your-own-path/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-05-12T04:00:00.000Z",
+        "publishedTime": "2024-05-12T04:00:00.000Z",
+        "section": "Philosophy",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Don’t give up; create your own path",
+        "url": "https://imwriting.estarlincito.com/articles/dont-give-up-create-your-own-path",
+        "type": "article"
+      },
+      "title": "Don’t give up; create your own path"
+    },
+    "category": {
+      "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
+      "openGraph": {
+        "title": "Philosophy",
+        "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+        "images": [
+          {
+            "alt": "A collection of books on a wooden shelf.",
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy",
+        "type": "website"
+      },
+      "title": "Philosophy"
+    },
+    "pathnames": {
+      "article": "/articles/dont-give-up-create-your-own-path",
+      "category": "/articles/philosophy",
+      "subcategory": "/articles/philosophy/reflections"
+    },
+    "subcategory": {
+      "description": "Here you will find some of my reflections and lessons I have learned from life.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+      "openGraph": {
+        "title": "Reflections",
+        "description": "Here you will find some of my reflections and lessons I have learned from life.",
+        "images": [
+          {
+            "alt": "Young person reflecting",
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+        "type": "website"
+      },
+      "title": "Reflections"
+    }
+  },
+  "readingTime": "1 minute",
+  "wordCount": 108
+}

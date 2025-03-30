@@ -1,0 +1,124 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Philosophy",
+  "check": true,
+  "cover": "https://cdn.pixabay.com/photo/2016/01/06/21/42/light-bulbs-1125016_1280.jpg",
+  "coverAlt": "Light Bulbs Light Idea",
+  "description": "If you're seeking change but stuck in old routines, it's time to shift your approach. True growth comes from embracing new actions.",
+  "modifiedTime": "2024-10-07T04:00:00.000Z",
+  "publishedTime": "2024-10-07T04:00:00.000Z",
+  "subcategory": "Reflections",
+  "tags": [
+    ""
+  ],
+  "title": "Breaking the Cycle: The Power of Change for Growth",
+  "body": {
+    "raw": "\n<Introduction>\n\n> If you're seeking change but stuck in old routines, it's time to shift your approach. True growth comes from embracing new actions.\n\n</Introduction>\n\n<Contents>\n\n_Repeating the same actions and expecting a different outcome is the recipe for stagnation. Growth begins the moment you dare to change your approach._\n\n_You can't expect your life to change if you keep walking the same path. Progress only comes when you're willing to take a different route._\n\n_Sticking to old habits will keep you exactly where you are. To see new results, you must embrace new ways of thinking and doing._\n\n</Contents>\n",
+    "code": "var Component=(()=>{var m=Object.create;var c=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var n in e)c(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of g(e))!f.call(t,i)&&i!==n&&c(t,i,{get:()=>e[i],enumerable:!(r=d(e,i))||r.enumerable});return t};var w=(t,e,n)=>(n=t!=null?m(p(t)):{},s(e||!t||!t.__esModule?c(n,\"default\",{value:t,enumerable:!0}):n,t)),k=t=>s(c({},\"__esModule\",{value:!0}),t);var h=y((v,a)=>{a.exports=_jsx_runtime});var C={};b(C,{default:()=>_,frontmatter:()=>x});var o=w(h()),x={title:\"Breaking the Cycle: The Power of Change for Growth\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"10-07-2024\",modifiedTime:\"10-07-2024\",description:\"If you're seeking change but stuck in old routines, it's time to shift your approach. True growth comes from embracing new actions.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2016/01/06/21/42/light-bulbs-1125016_1280.jpg\",coverAlt:\"Light Bulbs Light Idea\",check:!0,tags:[\"\"]};function u(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},t.components),{Introduction:n,Contents:r}=e;return r||l(\"Contents\",!0),n||l(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"If you're seeking change but stuck in old routines, it's time to shift your approach. True growth comes from embracing new actions.\"}),`\n`]})}),`\n`,(0,o.jsxs)(r,{children:[(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"Repeating the same actions and expecting a different outcome is the recipe for stagnation. Growth begins the moment you dare to change your approach.\"})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"You can't expect your life to change if you keep walking the same path. Progress only comes when you're willing to take a different route.\"})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"Sticking to old habits will keep you exactly where you are. To see new results, you must embrace new ways of thinking and doing.\"})})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(u,t)})):u(t)}var _=j;function l(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return k(C);})();\n;return Component;"
+  },
+  "_id": "breaking-the-cycle-the-power-of-change-for-growth.mdx",
+  "_raw": {
+    "sourceFilePath": "breaking-the-cycle-the-power-of-change-for-growth.mdx",
+    "sourceFileName": "breaking-the-cycle-the-power-of-change-for-growth.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "breaking-the-cycle-the-power-of-change-for-growth"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "If you're seeking change but stuck in old routines, it's time to shift your approach. True growth comes from embracing new actions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/breaking-the-cycle-the-power-of-change-for-growth",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "If you're seeking change but stuck in old routines, it's time to shift your approach. True growth comes from embracing new actions.",
+        "images": [
+          {
+            "alt": "Light Bulbs Light Idea",
+            "url": "https://cdn.pixabay.com/photo/2016/01/06/21/42/light-bulbs-1125016_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2024-10-07T04:00:00.000Z",
+        "publishedTime": "2024-10-07T04:00:00.000Z",
+        "section": "Philosophy",
+        "siteName": "ImWriting",
+        "tags": [
+          ""
+        ],
+        "title": "Breaking the Cycle: The Power of Change for Growth",
+        "url": "https://imwriting.estarlincito.com/articles/breaking-the-cycle-the-power-of-change-for-growth",
+        "type": "article"
+      },
+      "title": "Breaking the Cycle: The Power of Change for Growth"
+    },
+    "category": {
+      "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
+      "openGraph": {
+        "title": "Philosophy",
+        "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
+        "images": [
+          {
+            "alt": "A collection of books on a wooden shelf.",
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy",
+        "type": "website"
+      },
+      "title": "Philosophy"
+    },
+    "pathnames": {
+      "article": "/articles/breaking-the-cycle-the-power-of-change-for-growth",
+      "category": "/articles/philosophy",
+      "subcategory": "/articles/philosophy/reflections"
+    },
+    "subcategory": {
+      "description": "Here you will find some of my reflections and lessons I have learned from life.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+      "openGraph": {
+        "title": "Reflections",
+        "description": "Here you will find some of my reflections and lessons I have learned from life.",
+        "images": [
+          {
+            "alt": "Young person reflecting",
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
+        "type": "website"
+      },
+      "title": "Reflections"
+    }
+  },
+  "readingTime": "1 minute",
+  "wordCount": 102
+}
