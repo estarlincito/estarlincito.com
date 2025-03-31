@@ -4,11 +4,17 @@ import { locale, siteName, url } from './settings.js';
 
 const constants = ObjectUtils.create({
   contents: [''],
-  description: '',
+  description:
+    'A hub for web development, IT solutions, and personal projects by Estarlin R.',
   path: '/about',
   title: 'About',
   topics: {
-    data: [''],
+    data: [
+      'Web Development',
+      'IT Support',
+      'Open Source Projects',
+      'Freelancing',
+    ],
     label: 'Topics Covered',
   },
 });

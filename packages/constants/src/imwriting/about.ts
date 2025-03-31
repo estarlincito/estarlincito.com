@@ -3,7 +3,7 @@ import { GenerateMetadata, ObjectUtils } from '@estarlincito/utils';
 import { locale, siteName, url } from './settings.js';
 
 const description =
-  'I’m a passionate explorer of psychology, philosophy, and technology, with a knack for delving into the nuances of software development and web design. While I’ve honed my technological skills, I believe life itself is the ultimate adventure—a bold journey filled with discovery, reflection, and growth.';
+  'A minimalist writing environment that enhances productivity and creativity.';
 
 const constants = ObjectUtils.create({
   content: {
@@ -57,8 +57,8 @@ const metadata = GenerateMetadata.website({
   description: constants.description,
   images: [
     {
-      alt: 'Avatar',
-      url: '/assets/avatar.jpeg',
+      alt: '',
+      url: '',
     },
   ],
   locale,

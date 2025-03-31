@@ -8,7 +8,8 @@ import {
   MdWorkHistory,
 } from 'react-icons/md';
 
-import CardWrapper from '../wrapper';
+import CardWrapper from '@/components/ui/card-wrapper';
+
 import Card from './card';
 
 export const Competencies = () => {

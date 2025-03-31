@@ -22,7 +22,7 @@ const metadata = GenerateMetadata.website({
   url,
 });
 
-export const HOME = ObjectUtils.freeze({
+export const home = ObjectUtils.freeze({
   ...constants,
   metadata,
 });

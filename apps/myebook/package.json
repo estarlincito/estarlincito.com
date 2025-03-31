@@ -4,7 +4,7 @@
   "version": "v1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3006",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",

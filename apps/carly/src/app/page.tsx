@@ -4,7 +4,7 @@ import React from 'react';
 
 import Carly from '@/components/carly';
 
-export const { metadata } = carly.HOME;
+export const { metadata } = carly.home;
 
 const Page = () => {
   return (

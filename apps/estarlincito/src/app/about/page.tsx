@@ -2,7 +2,7 @@ import { Text } from '@radix-ui/themes';
 import { estarlincito } from '@repo/constants';
 import { Container, Header, Topics, Wrapper } from '@repo/ui';
 
-import ClientBreadcrumb from '@/components/breadcrumb';
+import ClientBreadcrumb from '@/components/ui/breadcrumb';
 const { about } = estarlincito;
 
 export const { metadata } = about;

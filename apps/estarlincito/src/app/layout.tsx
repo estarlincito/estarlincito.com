@@ -6,7 +6,7 @@ import { Theme } from '@radix-ui/themes';
 
 import { Collapse, Footer, Navbar } from '@/components/layout';
 import Opacity from '@/components/layout/opacity';
-import { Toaster } from '@/components/toaster';
+import { Toaster } from '@/components/ui/toaster';
 import { CollapseProvider } from '@/context/collapse';
 import AppThemeProvider from '@/context/theme';
 import type Children from '@/types/children';

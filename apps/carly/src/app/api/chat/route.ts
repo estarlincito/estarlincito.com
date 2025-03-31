@@ -1,16 +1,16 @@
-import { openai } from '@ai-sdk/openai';
-import { streamText } from 'ai';
+import { deepinfra } from '@ai-sdk/deepinfra';
+import { type Message, streamText } from 'ai';
 
 export const POST = async (req: Request) => {
-  const { messages } = await req.json();
-  const model = openai('gpt-4o-mini');
+  const { messages } = (await req.json()) as { messages: Message[] };
+
+  const prompt = messages
+    .map((message) => `${message.role}: ${message.content}`)
+    .join('\n');
 
   const result = streamText({
-    maxTokens: 1024,
-    messages,
-    model,
-    temperature: 0.7,
-    topP: 1,
+    model: deepinfra('mistralai/Mistral-7B-Instruct-v0.1'),
+    prompt,
   });
 
   return result.toDataStreamResponse();
