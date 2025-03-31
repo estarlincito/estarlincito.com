@@ -1,7 +1,7 @@
 import { GenerateMetadata, toSlug, type Website } from '@estarlincito/utils';
 import { myebook } from '@repo/constants';
 import Instances from 'config/types/instances';
-import { LocalDocument } from 'contentlayer/source-files';
+import { type LocalDocument } from 'contentlayer/source-files';
 
 import meta_author from './author';
 import meta_genres from './genres';

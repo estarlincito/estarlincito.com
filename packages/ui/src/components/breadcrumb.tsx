@@ -1,45 +1,22 @@
 'use client';
-import { Box, Flex, Link, Strong, Text } from '@radix-ui/themes';
+import '../styles/globals.css';
+
+import { Box, Flex, Link, Strong } from '@radix-ui/themes';
 import stylez from '@stylezjs/stylez';
-import { usePathname } from 'next/navigation';
+import { z } from 'zod';
 
-import { Slug } from '../types/slug';
+const ZBreadcrumbItemSchema = z.object({
+  route: z.string(),
+  title: z.string(),
+});
 
-type Color =
-  | (
-      | 'gray'
-      | 'gold'
-      | 'bronze'
-      | 'brown'
-      | 'yellow'
-      | 'amber'
-      | 'orange'
-      | 'tomato'
-      | 'red'
-      | 'ruby'
-      | 'crimson'
-      | 'pink'
-      | 'plum'
-      | 'purple'
-      | 'violet'
-      | 'iris'
-      | 'indigo'
-      | 'blue'
-      | 'cyan'
-      | 'teal'
-      | 'jade'
-      | 'green'
-      | 'grass'
-      | 'lime'
-      | 'mint'
-      | 'sky'
-    )
-  | undefined;
+const slugSchema = z.tuple([ZBreadcrumbItemSchema]).rest(ZBreadcrumbItemSchema);
+
+export type Slug = z.infer<typeof slugSchema>;
 
 interface Props {
   slug: Slug;
-  color?: Color;
-  //usePathname: () => string;
+  usePathname: () => string;
 }
 
 const styles = stylez.create({
@@ -47,17 +24,18 @@ const styles = stylez.create({
   whiteSpace: 'nowrap',
 });
 
-export const Breadcrumb = ({ slug, color }: Props) => {
+export const Breadcrumb = ({ slug, usePathname }: Props) => {
   const pathname = usePathname();
-  const [firstSlug, secondSlug, thirdSlug] = slug;
+  const [firstSlug, secondSlug, thirdSlug] = slugSchema.parse(slug);
+
   return (
     <Flex align='center' gap='1'>
       <Link size='2' href='/' target='_self'>
         <Strong>Home</Strong>
       </Link>
-      <Text color={color ? color : 'indigo'} size='2' as='span'>
+      <Link size='2'>
         <Strong>/</Strong>
-      </Text>
+      </Link>
 
       <Link
         size='2'
@@ -70,9 +48,9 @@ export const Breadcrumb = ({ slug, color }: Props) => {
 
       {secondSlug && (
         <>
-          <Text color={color ? color : 'indigo'} size='2' as='span'>
+          <Link size='2'>
             <Strong>/</Strong>
-          </Text>
+          </Link>
 
           <Link size='2' href={secondSlug.route} target='_self'>
             <Strong>{secondSlug.title}</Strong>
@@ -82,9 +60,9 @@ export const Breadcrumb = ({ slug, color }: Props) => {
 
       {thirdSlug && (
         <>
-          <Text color={color ? color : 'indigo'} size='2' as='span'>
+          <Link size='2'>
             <Strong>/</Strong>
-          </Text>
+          </Link>
 
           <Box
             asChild

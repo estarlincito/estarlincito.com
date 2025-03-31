@@ -1,7 +1,7 @@
 import { Box, Container, Link, Strong } from '@radix-ui/themes';
 
-import { Title } from '../../components';
-import { Wrapper } from '../../layouts';
+import { Title } from '../../components/index.js';
+import { Wrapper } from '../../layouts/index.js';
 
 export const NotFoundPage = () => {
   return (

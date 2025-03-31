@@ -1,9 +1,10 @@
-// import '@/styles/themes-config.css';
-// import '@radix-ui/themes/styles.css';
+import '@/styles/themes-config.css';
+import '@radix-ui/themes/styles.css';
 
 import { Theme } from '@radix-ui/themes';
-import { Toaster } from '@repo/ui';
 import type React from 'react';
+
+import { Toaster } from '@/components/toaster';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (

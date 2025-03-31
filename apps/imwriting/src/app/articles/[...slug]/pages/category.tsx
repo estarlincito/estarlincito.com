@@ -1,9 +1,9 @@
-import { SearchParams } from '@repo/ui';
+import { Header, type SearchParams } from '@repo/ui';
 import { type Articles } from 'contentlayer/generated';
 import React from 'react';
 
 import ArticlesList from '@/components/articles/list';
-import Header from '@/components/layout/header';
+import ClientBreadcrumb from '@/components/breadcrumb';
 
 interface Props extends SearchParams {
   articles: [Articles, ...Articles[]];
@@ -19,12 +19,8 @@ const Category = async ({ articles, limit, offset }: Props) => {
 
   return (
     <>
-      <Header
-        slug={[{ route: pathnames.category, title }]}
-        title={title}
-        description={description}
-        m='5'
-      />
+      <ClientBreadcrumb slug={[{ route: pathnames.category, title }]} />
+      <Header title={title} summary={description} />
       <ArticlesList
         count={articles.length}
         articles={articles}

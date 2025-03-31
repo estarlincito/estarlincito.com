@@ -1,11 +1,13 @@
+import '../../styles/globals.css';
+
 import * as RadixForm from '@radix-ui/react-form';
 import { Flex } from '@radix-ui/themes';
 import stylez from '@stylezjs/stylez';
 import React from 'react';
 
-import Button from './button';
-import Field from './field';
-import Link from './link';
+import Button from './button.js';
+import Field from './field/index.js';
+import Link from './link.js';
 
 const styles = stylez.create({
   backgroundColor: 'var(--gray-1)',

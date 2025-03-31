@@ -1,5 +1,5 @@
 import { sortByDate } from '@estarlincito/utils';
-import { SearchParams } from '@repo/ui';
+import { type SearchParams } from '@repo/ui';
 import { Articles } from 'contentlayer/generated';
 
 interface Props extends SearchParams {

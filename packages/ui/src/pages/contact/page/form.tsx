@@ -1,19 +1,20 @@
 'use client';
-import { Box, Flex } from '@radix-ui/themes';
+
+import { Box, Flex, Separator } from '@radix-ui/themes';
 import { useForm } from 'react-hook-form';
 
-import { Breadcrumb, Summary, Title } from '../../../components';
-import { Form } from '../../../layouts';
-import onSubmit from './submit';
+import { Breadcrumb, Summary, Title } from '../../../components/index.js';
+import { Form } from '../../../layouts/index.js';
+import onSubmit from './submit.js';
 
-export type InputContact = {
+export interface InputContact {
   'first-name': string;
   'last-name': string;
   company: string;
   'phone-number': string;
   email: string;
   message: string;
-};
+}
 
 const ContactForm = () => {
   const { register, handleSubmit } = useForm<InputContact>();
@@ -25,9 +26,13 @@ const ContactForm = () => {
       }}
     >
       <Box mb='5'>
-        <Title>Get in touch</Title>
-        <Breadcrumb slug={[{ route: '/contact', title: 'Contact ' }]} />
-        <Summary summary='Seeks collaboration on building something impactful and sustainable!' />
+        <Breadcrumb
+          slug={[{ route: '/contact', title: 'Contact ' }]}
+          usePathname={() => ''}
+        />
+        <Title contents='Get in touch' my='2' />
+        <Summary contents='Seeks collaboration on building something impactful and sustainable!' />
+        <Separator size='4' mt='1' />
       </Box>
 
       <Flex

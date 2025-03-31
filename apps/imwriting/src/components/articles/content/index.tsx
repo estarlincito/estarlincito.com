@@ -1,9 +1,9 @@
 import { Heading } from '@radix-ui/themes';
+import { Wrapper } from '@repo/ui';
 import { type Articles } from 'contentlayer/generated';
 import React from 'react';
 
-import Breadcrumb from '@/components/layout/breadcrumb';
-import Wrapper from '@/components/layout/wrapper';
+import ClientBreadcrumb from '@/components/breadcrumb';
 import Image from '@/components/ui/image';
 
 import Article from './article';
@@ -31,7 +31,7 @@ const ArticleContent = (props: Articles) => {
 
   return (
     <Wrapper align='start'>
-      <Breadcrumb
+      <ClientBreadcrumb
         slug={[
           { route: meta.pathnames.category, title: category },
           { route: meta.pathnames.subcategory, title: subcategory },

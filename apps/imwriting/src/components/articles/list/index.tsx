@@ -1,5 +1,5 @@
 import { Box, Grid } from '@radix-ui/themes';
-import { Pagination, SearchParams } from '@repo/ui';
+import { Pagination, type SearchParams } from '@repo/ui';
 import { type Articles } from 'contentlayer/generated';
 import React from 'react';
 
@@ -17,7 +17,7 @@ const ArticlesList = ({ articles, limit, offset, route, count }: Props) => {
   const data = getOffsetData({ articles, limit, offset });
 
   return (
-    <Box>
+    <Box mt='5'>
       <Grid gap='1.25rem' justify='center' columns='repeat(auto-fill, 350px)'>
         {data.map((article, id) => (
           <Box as='div' key={id}>

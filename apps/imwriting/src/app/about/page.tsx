@@ -1,10 +1,9 @@
 import { Heading, Text } from '@radix-ui/themes';
 import { imwriting } from '@repo/constants';
+import { Container, Header, Wrapper } from '@repo/ui';
 import React from 'react';
 
-import Container from '@/components/layout/container';
-import Header from '@/components/layout/header';
-import Wrapper from '@/components/layout/wrapper';
+import ClientBreadcrumb from '@/components/breadcrumb';
 import Topics from '@/components/topics';
 
 export const { metadata } = imwriting.about;
@@ -16,10 +15,12 @@ const Page = () => {
   return (
     <Container size='3'>
       <Wrapper align='start'>
+        <ClientBreadcrumb
+          slug={[{ route: imwriting.about.path, title: imwriting.about.title }]}
+        />
         <Header
           title={imwriting.about.title}
-          description={imwriting.about.description}
-          slug={[{ route: imwriting.about.path, title: imwriting.about.title }]}
+          summary={imwriting.about.description}
         />
         <Heading size='4'>
           {imwriting.about.content.introduction.greeting}

@@ -1,9 +1,8 @@
-import { SearchParamsProps } from '@repo/ui';
+import { Container, type SearchParamsProps } from '@repo/ui';
 import { notFound } from 'next/navigation';
 import React from 'react';
 
 import ArticleContent from '@/components/articles/content';
-import Container from '@/components/layout/container';
 import getArticles from '@/lib/articles';
 import { Params } from '@/types/params';
 

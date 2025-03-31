@@ -1,14 +1,13 @@
 import { Box, Em, Heading, Strong, Text } from '@radix-ui/themes';
-import React from 'react';
 
-type Props = {
+interface Props {
   description: string;
   list: {
     title: string;
     details: string;
   }[];
   closingNote: string;
-};
+}
 
 const Topics = ({ description, list, closingNote }: Props) => {
   return (

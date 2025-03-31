@@ -1,8 +1,9 @@
 import { GenerateMetadata } from '@estarlincito/utils';
 import { Container } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Header, SearchParamsProps } from '@repo/ui';
+import { Header, type SearchParamsProps } from '@repo/ui';
 
+import ClientBreadcrumb from '@/components/breadcrumb';
 import QuoteList from '@/components/quotes/list';
 import { findTag } from '@/lib/quotes';
 import { ParamsProps } from '@/types/params';
@@ -41,9 +42,7 @@ const TagPage = async ({
 
   return (
     <Container size='4'>
-      <Header
-        title={tagData.tag.name}
-        summary=''
+      <ClientBreadcrumb
         slug={[
           {
             route: quotely.tags.path,
@@ -55,6 +54,7 @@ const TagPage = async ({
           },
         ]}
       />
+      <Header title={tagData.tag.name} summary='' />
       <QuoteList
         route={route}
         {...searchParamsData}

@@ -13,7 +13,6 @@ const HomePage: React.FC = () => {
         <Header
           title='Hey there! 👋 Welcome to Imwriting'
           summary={home.description}
-          slug={[{ route: '', title: '' }]}
         />
       </Box>
     </Container>

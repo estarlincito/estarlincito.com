@@ -12,6 +12,7 @@ import {
 import { quotely } from '@repo/constants';
 import { Header, Wrapper } from '@repo/ui';
 
+import ClientBreadcrumb from '@/components/breadcrumb';
 import { findQuote } from '@/lib/quotes';
 import type { ParamsProps } from '@/types/params';
 const { locale, siteName, url } = quotely;
@@ -45,9 +46,7 @@ const QuotePage = async ({ params }: ParamsProps) => {
   return (
     <Container size='4'>
       <Wrapper maxWidth='800px' m='auto'>
-        <Header
-          title={`Quote #${quoteData.id}`}
-          summary=''
+        <ClientBreadcrumb
           slug={[
             {
               route: quotely.quotes.path,
@@ -59,6 +58,7 @@ const QuotePage = async ({ params }: ParamsProps) => {
             },
           ]}
         />
+        <Header title={`Quote #${quoteData.id}`} summary='' />
 
         <Card variant='ghost'>
           <Flex direction='column' gapY='4'>

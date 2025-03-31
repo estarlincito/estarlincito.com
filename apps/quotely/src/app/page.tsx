@@ -7,7 +7,7 @@ import {
   Separator,
 } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Block, SearchParamsProps, Wrapper } from '@repo/ui';
+import { Block, type SearchParamsProps, Wrapper } from '@repo/ui';
 
 import Card from '@/components/quotes/card';
 import { getAuthors, getLastQuote, getTags } from '@/lib/quotes';

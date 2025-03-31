@@ -1,10 +1,9 @@
 import '@/styles/themes-config.css';
 import '@radix-ui/themes/styles.css';
-import '@/styles/globals.css';
 
 import { Theme } from '@radix-ui/themes';
-import { Toaster } from '@repo/ui';
 
+import { Toaster } from '@/components/toaster';
 import AppThemeProvider from '@/context/theme';
 import Children from '@/types/children';
 

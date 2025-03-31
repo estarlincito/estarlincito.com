@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import '../../../styles/globals.css';
+
 import * as Form from '@radix-ui/react-form';
 import { InfoCircledIcon } from '@radix-ui/react-icons';
 import { Box, Flex, TextArea, TextField } from '@radix-ui/themes';
@@ -5,8 +8,8 @@ import stylez from '@stylezjs/stylez';
 import type { FieldValues, Path, UseFormRegister } from 'react-hook-form';
 import { z } from 'zod';
 
-import { getInputProps } from './input';
-import { nameSchema } from './props';
+import { getInputProps } from './input.js';
+import { nameSchema } from './props.js';
 
 const styles = {
   field: stylez.create({
@@ -57,6 +60,7 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
           {...stylez.className(styles.message)}
         >
           <Flex align='center' gapX='1'>
+            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please enter your ${title.toLowerCase()}`}
           </Flex>
@@ -66,6 +70,7 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
           match='typeMismatch'
         >
           <Flex align='center' gapX='1'>
+            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please provide a valid ${title.toLowerCase()}`}
           </Flex>
@@ -73,6 +78,7 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
 
         <Form.Message {...stylez.className(styles.message)} match='tooLong'>
           <Flex align='center' gapX='1'>
+            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please provide a valid ${title.toLowerCase()}`}
           </Flex>
@@ -80,6 +86,7 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
 
         <Form.Message {...stylez.className(styles.message)} match='tooShort'>
           <Flex align='center' gapX='1'>
+            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please provide a valid ${title.toLowerCase()}`}
           </Flex>

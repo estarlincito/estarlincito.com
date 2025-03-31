@@ -16,8 +16,7 @@ const Interesting = ({ pathname }: Props) => {
   return (
     <Flex direction='column' width='100%' gap='5'>
       <Heading align='center'>Interesting Articles</Heading>
-
-      <ArticlesList articles={Interesting} count={2} route='interesting' />
+      <ArticlesList articles={Interesting} count={2} route='/' />
     </Flex>
   );
 };

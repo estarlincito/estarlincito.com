@@ -1,6 +1,6 @@
 import { Box, Grid } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Pagination, SearchParams } from '@repo/ui';
+import { Pagination, type SearchParams } from '@repo/ui';
 import type { z } from 'zod';
 
 import type { returnSchema } from '@/schemas/quotes/return';

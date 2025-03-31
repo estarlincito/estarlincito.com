@@ -1,2 +1,2 @@
-export { notFoundMeta } from './metadata';
-export { NotFoundPage } from './page';
+export { notFoundMeta } from './metadata.js';
+export { NotFoundPage } from './page.js';

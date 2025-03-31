@@ -1,5 +1,5 @@
 import { apiFetch } from '@estarlincito/utils';
-import { SearchParams } from '@repo/ui';
+import { type SearchParams } from '@repo/ui';
 import { notFound } from 'next/navigation';
 import { type ZodType } from 'zod';
 

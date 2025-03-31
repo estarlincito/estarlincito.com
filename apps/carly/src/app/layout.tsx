@@ -3,11 +3,11 @@ import '@radix-ui/themes/styles.css';
 import '@/styles/globals.css';
 
 import { Theme } from '@radix-ui/themes';
-import { Toaster } from '@repo/ui';
 import type React from 'react';
 
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
+import { Toaster } from '@/components/toaster';
 import AppThemeProvider from '@/context/theme';
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {

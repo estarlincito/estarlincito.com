@@ -1,7 +1,8 @@
 import { Container } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Header, SearchParamsProps } from '@repo/ui';
+import { Header, type SearchParamsProps } from '@repo/ui';
 
+import ClientBreadcrumb from '@/components/breadcrumb';
 import QuoteList from '@/components/quotes/list';
 import { getQuotes } from '@/lib/quotes';
 
@@ -13,10 +14,12 @@ const QuotesPage = async ({ searchParams }: SearchParamsProps) => {
 
   return (
     <Container size='4'>
+      <ClientBreadcrumb
+        slug={[{ route: quotely.quotes.path, title: quotely.quotes.title }]}
+      />
       <Header
         title={quotely.quotes.title}
         summary={quotely.quotes.description}
-        slug={[{ route: quotely.quotes.path, title: quotely.quotes.title }]}
       />
       <QuoteList
         {...params}

@@ -1,2 +1,2 @@
-export { errorMeta } from './metadata';
-export { ErrorPage } from './page';
+export { errorMeta } from './metadata.js';
+export { ErrorPage } from './page.js';

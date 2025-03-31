@@ -1,2 +1,2 @@
-export { contactMeta } from './metadata';
-export { ContactPage } from './page';
+export { contactMeta } from './metadata.js';
+export { ContactPage } from './page/index.js';

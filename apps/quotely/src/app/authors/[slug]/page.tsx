@@ -1,9 +1,10 @@
 import { GenerateMetadata } from '@estarlincito/utils';
 import { Container } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Header, SearchParamsProps } from '@repo/ui';
+import { Header, type SearchParamsProps } from '@repo/ui';
 import { z } from 'zod';
 
+import ClientBreadcrumb from '@/components/breadcrumb';
 import Quotes from '@/components/quotes/list';
 import { findAuthor } from '@/lib/quotes';
 import type { ParamsProps } from '@/types/params';
@@ -41,9 +42,7 @@ const AuthorPage = async ({
 
   return (
     <Container size='4'>
-      <Header
-        title={authorData.author.name}
-        summary=''
+      <ClientBreadcrumb
         slug={[
           {
             route: quotely.authors.path,
@@ -55,6 +54,7 @@ const AuthorPage = async ({
           },
         ]}
       />
+      <Header title={authorData.author.name} summary='' />
       <Quotes
         route={authorData.author.slug}
         {...searchParamsData}

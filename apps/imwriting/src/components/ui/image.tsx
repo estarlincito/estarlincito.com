@@ -5,7 +5,7 @@ import React from 'react';
 
 const styles = {
   img: stylez.create({
-    borderRadius: 'var(--radius-2)',
+    borderRadius: '0.3125rem',
     height: '100%',
     objectFit: 'cover',
     width: '100%',
@@ -13,8 +13,8 @@ const styles = {
 };
 
 interface Props {
-  src: string;
-  alt: string;
+  src?: string;
+  alt?: string;
 }
 const Image = ({ src, alt }: Props) => {
   return (

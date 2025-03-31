@@ -1,6 +1,7 @@
 import { quotely } from '@repo/constants';
-import { Container, Header, SearchParamsProps } from '@repo/ui';
+import { Container, Header, type SearchParamsProps } from '@repo/ui';
 
+import ClientBreadcrumb from '@/components/breadcrumb';
 import TagList from '@/components/tags/list';
 import { getTags } from '@/lib/quotes';
 
@@ -12,11 +13,10 @@ const TagsPage = async ({ searchParams }: SearchParamsProps) => {
 
   return (
     <Container size='4'>
-      <Header
-        title={quotely.tags.title}
-        summary={quotely.tags.description}
+      <ClientBreadcrumb
         slug={[{ route: quotely.tags.path, title: quotely.tags.title }]}
       />
+      <Header title={quotely.tags.title} summary={quotely.tags.description} />
       <TagList tagsData={tagsData} {...searchParamsData} />
     </Container>
   );

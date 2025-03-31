@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { fieldSchema, nameSchema, props } from './props';
+import { fieldSchema, nameSchema, props } from './props.js';
 
 export const getInputProps = (
   name: z.infer<typeof nameSchema>,
