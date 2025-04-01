@@ -9,6 +9,7 @@ const Ebooks = async ({ searchParams }: SearchParamsProps) => {
   const searchParamsData = await searchParams;
   return (
     <Container size='4'>
+      {searchParamsData.limit}
       <Header title={home.title} summary={home.description} />
     </Container>
   );
