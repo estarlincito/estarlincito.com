@@ -11,7 +11,7 @@ const Hireme = () => {
         </IconButton>
       </Link>
       <Link
-        href='https://github.com/estarlincito/imwriting.estarlincito.com'
+        href='https://github.com/estarlincito/estarlincito.com/blob/main/apps/imwriting/README.md'
         target='_blank'
       >
         <IconButton variant='soft' color='gray'>

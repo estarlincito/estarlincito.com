@@ -1,0 +1,126 @@
+{
+  "authors": [
+    "Estarlincito"
+  ],
+  "avatar": "/assets/avatar.jpeg",
+  "category": "Culture",
+  "check": true,
+  "cover": "/assets/the-seeds-of-belief/image.jpeg",
+  "coverAlt": "val",
+  "description": "What if your thoughts were seeds shaping your reality? Learn how Val transformed her life by changing what she believed—and what she expected.",
+  "modifiedTime": "2025-03-10T04:00:00.000Z",
+  "publishedTime": "2025-03-10T04:00:00.000Z",
+  "subcategory": "Stories and Reflections",
+  "tags": [
+    "‘self-growth’",
+    "‘positive-mindset’"
+  ],
+  "title": "The Seeds of Belief",
+  "body": {
+    "raw": "\n<Introduction>\n\n> What if your thoughts were seeds shaping your reality? Learn how Val transformed her life by changing what she believed—and what she expected.\n\n</Introduction>\n\n<Contents>\n  {/* <Audio\n    src=''\n    type='audio/mp3'\n  /> */}\n\n{/* > _&quot;.....&quot;_ <br/> **-Anonymous-** */}\n\nOnce upon a time, in a quiet town where the wind carried whispers of forgotten dreams, there was a young woman named Val. Since childhood, she had been told she was too ambitious, too hopeful, too much of a dreamer. “Life doesn’t work that way,” they said. “You have to be realistic.” And so, Val learned to expect little from life.\n\nEach time she tried something new, she heard an inner voice repeating those words. When she applied for a job she truly wanted, she hesitated. When she considered starting her own project, she convinced herself she would fail before even trying. Without realizing it, she had built invisible walls around her, walls made of her own doubts and fears.\n\nOne evening, while walking home, Val saw an old man painting on a street corner. His canvas was a chaotic mix of colors—gold, deep blue, fiery red—blending in unexpected ways. She stopped and watched as he added strokes with confidence, without hesitation, as if every choice was meant to be.\n\n“You paint without fear,” she said, almost without thinking.\n\nThe man looked at her and smiled. “Fear only grows when you feed it. The same goes for belief. What do you feed?”\n\nVal frowned. “I don’t feed anything,” she admitted.\n\n“Ah, but you do,” the man said, dipping his brush into gold paint. “Every thought you repeat is a seed. Tell me, if you plant seeds of doubt every day, what do you think will grow?”\n\nThe words hit her like a wave. She had never thought of it that way. That night, Val lay awake, remembering all the times she had convinced herself she wasn’t good enough, all the times she had expected the worst—and how, somehow, the worst always seemed to happen.\n\nWhat if it wasn’t just bad luck?\n\nThe next morning, she decided to run an experiment. For one week, she would change the seeds she planted. Instead of expecting failure, she would expect success. Instead of repeating old doubts, she would tell herself:\n\n“Things are working in my favor.”\n“I am capable of achieving what I want.”\n“Opportunities are coming to me.”\n\nAt first, it felt ridiculous, like telling herself the sky was green. But she kept going. She noticed small changes—she walked taller, she spoke with more confidence, she took chances she would have avoided before. And then, something strange happened.\n\nOne of the jobs she had hesitated to apply for reached out to her. A project she had abandoned suddenly sparked interest from someone willing to invest in her idea. A person she admired told her, “You seem different, more sure of yourself.”\n\n<Image\n  alt='Val now is confident in his abilities'\n  src='/assets/the-seeds-of-belief/image1.jpeg'\n/>\n\nFor the first time, Val saw the truth: her thoughts were not just words. They were shaping her world.\n\nWeeks later, she passed by the street corner again, but the old man was gone. In his place was a single note, written in gold paint.\n\n“You choose what grows. Keep planting wisely.”\n\nAnd so, Val did. She was no longer just living—she was creating. And life, in turn, responded to her belief.\n\nTHE END\n\n</Contents>\n",
+    "code": "var Component=(()=>{var u=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var m=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),y=(n,e)=>{for(var o in e)s(n,o,{get:e[o],enumerable:!0})},r=(n,e,o,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of w(e))!g.call(n,i)&&i!==o&&s(n,i,{get:()=>e[i],enumerable:!(a=p(e,i))||a.enumerable});return n};var b=(n,e,o)=>(o=n!=null?u(f(n)):{},r(e||!n||!n.__esModule?s(o,\"default\",{value:n,enumerable:!0}):o,n)),v=n=>r(s({},\"__esModule\",{value:!0}),n);var l=m((V,d)=>{d.exports=_jsx_runtime});var T={};y(T,{default:()=>j,frontmatter:()=>k});var t=b(l()),k={title:\"The Seeds of Belief\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"03-10-2025\",modifiedTime:\"03-10-2025\",description:\"What if your thoughts were seeds shaping your reality? Learn how Val transformed her life by changing what she believed\\u2014and what she expected.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/the-seeds-of-belief/image.jpeg\",coverAlt:\"val\",check:!0,tags:[\"\\u2018self-growth\\u2019\",\"\\u2018positive-mindset\\u2019\"]};function c(n){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},n.components),{Introduction:o,Contents:a,Image:i}=e;return a||h(\"Contents\",!0),i||h(\"Image\",!0),o||h(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(o,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"What if your thoughts were seeds shaping your reality? Learn how Val transformed her life by changing what she believed\\u2014and what she expected.\"}),`\n`]})}),`\n`,(0,t.jsxs)(a,{children:[(0,t.jsx)(e.p,{children:\"Once upon a time, in a quiet town where the wind carried whispers of forgotten dreams, there was a young woman named Val. Since childhood, she had been told she was too ambitious, too hopeful, too much of a dreamer. \\u201CLife doesn\\u2019t work that way,\\u201D they said. \\u201CYou have to be realistic.\\u201D And so, Val learned to expect little from life.\"}),(0,t.jsx)(e.p,{children:\"Each time she tried something new, she heard an inner voice repeating those words. When she applied for a job she truly wanted, she hesitated. When she considered starting her own project, she convinced herself she would fail before even trying. Without realizing it, she had built invisible walls around her, walls made of her own doubts and fears.\"}),(0,t.jsx)(e.p,{children:\"One evening, while walking home, Val saw an old man painting on a street corner. His canvas was a chaotic mix of colors\\u2014gold, deep blue, fiery red\\u2014blending in unexpected ways. She stopped and watched as he added strokes with confidence, without hesitation, as if every choice was meant to be.\"}),(0,t.jsx)(e.p,{children:\"\\u201CYou paint without fear,\\u201D she said, almost without thinking.\"}),(0,t.jsx)(e.p,{children:\"The man looked at her and smiled. \\u201CFear only grows when you feed it. The same goes for belief. What do you feed?\\u201D\"}),(0,t.jsx)(e.p,{children:\"Val frowned. \\u201CI don\\u2019t feed anything,\\u201D she admitted.\"}),(0,t.jsx)(e.p,{children:\"\\u201CAh, but you do,\\u201D the man said, dipping his brush into gold paint. \\u201CEvery thought you repeat is a seed. Tell me, if you plant seeds of doubt every day, what do you think will grow?\\u201D\"}),(0,t.jsx)(e.p,{children:\"The words hit her like a wave. She had never thought of it that way. That night, Val lay awake, remembering all the times she had convinced herself she wasn\\u2019t good enough, all the times she had expected the worst\\u2014and how, somehow, the worst always seemed to happen.\"}),(0,t.jsx)(e.p,{children:\"What if it wasn\\u2019t just bad luck?\"}),(0,t.jsx)(e.p,{children:\"The next morning, she decided to run an experiment. For one week, she would change the seeds she planted. Instead of expecting failure, she would expect success. Instead of repeating old doubts, she would tell herself:\"}),(0,t.jsx)(e.p,{children:`\\u201CThings are working in my favor.\\u201D\n\\u201CI am capable of achieving what I want.\\u201D\n\\u201COpportunities are coming to me.\\u201D`}),(0,t.jsx)(e.p,{children:\"At first, it felt ridiculous, like telling herself the sky was green. But she kept going. She noticed small changes\\u2014she walked taller, she spoke with more confidence, she took chances she would have avoided before. And then, something strange happened.\"}),(0,t.jsx)(e.p,{children:\"One of the jobs she had hesitated to apply for reached out to her. A project she had abandoned suddenly sparked interest from someone willing to invest in her idea. A person she admired told her, \\u201CYou seem different, more sure of yourself.\\u201D\"}),(0,t.jsx)(i,{alt:\"Val now is confident in his abilities\",src:\"/assets/the-seeds-of-belief/image1.jpeg\"}),(0,t.jsx)(e.p,{children:\"For the first time, Val saw the truth: her thoughts were not just words. They were shaping her world.\"}),(0,t.jsx)(e.p,{children:\"Weeks later, she passed by the street corner again, but the old man was gone. In his place was a single note, written in gold paint.\"}),(0,t.jsx)(e.p,{children:\"\\u201CYou choose what grows. Keep planting wisely.\\u201D\"}),(0,t.jsx)(e.p,{children:\"And so, Val did. She was no longer just living\\u2014she was creating. And life, in turn, responded to her belief.\"}),(0,t.jsx)(e.p,{children:\"THE END\"})]})]})}function x(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(c,n)})):c(n)}var j=x;function h(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(T);})();\n;return Component;"
+  },
+  "_id": "the-seeds-of-belief.mdx",
+  "_raw": {
+    "sourceFilePath": "the-seeds-of-belief.mdx",
+    "sourceFileName": "the-seeds-of-belief.mdx",
+    "sourceFileDir": ".",
+    "contentType": "mdx",
+    "flattenedPath": "the-seeds-of-belief"
+  },
+  "type": "Articles",
+  "meta": {
+    "article": {
+      "description": "What if your thoughts were seeds shaping your reality? Learn how Val transformed her life by changing what she believed—and what she expected.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/the-seeds-of-belief",
+      "openGraph": {
+        "authors": [
+          "Estarlincito"
+        ],
+        "description": "What if your thoughts were seeds shaping your reality? Learn how Val transformed her life by changing what she believed—and what she expected.",
+        "images": [
+          {
+            "alt": "val",
+            "url": "/assets/the-seeds-of-belief/image.jpeg",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "modifiedTime": "2025-03-10T04:00:00.000Z",
+        "publishedTime": "2025-03-10T04:00:00.000Z",
+        "section": "Culture",
+        "siteName": "ImWriting",
+        "tags": [
+          "‘self-growth’",
+          "‘positive-mindset’"
+        ],
+        "title": "The Seeds of Belief",
+        "url": "https://imwriting.estarlincito.com/articles/the-seeds-of-belief",
+        "type": "article"
+      },
+      "title": "The Seeds of Belief"
+    },
+    "category": {
+      "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
+      "openGraph": {
+        "title": "Culture",
+        "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
+        "images": [
+          {
+            "alt": "Brown and green temple on top of a mountain during the day",
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture",
+        "type": "website"
+      },
+      "title": "Culture"
+    },
+    "pathnames": {
+      "article": "/articles/the-seeds-of-belief",
+      "category": "/articles/culture",
+      "subcategory": "/articles/culture/stories-and-reflections"
+    },
+    "subcategory": {
+      "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+      "icons": {
+        "icon": "/assets/favicons/favicon.ico",
+        "shortcut": "/assets/favicons/shortcut-icon.png"
+      },
+      "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+      "openGraph": {
+        "title": "Stories and Reflections",
+        "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
+        "images": [
+          {
+            "alt": "Woman in a gray knit jacket holding a cup",
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "height": 600,
+            "width": 800
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
+        "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
+        "type": "website"
+      },
+      "title": "Stories and Reflections"
+    }
+  },
+  "readingTime": "3 minutes",
+  "wordCount": 565
+}

@@ -4,7 +4,7 @@ export { isType } from 'contentlayer/client'
 
 // NOTE During development Contentlayer imports from `.mjs` files to improve HMR speeds.
 // During (production) builds Contentlayer it imports from `.json` files to improve build performance.
-import allEbooks from './Ebooks/_index.json' assert { type: 'json' }
+import { allEbooks } from './Ebooks/_index.mjs'
 
 export { allEbooks }
 

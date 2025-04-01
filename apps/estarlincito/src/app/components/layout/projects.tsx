@@ -11,7 +11,7 @@ export const Projects = () => {
       <Title contents='Web Projects' align='center' mb='5' />
 
       <CardWrapper>
-        {PROJECTS.splice(0, 3).map(({ label, summary }, key) => (
+        {PROJECTS.slice(0, 3).map(({ label, summary }, key) => (
           <CardProjects key={key} label={label} summary={summary} />
         ))}
       </CardWrapper>
