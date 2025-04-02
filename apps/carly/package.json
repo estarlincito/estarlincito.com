@@ -1,19 +1,18 @@
 {
-  "type": "module",
   "name": "carly",
   "version": "v1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --port 3003",
     "build": "next build",
-    "start": "next start",
+    "check-unused": "depcheck",
+    "dev": "next dev --port 3003",
+    "find-deadcode": "ts-prune --ignore '.next'",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "lint:fix": "eslint --fix",
-    "check-unused": "depcheck",
-    "find-deadcode": "ts-prune --ignore '.next|dbschema|src/shared-ui'"
+    "start": "next start"
   },
   "dependencies": {
-    "zod": "*",
     "@ai-sdk/deepinfra": "^0.2.4",
     "@ai-sdk/react": "^1.2.5",
     "@estarlincito/utils": "*",
@@ -29,7 +28,8 @@
     "react-dom": "*",
     "react-hot-toast": "*",
     "react-icons": "^5.5.0",
-    "react-markdown": "^10.1.0"
+    "react-markdown": "^10.1.0",
+    "zod": "*"
   },
   "devDependencies": {
     "@estarlincito/eslint": "*",
@@ -42,8 +42,9 @@
     "depcheck": "^1.4.7",
     "eslint": "*",
     "prettier": "*",
+    "prettier-plugin-packagejson": "*",
     "ts-node": "^10.9.2",
     "ts-prune": "^0.10.3",
-  "typescript": "*"
+    "typescript": "*"
   }
 }

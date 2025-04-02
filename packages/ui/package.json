@@ -25,6 +25,7 @@
     "react-hot-toast": "*"
   },
   "devDependencies": {
+    "prettier-plugin-packagejson": "*",
     "@estarlincito/eslint": "*",
     "@repo/typescript-config": "workspace:*",
     "@stylezjs/postcss-plugin": "^0.0.3",

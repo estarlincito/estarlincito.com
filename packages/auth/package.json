@@ -11,10 +11,11 @@
     "build": "tsc"
   },
   "devDependencies": {
+    "prettier-plugin-packagejson": "*",
     "@estarlincito/eslint": "^1.7.7",
     "@repo/typescript-config": "workspace:*",
     "@types/node": "*",
-    "eslint": "^9.21.0",
+    "eslint": "*",
     "typescript": "*"
   },
   "dependencies": {

@@ -1,15 +1,15 @@
 {
-  "type": "module",
   "name": "myebook",
   "version": "v1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --port 3006",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "check-unused": "depcheck",
-    "find-deadcode": "ts-prune --ignore '.next|dbschema|src/shared-ui'"
+    "dev": "next dev --port 3006",
+    "find-deadcode": "ts-prune --ignore '.next'",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "start": "next start"
   },
   "dependencies": {
     "@estarlincito/utils": "*",
@@ -41,6 +41,7 @@
     "depcheck": "^1.4.7",
     "eslint": "*",
     "next-contentlayer": "^0.3.4",
+    "prettier-plugin-packagejson": "*",
     "reading-time": "^1.5.0",
     "remark-gfm": "^4.0.1",
     "ts-prune": "^0.10.3",

@@ -1,45 +1,46 @@
 {
   "name": "accounts",
-  "type": "module",
   "version": "v1.3",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack --port 3005",
     "build": "next build",
-    "start": "next start",
+    "check-unused": "depcheck",
+    "dev": "next dev --turbopack --port 3005",
+    "find-deadcode": "ts-prune --ignore '.next|dbschema'",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "lint:fix": "eslint --fix",
-    "check-unused": "depcheck",
-    "find-deadcode": "ts-prune --ignore '.next|dbschema|src/shared-ui'"
+    "start": "next start"
   },
   "dependencies": {
-    "zod": "*",
-    "next": "*",
-    "react": "*",
-    "react-dom": "*",
-    "next-themes": "*",
-    "react-hot-toast": "*",
+    "@estarlincito/utils": "*",
     "@radix-ui/colors": "*",
     "@radix-ui/themes": "*",
-    "react-hook-form": "*",
-    "@estarlincito/utils": "*",
     "@repo/constants": "workspace:*",
     "@repo/ui": "workspace:*",
     "bcrypt": "^5.1.1",
     "edgedb": "1.5.12",
-    "jose": "^6.0.10"
+    "jose": "^6.0.10",
+    "next": "*",
+    "next-themes": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-hook-form": "*",
+    "react-hot-toast": "*",
+    "zod": "*"
   },
   "devDependencies": {
-    "eslint": "*",
-    "typescript": "*",
+    "@edgedb/generate": "0.5.6",
+    "@estarlincito/eslint": "*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
-    "@estarlincito/eslint": "*",
-    "@repo/typescript-config": "workspace:*",
-    "@edgedb/generate": "0.5.6",
-    "@types/bcrypt": "^5.0.2",
     "depcheck": "^1.4.7",
-    "ts-prune": "^0.10.3"
+    "eslint": "*",
+    "prettier-plugin-packagejson": "*",
+    "ts-prune": "^0.10.3",
+    "typescript": "*"
   }
 }

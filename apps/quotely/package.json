@@ -1,18 +1,17 @@
 {
   "name": "quotely",
-  "type": "module",
   "version": "v1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "check-unused": "depcheck",
-    "find-deadcode": "ts-prune --ignore '.next|dbschema|src/shared-ui'"
+    "dev": "next dev --port 3001",
+    "find-deadcode": "ts-prune --ignore '.next'",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "start": "next start"
   },
   "dependencies": {
-    "zod": "*",
     "@estarlincito/utils": "*",
     "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/themes": "*",
@@ -25,7 +24,8 @@
     "react": "*",
     "react-dom": "*",
     "react-hook-form": "*",
-    "react-hot-toast": "*"
+    "react-hot-toast": "*",
+    "zod": "*"
   },
   "devDependencies": {
     "@estarlincito/eslint": "*",
@@ -36,8 +36,9 @@
     "depcheck": "^1.4.7",
     "eslint": "*",
     "prettier": "*",
+    "prettier-plugin-packagejson": "*",
     "react-icons": "^5.5.0",
     "ts-prune": "^0.10.3",
-  "typescript": "*"
+    "typescript": "*"
   }
 }
