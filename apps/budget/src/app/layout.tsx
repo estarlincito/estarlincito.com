@@ -10,7 +10,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='en' suppressHydrationWarning>
       <body>
-        <Theme accentColor='iris' radius='full'>
+        <Theme accentColor='crimson' radius='full'>
           {children}
         </Theme>
         <Toaster

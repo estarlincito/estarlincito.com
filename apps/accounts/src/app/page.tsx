@@ -1,7 +1,7 @@
-import { Container } from '@repo/ui';
+import { redirect } from 'next/navigation';
 
 const Page = () => {
-  return <Container size='3'>My account</Container>;
+  redirect('/profile');
 };
 
 export default Page;

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import '../../../styles/globals.css';
 
 import * as Form from '@radix-ui/react-form';
@@ -60,7 +59,6 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
           {...stylez.className(styles.message)}
         >
           <Flex align='center' gapX='1'>
-            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please enter your ${title.toLowerCase()}`}
           </Flex>
@@ -70,7 +68,6 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
           match='typeMismatch'
         >
           <Flex align='center' gapX='1'>
-            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please provide a valid ${title.toLowerCase()}`}
           </Flex>
@@ -78,7 +75,6 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
 
         <Form.Message {...stylez.className(styles.message)} match='tooLong'>
           <Flex align='center' gapX='1'>
-            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please provide a valid ${title.toLowerCase()}`}
           </Flex>
@@ -86,7 +82,6 @@ const Field = <T extends FieldValues>(props: Props<T>) => {
 
         <Form.Message {...stylez.className(styles.message)} match='tooShort'>
           <Flex align='center' gapX='1'>
-            {/* @ts-expect-error:  */}
             <InfoCircledIcon />
             {`Please provide a valid ${title.toLowerCase()}`}
           </Flex>

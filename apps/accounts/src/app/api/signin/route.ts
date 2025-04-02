@@ -1,14 +1,48 @@
 import { resmsg } from '@estarlincito/utils';
+import {
+  accounts,
+  budget,
+  carly,
+  estarlincito,
+  imwriting,
+  myebook,
+  quotely,
+} from '@repo/constants';
 import { compare } from 'bcrypt';
 import { NextRequest } from 'next/server';
 
 import userDb from '@/lib/db';
 import { createSession } from '@/lib/session';
 
+const allowedHosts = [
+  budget.url,
+  estarlincito.url,
+  imwriting.url,
+  carly.url,
+  accounts.url,
+  myebook.url,
+  quotely.url,
+];
+
 export const POST = async (req: NextRequest): Promise<Response | undefined> => {
   const body = await req.formData();
   const email = body.get('email');
   const password = body.get('password');
+
+  const redirect = req.nextUrl.searchParams.get('redirect');
+
+  //validating if redirect
+  if (redirect) {
+    const url = new URL(redirect || '');
+
+    if (!allowedHosts.includes(url.origin)) {
+      return resmsg({
+        code: 400,
+        message: 'Please provide valid host',
+        success: false,
+      });
+    }
+  }
 
   if (!email || !password) {
     return resmsg({

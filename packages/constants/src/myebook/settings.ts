@@ -5,6 +5,6 @@ export const locale = 'en-US';
 export const siteName = 'MyEbook';
 export const theme = 'system';
 export const url = isDev
-  ? 'http://localhost:3000'
+  ? 'http://localhost:3006'
   : 'https://myebook.estarlincito.com';
 export const version = '1.0.0';

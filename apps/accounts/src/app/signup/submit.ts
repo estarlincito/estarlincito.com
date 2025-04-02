@@ -8,13 +8,7 @@ import { InputSignup } from './form';
 
 const onSubmit: SubmitHandler<InputSignup> = async (data) => {
   const res = await apiFetch({
-    body: JSON.stringify({
-      email: data.email,
-      'first-name': data['first-name'],
-      'last-name': data['last-name'],
-      password: data.password,
-      username: data.username,
-    }),
+    body: JSON.stringify(data),
     method: 'POST',
     url: accounts.endpoint.signup,
   });

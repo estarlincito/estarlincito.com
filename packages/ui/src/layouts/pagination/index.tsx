@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import { Box, Flex, IconButton, Link, Strong, Text } from '@radix-ui/themes';
 import stylez from '@stylezjs/stylez';
@@ -27,14 +26,12 @@ export const Pagination = (props: z.infer<typeof PaginationProps>) => {
 
         <Link href={prev ? prev : undefined} {...stylez.className(styles)}>
           <IconButton size='1' variant='ghost' disabled={prev === null && true}>
-            {/* @ts-expect-error:  */}
             <ChevronLeftIcon width='18' height='18' />
           </IconButton>
         </Link>
 
         <Link href={next ? next : undefined} {...stylez.className(styles)}>
           <IconButton size='1' variant='ghost' disabled={next === null && true}>
-            {/* @ts-expect-error:  */}
             <ChevronRightIcon width='18' height='18' />
           </IconButton>
         </Link>

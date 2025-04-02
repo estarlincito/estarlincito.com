@@ -1,10 +1,10 @@
 'use client';
 import { Box, Flex } from '@radix-ui/themes';
 import { Form, Summary, Title } from '@repo/ui';
-import React from 'react';
 import { useForm } from 'react-hook-form';
 
 import onSubmit from './submit';
+
 export interface InputSignin {
   email: string;
   password: string;
@@ -17,11 +17,7 @@ const SigninForm = () => {
   const { register, handleSubmit } = useForm<InputSignin>();
 
   return (
-    <Form
-      onSubmit={(e) => {
-        void handleSubmit(onSubmit)(e);
-      }}
-    >
+    <Form onSubmit={handleSubmit(onSubmit)}>
       <Box mb='5'>
         <Title contents={signin.title} mb='4' />
         <Summary contents={signin.description} />

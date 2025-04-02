@@ -7,9 +7,10 @@ const secretKey = process.env.SECRET;
 const key = new TextEncoder().encode(secretKey);
 
 const options = {
+  domain: '.estarlincito.com',
   httpOnly: true,
   path: '/',
-  sameSite: 'lax' as const,
+  sameSite: 'none' as const,
   secure: process.env.NODE_ENV === 'production',
 };
 
