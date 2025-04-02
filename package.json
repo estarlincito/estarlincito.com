@@ -8,12 +8,29 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
+  "dependencies": {
+    "zod": "^3.24.2",
+    "next": "^15.2.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@radix-ui/colors": "^3.0.0",
+    "@radix-ui/themes": "^3.2.1",
+    "@estarlincito/utils": "^2.4.4",
+    "next-themes": "^0.4.6",
+    "react-hook-form": "^7.55.0",
+    "react-hot-toast": "^2.5.2"
+  },
   "devDependencies": {
+    "eslint": "^9.23.0",
     "prettier": "^3.5.3",
     "turbo": "^2.4.4",
-    "typescript": "5.8.2"
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.17",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "@estarlincito/eslint": "^1.8.0"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.7.1",
   "engines": {
     "node": ">=18"
   }

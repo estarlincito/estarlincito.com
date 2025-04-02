@@ -13,32 +13,33 @@
     "find-deadcode": "ts-prune --ignore '.next|dbschema|src/shared-ui'"
   },
   "dependencies": {
-    "@estarlincito/utils": "^2.4.4",
-    "@radix-ui/colors": "^3.0.0",
-    "@radix-ui/themes": "^3.2.1",
+    "zod": "*",
+    "next": "*",
+    "react": "*",
+    "react-dom": "*",
+    "next-themes": "*",
+    "react-hot-toast": "*",
+    "@radix-ui/colors": "*",
+    "@radix-ui/themes": "*",
+    "react-hook-form": "*",
+    "@estarlincito/utils": "*",
     "@repo/constants": "workspace:*",
     "@repo/ui": "workspace:*",
     "bcrypt": "^5.1.1",
     "edgedb": "1.5.12",
-    "jose": "^6.0.10",
-    "next": "^15.2.4",
-    "next-themes": "^0.4.6",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-hook-form": "^7.55.0",
-    "react-hot-toast": "^2.5.2"
+    "jose": "^6.0.10"
   },
   "devDependencies": {
-    "@edgedb/generate": "0.5.6",
-    "@estarlincito/eslint": "^1.8.0",
+    "eslint": "*",
+    "typescript": "*",
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@estarlincito/eslint": "*",
     "@repo/typescript-config": "workspace:*",
+    "@edgedb/generate": "0.5.6",
     "@types/bcrypt": "^5.0.2",
-    "@types/node": "^22.13.17",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
     "depcheck": "^1.4.7",
-    "eslint": "^9.23.0",
-    "ts-prune": "^0.10.3",
-    "typescript": "^5.8.2"
+    "ts-prune": "^0.10.3"
   }
 }

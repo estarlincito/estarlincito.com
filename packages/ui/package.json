@@ -7,32 +7,33 @@
   "types": "./dist/index.d.ts",
   "private": true,
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "lint:fix": "eslint --fix",
     "prebuild": "pnpm exec postcss src/**/*.css -d dist/styles",
-    "build": "tsc"
+    "build": "pnpm lint && tsc"
   },
   "dependencies": {
-    "@estarlincito/utils": "^2.4.4",
+    "zod": "*",
+    "@estarlincito/utils": "*",
     "@radix-ui/react-form": "^0.1.2",
     "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/react-select": "^2.1.6",
-    "@radix-ui/themes": "^3.2.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-hook-form": "^7.55.0",
-    "react-hot-toast": "^2.5.2",
-    "zod": "^3.24.2"
+    "@radix-ui/themes": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-hook-form": "*",
+    "react-hot-toast": "*"
   },
   "devDependencies": {
-    "@estarlincito/eslint": "^1.8.0",
+    "@estarlincito/eslint": "*",
     "@repo/typescript-config": "workspace:*",
     "@stylezjs/postcss-plugin": "^0.0.3",
     "@stylezjs/stylez": "^0.0.1",
-    "@types/node": "^22.13.17",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "eslint": "^9.23.0",
+    "@types/node": "*",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "eslint": "*",
     "postcss-cli": "^11.0.1",
-    "typescript": "5.8.2"
+    "typescript": "*"
   }
 }

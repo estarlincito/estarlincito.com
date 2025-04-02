@@ -13,13 +13,13 @@
   "devDependencies": {
     "@estarlincito/eslint": "^1.7.7",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.13.17",
+    "@types/node": "*",
     "eslint": "^9.21.0",
-    "typescript": "5.8.2"
+    "typescript": "*"
   },
   "dependencies": {
-    "@estarlincito/utils": "^2.4.4",
-    "jose": "^6.0.10",
-    "zod": "^3.24.2"
+    "zod": "*",
+    "@estarlincito/utils": "*",
+    "jose": "^6.0.10"
   }
 }
