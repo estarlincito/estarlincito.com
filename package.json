@@ -30,7 +30,7 @@
     "@types/react-dom": "^19.0.4",
     "@estarlincito/eslint": "^1.8.0"
   },
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
   }
