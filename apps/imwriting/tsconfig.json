@@ -3,9 +3,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "contentlayer/generated": ["./.contentlayer/generated"],
-      "@/*": ["src/*"]
-    }
+      "contentlayer/generated": [
+        "./.contentlayer/generated"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "isolatedModules": true
   },
   "include": [
     "**/*.mdx",
@@ -16,5 +21,8 @@
     ".next/types/**/*.ts",
     "eslint.config.js"
   ],
-  "exclude": ["node_modules", "public"]
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
 }

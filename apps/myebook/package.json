@@ -12,39 +12,21 @@
     "start": "next start"
   },
   "dependencies": {
-    "@estarlincito/utils": "*",
-    "@radix-ui/colors": "*",
     "@radix-ui/react-form": "^0.1.2",
-    "@radix-ui/react-icons": "^1.3.2",
-    "@radix-ui/themes": "*",
     "@repo/constants": "workspace:*",
     "@repo/ui": "workspace:*",
-    "next": "*",
-    "next-themes": "*",
-    "prettier": "*",
     "radix-ui": "^1.1.3",
-    "react": "*",
-    "react-dom": "*",
-    "react-hot-toast": "*",
     "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "@estarlincito/eslint": "*",
     "@repo/typescript-config": "workspace:*",
-    "@stylezjs/postcss-plugin": "^0.0.3",
-    "@stylezjs/stylez": "^0.0.1",
-    "@types/node": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
+
+
     "contentlayer": "^0.3.4",
     "date-fns": "^4.1.0",
-    "depcheck": "^1.4.7",
-    "eslint": "*",
+
     "next-contentlayer": "^0.3.4",
-    "prettier-plugin-packagejson": "*",
     "reading-time": "^1.5.0",
-    "remark-gfm": "^4.0.1",
-    "ts-prune": "^0.10.3",
-    "typescript": "*"
+    "remark-gfm": "^4.0.1"
   }
 }

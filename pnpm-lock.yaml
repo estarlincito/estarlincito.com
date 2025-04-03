@@ -9,11 +9,14 @@ importers:
   .:
     dependencies:
       '@estarlincito/utils':
-        specifier: ^2.4.4
-        version: 2.4.4
+        specifier: ^2.4.9
+        version: 2.4.9
       '@radix-ui/colors':
         specifier: ^3.0.0
         version: 3.0.0
+      '@radix-ui/react-icons':
+        specifier: ^1.3.2
+        version: 1.3.2(react@19.1.0)
       '@radix-ui/themes':
         specifier: ^3.2.1
         version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -23,9 +26,6 @@ importers:
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: ^19.1.0
-        version: 19.1.0
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
@@ -35,6 +35,9 @@ importers:
       react-hot-toast:
         specifier: ^2.5.2
         version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react-icons:
+        specifier: ^5.5.0
+        version: 5.5.0(react@19.1.0)
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -42,6 +45,12 @@ importers:
       '@estarlincito/eslint':
         specifier: ^1.8.0
         version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
+      '@stylezjs/postcss-plugin':
+        specifier: ^0.0.3
+        version: 0.0.3(@swc/helpers@0.5.15)
+      '@stylezjs/stylez':
+        specifier: ^0.0.1
+        version: 0.0.1
       '@types/node':
         specifier: ^22.14.0
         version: 22.14.0
@@ -51,6 +60,9 @@ importers:
       '@types/react-dom':
         specifier: ^19.1.1
         version: 19.1.1(@types/react@19.1.0)
+      depcheck:
+        specifier: ^1.4.7
+        version: 1.4.7
       eslint:
         specifier: ^9.23.0
         version: 9.23.0
@@ -60,6 +72,9 @@ importers:
       prettier-plugin-packagejson:
         specifier: ^2.5.10
         version: 2.5.10(prettier@3.5.3)
+      ts-prune:
+        specifier: ^0.10.3
+        version: 0.10.3
       turbo:
         specifier: ^2.4.4
         version: 2.4.4
@@ -69,15 +84,6 @@ importers:
 
   apps/accounts:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
-      '@radix-ui/colors':
-        specifier: '*'
-        version: 3.0.0
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/constants':
         specifier: workspace:*
         version: link:../../packages/constants
@@ -93,79 +99,19 @@ importers:
       jose:
         specifier: ^6.0.10
         version: 6.0.10
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hook-form:
-        specifier: '*'
-        version: 7.55.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
       '@edgedb/generate':
         specifier: 0.5.6
         version: 0.5.6(edgedb@1.5.12)
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/bcrypt':
         specifier: ^5.0.2
         version: 5.0.2
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   apps/budget:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
-      '@radix-ui/react-form':
-        specifier: '*'
-        version: 0.1.2(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/react-icons':
-        specifier: '*'
-        version: 1.3.2(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/auth':
         specifier: workspace:*
         version: link:../../packages/auth
@@ -175,64 +121,13 @@ importers:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      prettier:
-        specifier: '*'
-        version: 3.5.3
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@swc/core@1.11.16(@swc/helpers@0.5.15))(@types/node@22.14.0)(typescript@5.8.2)
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   apps/carly:
     dependencies:
@@ -242,18 +137,9 @@ importers:
       '@ai-sdk/react':
         specifier: ^1.2.5
         version: 1.2.5(react@19.1.0)(zod@3.24.2)
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
       '@radix-ui/react-form':
         specifier: ^0.1.2
         version: 0.1.2(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/react-icons':
-        specifier: ^1.3.2
-        version: 1.3.2(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/constants':
         specifier: workspace:*
         version: link:../../packages/constants
@@ -263,458 +149,119 @@ importers:
       ai:
         specifier: ^4.2.10
         version: 4.2.10(react@19.1.0)(zod@3.24.2)
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react-icons:
-        specifier: ^5.5.0
-        version: 5.5.0(react@19.1.0)
       react-markdown:
         specifier: ^10.1.0
         version: 10.1.0(@types/react@19.1.0)(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@stylezjs/postcss-plugin':
-        specifier: ^0.0.3
-        version: 0.0.3(@swc/helpers@0.5.15)
-      '@stylezjs/stylez':
-        specifier: ^0.0.1
-        version: 0.0.1
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      prettier:
-        specifier: '*'
-        version: 3.5.3
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      ts-node:
-        specifier: ^10.9.2
-        version: 10.9.2(@swc/core@1.11.16(@swc/helpers@0.5.15))(@types/node@22.14.0)(typescript@5.8.2)
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   apps/estarlincito:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
-      '@radix-ui/colors':
-        specifier: '*'
-        version: 3.0.0
-      '@radix-ui/react-icons':
-        specifier: ^1.3.2
-        version: 1.3.2(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/constants':
         specifier: workspace:*
         version: link:../../packages/constants
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       nodemailer:
         specifier: ^6.10.0
         version: 6.10.0
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react-icons:
-        specifier: ^5.5.0
-        version: 5.5.0(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
       '@edgedb/generate':
         specifier: 0.5.6
         version: 0.5.6(edgedb@1.5.12)
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@stylezjs/postcss-plugin':
-        specifier: ^0.0.3
-        version: 0.0.3(@swc/helpers@0.5.15)
-      '@stylezjs/stylez':
-        specifier: ^0.0.1
-        version: 0.0.1
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
       '@types/nodemailer':
         specifier: ^6.4.17
         version: 6.4.17
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      postcss:
-        specifier: ^8.5.3
-        version: 8.5.3
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   apps/imwriting:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
-      '@radix-ui/colors':
-        specifier: '*'
-        version: 3.0.0
-      '@radix-ui/react-icons':
-        specifier: ^1.3.2
-        version: 1.3.2(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/constants':
         specifier: workspace:*
         version: link:../../packages/constants
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      prettier:
-        specifier: '*'
-        version: 3.5.3
-      radix-ui:
-        specifier: ^1.1.3
-        version: 1.1.3(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react-icons:
-        specifier: ^5.5.0
-        version: 5.5.0(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@stylezjs/postcss-plugin':
-        specifier: ^0.0.3
-        version: 0.0.3(@swc/helpers@0.5.15)
-      '@stylezjs/stylez':
-        specifier: ^0.0.1
-        version: 0.0.1
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
       contentlayer:
         specifier: ^0.3.4
         version: 0.3.4(esbuild@0.18.20)
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
       next-contentlayer:
         specifier: ^0.3.4
         version: 0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
       reading-time:
         specifier: ^1.5.0
         version: 1.5.0
       remark-gfm:
         specifier: ^4.0.1
         version: 4.0.1
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
       yaml:
         specifier: ^2.7.1
         version: 2.7.1
 
   apps/myebook:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
-      '@radix-ui/colors':
-        specifier: '*'
-        version: 3.0.0
       '@radix-ui/react-form':
         specifier: ^0.1.2
         version: 0.1.2(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/react-icons':
-        specifier: ^1.3.2
-        version: 1.3.2(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/constants':
         specifier: workspace:*
         version: link:../../packages/constants
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      prettier:
-        specifier: '*'
-        version: 3.5.3
       radix-ui:
         specifier: ^1.1.3
         version: 1.1.3(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.1.0)
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@stylezjs/postcss-plugin':
-        specifier: ^0.0.3
-        version: 0.0.3(@swc/helpers@0.5.15)
-      '@stylezjs/stylez':
-        specifier: ^0.0.1
-        version: 0.0.1
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
       contentlayer:
         specifier: ^0.3.4
         version: 0.3.4(esbuild@0.18.20)
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
       next-contentlayer:
         specifier: ^0.3.4
         version: 0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
       reading-time:
         specifier: ^1.5.0
         version: 1.5.0
       remark-gfm:
         specifier: ^4.0.1
         version: 4.0.1
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   apps/quotely:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
-      '@radix-ui/react-icons':
-        specifier: ^1.3.2
-        version: 1.3.2(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@repo/constants':
         specifier: workspace:*
         version: link:../../packages/constants
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@stylezjs/postcss-plugin':
-        specifier: ^0.0.3
-        version: 0.0.3(@swc/helpers@0.5.15)
-      '@stylezjs/stylez':
-        specifier: ^0.0.1
-        version: 0.0.1
-      next:
-        specifier: '*'
-        version: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      next-themes:
-        specifier: '*'
-        version: 0.4.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hook-form:
-        specifier: '*'
-        version: 7.55.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: '*'
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: '*'
-        version: 19.1.1(@types/react@19.1.0)
-      depcheck:
-        specifier: ^1.4.7
-        version: 1.4.7
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      prettier:
-        specifier: '*'
-        version: 3.5.3
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      react-icons:
-        specifier: ^5.5.0
-        version: 5.5.0(react@19.1.0)
-      ts-prune:
-        specifier: ^0.10.3
-        version: 0.10.3
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   packages/auth:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
       jose:
         specifier: ^6.0.10
         version: 6.0.10
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
       '@estarlincito/eslint':
         specifier: ^1.7.7
@@ -722,115 +269,33 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   packages/constants:
-    dependencies:
-      '@estarlincito/utils':
-        specifier: ^2.4.4
-        version: 2.4.4
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      eslint:
-        specifier: '*'
-        version: 9.23.0
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
   packages/typescript-config: {}
 
   packages/ui:
     dependencies:
-      '@estarlincito/utils':
-        specifier: '*'
-        version: 2.4.4
       '@radix-ui/react-form':
         specifier: ^0.1.2
         version: 0.1.2(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/react-icons':
-        specifier: ^1.3.2
-        version: 1.3.2(react@19.1.0)
       '@radix-ui/react-select':
         specifier: ^2.1.6
         version: 2.1.6(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@radix-ui/themes':
-        specifier: '*'
-        version: 3.2.1(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react:
-        specifier: '*'
-        version: 19.1.0
-      react-dom:
-        specifier: '*'
-        version: 19.1.0(react@19.1.0)
-      react-hook-form:
-        specifier: '*'
-        version: 7.55.0(react@19.1.0)
-      react-hot-toast:
-        specifier: '*'
-        version: 2.5.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      zod:
-        specifier: '*'
-        version: 3.24.2
     devDependencies:
-      '@estarlincito/eslint':
-        specifier: '*'
-        version: 1.8.0(@typescript-eslint/eslint-plugin@8.29.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2))(@typescript-eslint/utils@8.29.0(eslint@9.23.0)(typescript@5.8.2))
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
-      '@stylezjs/postcss-plugin':
-        specifier: ^0.0.3
-        version: 0.0.3(@swc/helpers@0.5.15)
-      '@stylezjs/stylez':
-        specifier: ^0.0.1
-        version: 0.0.1
-      '@types/node':
-        specifier: '*'
-        version: 22.14.0
-      '@types/react':
-        specifier: ^19.1.0
-        version: 19.1.0
       '@types/react-dom':
         specifier: ^19.1.1
         version: 19.1.1(@types/react@19.1.0)
-      eslint:
-        specifier: '*'
-        version: 9.23.0
       postcss-cli:
         specifier: ^11.0.1
         version: 11.0.1(postcss@8.5.3)
-      prettier-plugin-packagejson:
-        specifier: '*'
-        version: 2.5.10(prettier@3.5.3)
-      typescript:
-        specifier: '*'
-        version: 5.8.2
 
 packages:
 
@@ -939,10 +404,6 @@ packages:
     peerDependenciesMeta:
       '@effect-ts/otel-node':
         optional: true
-
-  '@cspotcode/source-map-support@0.8.1':
-    resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
-    engines: {node: '>=12'}
 
   '@edgedb/generate@0.5.6':
     resolution: {integrity: sha512-Nmd4ibgN3M7qxxHsOyB9NERp03449BfV+W7CWCpIE/tcvBr19GynoT5yI3k55k5NKzzstATwKtV+wVHXiOgizw==}
@@ -1183,8 +644,8 @@ packages:
   '@estarlincito/eslint@1.8.0':
     resolution: {integrity: sha512-rPNGIR/o78lhZT5f4GJ+ZI3io057fDHHgTB024zzhspejivvjdzKf7KMki8+htJTOmwlLk11vmRTorzyqkXdbQ==}
 
-  '@estarlincito/utils@2.4.4':
-    resolution: {integrity: sha512-hEIXcZBQ+JGA6zBX0MYtdvDrO1FDsNHiJdwmJo41KxuMYn/mexOU2+Gg7BpUCTRvtyf1r5PAhM2lvnns9gKLSA==}
+  '@estarlincito/utils@2.4.9':
+    resolution: {integrity: sha512-oE5Rq7Tofgn5MKmBa34hBQnFTOtR9oz14Y1QsAFt0fXTet0ypavVie8VN2pbd12J2Ozf09ZWymlv13iCx0NVZQ==}
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2':
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
@@ -1358,9 +819,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
-
-  '@jridgewell/trace-mapping@0.3.9':
-    resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
   '@js-sdsl/ordered-map@4.4.2':
     resolution: {integrity: sha512-iUKgm52T8HOE/makSxjqoWhe95ZJA1/G1sYsGev2JDKUSS14KAgg1LHb+Ba+IPow0xflbnSkOsZcO08C7w1gYw==}
@@ -2370,18 +1828,6 @@ packages:
   '@ts-morph/common@0.12.3':
     resolution: {integrity: sha512-4tUmeLyXJnJWvTFOKtcNJ1yh0a3SsTLi2MUoyj8iUNznFRN1ZquaNe7Oukqrnki2FzZkm0J9adCNLDZxUzvj+w==}
 
-  '@tsconfig/node10@1.0.11':
-    resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
-
-  '@tsconfig/node12@1.0.11':
-    resolution: {integrity: sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==}
-
-  '@tsconfig/node14@1.0.3':
-    resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
-
-  '@tsconfig/node16@1.0.4':
-    resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
-
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
 
@@ -2607,10 +2053,6 @@ packages:
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
 
-  acorn-walk@8.3.4:
-    resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
-    engines: {node: '>=0.4.0'}
-
   acorn@7.4.1:
     resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
     engines: {node: '>=0.4.0'}
@@ -2657,9 +2099,6 @@ packages:
     resolution: {integrity: sha512-Ci/qENmwHnsYo9xKIcUJN5LeDKdJ6R1Z1j9V/J5wyq8nh/mYPEpIKJbBZXtZjG04HiK7zV/p6Vs9952MrMeUIw==}
     engines: {node: '>=10'}
     deprecated: This package is no longer supported.
-
-  arg@4.1.3:
-    resolution: {integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==}
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -2914,9 +2353,6 @@ packages:
     resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==}
     engines: {node: '>=10'}
 
-  create-require@1.1.1:
-    resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
-
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -3066,10 +2502,6 @@ packages:
   diff-match-patch@1.0.5:
     resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
 
-  diff@4.0.2:
-    resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
-    engines: {node: '>=0.3.1'}
-
   diff@5.2.0:
     resolution: {integrity: sha512-uIFDxqpRZGZ6ThOk84hEfqWoHx2devRFvpTZcTHur85vImfaxUbTW9Ryh4CpCuDnToOP1CEtXKIgytHBPVff5A==}
     engines: {node: '>=0.3.1'}
@@ -3100,8 +2532,8 @@ packages:
     engines: {node: '>= 18.0.0'}
     hasBin: true
 
-  electron-to-chromium@1.5.129:
-    resolution: {integrity: sha512-JlXUemX4s0+9f8mLqib/bHH8gOHf5elKS6KeWG3sk3xozb/JTq/RLXIv8OKUWiK4Ah00Wm88EFj5PYkFr4RUPA==}
+  electron-to-chromium@1.5.130:
+    resolution: {integrity: sha512-Ou2u7L9j2XLZbhqzyX0jWDj6gA8D3jIfVzt4rikLf3cGBa0VdReuFimBKS9tQJA4+XpeCxj1NoWlfBXzbMa9IA==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3963,9 +3395,6 @@ packages:
   make-dir@3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
-
-  make-error@1.3.6:
-    resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
 
   markdown-extensions@1.1.1:
     resolution: {integrity: sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==}
@@ -5225,20 +4654,6 @@ packages:
   ts-morph@13.0.3:
     resolution: {integrity: sha512-pSOfUMx8Ld/WUreoSzvMFQG5i9uEiWIsBYjpU9+TTASOeUa89j5HykomeqVULm1oqWtBdleI3KEFRLrlA3zGIw==}
 
-  ts-node@10.9.2:
-    resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-
   ts-pattern@4.3.0:
     resolution: {integrity: sha512-pefrkcd4lmIVR0LA49Imjf9DYLK8vtWhqBPA3Ya1ir8xCW0O2yjL9dsCVvI7pCodLC5q7smNpEtDR2yVulQxOg==}
 
@@ -5430,9 +4845,6 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  v8-compile-cache-lib@3.0.1:
-    resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
-
   vfile-location@4.1.0:
     resolution: {integrity: sha512-YF23YMyASIIJXpktBa4vIGLJ5Gs88UB/XePgqPmTa7cDA+JeO3yclbpheQYCHjVHBn/yePzrXuygIL+xbvRYHw==}
 
@@ -5536,10 +4948,6 @@ packages:
   yargs@17.7.2:
     resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
     engines: {node: '>=12'}
-
-  yn@3.1.1:
-    resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
-    engines: {node: '>=6'}
 
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -5740,10 +5148,6 @@ snapshots:
       oo-ascii-tree: 1.111.0
       ts-pattern: 4.3.0
       type-fest: 3.13.1
-
-  '@cspotcode/source-map-support@0.8.1':
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.9
 
   '@edgedb/generate@0.5.6(edgedb@1.5.12)':
     dependencies:
@@ -5959,7 +5363,9 @@ snapshots:
       - jiti
       - supports-color
 
-  '@estarlincito/utils@2.4.4': {}
+  '@estarlincito/utils@2.4.9':
+    dependencies:
+      zod: 3.24.2
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
 
@@ -6095,11 +5501,6 @@ snapshots:
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/trace-mapping@0.3.25':
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.2
-      '@jridgewell/sourcemap-codec': 1.5.0
-
-  '@jridgewell/trace-mapping@0.3.9':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -7148,14 +6549,6 @@ snapshots:
       mkdirp: 1.0.4
       path-browserify: 1.0.1
 
-  '@tsconfig/node10@1.0.11': {}
-
-  '@tsconfig/node12@1.0.11': {}
-
-  '@tsconfig/node14@1.0.3': {}
-
-  '@tsconfig/node16@1.0.4': {}
-
   '@tybys/wasm-util@0.9.0':
     dependencies:
       tslib: 2.8.1
@@ -7401,10 +6794,6 @@ snapshots:
     dependencies:
       acorn: 8.14.1
 
-  acorn-walk@8.3.4:
-    dependencies:
-      acorn: 8.14.1
-
   acorn@7.4.1: {}
 
   acorn@8.14.1: {}
@@ -7451,8 +6840,6 @@ snapshots:
     dependencies:
       delegates: 1.0.0
       readable-stream: 3.6.2
-
-  arg@4.1.3: {}
 
   argparse@1.0.10:
     dependencies:
@@ -7587,7 +6974,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001707
-      electron-to-chromium: 1.5.129
+      electron-to-chromium: 1.5.130
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -7750,8 +7137,6 @@ snapshots:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
-
-  create-require@1.1.1: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -7935,8 +7320,6 @@ snapshots:
 
   diff-match-patch@1.0.5: {}
 
-  diff@4.0.2: {}
-
   diff@5.2.0: {}
 
   doctrine@2.1.0:
@@ -7977,7 +7360,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  electron-to-chromium@1.5.129: {}
+  electron-to-chromium@1.5.130: {}
 
   emoji-regex@8.0.0: {}
 
@@ -8145,7 +7528,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0)(eslint@9.23.0))(eslint@9.23.0):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0))(eslint@9.23.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -8167,7 +7550,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.23.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0)(eslint@9.23.0))(eslint@9.23.0)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.29.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0))(eslint@9.23.0))(eslint@9.23.0)
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -9026,8 +8409,6 @@ snapshots:
   make-dir@3.1.0:
     dependencies:
       semver: 6.3.1
-
-  make-error@1.3.6: {}
 
   markdown-extensions@1.1.1: {}
 
@@ -10857,26 +10238,6 @@ snapshots:
       '@ts-morph/common': 0.12.3
       code-block-writer: 11.0.3
 
-  ts-node@10.9.2(@swc/core@1.11.16(@swc/helpers@0.5.15))(@types/node@22.14.0)(typescript@5.8.2):
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.11
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 22.14.0
-      acorn: 8.14.1
-      acorn-walk: 8.3.4
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 5.8.2
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-    optionalDependencies:
-      '@swc/core': 1.11.16(@swc/helpers@0.5.15)
-
   ts-pattern@4.3.0: {}
 
   ts-prune@0.10.3:
@@ -11123,8 +10484,6 @@ snapshots:
       kleur: 4.1.5
       sade: 1.8.1
 
-  v8-compile-cache-lib@3.0.1: {}
-
   vfile-location@4.1.0:
     dependencies:
       '@types/unist': 2.0.11
@@ -11261,8 +10620,6 @@ snapshots:
       string-width: 4.2.3
       y18n: 5.0.8
       yargs-parser: 21.1.1
-
-  yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
 

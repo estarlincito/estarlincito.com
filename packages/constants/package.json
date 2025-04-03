@@ -1,25 +1,16 @@
 {
   "name": "@repo/constants",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "private": true,
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint --ext .js,.ts . && pnpm tsc --noEmit"
   },
   "devDependencies": {
-    "prettier-plugin-packagejson": "*",
-    "@estarlincito/eslint": "*",
-    "@repo/typescript-config": "workspace:*",
-    "@types/node": "*",
-    "eslint": "*",
-    "typescript": "*"
-  },
-  "dependencies": {
-    "zod": "*",
-    "@estarlincito/utils": "^2.4.4"
+    "@repo/typescript-config": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-import { apiFetch, type Resmsg } from '@estarlincito/utils';
+import { apiFetch, type ResmsgTypes } from '@estarlincito/utils';
 import { accounts } from '@repo/constants';
 import { redirect } from 'next/navigation';
 import { type SubmitHandler } from 'react-hook-form';
@@ -13,7 +13,7 @@ const onSubmit: SubmitHandler<InputSignup> = async (data) => {
     url: accounts.endpoint.signup,
   });
 
-  const { message } = (await res.json()) as Resmsg;
+  const { message } = (await res.json()) as ResmsgTypes['Resmsg'];
 
   if (message === 'User has been successfully created') {
     redirect('/');

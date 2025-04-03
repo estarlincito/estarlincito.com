@@ -3,10 +3,17 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "contentlayer/generated": ["./.contentlayer/generated"],
-      "@dbschema/edgeql-js": ["./dbschema/edgeql-js"],
-      "@/*": ["src/*"]
-    }
+      "contentlayer/generated": [
+        "./.contentlayer/generated"
+      ],
+      "@dbschema/edgeql-js": [
+        "./dbschema/edgeql-js"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "isolatedModules": true
   },
   "include": [
     "**/*.mdx",
@@ -17,5 +24,8 @@
     ".next/types/**/*.ts",
     "eslint.config.js"
   ],
-  "exclude": ["node_modules", "public"]
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
 }

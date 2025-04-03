@@ -12,33 +12,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@estarlincito/utils": "*",
-    "@radix-ui/react-icons": "^1.3.2",
-    "@radix-ui/themes": "*",
     "@repo/constants": "workspace:*",
-    "@repo/ui": "workspace:*",
-    "@stylezjs/postcss-plugin": "^0.0.3",
-    "@stylezjs/stylez": "^0.0.1",
-    "next": "*",
-    "next-themes": "*",
-    "react": "*",
-    "react-dom": "*",
-    "react-hook-form": "*",
-    "react-hot-toast": "*",
-    "zod": "*"
+    "@repo/ui": "workspace:*"
   },
   "devDependencies": {
-    "@estarlincito/eslint": "*",
-    "@repo/typescript-config": "workspace:*",
-    "@types/node": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "depcheck": "^1.4.7",
-    "eslint": "*",
-    "prettier": "*",
-    "prettier-plugin-packagejson": "*",
-    "react-icons": "^5.5.0",
-    "ts-prune": "^0.10.3",
-    "typescript": "*"
+    "@repo/typescript-config": "workspace:*"
   }
 }

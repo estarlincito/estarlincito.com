@@ -1,4 +1,4 @@
-import { apiFetch, type Resmsg } from '@estarlincito/utils';
+import { apiFetch, type ResmsgTypes } from '@estarlincito/utils';
 import { accounts } from '@repo/constants';
 import { type SubmitHandler } from 'react-hook-form';
 import toast from 'react-hot-toast';
@@ -18,7 +18,7 @@ const onSubmit: SubmitHandler<InputSignin> = async (data) => {
     url: `${endpoint.signin}${_redirect ? `?redirect=${encodeURIComponent(_redirect)}` : ''}`,
   });
 
-  const { message, success } = (await res.json()) as Resmsg;
+  const { message, success } = (await res.json()) as ResmsgTypes['Resmsg'];
 
   if (success) {
     redirect(_redirect || '/profile');

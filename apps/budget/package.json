@@ -13,33 +13,12 @@
     "start": "next start"
   },
   "dependencies": {
-    "@estarlincito/utils": "*",
-    "@radix-ui/react-form": "*",
-    "@radix-ui/react-icons": "*",
-    "@radix-ui/themes": "*",
     "@repo/auth": "workspace:*",
     "@repo/constants": "workspace:*",
     "@repo/ui": "workspace:*",
-    "next": "*",
-    "next-themes": "*",
-    "react": "*",
-    "react-dom": "*",
-    "react-hot-toast": "*",
-    "react-icons": "^5.5.0",
-    "zod": "*"
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "@estarlincito/eslint": "*",
-    "@repo/typescript-config": "workspace:*",
-    "@types/node": "*",
-    "@types/react": "*",
-    "@types/react-dom": "*",
-    "depcheck": "^1.4.7",
-    "eslint": "*",
-    "prettier": "*",
-    "prettier-plugin-packagejson": "*",
-    "ts-node": "^10.9.2",
-    "ts-prune": "^0.10.3",
-    "typescript": "*"
+    "@repo/typescript-config": "workspace:*"
   }
 }

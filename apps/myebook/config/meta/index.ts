@@ -1,4 +1,8 @@
-import { GenerateMetadata, toSlug, type Website } from '@estarlincito/utils';
+import {
+  GenerateMetadata,
+  type GenerateMetadataTypes,
+  toSlug,
+} from '@estarlincito/utils';
 import { myebook } from '@repo/constants';
 import Instances from 'config/types/instances';
 import { type LocalDocument } from 'contentlayer/source-files';
@@ -40,24 +44,26 @@ const meta = (doc: LocalDocument) => {
   });
 
   //genres
-  const genres = doc.genres._array.map((genre: string) => {
-    return GenerateMetadata.website({
-      locale,
-      siteName,
-      url: `https://myebook.estarlincito.com/ebooks/${toSlug(genre)}`,
-      ...getMeta(genre, meta_genres),
+  const genres: GenerateMetadataTypes['ReturnsWebsite'][] =
+    doc.genres._array.map((genre: string) => {
+      return GenerateMetadata.website({
+        locale,
+        siteName,
+        url: `https://myebook.estarlincito.com/ebooks/${toSlug(genre)}`,
+        ...getMeta(genre, meta_genres),
+      });
     });
-  }) as Website[];
 
   //authors
-  const authors = doc.authors._array.map((author: string) => {
-    return GenerateMetadata.website({
-      locale,
-      siteName,
-      url: `https://myebook.estarlincito.com/ebooks/${toSlug(author)}`,
-      ...getMeta(author, meta_author),
+  const authors: GenerateMetadataTypes['ReturnsWebsite'][] =
+    doc.authors._array.map((author: string) => {
+      return GenerateMetadata.website({
+        locale,
+        siteName,
+        url: `https://myebook.estarlincito.com/ebooks/${toSlug(author)}`,
+        ...getMeta(author, meta_author),
+      });
     });
-  }) as Website[];
 
   return { authors, ebook, genres, publisher };
 };
