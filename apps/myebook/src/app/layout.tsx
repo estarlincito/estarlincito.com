@@ -1,38 +1,34 @@
 import '@/styles/themes-config.css';
-import '@radix-ui/themes/styles.css';
 import '@/styles/globals.css';
 
-import { Theme } from '@radix-ui/themes';
-import React from 'react';
+import { myebook } from '@repo/constants';
+import { AppThemeProvider, LayoutContainer, Theme } from '@repo/ui';
+import type { ReactNode } from 'react';
 
-import { Toaster } from '@/components/toaster';
-import AppThemeProvider from '@/context/theme';
-import Props from '@/types/children';
+import { Toaster } from '@/components/ui/toaster';
 
-const RootLayout = ({ children }: Props) => {
-  return (
-    <html lang='en' suppressHydrationWarning>
-      <body>
-        <Theme accentColor='sky' radius='full'>
-          ={children}
-          <AppThemeProvider>
-            <div></div>
-          </AppThemeProvider>
-        </Theme>
+const RootLayout = ({ children }: { children: ReactNode }) => (
+  <html suppressHydrationWarning lang={myebook.locale}>
+    <body>
+      <Theme accentColor='sky' radius='full'>
+        <LayoutContainer threePart>{children}</LayoutContainer>
+        <AppThemeProvider defaultTheme={myebook.theme}>
+          <div />
+        </AppThemeProvider>
+      </Theme>
 
-        <Toaster
-          position='top-center'
-          reverseOrder={false}
-          toastOptions={{
-            style: {
-              background: 'black',
-              color: 'white',
-            },
-          }}
-        />
-      </body>
-    </html>
-  );
-};
+      <Toaster
+        position='top-center'
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            background: 'black',
+            color: 'white',
+          },
+        }}
+      />
+    </body>
+  </html>
+);
 
 export default RootLayout;

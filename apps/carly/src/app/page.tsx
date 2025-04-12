@@ -1,17 +1,14 @@
-import { Container } from '@radix-ui/themes';
 import { carly } from '@repo/constants';
-import React from 'react';
+import { Wrapper } from '@repo/ui';
 
 import Carly from '@/components/carly';
 
 export const { metadata } = carly.home;
 
-const Page = () => {
-  return (
-    <Container size='3' p='2'>
-      <Carly />
-    </Container>
-  );
-};
+const Page = () => (
+  <Wrapper size='3'>
+    <Carly />
+  </Wrapper>
+);
 
 export default Page;

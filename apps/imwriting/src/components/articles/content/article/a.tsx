@@ -1,9 +1,6 @@
 import { handleError } from '@estarlincito/utils';
-import { Link } from '@radix-ui/themes';
-import React, {
-  type AnchorHTMLAttributes,
-  type DetailedHTMLProps,
-} from 'react';
+import { Link } from '@repo/ui';
+import { type AnchorHTMLAttributes, type DetailedHTMLProps } from 'react';
 
 type Props = DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -11,9 +8,9 @@ type Props = DetailedHTMLProps<
 >;
 
 const A = ({ children, href }: Props) => {
-  const target = href && href.startsWith('/');
+  const target = href?.startsWith('/');
 
-  if (href && href.includes('http://')) {
+  if (href?.includes('http://')) {
     handleError("You have 'http://' please change to 'https://'");
   }
 

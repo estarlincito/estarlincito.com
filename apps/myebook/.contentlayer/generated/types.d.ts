@@ -17,6 +17,7 @@ export type Ebooks = {
   cover: string
   coverAlt: string
   genres: string[]
+  isbn: string
   language: string
   length: number
   publisher: string

@@ -1,24 +1,22 @@
-import { Flex } from '@radix-ui/themes';
-import React from 'react';
+import { Flex } from '@repo/ui';
+import type { ReactNode } from 'react';
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
   align?: 'center' | 'start' | 'end' | 'baseline' | 'stretch';
 }
 
-const Wrapper: React.FC<Props> = (props) => {
-  return (
-    <Flex
-      direction='column'
-      gap='5'
-      p='5'
-      align={props.align}
-      justify='center'
-      minHeight='90vh'
-    >
-      {props.children}
-    </Flex>
-  );
-};
+const Wrapper = (props: Props) => (
+  <Flex
+    align={props.align}
+    direction='column'
+    gap='5'
+    justify='center'
+    minHeight='90vh'
+    p='5'
+  >
+    {props.children}
+  </Flex>
+);
 
 export default Wrapper;

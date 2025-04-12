@@ -1,10 +1,10 @@
 import { GenerateMetadata } from '@estarlincito/utils';
-import { Container } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Header, type SearchParamsProps } from '@repo/ui';
+import { getPathname } from '@repo/lib';
+import { Header, type Links, type SearchParamsProps, Wrapper } from '@repo/ui';
+import { headers } from 'next/headers';
 import { z } from 'zod';
 
-import ClientBreadcrumb from '@/components/breadcrumb';
 import Quotes from '@/components/quotes/list';
 import { findAuthor } from '@/lib/quotes';
 import type { ParamsProps } from '@/types/params';
@@ -39,22 +39,26 @@ const AuthorPage = async ({
   const { slug } = await params;
   const searchParamsData = await searchParams;
   const authorData = await findAuthor(slug);
+  const pathname = await getPathname(headers);
+  const links: Links = [
+    {
+      href: quotely.authors.path,
+      title: quotely.authors.title,
+    },
+    {
+      href: authorData.author.slug,
+      title: authorData.author.name,
+    },
+  ];
 
   return (
-    <Container size='4'>
-      <ClientBreadcrumb
-        slug={[
-          {
-            route: quotely.authors.path,
-            title: quotely.authors.title,
-          },
-          {
-            route: authorData.author.slug,
-            title: authorData.author.name,
-          },
-        ]}
+    <Wrapper>
+      <Header
+        links={links}
+        pathname={pathname}
+        summary=''
+        title={authorData.author.name}
       />
-      <Header title={authorData.author.name} summary='' />
       <Quotes
         route={authorData.author.slug}
         {...searchParamsData}
@@ -63,7 +67,7 @@ const AuthorPage = async ({
           quotes: authorData.author.quotes,
         }}
       />
-    </Container>
+    </Wrapper>
   );
 };
 

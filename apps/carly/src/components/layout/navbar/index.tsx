@@ -1,16 +1,13 @@
-import { Box, Heading, Link } from '@radix-ui/themes';
-import React from 'react';
+import { Box, Link, Title } from '@repo/ui';
 
-const Navbar = () => {
-  return (
-    <Box m='4'>
-      <Heading>
-        <Link href='/' underline='none'>
-          Carly
-        </Link>
-      </Heading>
-    </Box>
-  );
-};
+const Navbar = () => (
+  <Box m='4'>
+    <Title asChild>
+      <Link href='/' underline='none'>
+        Carly
+      </Link>
+    </Title>
+  </Box>
+);
 
 export default Navbar;

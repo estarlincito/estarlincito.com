@@ -16,8 +16,8 @@
   ],
   "title": "You Don't Owe Explanations to Anyone: Live Freely",
   "body": {
-    "raw": "\n<Introduction>\n\n> Stop feeling obligated to justify your decisions. You are free to live your life without explaining yourself to anyone.\n\n</Introduction>\n\n<Contents>\n\nAfter a long time without posting on social media, I felt responsible to explain myself, to share why I had decided to take a break. Culturally, we often feel indebted to others, as if we must justify our decisions, even when we make them for our own well-being. This happens because, when we stop sharing on social media, some people may interpret it as being excluded, which can lead to feelings of rejection.\n\nBut what if that’s actually the case? It’s okay. Everyone has their own space and decides who can be a part of it. The important thing is not to forget our own worth. You are valuable, with or without posts, with or without the approval of others.\n\n> _&quot;Don’t live giving explanations for everything you do: it’s an unnecessary source of stress&quot; <br/> **-Valeria Sabater-**_\n\nLet’s stop taking things for granted, because that assumption can destroy relationships. The true value of people is not measured by their social media posts but by who they are: friends, family, those who gift us their time and life.\n\nAt one point, I felt obligated to explain my decision to reduce my presence on social media, but then I realized something important: **You owe no explanations to anyone, only to yourself**. Your friends will accept you as you are, with or without social media, with or without posts. And those who truly matter will never take your friendship for granted.\n\n</Contents>\n",
-    "code": "var Component=(()=>{var d=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var y=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of f(e))!m.call(t,r)&&r!==n&&a(t,r,{get:()=>e[r],enumerable:!(i=p(e,r))||i.enumerable});return t};var b=(t,e,n)=>(n=t!=null?d(y(t)):{},s(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),x=t=>s(a({},\"__esModule\",{value:!0}),t);var c=g((C,l)=>{l.exports=_jsx_runtime});var _={};w(_,{default:()=>k,frontmatter:()=>v});var o=b(c()),v={title:\"You Don't Owe Explanations to Anyone: Live Freely\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"08-29-2024\",modifiedTime:\"08-29-2024\",description:\"Stop feeling obligated to justify your decisions. You are free to live your life without explaining yourself to anyone.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/05/08/19/22/dwarf-5147047_1280.png\",coverAlt:\"Fairy tale dwarf.\",check:!0,tags:[\"\"]};function u(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},t.components),{Introduction:n,Contents:i}=e;return i||h(\"Contents\",!0),n||h(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"Stop feeling obligated to justify your decisions. You are free to live your life without explaining yourself to anyone.\"}),`\n`]})}),`\n`,(0,o.jsxs)(i,{children:[(0,o.jsx)(e.p,{children:\"After a long time without posting on social media, I felt responsible to explain myself, to share why I had decided to take a break. Culturally, we often feel indebted to others, as if we must justify our decisions, even when we make them for our own well-being. This happens because, when we stop sharing on social media, some people may interpret it as being excluded, which can lead to feelings of rejection.\"}),(0,o.jsx)(e.p,{children:\"But what if that\\u2019s actually the case? It\\u2019s okay. Everyone has their own space and decides who can be a part of it. The important thing is not to forget our own worth. You are valuable, with or without posts, with or without the approval of others.\"}),(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:(0,o.jsxs)(e.em,{children:['\"Don\\u2019t live giving explanations for everything you do: it\\u2019s an unnecessary source of stress\" ',(0,o.jsx)(\"br\",{}),\" \",(0,o.jsx)(e.strong,{children:\"-Valeria Sabater-\"})]})}),`\n`]}),(0,o.jsx)(e.p,{children:\"Let\\u2019s stop taking things for granted, because that assumption can destroy relationships. The true value of people is not measured by their social media posts but by who they are: friends, family, those who gift us their time and life.\"}),(0,o.jsxs)(e.p,{children:[\"At one point, I felt obligated to explain my decision to reduce my presence on social media, but then I realized something important: \",(0,o.jsx)(e.strong,{children:\"You owe no explanations to anyone, only to yourself\"}),\". Your friends will accept you as you are, with or without social media, with or without posts. And those who truly matter will never take your friendship for granted.\"]})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(u,t)})):u(t)}var k=j;function h(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(_);})();\n;return Component;"
+    "raw": "\n<Contents>\n\nAfter a long time without posting on social media, I felt responsible to explain myself, to share why I had decided to take a break. Culturally, we often feel indebted to others, as if we must justify our decisions, even when we make them for our own well-being. This happens because, when we stop sharing on social media, some people may interpret it as being excluded, which can lead to feelings of rejection.\n\nBut what if that’s actually the case? It’s okay. Everyone has their own space and decides who can be a part of it. The important thing is not to forget our own worth. You are valuable, with or without posts, with or without the approval of others.\n\n> _&quot;Don’t live giving explanations for everything you do: it’s an unnecessary source of stress&quot; <br/> **-Valeria Sabater-**_\n\nLet’s stop taking things for granted, because that assumption can destroy relationships. The true value of people is not measured by their social media posts but by who they are: friends, family, those who gift us their time and life.\n\nAt one point, I felt obligated to explain my decision to reduce my presence on social media, but then I realized something important: **You owe no explanations to anyone, only to yourself**. Your friends will accept you as you are, with or without social media, with or without posts. And those who truly matter will never take your friendship for granted.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var u=Object.create;var r=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var n in e)r(t,n,{get:e[n],enumerable:!0})},s=(t,e,n,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of p(e))!m.call(t,i)&&i!==n&&r(t,i,{get:()=>e[i],enumerable:!(a=d(e,i))||a.enumerable});return t};var g=(t,e,n)=>(n=t!=null?u(f(t)):{},s(e||!t||!t.__esModule?r(n,\"default\",{value:t,enumerable:!0}):n,t)),b=t=>s(r({},\"__esModule\",{value:!0}),t);var c=y((A,l)=>{l.exports=_jsx_runtime});var _={};w(_,{default:()=>j,frontmatter:()=>x});var o=g(c()),x={title:\"You Don't Owe Explanations to Anyone: Live Freely\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"08-29-2024\",modifiedTime:\"08-29-2024\",description:\"Stop feeling obligated to justify your decisions. You are free to live your life without explaining yourself to anyone.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/05/08/19/22/dwarf-5147047_1280.png\",coverAlt:\"Fairy tale dwarf.\",check:!0,tags:[\"\"]};function h(t){let e=Object.assign({p:\"p\",blockquote:\"blockquote\",em:\"em\",strong:\"strong\"},t.components),{Contents:n}=e;return n||k(\"Contents\",!0),(0,o.jsxs)(n,{children:[(0,o.jsx)(e.p,{children:\"After a long time without posting on social media, I felt responsible to explain myself, to share why I had decided to take a break. Culturally, we often feel indebted to others, as if we must justify our decisions, even when we make them for our own well-being. This happens because, when we stop sharing on social media, some people may interpret it as being excluded, which can lead to feelings of rejection.\"}),(0,o.jsx)(e.p,{children:\"But what if that\\u2019s actually the case? It\\u2019s okay. Everyone has their own space and decides who can be a part of it. The important thing is not to forget our own worth. You are valuable, with or without posts, with or without the approval of others.\"}),(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:(0,o.jsxs)(e.em,{children:['\"Don\\u2019t live giving explanations for everything you do: it\\u2019s an unnecessary source of stress\" ',(0,o.jsx)(\"br\",{}),\" \",(0,o.jsx)(e.strong,{children:\"-Valeria Sabater-\"})]})}),`\n`]}),(0,o.jsx)(e.p,{children:\"Let\\u2019s stop taking things for granted, because that assumption can destroy relationships. The true value of people is not measured by their social media posts but by who they are: friends, family, those who gift us their time and life.\"}),(0,o.jsxs)(e.p,{children:[\"At one point, I felt obligated to explain my decision to reduce my presence on social media, but then I realized something important: \",(0,o.jsx)(e.strong,{children:\"You owe no explanations to anyone, only to yourself\"}),\". Your friends will accept you as you are, with or without social media, with or without posts. And those who truly matter will never take your friendship for granted.\"]})]})}function v(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(h,t)})):h(t)}var j=v;function k(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(_);})();\n;return Component;"
   },
   "_id": "you-dont-owe-explanations-to-anyone-live-freely.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2024-08-29T04:00:00.000Z",
+        "publishedTime": "2024-08-29T04:00:00.000Z",
+        "section": "Culture",
+        "tags": [
+          ""
+        ],
         "description": "Stop feeling obligated to justify your decisions. You are free to live your life without explaining yourself to anyone.",
         "images": [
           {
             "alt": "Fairy tale dwarf.",
-            "url": "https://cdn.pixabay.com/photo/2020/05/08/19/22/dwarf-5147047_1280.png",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2020/05/08/19/22/dwarf-5147047_1280.png"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2024-08-29T04:00:00.000Z",
-        "publishedTime": "2024-08-29T04:00:00.000Z",
-        "section": "Culture",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "You Don't Owe Explanations to Anyone: Live Freely",
         "url": "https://imwriting.estarlincito.com/articles/you-dont-owe-explanations-to-anyone-live-freely",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
       "openGraph": {
-        "title": "Culture",
         "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
         "images": [
           {
             "alt": "Brown and green temple on top of a mountain during the day",
-            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Culture",
         "url": "https://imwriting.estarlincito.com/articles/culture",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/you-dont-owe-explanations-to-anyone-live-freely",
       "category": "/articles/culture",
+      "key": 59,
       "subcategory": "/articles/culture/stories-and-reflections"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
       "openGraph": {
-        "title": "Stories and Reflections",
         "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
         "images": [
           {
             "alt": "Woman in a gray knit jacket holding a cup",
-            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Stories and Reflections",
         "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "2 minutes",
-  "wordCount": 265
+  "wordCount": 243
 }

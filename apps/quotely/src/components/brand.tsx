@@ -1,40 +1,16 @@
-import { Box, Flex, Link, Strong } from '@radix-ui/themes';
-import { quotely } from '@repo/constants';
-import stylez from '@stylezjs/stylez';
-import Image from 'next/image';
-
-const styles = stylez.create({
-  borderRadius: '100%',
-  //backgroundColor: 'var(--sky-8)',
-  //boxShadow: '4px 4px 10px 2px rgba(0, 0, 0, 0.3)',
-  height: '100%',
-  width: '100%',
-});
-
-const Brand = () => {
-  return (
-    <Box>
-      <Flex
-        asChild
-        direction='row'
-        align='center'
-        gapX='2'
-        width='40px'
-        height='40px'
-      >
-        <Link href='/'>
-          <Image
-            width={100}
-            height={100}
-            src='/assets/favicons/android-chrome-512x512.png'
-            alt='Logo'
-            {...stylez.className(styles)}
-          />
-          <Strong>{quotely.siteName}</Strong>
-        </Link>
-      </Flex>
-    </Box>
-  );
-};
+const Brand = () => (
+  <div className='text-indigo-600 text-xl flex items-center gap-2'>
+    <svg
+      fill='currentColor'
+      height='24'
+      viewBox='0 0 24 24'
+      width='24'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path d='M2 2v20l4-4h16V2H2zm2 2h16v12H6.828L4 18.828V4z' />
+    </svg>
+    Quotely
+  </div>
+);
 
 export default Brand;

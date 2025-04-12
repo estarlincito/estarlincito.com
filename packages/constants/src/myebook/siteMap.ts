@@ -1,8 +1,8 @@
+import { addingKey, generateRoute } from '@repo/lib';
+
 import { ebooks, home } from './index.js';
 
-const page = (label: string, route: string) => ({ label, route });
-
-export const siteMap = [
-  page(home.title, home.path),
-  page(ebooks.title, ebooks.path),
-];
+export const siteMap = addingKey([
+  generateRoute('Home', home.path),
+  generateRoute(ebooks.title, ebooks.path),
+]);

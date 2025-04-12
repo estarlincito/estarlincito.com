@@ -1,4 +1,4 @@
-import { handleError } from '@estarlincito/utils';
+import { handleError, num } from '@estarlincito/utils';
 
 import { client, e } from './edgedb';
 
@@ -11,7 +11,8 @@ const userDb = async () => {
     }));
 
     const res = await user.run(client);
-    return res[0];
+
+    return res[num('0')];
   } catch (err) {
     handleError('Error retrieving users:', err as string);
   }

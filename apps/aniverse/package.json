@@ -1,0 +1,23 @@
+{
+  "name": "aniverse",
+  "version": "v1.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check-unused": "depcheck",
+    "dev": "next dev --turbopack --port 3007",
+    "find-deadcode": "ts-prune --ignore '.next|dbschema'",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@repo/constants": "workspace:*",
+    "@repo/hooks": "workspace:*",
+    "@repo/lib": "workspace:*",
+    "@repo/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  }
+}

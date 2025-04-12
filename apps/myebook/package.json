@@ -8,23 +8,19 @@
     "check-unused": "depcheck",
     "dev": "next dev --port 3006",
     "find-deadcode": "ts-prune --ignore '.next'",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {
-    "@radix-ui/react-form": "^0.1.2",
     "@repo/constants": "workspace:*",
+    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*",
-    "radix-ui": "^1.1.3",
-    "react-icons": "^5.5.0"
+    "radix-ui": "^1.1.3"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-
-
     "contentlayer": "^0.3.4",
     "date-fns": "^4.1.0",
-
     "next-contentlayer": "^0.3.4",
     "reading-time": "^1.5.0",
     "remark-gfm": "^4.0.1"

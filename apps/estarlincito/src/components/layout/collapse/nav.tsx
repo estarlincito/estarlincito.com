@@ -1,22 +1,20 @@
-import { Link, Strong } from '@radix-ui/themes';
 import { estarlincito } from '@repo/constants';
+import { Link, Strong } from '@repo/ui';
 const { siteMap } = estarlincito;
 
-const Nav = () => {
-  return (
-    <ul>
-      {siteMap.map((link, id) => (
-        <li key={id}>
-          <Link
-            target={link.route.includes('http') ? '_blank' : '_self'}
-            href={link.route}
-          >
-            <Strong>{link.label}</Strong>
-          </Link>
-        </li>
-      ))}
-    </ul>
-  );
-};
+const Nav = () => (
+  <ul>
+    {siteMap.map((link) => (
+      <li key={link.key}>
+        <Link
+          href={link.route}
+          target={link.route.includes('http') ? '_blank' : '_self'}
+        >
+          <Strong>{link.label}</Strong>
+        </Link>
+      </li>
+    ))}
+  </ul>
+);
 
 export default Nav;

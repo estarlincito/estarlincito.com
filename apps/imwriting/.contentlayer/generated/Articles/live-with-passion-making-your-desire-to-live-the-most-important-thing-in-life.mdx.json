@@ -16,8 +16,8 @@
   ],
   "title": "Live with Passion: Making Your Desire to Live the Most Important Thing in Life",
   "body": {
-    "raw": "\n<Introduction>\n\n> What would happen if you stopped worrying about the everyday and completely surrendered to the wonder of living life to the fullest?\n\n</Introduction>\n\n<Contents>\n\n<Audio\n  src='/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/audio.mp3'\n  type='audio/mp3'\n/>\n\nLet your desire to live be the most important thing in life. Let your wish to cling to life be the most valuable thing for you. Let your desire to live be more crucial than any religious matter or belief. Don’t be led by fear, as it will cause you to make fearful decisions and live always scared.\n\nLet your desire to live be the most relevant thing in the world, because remember that **life is what happens while you're busy making other plans**, while you worry about issues that only cause you to lose focus, keeping you stuck in a loop, going around in the same place. So please, stop being wrapped up in your worries and enjoy life. May you and life be like that glue that, once dried, is hard to peel off.\n\nHold on to life; **never forget that the main purpose of life is to live it**. You can have goals and purposes in life, but please, don’t let them consume you. Work toward them, but don’t drown in them. Live life, **enjoy every second**, your breath, the taste, the food, your relationships, but remember without fear. Be yourself and never allow your fears to make you pretend to be someone you’re not.\n\nCommit to living each day fully and consciously, making the most of every opportunity and experience that life presents to you. Don’t postpone happiness or be led by fear; be brave and dare to live according to your true desires and passions. Make your desire to live the driving force that propels you to achieve your goals and find the purpose of your existence. **Remember that you only have one life**, so live it without regrets. Your life is a blank canvas, and each day is a unique brushstroke that contributes to the masterpiece that is your life. Paint with passion, love, and authenticity, and create a life that fills you with satisfaction and gratitude!\n\n</Contents>\n",
-    "code": "var Component=(()=>{var c=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var y=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},l=(t,e,i,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of y(e))!m.call(t,n)&&n!==i&&a(t,n,{get:()=>e[n],enumerable:!(r=p(e,n))||r.enumerable});return t};var v=(t,e,i)=>(i=t!=null?c(f(t)):{},l(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),w=t=>l(a({},\"__esModule\",{value:!0}),t);var d=g((_,u)=>{u.exports=_jsx_runtime});var L={};b(L,{default:()=>j,frontmatter:()=>k});var o=v(d()),k={title:\"Live with Passion: Making Your Desire to Live the Most Important Thing in Life\",category:\"Philosophy\",subcategory:\"Philosophy of Life and Spirituality\",publishedTime:\"10-18-2023\",modifiedTime:\"11-07-2023\",description:\"What would happen if you stopped worrying about the everyday and completely surrendered to the wonder of living life to the fullest?\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/image.jpeg\",coverAlt:\"Happy moment.\",check:!0,tags:[\"\"]};function h(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",strong:\"strong\"},t.components),{Introduction:i,Contents:r,Audio:n}=e;return n||s(\"Audio\",!0),r||s(\"Contents\",!0),i||s(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(i,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"What would happen if you stopped worrying about the everyday and completely surrendered to the wonder of living life to the fullest?\"}),`\n`]})}),`\n`,(0,o.jsxs)(r,{children:[(0,o.jsx)(n,{src:\"/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/audio.mp3\",type:\"audio/mp3\"}),(0,o.jsx)(e.p,{children:\"Let your desire to live be the most important thing in life. Let your wish to cling to life be the most valuable thing for you. Let your desire to live be more crucial than any religious matter or belief. Don\\u2019t be led by fear, as it will cause you to make fearful decisions and live always scared.\"}),(0,o.jsxs)(e.p,{children:[\"Let your desire to live be the most relevant thing in the world, because remember that \",(0,o.jsx)(e.strong,{children:\"life is what happens while you're busy making other plans\"}),\", while you worry about issues that only cause you to lose focus, keeping you stuck in a loop, going around in the same place. So please, stop being wrapped up in your worries and enjoy life. May you and life be like that glue that, once dried, is hard to peel off.\"]}),(0,o.jsxs)(e.p,{children:[\"Hold on to life; \",(0,o.jsx)(e.strong,{children:\"never forget that the main purpose of life is to live it\"}),\". You can have goals and purposes in life, but please, don\\u2019t let them consume you. Work toward them, but don\\u2019t drown in them. Live life, \",(0,o.jsx)(e.strong,{children:\"enjoy every second\"}),\", your breath, the taste, the food, your relationships, but remember without fear. Be yourself and never allow your fears to make you pretend to be someone you\\u2019re not.\"]}),(0,o.jsxs)(e.p,{children:[\"Commit to living each day fully and consciously, making the most of every opportunity and experience that life presents to you. Don\\u2019t postpone happiness or be led by fear; be brave and dare to live according to your true desires and passions. Make your desire to live the driving force that propels you to achieve your goals and find the purpose of your existence. \",(0,o.jsx)(e.strong,{children:\"Remember that you only have one life\"}),\", so live it without regrets. Your life is a blank canvas, and each day is a unique brushstroke that contributes to the masterpiece that is your life. Paint with passion, love, and authenticity, and create a life that fills you with satisfaction and gratitude!\"]})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(h,t)})):h(t)}var j=x;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return w(L);})();\n;return Component;"
+    "raw": "\n<Contents>\n\n<Audio\n  src='/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/audio.mp3'\n  type='audio/mp3'\n/>\n\nLet your desire to live be the most important thing in life. Let your wish to cling to life be the most valuable thing for you. Let your desire to live be more crucial than any religious matter or belief. Don’t be led by fear, as it will cause you to make fearful decisions and live always scared.\n\nLet your desire to live be the most relevant thing in the world, because remember that **life is what happens while you're busy making other plans**, while you worry about issues that only cause you to lose focus, keeping you stuck in a loop, going around in the same place. So please, stop being wrapped up in your worries and enjoy life. May you and life be like that glue that, once dried, is hard to peel off.\n\nHold on to life; **never forget that the main purpose of life is to live it**. You can have goals and purposes in life, but please, don’t let them consume you. Work toward them, but don’t drown in them. Live life, **enjoy every second**, your breath, the taste, the food, your relationships, but remember without fear. Be yourself and never allow your fears to make you pretend to be someone you’re not.\n\nCommit to living each day fully and consciously, making the most of every opportunity and experience that life presents to you. Don’t postpone happiness or be led by fear; be brave and dare to live according to your true desires and passions. Make your desire to live the driving force that propels you to achieve your goals and find the purpose of your existence. **Remember that you only have one life**, so live it without regrets. Your life is a blank canvas, and each day is a unique brushstroke that contributes to the masterpiece that is your life. Paint with passion, love, and authenticity, and create a life that fills you with satisfaction and gratitude!\n\n</Contents>\n",
+    "code": "var Component=(()=>{var p=Object.create;var a=Object.defineProperty;var c=Object.getOwnPropertyDescriptor;var y=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},s=(t,e,i,n)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of y(e))!m.call(t,r)&&r!==i&&a(t,r,{get:()=>e[r],enumerable:!(n=c(e,r))||n.enumerable});return t};var b=(t,e,i)=>(i=t!=null?p(f(t)):{},s(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),w=t=>s(a({},\"__esModule\",{value:!0}),t);var u=g((_,l)=>{l.exports=_jsx_runtime});var L={};v(L,{default:()=>j,frontmatter:()=>k});var o=b(u()),k={title:\"Live with Passion: Making Your Desire to Live the Most Important Thing in Life\",category:\"Philosophy\",subcategory:\"Philosophy of Life and Spirituality\",publishedTime:\"10-18-2023\",modifiedTime:\"11-07-2023\",description:\"What would happen if you stopped worrying about the everyday and completely surrendered to the wonder of living life to the fullest?\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/image.jpeg\",coverAlt:\"Happy moment.\",check:!0,tags:[\"\"]};function h(t){let e=Object.assign({p:\"p\",strong:\"strong\"},t.components),{Contents:i,Audio:n}=e;return n||d(\"Audio\",!0),i||d(\"Contents\",!0),(0,o.jsxs)(i,{children:[(0,o.jsx)(n,{src:\"/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/audio.mp3\",type:\"audio/mp3\"}),(0,o.jsx)(e.p,{children:\"Let your desire to live be the most important thing in life. Let your wish to cling to life be the most valuable thing for you. Let your desire to live be more crucial than any religious matter or belief. Don\\u2019t be led by fear, as it will cause you to make fearful decisions and live always scared.\"}),(0,o.jsxs)(e.p,{children:[\"Let your desire to live be the most relevant thing in the world, because remember that \",(0,o.jsx)(e.strong,{children:\"life is what happens while you're busy making other plans\"}),\", while you worry about issues that only cause you to lose focus, keeping you stuck in a loop, going around in the same place. So please, stop being wrapped up in your worries and enjoy life. May you and life be like that glue that, once dried, is hard to peel off.\"]}),(0,o.jsxs)(e.p,{children:[\"Hold on to life; \",(0,o.jsx)(e.strong,{children:\"never forget that the main purpose of life is to live it\"}),\". You can have goals and purposes in life, but please, don\\u2019t let them consume you. Work toward them, but don\\u2019t drown in them. Live life, \",(0,o.jsx)(e.strong,{children:\"enjoy every second\"}),\", your breath, the taste, the food, your relationships, but remember without fear. Be yourself and never allow your fears to make you pretend to be someone you\\u2019re not.\"]}),(0,o.jsxs)(e.p,{children:[\"Commit to living each day fully and consciously, making the most of every opportunity and experience that life presents to you. Don\\u2019t postpone happiness or be led by fear; be brave and dare to live according to your true desires and passions. Make your desire to live the driving force that propels you to achieve your goals and find the purpose of your existence. \",(0,o.jsx)(e.strong,{children:\"Remember that you only have one life\"}),\", so live it without regrets. Your life is a blank canvas, and each day is a unique brushstroke that contributes to the masterpiece that is your life. Paint with passion, love, and authenticity, and create a life that fills you with satisfaction and gratitude!\"]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(h,t)})):h(t)}var j=x;function d(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return w(L);})();\n;return Component;"
   },
   "_id": "live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2023-11-07T04:00:00.000Z",
+        "publishedTime": "2023-10-18T04:00:00.000Z",
+        "section": "Philosophy",
+        "tags": [
+          ""
+        ],
         "description": "What would happen if you stopped worrying about the everyday and completely surrendered to the wonder of living life to the fullest?",
         "images": [
           {
             "alt": "Happy moment.",
-            "url": "/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/image.jpeg",
-            "height": 600,
-            "width": 800
+            "url": "/assets/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life/image.jpeg"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2023-11-07T04:00:00.000Z",
-        "publishedTime": "2023-10-18T04:00:00.000Z",
-        "section": "Philosophy",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "Live with Passion: Making Your Desire to Live the Most Important Thing in Life",
         "url": "https://imwriting.estarlincito.com/articles/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
       "openGraph": {
-        "title": "Philosophy",
         "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
         "images": [
           {
             "alt": "A collection of books on a wooden shelf.",
-            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy",
         "url": "https://imwriting.estarlincito.com/articles/philosophy",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/live-with-passion-making-your-desire-to-live-the-most-important-thing-in-life",
       "category": "/articles/philosophy",
+      "key": 18,
       "subcategory": "/articles/philosophy/philosophy-of-life-and-spirituality"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/philosophy-of-life-and-spirituality",
       "openGraph": {
-        "title": "Philosophy of Life and Spirituality",
         "description": "Seeks meaning, divine connection, and reflects on consciousness, morality, and harmony.",
         "images": [
           {
             "alt": "Hanging decor in various colors",
-            "url": "https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy of Life and Spirituality",
         "url": "https://imwriting.estarlincito.com/articles/philosophy/philosophy-of-life-and-spirituality",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "2 minutes",
-  "wordCount": 356
+  "wordCount": 331
 }

@@ -1,19 +1,15 @@
-import { Box } from '@radix-ui/themes';
-import React, { type DetailedHTMLProps, type ImgHTMLAttributes } from 'react';
+// import { Box, Image as I } from '@repo/ui';
+// import { type DetailedHTMLProps, type ImgHTMLAttributes } from 'react';
 
-import MyImage from '@/components/ui/image';
+// type Props = DetailedHTMLProps<
+//   ImgHTMLAttributes<HTMLImageElement>,
+//   HTMLImageElement
+// >;
 
-type Props = DetailedHTMLProps<
-  ImgHTMLAttributes<HTMLImageElement>,
-  HTMLImageElement
->;
+// const Image = ({ src, alt }: Props) => (
+//   <Box my='5'>
+//     <I alt={alt} src={src} />
+//   </Box>
+// );
 
-const Image = ({ src, alt }: Props) => {
-  return (
-    <Box my='5'>
-      <MyImage src={src} alt={alt} />
-    </Box>
-  );
-};
-
-export default Image;
+// export default Image;

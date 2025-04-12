@@ -1,31 +1,32 @@
 import '@/styles/themes-config.css';
-import '@radix-ui/themes/styles.css';
 
-import { Theme } from '@radix-ui/themes';
-import type React from 'react';
+import { budget } from '@repo/constants';
+import { AppThemeProvider, LayoutContainer, Theme } from '@repo/ui';
+import type { ReactNode } from 'react';
 
-import { Toaster } from '@/components/toaster';
+import { Toaster } from '@/components/ui/toaster';
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <html lang='en' suppressHydrationWarning>
-      <body>
-        <Theme accentColor='crimson' radius='full'>
-          {children}
-        </Theme>
-        <Toaster
-          position='top-center'
-          reverseOrder={false}
-          toastOptions={{
-            style: {
-              background: 'black',
-              color: 'white',
-            },
-          }}
-        />
-      </body>
-    </html>
-  );
-};
+const RootLayout = ({ children }: { children: ReactNode }) => (
+  <html suppressHydrationWarning lang={budget.locale}>
+    <body>
+      <Theme accentColor='crimson' radius='full'>
+        <AppThemeProvider defaultTheme={budget.theme}>
+          <div />
+        </AppThemeProvider>
+        <LayoutContainer>{children}</LayoutContainer>
+      </Theme>
+      <Toaster
+        position='top-center'
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            background: 'black',
+            color: 'white',
+          },
+        }}
+      />
+    </body>
+  </html>
+);
 
 export default RootLayout;

@@ -6,7 +6,7 @@ new Meta({
   title: '',
 });
 
-//Inset the new Meta over there
+// Inset the new Meta over there
 const meta_genres = new Meta({
   description: '',
   images: [{ alt: '', url: '' }],

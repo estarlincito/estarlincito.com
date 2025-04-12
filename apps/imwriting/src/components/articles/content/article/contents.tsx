@@ -1,14 +1,10 @@
-import { Flex } from '@radix-ui/themes';
-import React from 'react';
+// import { Flex } from '@repo/ui';
+// import type { ReactNode } from 'react';
 
-import Props from '@/types/children';
+// const Contents = ({ children }: { children: ReactNode }) => (
+//   <Flex direction='column' gap='3'>
+//     {children}
+//   </Flex>
+// );
 
-const Contents = ({ children }: Props) => {
-  return (
-    <Flex direction='column' gap='5'>
-      {children}
-    </Flex>
-  );
-};
-
-export default Contents;
+// export default Contents;

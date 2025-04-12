@@ -1,22 +1,36 @@
-import { apiFetch, type ResmsgTypes } from '@estarlincito/utils';
-import { type SubmitHandler } from 'react-hook-form';
+import { apiFetch, num, type ResmsgTypes } from '@estarlincito/utils';
+import type { SubmitHandler, UseFormSetError } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 
-import { InputContact } from './form.js';
+import { contactSchema } from './contact-schema.js';
+import type { InputContact } from './form.js';
 
-const onSubmit: SubmitHandler<InputContact> = async (data) => {
-  const res = await apiFetch({
-    body: JSON.stringify(data),
-    method: 'POST',
-    url: 'https://estarlincito.com/api/mail',
-  });
+const onSubmit =
+  (setError: UseFormSetError<InputContact>): SubmitHandler<InputContact> =>
+  async (data) => {
+    // Validating user data
+    const safeData = contactSchema.safeParse(data);
+    if (!safeData.success) {
+      safeData.error.issues.forEach(({ code, message, path }) => {
+        setError(path[num('0')] as keyof InputContact, {
+          message,
+          type: code,
+        });
+      });
+    }
 
-  const { message, success } = (await res.json()) as ResmsgTypes['Resmsg'];
-  if (!success) {
+    // Sending user request
+    const res = await apiFetch({
+      body: JSON.stringify(data),
+      method: 'POST',
+      url: 'https://estarlincito.com/api/mail',
+    });
+
+    const { message, success } = (await res.json()) as ResmsgTypes['Resmsg'];
+    if (success) {
+      toast.success(message);
+    }
     toast.error(message);
-    return;
-  }
-  toast.success(message);
-};
+  };
 
 export default onSubmit;

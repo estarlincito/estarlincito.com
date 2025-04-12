@@ -8,8 +8,8 @@ export const notFoundMeta = ({
   locale: string;
   siteName: string;
   url: string;
-}) => {
-  return GenerateMetadata.website({
+}) =>
+  GenerateMetadata.website({
     description:
       'Looks like that page took a little detour and doesn’t exist anymore.',
     images: [
@@ -23,4 +23,3 @@ export const notFoundMeta = ({
     title: 'Oops!',
     url: `${url}/not-found`,
   });
-};

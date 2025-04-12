@@ -1,9 +1,8 @@
-import { Box, Flex, Heading } from '@radix-ui/themes';
-import React from 'react';
+import { Box, Flex, Heading } from '@repo/ui';
 import { FaThreads, FaWhatsapp, FaXTwitter } from 'react-icons/fa6';
 
 import ShareLink from './link';
-import URL from './url';
+import Url from './url';
 
 interface Props {
   description: string;
@@ -11,42 +10,40 @@ interface Props {
   category: string;
 }
 
-const Share = ({ category, description, url }: Props) => {
-  return (
-    <Box>
-      <Heading my='4' size='6'>
-        Share to:
-      </Heading>
+const Share = ({ category, description, url }: Props) => (
+  <Box>
+    <Heading my='4' size='6'>
+      Share to:
+    </Heading>
 
-      <Flex gap='3'>
-        <ShareLink
-          host='whatsapp://send?text='
-          url={url}
-          description={description}
-          tag={category}
-          IconType={<FaWhatsapp />}
-        />
+    <Flex gap='3'>
+      <ShareLink
+        description={description}
+        host='whatsapp://send?text='
+        IconType={<FaWhatsapp />}
+        tag={category}
+        url={url}
+      />
 
-        <ShareLink
-          host='https://twitter.com/intent/tweet?text='
-          url={url}
-          description={description}
-          tag={category}
-          IconType={<FaXTwitter />}
-        />
+      <ShareLink
+        description={description}
+        host='https://twitter.com/intent/tweet?text='
+        IconType={<FaXTwitter />}
+        tag={category}
+        url={url}
+      />
 
-        <ShareLink
-          host='https://threads.net/intent/post?text='
-          url={url}
-          description={description}
-          tag={category}
-          IconType={<FaThreads />}
-        />
+      <ShareLink
+        description={description}
+        host='https://threads.net/intent/post?text='
+        IconType={<FaThreads />}
+        tag={category}
+        url={url}
+      />
 
-        <URL url={url} />
-      </Flex>
-    </Box>
-  );
-};
+      <Url url={url} />
+    </Flex>
+  </Box>
+);
 
 export default Share;

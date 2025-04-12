@@ -1,26 +1,29 @@
 import { apiFetch } from '@estarlincito/utils';
-import { type SubmitHandler } from 'react-hook-form';
+import type { SubmitHandler, UseFormSetError } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
-import { type CreateType } from '@/schemas/quotes/create';
+import type { CreateFields } from './form';
 
-const onSubmit: SubmitHandler<CreateType> = async (data) => {
-  // const quote = createSchema.parse(data);
-  // const session = '';
-  let response;
-  try {
-    const res = await apiFetch({
-      body: JSON.stringify(data),
-      method: 'POST',
-      url: 'https://quotely.estarlincito.workers.dev/create',
-    });
+const onSubmit =
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  (_setError: UseFormSetError<CreateFields>): SubmitHandler<CreateFields> =>
+    async (data) => {
+      // const quote = createSchema.parse(data);
+      // const session = '';
+      let response;
+      try {
+        const res = await apiFetch({
+          body: JSON.stringify(data),
+          method: 'POST',
+          url: 'https://quotely.estarlincito.workers.dev/create',
+        });
 
-    response = await res.json();
-  } catch {
-    toast.error('Issue adding quote');
-  }
+        response = await res.json();
+      } catch {
+        toast.error('Issue adding quote');
+      }
 
-  return response;
-};
+      return response;
+    };
 
 export default onSubmit;

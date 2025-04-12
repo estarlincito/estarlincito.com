@@ -4,7 +4,7 @@ import {
   toSlug,
 } from '@estarlincito/utils';
 import { myebook } from '@repo/constants';
-import Instances from 'config/types/instances';
+import type Instances from 'config/types/instances';
 import { type LocalDocument } from 'contentlayer/source-files';
 
 import meta_author from './author';
@@ -21,21 +21,21 @@ const getMeta = (title: string, data: Instances[]) => {
 };
 
 const meta = (doc: LocalDocument) => {
-  //ebook
+  // ebook
   const ebook = GenerateMetadata.book({
-    authors: doc.authors,
+    authors: doc.authors._array,
     description: doc.summary,
     images: [{ alt: doc.coverAlt, url: doc.cover }],
     isbn: doc.isbn,
     locale: 'en-US',
     releaseDate: doc.released,
     siteName: 'MyEbook',
-    tags: doc.tags,
+    tags: doc.tags._array,
     title: doc.title,
     url: `https://myebook.estarlincito.com/ebooks/${toSlug('doc')}`,
   });
 
-  //publisher
+  // publisher
   const publisher = GenerateMetadata.website({
     locale,
     siteName,
@@ -43,27 +43,27 @@ const meta = (doc: LocalDocument) => {
     ...getMeta(doc.publisher, meta_publisher),
   });
 
-  //genres
+  // genres
   const genres: GenerateMetadataTypes['ReturnsWebsite'][] =
-    doc.genres._array.map((genre: string) => {
-      return GenerateMetadata.website({
+    doc.genres._array.map((genre: string) =>
+      GenerateMetadata.website({
         locale,
         siteName,
         url: `https://myebook.estarlincito.com/ebooks/${toSlug(genre)}`,
         ...getMeta(genre, meta_genres),
-      });
-    });
+      }),
+    );
 
-  //authors
+  // authors
   const authors: GenerateMetadataTypes['ReturnsWebsite'][] =
-    doc.authors._array.map((author: string) => {
-      return GenerateMetadata.website({
+    doc.authors._array.map((author: string) =>
+      GenerateMetadata.website({
         locale,
         siteName,
         url: `https://myebook.estarlincito.com/ebooks/${toSlug(author)}`,
         ...getMeta(author, meta_author),
-      });
-    });
+      }),
+    );
 
   return { authors, ebook, genres, publisher };
 };

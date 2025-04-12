@@ -3,7 +3,7 @@ import { GenerateMetadata, ObjectUtils } from '@estarlincito/utils';
 import { locale, siteName, url } from './settings.js';
 
 const constants = ObjectUtils.create({
-  description: 'Log in to access your account!',
+  description: 'Use your Estarlincito Account',
   path: '/signin',
   title: 'Sign in',
 });

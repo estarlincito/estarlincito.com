@@ -1,21 +1,19 @@
-import { Flex, Text } from '@radix-ui/themes';
-import React from 'react';
+import { Flex, Text } from '@repo/ui';
+import type { ReactNode } from 'react';
 
 interface Props {
   color?: 'sky' | 'gray' | 'blue' | 'red';
   label: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-const Inf = ({ color, label, children }: Props) => {
-  return (
-    <Flex align='center' gap='1' justify='center' direction='row'>
-      <Text asChild color={color}>
-        {children}
-      </Text>
-      <Text>{label}</Text>
-    </Flex>
-  );
-};
+const Inf = ({ color, label, children }: Props) => (
+  <Flex align='center' direction='row' gap='1' justify='center'>
+    <Text asChild color={color}>
+      {children}
+    </Text>
+    <Text>{label}</Text>
+  </Flex>
+);
 
 export default Inf;

@@ -1,23 +1,20 @@
-import { Text } from '@radix-ui/themes';
 import { estarlincito } from '@repo/constants';
-import { Container, Header, Topics, Wrapper } from '@repo/ui';
+import { getPathname } from '@repo/lib';
+import { Overview, Wrapper } from '@repo/ui';
+import { headers } from 'next/headers';
 
-import ClientBreadcrumb from '@/components/ui/breadcrumb';
 const { about } = estarlincito;
 
 export const { metadata } = about;
 
-const Page = () => {
+const AboutPage = async () => {
+  const pathname = await getPathname(headers);
+
   return (
-    <Container size='3'>
-      <Wrapper align='start'>
-        <ClientBreadcrumb slug={[{ route: about.path, title: about.title }]} />
-        <Header title={about.title} summary={about.description} />
-        <Text>{about.contents[0]}</Text>
-        <Topics topics={about.topics} dash />
-      </Wrapper>
-    </Container>
+    <Wrapper align='start' size='3'>
+      <Overview {...about.overview} pathname={pathname} title={about.title} />
+    </Wrapper>
   );
 };
 
-export default Page;
+export default AboutPage;

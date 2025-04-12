@@ -1,18 +1,53 @@
-import { Flex, Separator } from '@radix-ui/themes';
+import type { ComponentProps, ReactNode } from 'react';
 
-import { Summary, Title } from '../components/index.js';
+import {
+  Breadcrumb,
+  type Links,
+  Section,
+  Separator,
+  Summary,
+  Title,
+} from '@/components/ui/index.js';
 
-interface Props {
+type ContainerProps = ComponentProps<typeof Section>;
+
+interface Props extends ContainerProps {
+  summary?: string;
+  children?: ReactNode;
+  separator?: boolean;
+  blockquote?: boolean;
+  highContrast?: boolean;
+  pathname?: string;
+  links?: Links;
   title: string;
-  summary: string;
 }
 
-export const Header = ({ title, summary }: Props) => {
-  return (
-    <Flex direction='column' width='100%' gapY='1'>
-      <Title contents={title} />
-      <Summary contents={summary} />
-      <Separator orientation='horizontal' size='4' mt='2' />
-    </Flex>
-  );
-};
+export const Header = ({
+  children,
+  title,
+  summary,
+  separator,
+  blockquote,
+  pathname,
+  size,
+  links,
+  highContrast,
+  ...props
+}: Props) => (
+  <Section {...props} size={size ?? { initial: '2', md: '4' }}>
+    {children ?? (
+      <>
+        {links && pathname && (
+          <Breadcrumb links={links} my='2' pathname={pathname} />
+        )}
+        <Title content={title} />
+        <Summary
+          blockquote={blockquote}
+          content={summary}
+          highContrast={highContrast}
+        />
+        {separator && <Separator my='2' size='4' />}
+      </>
+    )}
+  </Section>
+);

@@ -5,7 +5,6 @@
     "moduleResolution": "nodenext",
     "outDir": "dist",
     "declarationMap": false,
-    "incremental": false,
     "baseUrl": ".",
     "paths": { "@/*": ["src/*"] }
   },

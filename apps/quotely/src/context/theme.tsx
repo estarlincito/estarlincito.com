@@ -1,15 +1,12 @@
-'use client';
-import { quotely } from '@repo/constants';
-import { ThemeProvider } from 'next-themes';
+// 'use client';
+// import { quotely } from '@repo/constants';
+// import { ThemeProvider } from 'next-themes';
+// import type { ReactNode } from 'react';
 
-import type Props from '@/types/children';
+// const AppThemeProvider = ({ children }: { children: ReactNode }) => (
+//   <ThemeProvider attribute='class' defaultTheme={quotely.theme}>
+//     {children}
+//   </ThemeProvider>
+// );
 
-const AppThemeProvider = ({ children }: Props) => {
-  return (
-    <ThemeProvider attribute='class' defaultTheme={quotely.theme}>
-      {children}
-    </ThemeProvider>
-  );
-};
-
-export default AppThemeProvider;
+// export default AppThemeProvider;

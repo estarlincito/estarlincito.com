@@ -1,39 +1,38 @@
 import '@/styles/themes-config.css';
-import '@radix-ui/themes/styles.css';
 import '@/styles/globals.css';
 
-import { Theme } from '@radix-ui/themes';
-import type React from 'react';
+import { carly } from '@repo/constants';
+import { AppThemeProvider, LayoutContainer, Theme } from '@repo/ui';
+import type { ReactNode } from 'react';
 
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
-import { Toaster } from '@/components/toaster';
-import AppThemeProvider from '@/context/theme';
+import { Toaster } from '@/components/ui/toaster';
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <html lang='en' suppressHydrationWarning>
-      <body>
-        <Theme accentColor='iris' radius='full'>
+const RootLayout = ({ children }: { children: ReactNode }) => (
+  <html suppressHydrationWarning lang={carly.locale}>
+    <body>
+      <Theme accentColor='iris' radius='full'>
+        <LayoutContainer threePart>
           <Navbar />
           {children}
-          <AppThemeProvider>
+          <AppThemeProvider defaultTheme={carly.theme}>
             <Footer />
           </AppThemeProvider>
-        </Theme>
-        <Toaster
-          position='top-center'
-          reverseOrder={false}
-          toastOptions={{
-            style: {
-              background: 'black',
-              color: 'white',
-            },
-          }}
-        />
-      </body>
-    </html>
-  );
-};
+        </LayoutContainer>
+      </Theme>
+      <Toaster
+        position='top-center'
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            background: 'black',
+            color: 'white',
+          },
+        }}
+      />
+    </body>
+  </html>
+);
 
 export default RootLayout;

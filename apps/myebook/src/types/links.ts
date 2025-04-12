@@ -1,4 +1,4 @@
-import Target from './target';
+import type Target from './target';
 
 interface Links {
   route: string;

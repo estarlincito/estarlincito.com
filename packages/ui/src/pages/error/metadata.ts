@@ -8,8 +8,8 @@ export const errorMeta = ({
   locale: string;
   siteName: string;
   url: string;
-}) => {
-  return GenerateMetadata.website({
+}) =>
+  GenerateMetadata.website({
     description: '...We apologize for the inconvenience.',
     images: [
       {
@@ -22,4 +22,3 @@ export const errorMeta = ({
     title: 'Oops!',
     url: `${url}`,
   });
-};

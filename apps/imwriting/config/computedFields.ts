@@ -1,3 +1,4 @@
+import { num } from '@estarlincito/utils';
 import { type ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
 
@@ -6,14 +7,13 @@ import metaTypes from './types/meta';
 
 const displayed = (minutes: number) => {
   const round = Math.ceil(minutes);
-  return round === 1 ? `${round} minute` : `${round} minutes`;
+
+  return round === num('1') ? `${round} minute` : `${round} minutes`;
 };
 
 export const computedFields: ComputedFields = {
   meta: {
-    resolve: async (doc) => {
-      return await meta(doc);
-    },
+    resolve: async (doc) => meta(doc),
     type: metaTypes as 'string',
   },
 

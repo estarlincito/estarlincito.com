@@ -1,32 +1,40 @@
-import { Header, type SearchParams } from '@repo/ui';
+import { num } from '@estarlincito/utils';
+import { getPathname } from '@repo/lib';
+import { Header, type Links, type SearchParams } from '@repo/ui';
 import { type Articles } from 'contentlayer/generated';
-import React from 'react';
+import { headers } from 'next/headers';
 
 import ArticlesList from '@/components/articles/list';
-import ClientBreadcrumb from '@/components/breadcrumb';
 
 interface Props extends SearchParams {
   articles: [Articles, ...Articles[]];
 }
 
 const Category = async ({ articles, limit, offset }: Props) => {
+  const pathname = await getPathname(headers);
   const {
     meta: {
       category: { title, description },
       pathnames,
     },
-  } = articles[0];
+  } = articles[num('0')];
+
+  const links: Links = [{ href: pathnames.category, title }];
 
   return (
     <>
-      <ClientBreadcrumb slug={[{ route: pathnames.category, title }]} />
-      <Header title={title} summary={description} />
+      <Header
+        links={links}
+        pathname={pathname}
+        summary={description}
+        title={title}
+      />
       <ArticlesList
-        count={articles.length}
         articles={articles}
-        route={articles[0].meta.pathnames.category}
+        count={articles.length}
         limit={limit}
         offset={offset}
+        route={articles[num('0')].meta.pathnames.category}
       />
     </>
   );

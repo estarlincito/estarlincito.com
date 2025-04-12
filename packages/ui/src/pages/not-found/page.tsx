@@ -1,22 +1,16 @@
-import { Box, Container, Link, Strong } from '@radix-ui/themes';
+import { Link, Text, Title } from '@/components/ui/index.js';
+import { Wrapper } from '@/layouts/index.js';
 
-import { Title } from '../../components/index.js';
-import { Wrapper } from '../../layouts/index.js';
-
-export const NotFoundPage = () => {
-  return (
-    <Container size='1'>
-      <Wrapper align='center'>
-        <Title contents='Oops!' size='8' />
-        <Box>
-          Looks like that page took a little detour and doesn’t exist anymore.
-          No worries! Head back to{' '}
-          <Link href='/'>
-            <Strong>Home</Strong>
-          </Link>{' '}
-          and keep exploring!
-        </Box>
-      </Wrapper>
-    </Container>
-  );
-};
+export const NotFoundPage = () => (
+  <Wrapper align='center' size='1'>
+    <Title content='Oops!' size='8' />
+    <Text>
+      Looks like that page took a little detour and doesn’t exist anymore. No
+      worries! Head back to{' '}
+      <Link href='/' weight='bold'>
+        Home
+      </Link>{' '}
+      and keep exploring!
+    </Text>
+  </Wrapper>
+);

@@ -1,10 +1,10 @@
 'use client';
-import { Flex } from '@radix-ui/themes';
+import { Flex } from '@repo/ui';
 import stylez from '@stylezjs/stylez';
+import type { ReactNode } from 'react';
 
 import TwitterLink from '@/components/layout/navbar/twitterlink';
 import DarkModeToggle from '@/components/ui/darkmode-toggle';
-import type Children from '@/types/children';
 
 import Brand from './brand';
 import HireMeLink from './hiremelink';
@@ -18,42 +18,39 @@ const styles = stylez.create({
 });
 
 export const Navbar = () => {
-  const Nav = ({ children }: Children) => {
-    return (
-      <Flex
-        asChild
-        justify='between'
-        position='fixed'
-        top='0'
-        bottom='0'
-        right='0'
-        left='0'
-        height='70px'
-        {...stylez.className(styles)}
-      >
-        <nav>{children}</nav>
-      </Flex>
-    );
-  };
+  const Nav = ({ children }: { children: ReactNode }) => (
+    <Flex
+      asChild
+      bottom='0'
+      height='70px'
+      justify='between'
+      left='0'
+      position='fixed'
+      right='0'
+      top='0'
+      {...stylez.className(styles)}
+    >
+      <nav>{children}</nav>
+    </Flex>
+  );
 
-  interface UlProps extends Children {
+  interface UlProps {
     m: 'r' | 'l';
+    children: ReactNode;
   }
 
-  const Ul = ({ m, children }: UlProps) => {
-    return (
-      <Flex
-        direction='row'
-        mr={m === 'r' ? '5' : '0'}
-        ml={m === 'l' ? '5' : '0'}
-        align='center'
-        gap='5'
-        asChild
-      >
-        <ul>{children}</ul>
-      </Flex>
-    );
-  };
+  const Ul = ({ m, children }: UlProps) => (
+    <Flex
+      asChild
+      align='center'
+      direction='row'
+      gap='5'
+      ml={m === 'l' ? '5' : '0'}
+      mr={m === 'r' ? '5' : '0'}
+    >
+      <ul>{children}</ul>
+    </Flex>
+  );
 
   return (
     <Nav>

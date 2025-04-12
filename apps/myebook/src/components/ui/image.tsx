@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { AspectRatio } from '@radix-ui/themes';
+import { num } from '@estarlincito/utils';
+import { AspectRatio } from '@repo/ui';
 import stylez from '@stylezjs/stylez';
-import React from 'react';
 
 const styles = {
   img: stylez.create({
@@ -16,12 +16,10 @@ interface Props {
   src: string;
   alt: string;
 }
-const Image: React.FC<Props> = ({ src, alt }) => {
-  return (
-    <AspectRatio ratio={16 / 10}>
-      <img src={src} alt={alt} {...stylez.className(styles.img)} />
-    </AspectRatio>
-  );
-};
+const Image = ({ src, alt }: Props) => (
+  <AspectRatio ratio={num('16') / num('10')}>
+    <img alt={alt} src={src} {...stylez.className(styles.img)} />
+  </AspectRatio>
+);
 
 export default Image;

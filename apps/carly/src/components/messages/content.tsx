@@ -1,11 +1,11 @@
-import { Box, Card } from '@radix-ui/themes';
+import { Box, Card } from '@repo/ui';
 import { type Message } from 'ai';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 
 import CopyMessage from './copy_message';
 
-const Content: React.FC<Message> = ({ content, role }) => {
+const Content = ({ content, role }: Message) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
 

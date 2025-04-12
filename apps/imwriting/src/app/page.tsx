@@ -1,26 +1,21 @@
-import { Box } from '@radix-ui/themes';
 import { imwriting } from '@repo/constants';
-import { Container, Header } from '@repo/ui';
-import React from 'react';
+import { Header, Wrapper } from '@repo/ui';
 
 import Latest from './components/latest';
 import Topics from './components/topics';
 
 export const { metadata } = imwriting.home;
 
-const HomePage = () => {
-  return (
-    <Container size='4'>
-      <Box p={{ initial: '5', md: '0' }}>
-        <Header
-          title={`Hey there! 👋 Welcome to ${imwriting.home.title}`}
-          summary={imwriting.home.description}
-        />
-      </Box>
-      <Latest />
-      <Topics />
-    </Container>
-  );
-};
+const HomePage = () => (
+  <Wrapper>
+    <Header
+      summary={imwriting.home.description}
+      title={`Hey there! 👋 Welcome to ${imwriting.home.title}`}
+    />
+
+    <Latest />
+    <Topics />
+  </Wrapper>
+);
 
 export default HomePage;

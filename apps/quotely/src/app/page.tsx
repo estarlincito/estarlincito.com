@@ -1,13 +1,13 @@
+import { quotely } from '@repo/constants';
 import {
   Badge,
-  Blockquote,
-  Container,
-  Heading,
+  Block,
+  Header,
   Link,
+  type SearchParamsProps,
   Separator,
-} from '@radix-ui/themes';
-import { quotely } from '@repo/constants';
-import { Block, type SearchParamsProps, Wrapper } from '@repo/ui';
+  Wrapper,
+} from '@repo/ui';
 
 import Card from '@/components/quotes/card';
 import { getAuthors, getLastQuote, getTags } from '@/lib/quotes';
@@ -22,51 +22,51 @@ const Page = async ({ searchParams }: SearchParamsProps) => {
   const { authors } = await getAuthors(params);
 
   return (
-    <Container size='3'>
-      <Heading>Welcome to Quotely!</Heading>
-      <Blockquote mt='5'>{quotely.home.description}</Blockquote>
-      <Separator orientation='horizontal' size='4' mt='2' />
+    <Wrapper align='center' size='3'>
+      <Header
+        separator
+        summary={quotely.home.description}
+        title='Welcome to Quotely!'
+      />
 
-      <Wrapper align='center'>
-        <Block
-          route={quotely.quotes.path}
-          title='Quote of the day'
-          label='View more quotes'
-        >
-          <Card {...quoteData} />
-        </Block>
+      <Block
+        label='View more quotes'
+        route={quotely.quotes.path}
+        title='Quote of the day'
+      >
+        <Card {...quoteData} />
+      </Block>
 
-        <Separator orientation='horizontal' size='4' mt='2' />
+      <Separator mt='2' orientation='horizontal' size='4' />
 
-        <Block route={quotely.tags.path} title='Tags' label='View more tags'>
-          {tags.map(({ name }, id) => (
-            <Badge color='gray' key={id} mr='1'>
-              <Link underline='none' href={`${quotely.tags.path}/${name}`}>
-                {name}
-              </Link>
-            </Badge>
-          ))}
-        </Block>
+      <Block label='View more tags' route={quotely.tags.path} title='Tags'>
+        {tags.map(({ name, id }) => (
+          <Badge color='gray' key={id} mr='1'>
+            <Link href={`${quotely.tags.path}/${name}`} underline='none'>
+              {name}
+            </Link>
+          </Badge>
+        ))}
+      </Block>
 
-        <Separator orientation='horizontal' size='4' mt='2' />
+      <Separator mt='2' orientation='horizontal' size='4' />
 
-        <Block
-          route={quotely.authors.path}
-          title='Authors'
-          label='View more authors'
-        >
-          {authors.map(({ name, slug }, id) => (
-            <Badge color='gray' key={id} mr='1'>
-              <Link underline='none' href={`${quotely.authors.path}/${slug}`}>
-                {name}
-              </Link>
-            </Badge>
-          ))}
-        </Block>
+      <Block
+        label='View more authors'
+        route={quotely.authors.path}
+        title='Authors'
+      >
+        {authors.map(({ name, slug, id }) => (
+          <Badge color='gray' key={id} mr='1'>
+            <Link href={`${quotely.authors.path}/${slug}`} underline='none'>
+              {name}
+            </Link>
+          </Badge>
+        ))}
+      </Block>
 
-        <Separator orientation='horizontal' size='4' mt='2' />
-      </Wrapper>
-    </Container>
+      <Separator mt='2' orientation='horizontal' size='4' />
+    </Wrapper>
   );
 };
 

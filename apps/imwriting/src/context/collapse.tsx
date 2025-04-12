@@ -1,7 +1,5 @@
 'use client';
-import React, { createContext, useState } from 'react';
-
-import ChildrenProps from '@/types/children';
+import { createContext, type ReactNode, useState } from 'react';
 
 type Collapse = boolean;
 
@@ -10,11 +8,11 @@ interface CollapseContextValue {
   setCollapse: (collapse: Collapse) => void;
 }
 
-//set context
+// set context
 export const CollapseContext = createContext({} as CollapseContextValue);
 
-//Provider context
-export const CollapseProvider = ({ children }: ChildrenProps) => {
+// Provider context
+export const CollapseProvider = ({ children }: { children: ReactNode }) => {
   const [collapse, setCollapse] = useState<Collapse>(false);
 
   return (

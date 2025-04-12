@@ -1,4 +1,4 @@
-import { Card as RadixCard, Flex, Inset, Strong, Text } from '@radix-ui/themes';
+import { Card as C, Flex, Inset, Strong, Text } from '@repo/ui';
 import { type IconType } from 'react-icons';
 
 interface Props {
@@ -7,22 +7,20 @@ interface Props {
   color: string;
 }
 
-const Card = ({ label, Icon, color }: Props) => {
-  return (
-    <RadixCard size='2' variant='classic'>
-      <Inset clip='padding-box' side='y' py='current' mb='3'>
-        <Flex align='center' justify='center'>
-          <Icon size='50px' color={color} />
-        </Flex>
-      </Inset>
-
+const Card = ({ label, Icon, color }: Props) => (
+  <C size='2' variant='classic'>
+    <Inset clip='padding-box' mb='3' py='current' side='y'>
       <Flex align='center' justify='center'>
-        <Text size='2' asChild>
-          <Strong>{label}</Strong>
-        </Text>
+        <Icon color={color} size='50px' />
       </Flex>
-    </RadixCard>
-  );
-};
+    </Inset>
+
+    <Flex align='center' justify='center'>
+      <Text asChild size='2'>
+        <Strong>{label}</Strong>
+      </Text>
+    </Flex>
+  </C>
+);
 
 export default Card;

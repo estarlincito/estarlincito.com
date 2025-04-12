@@ -1,6 +1,6 @@
-import { Box, Strong, Text } from '@radix-ui/themes';
+import { Box, Strong, Text } from '@repo/ui';
 import stylez from '@stylezjs/stylez';
-import React, {
+import type {
   AudioHTMLAttributes,
   DetailedHTMLProps,
   SourceHTMLAttributes,
@@ -26,19 +26,17 @@ type Props = DetailedHTMLProps<
 > &
   DetailedHTMLProps<SourceHTMLAttributes<HTMLSourceElement>, HTMLSourceElement>;
 
-const Audio = ({ src, type }: Props) => {
-  return (
-    <Box p='3' {...stylez.className(styles.box)}>
-      <Text as='p' size='5' my='2'>
-        <Strong>Listen to article</Strong>
-      </Text>
+const Audio = ({ src, type }: Props) => (
+  <Box p='3' {...stylez.className(styles.box)}>
+    <Text as='p' my='2' size='5'>
+      <Strong>Listen to article</Strong>
+    </Text>
 
-      <audio controls {...stylez.className(styles.audio)}>
-        <source src={src} type={type} />
-        Your browser does not support the audio element.
-      </audio>
-    </Box>
-  );
-};
+    <audio controls {...stylez.className(styles.audio)}>
+      <source src={src} type={type} />
+      Your browser does not support the audio element.
+    </audio>
+  </Box>
+);
 
 export default Audio;

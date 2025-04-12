@@ -1,30 +1,40 @@
-import { Avatar, Container, Flex, Link, Strong } from '@radix-ui/themes';
 import { accounts, budget } from '@repo/constants';
-import { Wrapper } from '@repo/ui';
+import { Avatar, Flex, Grid, Link, Wrapper } from '@repo/ui';
 
-const Page = () => {
-  return (
-    <Container>
-      <Wrapper align='center' gapY='2'>
-        <Flex direction='column' align='center'>
-          <Avatar
-            size='8'
-            src='/assets/favicons/android-chrome-512x512.png'
-            fallback={budget.siteName}
-          />
+export const { metadata } = budget.home;
 
-          <Link href='/' underline='none' size='8' mt='2' color='gray'>
-            <Strong>{budget.siteName}</Strong>
-          </Link>
-        </Flex>
-      </Wrapper>
-      <Flex justify='center'>
-        <Link href={`${accounts.url}/signin?redirect=${budget.url}/dashboard`}>
-          <Strong>Sign in</Strong>
+const Page = () => (
+  <Wrapper>
+    <Grid height='100%' rows='1fr auto'>
+      <Flex align='center' direction='column' height='100%' justify='center'>
+        <Avatar
+          fallback={budget.siteName}
+          size='8'
+          src='/assets/favicons/android-chrome-512x512.png'
+        />
+
+        <Link
+          highContrast
+          color='gray'
+          href='/'
+          mt='2'
+          size='8'
+          underline='none'
+          weight='bold'
+        >
+          {budget.siteName}
         </Link>
       </Flex>
-    </Container>
-  );
-};
+      <Flex justify='center'>
+        <Link
+          href={`${accounts.url}/signin?redirect=${budget.url}/dashboard`}
+          weight='bold'
+        >
+          Sign in
+        </Link>
+      </Flex>
+    </Grid>
+  </Wrapper>
+);
 
 export default Page;

@@ -1,6 +1,10 @@
-import { ObjectUtils } from '@estarlincito/utils';
+import { toHireme } from '@/lib/hireme.js';
 
-export const hireme = ObjectUtils.create([
-  { label: 'X', route: 'https://x.com/estarlincito' },
-  { label: 'Linktr', route: 'https://linktr.ee/estarlincito' },
-]);
+export const hireme = toHireme({
+  contact: '/contact',
+  github:
+    'https://github.com/estarlincito/estarlincito.com/blob/main/apps/myebook/README.md',
+  'ko-fi': 'https://ko-fi.com/estarlincito',
+
+  x: 'https://x.com/estarlincito',
+});

@@ -7,7 +7,7 @@
     "esModuleInterop": true,
     "isolatedModules": false,
     "preserveSymlinks": true,
-    "incremental": true,
+    "incremental": false,
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleDetection": "force",
     "noUncheckedIndexedAccess": true,
@@ -15,10 +15,10 @@
     "strict": true,
     "target": "ESNext",
     "noUnusedLocals": true,
+
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "allowJs": true,
     "forceConsistentCasingInFileNames": true
-    
   }
 }

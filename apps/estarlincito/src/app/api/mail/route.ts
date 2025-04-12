@@ -1,4 +1,4 @@
-import { resmsg } from '@estarlincito/utils';
+import { num, resmsg } from '@estarlincito/utils';
 import type { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 
@@ -7,7 +7,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
   const requiredFields = ['first-name', 'last-name', 'email', 'message'];
   const missingFields = requiredFields.filter((field) => !body.get(field));
 
-  if (missingFields.length > 0) {
+  if (missingFields.length > num('0')) {
     return resmsg({
       code: 400,
       message: `Missing required fields: ${missingFields.join(', ')}`,
@@ -73,6 +73,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
     };
 
     const info = await transporter.sendMail(mailOptions);
+
     return resmsg({
       code: 200,
       message: `Email sent: ${info.response}`,

@@ -1,10 +1,11 @@
+import { num } from '@estarlincito/utils';
 import * as Form from '@radix-ui/react-form';
 import { DoubleArrowRightIcon, InfoCircledIcon } from '@radix-ui/react-icons';
-import { Box, Flex, IconButton } from '@radix-ui/themes';
+import { Box, Flex, IconButton } from '@repo/ui';
 import stylez from '@stylezjs/stylez';
-import React, {
-  ChangeEventHandler,
-  FormEventHandler,
+import {
+  type ChangeEventHandler,
+  type FormEventHandler,
   useEffect,
   useRef,
 } from 'react';
@@ -35,13 +36,13 @@ interface Props {
   isLoading: boolean;
 }
 
-const CarlyForm: React.FC<Props> = (props) => {
+const CarlyForm = (props: Props) => {
   const { handleSubmit, isLoading, handleInputChange, input } = props;
   const smooth = useRef<HTMLTextAreaElement>(null);
   useEffect(() => {
     if (!smooth.current) return;
-    if (smooth.current.scrollHeight >= 200) return;
-    if (input.length === 0) {
+    if (smooth.current.scrollHeight >= num('200')) return;
+    if (input.length === num('0')) {
       smooth.current.style.height = `50px`;
     }
     if (smooth.current) {
@@ -50,7 +51,7 @@ const CarlyForm: React.FC<Props> = (props) => {
   }, [input]);
 
   return (
-    <Box {...stylez.className(styles.form)} p='5' asChild>
+    <Box {...stylez.className(styles.form)} asChild p='5'>
       <Form.Root onSubmit={handleSubmit}>
         <Form.Field name='message'>
           <Form.Message
@@ -75,23 +76,26 @@ const CarlyForm: React.FC<Props> = (props) => {
           <Form.Control asChild>
             <textarea
               {...stylez.className(styles.textarea)}
-              ref={smooth}
               required
-              name='message'
+              disabled={isLoading}
               maxLength={1000}
               minLength={1}
+              name='message'
               placeholder='Message Carly'
-              disabled={isLoading}
-              onChange={handleInputChange}
+              ref={smooth}
               value={input}
+              onChange={handleInputChange}
             />
           </Form.Control>
 
           <Flex justify='between' mt='5'>
-            <Box></Box>
-            <Form.Submit asChild disabled={input.length === 0 || isLoading}>
+            <Box />
+            <Form.Submit
+              asChild
+              disabled={input.length === num('0') || isLoading}
+            >
               <IconButton variant='ghost'>
-                <DoubleArrowRightIcon width='30' height='30' />
+                <DoubleArrowRightIcon height='30' width='30' />
               </IconButton>
             </Form.Submit>
           </Flex>

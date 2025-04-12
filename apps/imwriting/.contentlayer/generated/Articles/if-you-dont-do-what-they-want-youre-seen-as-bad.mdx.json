@@ -16,8 +16,8 @@
   ],
   "title": "If You Don't Do What They Want, You're Seen as Bad",
   "body": {
-    "raw": "\n<Introduction>\n\n> Remember, your worth isn’t defined by others. Embrace your journey and surround yourself with those who genuinely support you!\n\n</Introduction>\n\n<Contents>\n\nIn life, we often find ourselves surrounded by people who have expectations of us. When we fail to meet these expectations, it can lead to misunderstandings and negative perceptions. Sometimes, we become labeled as \"bad\" or ungrateful in the eyes of those who wish to mold us into what they want us to be.\n\nHowever, it’s essential to remember that our true worth isn't defined by others' opinions. While it's important to maintain positive relationships and strive to be good to those around us, we must also prioritize our own growth and well-being.\n\nSurround yourself with individuals who uplift you, encourage your dreams, and respect your journey. Keep doing good for others, but don’t let their expectations break your spirit or dictate your path. Authenticity and self-care are not selfish; they are vital to thriving in a world full of differing expectations.\n\nStay true to yourself, and remember that your happiness and progress matter just as much. 💪✨\n\n</Contents>\n",
-    "code": "var Component=(()=>{var l=Object.create;var s=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var y=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),g=(t,e)=>{for(var r in e)s(t,r,{get:e[r],enumerable:!0})},a=(t,e,r,n)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!f.call(t,i)&&i!==r&&s(t,i,{get:()=>e[i],enumerable:!(n=p(e,i))||n.enumerable});return t};var w=(t,e,r)=>(r=t!=null?l(y(t)):{},a(e||!t||!t.__esModule?s(r,\"default\",{value:t,enumerable:!0}):r,t)),x=t=>a(s({},\"__esModule\",{value:!0}),t);var d=b((C,u)=>{u.exports=_jsx_runtime});var k={};g(k,{default:()=>_,frontmatter:()=>j});var o=w(d()),j={title:\"If You Don't Do What They Want, You're Seen as Bad\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"10-07-2024\",modifiedTime:\"10-07-2024\",description:\"Remember, your worth isn\\u2019t defined by others. Embrace your journey and surround yourself with those who genuinely support you!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/03/23/14/08/girl-4960936_1280.jpg\",coverAlt:\"Girl Paris Bad \",check:!0,tags:[\"\"]};function h(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},t.components),{Introduction:r,Contents:n}=e;return n||c(\"Contents\",!0),r||c(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(r,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"Remember, your worth isn\\u2019t defined by others. Embrace your journey and surround yourself with those who genuinely support you!\"}),`\n`]})}),`\n`,(0,o.jsxs)(n,{children:[(0,o.jsx)(e.p,{children:'In life, we often find ourselves surrounded by people who have expectations of us. When we fail to meet these expectations, it can lead to misunderstandings and negative perceptions. Sometimes, we become labeled as \"bad\" or ungrateful in the eyes of those who wish to mold us into what they want us to be.'}),(0,o.jsx)(e.p,{children:\"However, it\\u2019s essential to remember that our true worth isn't defined by others' opinions. While it's important to maintain positive relationships and strive to be good to those around us, we must also prioritize our own growth and well-being.\"}),(0,o.jsx)(e.p,{children:\"Surround yourself with individuals who uplift you, encourage your dreams, and respect your journey. Keep doing good for others, but don\\u2019t let their expectations break your spirit or dictate your path. Authenticity and self-care are not selfish; they are vital to thriving in a world full of differing expectations.\"}),(0,o.jsx)(e.p,{children:\"Stay true to yourself, and remember that your happiness and progress matter just as much. \\u{1F4AA}\\u2728\"})]})]})}function v(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(h,t)})):h(t)}var _=v;function c(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(k);})();\n;return Component;"
+    "raw": "\n<Contents>\n\nIn life, we often find ourselves surrounded by people who have expectations of us. When we fail to meet these expectations, it can lead to misunderstandings and negative perceptions. Sometimes, we become labeled as \"bad\" or ungrateful in the eyes of those who wish to mold us into what they want us to be.\n\nHowever, it’s essential to remember that our true worth isn't defined by others' opinions. While it's important to maintain positive relationships and strive to be good to those around us, we must also prioritize our own growth and well-being.\n\nSurround yourself with individuals who uplift you, encourage your dreams, and respect your journey. Keep doing good for others, but don’t let their expectations break your spirit or dictate your path. Authenticity and self-care are not selfish; they are vital to thriving in a world full of differing expectations.\n\nStay true to yourself, and remember that your happiness and progress matter just as much. 💪✨\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var i=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),g=(t,e)=>{for(var o in e)i(t,o,{get:e[o],enumerable:!0})},a=(t,e,o,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of p(e))!m.call(t,n)&&n!==o&&i(t,n,{get:()=>e[n],enumerable:!(s=l(e,n))||s.enumerable});return t};var w=(t,e,o)=>(o=t!=null?c(f(t)):{},a(e||!t||!t.__esModule?i(o,\"default\",{value:t,enumerable:!0}):o,t)),b=t=>a(i({},\"__esModule\",{value:!0}),t);var d=y((E,u)=>{u.exports=_jsx_runtime});var C={};g(C,{default:()=>j,frontmatter:()=>x});var r=w(d()),x={title:\"If You Don't Do What They Want, You're Seen as Bad\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"10-07-2024\",modifiedTime:\"10-07-2024\",description:\"Remember, your worth isn\\u2019t defined by others. Embrace your journey and surround yourself with those who genuinely support you!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/03/23/14/08/girl-4960936_1280.jpg\",coverAlt:\"Girl Paris Bad \",check:!0,tags:[\"\"]};function h(t){let e=Object.assign({p:\"p\"},t.components),{Contents:o}=e;return o||_(\"Contents\",!0),(0,r.jsxs)(o,{children:[(0,r.jsx)(e.p,{children:'In life, we often find ourselves surrounded by people who have expectations of us. When we fail to meet these expectations, it can lead to misunderstandings and negative perceptions. Sometimes, we become labeled as \"bad\" or ungrateful in the eyes of those who wish to mold us into what they want us to be.'}),(0,r.jsx)(e.p,{children:\"However, it\\u2019s essential to remember that our true worth isn't defined by others' opinions. While it's important to maintain positive relationships and strive to be good to those around us, we must also prioritize our own growth and well-being.\"}),(0,r.jsx)(e.p,{children:\"Surround yourself with individuals who uplift you, encourage your dreams, and respect your journey. Keep doing good for others, but don\\u2019t let their expectations break your spirit or dictate your path. Authenticity and self-care are not selfish; they are vital to thriving in a world full of differing expectations.\"}),(0,r.jsx)(e.p,{children:\"Stay true to yourself, and remember that your happiness and progress matter just as much. \\u{1F4AA}\\u2728\"})]})}function v(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(h,t)})):h(t)}var j=v;function _(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(C);})();\n;return Component;"
   },
   "_id": "if-you-dont-do-what-they-want-youre-seen-as-bad.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2024-10-07T04:00:00.000Z",
+        "publishedTime": "2024-10-07T04:00:00.000Z",
+        "section": "Philosophy",
+        "tags": [
+          ""
+        ],
         "description": "Remember, your worth isn’t defined by others. Embrace your journey and surround yourself with those who genuinely support you!",
         "images": [
           {
             "alt": "Girl Paris Bad ",
-            "url": "https://cdn.pixabay.com/photo/2020/03/23/14/08/girl-4960936_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2020/03/23/14/08/girl-4960936_1280.jpg"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2024-10-07T04:00:00.000Z",
-        "publishedTime": "2024-10-07T04:00:00.000Z",
-        "section": "Philosophy",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "If You Don't Do What They Want, You're Seen as Bad",
         "url": "https://imwriting.estarlincito.com/articles/if-you-dont-do-what-they-want-youre-seen-as-bad",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
       "openGraph": {
-        "title": "Philosophy",
         "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
         "images": [
           {
             "alt": "A collection of books on a wooden shelf.",
-            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy",
         "url": "https://imwriting.estarlincito.com/articles/philosophy",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/if-you-dont-do-what-they-want-youre-seen-as-bad",
       "category": "/articles/philosophy",
+      "key": 13,
       "subcategory": "/articles/philosophy/reflections"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
       "openGraph": {
-        "title": "Reflections",
         "description": "Here you will find some of my reflections and lessons I have learned from life.",
         "images": [
           {
             "alt": "Young person reflecting",
-            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Reflections",
         "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "1 minute",
-  "wordCount": 184
+  "wordCount": 162
 }

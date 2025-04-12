@@ -1,12 +1,12 @@
-import { Blockquote as Blockquote_ } from '@radix-ui/themes';
-import React, { BlockquoteHTMLAttributes, DetailedHTMLProps } from 'react';
+import { Blockquote as BlockquoteRadix } from '@repo/ui';
+import type { BlockquoteHTMLAttributes, DetailedHTMLProps } from 'react';
 
 type Props = DetailedHTMLProps<
   BlockquoteHTMLAttributes<HTMLQuoteElement>,
   HTMLQuoteElement
 >;
-const Blockquote = ({ children }: Props) => {
-  return <Blockquote_ my='5'>{children} </Blockquote_>;
-};
+const Blockquote = ({ children }: Props) => (
+  <BlockquoteRadix my='5'>{children} </BlockquoteRadix>
+);
 
 export default Blockquote;

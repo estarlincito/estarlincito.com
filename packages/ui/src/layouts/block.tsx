@@ -1,21 +1,26 @@
-import { Box, Flex, Heading, Link } from '@radix-ui/themes';
-import React from 'react';
+import type { JSX, ReactNode } from 'react';
+
+import { Link } from '@/components/ui/link.jsx';
+import { Box, Flex, Heading } from '@/components/ui/radix.js';
 
 interface Props {
   route: string;
   title: string;
   label: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const Block = ({ route, title, children, label }: Props) => {
-  return (
-    <Flex direction='column' align='center' maxWidth='500px' gap='5'>
-      <Heading align='center' mb='2'>
-        {title}
-      </Heading>
-      <Box>{children}</Box>
-      <Link href={route}>{label}</Link>
-    </Flex>
-  );
-};
+export const Block = ({
+  route,
+  title,
+  children,
+  label,
+}: Props): JSX.Element => (
+  <Flex align='center' direction='column' gap='5' maxWidth='500px'>
+    <Heading align='center' mb='2'>
+      {title}
+    </Heading>
+    <Box>{children}</Box>
+    <Link href={route}>{label}</Link>
+  </Flex>
+);

@@ -1,19 +1,13 @@
 import * as Icons from '@radix-ui/react-icons';
-import { IconButton } from '@radix-ui/themes';
+import { useIsClient } from '@repo/hooks';
+import { IconButton } from '@repo/ui';
 import { useTheme } from 'next-themes';
-import React, { useEffect, useState } from 'react';
 
-const DarkModeToggle: React.FC = () => {
+const DarkModeToggle = () => {
   const { setTheme, theme } = useTheme();
 
-  const [mounted, setMounted] = useState(false);
-
-  //Ensure the component is only rendered after the client has mounted
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null; // Prevent rendering until mounted
+  const isClient = useIsClient();
+  if (!isClient) return null;
 
   const themeToggle = () => {
     const _currentTheme = theme === 'light' ? 'dark' : 'light';
@@ -23,9 +17,9 @@ const DarkModeToggle: React.FC = () => {
   return (
     <IconButton variant='soft' onClick={themeToggle}>
       {theme === 'dark' ? (
-        <Icons.SunIcon width='18' height='18' />
+        <Icons.SunIcon height='18' width='18' />
       ) : (
-        <Icons.MoonIcon width='18' height='18' />
+        <Icons.MoonIcon height='18' width='18' />
       )}
     </IconButton>
   );

@@ -1,0 +1,7 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "types": "./src/index.d.ts"
+}

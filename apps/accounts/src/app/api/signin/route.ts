@@ -9,7 +9,7 @@ import {
   quotely,
 } from '@repo/constants';
 import { compare } from 'bcrypt';
-import { NextRequest } from 'next/server';
+import type { NextRequest } from 'next/server';
 
 import userDb from '@/lib/db';
 import { createSession } from '@/lib/session';
@@ -31,7 +31,7 @@ export const POST = async (req: NextRequest): Promise<Response | undefined> => {
 
   const redirect = req.nextUrl.searchParams.get('redirect');
 
-  //validating if redirect
+  // validating if redirect
   if (redirect) {
     const url = new URL(redirect || '');
 
@@ -79,4 +79,4 @@ export const POST = async (req: NextRequest): Promise<Response | undefined> => {
   });
 };
 
-//You must use the FormData API to parse the request body(Form-encode for thunder Client)
+// You must use the FormData API to parse the request body(Form-encode for thunder Client)

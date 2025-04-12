@@ -1,6 +1,5 @@
-import { Box as Main } from '@radix-ui/themes';
 import { estarlincito } from '@repo/constants';
-import { Container } from '@repo/ui';
+import { Wrapper } from '@repo/ui';
 
 import {
   About,
@@ -12,19 +11,15 @@ import {
 
 export const { metadata } = estarlincito.home;
 
-const Page = () => {
-  return (
-    <Container size='3'>
-      <Main p='2'>
-        <About />
-        <Projects />
-        <Competencies />
-        <Education />
-        {/* <Professional /> */}
-        <Skills />
-      </Main>
-    </Container>
-  );
-};
+const Page = () => (
+  <Wrapper>
+    <About />
+    <Projects />
+    <Competencies />
+    <Education />
+    {/* <Professional /> */}
+    <Skills />
+  </Wrapper>
+);
 
 export default Page;

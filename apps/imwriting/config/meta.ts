@@ -1,32 +1,32 @@
 import {
-  apiFetch,
   GenerateMetadata,
   handleError,
+  num,
   toSlug,
 } from '@estarlincito/utils';
 import { imwriting } from '@repo/constants';
-import { LocalDocument } from 'contentlayer/source-files';
+import type { LocalDocument } from 'contentlayer/source-files';
 import yaml from 'yaml';
 const { locale, siteName } = imwriting;
 
-import Instances from './types/instances';
+import { readFileSync } from 'fs';
+
+import type Instances from './types/instances';
 
 const getMeta = async (title: string) => {
-  const res = await apiFetch({
-    method: 'GET',
-    url: `${imwriting.url}/articles/categories.yaml`,
-  });
+  const categoriesData = readFileSync(
+    `${process.cwd()}/config/categories.yaml`,
+    'utf-8',
+  );
 
-  const text = await res.text();
-
-  const data = yaml.parse(text).categories as Instances[];
+  const data = yaml.parse(categoriesData).categories as Instances[];
   const value = data.find((item) => item.title === title);
   if (value === undefined) {
     handleError('This properties not fount on descriptions');
   }
   return value;
 };
-
+let keyCounter = 0;
 const meta = async (doc: LocalDocument) => {
   const {
     authors,
@@ -39,15 +39,17 @@ const meta = async (doc: LocalDocument) => {
     tags,
     _raw,
   } = doc;
-  //Creating pathnames
+
+  // Creating pathnames
   const pathnames = {
     article: `/articles/${_raw.flattenedPath}`,
     category: `/articles/${toSlug(doc.category)}`,
+    key: (keyCounter += num('1')),
     subcategory: `/articles/${toSlug(doc.category)}/${toSlug(doc.subcategory)}`,
   };
-  //Creating article
+  // Creating article
   const article = GenerateMetadata.article({
-    authors,
+    authors: authors._array,
     description,
     images: [{ alt: coverAlt, url: cover }],
     locale,
@@ -55,11 +57,11 @@ const meta = async (doc: LocalDocument) => {
     publishedTime,
     section: doc.category,
     siteName,
-    tags,
+    tags: tags._array,
     title,
     url: `${imwriting.url}${pathnames.article}`,
   });
-  //Creating category
+  // Creating category
   const categoryMeta = await getMeta(doc.category);
   const category = GenerateMetadata.website({
     ...categoryMeta,
@@ -67,7 +69,7 @@ const meta = async (doc: LocalDocument) => {
     siteName,
     url: `${imwriting.url}${pathnames.category}`,
   });
-  //Creating subcategory
+  // Creating subcategory
   const subCategoryMeta = await getMeta(doc.subcategory);
   const subcategory = GenerateMetadata.website({
     ...subCategoryMeta,

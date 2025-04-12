@@ -1,18 +1,21 @@
-import { sortByDate } from '@estarlincito/utils';
-import { Flex, Heading, Link, Section } from '@radix-ui/themes';
+import { num, sortByDate } from '@estarlincito/utils';
+import { Flex, Heading, Link, Section } from '@repo/ui';
 import { allArticles } from 'contentlayer/generated';
-import React from 'react';
 
 import ArticlesList from '@/components/articles/list';
 
 const Latest = () => {
-  const lastThree = sortByDate(allArticles, 'publishedTime').slice(0, 3);
+  const lastThree = sortByDate(allArticles, 'publishedTime').slice(
+    num('0'),
+    num('3'),
+  );
+
   return (
     <Section>
-      <Heading size='6' my='5' align={{ initial: 'center', md: 'left' }}>
+      <Heading align={{ initial: 'center', md: 'left' }} my='5' size='6'>
         Latest Articles
       </Heading>
-      <ArticlesList route='/' articles={lastThree} count={3} />
+      <ArticlesList articles={lastThree} count={num('3')} route='/' />
       <Flex justify={{ initial: 'center', md: 'start' }}>
         <Link href='/articles'>Check more articles</Link>
       </Flex>

@@ -1,7 +1,5 @@
-import { Box, Grid } from '@radix-ui/themes';
-import { Pagination, type SearchParams } from '@repo/ui';
+import { Box, Grid, Pagination, type SearchParams } from '@repo/ui';
 import { type Articles } from 'contentlayer/generated';
-import React from 'react';
 
 import getOffsetData from '@/lib/offset-data';
 
@@ -18,9 +16,9 @@ const ArticlesList = ({ articles, limit, offset, route, count }: Props) => {
 
   return (
     <Box mt='5'>
-      <Grid gap='1.25rem' justify='center' columns='repeat(auto-fill, 350px)'>
-        {data.map((article, id) => (
-          <Box as='div' key={id}>
+      <Grid columns='repeat(auto-fill, 350px)' gap='1.25rem' justify='center'>
+        {data.map((article) => (
+          <Box as='div' key={article._id}>
             <Card {...article} />
           </Box>
         ))}
@@ -30,10 +28,10 @@ const ArticlesList = ({ articles, limit, offset, route, count }: Props) => {
         {route !== '/' && (
           <Pagination
             count={count}
-            route={route}
             limit={limit}
             offset={offset}
-            title={'Articles'}
+            route={route}
+            title='Articles'
           />
         )}
       </Box>

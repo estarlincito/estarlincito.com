@@ -1,5 +1,5 @@
 'use client';
-import { Box, Grid } from '@radix-ui/themes';
+import { Box, Grid } from '@repo/ui';
 import stylez from '@stylezjs/stylez';
 
 import useCollapse from '@/Hooks/useCollapse';
@@ -22,12 +22,12 @@ export const Collapse = () => {
   return (
     collapse && (
       <Grid
-        position='fixed'
-        left='0'
-        top='9'
-        p='4'
-        width={{ initial: '70vw', lg: '30vw', md: '50vw' }}
         height='100vh'
+        left='0'
+        p='4'
+        position='fixed'
+        top='9'
+        width={{ initial: '70vw', lg: '30vw', md: '50vw' }}
         {...stylez.className(styles)}
         align='center'
       >

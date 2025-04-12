@@ -3,7 +3,7 @@ import { GenerateMetadata, ObjectUtils } from '@estarlincito/utils';
 import { locale, siteName, url } from './settings.js';
 
 const constants = ObjectUtils.create({
-  description: '',
+  description: 'Create a new quote',
   path: '/create',
   title: 'create',
 });

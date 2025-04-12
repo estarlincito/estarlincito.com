@@ -1,4 +1,4 @@
-import { Box, Card as RadixCard, Inset, Strong, Text } from '@radix-ui/themes';
+import { Box, Card as RadixCard, Inset, Strong, Text } from '@repo/ui';
 import { type IconType } from 'react-icons';
 
 interface Props {
@@ -8,22 +8,20 @@ interface Props {
   color: string;
 }
 
-const Card = ({ label, summary, Icon, color }: Props) => {
-  return (
-    <RadixCard size='2'>
-      <Inset clip='padding-box' side='y' py='current' mb='3'>
-        <Icon size='80px' color={color} />
-      </Inset>
+const Card = ({ label, summary, Icon, color }: Props) => (
+  <RadixCard size='2'>
+    <Inset clip='padding-box' mb='3' py='current' side='y'>
+      <Icon color={color} size='80px' />
+    </Inset>
 
-      <Text size='3'>
-        <Strong>{label}</Strong>
-      </Text>
+    <Text size='3'>
+      <Strong>{label}</Strong>
+    </Text>
 
-      <Box mt='3' asChild>
-        <Text>{summary}</Text>
-      </Box>
-    </RadixCard>
-  );
-};
+    <Box asChild mt='3'>
+      <Text>{summary}</Text>
+    </Box>
+  </RadixCard>
+);
 
 export default Card;

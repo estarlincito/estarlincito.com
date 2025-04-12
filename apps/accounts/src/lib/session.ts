@@ -1,4 +1,4 @@
-import { handleError } from '@estarlincito/utils';
+import { handleError, num } from '@estarlincito/utils';
 import { type JWTPayload, jwtVerify, SignJWT } from 'jose';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
@@ -14,13 +14,12 @@ const options = {
   secure: process.env.NODE_ENV === 'production',
 };
 
-export const encrypt = async (payload: JWTPayload): Promise<string> => {
-  return new SignJWT(payload)
+export const encrypt = async (payload: JWTPayload): Promise<string> =>
+  new SignJWT(payload)
     .setProtectedHeader({ alg: 'HS256' })
     .setIssuedAt()
     .setExpirationTime('1hr')
     .sign(key);
-};
 
 export const decrypt = async (
   session: string | undefined = '',
@@ -33,6 +32,7 @@ export const decrypt = async (
     const { payload } = await jwtVerify(session, key, {
       algorithms: ['HS256'],
     });
+
     return payload;
   } catch {
     return handleError('There was an issue with your session.');
@@ -40,7 +40,7 @@ export const decrypt = async (
 };
 
 export const createSession = async (userId: string): Promise<void> => {
-  const expiresAt = new Date(Date.now() + 60 * 60 * 1000);
+  const expiresAt = new Date(Date.now() + num('60') * num('60') * num('1000'));
   const session = await encrypt({ expiresAt, userId });
 
   (await cookies()).set('session', session, {
@@ -71,7 +71,9 @@ export const updateSession = async (): Promise<null> => {
     return null;
   }
 
-  const expires = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
+  const expires = new Date(
+    Date.now() + num('7') * num('24') * num('60') * num('60') * num('1000'),
+  );
   (await cookies()).set('session', session, {
     ...options,
     expires,

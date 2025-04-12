@@ -8,11 +8,12 @@
     "check-unused": "depcheck",
     "dev": "next dev --port 3001",
     "find-deadcode": "ts-prune --ignore '.next'",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {
     "@repo/constants": "workspace:*",
+    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*"
   },
   "devDependencies": {

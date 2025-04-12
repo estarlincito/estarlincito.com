@@ -1,10 +1,7 @@
-import { Heading } from '@radix-ui/themes';
-import { Wrapper } from '@repo/ui';
+import { getPathname } from '@repo/lib';
+import { Breadcrumb, Image, type Links, Summary, Title } from '@repo/ui';
 import { type Articles } from 'contentlayer/generated';
-import React from 'react';
-
-import ClientBreadcrumb from '@/components/breadcrumb';
-import Image from '@/components/ui/image';
+import { headers } from 'next/headers';
 
 import Article from './article';
 import Author from './author';
@@ -12,7 +9,8 @@ import Check from './check';
 import Interesting from './interesting';
 import Share from './share';
 
-const ArticleContent = (props: Articles) => {
+const ArticleContent = async (props: Articles) => {
+  const pathname = await getPathname(headers);
   const {
     category,
     subcategory,
@@ -29,18 +27,18 @@ const ArticleContent = (props: Articles) => {
     modifiedTime,
   } = props;
 
-  return (
-    <Wrapper align='start'>
-      <ClientBreadcrumb
-        slug={[
-          { route: meta.pathnames.category, title: category },
-          { route: meta.pathnames.subcategory, title: subcategory },
-        ]}
-      />
+  const links: Links = [
+    { href: meta.pathnames.category, title: category },
+    { href: meta.pathnames.subcategory, title: subcategory },
+  ];
 
-      <Heading size='8'>{title}</Heading>
+  return (
+    <>
+      <Breadcrumb links={links} pathname={pathname} />
+      <Title>{title}</Title>
       <Check check={check} readingTime={readingTime} />
-      <Image src={cover} alt={coverAlt} />
+      <Image alt={coverAlt} src={cover} />
+      <Summary blockquote content={description} />
       <Author authors={authors} avatar={avatar} modifiedTime={modifiedTime} />
       <Article doc={body.code} />
       <Share
@@ -49,7 +47,7 @@ const ArticleContent = (props: Articles) => {
         url={meta.article.openGraph.url}
       />
       <Interesting pathname={meta.pathnames.article} />
-    </Wrapper>
+    </>
   );
 };
 

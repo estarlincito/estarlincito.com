@@ -1,3 +1,66 @@
 @stylez;
 
-:root{--zb7c0f3a4:ellipsis;--z073e236d:nowrap;--z77d72569:var(--gray-1);--z853f62d6:1px solid var(--gray-5);--ze37e5085:0.625rem;--z67d95495:center;--z48fa7346:inline-flex;--zec0f2284:grid;--zf4bea7ed:10px;--zc3b89108:15px;--z7b43a128:500;--z346b9149:35px;--zafcac06c:red;--z42cdff97:13px;--z33b23842:0.8}.z_963ceb40{text-overflow:var(--zb7c0f3a4)}.z_59b2dbdc{white-space:var(--z073e236d)}.z_61a7e73f{background-color:var(--z77d72569)}.z_293132db{border:var(--z853f62d6)}.z_12dec6b6{border-radius:var(--ze37e5085)}.z_6859d2bd{align-items:var(--z67d95495)}.z_97b02926{display:var(--z48fa7346)}.z_4bd78c7a{display:var(--zec0f2284)}.z_0740cde7{margin-bottom:var(--zf4bea7ed)}.z_669b0f9b{font-size:var(--zc3b89108)}.z_ea3eba53{font-weight:var(--z7b43a128)}.z_5e3e9de6{line-height:var(--z346b9149)}.z_9b4a5a41{color:var(--zafcac06c)}.z_a72b639b{font-size:var(--z42cdff97)}.z_9854d97f{margin-left:var(--zf4bea7ed)}.z_dc384bf0{opacity:var(--z33b23842)}
+:root {
+    --z0b8f1c3f: 100vh;
+    --zbf3a8096: 100%;
+    --z6998582f: auto 1fr auto;
+    --zb7c0f3a4: ellipsis;
+    --z073e236d: nowrap;
+    --z0c504a61: 0.3125rem;
+    --zd0cefee1: cover;
+    --z77d72569: var(--gray-1);
+    --z853f62d6: 1px solid var(--gray-5);
+    --ze37e5085: 0.625rem;
+    --z67d95495: center;
+    --z48fa7346: inline-flex;
+    --zec0f2284: grid;
+    --zf4bea7ed: 10px;
+    --zc3b89108: 15px;
+    --z7b43a128: 500;
+    --z346b9149: 35px;
+    --zafcac06c: red;
+    --z42cdff97: 13px;
+    --z33b23842: 0.8
+}
+.z_caf4dacb {
+    min-height: var(--z0b8f1c3f);
+    width: var(--zbf3a8096)
+}
+.z_968030ed {
+    grid-template-rows: var(--z6998582f)
+}
+.z_2eb03a66 {
+    text-overflow: var(--zb7c0f3a4);
+    white-space: var(--z073e236d)
+}
+.z_a599df06 {
+    border-radius: var(--z0c504a61);
+    height: var(--zbf3a8096);
+    -o-object-fit: var(--zd0cefee1);
+       object-fit: var(--zd0cefee1);
+    width: var(--zbf3a8096)
+}
+.z_4b3d6550 {
+    background-color: var(--z77d72569);
+    border: var(--z853f62d6);
+    border-radius: var(--ze37e5085)
+}
+.z_d7795085 {
+    align-items: var(--z67d95495);
+    display: var(--z48fa7346)
+}
+.z_9959651f {
+    display: var(--zec0f2284);
+    margin-bottom: var(--zf4bea7ed)
+}
+.z_3c0a79db {
+    font-size: var(--zc3b89108);
+    font-weight: var(--z7b43a128);
+    line-height: var(--z346b9149)
+}
+.z_b046aa75 {
+    color: var(--zafcac06c);
+    font-size: var(--z42cdff97);
+    margin-left: var(--zf4bea7ed);
+    opacity: var(--z33b23842)
+}

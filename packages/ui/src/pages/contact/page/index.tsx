@@ -1,12 +1,9 @@
-import { Container, Wrapper } from '../../../layouts/index.js';
-import ContactForm from './form.js';
+import { Wrapper } from '@/layouts/wrapper.jsx';
 
-export const ContactPage = () => {
-  return (
-    <Container size='4'>
-      <Wrapper align='center'>
-        <ContactForm />
-      </Wrapper>
-    </Container>
-  );
-};
+import ContactForm from './form.jsx';
+
+export const ContactPage = () => (
+  <Wrapper align='center'>
+    <ContactForm />
+  </Wrapper>
+);

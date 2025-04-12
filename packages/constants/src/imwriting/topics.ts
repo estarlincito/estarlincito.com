@@ -1,9 +1,11 @@
 import { ArrayUtils, ObjectUtils } from '@estarlincito/utils';
+import { addingKey } from '@repo/lib';
 
 interface Links {
   route: string;
   label: string;
   target?: '_blank' | '_self';
+  key: number;
 }
 
 interface Topics {
@@ -24,35 +26,35 @@ interface AllArticles {
 }
 
 export const topics = (allArticles: AllArticles[]): Topics => {
-  //categories
+  // categories
   const categories = ArrayUtils.getUniqueByKey(
     allArticles,
     'category',
     'meta:pathnames:category',
   );
 
-  const catlinks = categories.map((item) => {
-    return {
+  const catlinks = addingKey(
+    categories.map((item) => ({
       label: item['category'],
       route: item['meta:pathnames:category'],
-    };
-  });
+    })),
+  );
 
-  //subcategory
+  // subcategory
   const subCategories = ArrayUtils.getUniqueByKey(
     allArticles,
     'subcategory',
     'meta:pathnames:subcategory',
   );
 
-  const sublinks = subCategories.map((item) => {
-    return {
+  const sublinks = addingKey(
+    subCategories.map((item) => ({
       label: item['subcategory'],
       route: item['meta:pathnames:subcategory'],
-    };
-  });
+    })),
+  );
 
-  //alllinks
+  // alllinks
   const alllinks: Links[] = [...catlinks, ...sublinks];
 
   return ObjectUtils.freeze({

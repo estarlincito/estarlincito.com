@@ -7,8 +7,11 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint --ext .js,.ts . && pnpm tsc --noEmit"
+    "build": "pnpm lint && tsc && tsc-alias && node dist/index.js",
+    "lint": "eslint --fix && eslint --ext .js,.ts . && pnpm tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/lib": "workspace:*"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*"

@@ -16,8 +16,8 @@
   ],
   "title": "Why did I shut myself off from the world?",
   "body": {
-    "raw": "\n<Introduction>\n\n> I learned to close the door to those who only see what I offer, but now it’s time to open it to those who value who I am\n\n</Introduction>\n\n<Contents>\n\nIt seems I shut myself off emotionally because, over time, I realized that many people only approached me for what I could offer them, not out of genuine interest in who I am or how I feel. I began to notice that relationships seemed superficial, which led me to build barriers to protect myself from feeling used. By avoiding opening up, I have isolated myself, creating a distance that has only deepened my loneliness and hunger for affection.\n\nHowever, I know that the foundation of all this is self-love. If I don’t value myself enough, I will end up seeking recognition and affection from people who won’t give it to me genuinely. I need to start by strengthening my self-esteem, recognizing my own worth regardless of what I can offer others. From that inner security, I will be able to surround myself with people who truly enjoy my company for who I am, not for what I can do for them.\n\n> _&quot;You deserve to surround yourself with people who enjoy your company for who you are, not for what you can offer&quot;_ <br/> **-Estarlincito-**\n\n<Image\n  alt='A fox demonstrating self-love.'\n  src='https://cdn.pixabay.com/photo/2022/06/29/10/58/fox-7291456_1280.jpg'\n/>\n\nSelf-love is the foundation that will allow me to choose better the people I relate to, seeking those who genuinely want to spend time with me without expectations or hidden agendas.\n\nBy distancing myself from those who only seek me when they need something and approaching those who value my presence as a whole, I can build more authentic and fulfilling relationships.\n\n</Contents>\n",
-    "code": "var Component=(()=>{var f=Object.create;var s=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,w=Object.prototype.hasOwnProperty;var g=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),y=(o,e)=>{for(var n in e)s(o,n,{get:e[n],enumerable:!0})},l=(o,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of u(e))!w.call(o,r)&&r!==n&&s(o,r,{get:()=>e[r],enumerable:!(i=m(e,r))||i.enumerable});return o};var I=(o,e,n)=>(n=o!=null?f(p(o)):{},l(e||!o||!o.__esModule?s(n,\"default\",{value:o,enumerable:!0}):n,o)),b=o=>l(s({},\"__esModule\",{value:!0}),o);var c=g((C,h)=>{h.exports=_jsx_runtime});var k={};y(k,{default:()=>j,frontmatter:()=>v});var t=I(c()),v={title:\"Why did I shut myself off from the world?\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"09-11-2024\",modifiedTime:\"09-11-2024\",description:\"I learned to close the door to those who only see what I offer, but now it\\u2019s time to open it to those who value who I am\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/11/12/05/37/girl-5734461_1280.jpg\",coverAlt:\"Girl with a guitar.\",check:!1,tags:[\"\"]};function d(o){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\",strong:\"strong\"},o.components),{Introduction:n,Contents:i,Image:r}=e;return i||a(\"Contents\",!0),r||a(\"Image\",!0),n||a(\"Introduction\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n,{children:(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsx)(e.p,{children:\"I learned to close the door to those who only see what I offer, but now it\\u2019s time to open it to those who value who I am\"}),`\n`]})}),`\n`,(0,t.jsxs)(i,{children:[(0,t.jsx)(e.p,{children:\"It seems I shut myself off emotionally because, over time, I realized that many people only approached me for what I could offer them, not out of genuine interest in who I am or how I feel. I began to notice that relationships seemed superficial, which led me to build barriers to protect myself from feeling used. By avoiding opening up, I have isolated myself, creating a distance that has only deepened my loneliness and hunger for affection.\"}),(0,t.jsx)(e.p,{children:\"However, I know that the foundation of all this is self-love. If I don\\u2019t value myself enough, I will end up seeking recognition and affection from people who won\\u2019t give it to me genuinely. I need to start by strengthening my self-esteem, recognizing my own worth regardless of what I can offer others. From that inner security, I will be able to surround myself with people who truly enjoy my company for who I am, not for what I can do for them.\"}),(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:'\"You deserve to surround yourself with people who enjoy your company for who you are, not for what you can offer\"'}),\" \",(0,t.jsx)(\"br\",{}),\" \",(0,t.jsx)(e.strong,{children:\"-Estarlincito-\"})]}),`\n`]}),(0,t.jsx)(r,{alt:\"A fox demonstrating self-love.\",src:\"https://cdn.pixabay.com/photo/2022/06/29/10/58/fox-7291456_1280.jpg\"}),(0,t.jsx)(e.p,{children:\"Self-love is the foundation that will allow me to choose better the people I relate to, seeking those who genuinely want to spend time with me without expectations or hidden agendas.\"}),(0,t.jsx)(e.p,{children:\"By distancing myself from those who only seek me when they need something and approaching those who value my presence as a whole, I can build more authentic and fulfilling relationships.\"})]})]})}function x(o={}){let{wrapper:e}=o.components||{};return e?(0,t.jsx)(e,Object.assign({},o,{children:(0,t.jsx)(d,o)})):d(o)}var j=x;function a(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(k);})();\n;return Component;"
+    "raw": "\n<Contents>\n\nIt seems I shut myself off emotionally because, over time, I realized that many people only approached me for what I could offer them, not out of genuine interest in who I am or how I feel. I began to notice that relationships seemed superficial, which led me to build barriers to protect myself from feeling used. By avoiding opening up, I have isolated myself, creating a distance that has only deepened my loneliness and hunger for affection.\n\nHowever, I know that the foundation of all this is self-love. If I don’t value myself enough, I will end up seeking recognition and affection from people who won’t give it to me genuinely. I need to start by strengthening my self-esteem, recognizing my own worth regardless of what I can offer others. From that inner security, I will be able to surround myself with people who truly enjoy my company for who I am, not for what I can do for them.\n\n> _&quot;You deserve to surround yourself with people who enjoy your company for who you are, not for what you can offer&quot;_ <br/> **-Estarlincito-**\n\n<Image\n  alt='A fox demonstrating self-love.'\n  src='https://cdn.pixabay.com/photo/2022/06/29/10/58/fox-7291456_1280.jpg'\n/>\n\nSelf-love is the foundation that will allow me to choose better the people I relate to, seeking those who genuinely want to spend time with me without expectations or hidden agendas.\n\nBy distancing myself from those who only seek me when they need something and approaching those who value my presence as a whole, I can build more authentic and fulfilling relationships.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var d=Object.create;var s=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var y=(o,e)=>()=>(e||o((e={exports:{}}).exports,e),e.exports),w=(o,e)=>{for(var n in e)s(o,n,{get:e[n],enumerable:!0})},a=(o,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of u(e))!g.call(o,r)&&r!==n&&s(o,r,{get:()=>e[r],enumerable:!(i=m(e,r))||i.enumerable});return o};var I=(o,e,n)=>(n=o!=null?d(p(o)):{},a(e||!o||!o.__esModule?s(n,\"default\",{value:o,enumerable:!0}):n,o)),b=o=>a(s({},\"__esModule\",{value:!0}),o);var h=y((C,l)=>{l.exports=_jsx_runtime});var k={};w(k,{default:()=>j,frontmatter:()=>v});var t=I(h()),v={title:\"Why did I shut myself off from the world?\",category:\"Culture\",subcategory:\"Stories and Reflections\",publishedTime:\"09-11-2024\",modifiedTime:\"09-11-2024\",description:\"I learned to close the door to those who only see what I offer, but now it\\u2019s time to open it to those who value who I am\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://cdn.pixabay.com/photo/2020/11/12/05/37/girl-5734461_1280.jpg\",coverAlt:\"Girl with a guitar.\",check:!1,tags:[\"\"]};function c(o){let e=Object.assign({p:\"p\",blockquote:\"blockquote\",em:\"em\",strong:\"strong\"},o.components),{Contents:n,Image:i}=e;return n||f(\"Contents\",!0),i||f(\"Image\",!0),(0,t.jsxs)(n,{children:[(0,t.jsx)(e.p,{children:\"It seems I shut myself off emotionally because, over time, I realized that many people only approached me for what I could offer them, not out of genuine interest in who I am or how I feel. I began to notice that relationships seemed superficial, which led me to build barriers to protect myself from feeling used. By avoiding opening up, I have isolated myself, creating a distance that has only deepened my loneliness and hunger for affection.\"}),(0,t.jsx)(e.p,{children:\"However, I know that the foundation of all this is self-love. If I don\\u2019t value myself enough, I will end up seeking recognition and affection from people who won\\u2019t give it to me genuinely. I need to start by strengthening my self-esteem, recognizing my own worth regardless of what I can offer others. From that inner security, I will be able to surround myself with people who truly enjoy my company for who I am, not for what I can do for them.\"}),(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsxs)(e.p,{children:[(0,t.jsx)(e.em,{children:'\"You deserve to surround yourself with people who enjoy your company for who you are, not for what you can offer\"'}),\" \",(0,t.jsx)(\"br\",{}),\" \",(0,t.jsx)(e.strong,{children:\"-Estarlincito-\"})]}),`\n`]}),(0,t.jsx)(i,{alt:\"A fox demonstrating self-love.\",src:\"https://cdn.pixabay.com/photo/2022/06/29/10/58/fox-7291456_1280.jpg\"}),(0,t.jsx)(e.p,{children:\"Self-love is the foundation that will allow me to choose better the people I relate to, seeking those who genuinely want to spend time with me without expectations or hidden agendas.\"}),(0,t.jsx)(e.p,{children:\"By distancing myself from those who only seek me when they need something and approaching those who value my presence as a whole, I can build more authentic and fulfilling relationships.\"})]})}function x(o={}){let{wrapper:e}=o.components||{};return e?(0,t.jsx)(e,Object.assign({},o,{children:(0,t.jsx)(c,o)})):c(o)}var j=x;function f(o,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+o+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(k);})();\n;return Component;"
   },
   "_id": "why-did-i-shut-myself-off-from-the-world.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2024-09-11T04:00:00.000Z",
+        "publishedTime": "2024-09-11T04:00:00.000Z",
+        "section": "Culture",
+        "tags": [
+          ""
+        ],
         "description": "I learned to close the door to those who only see what I offer, but now it’s time to open it to those who value who I am",
         "images": [
           {
             "alt": "Girl with a guitar.",
-            "url": "https://cdn.pixabay.com/photo/2020/11/12/05/37/girl-5734461_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2020/11/12/05/37/girl-5734461_1280.jpg"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2024-09-11T04:00:00.000Z",
-        "publishedTime": "2024-09-11T04:00:00.000Z",
-        "section": "Culture",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "Why did I shut myself off from the world?",
         "url": "https://imwriting.estarlincito.com/articles/why-did-i-shut-myself-off-from-the-world",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/culture",
       "openGraph": {
-        "title": "Culture",
         "description": "Dive into cultural richness through fresh perspectives and reflections. A vibrant journey through diversity and artistic expressions.",
         "images": [
           {
             "alt": "Brown and green temple on top of a mountain during the day",
-            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Culture",
         "url": "https://imwriting.estarlincito.com/articles/culture",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/why-did-i-shut-myself-off-from-the-world",
       "category": "/articles/culture",
+      "key": 56,
       "subcategory": "/articles/culture/stories-and-reflections"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
       "openGraph": {
-        "title": "Stories and Reflections",
         "description": "Stories and reflections that inspire and move. A space where stories blend with deep reflections, inviting you to discover new perspectives and personal growth.",
         "images": [
           {
             "alt": "Woman in a gray knit jacket holding a cup",
-            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1506610758197-2a3e315ea0a9?q=80&w=3048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Stories and Reflections",
         "url": "https://imwriting.estarlincito.com/articles/culture/stories-and-reflections",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "2 minutes",
-  "wordCount": 289
+  "wordCount": 258
 }

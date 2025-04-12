@@ -1,4 +1,4 @@
-import { Box, Card as RadixCard, Strong, Text } from '@radix-ui/themes';
+import { Box, Card as RadixCard, Strong, Text } from '@repo/ui';
 
 interface Props {
   label: string;
@@ -7,29 +7,27 @@ interface Props {
   company: string;
 }
 
-const Card = ({ label, summary, date, company }: Props) => {
-  return (
-    <RadixCard size='2' variant='ghost'>
-      <Text size='3'>
-        <Strong>{label}</Strong>
+const Card = ({ label, summary, date, company }: Props) => (
+  <RadixCard size='2' variant='ghost'>
+    <Text size='3'>
+      <Strong>{label}</Strong>
+    </Text>
+    <Box asChild>
+      <Text>
+        <Strong>Company:</Strong> {company}
       </Text>
-      <Box asChild>
-        <Text>
-          <Strong>Company:</Strong> {company}
-        </Text>
-      </Box>
-      <Box asChild>
-        <Text>
-          <Strong>Date:</Strong>
-          {date}
-        </Text>
-      </Box>
+    </Box>
+    <Box asChild>
+      <Text>
+        <Strong>Date:</Strong>
+        {date}
+      </Text>
+    </Box>
 
-      <Box asChild>
-        <Text>{summary}</Text>
-      </Box>
-    </RadixCard>
-  );
-};
+    <Box asChild>
+      <Text>{summary}</Text>
+    </Box>
+  </RadixCard>
+);
 
 export default Card;

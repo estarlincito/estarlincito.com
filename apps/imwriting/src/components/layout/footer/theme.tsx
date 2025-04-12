@@ -1,17 +1,20 @@
 'use client';
+import { num } from '@estarlincito/utils';
 import { DesktopIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
-import { Flex, type IconProps, SegmentedControl } from '@radix-ui/themes';
+// eslint-disable-next-line no-restricted-imports
+import { type IconProps } from '@radix-ui/themes';
+import { useIsClient } from '@repo/hooks';
+import { Flex, SegmentedControl } from '@repo/ui';
 import { useTheme } from 'next-themes';
-import React, { useEffect, useState } from 'react';
+import type { ForwardRefExoticComponent, RefAttributes } from 'react';
 
 interface Props {
   value: 'light' | 'dark' | 'system';
-  Icon: React.ForwardRefExoticComponent<
-    IconProps & React.RefAttributes<SVGSVGElement>
-  >;
+  Icon: ForwardRefExoticComponent<IconProps & RefAttributes<SVGSVGElement>>;
 }
 const Item = ({ value, Icon }: Props) => {
-  const firs = value[0] as string;
+  const firs = value[num('0')] as string;
+
   return (
     <SegmentedControl.Item value={value}>
       <Flex align='center' gap='1'>
@@ -22,15 +25,9 @@ const Item = ({ value, Icon }: Props) => {
   );
 };
 const ThemeToggle = () => {
-  const [mounted, setMounted] = useState(false);
   const { setTheme, theme } = useTheme();
-
-  //Ensure the component is only rendered after the client has mounted
-  useEffect(() => {
-    setMounted(true);
-  }, [theme]);
-
-  if (!mounted) return null;
+  const isClient = useIsClient();
+  if (!isClient) return null;
 
   return (
     <SegmentedControl.Root
@@ -40,9 +37,9 @@ const ThemeToggle = () => {
         setTheme(value);
       }}
     >
-      <Item value='light' Icon={SunIcon} />
-      <Item value='system' Icon={DesktopIcon} />
-      <Item value='dark' Icon={MoonIcon} />
+      <Item Icon={SunIcon} value='light' />
+      <Item Icon={DesktopIcon} value='system' />
+      <Item Icon={MoonIcon} value='dark' />
     </SegmentedControl.Root>
   );
 };

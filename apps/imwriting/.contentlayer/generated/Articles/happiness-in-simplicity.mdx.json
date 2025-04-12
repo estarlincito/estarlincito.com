@@ -16,8 +16,8 @@
   ],
   "title": "Happiness in Simplicity",
   "body": {
-    "raw": "\n<Introduction>\n\n> True happiness lies in self-sufficiency and in appreciating what you already have.\n\n</Introduction>\n\n<Contents>\n\n<Audio src='/assets/happiness-in-simplicity/audio.mp3' type='audio/mp3' />\n\n_The satisfaction you feel when you do things for yourself is immense: working to earn your own money, then buying what you want._\n\n_Cooking the food you’re going to eat, cleaning the house, organizing everything—when you see the results, you feel that indescribable satisfaction._\n\n_You feel that everything is going well in your life, even though there may be things you’d prefer. But know that those things are not more important than the very act of living._\n\n_So in the end, you learn to enjoy the things you have now, because if you’re not happy with what you have, you won’t be happy with what you think you need. That’s called personal satisfaction._ 🧸\n\n</Contents>\n",
-    "code": "var Component=(()=>{var p=Object.create;var r=Object.defineProperty;var y=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var i in e)r(t,i,{get:e[i],enumerable:!0})},h=(t,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of d(e))!f.call(t,o)&&o!==i&&r(t,o,{get:()=>e[o],enumerable:!(a=y(e,o))||a.enumerable});return t};var b=(t,e,i)=>(i=t!=null?p(m(t)):{},h(e||!t||!t.__esModule?r(i,\"default\",{value:t,enumerable:!0}):i,t)),v=t=>h(r({},\"__esModule\",{value:!0}),t);var u=g((C,c)=>{c.exports=_jsx_runtime});var _={};w(_,{default:()=>k,frontmatter:()=>x});var n=b(u()),x={title:\"Happiness in Simplicity\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-13-2024\",modifiedTime:\"05-13-2024\",description:\"True happiness lies in self-sufficiency and in appreciating what you already have\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/happiness-in-simplicity/image.jpeg\",coverAlt:\"A very relax woman\",check:!0,tags:[\"\"]};function l(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},t.components),{Introduction:i,Contents:a,Audio:o}=e;return o||s(\"Audio\",!0),a||s(\"Contents\",!0),i||s(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(i,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"True happiness lies in self-sufficiency and in appreciating what you already have.\"}),`\n`]})}),`\n`,(0,n.jsxs)(a,{children:[(0,n.jsx)(o,{src:\"/assets/happiness-in-simplicity/audio.mp3\",type:\"audio/mp3\"}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"The satisfaction you feel when you do things for yourself is immense: working to earn your own money, then buying what you want.\"})}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"Cooking the food you\\u2019re going to eat, cleaning the house, organizing everything\\u2014when you see the results, you feel that indescribable satisfaction.\"})}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"You feel that everything is going well in your life, even though there may be things you\\u2019d prefer. But know that those things are not more important than the very act of living.\"})}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.em,{children:\"So in the end, you learn to enjoy the things you have now, because if you\\u2019re not happy with what you have, you won\\u2019t be happy with what you think you need. That\\u2019s called personal satisfaction.\"}),\" \\u{1F9F8}\"]})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(l,t)})):l(t)}var k=j;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return v(_);})();\n;return Component;"
+    "raw": "\n<Contents>\n\n<Audio src='/assets/happiness-in-simplicity/audio.mp3' type='audio/mp3' />\n\n_The satisfaction you feel when you do things for yourself is immense: working to earn your own money, then buying what you want._\n\n_Cooking the food you’re going to eat, cleaning the house, organizing everything—when you see the results, you feel that indescribable satisfaction._\n\n_You feel that everything is going well in your life, even though there may be things you’d prefer. But know that those things are not more important than the very act of living._\n\n_So in the end, you learn to enjoy the things you have now, because if you’re not happy with what you have, you won’t be happy with what you think you need. That’s called personal satisfaction._ 🧸\n\n</Contents>\n",
+    "code": "var Component=(()=>{var l=Object.create;var a=Object.defineProperty;var y=Object.getOwnPropertyDescriptor;var d=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var i in e)a(t,i,{get:e[i],enumerable:!0})},r=(t,e,i,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of d(e))!f.call(t,s)&&s!==i&&a(t,s,{get:()=>e[s],enumerable:!(o=y(e,s))||o.enumerable});return t};var v=(t,e,i)=>(i=t!=null?l(m(t)):{},r(e||!t||!t.__esModule?a(i,\"default\",{value:t,enumerable:!0}):i,t)),b=t=>r(a({},\"__esModule\",{value:!0}),t);var c=g((T,h)=>{h.exports=_jsx_runtime});var k={};w(k,{default:()=>_,frontmatter:()=>x});var n=v(c()),x={title:\"Happiness in Simplicity\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-13-2024\",modifiedTime:\"05-13-2024\",description:\"True happiness lies in self-sufficiency and in appreciating what you already have\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/happiness-in-simplicity/image.jpeg\",coverAlt:\"A very relax woman\",check:!0,tags:[\"\"]};function u(t){let e=Object.assign({p:\"p\",em:\"em\"},t.components),{Contents:i,Audio:o}=e;return o||p(\"Audio\",!0),i||p(\"Contents\",!0),(0,n.jsxs)(i,{children:[(0,n.jsx)(o,{src:\"/assets/happiness-in-simplicity/audio.mp3\",type:\"audio/mp3\"}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"The satisfaction you feel when you do things for yourself is immense: working to earn your own money, then buying what you want.\"})}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"Cooking the food you\\u2019re going to eat, cleaning the house, organizing everything\\u2014when you see the results, you feel that indescribable satisfaction.\"})}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"You feel that everything is going well in your life, even though there may be things you\\u2019d prefer. But know that those things are not more important than the very act of living.\"})}),(0,n.jsxs)(e.p,{children:[(0,n.jsx)(e.em,{children:\"So in the end, you learn to enjoy the things you have now, because if you\\u2019re not happy with what you have, you won\\u2019t be happy with what you think you need. That\\u2019s called personal satisfaction.\"}),\" \\u{1F9F8}\"]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(u,t)})):u(t)}var _=j;function p(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(k);})();\n;return Component;"
   },
   "_id": "happiness-in-simplicity.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2024-05-13T04:00:00.000Z",
+        "publishedTime": "2024-05-13T04:00:00.000Z",
+        "section": "Philosophy",
+        "tags": [
+          ""
+        ],
         "description": "True happiness lies in self-sufficiency and in appreciating what you already have",
         "images": [
           {
             "alt": "A very relax woman",
-            "url": "/assets/happiness-in-simplicity/image.jpeg",
-            "height": 600,
-            "width": 800
+            "url": "/assets/happiness-in-simplicity/image.jpeg"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2024-05-13T04:00:00.000Z",
-        "publishedTime": "2024-05-13T04:00:00.000Z",
-        "section": "Philosophy",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "Happiness in Simplicity",
         "url": "https://imwriting.estarlincito.com/articles/happiness-in-simplicity",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
       "openGraph": {
-        "title": "Philosophy",
         "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
         "images": [
           {
             "alt": "A collection of books on a wooden shelf.",
-            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy",
         "url": "https://imwriting.estarlincito.com/articles/philosophy",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/happiness-in-simplicity",
       "category": "/articles/philosophy",
+      "key": 12,
       "subcategory": "/articles/philosophy/reflections"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
       "openGraph": {
-        "title": "Reflections",
         "description": "Here you will find some of my reflections and lessons I have learned from life.",
         "images": [
           {
             "alt": "Young person reflecting",
-            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Reflections",
         "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "1 minute",
-  "wordCount": 137
+  "wordCount": 122
 }

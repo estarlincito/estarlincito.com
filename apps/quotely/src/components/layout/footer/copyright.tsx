@@ -1,17 +1,14 @@
-import { Link, Text } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import React from 'react';
+import { Link, Text } from '@repo/ui';
 
-const Copyright = () => {
-  return (
-    <Text as='p' size='3'>
-      {quotely.copyright}
-      &nbsp;
-      <Link weight='bold' href='/' target='_self' color='gray'>
-        Estarlincito
-      </Link>
-    </Text>
-  );
-};
+const Copyright = () => (
+  <Text as='p' size='3'>
+    {quotely.copyright}
+    &nbsp;
+    <Link color='gray' href='/' target='_self' weight='bold'>
+      Estarlincito
+    </Link>
+  </Text>
+);
 
 export default Copyright;

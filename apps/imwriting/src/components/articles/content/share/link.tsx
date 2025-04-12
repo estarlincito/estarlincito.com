@@ -1,11 +1,12 @@
-import { IconButton, Link as LinkRadix } from '@radix-ui/themes';
-import React from 'react';
+import { IconButton, Link as LinkRadix } from '@repo/ui';
+import type { ReactNode } from 'react';
+
 interface Props {
   description: string;
   url: string;
   tag: string;
   host: string;
-  IconType: React.ReactNode;
+  IconType: ReactNode;
 }
 
 const ShareLink = ({ host, description, url, tag, IconType }: Props) => {

@@ -1,16 +1,12 @@
-'use client';
-import { imwriting } from '@repo/constants';
-import { ThemeProvider } from 'next-themes';
-import React from 'react';
+// 'use client';
+// import { imwriting } from '@repo/constants';
+// import { ThemeProvider } from 'next-themes';
+// import type { ReactNode } from 'react';
 
-import Props from '@/types/children';
+// const AppThemeProvider = ({ children }: { children: ReactNode }) => (
+//   <ThemeProvider attribute='class' defaultTheme={imwriting.theme}>
+//     {children}
+//   </ThemeProvider>
+// );
 
-const AppThemeProvider = ({ children }: Props) => {
-  return (
-    <ThemeProvider attribute='class' defaultTheme={imwriting.theme}>
-      {children}
-    </ThemeProvider>
-  );
-};
-
-export default AppThemeProvider;
+// export default AppThemeProvider;

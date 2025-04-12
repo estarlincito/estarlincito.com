@@ -1,7 +1,10 @@
-import { ObjectUtils } from '@estarlincito/utils';
+import { toHireme } from '@/lib/hireme.js';
 
-const x = { label: 'Twitter', route: 'https://x.com/estarlincito' };
-const linktr = { label: 'Linktr', route: 'https://linktr.ee/estarlincito' };
-const links = [x, linktr];
+export const hireme = toHireme({
+  contact: '/contact',
+  github:
+    'https://github.com/estarlincito/estarlincito.com/blob/main/apps/imwriting/README.md',
 
-export const hireme = ObjectUtils.freeze({ links, linktr, x });
+  'ko-fi': 'https://ko-fi.com/estarlincito',
+  x: 'https://x.com/estarlincito',
+});

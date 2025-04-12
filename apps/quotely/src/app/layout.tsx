@@ -1,39 +1,38 @@
 import '@/styles/themes-config.css';
-import '@radix-ui/themes/styles.css';
 import '@/styles/globals.css';
 
-import { Theme } from '@radix-ui/themes';
-import type React from 'react';
+import { quotely } from '@repo/constants';
+import { AppThemeProvider, LayoutContainer, Theme } from '@repo/ui';
+import type { ReactNode } from 'react';
 
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
-import { Toaster } from '@/components/toaster';
-import AppThemeProvider from '@/context/theme';
-import type Children from '@/types/children';
-const RootLayout = ({ children }: Children) => {
-  return (
-    <html lang='en' suppressHydrationWarning>
-      <body>
-        <Theme accentColor='yellow' radius='full'>
+import { Toaster } from '@/components/ui/toaster';
+
+const RootLayout = ({ children }: { children: ReactNode }) => (
+  <html suppressHydrationWarning lang={quotely.locale}>
+    <body>
+      <Theme accentColor='yellow' radius='full'>
+        <LayoutContainer threePart>
           <Navbar />
           {children}
-          <AppThemeProvider>
+          <AppThemeProvider defaultTheme={quotely.theme}>
             <Footer />
           </AppThemeProvider>
-        </Theme>
-        <Toaster
-          position='top-center'
-          reverseOrder={false}
-          toastOptions={{
-            style: {
-              background: 'black',
-              color: 'white',
-            },
-          }}
-        />
-      </body>
-    </html>
-  );
-};
+        </LayoutContainer>
+      </Theme>
+      <Toaster
+        position='top-center'
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            background: 'black',
+            color: 'white',
+          },
+        }}
+      />
+    </body>
+  </html>
+);
 
 export default RootLayout;

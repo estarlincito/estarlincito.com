@@ -50,6 +50,7 @@ const metaTypes = `{
     article: string;
     category: string;
     subcategory: string;
+    key: number;
 };
 }`;
 

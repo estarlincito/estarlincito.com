@@ -8,12 +8,12 @@
     "check-unused": "depcheck",
     "dev": "next dev --turbopack --port 3000",
     "find-deadcode": "ts-prune --ignore '.next'",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {
     "@repo/constants": "workspace:*",
+    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*",
     "nodemailer": "^6.10.0"
   },

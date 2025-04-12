@@ -7,6 +7,7 @@ const fields: FieldDefs = {
   cover: { required: true, type: 'string' },
   coverAlt: { required: true, type: 'string' },
   genres: { of: { type: 'string' }, required: true, type: 'list' },
+  isbn: { required: true, type: 'string' },
   language: { required: true, type: 'string' },
   length: { required: true, type: 'number' },
   publisher: { required: true, type: 'string' },

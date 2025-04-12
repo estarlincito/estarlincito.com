@@ -1,4 +1,5 @@
 /* theme-config.css */
+@import '@radix-ui/themes/styles.css';
 @import '@radix-ui/colors/gray.css';
 @import '@radix-ui/colors/blue.css';
 @import '@radix-ui/colors/gray-dark.css';
@@ -24,4 +25,11 @@
   --cursor-slider-thumb: grab;
   --cursor-slider-thumb-active: grabbing;
   --cursor-switch: pointer;
+  /* --default-font-family: 'Times New Roman', Georgia, serif;
+  --heading-font-family: 'Times New Roman', Georgia, serif; */
+}
+
+[data-active='true'] {
+  background-color: var(--accent-9);
+  color: var(--accent-contrast);
 }

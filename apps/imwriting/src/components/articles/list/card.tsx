@@ -4,14 +4,12 @@ import {
   Card as CardRadix,
   Flex,
   Grid,
+  Image,
   Link,
   Text,
-} from '@radix-ui/themes';
+} from '@repo/ui';
 import stylez from '@stylezjs/stylez';
 import { type Articles } from 'contentlayer/generated';
-import React from 'react';
-
-import Image from '@/components/ui/image';
 
 const styles = {
   card: stylez.create({
@@ -30,22 +28,22 @@ const Card = (props: Articles) => {
 
   return (
     <CardRadix variant='surface' {...stylez.className(styles.card)}>
-      <Box height='15rem' asChild>
+      <Box asChild height='15rem'>
         <figure>
           <Link href={pathnames.article} target='_self'>
-            <Image src={cover} alt={title} />
+            <Image alt={title} src={cover} />
           </Link>
         </figure>
       </Box>
 
-      <Grid gap='1' height='7rem' p='3' asChild>
+      <Grid asChild gap='1' height='7rem' p='3'>
         <figcaption>
           <Link
+            color='gray'
             href={pathnames.article}
             size='3'
             target='_self'
             weight='bold'
-            color='gray'
           >
             {title}
           </Link>
@@ -53,7 +51,7 @@ const Card = (props: Articles) => {
           <Flex direction='row' justify='between'>
             <Text as='span'>
               By&nbsp;
-              <Link href='/' target='_self' color='gray' weight='bold'>
+              <Link color='gray' href='/' target='_self' weight='bold'>
                 {...authors}
               </Link>
             </Text>

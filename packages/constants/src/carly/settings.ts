@@ -1,6 +1,6 @@
-import { copyright as copyright_, isDev } from '@estarlincito/utils';
+import { copyright as copyright_, isDev, num } from '@estarlincito/utils';
 
-export const copyright = copyright_(2023);
+export const copyright = copyright_(num('2023'));
 export const locale = 'en-US';
 export const siteName = 'Carly';
 export const theme = 'system';

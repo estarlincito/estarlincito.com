@@ -3,9 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "isolatedModules": true
   },
@@ -18,8 +16,5 @@
     ".next/types/**/*.ts",
     "eslint.config.js"
   ],
-  "exclude": [
-    "node_modules",
-    "public"
-  ]
+  "exclude": ["node_modules", "public"]
 }

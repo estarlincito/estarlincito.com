@@ -1,4 +1,4 @@
-import { Blockquote, Em } from '@radix-ui/themes';
+import { Blockquote, Em } from '@repo/ui';
 
 import useQuotes from '@/Hooks/useQuotes';
 

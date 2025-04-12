@@ -1,16 +1,14 @@
-'use client';
-import { estarlincito } from '@repo/constants';
-import { ThemeProvider } from 'next-themes';
+// 'use client';
+// import { estarlincito } from '@repo/constants';
+// import { ThemeProvider } from 'next-themes';
+// import type { ReactNode } from 'react';
 
-import type Children from '@/types/children';
-const { theme } = estarlincito;
+// const { theme } = estarlincito;
 
-const AppThemeProvider = (props: Children) => {
-  return (
-    <ThemeProvider attribute='class' defaultTheme={theme}>
-      {props.children}
-    </ThemeProvider>
-  );
-};
+// const AppThemeProvider = ({ children }: { children: ReactNode }) => (
+//   <ThemeProvider attribute='class' defaultTheme={theme}>
+//     {children}
+//   </ThemeProvider>
+// );
 
-export default AppThemeProvider;
+// export default AppThemeProvider;

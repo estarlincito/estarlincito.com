@@ -5,3 +5,4 @@ export * as estarlincito from './estarlincito/index.js';
 export * as imwriting from './imwriting/index.js';
 export * as myebook from './myebook/index.js';
 export * as quotely from './quotely/index.js';
+export * as schema from './schema/overview.js';

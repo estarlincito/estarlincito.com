@@ -1,5 +1,5 @@
 'use client';
-import { apiFetch, handleError } from '@estarlincito/utils';
+import { apiFetch, handleError, num } from '@estarlincito/utils';
 import { useEffect, useState } from 'react';
 
 import type Quote from '@/types/quote';
@@ -24,20 +24,23 @@ const useQuotes = (): Return => {
       .then((data: Quote[]) => {
         setQuotes(data);
 
-        //Random Quote
+        // Random Quote
         const random_index = Math.floor(Math.random() * data.length);
         const _random = data[random_index];
         if (_random === undefined) return;
         setRandom(_random);
 
-        //Last Quote
-        const last = data[data.length - 1];
+        // Last Quote
+        const last = data[data.length - num('1')];
 
-        //Mon, Wed, Fri, and Sun will show the last quote;
+        // Mon, Wed, Fri, and Sun will show the last quote;
         // other days will be random
         const date = new Date();
         const day = date.getDay();
-        const item = [1, 3, 5, 7].includes(day) ? last : _random;
+        // eslint-disable-next-line no-magic-numbers
+        const item = [num('1'), num('3'), num('5'), num('7')].includes(day as 1)
+          ? last
+          : _random;
         if (item === undefined) return;
         setQuote(item);
       })

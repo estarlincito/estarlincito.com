@@ -1,18 +1,17 @@
 import { GenerateMetadata, toSlug } from '@estarlincito/utils';
+import { quotely } from '@repo/constants';
+import { getPathname } from '@repo/lib';
 import {
   Badge,
-  Card,
-  Container,
-  Flex,
+  DataList,
+  Header,
   Link,
-  Separator,
-  Strong,
-  Text,
-} from '@radix-ui/themes';
-import { quotely } from '@repo/constants';
-import { Header, Wrapper } from '@repo/ui';
+  type Links,
+  SubTitle,
+  Wrapper,
+} from '@repo/ui';
+import { headers } from 'next/headers';
 
-import ClientBreadcrumb from '@/components/breadcrumb';
 import { findQuote } from '@/lib/quotes';
 import type { ParamsProps } from '@/types/params';
 const { locale, siteName, url } = quotely;
@@ -41,76 +40,89 @@ export const generateMetadata = async ({ params }: ParamsProps) => {
 const QuotePage = async ({ params }: ParamsProps) => {
   const { slug } = await params;
 
-  const quoteData = await findQuote(slug);
+  const {
+    id,
+    quote,
+    sourceName,
+    sourceType,
+    reference,
+    sourceUrl,
+    tags,
+    ...dataQuote
+  } = await findQuote(slug);
+
+  const pathname = await getPathname(headers);
+
+  const links: Links = [
+    {
+      href: quotely.quotes.path,
+      title: quotely.quotes.title,
+    },
+    {
+      href: `${url}/quotes/${toSlug(`${id}`)}`,
+      title: `Quote #${id}`,
+    },
+  ];
 
   return (
-    <Container size='4'>
-      <Wrapper maxWidth='800px' m='auto'>
-        <ClientBreadcrumb
-          slug={[
-            {
-              route: quotely.quotes.path,
-              title: quotely.quotes.title,
-            },
-            {
-              route: `${url}/quotes/${toSlug(`${quoteData.id}`)}`,
-              title: `Quote #${quoteData.id}`,
-            },
-          ]}
-        />
-        <Header title={`Quote #${quoteData.id}`} summary='' />
+    <Wrapper maxWidth='800px'>
+      <Header
+        blockquote
+        highContrast
+        separator
+        links={links}
+        pathname={pathname}
+        summary={quote}
+        title={`Quote #${id}`}
+      />
 
-        <Card variant='ghost'>
-          <Flex direction='column' gapY='4'>
-            <Text size='7'>&ldquo;{quoteData.quote}&ldquo;</Text>
-            <Separator size='4' />
-            <Flex gapX='1'>
-              {quoteData.authors.map(({ name, slug }, id) => (
-                <Text key={id} color='gray'>
-                  <Strong>Authors:</Strong>
-                  <Link href={`/authors/${slug}`} underline='none' color='gray'>
-                    {' '}
-                    {name}
-                  </Link>
-                </Text>
-              ))}
-            </Flex>
+      <DataList.Root orientation={{ initial: 'vertical', sm: 'horizontal' }}>
+        <SubTitle content='Details' />
+        <DataList.Item>
+          <DataList.Label minWidth='88px'>Authors:</DataList.Label>
+          <DataList.Value>
+            {dataQuote.authors.map((author) => (
+              <Link href={`/authors/${author.slug}`} key={author.id}>
+                {author.name}
+              </Link>
+            ))}
+          </DataList.Value>
+        </DataList.Item>
 
-            <Text color='gray'>
-              <Strong>Source Name:</Strong> {quoteData.sourceName.name}
-            </Text>
+        <DataList.Item>
+          <DataList.Label minWidth='88px'>Source Name:</DataList.Label>
+          <DataList.Value>{sourceName.name}</DataList.Value>
+        </DataList.Item>
 
-            {quoteData.sourceType.name.length >= 1 && (
-              <Text color='gray'>
-                <Strong>Source Type:</Strong> {quoteData.sourceType.name}
-              </Text>
-            )}
+        <DataList.Item>
+          <DataList.Label minWidth='88px'>Source Type:</DataList.Label>
+          <DataList.Value>{sourceType.name}</DataList.Value>
+        </DataList.Item>
 
-            {quoteData.reference.length >= 1 && (
-              <Text color='gray'>
-                <Strong>Reference:</Strong> {quoteData.reference}
-              </Text>
-            )}
+        <DataList.Item>
+          <DataList.Label minWidth='88px'>Reference:</DataList.Label>
+          <DataList.Value>{reference}</DataList.Value>
+        </DataList.Item>
 
-            {quoteData.sourceUrl.length >= 1 && quoteData.sourceUrl !== '#' && (
-              <Text color='gray'>
-                <Strong>Source URl:</Strong> {quoteData.sourceUrl}
-              </Text>
-            )}
+        {sourceUrl !== '#' && (
+          <DataList.Item>
+            <DataList.Label minWidth='88px'>Source URl:</DataList.Label>
+            <DataList.Value>{sourceUrl}</DataList.Value>
+          </DataList.Item>
+        )}
 
-            <Flex gapX='1'>
-              {quoteData.tags.map(({ name }, id) => (
-                <Badge radius='medium' key={id} color='gray'>
-                  <Link color='gray' href={`/tags/${name}`} underline='none'>
-                    {name}
-                  </Link>
-                </Badge>
-              ))}
-            </Flex>
-          </Flex>
-        </Card>
-      </Wrapper>
-    </Container>
+        <DataList.Item>
+          <DataList.Label minWidth='88px'>Tags:</DataList.Label>
+          <DataList.Value>
+            {tags.map((tag) => (
+              <Link href={`/tags/${tag.name}`} key={tag.id}>
+                <Badge color='gray'>{tag.name}</Badge>
+              </Link>
+            ))}
+          </DataList.Value>
+        </DataList.Item>
+      </DataList.Root>
+    </Wrapper>
   );
 };
 

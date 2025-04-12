@@ -8,12 +8,14 @@
     "check-unused": "depcheck",
     "dev": "next dev --turbopack --port 3005",
     "find-deadcode": "ts-prune --ignore '.next|dbschema'",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {
     "@repo/constants": "workspace:*",
+    "@repo/hooks": "workspace:*",
+    "@repo/lib": "workspace:*",
+    "@repo/types": "workspace:*",
     "@repo/ui": "workspace:*",
     "bcrypt": "^5.1.1",
     "edgedb": "1.5.12",

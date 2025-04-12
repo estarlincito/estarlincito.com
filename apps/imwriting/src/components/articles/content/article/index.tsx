@@ -1,27 +1,32 @@
+import {
+  Blockquote,
+  Code,
+  Em,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+  withDefaultProps,
+} from '@repo/ui';
 import { useMDXComponent } from 'next-contentlayer/hooks';
-import React from 'react';
 
-import A from './a';
 import Audio from './audio';
-import Blockquote from './blockquote';
-import Code from './code';
-import Contents from './contents';
-import Empty from './empty';
-import H2 from './h2';
-import Image from './image';
 import Ol from './ol';
 import Strong from './strong';
 
 const mdxComponents = {
-  a: A,
+  a: Link,
   Audio,
   blockquote: Blockquote,
   code: Code,
-  Contents,
-  h2: H2,
+  Contents: withDefaultProps(Flex, { direction: 'column', gapY: '5' }),
+  em: Em,
+  h2: withDefaultProps(Heading, { as: 'h2' }),
   Image,
-  Introduction: Empty,
   ol: Ol,
+  p: Text,
+  span: withDefaultProps(Text, { as: 'span' }),
   strong: Strong,
 };
 
@@ -31,6 +36,7 @@ interface Props {
 
 const Articles = ({ doc }: Props) => {
   const MDXContent = useMDXComponent(doc);
+
   return <MDXContent components={mdxComponents} />;
 };
 export default Articles;

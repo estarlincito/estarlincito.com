@@ -1,12 +1,9 @@
-import { about, contact, home, projects } from './index.js';
+import { addingKey, generateRoute } from '@repo/lib';
 
-const page = (label: string, route: string) => {
-  return { label, route };
-};
+import { about, home, projects } from './index.js';
 
-export const siteMap = [
-  page('Home', home.path),
-  page(about.title, about.path),
-  page(contact.title, contact.path),
-  page(projects.title, projects.path),
-];
+export const siteMap = addingKey([
+  generateRoute('Home', home.path),
+  generateRoute(about.title, about.path),
+  generateRoute(projects.title, projects.path),
+]);

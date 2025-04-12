@@ -16,8 +16,8 @@
   ],
   "title": "Remember that you must forge your own path",
   "body": {
-    "raw": "\n<Introduction>\n\n> There are no absolute truths, only your truth. Follow the teachings that inspire you and free yourself from fear. Be free, be yourself! ️\n\n</Introduction>\n\n<Contents>\n<Audio\n  src='/assets/remember-that-you-must-forge-your-own-path/audio.mp3'\n  type='audio/mp3'\n/>\n\n_Remember that you must forge your own path, keeping in mind that absolute truth does not exist. However, if the teachings of Buddha, religions, friends, books, etc., resonate with your journey, follow them. If not, keep creating your own path. Each individual possesses their own truth, shaped by their upbringing and lifestyle. Remember that beliefs based on fear are not beneficial and can lead you off course. Therefore, be free, be yourself, without ties._\n\n_In this quest for authenticity, it’s essential to engage in self-reflection and understand what truly matters to you. Take the time to explore different philosophies, experiences, and perspectives to enrich your understanding of the world. Embrace the lessons learned along the way, even from failures, as they contribute to your personal growth. Surround yourself with people who uplift and challenge you, fostering an environment where you can thrive. Ultimately, the journey of self-discovery is a lifelong process, and embracing your unique path will lead to a fulfilling and meaningful life._\n\n</Contents>\n",
-    "code": "var Component=(()=>{var f=Object.create;var s=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var r in e)s(t,r,{get:e[r],enumerable:!0})},u=(t,e,r,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of m(e))!y.call(t,n)&&n!==r&&s(t,n,{get:()=>e[n],enumerable:!(i=d(e,n))||i.enumerable});return t};var w=(t,e,r)=>(r=t!=null?f(p(t)):{},u(e||!t||!t.__esModule?s(r,\"default\",{value:t,enumerable:!0}):r,t)),x=t=>u(s({},\"__esModule\",{value:!0}),t);var h=g((q,l)=>{l.exports=_jsx_runtime});var _={};b(_,{default:()=>k,frontmatter:()=>v});var o=w(h()),v={title:\"Remember that you must forge your own path\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-10-2024\",modifiedTime:\"05-10-2024\",description:\"There are no absolute truths, only your truth. Follow the teachings that inspire you and free yourself from fear. Be free, be yourself!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/remember-that-you-must-forge-your-own-path/image.png\",coverAlt:\"Living beings walking their own path\",check:!0,tags:[\"\"]};function c(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},t.components),{Introduction:r,Contents:i,Audio:n}=e;return n||a(\"Audio\",!0),i||a(\"Contents\",!0),r||a(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(r,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"There are no absolute truths, only your truth. Follow the teachings that inspire you and free yourself from fear. Be free, be yourself! \\uFE0F\"}),`\n`]})}),`\n`,(0,o.jsxs)(i,{children:[(0,o.jsx)(n,{src:\"/assets/remember-that-you-must-forge-your-own-path/audio.mp3\",type:\"audio/mp3\"}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"Remember that you must forge your own path, keeping in mind that absolute truth does not exist. However, if the teachings of Buddha, religions, friends, books, etc., resonate with your journey, follow them. If not, keep creating your own path. Each individual possesses their own truth, shaped by their upbringing and lifestyle. Remember that beliefs based on fear are not beneficial and can lead you off course. Therefore, be free, be yourself, without ties.\"})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"In this quest for authenticity, it\\u2019s essential to engage in self-reflection and understand what truly matters to you. Take the time to explore different philosophies, experiences, and perspectives to enrich your understanding of the world. Embrace the lessons learned along the way, even from failures, as they contribute to your personal growth. Surround yourself with people who uplift and challenge you, fostering an environment where you can thrive. Ultimately, the journey of self-discovery is a lifelong process, and embracing your unique path will lead to a fulfilling and meaningful life.\"})})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(c,t)})):c(t)}var k=j;function a(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(_);})();\n;return Component;"
+    "raw": "\n<Contents>\n<Audio\n  src='/assets/remember-that-you-must-forge-your-own-path/audio.mp3'\n  type='audio/mp3'\n/>\n\n_Remember that you must forge your own path, keeping in mind that absolute truth does not exist. However, if the teachings of Buddha, religions, friends, books, etc., resonate with your journey, follow them. If not, keep creating your own path. Each individual possesses their own truth, shaped by their upbringing and lifestyle. Remember that beliefs based on fear are not beneficial and can lead you off course. Therefore, be free, be yourself, without ties._\n\n_In this quest for authenticity, it’s essential to engage in self-reflection and understand what truly matters to you. Take the time to explore different philosophies, experiences, and perspectives to enrich your understanding of the world. Embrace the lessons learned along the way, even from failures, as they contribute to your personal growth. Surround yourself with people who uplift and challenge you, fostering an environment where you can thrive. Ultimately, the journey of self-discovery is a lifelong process, and embracing your unique path will lead to a fulfilling and meaningful life._\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var s=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),b=(t,e)=>{for(var o in e)s(t,o,{get:e[o],enumerable:!0})},a=(t,e,o,n)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of m(e))!y.call(t,i)&&i!==o&&s(t,i,{get:()=>e[i],enumerable:!(n=d(e,i))||n.enumerable});return t};var w=(t,e,o)=>(o=t!=null?c(p(t)):{},a(e||!t||!t.__esModule?s(o,\"default\",{value:t,enumerable:!0}):o,t)),x=t=>a(s({},\"__esModule\",{value:!0}),t);var h=g((R,u)=>{u.exports=_jsx_runtime});var _={};b(_,{default:()=>k,frontmatter:()=>v});var r=w(h()),v={title:\"Remember that you must forge your own path\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-10-2024\",modifiedTime:\"05-10-2024\",description:\"There are no absolute truths, only your truth. Follow the teachings that inspire you and free yourself from fear. Be free, be yourself!\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/remember-that-you-must-forge-your-own-path/image.png\",coverAlt:\"Living beings walking their own path\",check:!0,tags:[\"\"]};function l(t){let e=Object.assign({p:\"p\",em:\"em\"},t.components),{Contents:o,Audio:n}=e;return n||f(\"Audio\",!0),o||f(\"Contents\",!0),(0,r.jsxs)(o,{children:[(0,r.jsx)(n,{src:\"/assets/remember-that-you-must-forge-your-own-path/audio.mp3\",type:\"audio/mp3\"}),(0,r.jsx)(e.p,{children:(0,r.jsx)(e.em,{children:\"Remember that you must forge your own path, keeping in mind that absolute truth does not exist. However, if the teachings of Buddha, religions, friends, books, etc., resonate with your journey, follow them. If not, keep creating your own path. Each individual possesses their own truth, shaped by their upbringing and lifestyle. Remember that beliefs based on fear are not beneficial and can lead you off course. Therefore, be free, be yourself, without ties.\"})}),(0,r.jsx)(e.p,{children:(0,r.jsx)(e.em,{children:\"In this quest for authenticity, it\\u2019s essential to engage in self-reflection and understand what truly matters to you. Take the time to explore different philosophies, experiences, and perspectives to enrich your understanding of the world. Embrace the lessons learned along the way, even from failures, as they contribute to your personal growth. Surround yourself with people who uplift and challenge you, fostering an environment where you can thrive. Ultimately, the journey of self-discovery is a lifelong process, and embracing your unique path will lead to a fulfilling and meaningful life.\"})})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,r.jsx)(e,Object.assign({},t,{children:(0,r.jsx)(l,t)})):l(t)}var k=j;function f(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(_);})();\n;return Component;"
   },
   "_id": "remember-that-you-must-forge-your-own-path.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2024-05-10T04:00:00.000Z",
+        "publishedTime": "2024-05-10T04:00:00.000Z",
+        "section": "Philosophy",
+        "tags": [
+          ""
+        ],
         "description": "There are no absolute truths, only your truth. Follow the teachings that inspire you and free yourself from fear. Be free, be yourself!",
         "images": [
           {
             "alt": "Living beings walking their own path",
-            "url": "/assets/remember-that-you-must-forge-your-own-path/image.png",
-            "height": 600,
-            "width": 800
+            "url": "/assets/remember-that-you-must-forge-your-own-path/image.png"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2024-05-10T04:00:00.000Z",
-        "publishedTime": "2024-05-10T04:00:00.000Z",
-        "section": "Philosophy",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "Remember that you must forge your own path",
         "url": "https://imwriting.estarlincito.com/articles/remember-that-you-must-forge-your-own-path",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
       "openGraph": {
-        "title": "Philosophy",
         "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
         "images": [
           {
             "alt": "A collection of books on a wooden shelf.",
-            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy",
         "url": "https://imwriting.estarlincito.com/articles/philosophy",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/remember-that-you-must-forge-your-own-path",
       "category": "/articles/philosophy",
+      "key": 38,
       "subcategory": "/articles/philosophy/reflections"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
       "openGraph": {
-        "title": "Reflections",
         "description": "Here you will find some of my reflections and lessons I have learned from life.",
         "images": [
           {
             "alt": "Young person reflecting",
-            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Reflections",
         "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "1 minute",
-  "wordCount": 199
+  "wordCount": 172
 }

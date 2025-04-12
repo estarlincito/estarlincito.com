@@ -127,6 +127,7 @@ icon: {
     article: string;
     category: string;
     subcategory: string;
+    key: number;
 };
 }
   readingTime: string

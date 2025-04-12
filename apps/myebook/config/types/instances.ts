@@ -1,14 +1,12 @@
-interface Image {
-  url: string;
-  alt: string;
-  width?: number | 800;
-  height?: number | 600;
-}
+import type { GenerateMetadataTypes } from '@estarlincito/utils';
 
 interface Instances {
   title: string;
   description: string;
-  images: [Image, ...Image[]];
+  images: [
+    GenerateMetadataTypes['Images'],
+    ...GenerateMetadataTypes['Images'][],
+  ];
 }
 
 export default Instances;

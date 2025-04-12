@@ -1,11 +1,12 @@
-import { Button, Link } from '@radix-ui/themes';
+import { IconButton, Link } from '@repo/ui';
+import { BiSolidDonateHeart } from 'react-icons/bi';
 
-const KoFi = () => {
-  return (
-    <Link href='https://ko-fi.com/estarlincito' target='_blank'>
-      <Button variant='classic'>Donate</Button>
-    </Link>
-  );
-};
+const KoFi = () => (
+  <Link color='red' href='https://ko-fi.com/estarlincito' target='_blank'>
+    <IconButton variant='ghost'>
+      <BiSolidDonateHeart />
+    </IconButton>
+  </Link>
+);
 
 export default KoFi;

@@ -16,8 +16,8 @@
   ],
   "title": "Never forget, believe in yourself that's your magic! 🪄",
   "body": {
-    "raw": "\n<Introduction>\n\n> Never give up. Obstacles are part of the path to success. What’s important is that you never give up and keep moving forward despite the difficulties.\n\n</Introduction>\n\n<Contents>\n\n<Audio\n  src='/assets/never-forget-believe-in-yourself-thats-your-magic/audio.mp3'\n  type='audio/mp3'\n/>\n\n_If your plans don’t fit into other people's molds, that’s okay; go alone.\nIf you can’t find anyone to give you a push on your path, remember that you can continue alone.\nNever lose hope in yourself; remember that if you can dream it, you can achieve it.\nDon’t let gray people cloud your judgment; you have yourself.\nIf you want something, go for it, period.\nRemember that you’re not alone; you have yourself, you just have to believe in yourself, as you are worth more than you imagine. Never forget it, believe in yourself; that is your magic!_\n\n_And if you ever feel that the road is heavy, take a deep breath and look at how far you’ve come. Every step, every small achievement counts, and they are all part of your journey. The path may be lonely, but it’s in that solitude that you discover your true power. In the end, the destination is not just a place, but everything you learn and grow along the way. Don’t be afraid to be different; your authenticity is what will make you shine. The world needs your unique light!_\n\n</Contents>\n",
-    "code": "var Component=(()=>{var y=Object.create;var a=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},u=(t,e,n,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of p(e))!m.call(t,r)&&r!==n&&a(t,r,{get:()=>e[r],enumerable:!(i=d(e,r))||i.enumerable});return t};var b=(t,e,n)=>(n=t!=null?y(f(t)):{},u(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),j=t=>u(a({},\"__esModule\",{value:!0}),t);var l=g((M,c)=>{c.exports=_jsx_runtime});var _={};v(_,{default:()=>x,frontmatter:()=>w});var o=b(l()),w={title:\"Never forget, believe in yourself that's your magic! \\u{1FA84}\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-16-2024\",modifiedTime:\"05-16-2024\",description:\"Never give up. Obstacles are part of the path to success. What\\u2019s important is that you never give up and keep moving forward despite the difficulties.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/never-forget-believe-in-yourself-thats-your-magic/image.jpeg\",coverAlt:\"Magical Young Girl\",check:!0,tags:[\"\"]};function h(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\",em:\"em\"},t.components),{Introduction:n,Contents:i,Audio:r}=e;return r||s(\"Audio\",!0),i||s(\"Contents\",!0),n||s(\"Introduction\",!0),(0,o.jsxs)(o.Fragment,{children:[(0,o.jsx)(n,{children:(0,o.jsxs)(e.blockquote,{children:[`\n`,(0,o.jsx)(e.p,{children:\"Never give up. Obstacles are part of the path to success. What\\u2019s important is that you never give up and keep moving forward despite the difficulties.\"}),`\n`]})}),`\n`,(0,o.jsxs)(i,{children:[(0,o.jsx)(r,{src:\"/assets/never-forget-believe-in-yourself-thats-your-magic/audio.mp3\",type:\"audio/mp3\"}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:`If your plans don\\u2019t fit into other people's molds, that\\u2019s okay; go alone.\nIf you can\\u2019t find anyone to give you a push on your path, remember that you can continue alone.\nNever lose hope in yourself; remember that if you can dream it, you can achieve it.\nDon\\u2019t let gray people cloud your judgment; you have yourself.\nIf you want something, go for it, period.\nRemember that you\\u2019re not alone; you have yourself, you just have to believe in yourself, as you are worth more than you imagine. Never forget it, believe in yourself; that is your magic!`})}),(0,o.jsx)(e.p,{children:(0,o.jsx)(e.em,{children:\"And if you ever feel that the road is heavy, take a deep breath and look at how far you\\u2019ve come. Every step, every small achievement counts, and they are all part of your journey. The path may be lonely, but it\\u2019s in that solitude that you discover your true power. In the end, the destination is not just a place, but everything you learn and grow along the way. Don\\u2019t be afraid to be different; your authenticity is what will make you shine. The world needs your unique light!\"})})]})]})}function k(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(h,t)})):h(t)}var x=k;function s(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(_);})();\n;return Component;"
+    "raw": "\n<Contents>\n\n<Audio\n  src='/assets/never-forget-believe-in-yourself-thats-your-magic/audio.mp3'\n  type='audio/mp3'\n/>\n\n_If your plans don’t fit into other people's molds, that’s okay; go alone.\nIf you can’t find anyone to give you a push on your path, remember that you can continue alone.\nNever lose hope in yourself; remember that if you can dream it, you can achieve it.\nDon’t let gray people cloud your judgment; you have yourself.\nIf you want something, go for it, period.\nRemember that you’re not alone; you have yourself, you just have to believe in yourself, as you are worth more than you imagine. Never forget it, believe in yourself; that is your magic!_\n\n_And if you ever feel that the road is heavy, take a deep breath and look at how far you’ve come. Every step, every small achievement counts, and they are all part of your journey. The path may be lonely, but it’s in that solitude that you discover your true power. In the end, the destination is not just a place, but everything you learn and grow along the way. Don’t be afraid to be different; your authenticity is what will make you shine. The world needs your unique light!_\n\n</Contents>\n",
+    "code": "var Component=(()=>{var c=Object.create;var i=Object.defineProperty;var d=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var m=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var g=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),v=(t,e)=>{for(var o in e)i(t,o,{get:e[o],enumerable:!0})},s=(t,e,o,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of f(e))!p.call(t,a)&&a!==o&&i(t,a,{get:()=>e[a],enumerable:!(r=d(e,a))||r.enumerable});return t};var b=(t,e,o)=>(o=t!=null?c(m(t)):{},s(e||!t||!t.__esModule?i(o,\"default\",{value:t,enumerable:!0}):o,t)),j=t=>s(i({},\"__esModule\",{value:!0}),t);var l=g((A,u)=>{u.exports=_jsx_runtime});var _={};v(_,{default:()=>k,frontmatter:()=>w});var n=b(l()),w={title:\"Never forget, believe in yourself that's your magic! \\u{1FA84}\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"05-16-2024\",modifiedTime:\"05-16-2024\",description:\"Never give up. Obstacles are part of the path to success. What\\u2019s important is that you never give up and keep moving forward despite the difficulties.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/never-forget-believe-in-yourself-thats-your-magic/image.jpeg\",coverAlt:\"Magical Young Girl\",check:!0,tags:[\"\"]};function y(t){let e=Object.assign({p:\"p\",em:\"em\"},t.components),{Contents:o,Audio:r}=e;return r||h(\"Audio\",!0),o||h(\"Contents\",!0),(0,n.jsxs)(o,{children:[(0,n.jsx)(r,{src:\"/assets/never-forget-believe-in-yourself-thats-your-magic/audio.mp3\",type:\"audio/mp3\"}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:`If your plans don\\u2019t fit into other people's molds, that\\u2019s okay; go alone.\nIf you can\\u2019t find anyone to give you a push on your path, remember that you can continue alone.\nNever lose hope in yourself; remember that if you can dream it, you can achieve it.\nDon\\u2019t let gray people cloud your judgment; you have yourself.\nIf you want something, go for it, period.\nRemember that you\\u2019re not alone; you have yourself, you just have to believe in yourself, as you are worth more than you imagine. Never forget it, believe in yourself; that is your magic!`})}),(0,n.jsx)(e.p,{children:(0,n.jsx)(e.em,{children:\"And if you ever feel that the road is heavy, take a deep breath and look at how far you\\u2019ve come. Every step, every small achievement counts, and they are all part of your journey. The path may be lonely, but it\\u2019s in that solitude that you discover your true power. In the end, the destination is not just a place, but everything you learn and grow along the way. Don\\u2019t be afraid to be different; your authenticity is what will make you shine. The world needs your unique light!\"})})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(y,t)})):y(t)}var k=x;function h(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(_);})();\n;return Component;"
   },
   "_id": "never-forget-believe-in-yourself-thats-your-magic.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2024-05-16T04:00:00.000Z",
+        "publishedTime": "2024-05-16T04:00:00.000Z",
+        "section": "Philosophy",
+        "tags": [
+          ""
+        ],
         "description": "Never give up. Obstacles are part of the path to success. What’s important is that you never give up and keep moving forward despite the difficulties.",
         "images": [
           {
             "alt": "Magical Young Girl",
-            "url": "/assets/never-forget-believe-in-yourself-thats-your-magic/image.jpeg",
-            "height": 600,
-            "width": 800
+            "url": "/assets/never-forget-believe-in-yourself-thats-your-magic/image.jpeg"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2024-05-16T04:00:00.000Z",
-        "publishedTime": "2024-05-16T04:00:00.000Z",
-        "section": "Philosophy",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "Never forget, believe in yourself that's your magic! 🪄",
         "url": "https://imwriting.estarlincito.com/articles/never-forget-believe-in-yourself-thats-your-magic",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
       "openGraph": {
-        "title": "Philosophy",
         "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
         "images": [
           {
             "alt": "A collection of books on a wooden shelf.",
-            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy",
         "url": "https://imwriting.estarlincito.com/articles/philosophy",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/never-forget-believe-in-yourself-thats-your-magic",
       "category": "/articles/philosophy",
+      "key": 23,
       "subcategory": "/articles/philosophy/reflections"
     },
     "subcategory": {
@@ -101,24 +98,22 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
       "openGraph": {
-        "title": "Reflections",
         "description": "Here you will find some of my reflections and lessons I have learned from life.",
         "images": [
           {
             "alt": "Young person reflecting",
-            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Reflections",
         "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
         "type": "website"
       },
       "title": "Reflections"
     }
   },
-  "readingTime": "2 minutes",
-  "wordCount": 226
+  "readingTime": "1 minute",
+  "wordCount": 197
 }

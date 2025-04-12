@@ -1,29 +1,23 @@
-import { Box, Em, Heading, Text } from '@radix-ui/themes';
+import { DataList } from '@radix-ui/themes';
 
-interface Props {
+import { SubTitle } from '@/components/ui/sub-title.jsx';
+
+interface TopicsProps {
   topics: {
-    data: string[];
     label: string;
-  };
-  dash?: boolean;
-  italic?: boolean;
+    value: string;
+    key: number;
+  }[];
 }
 
-export const Topics = ({ topics, dash, italic }: Props) => {
-  return (
-    <Box>
-      <Heading size='4' mb='3'>
-        {topics.label}
-      </Heading>
-      <ul>
-        {topics.data.map((topic, id) => (
-          <li key={id}>
-            <Text size='3'>
-              {dash && '-'} {italic !== undefined ? <Em>{topic}</Em> : topic}
-            </Text>
-          </li>
-        ))}
-      </ul>
-    </Box>
-  );
-};
+export const Topics = ({ topics }: TopicsProps) => (
+  <DataList.Root orientation={{ initial: 'vertical', sm: 'horizontal' }}>
+    <SubTitle content='Topics Covered' mt='5' />
+    {topics.map(({ key, label, value }) => (
+      <DataList.Item key={key}>
+        <DataList.Label minWidth='88px'>{label}</DataList.Label>
+        <DataList.Value>{value}</DataList.Value>
+      </DataList.Item>
+    ))}
+  </DataList.Root>
+);

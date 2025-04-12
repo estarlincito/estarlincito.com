@@ -8,13 +8,14 @@
     "check-unused": "depcheck",
     "dev": "next dev --port 3002",
     "find-deadcode": "ts-prune --ignore '.next'",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {
     "@repo/constants": "workspace:*",
-    "@repo/ui": "workspace:*"
+    "@repo/lib": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "remark-emoji": "^5.0.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

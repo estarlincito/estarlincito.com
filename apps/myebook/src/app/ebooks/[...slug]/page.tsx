@@ -1,16 +1,13 @@
-import { Container } from '@repo/ui';
-import React from 'react';
+import { Wrapper } from '@repo/ui';
 
-import { Params } from '@/types/params';
+import type { Params } from '@/types/params';
 
 interface Props {
   params: Promise<Params>;
   searchParams: Promise<Record<string, string | undefined>>;
 }
 
-// type Gmetadata = (props: Props) => Promise<Metadata>;
-
-// export const generateMetadata: Gmetadata = async (props) => {
+// export const generateMetadata = async (props) => {
 //   const { params } = props;
 //   const { slug } = await params;
 //   const posts = articles(slug);
@@ -25,7 +22,7 @@ interface Props {
 //   return {};
 // };
 
-const Page: React.FC<Props> = async (props) => {
+const Page = async (props: Props) => {
   const { searchParams } = props;
   const { page } = await searchParams;
   // const { slug } = await params;
@@ -37,12 +34,12 @@ const Page: React.FC<Props> = async (props) => {
   // const { data, isPost, isCategory, isSubcategory } = posts;
 
   return (
-    <Container size='3'>
+    <Wrapper size='3'>
       {/* {isPost && <PostLayout {...data[0]} />}
       {isCategory && <Category data={data} page={page} />}
       {isSubcategory && <SubCategory data={data} page={page} />} */}
       {page}
-    </Container>
+    </Wrapper>
   );
 };
 

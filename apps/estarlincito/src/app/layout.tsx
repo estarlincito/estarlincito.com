@@ -1,45 +1,45 @@
 import '@/styles/themes-config.css';
-import '@radix-ui/themes/styles.css';
 import '@/styles/globals.css';
 
-import { Theme } from '@radix-ui/themes';
+import { estarlincito } from '@repo/constants';
+import { AppThemeProvider, Box, LayoutContainer, Theme } from '@repo/ui';
+import type { ReactNode } from 'react';
 
 import { Collapse, Footer, Navbar } from '@/components/layout';
 import Opacity from '@/components/layout/opacity';
 import { Toaster } from '@/components/ui/toaster';
 import { CollapseProvider } from '@/context/collapse';
-import AppThemeProvider from '@/context/theme';
-import type Children from '@/types/children';
 
-const Layout = ({ children }: Children) => {
-  return (
-    <html lang='en' suppressHydrationWarning>
-      <body>
-        <Theme accentColor='indigo'>
-          <CollapseProvider>
+const Layout = ({ children }: { children: ReactNode }) => (
+  <html suppressHydrationWarning lang={estarlincito.locale}>
+    <body>
+      <Theme accentColor='indigo'>
+        <CollapseProvider>
+          <LayoutContainer threePart>
             <Opacity />
-            <AppThemeProvider>
+            <Box height='80px' />
+            <AppThemeProvider defaultTheme={estarlincito.theme}>
               <Navbar />
               <Collapse />
             </AppThemeProvider>
             {children}
             <Footer />
-          </CollapseProvider>
-        </Theme>
+          </LayoutContainer>
+        </CollapseProvider>
+      </Theme>
 
-        <Toaster
-          position='top-center'
-          reverseOrder={false}
-          toastOptions={{
-            style: {
-              background: 'black',
-              color: 'white',
-            },
-          }}
-        />
-      </body>
-    </html>
-  );
-};
+      <Toaster
+        position='top-center'
+        reverseOrder={false}
+        toastOptions={{
+          style: {
+            background: 'black',
+            color: 'white',
+          },
+        }}
+      />
+    </body>
+  </html>
+);
 
 export default Layout;

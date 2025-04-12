@@ -8,17 +8,19 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "prebuild": "pnpm exec postcss src/**/*.css -d dist/styles",
-    "build": "pnpm lint && tsc",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
-    "lint:fix": "eslint --fix"
+    "build": "pnpm pnpm lint && tsc && tsc-alias",
+    "build:w": "tsc --watch",
+    "build:wa": "tsc-alias --watch",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit"
   },
   "dependencies": {
-    "@radix-ui/react-form": "^0.1.2",
-    "@radix-ui/react-select": "^2.1.6"
+    "@radix-ui/react-select": "^2.1.6",
+    "@repo/constants": "workspace:*",
+    "@repo/hooks": "workspace:*",
+    "dompurify": "^3.2.5"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/react-dom": "^19.1.1",
     "postcss-cli": "^11.0.1"
   }
 }

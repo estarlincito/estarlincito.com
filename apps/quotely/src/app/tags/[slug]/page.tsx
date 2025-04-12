@@ -1,12 +1,12 @@
 import { GenerateMetadata } from '@estarlincito/utils';
-import { Container } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Header, type SearchParamsProps } from '@repo/ui';
+import { getPathname } from '@repo/lib';
+import { Header, type Links, type SearchParamsProps, Wrapper } from '@repo/ui';
+import { headers } from 'next/headers';
 
-import ClientBreadcrumb from '@/components/breadcrumb';
 import QuoteList from '@/components/quotes/list';
 import { findTag } from '@/lib/quotes';
-import { ParamsProps } from '@/types/params';
+import type { ParamsProps } from '@/types/params';
 
 export const generateMetadata = async ({ params }: ParamsProps) => {
   const { slug } = await params;
@@ -38,29 +38,33 @@ const TagPage = async ({
   const { slug } = await params;
   const searchParamsData = await searchParams;
   const tagData = await findTag(slug);
-  const route = tagData.tag.name;
+  const href = tagData.tag.name;
+  const pathname = await getPathname(headers);
+  const links: Links = [
+    {
+      href: quotely.tags.path,
+      title: quotely.tags.title,
+    },
+    {
+      href,
+      title: tagData.tag.name,
+    },
+  ];
 
   return (
-    <Container size='4'>
-      <ClientBreadcrumb
-        slug={[
-          {
-            route: quotely.tags.path,
-            title: quotely.tags.title,
-          },
-          {
-            route,
-            title: tagData.tag.name,
-          },
-        ]}
+    <Wrapper>
+      <Header
+        links={links}
+        pathname={pathname}
+        summary=''
+        title={tagData.tag.name}
       />
-      <Header title={tagData.tag.name} summary='' />
       <QuoteList
-        route={route}
+        route={href}
         {...searchParamsData}
         quotesData={{ count: tagData.count, quotes: tagData.tag.quotes }}
       />
-    </Container>
+    </Wrapper>
   );
 };
 

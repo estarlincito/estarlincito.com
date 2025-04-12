@@ -1,7 +1,16 @@
 'use client';
-import { Box, Flex } from '@radix-ui/themes';
 import { accounts } from '@repo/constants';
-import { Form, Summary, Title } from '@repo/ui';
+import { useIsClient } from '@repo/hooks';
+import {
+  Box,
+  Button,
+  Flex,
+  Form,
+  Link,
+  Separator,
+  Summary,
+  Title,
+} from '@repo/ui';
 import { useForm } from 'react-hook-form';
 
 import onSubmit from './submit';
@@ -13,30 +22,74 @@ export interface InputSignup {
   email: string;
   password: string;
 }
+
 const { signup } = accounts;
+
 const SignupForm = () => {
-  const { register, handleSubmit } = useForm<InputSignup>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    setError,
+  } = useForm<InputSignup>();
+  const isClient = useIsClient();
+
+  let redirect = '';
+
+  if (isClient) {
+    const searchParams = new URLSearchParams(window.location.search);
+    const url = searchParams.get('redirect');
+    if (url) redirect = `?redirect=${url}`;
+  }
 
   return (
-    <Form
-      onSubmit={(e) => {
-        void handleSubmit(onSubmit)(e);
-      }}
-    >
+    <Form onSubmit={handleSubmit(onSubmit(setError))}>
       <Box mb='5'>
-        <Title contents={signup.title} mb='4' />
-        <Summary contents={signup.description} />
+        <Title content={signup.title} mb='4' />
+        <Summary content={signup.description} />
+        <Separator mt='1' size='4' />
       </Box>
 
-      <Form.Field name='first-name' required register={register} />
-      <Form.Field name='last-name' required register={register} />
-      <Form.Field name='username' required register={register} />
-      <Form.Field name='email' required register={register} />
-      <Form.Field name='password' required register={register} />
-      <Form.Button label={signup.title} />
+      <Form.Field
+        required
+        errors={errors['first-name']}
+        name='first-name'
+        register={register}
+      />
+      <Form.Field
+        required
+        errors={errors['last-name']}
+        name='last-name'
+        register={register}
+      />
+      <Form.Field
+        required
+        errors={errors['username']}
+        name='username'
+        register={register}
+      />
+      <Form.Field
+        required
+        errors={errors['email']}
+        name='email'
+        register={register}
+      />
+      <Form.Field
+        required
+        errors={errors['password']}
+        name='password'
+        register={register}
+      />
 
-      <Flex mt='4' mr='2' justify='end'>
-        <Form.Link label='Login' route='/signin' />
+      <Flex gapX='3' justify='end'>
+        <Link href={accounts.signin.path + redirect}>
+          <Button
+            content={accounts.signin.title}
+            type='button'
+            variant='soft'
+          />
+        </Link>
+        <Button content={signup.title} type='submit' />
       </Flex>
     </Form>
   );

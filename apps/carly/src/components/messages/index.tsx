@@ -1,12 +1,12 @@
 import { type Message } from '@ai-sdk/react';
-import { Flex, Grid, ScrollArea } from '@radix-ui/themes';
-import React, { useEffect, useRef } from 'react';
+import { Flex, Grid, ScrollArea } from '@repo/ui';
+import { useEffect, useRef } from 'react';
 
 import Content from './content';
 interface Props {
   messages: Message[];
 }
-const Messages: React.FC<Props> = ({ messages }) => {
+const Messages = ({ messages }: Props) => {
   // smooth
   const smooth = useRef<HTMLDivElement>(null);
 
@@ -18,11 +18,11 @@ const Messages: React.FC<Props> = ({ messages }) => {
   }, [messages]);
 
   return (
-    <ScrollArea ref={smooth} type='hover' scrollbars='vertical'>
-      <Flex p='8' gap='5' direction='column'>
+    <ScrollArea ref={smooth} scrollbars='vertical' type='hover'>
+      <Flex direction='column' gap='5' p='8'>
         {messages.map(({ role, content, id }) => (
-          <Grid key={id} gap='3'>
-            <Content role={role} content={content} id={id} />
+          <Grid gap='3' key={id}>
+            <Content content={content} id={id} role={role} />
           </Grid>
         ))}
       </Flex>

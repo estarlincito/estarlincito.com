@@ -16,8 +16,8 @@
   ],
   "title": "Will you let Artificial Intelligence think for you?",
   "body": {
-    "raw": "\n<Introduction>\n\n> Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\n\n</Introduction>\n\n<Contents>\n\nArtificial Intelligence (AI) has become an increasingly prevalent tool in our lives. From virtual assistants on our mobile phones to the automation of processes in companies, AI has proven effective in problem-solving and decision-making. However, the question arises: should we allow AI to think for us in important matters? Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\n\nArtificial Intelligence (AI) is capable of making faster and more accurate decisions than humans. But is that enough to trust it completely? AI relies on data and algorithms, which means there can be biases in the information it receives and how it interprets that data. Additionally, AI lacks empathy and cannot take into account subjective and emotional aspects that are important in many decisions.\n\nTherefore, it's important that we remain aware of AI's limitations and continue to play an active role in decision-making. We should use AI as a tool to help us make informed decisions, but we shouldn't allow it to become the sole factor influencing our choices.\n\n<Image\n  alt='Critical thinking'\n  src='https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80'\n/>\n\nIt's also crucial to mention that AI is designed to perform specific tasks and cannot fully replace human decision-making. While in some cases AI can make quick and accurate decisions, it cannot grasp the complexities of human life, such as emotions and empathy. As a result, it’s essential for us to remain critical and reflective when making decisions.\n\nAI can be a useful tool in certain situations, but we should not completely delegate our decision-making ability to a machine. We must remain aware of AI’s limitations and use it as a resource to assist us in making informed choices. Ultimately, we should be the ones making the final decision, based on a combination of rational information and emotional considerations.\n\n</Contents>\n",
-    "code": "var Component=(()=>{var m=Object.create;var s=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var o in e)s(t,o,{get:e[o],enumerable:!0})},c=(t,e,o,n)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of f(e))!g.call(t,a)&&a!==o&&s(t,a,{get:()=>e[a],enumerable:!(n=h(e,a))||n.enumerable});return t};var k=(t,e,o)=>(o=t!=null?m(p(t)):{},c(e||!t||!t.__esModule?s(o,\"default\",{value:t,enumerable:!0}):o,t)),w=t=>c(s({},\"__esModule\",{value:!0}),t);var u=b((M,l)=>{l.exports=_jsx_runtime});var v={};y(v,{default:()=>A,frontmatter:()=>I});var i=k(u()),I={title:\"Will you let Artificial Intelligence think for you?\",category:\"Psychology\",subcategory:\"Critical Psychology\",publishedTime:\"04-17-2023\",modifiedTime:\"04-21-2023\",description:\"Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80\",coverAlt:\"ai\",check:!0,tags:[\"\"]};function d(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},t.components),{Introduction:o,Contents:n,Image:a}=e;return n||r(\"Contents\",!0),a||r(\"Image\",!0),o||r(\"Introduction\",!0),(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(o,{children:(0,i.jsxs)(e.blockquote,{children:[`\n`,(0,i.jsx)(e.p,{children:\"Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\"}),`\n`]})}),`\n`,(0,i.jsxs)(n,{children:[(0,i.jsx)(e.p,{children:\"Artificial Intelligence (AI) has become an increasingly prevalent tool in our lives. From virtual assistants on our mobile phones to the automation of processes in companies, AI has proven effective in problem-solving and decision-making. However, the question arises: should we allow AI to think for us in important matters? Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\"}),(0,i.jsx)(e.p,{children:\"Artificial Intelligence (AI) is capable of making faster and more accurate decisions than humans. But is that enough to trust it completely? AI relies on data and algorithms, which means there can be biases in the information it receives and how it interprets that data. Additionally, AI lacks empathy and cannot take into account subjective and emotional aspects that are important in many decisions.\"}),(0,i.jsx)(e.p,{children:\"Therefore, it's important that we remain aware of AI's limitations and continue to play an active role in decision-making. We should use AI as a tool to help us make informed decisions, but we shouldn't allow it to become the sole factor influencing our choices.\"}),(0,i.jsx)(a,{alt:\"Critical thinking\",src:\"https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80\"}),(0,i.jsx)(e.p,{children:\"It's also crucial to mention that AI is designed to perform specific tasks and cannot fully replace human decision-making. While in some cases AI can make quick and accurate decisions, it cannot grasp the complexities of human life, such as emotions and empathy. As a result, it\\u2019s essential for us to remain critical and reflective when making decisions.\"}),(0,i.jsx)(e.p,{children:\"AI can be a useful tool in certain situations, but we should not completely delegate our decision-making ability to a machine. We must remain aware of AI\\u2019s limitations and use it as a resource to assist us in making informed choices. Ultimately, we should be the ones making the final decision, based on a combination of rational information and emotional considerations.\"})]})]})}function x(t={}){let{wrapper:e}=t.components||{};return e?(0,i.jsx)(e,Object.assign({},t,{children:(0,i.jsx)(d,t)})):d(t)}var A=x;function r(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return w(v);})();\n;return Component;"
+    "raw": "\n<Contents>\n\nArtificial Intelligence (AI) has become an increasingly prevalent tool in our lives. From virtual assistants on our mobile phones to the automation of processes in companies, AI has proven effective in problem-solving and decision-making. However, the question arises: should we allow AI to think for us in important matters? Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\n\nArtificial Intelligence (AI) is capable of making faster and more accurate decisions than humans. But is that enough to trust it completely? AI relies on data and algorithms, which means there can be biases in the information it receives and how it interprets that data. Additionally, AI lacks empathy and cannot take into account subjective and emotional aspects that are important in many decisions.\n\nTherefore, it's important that we remain aware of AI's limitations and continue to play an active role in decision-making. We should use AI as a tool to help us make informed decisions, but we shouldn't allow it to become the sole factor influencing our choices.\n\n<Image\n  alt='Critical thinking'\n  src='https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80'\n/>\n\nIt's also crucial to mention that AI is designed to perform specific tasks and cannot fully replace human decision-making. While in some cases AI can make quick and accurate decisions, it cannot grasp the complexities of human life, such as emotions and empathy. As a result, it’s essential for us to remain critical and reflective when making decisions.\n\nAI can be a useful tool in certain situations, but we should not completely delegate our decision-making ability to a machine. We must remain aware of AI’s limitations and use it as a resource to assist us in making informed choices. Ultimately, we should be the ones making the final decision, based on a combination of rational information and emotional considerations.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var d=Object.create;var s=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var b=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),y=(t,e)=>{for(var i in e)s(t,i,{get:e[i],enumerable:!0})},r=(t,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let n of f(e))!g.call(t,n)&&n!==i&&s(t,n,{get:()=>e[n],enumerable:!(a=h(e,n))||a.enumerable});return t};var w=(t,e,i)=>(i=t!=null?d(p(t)):{},r(e||!t||!t.__esModule?s(i,\"default\",{value:t,enumerable:!0}):i,t)),x=t=>r(s({},\"__esModule\",{value:!0}),t);var l=b((M,c)=>{c.exports=_jsx_runtime});var v={};y(v,{default:()=>I,frontmatter:()=>k});var o=w(l()),k={title:\"Will you let Artificial Intelligence think for you?\",category:\"Psychology\",subcategory:\"Critical Psychology\",publishedTime:\"04-17-2023\",modifiedTime:\"04-21-2023\",description:\"Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80\",coverAlt:\"ai\",check:!0,tags:[\"\"]};function m(t){let e=Object.assign({p:\"p\"},t.components),{Contents:i,Image:a}=e;return i||u(\"Contents\",!0),a||u(\"Image\",!0),(0,o.jsxs)(i,{children:[(0,o.jsx)(e.p,{children:\"Artificial Intelligence (AI) has become an increasingly prevalent tool in our lives. From virtual assistants on our mobile phones to the automation of processes in companies, AI has proven effective in problem-solving and decision-making. However, the question arises: should we allow AI to think for us in important matters? Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?\"}),(0,o.jsx)(e.p,{children:\"Artificial Intelligence (AI) is capable of making faster and more accurate decisions than humans. But is that enough to trust it completely? AI relies on data and algorithms, which means there can be biases in the information it receives and how it interprets that data. Additionally, AI lacks empathy and cannot take into account subjective and emotional aspects that are important in many decisions.\"}),(0,o.jsx)(e.p,{children:\"Therefore, it's important that we remain aware of AI's limitations and continue to play an active role in decision-making. We should use AI as a tool to help us make informed decisions, but we shouldn't allow it to become the sole factor influencing our choices.\"}),(0,o.jsx)(a,{alt:\"Critical thinking\",src:\"https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80\"}),(0,o.jsx)(e.p,{children:\"It's also crucial to mention that AI is designed to perform specific tasks and cannot fully replace human decision-making. While in some cases AI can make quick and accurate decisions, it cannot grasp the complexities of human life, such as emotions and empathy. As a result, it\\u2019s essential for us to remain critical and reflective when making decisions.\"}),(0,o.jsx)(e.p,{children:\"AI can be a useful tool in certain situations, but we should not completely delegate our decision-making ability to a machine. We must remain aware of AI\\u2019s limitations and use it as a resource to assist us in making informed choices. Ultimately, we should be the ones making the final decision, based on a combination of rational information and emotional considerations.\"})]})}function A(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(m,t)})):m(t)}var I=A;function u(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return x(v);})();\n;return Component;"
   },
   "_id": "will-you-let-artificial-intelligence-think-for-you.mdx",
   "_raw": {
@@ -40,23 +40,21 @@
         "authors": [
           "Estarlincito"
         ],
+        "modifiedTime": "2023-04-21T04:00:00.000Z",
+        "publishedTime": "2023-04-17T04:00:00.000Z",
+        "section": "Psychology",
+        "tags": [
+          ""
+        ],
         "description": "Should we delegate our decision-making ability to a machine? Is it truly safe and reliable to trust AI to make decisions that affect our lives?",
         "images": [
           {
             "alt": "ai",
-            "url": "https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://plus.unsplash.com/premium_photo-1677094310919-d0361465d3be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80"
           }
         ],
         "locale": "en-US",
-        "modifiedTime": "2023-04-21T04:00:00.000Z",
-        "publishedTime": "2023-04-17T04:00:00.000Z",
-        "section": "Psychology",
         "siteName": "ImWriting",
-        "tags": [
-          ""
-        ],
         "title": "Will you let Artificial Intelligence think for you?",
         "url": "https://imwriting.estarlincito.com/articles/will-you-let-artificial-intelligence-think-for-you",
         "type": "article"
@@ -71,18 +69,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/psychology",
       "openGraph": {
-        "title": "Psychology",
         "description": "Here you will find useful information on topics such as emotional well-being, personal development, and mental health.",
         "images": [
           {
             "alt": "People forming a heart with their hands",
-            "url": "https://images.unsplash.com/photo-1586807480822-0e95ba6666ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1586807480822-0e95ba6666ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Psychology",
         "url": "https://imwriting.estarlincito.com/articles/psychology",
         "type": "website"
       },
@@ -91,6 +87,7 @@
     "pathnames": {
       "article": "/articles/will-you-let-artificial-intelligence-think-for-you",
       "category": "/articles/psychology",
+      "key": 57,
       "subcategory": "/articles/psychology/critical-psychology"
     },
     "subcategory": {
@@ -101,18 +98,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/psychology/critical-psychology",
       "openGraph": {
-        "title": "Critical Psychology",
         "description": "I am very glad you made it here. I hope you find useful and valuable information about critical psychology.",
         "images": [
           {
             "alt": "Woman in a long-sleeve black shirt using a MacBook",
-            "url": "https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Critical Psychology",
         "url": "https://imwriting.estarlincito.com/articles/psychology/critical-psychology",
         "type": "website"
       },
@@ -120,5 +115,5 @@
     }
   },
   "readingTime": "2 minutes",
-  "wordCount": 339
+  "wordCount": 311
 }

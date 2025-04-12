@@ -1,10 +1,18 @@
 'use client';
 
-import { Box, Flex, Separator } from '@radix-ui/themes';
 import { useForm } from 'react-hook-form';
 
-import { Breadcrumb, Summary, Title } from '../../../components/index.js';
-import { Form } from '../../../layouts/index.js';
+import {
+  Box,
+  Breadcrumb,
+  Button,
+  Flex,
+  Form,
+  Separator,
+  Summary,
+  Title,
+} from '@/components/ui/index.js';
+
 import onSubmit from './submit.js';
 
 export interface InputContact {
@@ -17,41 +25,71 @@ export interface InputContact {
 }
 
 const ContactForm = () => {
-  const { register, handleSubmit } = useForm<InputContact>();
+  const {
+    setError,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<InputContact>();
 
   return (
-    <Form
-      onSubmit={(e) => {
-        void handleSubmit(onSubmit)(e);
-      }}
-    >
+    <Form onSubmit={handleSubmit(onSubmit(setError))}>
       <Box mb='5'>
         <Breadcrumb
-          slug={[{ route: '/contact', title: 'Contact ' }]}
-          usePathname={() => ''}
+          links={[{ href: '/contact', title: 'Contact ' }]}
+          pathname=''
         />
-        <Title contents='Get in touch' my='2' />
-        <Summary contents='Seeks collaboration on building something impactful and sustainable!' />
-        <Separator size='4' mt='1' />
+        <Title content='Get in touch' my='2' />
+        <Summary content='Seeks collaboration on building something impactful and sustainable!' />
+        <Separator mt='1' size='4' />
       </Box>
 
       <Flex
-        justify='between'
-        gapX='2'
         direction={{ initial: 'column', md: 'row' }}
+        gapX='2'
+        justify='between'
       >
         <Box minWidth='270px'>
-          <Form.Field name='first-name' register={register} required />
+          <Form.Field
+            required
+            errors={errors['first-name']}
+            name='first-name'
+            register={register}
+          />
         </Box>
         <Box minWidth='270px'>
-          <Form.Field name='last-name' register={register} required />
+          <Form.Field
+            required
+            errors={errors['last-name']}
+            name='last-name'
+            register={register}
+          />
         </Box>
       </Flex>
-      <Form.Field name='company' register={register} />
-      <Form.Field name='phone-number' register={register} />
-      <Form.Field name='email' register={register} required />
-      <Form.Field name='message' register={register} textarea required />
-      <Form.Button label='Send message' />
+      <Form.Field
+        errors={errors['company']}
+        name='company'
+        register={register}
+      />
+      <Form.Field
+        errors={errors['phone-number']}
+        name='phone-number'
+        register={register}
+      />
+      <Form.Field
+        required
+        errors={errors['email']}
+        name='email'
+        register={register}
+      />
+      <Form.Field
+        required
+        textarea
+        errors={errors['message']}
+        name='message'
+        register={register}
+      />
+      <Button content='Send message' />
     </Form>
   );
 };

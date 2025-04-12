@@ -1,9 +1,8 @@
-import { Box, Grid } from '@radix-ui/themes';
 import { quotely } from '@repo/constants';
-import { Pagination, type SearchParams } from '@repo/ui';
+import { Box, Grid, Pagination, type SearchParams } from '@repo/ui';
 import type { z } from 'zod';
 
-import type { returnSchema } from '@/schemas/quotes/return';
+import type { returnSchema } from '@/schema/quotes/return';
 
 import Card from './card';
 
@@ -17,31 +16,29 @@ const QuoteList = ({
   limit,
   offset,
   route,
-}: Props) => {
-  return (
-    <Box>
-      <Grid
-        gap='1.25rem'
-        justify='center'
-        columns='repeat(auto-fill, 350px)'
-        mt='8'
-      >
-        {quotes.map((quote, id) => (
-          <Card {...quote} key={id} />
-        ))}
-      </Grid>
+}: Props) => (
+  <Box>
+    <Grid
+      columns='repeat(auto-fill, 350px)'
+      gap='1.25rem'
+      justify='center'
+      mt='8'
+    >
+      {quotes.map((quote) => (
+        <Card {...quote} key={quote.id} />
+      ))}
+    </Grid>
 
-      <Box m='5'>
-        <Pagination
-          count={count}
-          limit={limit}
-          offset={offset}
-          route={route}
-          title={quotely.quotes.title}
-        />
-      </Box>
+    <Box m='5'>
+      <Pagination
+        count={count}
+        limit={limit}
+        offset={offset}
+        route={route}
+        title={quotely.quotes.title}
+      />
     </Box>
-  );
-};
+  </Box>
+);
 
 export default QuoteList;

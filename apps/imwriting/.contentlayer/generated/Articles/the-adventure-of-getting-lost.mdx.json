@@ -17,8 +17,8 @@
   ],
   "title": "The Adventure of Getting Lost",
   "body": {
-    "raw": "\n<Introduction>\n\n> Life’s challenges aren’t obstacles; they’re the adventures that shape us. Embrace the journey and discover strength in every setback.\n\n</Introduction>\n\n<Contents>\n\n{/* <Audio src='' type='audio/mp3' /> */}\n\n{/* > _&quot;.....&quot;_ <br/> **-Anonymous-** */}\n\nAlong the way of life, I got lost. It wasn’t sudden, nor was it dramatic—it happened little by little, through distractions, stumbles, and empty promises. One day, I woke up and realized I was on an unfamiliar path, with no map, no compass, and a bag full of doubts.\n\nThe first obstacle was money. I needed more, but every time I reached out, the world seemed to shut the door in my face. The jobs I found didn’t pay what my effort was worth, the opportunities seemed reserved for others, and the idea of a life where I could simply go out and get what I needed—like in an adventure—felt distant.\n\nI grew frustrated. I cursed the system, luck, and even my own reflection. But in the midst of it all, something inside me awakened. I remembered that every hero in an adventure faces monsters before finding the treasure. And that’s when I understood: problems aren’t punishments—they’re challenges.\n\nIf the path was full of obstacles, then that meant I was in a story worth telling. A journey without struggles is a journey without purpose. So, I took hold of the wheel of my life and decided to push forward.\n\nI didn’t find a magical solution right away. I stumbled many more times. But every time I fell, I got back up with more experience. I learned to seek opportunities outside of traditional paths, to use my skills in new ways, and to trust that every barrier I overcame made me stronger.\n\nOver time, I realized that life is an adventure—just not like in games or stories. Here, there’s no clear guide, no predictable final boss. But that’s what makes it special. What truly matters is not just the destination, but how we choose to face the journey.\n\nAlong the way, I got lost, yes. But in losing myself, I found who I really am.\n\n</Contents>\n",
-    "code": "var Component=(()=>{var c=Object.create;var a=Object.defineProperty;var m=Object.getOwnPropertyDescriptor;var f=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),w=(t,e)=>{for(var o in e)a(t,o,{get:e[o],enumerable:!0})},i=(t,e,o,s)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of f(e))!g.call(t,r)&&r!==o&&a(t,r,{get:()=>e[r],enumerable:!(s=m(e,r))||s.enumerable});return t};var b=(t,e,o)=>(o=t!=null?c(p(t)):{},i(e||!t||!t.__esModule?a(o,\"default\",{value:t,enumerable:!0}):o,t)),I=t=>i(a({},\"__esModule\",{value:!0}),t);var h=y((A,d)=>{d.exports=_jsx_runtime});var x={};w(x,{default:()=>k,frontmatter:()=>v});var n=b(h()),v={title:\"The Adventure of Getting Lost\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"03-05-2025\",modifiedTime:\"03-05-2025\",description:\"Life\\u2019s challenges aren\\u2019t obstacles; they\\u2019re the adventures that shape us. Embrace the journey and discover strength in every setback.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/the-adventure-of-getting-lost/image.jpeg\",coverAlt:\"Along the way of life\",check:!0,tags:[\"\\u2018adventure\\u2019\",\"\\u2018self-growth\\u2019\"]};function l(t){let e=Object.assign({blockquote:\"blockquote\",p:\"p\"},t.components),{Introduction:o,Contents:s}=e;return s||u(\"Contents\",!0),o||u(\"Introduction\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(o,{children:(0,n.jsxs)(e.blockquote,{children:[`\n`,(0,n.jsx)(e.p,{children:\"Life\\u2019s challenges aren\\u2019t obstacles; they\\u2019re the adventures that shape us. Embrace the journey and discover strength in every setback.\"}),`\n`]})}),`\n`,(0,n.jsxs)(s,{children:[(0,n.jsx)(e.p,{children:\"Along the way of life, I got lost. It wasn\\u2019t sudden, nor was it dramatic\\u2014it happened little by little, through distractions, stumbles, and empty promises. One day, I woke up and realized I was on an unfamiliar path, with no map, no compass, and a bag full of doubts.\"}),(0,n.jsx)(e.p,{children:\"The first obstacle was money. I needed more, but every time I reached out, the world seemed to shut the door in my face. The jobs I found didn\\u2019t pay what my effort was worth, the opportunities seemed reserved for others, and the idea of a life where I could simply go out and get what I needed\\u2014like in an adventure\\u2014felt distant.\"}),(0,n.jsx)(e.p,{children:\"I grew frustrated. I cursed the system, luck, and even my own reflection. But in the midst of it all, something inside me awakened. I remembered that every hero in an adventure faces monsters before finding the treasure. And that\\u2019s when I understood: problems aren\\u2019t punishments\\u2014they\\u2019re challenges.\"}),(0,n.jsx)(e.p,{children:\"If the path was full of obstacles, then that meant I was in a story worth telling. A journey without struggles is a journey without purpose. So, I took hold of the wheel of my life and decided to push forward.\"}),(0,n.jsx)(e.p,{children:\"I didn\\u2019t find a magical solution right away. I stumbled many more times. But every time I fell, I got back up with more experience. I learned to seek opportunities outside of traditional paths, to use my skills in new ways, and to trust that every barrier I overcame made me stronger.\"}),(0,n.jsx)(e.p,{children:\"Over time, I realized that life is an adventure\\u2014just not like in games or stories. Here, there\\u2019s no clear guide, no predictable final boss. But that\\u2019s what makes it special. What truly matters is not just the destination, but how we choose to face the journey.\"}),(0,n.jsx)(e.p,{children:\"Along the way, I got lost, yes. But in losing myself, I found who I really am.\"})]})]})}function j(t={}){let{wrapper:e}=t.components||{};return e?(0,n.jsx)(e,Object.assign({},t,{children:(0,n.jsx)(l,t)})):l(t)}var k=j;function u(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return I(x);})();\n;return Component;"
+    "raw": "\n<Contents>\n\n{/* <Audio src='' type='audio/mp3' /> */}\n\n{/* > _&quot;.....&quot;_ <br/> **-Anonymous-** */}\n\nAlong the way of life, I got lost. It wasn’t sudden, nor was it dramatic—it happened little by little, through distractions, stumbles, and empty promises. One day, I woke up and realized I was on an unfamiliar path, with no map, no compass, and a bag full of doubts.\n\nThe first obstacle was money. I needed more, but every time I reached out, the world seemed to shut the door in my face. The jobs I found didn’t pay what my effort was worth, the opportunities seemed reserved for others, and the idea of a life where I could simply go out and get what I needed—like in an adventure—felt distant.\n\nI grew frustrated. I cursed the system, luck, and even my own reflection. But in the midst of it all, something inside me awakened. I remembered that every hero in an adventure faces monsters before finding the treasure. And that’s when I understood: problems aren’t punishments—they’re challenges.\n\nIf the path was full of obstacles, then that meant I was in a story worth telling. A journey without struggles is a journey without purpose. So, I took hold of the wheel of my life and decided to push forward.\n\nI didn’t find a magical solution right away. I stumbled many more times. But every time I fell, I got back up with more experience. I learned to seek opportunities outside of traditional paths, to use my skills in new ways, and to trust that every barrier I overcame made me stronger.\n\nOver time, I realized that life is an adventure—just not like in games or stories. Here, there’s no clear guide, no predictable final boss. But that’s what makes it special. What truly matters is not just the destination, but how we choose to face the journey.\n\nAlong the way, I got lost, yes. But in losing myself, I found who I really am.\n\n</Contents>\n",
+    "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var c=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var y=(t,e)=>()=>(e||t((e={exports:{}}).exports,e),e.exports),g=(t,e)=>{for(var n in e)a(t,n,{get:e[n],enumerable:!0})},i=(t,e,n,r)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let s of m(e))!p.call(t,s)&&s!==n&&a(t,s,{get:()=>e[s],enumerable:!(r=c(e,s))||r.enumerable});return t};var w=(t,e,n)=>(n=t!=null?u(f(t)):{},i(e||!t||!t.__esModule?a(n,\"default\",{value:t,enumerable:!0}):n,t)),b=t=>i(a({},\"__esModule\",{value:!0}),t);var l=y((_,d)=>{d.exports=_jsx_runtime});var x={};g(x,{default:()=>j,frontmatter:()=>I});var o=w(l()),I={title:\"The Adventure of Getting Lost\",category:\"Philosophy\",subcategory:\"Reflections\",publishedTime:\"03-05-2025\",modifiedTime:\"03-05-2025\",description:\"Life\\u2019s challenges aren\\u2019t obstacles; they\\u2019re the adventures that shape us. Embrace the journey and discover strength in every setback.\",authors:[\"Estarlincito\"],avatar:\"/assets/avatar.jpeg\",cover:\"/assets/the-adventure-of-getting-lost/image.jpeg\",coverAlt:\"Along the way of life\",check:!0,tags:[\"\\u2018adventure\\u2019\",\"\\u2018self-growth\\u2019\"]};function h(t){let e=Object.assign({p:\"p\"},t.components),{Contents:n}=e;return n||k(\"Contents\",!0),(0,o.jsxs)(n,{children:[(0,o.jsx)(e.p,{children:\"Along the way of life, I got lost. It wasn\\u2019t sudden, nor was it dramatic\\u2014it happened little by little, through distractions, stumbles, and empty promises. One day, I woke up and realized I was on an unfamiliar path, with no map, no compass, and a bag full of doubts.\"}),(0,o.jsx)(e.p,{children:\"The first obstacle was money. I needed more, but every time I reached out, the world seemed to shut the door in my face. The jobs I found didn\\u2019t pay what my effort was worth, the opportunities seemed reserved for others, and the idea of a life where I could simply go out and get what I needed\\u2014like in an adventure\\u2014felt distant.\"}),(0,o.jsx)(e.p,{children:\"I grew frustrated. I cursed the system, luck, and even my own reflection. But in the midst of it all, something inside me awakened. I remembered that every hero in an adventure faces monsters before finding the treasure. And that\\u2019s when I understood: problems aren\\u2019t punishments\\u2014they\\u2019re challenges.\"}),(0,o.jsx)(e.p,{children:\"If the path was full of obstacles, then that meant I was in a story worth telling. A journey without struggles is a journey without purpose. So, I took hold of the wheel of my life and decided to push forward.\"}),(0,o.jsx)(e.p,{children:\"I didn\\u2019t find a magical solution right away. I stumbled many more times. But every time I fell, I got back up with more experience. I learned to seek opportunities outside of traditional paths, to use my skills in new ways, and to trust that every barrier I overcame made me stronger.\"}),(0,o.jsx)(e.p,{children:\"Over time, I realized that life is an adventure\\u2014just not like in games or stories. Here, there\\u2019s no clear guide, no predictable final boss. But that\\u2019s what makes it special. What truly matters is not just the destination, but how we choose to face the journey.\"}),(0,o.jsx)(e.p,{children:\"Along the way, I got lost, yes. But in losing myself, I found who I really am.\"})]})}function v(t={}){let{wrapper:e}=t.components||{};return e?(0,o.jsx)(e,Object.assign({},t,{children:(0,o.jsx)(h,t)})):h(t)}var j=v;function k(t,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+t+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(x);})();\n;return Component;"
   },
   "_id": "the-adventure-of-getting-lost.mdx",
   "_raw": {
@@ -41,24 +41,22 @@
         "authors": [
           "Estarlincito"
         ],
-        "description": "Life’s challenges aren’t obstacles; they’re the adventures that shape us. Embrace the journey and discover strength in every setback.",
-        "images": [
-          {
-            "alt": "Along the way of life",
-            "url": "/assets/the-adventure-of-getting-lost/image.jpeg",
-            "height": 600,
-            "width": 800
-          }
-        ],
-        "locale": "en-US",
         "modifiedTime": "2025-03-05T04:00:00.000Z",
         "publishedTime": "2025-03-05T04:00:00.000Z",
         "section": "Philosophy",
-        "siteName": "ImWriting",
         "tags": [
           "‘adventure’",
           "‘self-growth’"
         ],
+        "description": "Life’s challenges aren’t obstacles; they’re the adventures that shape us. Embrace the journey and discover strength in every setback.",
+        "images": [
+          {
+            "alt": "Along the way of life",
+            "url": "/assets/the-adventure-of-getting-lost/image.jpeg"
+          }
+        ],
+        "locale": "en-US",
+        "siteName": "ImWriting",
         "title": "The Adventure of Getting Lost",
         "url": "https://imwriting.estarlincito.com/articles/the-adventure-of-getting-lost",
         "type": "article"
@@ -73,18 +71,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy",
       "openGraph": {
-        "title": "Philosophy",
         "description": "If you are looking for something that inspires you and helps you reflect on your life and surroundings, this is your place!",
         "images": [
           {
             "alt": "A collection of books on a wooden shelf.",
-            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-            "height": 600,
-            "width": 800
+            "url": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Philosophy",
         "url": "https://imwriting.estarlincito.com/articles/philosophy",
         "type": "website"
       },
@@ -93,6 +89,7 @@
     "pathnames": {
       "article": "/articles/the-adventure-of-getting-lost",
       "category": "/articles/philosophy",
+      "key": 42,
       "subcategory": "/articles/philosophy/reflections"
     },
     "subcategory": {
@@ -103,18 +100,16 @@
       },
       "metadataBase": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
       "openGraph": {
-        "title": "Reflections",
         "description": "Here you will find some of my reflections and lessons I have learned from life.",
         "images": [
           {
             "alt": "Young person reflecting",
-            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg",
-            "height": 600,
-            "width": 800
+            "url": "https://cdn.pixabay.com/photo/2021/06/10/05/03/man-6325009_1280.jpg"
           }
         ],
         "locale": "en-US",
         "siteName": "ImWriting",
+        "title": "Reflections",
         "url": "https://imwriting.estarlincito.com/articles/philosophy/reflections",
         "type": "website"
       },
@@ -122,5 +117,5 @@
     }
   },
   "readingTime": "2 minutes",
-  "wordCount": 352
+  "wordCount": 330
 }

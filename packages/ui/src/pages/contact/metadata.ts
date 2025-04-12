@@ -8,8 +8,8 @@ export const contactMeta = ({
   locale: string;
   siteName: string;
   url: string;
-}) => {
-  return GenerateMetadata.website({
+}) =>
+  GenerateMetadata.website({
     description:
       'Seeks collaboration on building something impactful and sustainable!',
     images: [
@@ -23,4 +23,3 @@ export const contactMeta = ({
     title: 'Contact',
     url: `${url}/contact`,
   });
-};

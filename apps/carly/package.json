@@ -8,8 +8,7 @@
     "check-unused": "depcheck",
     "dev": "next dev --port 3003",
     "find-deadcode": "ts-prune --ignore '.next'",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },
   "dependencies": {
@@ -17,12 +16,12 @@
     "@ai-sdk/react": "^1.2.5",
     "@radix-ui/react-form": "^0.1.2",
     "@repo/constants": "workspace:*",
+    "@repo/hooks": "workspace:*",
+    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*",
-    "ai": "^4.2.10",
-    "react-markdown": "^10.1.0"
+    "ai": "^4.2.10"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*"
-
   }
 }

@@ -1,9 +1,6 @@
-import React from 'react';
+import { Box } from '@repo/ui';
+import type { ReactNode } from 'react';
 
-import Props from '@/types/children';
-
-const Empty = ({ children }: Props) => {
-  return <>{children}</>;
-};
+const Empty = ({ children }: { children: ReactNode }) => <Box>{children}</Box>;
 
 export default Empty;

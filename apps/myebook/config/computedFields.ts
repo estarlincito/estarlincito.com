@@ -7,6 +7,7 @@ export const computedFields: ComputedFields = {
   meta: {
     resolve: (doc) => {
       const { authors, genres, ebook, publisher } = meta(doc);
+
       return {
         authors,
         ebook,
