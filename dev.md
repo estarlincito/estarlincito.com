@@ -1,4 +1,11 @@
 ```bash
-cd apps/budget
-vercel build --prod --yes
+pnpm why <name-of-pkg>
+```
+
+```bash
+npx turbo run build --filter=estarlincito
+```
+
+```bash
+pnpm turbo build --filter=estarlincito... --dry-run
 ```

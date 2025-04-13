@@ -6,5 +6,3 @@ export default [
   { ignores: ['dbschema'] },
   { ...restrictedImports },
 ];
-
-//    ignores: ["**/dist/*", "**/node_modules/"],

@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "check-unused": "depcheck",
     "dev": "next dev --turbopack --port 3000",
-    "find-deadcode": "ts-prune --ignore '.next'",
+    "check-unused": "pnpm exec check-unused",
     "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
     "start": "next start"
   },

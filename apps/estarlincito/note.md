@@ -69,3 +69,4 @@ File: app/api/auth/logout/route.ts
 
 1.  When logging in, cookies are automatically handled with credentials: 'include'.
 2.  Ensure cookies are sent with all protected requests.
+3.
