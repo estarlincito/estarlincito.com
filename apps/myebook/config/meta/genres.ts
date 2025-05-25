@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-imports */
+// eslint-disable-next-line no-restricted-imports
 import { Meta } from './meta';
 
 new Meta({
@@ -8,7 +8,7 @@ new Meta({
 });
 
 // Inset the new Meta over there
-export const meta_genres = new Meta({
+export const metaGenres = new Meta({
   description: '',
   images: [{ alt: '', url: '' }],
   title: '',

@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-imports */
+// eslint-disable-next-line no-restricted-imports
 import { Meta } from './meta';
 
 new Meta({
@@ -8,7 +8,7 @@ new Meta({
 });
 
 // Inset the new Meta over there
-export const meta_author = new Meta({
+export const metaAuthor = new Meta({
   description: '',
   images: [{ alt: '', url: '' }],
   title: '',

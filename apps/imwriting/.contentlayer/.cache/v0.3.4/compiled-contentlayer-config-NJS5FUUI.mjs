@@ -8,19 +8,17 @@ import { defineDocumentType } from "contentlayer/source-files";
 import readingTime from "reading-time";
 
 // config/meta.ts
-import { GenerateMetadata, throwAppError, toSlug } from "@estarlincito/utils";
+import {
+  GenerateMetadata,
+  isDev,
+  throwAppError,
+  toSlug
+} from "@estarlincito/utils";
 import { readFileSync } from "fs";
 import yaml from "yaml";
-
-// settings/index.ts
-import { copyright as getCopyright } from "@estarlincito/utils";
-import { getHost } from "@repo/lib/host";
-var copyright = getCopyright(2024);
+var url = isDev ? "http://localhost:3002" : "https://imwriting.estarlincito.com";
 var locale = "en-US";
 var siteName = "ImWriting";
-var url = getHost("imwriting");
-
-// config/meta.ts
 var getMeta = async (title) => {
   const categoriesData = readFileSync(
     `${process.cwd()}/config/categories.yaml`,
@@ -201,4 +199,4 @@ var contentlayer_config_default = contentLayerConfig;
 export {
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-RFXVLU2T.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-NJS5FUUI.mjs.map

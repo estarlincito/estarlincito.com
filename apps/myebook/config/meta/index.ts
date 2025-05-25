@@ -1,15 +1,15 @@
 /* eslint-disable no-restricted-imports */
 import { GenerateMetadata, type Metadata, toSlug } from '@estarlincito/utils';
-import type { Instances } from 'config/types/instances';
 import { type LocalDocument } from 'contentlayer/source-files';
 
-// import { locale, siteName } from '../../src/settings';
-import { meta_author } from './author';
-import { meta_genres } from './genres';
-import { meta_publisher } from './publisher';
+import { locale, siteName, url } from '../../settings';
+import type { Instances } from '../types/instances';
+import { metaAuthor } from './author';
+import { metaGenres } from './genres';
+import { metaPublisher } from './publisher';
 
-const locale = 'en-US';
-const siteName = 'MyEbook';
+// const locale = 'en-US';
+// const siteName = 'MyEbook';
 
 const getMeta = (title: string, data: Instances[]) => {
   const value = data.find((item) => item.title === title);
@@ -17,6 +17,8 @@ const getMeta = (title: string, data: Instances[]) => {
     // eslint-disable-next-line safeguard/no-raw-error
     throw new Error('This properties not fount on descriptions');
   }
+  // eslint-disable-next-line no-console
+  console.log(url);
   return value;
 };
 
@@ -40,7 +42,7 @@ export const meta = (doc: LocalDocument) => {
     locale,
     siteName,
     url: `https://myebook.estarlincito.com/ebooks/${toSlug(doc.publisher)}`,
-    ...getMeta(doc.publisher, meta_publisher),
+    ...getMeta(doc.publisher, metaPublisher),
   });
 
   // genres
@@ -50,7 +52,7 @@ export const meta = (doc: LocalDocument) => {
         locale,
         siteName,
         url: `https://myebook.estarlincito.com/ebooks/${toSlug(genre)}`,
-        ...getMeta(genre, meta_genres),
+        ...getMeta(genre, metaGenres),
       }),
   );
 
@@ -61,7 +63,7 @@ export const meta = (doc: LocalDocument) => {
         locale,
         siteName,
         url: `https://myebook.estarlincito.com/ebooks/${toSlug(author)}`,
-        ...getMeta(author, meta_author),
+        ...getMeta(author, metaAuthor),
       }),
   );
 

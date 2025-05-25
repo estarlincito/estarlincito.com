@@ -24,7 +24,7 @@ const icons = `
       shortcut: string;
     };`;
 
-export const meta_types = `{
+export const metaTypes = `{
   authors: {
     ${base}
     openGraph: ${openGraph}

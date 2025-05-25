@@ -1,5 +1,7 @@
 import { ObjectUtils, throwAppError } from '@estarlincito/utils';
-import type { Instances } from 'config/types/instances';
+
+// eslint-disable-next-line no-restricted-imports
+import type { Instances } from '../types/instances';
 
 export class Meta {
   private static readonly instances: Instances[] = [];

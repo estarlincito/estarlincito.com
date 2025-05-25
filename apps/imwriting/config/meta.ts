@@ -1,11 +1,22 @@
 /* eslint-disable no-restricted-imports */
-import { GenerateMetadata, throwAppError, toSlug } from '@estarlincito/utils';
+import {
+  GenerateMetadata,
+  isDev,
+  throwAppError,
+  toSlug,
+} from '@estarlincito/utils';
 import type { LocalDocument } from 'contentlayer/source-files';
 import { readFileSync } from 'fs';
 import yaml from 'yaml';
 
-import { locale, siteName, url } from '../settings';
 import type { Instances } from './types/instances';
+
+const url = isDev
+  ? 'http://localhost:3002'
+  : 'https://imwriting.estarlincito.com';
+
+const locale = 'en-US';
+const siteName = 'ImWriting';
 
 const getMeta = async (title: string) => {
   const categoriesData = readFileSync(

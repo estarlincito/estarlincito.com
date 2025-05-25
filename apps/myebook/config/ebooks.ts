@@ -1,6 +1,6 @@
-/* eslint-disable no-restricted-imports */
 import { defineDocumentType, type FieldDefs } from 'contentlayer/source-files';
 
+// eslint-disable-next-line no-restricted-imports
 import { computedFields } from './computedFields';
 
 const fields: FieldDefs = {

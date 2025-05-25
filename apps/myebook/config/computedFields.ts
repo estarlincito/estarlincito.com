@@ -2,7 +2,7 @@
 import { type ComputedFields } from 'contentlayer/source-files';
 
 import { meta } from './meta';
-import { meta_types } from './types/meta';
+import { metaTypes } from './types/meta';
 
 export const computedFields: ComputedFields = {
   meta: {
@@ -16,6 +16,6 @@ export const computedFields: ComputedFields = {
         publisher,
       };
     },
-    type: meta_types as 'string',
+    type: metaTypes as 'string',
   },
 };
