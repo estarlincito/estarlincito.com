@@ -3,21 +3,26 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "exports": {
+    "./*": "./*.ts",
+    "./middleware": "./middleware/index.ts"
+  },
   "bin": {
-    "check-unused": "./dist/check-unused.js"
+    "check-unused": "./check-unused.js"
   },
   "scripts": {
-    "build": "pnpm lint && tsc",
-    "lint": "eslint --ext .js,.ts . && pnpm tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "jose": "^6.0.10"
+    "@estarlincito/utils": "^2.5.4",
+    "depcheck": "^1.4.7",
+    "jose": "^6.0.11",
+    "zod": "^3.24.4"
   },
   "devDependencies": {
-    "@estarlincito/eslint": "^1.7.7",
+    "@repo/types": "workspace:*",
     "@repo/typescript-config": "workspace:*"
   }
 }

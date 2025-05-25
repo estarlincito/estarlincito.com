@@ -1,14 +1,14 @@
-import { num } from '@estarlincito/utils';
+/* eslint-disable no-restricted-imports */
 import { type ComputedFields } from 'contentlayer/source-files';
 import readingTime from 'reading-time';
 
-import meta from './meta';
-import metaTypes from './types/meta';
+import { meta } from './meta';
+import { metaTypes } from './types/meta';
 
 const displayed = (minutes: number) => {
   const round = Math.ceil(minutes);
 
-  return round === num('1') ? `${round} minute` : `${round} minutes`;
+  return round === 1 ? `${round} minute` : `${round} minutes`;
 };
 
 export const computedFields: ComputedFields = {

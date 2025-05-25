@@ -3,21 +3,24 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "contentlayer/generated": ["./.contentlayer/generated"],
-      "@dbschema/edgeql-js": ["./dbschema/edgeql-js"],
-      "@/*": ["src/*"]
+      "@repo/*": ["../../packages/*"],
+      "@app/*": ["../../apps/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
-    "isolatedModules": true
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
-    "**/*.mdx",
+    "next-env.d.ts",
+    "next.config.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".contentlayer/generated",
-    "next-env.d.ts",
     ".next/types/**/*.ts",
-    "eslint.config.js",
-    "public/ebooks/.ebooks2.mdx"
+    ".contentlayer/generated",
+    "eslint.config.js"
   ],
-  "exclude": ["node_modules", "public"]
+  "exclude": ["node_modules"]
 }

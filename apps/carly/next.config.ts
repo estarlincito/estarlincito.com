@@ -1,15 +1,2 @@
-import type { NextConfig } from 'next';
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        hostname: '*',
-        pathname: '/**',
-        protocol: 'https',
-      },
-    ],
-  },
-  reactStrictMode: true,
-};
-
-export default nextConfig;
+import { defaultConfig } from '@repo/next-config';
+export default defaultConfig;

@@ -1,17 +1,11 @@
-import {
-  GenerateMetadata,
-  handleError,
-  num,
-  toSlug,
-} from '@estarlincito/utils';
-import { imwriting } from '@repo/constants';
+/* eslint-disable no-restricted-imports */
+import { GenerateMetadata, throwAppError, toSlug } from '@estarlincito/utils';
 import type { LocalDocument } from 'contentlayer/source-files';
-import yaml from 'yaml';
-const { locale, siteName } = imwriting;
-
 import { readFileSync } from 'fs';
+import yaml from 'yaml';
 
-import type Instances from './types/instances';
+import { locale, siteName, url } from '../settings';
+import type { Instances } from './types/instances';
 
 const getMeta = async (title: string) => {
   const categoriesData = readFileSync(
@@ -22,12 +16,12 @@ const getMeta = async (title: string) => {
   const data = yaml.parse(categoriesData).categories as Instances[];
   const value = data.find((item) => item.title === title);
   if (value === undefined) {
-    handleError('This properties not fount on descriptions');
+    throwAppError('This properties not fount on descriptions');
   }
   return value;
 };
 let keyCounter = 0;
-const meta = async (doc: LocalDocument) => {
+export const meta = async (doc: LocalDocument) => {
   const {
     authors,
     description,
@@ -44,7 +38,7 @@ const meta = async (doc: LocalDocument) => {
   const pathnames = {
     article: `/articles/${_raw.flattenedPath}`,
     category: `/articles/${toSlug(doc.category)}`,
-    key: (keyCounter += num('1')),
+    key: (keyCounter += 1),
     subcategory: `/articles/${toSlug(doc.category)}/${toSlug(doc.subcategory)}`,
   };
   // Creating article
@@ -59,7 +53,7 @@ const meta = async (doc: LocalDocument) => {
     siteName,
     tags: tags._array,
     title,
-    url: `${imwriting.url}${pathnames.article}`,
+    url: `${url}${pathnames.article}`,
   });
   // Creating category
   const categoryMeta = await getMeta(doc.category);
@@ -67,7 +61,7 @@ const meta = async (doc: LocalDocument) => {
     ...categoryMeta,
     locale,
     siteName,
-    url: `${imwriting.url}${pathnames.category}`,
+    url: `${url}${pathnames.category}`,
   });
   // Creating subcategory
   const subCategoryMeta = await getMeta(doc.subcategory);
@@ -75,10 +69,8 @@ const meta = async (doc: LocalDocument) => {
     ...subCategoryMeta,
     locale,
     siteName,
-    url: `${imwriting.url}${pathnames.subcategory}`,
+    url: `${url}${pathnames.subcategory}`,
   });
 
   return { article, category, pathnames, subcategory };
 };
-
-export default meta;

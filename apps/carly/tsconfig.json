@@ -3,18 +3,23 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@repo/*": ["../../packages/*"],
+      "@app/*": ["../../apps/*"]
     },
-    "isolatedModules": true
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
+
   "include": [
-    "**/*.mdx",
+    "next-env.d.ts",
+    "next.config.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".contentlayer/generated",
-    "next-env.d.ts",
     ".next/types/**/*.ts",
     "eslint.config.js"
   ],
-  "exclude": ["node_modules", "public"]
+  "exclude": ["node_modules"]
 }

@@ -1,11 +1,11 @@
-import { handleError, ObjectUtils } from '@estarlincito/utils';
-import type Instances from 'config/types/instances';
+import { ObjectUtils, throwAppError } from '@estarlincito/utils';
+import type { Instances } from 'config/types/instances';
 
-class Meta {
+export class Meta {
   private static readonly instances: Instances[] = [];
   constructor(private readonly metadata: Instances) {
     if (Meta.instances.find((item) => item.title)) {
-      handleError(
+      throwAppError(
         'This item already exists in the instances of Meta config/meta/meta.ts',
       );
     }
@@ -23,5 +23,3 @@ class Meta {
     return Meta.instances;
   }
 }
-
-export default Meta;

@@ -24,7 +24,7 @@ const icons = `
       shortcut: string;
     };`;
 
-const meta_types = `{
+export const meta_types = `{
   authors: {
     ${base}
     openGraph: ${openGraph}
@@ -62,5 +62,3 @@ const meta_types = `{
   icons: ${icons}
 };
 }`;
-
-export default meta_types;

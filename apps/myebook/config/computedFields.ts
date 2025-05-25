@@ -1,7 +1,8 @@
+/* eslint-disable no-restricted-imports */
 import { type ComputedFields } from 'contentlayer/source-files';
 
-import meta from './meta';
-import meta_types from './types/meta';
+import { meta } from './meta';
+import { meta_types } from './types/meta';
 
 export const computedFields: ComputedFields = {
   meta: {

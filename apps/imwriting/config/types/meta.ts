@@ -42,7 +42,7 @@ const Article = `{
   ${base};
 }`;
 
-const metaTypes = `{
+export const metaTypes = `{
   article: ${Article};
   category: {${Website}};
   subcategory: {${Website}};
@@ -53,5 +53,3 @@ const metaTypes = `{
     key: number;
 };
 }`;
-
-export default metaTypes;

@@ -4,7 +4,7 @@
 - Add description on hover over the card
 - Section to indicate when documents are loading
 - [Radix UI Toast](https://www.radix-ui.com/primitives/docs/components/toast)
-- Wrapper from '@/components/wrapper'?
+- Wrapper from '@app/estarlincito/components/wrapper'?
 - 404 UI
 - Suspense fallback
 

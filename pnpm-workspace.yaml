@@ -1,11 +1,3 @@
 packages:
-  - apps/*
-  - packages/*
-
-onlyBuiltDependencies:
-  - '@swc/core'
-  - bcrypt
-  - contentlayer
-  - esbuild
-  - protobufjs
-  - sharp
+  - "apps/*"
+  - "packages/*"

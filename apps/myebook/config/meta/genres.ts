@@ -1,4 +1,5 @@
-import Meta from './meta';
+/* eslint-disable no-restricted-imports */
+import { Meta } from './meta';
 
 new Meta({
   description: '',
@@ -7,9 +8,8 @@ new Meta({
 });
 
 // Inset the new Meta over there
-const meta_genres = new Meta({
+export const meta_genres = new Meta({
   description: '',
   images: [{ alt: '', url: '' }],
   title: '',
 }).meta;
-export default meta_genres;

@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-imports */
 import { defineDocumentType, type FieldDefs } from 'contentlayer/source-files';
 
 import { computedFields } from './computedFields';
@@ -21,12 +22,10 @@ const fields: FieldDefs = {
   title: { required: true, type: 'string' },
 };
 
-const Articles = defineDocumentType(() => ({
+export const Articles = defineDocumentType(() => ({
   computedFields,
   contentType: 'mdx',
   fields,
   filePathPattern: '**.mdx',
   name: 'Articles',
 }));
-
-export default Articles;

@@ -1,17 +1,3 @@
-import { type NextConfig, withContentlayer } from 'next-contentlayer';
-
-/** @type {import('next').NextConfig} */
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        hostname: '*',
-        pathname: '/**',
-        protocol: 'https',
-      },
-    ],
-  },
-  reactStrictMode: true,
-};
-
-module.exports = withContentlayer(nextConfig);
+import { defaultConfig } from '@repo/next-config';
+import { withContentlayer } from 'next-contentlayer';
+export default withContentlayer(defaultConfig);

@@ -5,20 +5,41 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": ["EDGEDB_INSTANCE", "EDGEDB_SECRET_KEY", "SECRET", "NODE_ENV"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
+    "myebook#build": {
+      "dependsOn": [],
+      "outputs": [".contentlayer/**", ".next/**"]
+    },
+    "imwriting#build": {
+      "dependsOn": [],
+      "outputs": [".contentlayer/**", ".next/**"]
+    },
+    "estarlincito#build": {
+      "dependsOn": ["myebook#build", "imwriting#build"],
+      "outputs": [".next/**"]
     },
     "check-unused": {
-      "dependsOn": ["^check-unused"]
+      "dependsOn": ["^check-unused"],
+      "cache": false
+    },
+    "clean": {
+      "dependsOn": ["^clean"],
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "cache": false
     },
     "check-types": {
-      "dependsOn": ["^check-types"]
+      "dependsOn": ["^check-types"],
+      "cache": false
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
     }
   }
 }

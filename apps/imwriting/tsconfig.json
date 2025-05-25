@@ -3,26 +3,25 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "contentlayer/generated": [
-        "./.contentlayer/generated"
-      ],
-      "@/*": [
-        "src/*"
-      ]
+      "@repo/*": ["../../packages/*"],
+      "@app/*": ["../../apps/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "isolatedModules": true
   },
   "include": [
-    "**/*.mdx",
+    "next-env.d.ts",
+    "next.config.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".contentlayer/generated",
-    "next-env.d.ts",
     ".next/types/**/*.ts",
-    "eslint.config.js"
+    "eslint.config.js",
+    ".contentlayer/generated"
   ],
-  "exclude": [
-    "node_modules",
-    "public"
-  ]
+  "exclude": ["node_modules"]
 }

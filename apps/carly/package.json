@@ -5,21 +5,35 @@
   "type": "module",
   "scripts": {
     "build": "next build",
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "clean": "rm -rf .turbo .next",
     "dev": "next dev --turbopack --port 3003",
-    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
-    "@ai-sdk/deepinfra": "^0.2.4",
-    "@ai-sdk/react": "^1.2.5",
-    "@radix-ui/react-form": "^0.1.2",
-    "@repo/constants": "workspace:*",
-    "@repo/hooks": "workspace:*",
+    "@ai-sdk/deepinfra": "^0.2.14",
+    "@ai-sdk/react": "^1.2.9",
+    "@estarlincito/utils": "^2.5.5",
+    "@hookform/resolvers": "^5.0.1",
+    "@radix-ui/react-icons": "^1.3.2",
     "@repo/lib": "workspace:*",
-    "@repo/ui": "workspace:*",
-    "ai": "^4.2.10"
+    "ai": "^4.3.10",
+    "lucide-react": "^0.475.0",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.56.2",
+    "react-markdown": "^10.1.0",
+    "sonner": "^2.0.3",
+    "zod": "^3.24.4"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*"
+    "@repo/next-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.7.3"
   }
 }

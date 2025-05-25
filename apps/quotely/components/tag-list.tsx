@@ -1,0 +1,26 @@
+import { TAGS_ROUTE } from '@app/quotely/constants/tags';
+import type { returnSchema } from '@app/quotely/schema/quotes/return';
+import { Link } from '@repo/ui/components/link';
+import { Topic, TopicContent, TopicItem } from '@repo/ui/components/topic';
+import type { z } from 'zod';
+interface TagsListProps {
+  tags: z.infer<typeof returnSchema.quote>['tags'];
+}
+
+export const TagsList = ({ tags }: TagsListProps) => (
+  <Topic>
+    <TopicContent>
+      {tags.map(({ name, id }) => (
+        <TopicItem className='rounded-sm opacity-90' key={id}>
+          <Link
+            className='hover:no-underline'
+            route={`${TAGS_ROUTE}/${name}`}
+            variant='default'
+          >
+            {name}
+          </Link>
+        </TopicItem>
+      ))}
+    </TopicContent>
+  </Topic>
+);

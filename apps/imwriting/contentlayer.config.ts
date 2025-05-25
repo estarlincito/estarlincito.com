@@ -1,7 +1,8 @@
+/* eslint-disable no-restricted-imports */
 import { makeSource } from 'contentlayer/source-files';
 
-import Articles from './config/articles';
-import mdxOptions from './config/mdxOptions';
+import { Articles } from './config/articles';
+import { mdxOptions } from './config/mdxOptions';
 
 const contentLayerConfig = makeSource({
   contentDirExclude: ['drafts', 'categories.yaml'],

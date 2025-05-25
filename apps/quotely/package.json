@@ -5,17 +5,30 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack --port 3001",
+    "check-types": "tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
-    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "clean": "rm -rf .turbo .next",
+    "dev": "next dev --turbopack --port 3001",
+    "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
-    "@repo/constants": "workspace:*",
+    "@estarlincito/utils": "^2.5.5",
     "@repo/lib": "workspace:*",
-    "@repo/ui": "workspace:*"
+    "@repo/ui": "workspace:*",
+    "lucide-react": "^0.475.0",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.4"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*"
+    "@repo/next-config": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.7.3"
   }
 }

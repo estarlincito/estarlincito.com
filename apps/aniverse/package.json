@@ -5,18 +5,28 @@
   "type": "module",
   "scripts": {
     "build": "next build",
+    "check-types": "tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
+    "clean": "rm -rf .turbo .next .contentlayer",
     "dev": "next dev --turbopack --port 3007",
-    "lint": "eslint --fix && eslint --ext .js,.jsx,.ts,.tsx . && pnpm tsc --noEmit",
+    "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {
-    "@repo/constants": "workspace:*",
-    "@repo/hooks": "workspace:*",
+    "@estarlincito/utils": "^2.5.5",
     "@repo/lib": "workspace:*",
-    "@repo/ui": "workspace:*"
+    "@repo/ui": "workspace:*",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*"
+    "@repo/next-config": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.7.3"
   }
 }

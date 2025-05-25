@@ -1,8 +1,6 @@
-import { nextJsConfig } from '@estarlincito/eslint';
-import { restrictedImports } from '@repo/lib';
 /** @type {import("eslint").Linter.Config} */
+import { nextJsConfig } from '@estarlincito/eslint';
 export default [
   ...nextJsConfig,
-  { ignores: ['dbschema'] },
-  { ...restrictedImports },
+  { ignores: ['dbschema'] }
 ];

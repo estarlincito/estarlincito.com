@@ -1,12 +1,7 @@
-import type { GenerateMetadataTypes } from '@estarlincito/utils';
+import type { Metadata } from '@estarlincito/utils';
 
-interface Instances {
+export interface Instances {
   title: string;
   description: string;
-  images: [
-    GenerateMetadataTypes['Images'],
-    ...GenerateMetadataTypes['Images'][],
-  ];
+  images: [Metadata.Images, ...Metadata.Images[]];
 }
-
-export default Instances;
