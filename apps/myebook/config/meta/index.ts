@@ -2,14 +2,13 @@
 import { GenerateMetadata, type Metadata, toSlug } from '@estarlincito/utils';
 import { type LocalDocument } from 'contentlayer/source-files';
 
-import { locale, siteName, url } from '../../settings';
 import type { Instances } from '../types/instances';
 import { metaAuthor } from './author';
 import { metaGenres } from './genres';
 import { metaPublisher } from './publisher';
 
-// const locale = 'en-US';
-// const siteName = 'MyEbook';
+const locale = 'en-US';
+const siteName = 'MyEbook';
 
 const getMeta = (title: string, data: Instances[]) => {
   const value = data.find((item) => item.title === title);
@@ -17,8 +16,7 @@ const getMeta = (title: string, data: Instances[]) => {
     // eslint-disable-next-line safeguard/no-raw-error
     throw new Error('This properties not fount on descriptions');
   }
-  // eslint-disable-next-line no-console
-  console.log(url);
+
   return value;
 };
 
