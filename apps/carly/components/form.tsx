@@ -3,9 +3,9 @@ import { Button } from '@repo/ui/components/button';
 import { Form } from '@repo/ui/components/form';
 import { Flex } from '@repo/ui/layouts/flex';
 import { cn } from '@repo/ui/lib/utils';
-import { Send } from 'lucide-react';
-import { useEffect, useRef } from 'react';
-import { useForm } from 'react-hook-form';
+import { Loader2Icon, Send } from 'lucide-react';
+import { useEffect, useMemo, useRef } from 'react';
+import { useForm, type UseFormReturn } from 'react-hook-form';
 import { z } from 'zod';
 
 const formSchema = z.object({
@@ -17,7 +17,10 @@ const formSchema = z.object({
 export type FormInput = z.infer<typeof formSchema>;
 
 interface CarlyFormProps {
-  submit: (values: FormInput) => Promise<void>;
+  submit: (
+    values: FormInput,
+    reset: UseFormReturn<FormInput>['reset'],
+  ) => Promise<void>;
 }
 
 export const CarlyForm = ({ submit }: CarlyFormProps) => {
@@ -29,6 +32,11 @@ export const CarlyForm = ({ submit }: CarlyFormProps) => {
     // Please provide a valid message
     resolver: zodResolver(formSchema),
   });
+
+  const isLoading = useMemo(
+    () => form.formState.isSubmitting,
+    [form.formState.isSubmitting],
+  );
 
   const input = form.watch().message;
   const smooth = useRef<HTMLTextAreaElement>(null);
@@ -43,8 +51,6 @@ export const CarlyForm = ({ submit }: CarlyFormProps) => {
     }
   }, [input]);
 
-  // form.reset()
-
   return (
     <Form
       className={cn(
@@ -56,25 +62,29 @@ export const CarlyForm = ({ submit }: CarlyFormProps) => {
       submit={submit}
     >
       <Form.Field
-        // disabled
         noLabel
         unstyled
         className='resize-none outline-0'
         control={form.control}
+        disabled={isLoading}
         name='message'
         placeholder='Message Carly'
         ref={smooth}
-        type='Textarea'
+        variant='Textarea'
       />
 
       <Flex className='justify-end'>
         <Button
-          disabled={input.length === 0}
+          disabled={input.length === 0 || isLoading}
           size='icon'
           type='submit'
           variant='ghost'
         >
-          <Send size={48} />
+          {isLoading ? (
+            <Loader2Icon className='animate-spin' />
+          ) : (
+            <Send size={48} />
+          )}
         </Button>
       </Flex>
     </Form>

@@ -172,12 +172,12 @@ type FieldProps<T extends FieldValues, K extends CompKeys> = {
   noLabel?: boolean;
   name: Path<T>;
   description?: string;
-  type?: K;
+  variant?: K;
 } & Omit<React.ComponentProps<CompsType[K]>, 'name'>;
 
 const Field = <T extends FieldValues, K extends CompKeys = 'Input'>({
   control,
-  type,
+  variant,
   label,
   noLabel,
   placeholder,
@@ -186,7 +186,7 @@ const Field = <T extends FieldValues, K extends CompKeys = 'Input'>({
   ...props
 }: FieldProps<T, K>) => {
   const Element =
-    type === undefined ? Comps['Input'] : (Comps[type] as CompsType[K]);
+    variant === undefined ? Comps['Input'] : (Comps[variant] as CompsType[K]);
 
   const label_ =
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -217,7 +217,7 @@ const Field = <T extends FieldValues, K extends CompKeys = 'Input'>({
 
 interface FormProps<T extends FieldValues>
   extends React.DOMAttributes<HTMLFormElement> {
-  submit: (values: T) => Promise<void>;
+  submit: (values: T, reset: UseFormReturn<T>['reset']) => Promise<void>;
   form: UseFormReturn<T>;
   className?: string;
 }
@@ -231,7 +231,9 @@ const Form = <T extends FieldValues>({
   <RootForm {...form}>
     <form
       className={cn('space-y-8', className)}
-      onSubmit={onSubmit ?? form.handleSubmit(submit)}
+      onSubmit={
+        onSubmit ?? form.handleSubmit((values) => submit(values, form.reset))
+      }
       {...props}
     />
   </RootForm>

@@ -6,15 +6,21 @@ import { Text } from '@repo/ui/components/text';
 import { useLocalStorage } from '@repo/ui/hooks/useLocalstorage';
 import { Flex } from '@repo/ui/layouts/flex';
 import { useEffect } from 'react';
+import type { UseFormReturn } from 'react-hook-form';
 
 export const Carly = () => {
   const { messages, setMessages, append } = useChat();
 
-  const submit = async (values: FormInput) => {
+  const onSubmit = async (
+    values: FormInput,
+    reset: UseFormReturn<FormInput>['reset'],
+  ) => {
     await append({
       content: values.message,
       role: 'user',
     });
+
+    reset();
   };
 
   const [storeMessages, setStoreMessages] = useLocalStorage(
@@ -61,7 +67,7 @@ export const Carly = () => {
             Welcome to Carly&apos;s Chat!
           </Text>
         )}
-        <CarlyForm submit={submit} />
+        <CarlyForm submit={onSubmit} />
       </Flex>
     </Flex>
   );

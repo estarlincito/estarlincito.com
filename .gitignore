@@ -44,7 +44,7 @@ yarn-error.log*
 
 # others
 next-env.d.ts
-/.contentlayer
+.contentlayer
 dbschema/edgeql-js
 wrangler.toml
 wrangler.jsonc

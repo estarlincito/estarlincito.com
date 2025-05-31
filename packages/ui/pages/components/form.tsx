@@ -1,4 +1,5 @@
 'use client';
+import { url } from '@app/estarlincito/settings';
 import { apiFetch, type ResmsgTypes } from '@estarlincito/utils';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Box } from '@repo/ui/components/box';
@@ -8,6 +9,8 @@ import { Flex } from '@repo/ui/layouts/flex';
 import { Grid } from '@repo/ui/layouts/grid';
 import { cn } from '@repo/ui/lib/utils';
 import { type Contact, contactSchema } from '@repo/ui/schemas/contact';
+import { Loader2Icon } from 'lucide-react';
+import { useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
 
@@ -29,15 +32,21 @@ export const ContactForm = () => {
     const res = await apiFetch({
       body: JSON.stringify(values),
       method: 'POST',
-      url: 'https://estarlincito.com/api/mail',
+      url: `${url}/api/mail`,
     });
 
-    const { message, success } = (await res.json()) as ResmsgTypes['Resmsg'];
-    if (success) {
+    if (res.ok) {
+      form.reset();
+      const { message } = (await res.json()) as ResmsgTypes['Resmsg'];
       toast.success(message);
     }
-    toast.error(message);
+    // toast.error(message);
   };
+
+  const isLoading = useMemo(
+    () => form.formState.isSubmitting,
+    [form.formState.isSubmitting],
+  );
 
   return (
     <Form form={form} submit={submit}>
@@ -62,11 +71,20 @@ export const ContactForm = () => {
         className='resize-none'
         control={form.control}
         name='message'
-        type='Textarea'
+        variant='Textarea'
       />
 
       <Grid className='w-full gap-2'>
-        <Button label='Send message' type='submit' />
+        <Button disabled={isLoading} type='submit'>
+          {isLoading ? (
+            <>
+              <Loader2Icon className='animate-spin' />
+              Please wait
+            </>
+          ) : (
+            <>Send message</>
+          )}
+        </Button>
       </Grid>
     </Form>
   );

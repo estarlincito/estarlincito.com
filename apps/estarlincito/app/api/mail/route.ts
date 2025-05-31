@@ -72,11 +72,13 @@ export const POST = async (req: NextRequest): Promise<Response> => {
       to: process.env.MAIL_ADDRESS, // Remove leading whitespace
     };
 
-    const info = await transporter.sendMail(mailOptions);
+    // const info =
+    await transporter.sendMail(mailOptions);
 
     return resmsg({
       code: 200,
-      message: `Email sent: ${info.response}`,
+      // message: `Email sent: ${info.response}`,
+      message: '🎉 Email sent successfully!',
       success: true,
     });
   } catch {

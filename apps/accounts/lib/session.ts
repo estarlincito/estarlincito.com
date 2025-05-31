@@ -5,13 +5,14 @@ import { redirect } from 'next/navigation';
 
 const secretKey = process.env.SECRET;
 const key = new TextEncoder().encode(secretKey);
+const isProduction = process.env.NODE_ENV === 'production';
 
 const options = {
-  domain: '.estarlincito.com',
+  domain: isProduction ? '.estarlincito.com' : 'localhost',
   httpOnly: true,
   path: '/',
-  sameSite: 'none' as const,
-  secure: process.env.NODE_ENV === 'production',
+  sameSite: isProduction ? ('none' as const) : ('lax' as const),
+  secure: isProduction,
 };
 
 export const encrypt = async (payload: JWTPayload): Promise<string> =>
