@@ -17,7 +17,7 @@ export const ArticleInteresting = ({
   pathname,
   title,
 }: InterestingProps) => {
-  const _allArticles = allArticles[lng]
+  const items = allArticles[lng]
     .filter(({ slugs }) => slugs.article !== pathname)
     .sort(() => Math.random() - 0.5)
     .slice(0, 2);
@@ -25,7 +25,7 @@ export const ArticleInteresting = ({
   return (
     <Flex className='gap-5 mt-8 w-full flex-col'>
       <Heading className='text-center'>{title}</Heading>
-      <ArticlesList articles={_allArticles} route='/' />
+      <ArticlesList items={items} route='/' />
     </Flex>
   );
 };

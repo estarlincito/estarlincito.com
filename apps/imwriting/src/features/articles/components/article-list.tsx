@@ -1,4 +1,4 @@
-import { type Articles } from '@repo/content/.mdxlayer/imwriting/generated';
+import type { ArticlesContent } from '@repo/content/imwriting/articles';
 import type { SearchParams } from '@repo/types';
 import { Box } from '@repo/ui/components/box';
 import { Pagination } from '@repo/ui/components/pagination';
@@ -8,18 +8,17 @@ import { getPaginationData } from '@repo/ui/lib/pagination';
 import { ArticleCard } from '@/features/articles/components/article-card';
 
 interface ListProps extends SearchParams {
-  articles: Articles[];
   route?: string;
 }
 
 export const ArticlesList = ({
-  articles,
   limit,
+  items,
   offset,
   route = '',
-}: ListProps) => {
+}: ListProps & ArticlesContent['sections']['articles']) => {
   const { data, ...rest } = getPaginationData({
-    content: articles,
+    content: items,
     limit,
     offset,
     route,
@@ -33,7 +32,7 @@ export const ArticlesList = ({
         ))}
       </Gallery>
 
-      {articles.length > 6 && (
+      {items.length > 6 && (
         <Box className='m-8'>
           <Pagination {...rest} />
         </Box>

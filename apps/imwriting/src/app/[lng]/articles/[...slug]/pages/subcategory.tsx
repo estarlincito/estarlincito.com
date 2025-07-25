@@ -27,7 +27,7 @@ export const SubCategoryPage = async ({ articles, limit, offset }: Props) => {
       />
 
       <ArticlesList
-        articles={articles}
+        items={articles}
         limit={limit}
         offset={offset}
         route={slugs.subcategory}

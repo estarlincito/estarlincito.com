@@ -1,10 +1,24 @@
 import { ApiResponse } from '@estarlincito/utils';
-// import { getReCaptcha } from '@repo/lib/captcha';
 import type { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export const POST = async (req: NextRequest): Promise<Response> => {
-  /** improve: PLEASE USE Zod TO VALIDATE DATA */
+  const clientHost = new URL(req.headers.get('origin') ?? 'http://domain.com');
+  const serverHost = new URL(req.nextUrl.origin);
+
+  const isAllowedHost =
+    serverHost.hostname === clientHost.hostname ||
+    serverHost.hostname.endsWith('.estarlincito.com') ||
+    serverHost.hostname === 'estarlincito.com';
+
+  if (!isAllowedHost) {
+    return ApiResponse.json({
+      message: `Forbidden origin`,
+      status: 403,
+      success: false,
+    });
+  }
+
   const body = await req.formData();
   const requiredFields = [
     'first-name',
@@ -12,18 +26,8 @@ export const POST = async (req: NextRequest): Promise<Response> => {
     'email',
     'message',
     'subject',
-    // 'token',
   ];
   const missingFields = requiredFields.filter((field) => !body.get(field));
-  // const isHuman = await getReCaptcha((body.get('token') as string) ?? '');
-
-  // if (!isHuman) {
-  //   return ApiResponse.json({
-  //     message: `Bot detected`,
-  //     status: 403,
-  //     success: false,
-  //   });
-  // }
 
   if (missingFields.length > 0) {
     return ApiResponse.json({
@@ -91,11 +95,19 @@ export const POST = async (req: NextRequest): Promise<Response> => {
 
     await transporter.sendMail(mailOptions);
 
-    return ApiResponse.json({
-      message: '🎉 Email sent successfully!',
-      status: 200,
-      success: true,
-    });
+    return ApiResponse.json(
+      {
+        message: '🎉 Email sent successfully!',
+        status: 200,
+        success: true,
+      },
+      {
+        headers: {
+          'Access-Control-Allow-Origin': clientHost.origin,
+          'Content-Type': 'application/json',
+        },
+      },
+    );
   } catch {
     return ApiResponse.json({
       message: 'We were unable to send your message. Please try again later.',

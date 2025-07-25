@@ -1,3 +1,4 @@
+import { getBucketName } from '@repo/lib/bucket';
 import { Avatar } from '@repo/ui/components/avatar';
 import { Link } from '@repo/ui/components/link';
 import { Separator } from '@repo/ui/components/separator';
@@ -21,7 +22,7 @@ export const Brand = ({ siteName }: BrandProps) => (
     <Avatar
       className='w-9 h-9 text-xl'
       fallback='E'
-      src={`https://cdn.estarlincito.com/${siteName.toLowerCase()}/assets/favicons/android-chrome-512x512.png`}
+      src={`https://cdn.estarlincito.com/${getBucketName(siteName)}/assets/favicons/android-chrome-512x512.png`}
     />
     <Text as='span'>{siteName}</Text>
     <Separator orientation='vertical' />

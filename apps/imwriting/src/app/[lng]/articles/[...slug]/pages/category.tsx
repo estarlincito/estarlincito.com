@@ -33,7 +33,7 @@ export const CategoryPage = async ({
       />
 
       <ArticlesList
-        articles={articles}
+        items={articles}
         limit={limit}
         offset={offset}
         route={slugs.category}
