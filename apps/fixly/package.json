@@ -1,0 +1,28 @@
+{
+  "name": "fixly",
+  "version": "v1.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "clean": "rm -rf .turbo .next",
+    "dev": "next dev --turbopack --port 3009",
+    "lint": "next lint",
+    "start": "next start --port 3009"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.1",
+    "@repo/content": "workspace:*",
+    "@repo/lib": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "negotiator": "^1.0.0"
+  },
+  "devDependencies": {
+    "@repo/next-config": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/negotiator": "^0.6.4"
+  }
+}

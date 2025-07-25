@@ -1,0 +1,49 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": [
+        "EDGEDB_INSTANCE",
+        "EDGEDB_SECRET_KEY",
+        "SECRET",
+        "NODE_ENV",
+        "MAIL_PASSWORD",
+        "MAIL_ADDRESS",
+        "GITHUB_TOKEN"
+      ]
+    },
+
+    "@repo/content#build": { "outputs": [".mdxlayer/**"] },
+    "estarlincito#build": { "dependsOn": ["@repo/content#build"] },
+    "imwriting#build": { "dependsOn": ["@repo/content#build"] },
+    "fixly#build": { "dependsOn": ["@repo/content#build"] },
+    "myebook#build": { "dependsOn": ["@repo/content#build"] },
+    "imasking#build": { "dependsOn": ["@repo/content#build"] },
+
+    "check-unused": {
+      "dependsOn": ["^check-unused"],
+      "cache": false
+    },
+    "clean": {
+      "dependsOn": ["^clean"],
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "cache": false
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"],
+      "cache": false
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "inputs": ["$TURBO_DEFAULT$", ".env*"]
+    }
+  }
+}

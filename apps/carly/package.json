@@ -1,0 +1,31 @@
+{
+  "name": "carly",
+  "version": "v1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "clean": "rm -rf .turbo .next",
+    "dev": "next dev --turbopack --port 3003",
+    "lint": "next lint",
+    "start": "next start --port 3003"
+  },
+  "dependencies": {
+    "@ai-sdk/deepinfra": "^0.2.14",
+    "@ai-sdk/react": "^1.2.9",
+    "@hookform/resolvers": "^5.0.1",
+    "@radix-ui/react-icons": "^1.3.2",
+    "@repo/content": "workspace:*",
+    "@repo/lib": "workspace:*",
+    "ai": "^4.3.10",
+    "lucide-react": "^0.475.0",
+    "react-hook-form": "^7.56.2",
+    "react-markdown": "^10.1.0",
+    "sonner": "^2.0.3"
+  },
+  "devDependencies": {
+    "@repo/next-config": "workspace:*"
+  }
+}

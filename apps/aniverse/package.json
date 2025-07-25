@@ -1,0 +1,25 @@
+{
+  "name": "aniverse",
+  "version": "v1.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "clean": "rm -rf .turbo .next .mdxlayer",
+    "dev": "next dev --turbopack --port 3007",
+    "lint": "next lint",
+    "start": "next start --port 3007"
+  },
+  "dependencies": {
+    "@repo/content": "workspace:*",
+    "@repo/lib": "workspace:*",
+    "@repo/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/next-config": "workspace:*",
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
+  }
+}

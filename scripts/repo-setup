@@ -1,0 +1,21 @@
+#!/bin/sh
+
+if [ "$VERCEL" = "1" ]; then
+  echo "[repo-setup] Running on Vercel – configuring access to private repo"
+
+  echo "[repo-setup] Rewriting .gitmodules with authentication token"
+  sed -i "s|https://github.com/|https://${GITHUB_TOKEN}@github.com/|" .gitmodules
+
+  echo "[repo-setup] Syncing submodules"
+  git submodule sync
+
+  echo "[repo-setup] Initializing submodules"
+  git submodule update --init --recursive
+
+  echo "[repo-setup] Installing dependencies"
+  pnpm install --frozen-lockfile
+
+  echo "[repo-setup] Setup complete"
+else
+  echo "[repo-setup] Not running on Vercel – skipping setup"
+fi

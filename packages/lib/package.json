@@ -1,0 +1,28 @@
+{
+  "name": "@repo/lib",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./*": "./*.ts"
+  },
+  "bin": {
+    "check-unused": "./check-unused.js"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@formatjs/intl-localematcher": "^0.6.1",
+    "depcheck": "^1.4.7",
+    "jose": "^6.0.11",
+    "negotiator": "^1.0.0"
+  },
+  "devDependencies": {
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/negotiator": "^0.6.4"
+  }
+}

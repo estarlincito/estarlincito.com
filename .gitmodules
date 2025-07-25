@@ -1,0 +1,3 @@
+[submodule "packages/content"]
+	path = packages/content
+	url = https://github.com/estarlincito/content.estarlincito.com

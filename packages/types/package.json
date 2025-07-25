@@ -1,0 +1,13 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "./index.d.ts",
+  "dependencies": {
+    "@repo/content": "workspace:*"
+  }
+}

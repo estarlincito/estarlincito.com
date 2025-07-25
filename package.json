@@ -1,0 +1,56 @@
+{
+  "name": "estarlincito.com",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "turbo build --concurrency=1",
+    "dev": "turbo dev",
+    "check-types": "turbo check-types",
+    "lint": "turbo lint -- --fix",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-unused": "turbo run check-unused"
+  },
+  "dependencies": {
+    "@estarlincito/utils": "^2.5.16",
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "server-only": "^0.0.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@estarlincito/eslint": "^1.9.0",
+    "@repo/typescript-config": "workspace:*",
+    "@turbo/gen": "^2.5.5",
+    "@types/node": "^24.0.3",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.29.0",
+    "glob": "^11.0.3",
+    "obj-compose": "^0.0.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.15",
+    "turbo": "^2.5.5",
+    "tyne": "^1.0.13",
+    "ts-prune": "^0.10.3",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "bcrypt",
+      "core-js-pure",
+      "esbuild",
+      "protobufjs",
+      "sharp",
+      "unrs-resolver"
+    ]
+  }
+}
