@@ -51,7 +51,7 @@ export const SignupForm = ({ api, lng, ...translations }: SignupContent) => {
     });
 
     if (res.ok) {
-      router.push(redirectParam || '/profile');
+      router.push(redirectParam || `/${lng}/profile`);
     } else {
       // toast.error(message);
     }
@@ -62,8 +62,9 @@ export const SignupForm = ({ api, lng, ...translations }: SignupContent) => {
 
     return (
       <Form.Field
+        disabled
+        // {form.formState.isSubmitting}
         control={form.control}
-        disabled={form.formState.isSubmitting}
         error={errorKey ? t(`form.${errorKey}` as never) : undefined}
         key={name}
         label={t(`form.fields.${name}.label`)}

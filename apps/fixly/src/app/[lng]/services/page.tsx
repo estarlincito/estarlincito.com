@@ -17,7 +17,11 @@ const ServicesPage = async ({ params, searchParams }: ServicesProps) => {
   return (
     <Container>
       <Header {...header} blockquote />
-      <ServiceList {...search} route='services' services={allServices[lng]} />
+      <ServiceList
+        {...search}
+        route={`/${lng}/services`}
+        services={allServices[lng]}
+      />
     </Container>
   );
 };

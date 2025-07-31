@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Button } from '@repo/ui/components/button';
+import { Link } from '@repo/ui/components/link';
 import { Flex } from '@repo/ui/layouts/flex';
 import { type PaginationResult } from '@repo/ui/lib/pagination';
 import { ChevronLeft, ChevronRight, type LucideProps } from 'lucide-react';
@@ -41,14 +42,14 @@ const PaginationLink = ({
   ) : (
     <Button asChild variant='ghost'>
       {label === 'Next' ? (
-        <a href={route}>
+        <Link route={route} variant='default'>
           <Label label={label} /> <Icon />
-        </a>
+        </Link>
       ) : (
-        <a href={route}>
+        <Link route={route} variant='default'>
           <Icon />
           <Label label={label} />
-        </a>
+        </Link>
       )}
     </Button>
   );

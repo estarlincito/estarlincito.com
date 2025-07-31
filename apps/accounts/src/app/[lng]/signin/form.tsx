@@ -45,7 +45,7 @@ export const SigninForm = ({ api, lng, ...translations }: SigninContent) => {
     });
 
     if (res.ok) {
-      router.push(redirectParam || '/profile');
+      router.push(redirectParam || `/${lng}/profile`);
     } else {
       // toast.error(await res.json());
     }

@@ -1,4 +1,6 @@
 'use client';
+import type { Translations } from '@repo/content/shared/locales';
+import type { Locale } from '@repo/content/utils/locales';
 import { Box } from '@repo/ui/components/box';
 import { Brand } from '@repo/ui/components/brand';
 import { buttonVariants } from '@repo/ui/components/button';
@@ -23,12 +25,18 @@ import { useEffect, useState } from 'react';
 
 interface NavigationProps {
   siteName: string;
+  lng: Locale;
   menuLinks: {
     label: string;
     route: string;
   }[];
 }
-export const Navigation = ({ menuLinks, siteName }: NavigationProps) => {
+export const Navigation = ({
+  menuLinks,
+  siteName,
+  lng,
+  ...themeLabels
+}: NavigationProps & Translations['theme']) => {
   const [isOpen, setIsOpen] = useState(false);
   const [path, setPath] = useState<string>('');
 
@@ -60,7 +68,7 @@ export const Navigation = ({ menuLinks, siteName }: NavigationProps) => {
       <NavigationMenu className='hidden md:block'>
         <NavigationMenuList className='gap-4'>
           <Routes />
-          <ThemeSwitcher />
+          <ThemeSwitcher {...themeLabels} />
           <LocaleSwitcher />
         </NavigationMenuList>
       </NavigationMenu>
@@ -79,7 +87,7 @@ export const Navigation = ({ menuLinks, siteName }: NavigationProps) => {
 
         <SheetContent className='w-[250px] pt-12' side='right'>
           <Box className='ml-5'>
-            <Brand siteName={siteName} />
+            <Brand lng={lng} siteName={siteName} />
           </Box>
           <NavigationMenu className='flex h-full'>
             <NavigationMenuList className='flex-col items-start gap-2 w-full p-3'>
@@ -87,7 +95,7 @@ export const Navigation = ({ menuLinks, siteName }: NavigationProps) => {
             </NavigationMenuList>
           </NavigationMenu>
           <Flex className='p-5 gap-x-1'>
-            <ThemeSwitcher />
+            <ThemeSwitcher {...themeLabels} />
             <LocaleSwitcher />
           </Flex>
         </SheetContent>

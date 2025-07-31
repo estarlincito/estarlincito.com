@@ -1,4 +1,6 @@
 import { exec } from 'child_process';
+import path from 'node:path';
+import fs from 'node:fs';
 
 const runCmd = (cmd, cwd) => {
   return new Promise((resolve, reject) => {
@@ -27,10 +29,19 @@ const pushContent = async () => {
 
     let didPushSubmodule = false;
 
+    //package.json
+    const pkgPath = path.resolve(
+      process.cwd(),
+      'packages/content',
+      'package.json'
+    );
+    const { version } = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
+    const commitM = `@repo/content@${version}`;
+
     // Submodule
     await runCmd('git add .', contentDir);
     if (await hasStagedChanges(contentDir)) {
-      await runCmd('git commit -m "Update private content"', contentDir);
+      await runCmd(`git commit -m "${commitM}"`, contentDir);
       await runCmd('git push origin main', contentDir);
       console.log('✅ Submodule content pushed.');
       didPushSubmodule = true;
@@ -42,7 +53,7 @@ const pushContent = async () => {
     await runCmd(`git add ${contentDir}`, '.');
     if (await hasStagedChanges('.')) {
       await runCmd(
-        'git commit -m "Update submodule pointer to latest content commit"',
+        `git commit -m "Update submodule pointer to ${commitM}"`,
         '.'
       );
       console.log('✅ Submodule pointer updated locally (no push).');

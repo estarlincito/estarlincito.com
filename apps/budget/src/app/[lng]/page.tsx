@@ -29,7 +29,7 @@ const HomePage = async ({ params }: LocalesParams) => {
       <Box className='mb-5 shrink-0'>
         <Link
           className='font-bold hover:no-underline'
-          route={`${accounts.host}/${lng}/signin?redirect=${host}/dashboard`}
+          route={`${accounts.host}/${lng}/signin?redirect=${host}/${lng}/dashboard`}
         >
           Sign in
         </Link>

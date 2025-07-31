@@ -19,15 +19,19 @@ export const QuoteCard = ({
   authors,
   tags,
   id,
-}: z.infer<typeof returnSchema.quote>) => (
+  lng = 'en',
+}: z.infer<typeof returnSchema.quote> & { lng?: 'en' }) => (
   <Card className='h-75 py-3'>
     <CardHeader className='h-5'>
       <CardTitle>
-        <Link route={`/quotes/${id}`} variant='default'>{`Quote ${id}`}</Link>
+        <Link
+          route={`/${lng}/quotes/${id}`}
+          variant='default'
+        >{`Quote ${id}`}</Link>
       </CardTitle>
     </CardHeader>
     <CardContent className='h-50 flex justify-center items-center'>
-      <Link route={`/quotes/${id}`} variant='default'>
+      <Link route={`/${lng}/quotes/${id}`} variant='default'>
         <Blockquote>{`${quote.slice(0, 140)}${quote.length > 140 ? '...' : ''}`}</Blockquote>
       </Link>
     </CardContent>
@@ -37,7 +41,7 @@ export const QuoteCard = ({
         <Link
           className='hover:no-underline self-start my-1 opacity-70'
           key={author.id}
-          route={`/authors/${author.slug}`}
+          route={`/${lng}/authors/${author.slug}`}
           variant='default'
         >
           {author.name}

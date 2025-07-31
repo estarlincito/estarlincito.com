@@ -1,5 +1,5 @@
 import type { Services } from '@repo/content/.mdxlayer/fixly/generated';
-import { getTranslations } from '@repo/content/fixly/locales';
+import { loadTranslations } from '@repo/content/fixly/locales';
 import type { Locale } from '@repo/content/utils/locales';
 import { AspectRatio } from '@repo/ui/components/aspect-ratio';
 import {
@@ -26,9 +26,9 @@ export const ServiceCard = async ({
   coverAlt,
   price,
   lang,
-  slugs,
+  urls,
 }: Services) => {
-  const t = await getTranslations(lang as Locale);
+  const { labels } = await loadTranslations(lang as Locale);
 
   return (
     <Card
@@ -36,14 +36,14 @@ export const ServiceCard = async ({
     >
       <CardContent className='p-0'>
         <AspectRatio className='overflow-hidden' ratio={16 / 9}>
-          <Link route={`/services/${slugs.service}`} variant='default'>
+          <Link route={urls.service} variant='default'>
             <Image alt={coverAlt} className='rounded-t-xl' src={cover} />
           </Link>
         </AspectRatio>
       </CardContent>
       <CardHeader className='flex-1'>
         <CardTitle>
-          <Link route={`/services/${slugs.service}`} variant='default'>
+          <Link route={urls.service} variant='default'>
             {title}
           </Link>
         </CardTitle>
@@ -52,8 +52,8 @@ export const ServiceCard = async ({
           {description.length > 100 ? '...' : null}{' '}
           <Link
             className='opacity-70'
-            label={t('labels.cta.readMore')}
-            route={`/services/${slugs.service}`}
+            label={labels.cta.readMore}
+            route={urls.service}
           />
         </CardDescription>
       </CardHeader>
@@ -61,7 +61,11 @@ export const ServiceCard = async ({
       <CardFooter className='justify-between mt-auto'>
         <Text as='span'>{toPrice(price, lang)}</Text>
         <CardAction>
-          <ServiceButton lgn={lang} title={title} />
+          <ServiceButton
+            label={labels.cta.orderNow}
+            lng={lang}
+            subject={title}
+          />
         </CardAction>
       </CardFooter>
     </Card>

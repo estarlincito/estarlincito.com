@@ -18,7 +18,7 @@ export const ArticleInteresting = ({
   title,
 }: InterestingProps) => {
   const items = allArticles[lng]
-    .filter(({ slugs }) => slugs.article !== pathname)
+    .filter(({ urls }) => urls.article !== pathname)
     .sort(() => Math.random() - 0.5)
     .slice(0, 2);
 

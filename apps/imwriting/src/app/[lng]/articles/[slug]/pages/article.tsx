@@ -1,5 +1,6 @@
 import { type Articles } from '@repo/content/.mdxlayer/imwriting/generated';
 import { getArticleContent } from '@repo/content/imwriting/article';
+import { loadTranslations } from '@repo/content/imwriting/locales';
 import type { Locale } from '@repo/content/utils/locales';
 import { Breadcrumb } from '@repo/ui/components/breadcrumb';
 import { Heading } from '@repo/ui/components/heading';
@@ -14,12 +15,12 @@ import { ArticleShare } from '@/features/articles/components/article-share';
 
 export const ArticlePage = async ({
   lang,
-  breadcrumb,
-  slugs,
   category,
+  subcategory,
   title,
   check,
   cover,
+  urls,
   coverAlt,
   readingTime,
   description,
@@ -30,11 +31,19 @@ export const ArticlePage = async ({
   modifiedTime,
 }: Articles) => {
   const content = await getArticleContent(lang as Locale);
+  const { labels } = await loadTranslations(lang as Locale);
+
+  const links = [
+    { label: labels.nav.articles, route: urls.articles },
+    { label: category, route: urls.category },
+    { label: subcategory, route: urls.subcategory },
+  ];
 
   return (
     <Container className='p-0' size='3'>
-      <Breadcrumb links={breadcrumb.article} />
+      <Breadcrumb links={links} />
       <Heading className='my-5' content={title} />
+
       <ArticleCheck
         check={check}
         readingTime={readingTime}
@@ -44,6 +53,7 @@ export const ArticlePage = async ({
       <ArticleAuthor
         authors={authors}
         avatar={avatar}
+        lang={lang}
         {...content.author}
         modifiedTime={modifiedTime}
       />
@@ -56,7 +66,7 @@ export const ArticlePage = async ({
       />
       <ArticleInteresting
         lng={lang as Locale}
-        pathname={slugs.article}
+        pathname={urls.article}
         title={content.interesting.title}
       />
     </Container>

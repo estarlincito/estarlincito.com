@@ -10,7 +10,7 @@ export const ImwritingSection = ({
   article,
   cta,
 }: HomeContent['sections']['imwriting']) => {
-  const { title, cover, coverAlt, description, slugs, lang } = article;
+  const { title, cover, coverAlt, description, urls } = article;
 
   return (
     <Section>
@@ -21,7 +21,7 @@ export const ImwritingSection = ({
       <Link
         className='w-fit'
         label={cta.label}
-        route={`${host}/${lang}${slugs.article}`}
+        route={`${host}${urls.article}`}
         target='_blank'
       />
     </Section>

@@ -1,5 +1,5 @@
-export type Slug = string[];
+// export type Slug = string[];
 
-export interface Params {
-  slug: Slug;
-}
+// export interface Params {
+//   slug: Slug;
+// }

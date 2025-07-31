@@ -1,4 +1,5 @@
 import type { MenuLinks } from '@repo/content/estarlincito/routes';
+import type { Translations } from '@repo/content/shared/locales';
 import { getPathname } from '@repo/lib/pathname';
 import { Link } from '@repo/ui/components/link';
 import { LocaleSwitcher } from '@repo/ui/components/locale-switcher';
@@ -20,7 +21,11 @@ import {
 import { ThemeSwitcher } from '@repo/ui/components/theme-switcher';
 import { headers } from 'next/headers';
 
-export const AppSidebar = async ({ application, projects }: MenuLinks) => {
+export const AppSidebar = async ({
+  application,
+  projects,
+  ...themeLabels
+}: MenuLinks & Translations['theme']) => {
   const path = await getPathname(headers);
 
   return (
@@ -73,8 +78,8 @@ export const AppSidebar = async ({ application, projects }: MenuLinks) => {
         </SidebarGroup>
       </SidebarContent>
 
-      <SidebarFooter>
-        <ThemeSwitcher />
+      <SidebarFooter className='flex-row'>
+        <ThemeSwitcher {...themeLabels} />
         <LocaleSwitcher />
       </SidebarFooter>
     </Sidebar>

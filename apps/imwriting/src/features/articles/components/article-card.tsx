@@ -15,17 +15,12 @@ import { cn } from '@repo/ui/lib/utils';
 
 export const ArticleCard = ({
   readingTime,
-  lang,
   title,
   cover,
   publishedTime,
-  slugs,
+  urls,
 }: Articles) => (
-  <Link
-    className='block h-full'
-    route={`/${lang}${slugs.article}`}
-    variant='default'
-  >
+  <Link className='block h-full' route={urls.article} variant='default'>
     <Card
       className={cn('hover:bg-muted duration-300', 'flex flex-col h-full pt-0')}
     >

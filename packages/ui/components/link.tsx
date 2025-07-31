@@ -1,17 +1,43 @@
 /* eslint-disable react/jsx-no-useless-fragment */
+
+import { throwAppError } from '@estarlincito/utils';
 import { Button } from '@repo/ui/components/button';
 import { cn } from '@repo/ui/lib/utils';
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-ignore
 import L from 'next/link';
 import type { ComponentProps } from 'react';
+
+const validateHref = (href: string | undefined) => {
+  const errorMessage = `Invalid locale in URL: ${href}. Expected to match "/es" or "/en".`;
+  if (href) {
+    if (href.startsWith('http')) {
+      const url = new URL(href);
+      const { hostname } = url;
+
+      const isOwn =
+        hostname.endsWith('.estarlincito.com') ||
+        hostname === 'estarlincito.com' ||
+        hostname === 'localhost';
+
+      if (isOwn) {
+        const locale = url.pathname.split('/')[1];
+
+        if (locale !== 'en' && locale !== 'es') {
+          throwAppError(errorMessage);
+        }
+      }
+    } else if (href.startsWith('/')) {
+      if (!href.startsWith('/en') && !href.startsWith('/es')) {
+        throwAppError(errorMessage);
+      }
+    }
+  }
+};
 
 interface LinkProps
   extends Pick<
     ComponentProps<typeof Button>,
     'children' | 'label' | 'className'
   > {
-  lng?: 'en';
   route?: string;
   target?: '_blank' | '_self';
   unstyled?: boolean;
@@ -20,7 +46,6 @@ interface LinkProps
 
 export const Link = ({
   children,
-  lng,
   variant,
   label,
   route,
@@ -28,8 +53,14 @@ export const Link = ({
   className,
   unstyled,
 }: LinkProps) => {
-  let href = route ?? undefined;
-  if (lng) href = `/${lng}${href}`;
+  const href = route ?? undefined;
+
+  if (
+    process.env.NEXT_BUILD === 'true' ||
+    process.env.NODE_ENV === 'development'
+  ) {
+    validateHref(href);
+  }
 
   return variant === 'default' ? (
     <a

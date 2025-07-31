@@ -1,9 +1,14 @@
-import { siteName } from '@repo/content/accounts/settings';
+import type { Locale } from '@repo/content/utils/locales';
 import { Brand } from '@repo/ui/components/brand';
 
-const Navbar = () => (
+interface NavbarProps {
+  lng: Locale;
+  siteName: 'Estarlincito';
+}
+
+const Navbar = (props: NavbarProps) => (
   <nav className='p-5'>
-    <Brand siteName={siteName} />
+    <Brand {...props} />
   </nav>
 );
 

@@ -9,21 +9,23 @@ import { getService } from '@/lib/service';
 import Category from './pages/category';
 import Service from './pages/service';
 
+export const generateStaticParams = () => {
+  const seen = new Set<string>();
+
+  for (const { slugs } of enServices) {
+    seen.add(slugs.category);
+    seen.add(slugs.service);
+  }
+
+  return Array.from(seen).map((value) => ({ slug: value }));
+};
+
 interface RenderProps extends SearchParamsProps {
   params: Promise<{
     slug: string;
     lng: Locale;
   }>;
 }
-
-export const generateStaticParams = () => {
-  const slugs = enServices.flatMap((service) => [
-    { slug: service.slugs.service },
-    { slug: service.slugs.category },
-  ]);
-
-  return slugs;
-};
 
 export const generateMetadata = async ({ params }: RenderProps) => {
   const { lng, slug } = await params;

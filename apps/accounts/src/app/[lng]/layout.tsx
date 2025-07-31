@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import '@repo/ui/globals.css';
 
+import { siteName } from '@repo/content/accounts/settings';
 import { generateStaticParams } from '@repo/content/utils/locales';
 import type { LayoutProps } from '@repo/types/layout';
 import { Layout } from '@repo/ui/layouts/layout';
@@ -17,7 +18,7 @@ const RootLayout = async ({ children, params }: LayoutProps) => {
   return (
     <Layout lng={lng}>
       <View variant='child-2'>
-        <Navbar />
+        <Navbar lng={lng} siteName={siteName} />
         <Main>{children}</Main>
       </View>
     </Layout>

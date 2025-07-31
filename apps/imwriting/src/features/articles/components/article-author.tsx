@@ -11,11 +11,13 @@ import { Flex } from '@repo/ui/layouts/flex';
 interface AuthorProps extends Omit<ArticleContent['author'], 'author'> {
   authors: string[];
   avatar: string;
+  lang: string;
   modifiedTime: string;
 }
 
 export const ArticleAuthor = ({
   by,
+  lang,
   last,
   authors,
   avatar,
@@ -30,7 +32,7 @@ export const ArticleAuthor = ({
         {by}&nbsp;
         <Link
           className='font-bold'
-          route='https://estarlincito.com'
+          route={`https://estarlincito.com/${lang}`}
           variant='default'
         >
           {...authors}

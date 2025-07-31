@@ -10,22 +10,30 @@ import { View } from '@repo/ui/layouts/view';
 
 export { generateStaticParams };
 
+import { getThemeLabels } from '@repo/content/shared/theme';
 import type { LayoutProps } from '@repo/types/layout';
 import { Footer } from '@repo/ui/layouts/footer';
+export { default } from '@repo/ui/pages/maintenance';
 
-const RootLayout = async ({ children, params }: LayoutProps) => {
+export const RootLayout = async ({ children, params }: LayoutProps) => {
   const { lng } = await params;
   const menuLinks = await getMenuLinks(lng);
+  const themeLabels = await getThemeLabels(lng);
 
   return (
     <Layout lng={lng}>
       <View variant='child-3'>
-        <Navbar menuLinks={menuLinks} siteName={siteName} />
+        <Navbar
+          lng={lng}
+          menuLinks={menuLinks}
+          siteName={siteName}
+          {...themeLabels}
+        />
         <Main>{children}</Main>
-        <Footer copyright={copyright} />
+        <Footer copyright={copyright} lng={lng} />
       </View>
     </Layout>
   );
 };
 
-export default RootLayout;
+// export default RootLayout;

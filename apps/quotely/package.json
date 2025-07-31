@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build",
+    "build": "NEXT_BUILD=true next build",
     "check-types": "tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
     "clean": "rm -rf .turbo .next",

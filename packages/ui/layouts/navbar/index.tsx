@@ -1,3 +1,4 @@
+import type { Translations } from '@repo/content/shared/locales';
 import { Brand } from '@repo/ui/components/brand';
 import { Flex } from '@repo/ui/layouts/flex';
 import { Navigation } from '@repo/ui/layouts/navbar/navigation';
@@ -5,9 +6,15 @@ import { cn } from '@repo/ui/lib/utils';
 import type { ComponentProps } from 'react';
 
 type NavbarProps = ComponentProps<typeof Navigation> &
-  ComponentProps<typeof Brand>;
+  ComponentProps<typeof Brand> &
+  Translations['theme'];
 
-export const Navbar = ({ menuLinks, siteName }: NavbarProps) => (
+export const Navbar = ({
+  menuLinks,
+  siteName,
+  lng,
+  ...themeLabels
+}: NavbarProps) => (
   <>
     <Flex
       className={cn(
@@ -18,8 +25,13 @@ export const Navbar = ({ menuLinks, siteName }: NavbarProps) => (
         'h-20',
       )}
     >
-      <Brand siteName={siteName} />
-      <Navigation menuLinks={menuLinks} siteName={siteName} />
+      <Brand lng={lng} siteName={siteName} />
+      <Navigation
+        lng={lng}
+        menuLinks={menuLinks}
+        siteName={siteName}
+        {...themeLabels}
+      />
     </Flex>
 
     <div className='h-20' />

@@ -6,13 +6,13 @@ import {
   type CopyrightProps,
 } from '@repo/ui/layouts/footer/copyright';
 
-export const Footer = ({ copyright }: CopyrightProps) => (
+export const Footer = (props: CopyrightProps) => (
   <Box className='mt-5'>
     <Separator />
 
     <footer className='p-5 '>
       <Flex className='items-center gap-5 justify-center flex-col md:flex-row'>
-        <Copyright copyright={copyright} />
+        <Copyright {...props} />
       </Flex>
     </footer>
   </Box>

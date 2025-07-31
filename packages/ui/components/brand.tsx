@@ -1,3 +1,4 @@
+import type { Locale } from '@repo/content/utils/locales';
 import { getBucketName } from '@repo/lib/bucket';
 import { Avatar } from '@repo/ui/components/avatar';
 import { Link } from '@repo/ui/components/link';
@@ -7,16 +8,17 @@ import { cn } from '@repo/ui/lib/utils';
 
 export interface BrandProps {
   siteName: string;
+  lng: Locale;
 }
 
-export const Brand = ({ siteName }: BrandProps) => (
+export const Brand = ({ siteName, lng }: BrandProps) => (
   <Link
     className={cn(
       'font-bold',
       'text-xl',
       'flex items-center justify-center gap-x-2 w-fit',
     )}
-    route='/'
+    route={`/${lng}`}
     variant='default'
   >
     <Avatar

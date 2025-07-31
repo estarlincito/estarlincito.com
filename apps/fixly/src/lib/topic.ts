@@ -7,8 +7,8 @@ export const toTopics = (lang: Locale) => {
 
   return allServices[lang]
     .filter(({ category }) => (seen.has(category) ? false : seen.add(category)))
-    .map(({ category, slugs }) => ({
+    .map(({ category, urls }) => ({
       label: category,
-      route: `services/${slugs.category}`,
+      route: urls.category,
     }));
 };

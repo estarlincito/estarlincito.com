@@ -15,6 +15,7 @@ export type ErrorProps = Translations['error'] & {
 const Error = ({ error, reset }: ErrorProps) => {
   const {
     translations: { body, contact, heading, tryAgain },
+    lng,
   } = useTranslation<Translations['error']>();
 
   return (
@@ -29,7 +30,11 @@ const Error = ({ error, reset }: ErrorProps) => {
           <Button label={tryAgain} onClick={reset} />
 
           <Button asChild variant='secondary'>
-            <Link className='cursor-default' label={contact} route='/contact' />
+            <Link
+              className='cursor-default'
+              label={contact}
+              route={`/${lng}/contact`}
+            />
           </Button>
         </Flex>
       </Flex>

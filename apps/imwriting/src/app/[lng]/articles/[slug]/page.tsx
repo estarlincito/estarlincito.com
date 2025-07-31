@@ -1,17 +1,26 @@
-import { findArticles } from '@repo/content/imwriting/utils';
+import { allArticles, findArticles } from '@repo/content/imwriting/utils';
 import type { Locale } from '@repo/content/utils/locales';
 import type { SearchParamsProps } from '@repo/types';
 import CatchAll from '@repo/ui/pages/catch-all';
 
-import type { Params } from '@/types/params';
-
 import { ArticlePage } from './pages/article';
 import { CategoryPage } from './pages/category';
-import { SubCategoryPage } from './pages/subcategory';
 
 interface Props extends SearchParamsProps {
-  params: Promise<Params & { lng: Locale }>;
+  params: Promise<{ lng: Locale; slug: string }>;
+  searchParams: SearchParamsProps['searchParams'];
 }
+
+export const generateStaticParams = () => {
+  const seen = new Set<string>();
+
+  for (const { slugs } of allArticles.en) {
+    seen.add(slugs.article);
+    seen.add(slugs.category);
+  }
+
+  return Array.from(seen).map((slug) => ({ slug }));
+};
 
 export const generateMetadata = async ({ params }: Props) => {
   const { slug, lng } = await params;
@@ -23,17 +32,14 @@ export const generateMetadata = async ({ params }: Props) => {
 
   if (type === 'article') return articles[0].meta.article;
   if (type === 'category') return articles[0].meta.category;
-  if (type === 'subCategory') return articles[0].meta.subcategory;
   return {};
 };
 
 const Page = async ({ params, searchParams }: Props) => {
   const { lng, slug } = await params;
   const searchParamsData = await searchParams;
-
-  if (slug.length >= 3) return CatchAll;
-
   const articlesData = findArticles(slug, lng);
+
   if (!articlesData) return CatchAll;
   const { articles, type } = articlesData;
 
@@ -42,9 +48,6 @@ const Page = async ({ params, searchParams }: Props) => {
       {type === 'article' && <ArticlePage {...articles[0]} />}
       {type === 'category' && (
         <CategoryPage articles={articles} {...searchParamsData} />
-      )}
-      {type === 'subCategory' && (
-        <SubCategoryPage articles={articles} {...searchParamsData} />
       )}
     </>
   );

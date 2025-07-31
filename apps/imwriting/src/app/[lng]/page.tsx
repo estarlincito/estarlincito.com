@@ -22,10 +22,3 @@ const HomePage = async ({ params }: LocalesParams) => {
 };
 
 export default HomePage;
-
-/** the  use category as subcategory and vise versa
- * the subcategory link is broken
- *
- *
- *http://localhost:3000/es/contact send btn color issue in dark:mode
- */

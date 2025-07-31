@@ -6,16 +6,17 @@ import type { z } from 'zod/v4';
 
 interface TagsListProps {
   tags: z.infer<typeof returnSchema.quote>['tags'];
+  lng?: 'en';
 }
 
-export const TagsList = ({ tags }: TagsListProps) => (
+export const TagsList = ({ tags, lng = 'en' }: TagsListProps) => (
   <Topic>
     <TopicContent>
       {tags.map(({ name, id }) => (
         <TopicItem className='rounded-sm opacity-90' key={id}>
           <Link
             className='hover:no-underline'
-            route={`${routes.tags}/${name}`}
+            route={`/${lng}/${routes.tags}/${name}`}
             variant='default'
           >
             {name}
