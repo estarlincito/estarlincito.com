@@ -19,7 +19,6 @@ export const handleAuth = async (
   const pathSegments = pathname.split('/').filter(Boolean);
   const subpath = pathSegments.slice(1).join('/');
   const basePath = `/${subpath ?? ''}`;
-  const locale = pathSegments[0] ?? 'en';
 
   const isProtectedRoute = options.protectedRoutes.includes(basePath);
   const isPublicRoute = options.publicRoutes.includes(basePath);
@@ -29,8 +28,12 @@ export const handleAuth = async (
     const session = await decrypt(cookie);
 
     if (isProtectedRoute && !session?.userId) {
-      const signinUrl = new URL(`${locale}${options.signinURL}`, req.nextUrl);
-      signinUrl.searchParams.set('redirect', req.nextUrl.pathname);
+      const signinUrl = new URL(options.signinURL, req.nextUrl);
+
+      signinUrl.searchParams.set(
+        'redirect',
+        `${req.nextUrl.pathname}${req.nextUrl.search}`,
+      );
       return NextResponse.redirect(signinUrl);
     }
 
@@ -52,18 +55,15 @@ export const handleAuth = async (
             redirectUrl.hostname === 'estarlincito.com';
 
           if (!isAllowedHost) {
-            redirectUrl = new URL(
-              `${locale}${options.redirectTo}`,
-              req.nextUrl,
-            );
+            redirectUrl = new URL(options.redirectTo, req.nextUrl);
           }
         } catch {
           // If redirect param is invalid, fallback to default redirect
-          redirectUrl = new URL(`${locale}${options.redirectTo}`, req.nextUrl);
+          redirectUrl = new URL(options.redirectTo, req.nextUrl);
         }
       } else {
         // No redirect param, fallback to default redirect
-        redirectUrl = new URL(`${locale}${options.redirectTo}`, req.nextUrl);
+        redirectUrl = new URL(options.redirectTo, req.nextUrl);
       }
       // Perform redirect
       return NextResponse.redirect(redirectUrl);

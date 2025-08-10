@@ -2,7 +2,13 @@ import 'server-only';
 
 import { throwAppError } from '@estarlincito/utils';
 import { type JWTPayload, jwtVerify } from 'jose';
-const secretKey = process.env.SECRET;
+
+const secretKey = (() => {
+  const secret = process.env.SECRET;
+  if (!secret) throwAppError('Be sure, secret is define in .env');
+
+  return secret;
+})();
 
 const key = new TextEncoder().encode(secretKey);
 

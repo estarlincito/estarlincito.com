@@ -7,7 +7,16 @@ import { createTranslator } from '@repo/content/utils/translator';
 import { type Contact, ContactSchema } from '@repo/lib/schemas/contact';
 import { Box } from '@repo/ui/components/box';
 import { Button } from '@repo/ui/components/button';
-import { Form as UIForm } from '@repo/ui/components/form';
+import {
+  Form as UIForm,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@repo/ui/components/form';
+import { Input } from '@repo/ui/components/input';
+import { Textarea } from '@repo/ui/components/textarea';
 // import { useRecaptcha } from '@repo/ui/hooks/useRecaptcha';
 import { Flex } from '@repo/ui/layouts/flex';
 import { Grid } from '@repo/ui/layouts/grid';
@@ -68,16 +77,28 @@ export const Form = (translations: Translations['contact']['form']) => {
   const renderField = ({ name, variant }: (typeof fields)[0]) => {
     const errorKey = form.formState.errors[name]?.message;
 
+    const Field = variant === 'Textarea' ? Textarea : Input;
+
     return (
-      <UIForm.Field
-        className={variant === 'Textarea' ? 'resize-none' : undefined}
+      <FormField
         control={control}
-        error={errorKey ? t(errorKey as 'actions.loading') : undefined}
         key={name}
-        label={t(`fields.${name}.label`)}
         name={name}
-        placeholder={t(`fields.${name}.placeholder`)}
-        variant={variant}
+        render={({ field }) => (
+          <FormItem>
+            <FormLabel>{t(`fields.${name}.label`)}</FormLabel>
+            <FormControl>
+              <Field
+                className={variant === 'Textarea' ? 'resize-none' : undefined}
+                placeholder={t(`fields.${name}.placeholder`)}
+                {...field}
+              />
+            </FormControl>
+            {/* <FormDescription /> */}
+
+            {errorKey && <FormMessage>{t(errorKey as never)}</FormMessage>}
+          </FormItem>
+        )}
       />
     );
   };
@@ -110,31 +131,33 @@ export const Form = (translations: Translations['contact']['form']) => {
   );
 
   return (
-    <UIForm form={form} submit={onSubmit}>
-      <Flex className={cn('gap-5 flex-col mt-5', 'sm:flex-row')}>
-        {fields.slice(0, 2).map((f) => (
-          <Box className='sm:w-1/2' key={f.name}>
-            {renderField(f)}
-          </Box>
-        ))}
-      </Flex>
+    <UIForm {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)}>
+        <Flex className={cn('gap-5 flex-col mt-5', 'sm:flex-row')}>
+          {fields.slice(0, 2).map((f) => (
+            <Box className='sm:w-1/2' key={f.name}>
+              {renderField(f)}
+            </Box>
+          ))}
+        </Flex>
 
-      <Grid className='w-full gap-5 mt-4'>
-        {fields.slice(2).map(renderField)}
-      </Grid>
+        <Grid className='w-full gap-5 mt-4'>
+          {fields.slice(2).map(renderField)}
+        </Grid>
 
-      <Grid className='w-full gap-2'>
-        <Button disabled={isSubmitting} type='submit'>
-          {isSubmitting ? (
-            <>
-              <Loader2Icon className='animate-spin' />
-              {t('actions.loading')}
-            </>
-          ) : (
-            <>{t('actions.submit')}</>
-          )}
-        </Button>
-      </Grid>
+        <Grid className='w-full gap-2 mt-5'>
+          <Button disabled={isSubmitting} type='submit'>
+            {isSubmitting ? (
+              <>
+                <Loader2Icon className='animate-spin' />
+                {t('actions.loading')}
+              </>
+            ) : (
+              <>{t('actions.submit')}</>
+            )}
+          </Button>
+        </Grid>
+      </form>
     </UIForm>
   );
 };

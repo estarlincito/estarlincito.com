@@ -18,7 +18,7 @@ const SigninPage = async ({ params }: LocalesParams) => {
   const content = await getSigninContent(lng);
 
   return (
-    <Container className='flex items-center justify-center' size='1'>
+    <Container className='flex flex-col items-center justify-center gap-6 p-6 md:p-10'>
       <Suspense fallback={<FormSkeleton />}>
         <SigninForm {...content} />
       </Suspense>

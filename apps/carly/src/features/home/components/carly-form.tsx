@@ -3,19 +3,23 @@ import type { Translations } from '@repo/content/carly/locales';
 import { createTranslator } from '@repo/content/utils/translator';
 import { type FormInput, FormSchema } from '@repo/lib/schemas/carly';
 import { Button } from '@repo/ui/components/button';
-import { Form } from '@repo/ui/components/form';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from '@repo/ui/components/form';
+import { Textarea } from '@repo/ui/components/textarea';
 import { Flex } from '@repo/ui/layouts/flex';
 import { cn } from '@repo/ui/lib/utils';
 import { Loader2Icon, Send } from 'lucide-react';
 import { useEffect, useMemo, useRef } from 'react';
-import { useForm, type UseFormReturn } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 
 interface CarlyFormProps {
   translations: Translations['home']['form'];
-  submit: (
-    values: FormInput,
-    reset: UseFormReturn<FormInput>['reset'],
-  ) => Promise<void>;
+  submit: (values: FormInput) => Promise<void>;
 }
 
 export const CarlyForm = ({ submit, translations }: CarlyFormProps) => {
@@ -50,41 +54,56 @@ export const CarlyForm = ({ submit, translations }: CarlyFormProps) => {
   }, [input]);
 
   return (
-    <Form
-      className={cn(
-        'p-5 rounded-[10px]',
-        'border-2',
-        'border-gray-200 dark:border-gray-600',
-      )}
-      form={form}
-      submit={submit}
-    >
-      <Form.Field
-        unstyled
-        className='resize-none outline-0'
-        control={form.control}
-        disabled={isLoading}
-        error={errorKey ? t(errorKey as never) : undefined}
-        name='message'
-        placeholder={t('fields.message.placeholder')}
-        ref={smooth}
-        variant='Textarea'
-      />
+    <Form {...form}>
+      <form
+        className={cn(
+          'p-5 rounded-[10px]',
+          'border-2',
+          'border-gray-200 dark:border-gray-600',
+        )}
+        onSubmit={form.handleSubmit(async (e) => {
+          await submit(e);
+          form.reset();
+        })}
+      >
+        <FormField
+          control={form.control}
+          key='message'
+          name='message'
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Textarea
+                  unstyled
+                  className='resize-none outline-0'
+                  disabled={isLoading}
+                  placeholder={t('fields.message.placeholder')}
+                  // ref={smooth} // find a way to archive this
+                  {...field}
+                />
+              </FormControl>
+              {/* <FormDescription /> */}
 
-      <Flex className='justify-end'>
-        <Button
-          disabled={input.length === 0 || isLoading}
-          size='icon'
-          type='submit'
-          variant='ghost'
-        >
-          {isLoading ? (
-            <Loader2Icon className='animate-spin' />
-          ) : (
-            <Send size={48} />
+              {errorKey && <FormMessage>{t(errorKey as never)}</FormMessage>}
+            </FormItem>
           )}
-        </Button>
-      </Flex>
+        />
+
+        <Flex className='justify-end'>
+          <Button
+            disabled={input.length === 0 || isLoading}
+            size='icon'
+            type='submit'
+            variant='ghost'
+          >
+            {isLoading ? (
+              <Loader2Icon className='animate-spin' />
+            ) : (
+              <Send size={48} />
+            )}
+          </Button>
+        </Flex>
+      </form>
     </Form>
   );
 };

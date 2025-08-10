@@ -5,14 +5,30 @@ import type { SigninContent } from '@repo/content/accounts/signin';
 import { createTranslator } from '@repo/content/utils/translator';
 import { SigninFields } from '@repo/lib/fields/signin';
 import { type Signin, SigninSchema } from '@repo/lib/schemas/signin';
-import { Form } from '@repo/ui/components/form';
-import { Heading } from '@repo/ui/components/heading';
-import { Summary } from '@repo/ui/components/summary';
+import { Box } from '@repo/ui/components/box';
+import { Button } from '@repo/ui/components/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@repo/ui/components/card';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@repo/ui/components/form';
+import { Input } from '@repo/ui/components/input';
+import { Link } from '@repo/ui/components/link';
+import { Flex } from '@repo/ui/layouts/flex';
+import { Loader2Icon } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo } from 'react';
 import { useForm } from 'react-hook-form';
-
-import { FormTrigger } from '@/features/components/form-triggers';
 
 export const SigninForm = ({ api, lng, ...translations }: SigninContent) => {
   const router = useRouter();
@@ -55,32 +71,85 @@ export const SigninForm = ({ api, lng, ...translations }: SigninContent) => {
     const errorKey = form.formState.errors[name]?.message;
 
     return (
-      <Form.Field
+      <FormField
         control={form.control}
-        disabled={form.formState.isSubmitting}
-        error={errorKey ? t(`form.${errorKey}` as never) : undefined}
         key={name}
-        label={t(`form.fields.${name}.label`)}
         name={name}
-        placeholder={t(`form.fields.${name}.placeholder`)}
-        type={type}
+        render={({ field }) => (
+          <FormItem>
+            {type === 'password' ? (
+              <Flex>
+                <FormLabel>{t(`form.fields.${name}.label`)}</FormLabel>
+                <Link
+                  className='ml-auto inline-block text-sm underline-offset-4 hover:underline'
+                  route='#'
+                >
+                  {t('form.fields.password.forgot_password')}
+                </Link>
+              </Flex>
+            ) : (
+              <FormLabel>{t(`form.fields.${name}.label`)}</FormLabel>
+            )}
+
+            <FormControl>
+              <Input
+                disabled={form.formState.isSubmitting}
+                placeholder={t(`form.fields.${name}.placeholder`)}
+                type={type}
+                {...field}
+              />
+            </FormControl>
+
+            {errorKey && (
+              <FormMessage>{t(`form.${errorKey}` as never)}</FormMessage>
+            )}
+          </FormItem>
+        )}
       />
     );
   };
 
   return (
-    <Form className='w-full max-w-md' form={form} submit={onSubmit}>
-      <Heading as='h3' content={translations.title} />
-      <Summary content={translations.summary} />
+    <Flex className='flex-col gap-6 w-full max-w-sm'>
+      <Card>
+        <CardHeader>
+          <CardTitle>{translations.title}</CardTitle>
+          <CardDescription>{translations.summary}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)}>
+              <Flex className='flex-col gap-6'>
+                {SigninFields.map(renderField)}
+                <Button
+                  className='w-full'
+                  disabled={form.formState.isSubmitting}
+                  type='submit'
+                >
+                  {form.formState.isSubmitting ? (
+                    <>
+                      <Loader2Icon className='animate-spin' />{' '}
+                      {t('form.labels.please_wait')}
+                    </>
+                  ) : (
+                    translations.title
+                  )}
+                </Button>
+              </Flex>
 
-      {SigninFields.map(renderField)}
-
-      <FormTrigger
-        label={translations.label}
-        loading={form.formState.isSubmitting}
-        route={`/${lng}/signup${redirectUrl}`}
-        submitLabel={translations.title}
-      />
-    </Form>
+              <Box className='mt-4 text-center text-sm'>
+                {t('form.no_account')}{' '}
+                <Link
+                  className='underline underline-offset-4'
+                  route={`/${lng}/signup${redirectUrl}`}
+                >
+                  {translations.label}
+                </Link>
+              </Box>
+            </form>
+          </Form>
+        </CardContent>
+      </Card>
+    </Flex>
   );
 };

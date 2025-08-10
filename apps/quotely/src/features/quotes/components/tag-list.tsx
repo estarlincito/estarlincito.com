@@ -16,7 +16,7 @@ export const TagsList = ({ tags, lng = 'en' }: TagsListProps) => (
         <TopicItem className='rounded-sm opacity-90' key={id}>
           <Link
             className='hover:no-underline'
-            route={`/${lng}/${routes.tags}/${name}`}
+            route={`/${lng}${routes.tags}/${name}`}
             variant='default'
           >
             {name}

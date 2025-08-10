@@ -5,8 +5,7 @@ import type { FormInput } from '@repo/lib/schemas/carly';
 import { Text } from '@repo/ui/components/text';
 import { useLocalStorage } from '@repo/ui/hooks/useLocalstorage';
 import { Flex } from '@repo/ui/layouts/flex';
-import { useEffect } from 'react';
-import type { UseFormReturn } from 'react-hook-form';
+import { useCallback, useEffect } from 'react';
 
 import { CarlyForm } from '@/features/home/components/carly-form';
 import { Messages } from '@/features/home/components/messages';
@@ -14,17 +13,15 @@ import { Messages } from '@/features/home/components/messages';
 export const Carly = (translations: HomeContent) => {
   const { messages, setMessages, append } = useChat();
 
-  const onSubmit = async (
-    values: FormInput,
-    reset: UseFormReturn<FormInput>['reset'],
-  ) => {
-    await append({
-      content: values.message,
-      role: 'user',
-    });
-
-    reset();
-  };
+  const onSubmit = useCallback(
+    async (values: FormInput) => {
+      await append({
+        content: values.message,
+        role: 'user',
+      });
+    },
+    [append],
+  );
 
   const [storeMessages, setStoreMessages] = useLocalStorage(
     'storeMessages',

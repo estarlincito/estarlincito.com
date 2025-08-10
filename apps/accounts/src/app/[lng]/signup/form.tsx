@@ -5,14 +5,30 @@ import type { SignupContent } from '@repo/content/accounts/signup';
 import { createTranslator } from '@repo/content/utils/translator';
 import { SignoutFields } from '@repo/lib/fields/signout';
 import { type Signout, SignoutSchema } from '@repo/lib/schemas/signout';
-import { Form } from '@repo/ui/components/form';
-import { Heading } from '@repo/ui/components/heading';
-import { Summary } from '@repo/ui/components/summary';
+import { Box } from '@repo/ui/components/box';
+import { Button } from '@repo/ui/components/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@repo/ui/components/card';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@repo/ui/components/form';
+import { Input } from '@repo/ui/components/input';
+import { Link } from '@repo/ui/components/link';
+import { Flex } from '@repo/ui/layouts/flex';
+import { Loader2Icon } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo } from 'react';
 import { useForm } from 'react-hook-form';
-
-import { FormTrigger } from '@/features/components/form-triggers';
 
 export const SignupForm = ({ api, lng, ...translations }: SignupContent) => {
   const t = useMemo(() => createTranslator(translations), [translations]);
@@ -61,33 +77,74 @@ export const SignupForm = ({ api, lng, ...translations }: SignupContent) => {
     const errorKey = form.formState.errors[name]?.message;
 
     return (
-      <Form.Field
-        disabled
-        // {form.formState.isSubmitting}
+      <FormField
         control={form.control}
-        error={errorKey ? t(`form.${errorKey}` as never) : undefined}
         key={name}
-        label={t(`form.fields.${name}.label`)}
         name={name}
-        placeholder={t(`form.fields.${name}.placeholder`)}
-        type={type}
+        render={({ field }) => (
+          <FormItem>
+            <FormLabel>{t(`form.fields.${name}.label`)}</FormLabel>
+
+            <FormControl>
+              <Input
+                disabled
+                // {form.formState.isSubmitting}
+                placeholder={t(`form.fields.${name}.placeholder`)}
+                type={type}
+                {...field}
+              />
+            </FormControl>
+
+            {errorKey && (
+              <FormMessage>{t(`form.${errorKey}` as never)}</FormMessage>
+            )}
+          </FormItem>
+        )}
       />
     );
   };
 
   return (
-    <Form className='w-full max-w-md' form={form} submit={onSubmit}>
-      <Heading as='h3' content={translations.title} />
-      <Summary content={translations.summary} />
+    <Flex className='flex-col gap-6 w-full max-w-sm'>
+      <Card>
+        <CardHeader>
+          <CardTitle>{translations.title}</CardTitle>
+          <CardDescription>{translations.summary}</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)}>
+              <Flex className='flex-col gap-6'>
+                {SignoutFields.map(renderField)}
+                <Button
+                  className='w-full'
+                  disabled={!form.formState.isSubmitting}
+                  type='submit'
+                >
+                  {form.formState.isSubmitting ? (
+                    <>
+                      <Loader2Icon className='animate-spin' />{' '}
+                      {t('form.labels.please_wait')}
+                    </>
+                  ) : (
+                    translations.title
+                  )}
+                </Button>
+              </Flex>
 
-      {SignoutFields.map(renderField)}
-
-      <FormTrigger
-        label={translations.label}
-        loading={form.formState.isSubmitting}
-        route={`/${lng}/signin${redirectUrl}`}
-        submitLabel={translations.title}
-      />
-    </Form>
+              <Box className='mt-4 text-center text-sm'>
+                {t('form.has_account')}{' '}
+                <Link
+                  className='underline underline-offset-4'
+                  route={`/${lng}/signin${redirectUrl}`}
+                >
+                  {translations.label}
+                </Link>
+              </Box>
+            </form>
+          </Form>
+        </CardContent>
+      </Card>
+    </Flex>
   );
 };

@@ -10,7 +10,7 @@ import { useClient } from '@repo/ui/hooks/useClient';
 import { Languages } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
-const locales = { en: 'English', es: 'Spanish' };
+const locales = { en: 'English', es: 'Español' };
 
 export const LocaleSwitcher = () => {
   const isClient = useClient();

@@ -1,21 +1,18 @@
-type Locales = 'en-US' | 'es-DO';
-type Currencies = 'USD' | 'DOP';
-
+import type { Locale } from '@repo/content/utils/locales';
 export interface Currency {
   value: number | bigint;
-  locales: Locales;
-  currency: Currencies;
 }
 
-export const toCurrency = ({
-  currency = 'USD',
-  locales = 'en-US',
-  value,
-}: Currency) => {
-  const { format } = new Intl.NumberFormat(locales, {
-    currency,
-    style: 'currency',
-  });
+export const toCurrency = (locale: Locale = 'en', value: number | bigint) => {
+  const currencies = {
+    en: 'USD',
+    es: 'DOP',
+  };
 
-  return format(value);
+  const locales = { en: 'en-US', es: 'es-DO' };
+
+  return new Intl.NumberFormat(locales[locale], {
+    currency: currencies[locale],
+    style: 'currency',
+  }).format(value);
 };

@@ -1,26 +1,25 @@
+/* eslint-disable safeguard/no-raw-error */
 'use client';
-import { throwAppError } from '@estarlincito/utils';
+
 import type * as LabelPrimitive from '@radix-ui/react-label';
 import { Slot } from '@radix-ui/react-slot';
-import { Input } from '@repo/ui/components/input';
 import { Label } from '@repo/ui/components/label';
-import { Textarea } from '@repo/ui/components/textarea';
 import { cn } from '@repo/ui/lib/utils';
+import { Loader2Icon } from 'lucide-react';
 import * as React from 'react';
 import {
-  type Control,
   Controller,
   type ControllerProps,
   type FieldPath,
   type FieldValues,
   FormProvider,
-  type Path,
   useFormContext,
-  type UseFormReturn,
   useFormState,
 } from 'react-hook-form';
 
-const RootForm = FormProvider;
+import { Button } from './button';
+
+const Form = FormProvider;
 
 interface FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
@@ -52,7 +51,7 @@ const useFormField = () => {
   const fieldState = getFieldState(fieldContext.name, formState);
 
   if (!fieldContext) {
-    throwAppError('useFormField should be used within <FormField>');
+    throw new Error('useFormField should be used within <FormField>');
   }
 
   const { id } = itemContext;
@@ -138,87 +137,53 @@ function FormDescription({ className, ...props }: React.ComponentProps<'p'>) {
   );
 }
 
-const Comps = {
-  Input,
-  Textarea,
-} as const;
+function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
+  // const { error, formMessageId } = useFormField();
+  // const body = error ? String(error?.message ?? '') : props.children;
 
-type CompsType = typeof Comps;
-type CompKeys = keyof CompsType;
-
-type FieldProps<T extends FieldValues, K extends CompKeys> = {
-  control: Control<T>;
-  label?: string;
-  name: Path<T>;
-  description?: string;
-  error: string | undefined;
-  variant?: K;
-} & Omit<React.ComponentProps<CompsType[K]>, 'name'>;
-
-const Field = <T extends FieldValues, K extends CompKeys = 'Input'>({
-  control,
-  variant,
-  label,
-  description,
-  name,
-  error,
-  ...props
-}: FieldProps<T, K>) => {
-  const Element =
-    variant === undefined ? Comps['Input'] : (Comps[variant] as CompsType[K]);
+  // if (!body) {
+  //   return null;
+  // }
 
   return (
-    <FormField
-      control={control}
-      name={name}
-      render={({ field }) => (
-        <FormItem>
-          {label && <FormLabel>{label}</FormLabel>}
-          <FormControl>
-            <Element
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              {...(props as any)}
-              {...field}
-            />
-          </FormControl>
-          {description && <FormDescription>{description}</FormDescription>}
-          {/* <FormMessage /> */}
-
-          <p
-            className={cn('text-destructive text-sm')}
-            data-slot='form-message'
-          >
-            {error}
-          </p>
-        </FormItem>
-      )}
-    />
-  );
-};
-
-interface FormProps<T extends FieldValues>
-  extends React.DOMAttributes<HTMLFormElement> {
-  submit: (values: T, reset: UseFormReturn<T>['reset']) => Promise<void>;
-  form: UseFormReturn<T>;
-  className?: string;
-}
-const Form = <T extends FieldValues>({
-  form,
-  submit,
-  onSubmit,
-  className,
-  ...props
-}: FormProps<T>) => (
-  <RootForm {...form}>
-    <form
-      className={cn('space-y-8', className)}
-      onSubmit={
-        onSubmit ?? form.handleSubmit((values) => submit(values, form.reset))
-      }
+    <p
+      className={cn('text-destructive text-sm mb-2', className)}
+      data-slot='form-message'
+      // id={formMessageId}
       {...props}
-    />
-  </RootForm>
+    >
+      {props.children}
+      {/* {body} */}
+    </p>
+  );
+}
+
+const FormAction = (
+  props: React.ComponentProps<typeof Button> & {
+    loadinglabel: string;
+    submitlabel: string;
+  },
+) => (
+  <Button {...{ type: props.type ?? 'submit', ...props }}>
+    {props.disabled ? (
+      <>
+        <Loader2Icon className='animate-spin' />
+        {props.loadinglabel}
+      </>
+    ) : (
+      props.submitlabel
+    )}
+  </Button>
 );
 
-Form.Field = Field;
-export { Form };
+export {
+  Form,
+  FormAction,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useFormField,
+};

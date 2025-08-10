@@ -25,7 +25,7 @@ const AuthorsPage = async ({
     <Container size='2'>
       <Section className='h-full justify-center m-0'>
         <Header summary={content.summary} title={content.title} />
-        <AuthorList authors={authors} />
+        <AuthorList authors={authors} lng={lng} />
       </Section>
     </Container>
   );

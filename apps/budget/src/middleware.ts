@@ -12,7 +12,7 @@ export default (req: NextRequest) => {
 
   return handleAuth(req, res, {
     protectedRoutes: ['/dashboard'],
-    publicRoutes: ['/', '/contact'],
+    publicRoutes: ['/'],
     redirectTo: '/dashboard',
     signinURL: '/',
   });

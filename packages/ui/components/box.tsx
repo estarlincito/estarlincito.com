@@ -7,8 +7,18 @@ interface BoxProps extends HTMLAttributes<HTMLDivElement> {
   unstyled?: boolean;
 }
 
-export const Box = ({ unstyled, children, className, asChild }: BoxProps) => {
+export const Box = ({
+  unstyled,
+  children,
+  className,
+  asChild,
+  ...rest
+}: BoxProps) => {
   const Comp = asChild ? Slot : 'div';
 
-  return <Comp className={cn(!unstyled && '', className)}>{children}</Comp>;
+  return (
+    <Comp className={cn(!unstyled && '', className)} {...rest}>
+      {children}
+    </Comp>
+  );
 };

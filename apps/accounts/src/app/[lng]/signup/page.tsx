@@ -17,7 +17,7 @@ const SignupPage = async ({ params }: LocalesParams) => {
   const content = await getSignupContent(lng);
 
   return (
-    <Container className='flex items-center justify-center' size='1'>
+    <Container className='flex flex-col items-center justify-center gap-6 p-6 md:p-10'>
       <Suspense fallback={<FormSkeleton />}>
         <SignupForm {...content} />
       </Suspense>
