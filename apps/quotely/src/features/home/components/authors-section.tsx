@@ -1,39 +1,25 @@
 import type { HomeContent } from '@repo/content/quotely/home';
-import { getAuthors } from '@repo/content/quotely/lib/quotes';
-import { Badge } from '@repo/ui/components/badge';
 import { Heading } from '@repo/ui/components/heading';
 import { Link } from '@repo/ui/components/link';
+import { Summary } from '@repo/ui/components/summary';
 import { Container } from '@repo/ui/layouts/container';
-import { Flex } from '@repo/ui/layouts/flex';
 import { Section } from '@repo/ui/layouts/section';
 
+import { AuthorList } from '@/features/quotes/components/author-list';
+
 export const AuthorsSection = async ({
-  cta,
   title,
-}: HomeContent['sections']['authors']) => {
-  const { authors } = await getAuthors({ limit: '6', offset: '0' });
+  authors,
+  summary,
+  ...cta
+}: HomeContent['sections']['authors']) => (
+  <Container asChild size='3'>
+    <Section>
+      <Heading as='h2' className='text-center' content={title} />
+      <Summary className='text-center text-muted-foreground'>{summary}</Summary>
 
-  return (
-    <Container asChild size='1'>
-      <Section>
-        <Heading className='text-center' content={title} />
-
-        <Flex className='flex-wrap justify-center'>
-          {authors.map(({ name, slug, id }) => (
-            <Badge className='mr-1' key={id}>
-              <Link
-                className='hover:no-underline'
-                route={`${cta.route}/${slug}`}
-                variant='default'
-              >
-                {name}
-              </Link>
-            </Badge>
-          ))}
-        </Flex>
-
-        <Link className='self-center' {...cta} />
-      </Section>
-    </Container>
-  );
-};
+      {authors && <AuthorList authors={authors.slice(0, 2)} lng='en' />}
+      <Link className='self-center' {...cta} />
+    </Section>
+  </Container>
+);

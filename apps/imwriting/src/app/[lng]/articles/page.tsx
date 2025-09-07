@@ -2,28 +2,27 @@ import {
   generateMetadata,
   getArticlesContent,
 } from '@repo/content/imwriting/articles';
-import type { LocalesParams } from '@repo/content/utils/locales';
-import type { SearchParamsProps } from '@repo/types';
+import { Pagination } from '@repo/ui/components/pagination';
 import { Container } from '@repo/ui/layouts/container';
 import { Header } from '@repo/ui/layouts/header';
 
 import { ArticlesList } from '@/features/articles/components/article-list';
 
-export { generateMetadata };
-
-type ArticlesProps = SearchParamsProps & LocalesParams;
-
-const ArticlesPage = async ({ searchParams, params }: ArticlesProps) => {
-  const { lng } = await params;
-  const search = await searchParams;
-  const { sections } = await getArticlesContent(lng);
+const ArticlesPage = async ({ params }: PageProps<'/[lng]'>) => {
+  const content = await getArticlesContent(params);
 
   return (
-    <Container>
-      <Header {...sections.header} />
-      <ArticlesList {...{ ...search, ...sections.articles }} />
+    <Container className='flex flex-col gap-y-10 justify-center'>
+      <Header summary={content.summary} title={content.title} />
+      <ArticlesList articles={content.articles} />
+      <Pagination
+        page={content.page}
+        pagination={content.pagination}
+        route={content.route}
+        totalPages={content.totalPages}
+      />
     </Container>
   );
 };
 
-export default ArticlesPage;
+export { ArticlesPage as default, generateMetadata };

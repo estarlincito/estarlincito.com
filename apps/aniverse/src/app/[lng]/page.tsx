@@ -1,12 +1,10 @@
 import { generateMetadata, getHomeContent } from '@repo/content/aniverse/home';
-import type { LocalesParams } from '@repo/content/utils/locales';
 import { Text } from '@repo/ui/components/text';
 import { Container } from '@repo/ui/layouts/container';
+import { pickLng } from '@repo/utils/lng';
 
-export { generateMetadata };
-
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
   const { summary, title } = await getHomeContent(lng);
 
   return (
@@ -17,4 +15,4 @@ const HomePage = async ({ params }: LocalesParams) => {
   );
 };
 
-export default HomePage;
+export { HomePage as default, generateMetadata };

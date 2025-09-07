@@ -1,25 +1,24 @@
 import type { HomeContent } from '@repo/content/quotely/home';
-import { getRandomQuote } from '@repo/content/quotely/lib/quotes';
 import { Heading } from '@repo/ui/components/heading';
 import { Link } from '@repo/ui/components/link';
+import { Summary } from '@repo/ui/components/summary';
 import { Container } from '@repo/ui/layouts/container';
 import { Section } from '@repo/ui/layouts/section';
 
-import { QuoteCard } from '@/features/quotes/components/quote-card';
+import { QuoteList } from '@/features/quotes/components/quote-list';
 
 export const DaySection = async ({
-  cta,
   title,
-}: HomeContent['sections']['day']) => {
-  const quoteData = await getRandomQuote();
-
-  return (
-    <Container asChild size='1'>
-      <Section>
-        <Heading className='text-center' content={title} />
-        <QuoteCard {...quoteData} />
-        <Link className='self-center' {...cta} />
-      </Section>
-    </Container>
-  );
-};
+  summary,
+  quotes,
+  ...cta
+}: HomeContent['sections']['day']) => (
+  <Container asChild size='3'>
+    <Section>
+      <Heading as='h2' className='text-center' content={title} />
+      <Summary className='text-center text-muted-foreground'>{summary}</Summary>
+      {quotes && <QuoteList quotes={quotes} />}
+      <Link className='self-center' {...cta} />
+    </Section>
+  </Container>
+);

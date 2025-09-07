@@ -7,9 +7,9 @@ import { Text } from '@repo/ui/components/text';
 import { Section } from '@repo/ui/layouts/section';
 
 export const QuotelySection = async ({
-  authors,
   cta,
   quote,
+  authors,
   tags,
   title,
 }: HomeContent['sections']['quotely']) => (
@@ -19,14 +19,14 @@ export const QuotelySection = async ({
       {quote}
       <br />
       <br />
-      {authors.map(({ name, id }) => (
-        <Text as='span' key={id}>
+      {authors.map(({ name, slug }) => (
+        <Text as='span' key={slug}>
           -{name}-{' '}
         </Text>
       ))}
       <br />
-      {tags.map(({ name, id }) => (
-        <Badge className='mr-1' key={id}>
+      {tags.map(({ name, slug }) => (
+        <Badge className='mr-1' key={slug}>
           {name}
         </Badge>
       ))}

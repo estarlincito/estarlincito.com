@@ -5,20 +5,13 @@
     "paths": {
       "@repo/*": ["../../packages/*"],
       "@/*": ["./src/*"]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    }
   },
   "include": [
-    "next-env.d.ts",
-    "next.config.mjs",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "eslint.config.js",
+    "@repo/types",
+    "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

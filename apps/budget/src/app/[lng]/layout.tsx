@@ -1,6 +1,6 @@
-import '@/styles/globals.css';
+import '@repo/ui/themes/green.css';
 
-import { generateStaticParams } from '@repo/content/utils/locales';
+import { generateStaticParams } from '@repo/content/shared/locales';
 import { Layout } from '@repo/ui/layouts/layout';
 import { Main } from '@repo/ui/layouts/main';
 import { View } from '@repo/ui/layouts/view';
@@ -8,10 +8,13 @@ export { default } from '@repo/ui/pages/maintenance';
 
 export { generateStaticParams };
 
-import type { LayoutProps } from '@repo/types/layout';
+import { pickLng } from '@repo/utils/lng';
 
-export const RootLayout = async ({ children, params }: LayoutProps) => {
-  const { lng } = await params;
+export const RootLayout = async ({
+  children,
+  params,
+}: LayoutProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
 
   return (
     <Layout lng={lng}>

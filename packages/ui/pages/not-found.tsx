@@ -52,7 +52,7 @@
 // // );
 
 // export const CatchAll = async ({ params }: LocalesParams) => {
-//   const { lng } = await params;
+//   const lng = await pickLng(params);
 //   const t = getTranslations(lng);
 
 //   return (

@@ -3,8 +3,6 @@ import { apiFetch } from '@estarlincito/utils';
 import { zodResolver } from '@hookform/resolvers/zod';
 import type { SigninContent } from '@repo/content/accounts/signin';
 import { createTranslator } from '@repo/content/utils/translator';
-import { SigninFields } from '@repo/lib/fields/signin';
-import { type Signin, SigninSchema } from '@repo/lib/schemas/signin';
 import { Box } from '@repo/ui/components/box';
 import { Button } from '@repo/ui/components/button';
 import {
@@ -25,6 +23,8 @@ import {
 import { Input } from '@repo/ui/components/input';
 import { Link } from '@repo/ui/components/link';
 import { Flex } from '@repo/ui/layouts/flex';
+import { SigninFields } from '@repo/utils/fields/signin';
+import { type Signin, SigninSchema } from '@repo/utils/schemas/signin';
 import { Loader2Icon } from 'lucide-react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useMemo } from 'react';
@@ -129,7 +129,7 @@ export const SigninForm = ({ api, lng, ...translations }: SigninContent) => {
                   {form.formState.isSubmitting ? (
                     <>
                       <Loader2Icon className='animate-spin' />{' '}
-                      {t('form.labels.please_wait')}
+                      {t('form.pleaseWaitLabel')}
                     </>
                   ) : (
                     translations.title

@@ -1,9 +1,10 @@
 'use client';
+import type { Locale } from '@repo/content/shared/locales';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { createContext, type ReactNode } from 'react';
 
 export interface TranslationContextValue<T> {
-  lng: string;
+  lng: Locale;
   translations: T;
 }
 
@@ -16,7 +17,7 @@ export const TranslationProvider = <T extends object>({
   lng,
 }: {
   children: ReactNode;
-  lng: string;
+  lng: Locale;
   translations: T;
 }) => (
   <TranslationContext.Provider value={{ lng, translations }}>

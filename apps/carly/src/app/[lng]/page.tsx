@@ -1,14 +1,10 @@
 import { generateMetadata, getHomeContent } from '@repo/content/carly/home';
-import type { LocalesParams } from '@repo/content/utils/locales';
 import { Container } from '@repo/ui/layouts/container';
 
 import { Carly } from '@/features/home/components/carly';
 
-export { generateMetadata };
-
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
-  const content = await getHomeContent(lng);
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const content = await getHomeContent(params);
 
   return (
     <Container>
@@ -17,4 +13,4 @@ const HomePage = async ({ params }: LocalesParams) => {
   );
 };
 
-export default HomePage;
+export { HomePage as default, generateMetadata };

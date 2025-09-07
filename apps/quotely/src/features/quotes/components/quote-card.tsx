@@ -1,57 +1,41 @@
-import type { returnSchema } from '@repo/lib/schemas/quotes/return';
+import type { Quote } from '@repo/content/quotely/utils/quotes';
+import { Badge } from '@repo/ui/components/badge';
 import { Blockquote } from '@repo/ui/components/blockquote';
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@repo/ui/components/card';
+import { Card, CardContent, CardFooter } from '@repo/ui/components/card';
+import { Copy } from '@repo/ui/components/copy';
 import { Link } from '@repo/ui/components/link';
 import { Flex } from '@repo/ui/layouts/flex';
-import type { z } from 'zod/v4';
+import { cn } from '@repo/ui/lib/utils';
 
-import { CopyQuote } from '@/features/quotes/components/copy-quote';
-import { TagsList } from '@/features/quotes/components/tag-list';
+export const QuoteCard = ({ quote, id, tags, language }: Quote) => (
+  <Card className={cn('hover:bg-muted duration-300', 'h-70 gap-1!')}>
+    <Link
+      className='h-full'
+      route={`/${language}/quotes/${id}`}
+      variant='default'
+    >
+      <CardContent className='h-full flex items-center justify-center'>
+        <Blockquote className='font-extralight text-lg truncate-5-line'>
+          {quote}
+        </Blockquote>
+      </CardContent>
+    </Link>
 
-export const QuoteCard = ({
-  quote,
-  authors,
-  tags,
-  id,
-  lng = 'en',
-}: z.infer<typeof returnSchema.quote> & { lng?: 'en' }) => (
-  <Card className='h-75 py-3'>
-    <CardHeader className='h-5'>
-      <CardTitle>
-        <Link
-          route={`/${lng}/quotes/${id}`}
-          variant='default'
-        >{`Quote ${id}`}</Link>
-      </CardTitle>
-    </CardHeader>
-    <CardContent className='h-50 flex justify-center items-center'>
-      <Link route={`/${lng}/quotes/${id}`} variant='default'>
-        <Blockquote>{`${quote.slice(0, 140)}${quote.length > 140 ? '...' : ''}`}</Blockquote>
-      </Link>
-    </CardContent>
-
-    <CardFooter className='flex-col h-20'>
-      {authors.map((author) => (
-        <Link
-          className='hover:no-underline self-start my-1 opacity-70'
-          key={author.id}
-          route={`/${lng}/authors/${author.slug}`}
-          variant='default'
-        >
-          {author.name}
-        </Link>
-      ))}
-
-      <Flex className='items-center justify-between self-stretch my-1'>
-        <TagsList tags={tags.slice(0, 2)} />
-        <CopyQuote text={quote} />
+    <CardFooter className='flex justify-between '>
+      <Flex className='gap-x-1'>
+        {tags.slice(0, 2).map(({ name, slug }) => (
+          <Link
+            className='no-underline!'
+            key={slug}
+            route={`/${language}/topics/${slug}`}
+          >
+            <Badge className='text-muted-foreground hover:text-accent-foreground'>
+              {name}
+            </Badge>
+          </Link>
+        ))}
       </Flex>
+      <Copy text={quote} />
     </CardFooter>
   </Card>
 );

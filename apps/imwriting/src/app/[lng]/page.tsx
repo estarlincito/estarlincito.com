@@ -1,15 +1,13 @@
-import { getHomeContent } from '@repo/content/imwriting/home';
-import type { LocalesParams } from '@repo/content/utils/locales';
+import { generateMetadata, getHomeContent } from '@repo/content/imwriting/home';
 import { Container } from '@repo/ui/layouts/container';
 import { Header } from '@repo/ui/layouts/header';
+import { pickLng } from '@repo/utils/lng';
 
 import { HomeLatest } from '@/features/home/components/home-latest';
 import { HomeTopics } from '@/features/home/components/home-topics';
 
-export { generateMetadata } from '@repo/content/imwriting/home';
-
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
   const { sections } = await getHomeContent(lng);
 
   return (
@@ -21,4 +19,4 @@ const HomePage = async ({ params }: LocalesParams) => {
   );
 };
 
-export default HomePage;
+export { HomePage as default, generateMetadata };

@@ -1,10 +1,10 @@
 'use client';
 import { useChat } from '@ai-sdk/react';
 import type { HomeContent } from '@repo/content/carly/home';
-import type { FormInput } from '@repo/lib/schemas/carly';
 import { Text } from '@repo/ui/components/text';
 import { useLocalStorage } from '@repo/ui/hooks/useLocalstorage';
 import { Flex } from '@repo/ui/layouts/flex';
+import type { FormInput } from '@repo/utils/schemas/carly';
 import { useCallback, useEffect } from 'react';
 
 import { CarlyForm } from '@/features/home/components/carly-form';

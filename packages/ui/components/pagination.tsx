@@ -1,12 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import type { Translations } from '@repo/content/shared/locales';
 import { Button } from '@repo/ui/components/button';
-import { Link } from '@repo/ui/components/link';
 import { Flex } from '@repo/ui/layouts/flex';
-import { type PaginationResult } from '@repo/ui/lib/pagination';
 import { ChevronLeft, ChevronRight, type LucideProps } from 'lucide-react';
 import React from 'react';
 
 interface PaginationLinkProps {
+  type: 'next' | 'prev';
   route: string;
   disabled: boolean;
   label: string;
@@ -20,6 +19,7 @@ const PaginationLink = ({
   Icon,
   disabled,
   route,
+  type,
 }: PaginationLinkProps) => {
   const Label = (props: { label: string }) => (
     <span className='hidden sm:block'>{props.label}</span>
@@ -27,7 +27,7 @@ const PaginationLink = ({
 
   return disabled ? (
     <Button disabled={disabled} variant='ghost'>
-      {label === 'Next' ? (
+      {type === 'next' ? (
         <>
           <Label label={label} />
           <Icon />
@@ -41,50 +41,53 @@ const PaginationLink = ({
     </Button>
   ) : (
     <Button asChild variant='ghost'>
-      {label === 'Next' ? (
-        <Link route={route} variant='default'>
+      {type === 'next' ? (
+        <a href={route}>
           <Label label={label} /> <Icon />
-        </Link>
+        </a>
       ) : (
-        <Link route={route} variant='default'>
+        <a href={route}>
           <Icon />
           <Label label={label} />
-        </Link>
+        </a>
       )}
     </Button>
   );
 };
 
-type PaginationProps = Pick<
-  PaginationResult<any>,
-  'count' | 'prev' | 'next' | 'startIndex' | 'endIndex'
->;
+export interface PaginationProps extends Pick<Translations, 'pagination'> {
+  totalPages: number;
+  page: number;
+  route?: string;
+}
 
 export const Pagination = ({
-  count,
-  prev,
-  next,
-  startIndex,
-  endIndex,
-}: PaginationProps) => (
-  <Flex className='justify-between items-center'>
-    <PaginationLink
-      disabled={prev === null && true}
-      Icon={ChevronLeft}
-      label='Previous'
-      route={prev ?? 'undefined'}
-    />
-    <Flex>
-      <span className='hidden sm:block'>Showing</span> &nbsp;{startIndex + 1}–
-      {endIndex}
-      &nbsp;of&nbsp;
-      {count}
+  totalPages,
+  page,
+  route = '',
+  pagination,
+}: PaginationProps) =>
+  totalPages > 1 && (
+    <Flex className='justify-between items-center'>
+      <PaginationLink
+        disabled={page <= 1}
+        Icon={ChevronLeft}
+        label={pagination.previous}
+        route={`${route}${page - 1}`}
+        type='prev'
+      />
+      <Flex>
+        <span className='hidden sm:block'>{pagination.page}</span> &nbsp;
+        {page}
+        &nbsp;{pagination.of}&nbsp;
+        {totalPages}
+      </Flex>
+      <PaginationLink
+        disabled={page >= totalPages}
+        Icon={ChevronRight}
+        label={pagination.next}
+        route={`${route}${page + 1}`}
+        type='next'
+      />
     </Flex>
-    <PaginationLink
-      disabled={next === null && true}
-      Icon={ChevronRight}
-      label='Next'
-      route={next ?? 'undefined'}
-    />
-  </Flex>
-);
+  );

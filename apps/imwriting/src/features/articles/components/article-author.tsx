@@ -1,6 +1,6 @@
 import { dateFormat } from '@estarlincito/utils';
 import { CalendarIcon } from '@radix-ui/react-icons';
-import type { ArticleContent } from '@repo/content/imwriting/article';
+import type { ArticleContent } from '@repo/content/imwriting/articles/article';
 import { Avatar } from '@repo/ui/components/avatar';
 import { Box } from '@repo/ui/components/box';
 import { Link } from '@repo/ui/components/link';
@@ -8,12 +8,10 @@ import { Strong } from '@repo/ui/components/strong';
 import { Text } from '@repo/ui/components/text';
 import { Flex } from '@repo/ui/layouts/flex';
 
-interface AuthorProps extends Omit<ArticleContent['author'], 'author'> {
-  authors: string[];
-  avatar: string;
-  lang: string;
-  modifiedTime: string;
-}
+type AuthorProps = Pick<
+  ArticleContent,
+  'authors' | 'avatar' | 'lang' | 'modifiedTime' | 'by' | 'last'
+>;
 
 export const ArticleAuthor = ({
   by,

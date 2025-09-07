@@ -5,24 +5,21 @@
   "type": "module",
   "scripts": {
     "build": "NEXT_BUILD=true next build",
-    "check-types": "tsc --noEmit",
+    "check-types": "next typegen && tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
     "clean": "rm -rf .turbo .next",
     "dev": "next dev --turbopack --port 3000",
-    "lint": "next lint",
+    "lint": "ulint",
+    "lint:fix": "ulint --fix",
     "start": "next start --port 3000"
   },
   "dependencies": {
     "@repo/content": "workspace:*",
-    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*",
-    "lucide-react": "^0.475.0",
-    "next-themes": "^0.4.6",
-    "nodemailer": "^6.10.1",
-    "react-icons": "^5.5.0"
+    "@repo/utils": "workspace:*",
+    "nodemailer": "^6.10.1"
   },
   "devDependencies": {
-    "@edgedb/generate": "0.5.6",
     "@repo/next-config": "workspace:*",
     "@repo/types": "workspace:*",
     "@repo/typescript-config": "workspace:*"

@@ -1,7 +1,6 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import type { Translations } from '@repo/content/carly/locales';
 import { createTranslator } from '@repo/content/utils/translator';
-import { type FormInput, FormSchema } from '@repo/lib/schemas/carly';
 import { Button } from '@repo/ui/components/button';
 import {
   Form,
@@ -13,6 +12,7 @@ import {
 import { Textarea } from '@repo/ui/components/textarea';
 import { Flex } from '@repo/ui/layouts/flex';
 import { cn } from '@repo/ui/lib/utils';
+import { type FormInput, FormSchema } from '@repo/utils/schemas/carly';
 import { Loader2Icon, Send } from 'lucide-react';
 import { useEffect, useMemo, useRef } from 'react';
 import { useForm } from 'react-hook-form';

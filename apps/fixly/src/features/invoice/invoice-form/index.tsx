@@ -4,7 +4,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import type { InvoiceContent } from '@repo/content/fixly/invoice';
 import { host } from '@repo/content/fixly/settings';
 import { createTranslator } from '@repo/content/utils/translator';
-import { toCurrency } from '@repo/lib/currency';
 import { Box } from '@repo/ui/components/box';
 import { useData } from '@repo/ui/components/data-table';
 import { Form, FormAction } from '@repo/ui/components/form';
@@ -13,6 +12,7 @@ import { Listify, useListify } from '@repo/ui/components/listify';
 import { Flex } from '@repo/ui/layouts/flex';
 import { Grid } from '@repo/ui/layouts/grid';
 import { cn } from '@repo/ui/lib/utils';
+import { toCurrency } from '@repo/utils/currency';
 import { useRouter } from 'next/navigation';
 import { useMemo } from 'react';
 import * as React from 'react';
@@ -92,6 +92,7 @@ export const InvoiceForm = (translations: InvoiceContent['form']) => {
             </Box>
           ))}
         </Flex>
+
         <ProductField />
 
         <Grid className='gap-2'>

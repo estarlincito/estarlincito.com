@@ -1,4 +1,4 @@
-import { toCurrency } from '@repo/lib/currency';
+import { toCurrency } from '@repo/utils/currency';
 
 export const toPrice = (price: number, lang: string) => {
   if (lang === 'es') return toCurrency(lang, price * 59);

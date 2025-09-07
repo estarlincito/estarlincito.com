@@ -21,7 +21,7 @@
     "estarlincito#build": { "dependsOn": ["@repo/content#build"] },
     "imwriting#build": { "dependsOn": ["@repo/content#build"] },
     "fixly#build": { "dependsOn": ["@repo/content#build"] },
-    "myebook#build": { "dependsOn": ["@repo/content#build"] },
+    "ibukku#build": { "dependsOn": ["@repo/content#build"] },
     "imasking#build": { "dependsOn": ["@repo/content#build"] },
 
     "check-unused": {

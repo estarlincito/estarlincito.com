@@ -2,7 +2,6 @@
 'use client';
 import type { InvoiceContent } from '@repo/content/fixly/invoice';
 import type { DotNestedKeys } from '@repo/content/utils/translator';
-import { toCurrency } from '@repo/lib/currency';
 import { Box } from '@repo/ui/components/box';
 import { Button } from '@repo/ui/components/button';
 import { Checkbox } from '@repo/ui/components/checkbox';
@@ -16,6 +15,7 @@ import {
   DropdownMenuTrigger,
 } from '@repo/ui/components/dropdown-menu';
 import { Label } from '@repo/ui/components/label';
+import { toCurrency } from '@repo/utils/currency';
 import { MoreHorizontal } from 'lucide-react';
 import * as React from 'react';
 import { z } from 'zod/v4';

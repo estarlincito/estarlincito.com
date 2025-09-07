@@ -2,33 +2,27 @@ import {
   generateMetadata,
   getAuthorsContent,
 } from '@repo/content/quotely/authors';
-import { getAuthors } from '@repo/content/quotely/lib/quotes';
-import type { LocalesParams } from '@repo/content/utils/locales';
-import type { SearchParamsProps } from '@repo/types';
+import { Pagination } from '@repo/ui/components/pagination';
 import { Container } from '@repo/ui/layouts/container';
 import { Header } from '@repo/ui/layouts/header';
-import { Section } from '@repo/ui/layouts/section';
 
 import { AuthorList } from '@/features/quotes/components/author-list';
 
-export { generateMetadata };
-const AuthorsPage = async ({
-  searchParams,
-  params,
-}: SearchParamsProps & LocalesParams) => {
-  const { lng } = await params;
-  const searchParamsData = await searchParams;
-  const { authors } = await getAuthors(searchParamsData);
-  const content = await getAuthorsContent(lng);
+const AuthorsPage = async ({ params }: PageProps<'/[lng]/authors'>) => {
+  const content = await getAuthorsContent(params);
 
   return (
-    <Container size='2'>
-      <Section className='h-full justify-center m-0'>
-        <Header summary={content.summary} title={content.title} />
-        <AuthorList authors={authors} lng={lng} />
-      </Section>
+    <Container className='flex flex-col gap-y-10'>
+      <Header blockquote summary={content.summary} title={content.title} />
+      <AuthorList authors={content.authors} lng={content.lng} />
+      <Pagination
+        page={content.page}
+        pagination={content.pagination}
+        route={content.route}
+        totalPages={content.totalPages}
+      />
     </Container>
   );
 };
 
-export default AuthorsPage;
+export { AuthorsPage as default, generateMetadata };

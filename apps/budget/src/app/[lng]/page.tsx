@@ -1,16 +1,14 @@
 import * as accounts from '@repo/content/accounts/settings';
 import { generateMetadata } from '@repo/content/budget/home';
 import { host, siteName } from '@repo/content/budget/settings';
-import type { LocalesParams } from '@repo/content/utils/locales';
 import { Avatar } from '@repo/ui/components/avatar';
 import { Box } from '@repo/ui/components/box';
 import { Link } from '@repo/ui/components/link';
 import { Flex } from '@repo/ui/layouts/flex';
+import { pickLng } from '@repo/utils/lng';
 
-export { generateMetadata };
-
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
 
   return (
     <Flex className='items-center flex-col'>
@@ -37,4 +35,5 @@ const HomePage = async ({ params }: LocalesParams) => {
     </Flex>
   );
 };
-export default HomePage;
+
+export { HomePage as default, generateMetadata };

@@ -1,4 +1,4 @@
-import { type Translations } from '@repo/content/estarlincito/locales';
+import { type Translations } from '@repo/content/shared/locales';
 import { Blockquote } from '@repo/ui/components/blockquote';
 import { Heading } from '@repo/ui/components/heading';
 import { Container } from '@repo/ui/layouts/container';

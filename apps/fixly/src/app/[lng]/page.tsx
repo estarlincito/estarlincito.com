@@ -1,5 +1,4 @@
 import { generateMetadata, getHomeContent } from '@repo/content/fixly/home';
-import type { LocalesParams } from '@repo/content/utils/locales';
 import { Container } from '@repo/ui/layouts/container';
 
 import { ContactSection } from '@/features/home/components/contact-section';
@@ -9,12 +8,8 @@ import { TestimonialsSection } from '@/features/home/components/testimonials-sec
 import { TopicSection } from '@/features/home/components/topic-section';
 import { WhySection } from '@/features/home/components/why-section';
 
-export { generateMetadata };
-
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
-
-  const content = await getHomeContent(lng);
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const content = await getHomeContent(params);
 
   return (
     <Container>
@@ -23,12 +18,13 @@ const HomePage = async ({ params }: LocalesParams) => {
         summary={content.summary}
         title={content.title}
       />
-      <OfferSection lng={lng} {...content.sections.offer} />
-      <TopicSection lng={lng} title={content.sections.topic.title} />
+      <OfferSection {...content.sections.offer} />
+      <TopicSection {...content.sections.topic} />
       <WhySection {...content.sections.why} />
       <TestimonialsSection {...content.sections.testimonials} />
       <ContactSection {...content.sections.contact} />
     </Container>
   );
 };
-export default HomePage;
+
+export { HomePage as default, generateMetadata };

@@ -9,7 +9,10 @@ interface ButtonProps {
 
 export const ServiceButton = async ({ lng, label, subject }: ButtonProps) => (
   <Button asChild variant='default'>
-    <Link route={`/${lng}/contact?subject=${subject}`} variant='default'>
+    <Link
+      route={`/${lng}/contact?subject=${encodeURIComponent(subject)}`}
+      variant='default'
+    >
       {label}
     </Link>
   </Button>

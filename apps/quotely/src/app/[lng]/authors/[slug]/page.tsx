@@ -1,58 +1,41 @@
-import { GenerateMetadata } from '@estarlincito/utils';
-import { findAuthor } from '@repo/content/quotely/lib/quotes';
-import { host, siteName } from '@repo/content/quotely/settings';
-import type { LocalesParams } from '@repo/content/utils/locales';
-import type { SearchParamsProps } from '@repo/types';
+import {
+  generateMetadata,
+  generateStaticParams,
+  getAuthorContent,
+} from '@repo/content/quotely/authors/author';
+import { Pagination } from '@repo/ui/components/pagination';
 import { Container } from '@repo/ui/layouts/container';
+import { Flex } from '@repo/ui/layouts/flex';
 import { Header } from '@repo/ui/layouts/header';
-import { z } from 'zod/v4';
+import CatchAll from '@repo/ui/pages/catch-all';
 
+import { AuthorAvatar } from '@/features/quotes/components/author-avatar';
 import { QuoteList } from '@/features/quotes/components/quote-list';
-import type { ParamsProps } from '@/types/params';
-export const generateMetadata = async ({
-  params,
-}: ParamsProps & LocalesParams) => {
-  const { slug, lng } = await params;
-  const authorData = await findAuthor(slug);
 
-  const metadata = GenerateMetadata.website({
-    description: z.string().parse(authorData.author.bio ?? ''),
-    images: [
-      {
-        alt: '',
-        url: '',
-      },
-    ],
-    locale: lng,
-    siteName,
-    title: authorData.author.name,
-    url: `${host}/${lng}/${authorData.author.slug}`,
-  });
-
-  return metadata;
-};
-
-const AuthorPage = async ({
-  params,
-  searchParams,
-}: ParamsProps & SearchParamsProps) => {
-  const { slug } = await params;
-  const searchParamsData = await searchParams;
-  const authorData = await findAuthor(slug);
+const AuthorPage = async ({ params }: PageProps<'/[lng]/authors/[slug]'>) => {
+  const content = await getAuthorContent(params);
+  if (!content) return CatchAll({ params });
 
   return (
-    <Container>
-      <Header summary='' title={authorData.author.name} />
-      <QuoteList
-        route={authorData.author.slug}
-        {...searchParamsData}
-        items={{
-          count: authorData.count,
-          quotes: authorData.author.quotes,
-        }}
+    <Container className='flex flex-col gap-y-10'>
+      <Flex className='flex-col items-center m-auto'>
+        <AuthorAvatar fallback={content.title} src={content.avatar} />
+        <Header
+          separator
+          className='text-center max-w-8/12'
+          summary={content.summary}
+          title={content.title}
+        />
+      </Flex>
+      <QuoteList quotes={content.quotes} />
+      <Pagination
+        page={content.page}
+        pagination={content.pagination}
+        route={content.route}
+        totalPages={content.totalPages}
       />
     </Container>
   );
 };
 
-export default AuthorPage;
+export { AuthorPage as default, generateMetadata, generateStaticParams };

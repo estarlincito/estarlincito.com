@@ -1,29 +1,38 @@
-import { routes } from '@repo/content/quotely/routes';
-import type { Locale } from '@repo/content/utils/locales';
-import type { returnSchema } from '@repo/lib/schemas/quotes/return';
+import { type Quote } from '@repo/content/quotely/utils/quotes';
+import type { Locale } from '@repo/content/shared/locales';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@repo/ui/components/card';
 import { Link } from '@repo/ui/components/link';
-import { Topic, TopicContent, TopicItem } from '@repo/ui/components/topic';
-import type { z } from 'zod/v4';
+import { Gallery } from '@repo/ui/layouts/gallery';
+
+import { AuthorAvatar } from './author-avatar';
 
 interface AuthorListProps {
-  authors: z.infer<typeof returnSchema.quote>['authors'];
+  authors: Quote['authors'];
   lng: Locale;
 }
 
 export const AuthorList = ({ authors, lng }: AuthorListProps) => (
-  <Topic>
-    <TopicContent>
-      {authors.map(({ name, id, slug }) => (
-        <TopicItem className='rounded-sm opacity-90' key={id}>
-          <Link
-            className='hover:no-underline'
-            route={`${lng}${routes.authors}/${slug}`}
-            variant='default'
-          >
-            {name}
-          </Link>
-        </TopicItem>
-      ))}
-    </TopicContent>
-  </Topic>
+  <Gallery>
+    {authors.map(({ name, slug, bio, avatar }) => (
+      <Link key={slug} route={`/${lng}/authors/${slug}`} variant='default'>
+        <Card className='hover:bg-muted duration-300 h-full'>
+          <CardContent>
+            <AuthorAvatar fallback={name} src={avatar} />
+          </CardContent>
+          <CardHeader>
+            <CardTitle className='text-center'>{name}</CardTitle>
+            <CardDescription className='text-center truncate-3-line'>
+              {bio}
+            </CardDescription>
+          </CardHeader>
+        </Card>
+      </Link>
+    ))}
+  </Gallery>
 );

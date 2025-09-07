@@ -1,6 +1,5 @@
 'use client';
 import type { Translations } from '@repo/content/shared/locales';
-import type { Locale } from '@repo/content/utils/locales';
 import { Box } from '@repo/ui/components/box';
 import { Brand } from '@repo/ui/components/brand';
 import { buttonVariants } from '@repo/ui/components/button';
@@ -18,6 +17,7 @@ import {
   SheetTrigger,
 } from '@repo/ui/components/sheet';
 import { ThemeSwitcher } from '@repo/ui/components/theme-switcher';
+import { useTranslation } from '@repo/ui/hooks/useTranslation';
 import { Flex } from '@repo/ui/layouts/flex';
 import { cn } from '@repo/ui/lib/utils';
 import { MenuIcon } from 'lucide-react';
@@ -25,20 +25,15 @@ import { useEffect, useState } from 'react';
 
 interface NavigationProps {
   siteName: string;
-  lng: Locale;
   menuLinks: {
     label: string;
     route: string;
   }[];
 }
-export const Navigation = ({
-  menuLinks,
-  siteName,
-  lng,
-  ...themeLabels
-}: NavigationProps & Translations['theme']) => {
+export const Navigation = ({ menuLinks, siteName }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [path, setPath] = useState<string>('');
+  const { lng } = useTranslation<Translations>();
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -68,7 +63,7 @@ export const Navigation = ({
       <NavigationMenu className='hidden md:block'>
         <NavigationMenuList className='gap-4'>
           <Routes />
-          <ThemeSwitcher {...themeLabels} />
+          <ThemeSwitcher />
           <LocaleSwitcher />
         </NavigationMenuList>
       </NavigationMenu>
@@ -95,7 +90,7 @@ export const Navigation = ({
             </NavigationMenuList>
           </NavigationMenu>
           <Flex className='p-5 gap-x-1'>
-            <ThemeSwitcher {...themeLabels} />
+            <ThemeSwitcher />
             <LocaleSwitcher />
           </Flex>
         </SheetContent>

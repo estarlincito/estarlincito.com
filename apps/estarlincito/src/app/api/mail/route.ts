@@ -1,6 +1,6 @@
-import { ApiResponse } from '@estarlincito/utils';
 import type { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
+import { Resuponsu } from 'resuponsu';
 
 export const POST = async (req: NextRequest): Promise<Response> => {
   const clientHost = new URL(req.headers.get('origin') ?? 'http://domain.com');
@@ -12,7 +12,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
     serverHost.hostname === 'estarlincito.com';
 
   if (!isAllowedHost) {
-    return ApiResponse.json({
+    return Resuponsu.json({
       message: `Forbidden origin`,
       status: 403,
       success: false,
@@ -30,7 +30,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
   const missingFields = requiredFields.filter((field) => !body.get(field));
 
   if (missingFields.length > 0) {
-    return ApiResponse.json({
+    return Resuponsu.json({
       message: `Missing required fields: ${missingFields.join(', ')}`,
       status: 400,
       success: false,
@@ -49,7 +49,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
 
   // Validate environment variables
   if (!process.env.MAIL_ADDRESS || !process.env.MAIL_PASSWORD) {
-    return ApiResponse.json({
+    return Resuponsu.json({
       message: 'Server configuration error',
       status: 500,
       success: false,
@@ -95,7 +95,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
 
     await transporter.sendMail(mailOptions);
 
-    return ApiResponse.json(
+    return Resuponsu.json(
       {
         message: '🎉 Email sent successfully!',
         status: 200,
@@ -109,7 +109,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
       },
     );
   } catch {
-    return ApiResponse.json({
+    return Resuponsu.json({
       message: 'We were unable to send your message. Please try again later.',
       status: 500,
       success: false,

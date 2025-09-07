@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
-import { ApiResponse } from '@estarlincito/utils';
+
 import type { NextRequest } from 'next/server';
+import { Resuponsu } from 'resuponsu';
 import { z } from 'zod/v4';
 
 const signoutSchema = z.object({
@@ -71,7 +72,7 @@ export const POST = async (req: NextRequest): Promise<Response> => {
   if (!safeData.success) {
     console.log(safeData.error.format());
   }
-  return ApiResponse.json({
+  return Resuponsu.json({
     code: 200,
     message: 'Unavailable at the moment',
     success: true,
@@ -88,10 +89,10 @@ export const POST = async (req: NextRequest): Promise<Response> => {
 
   //   await user.run(client);
   // } catch (error) {
-  //   return ApiResponse.json({success:false, message:JSON.stringify(error), code:404});
+  //   return Resuponsu.json({success:false, message:JSON.stringify(error), code:404});
   // }
 
   // await createSession('estarlincito');
 
-  // return ApiResponse.json({success:true, message:'User has been successfully created', code:200});
+  // return Resuponsu.json({success:true, message:'User has been successfully created', code:200});
 };

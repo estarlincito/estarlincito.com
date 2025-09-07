@@ -1,7 +1,7 @@
 import {
   loadTranslations,
   type LocalesParams,
-} from '@repo/content/estarlincito/locales';
+} from '@repo/content/shared/locales';
 import { Heading } from '@repo/ui/components/heading';
 import { Text } from '@repo/ui/components/text';
 import { AppThemeProvider } from '@repo/ui/contexts/theme';
@@ -10,9 +10,10 @@ import { Flex } from '@repo/ui/layouts/flex';
 import { Main } from '@repo/ui/layouts/main';
 import { View } from '@repo/ui/layouts/view';
 import { cn } from '@repo/ui/lib/utils';
+import { pickLng } from '@repo/utils/lng';
 
 const Maintenance = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
+  const lng = await pickLng(params);
   const { maintenance } = await loadTranslations(lng);
 
   return (

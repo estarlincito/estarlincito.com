@@ -1,5 +1,4 @@
 import { generateMetadata, getHomeContent } from '@repo/content/portfolio/home';
-import type { LocalesParams } from '@repo/content/utils/locales';
 import { Container } from '@repo/ui/layouts/container';
 
 import { AboutSection } from '@/features/home/components/about-section';
@@ -9,12 +8,8 @@ import { EducationSection } from '@/features/home/components/education-section';
 import { ProjectsSection } from '@/features/home/components/projects-section';
 import { SkillsSection } from '@/features/home/components/skills-section';
 
-export { generateMetadata };
-
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
-
-  const { sections, title, bio } = await getHomeContent(lng);
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const { sections, title, bio } = await getHomeContent(params);
 
   return (
     <Container>
@@ -31,4 +26,4 @@ const HomePage = async ({ params }: LocalesParams) => {
   );
 };
 
-export default HomePage;
+export { HomePage as default, generateMetadata };

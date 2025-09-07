@@ -6,6 +6,6 @@
       "@repo/*": ["../../packages/*"]
     }
   },
-  "include": ["./**/*.ts", "./**/*.tsx"],
+  "include": ["./**/*.ts", "./**/*.tsx", "@repo/types"],
   "exclude": ["node_modules", "dist"]
 }

@@ -5,22 +5,20 @@
   "type": "module",
   "scripts": {
     "build": "NEXT_BUILD=true next build",
-    "check-types": "tsc --noEmit",
+    "check-types": "next typegen && tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
     "clean": "rm -rf .turbo .next",
     "dev": "next dev --turbopack --port 3005",
-    "lint": "next lint",
+    "lint": "ulint",
     "start": "next start --port 3005"
   },
   "dependencies": {
     "@repo/content": "workspace:*",
-    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@repo/utils": "workspace:*",
     "bcrypt": "^5.1.1",
     "edgedb": "1.5.12",
-    "jose": "^6.0.10",
-    "lucide-react": "^0.475.0",
-    "react-hook-form": "^7.56.2"
+    "jose": "^6.0.10"
   },
   "devDependencies": {
     "@edgedb/generate": "0.5.6",

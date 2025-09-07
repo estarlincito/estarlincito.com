@@ -1,10 +1,10 @@
-import type { Locale } from '@repo/content/utils/locales';
-import { getBucketName } from '@repo/lib/bucket';
+import type { Locale } from '@repo/content/shared/locales';
 import { Avatar } from '@repo/ui/components/avatar';
 import { Link } from '@repo/ui/components/link';
 import { Separator } from '@repo/ui/components/separator';
 import { Text } from '@repo/ui/components/text';
 import { cn } from '@repo/ui/lib/utils';
+import { getBucketName } from '@repo/utils/bucket';
 
 export interface BrandProps {
   siteName: string;

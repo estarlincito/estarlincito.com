@@ -1,13 +1,14 @@
 import {
   getTranslations,
   type LocalesParams,
-} from '@repo/content/estarlincito/locales';
+} from '@repo/content/shared/locales';
 import { Heading } from '@repo/ui/components/heading';
 import { Markdown } from '@repo/ui/components/markdown';
 import { Flex } from '@repo/ui/layouts/flex';
+import { pickLng } from '@repo/utils/lng';
 
 const CatchAll = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
+  const lng = await pickLng(params);
   const t = await getTranslations(lng);
 
   return (

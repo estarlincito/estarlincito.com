@@ -1,8 +1,8 @@
-import '@/styles/globals.css';
+import '@repo/ui/themes/orange.css';
 
 import { getMenuLinks } from '@repo/content/imasking/routes';
 import { copyright, siteName } from '@repo/content/imasking/settings';
-import { generateStaticParams } from '@repo/content/utils/locales';
+import { generateStaticParams } from '@repo/content/shared/locales';
 import { Layout } from '@repo/ui/layouts/layout';
 import { Main } from '@repo/ui/layouts/main';
 import { Navbar } from '@repo/ui/layouts/navbar';
@@ -10,30 +10,24 @@ import { View } from '@repo/ui/layouts/view';
 
 export { generateStaticParams };
 
-import { getThemeLabels } from '@repo/content/shared/theme';
-import type { LayoutProps } from '@repo/types/layout';
 import { Footer } from '@repo/ui/layouts/footer';
+import { pickLng } from '@repo/utils/lng';
 export { default } from '@repo/ui/pages/maintenance';
 
-export const RootLayout = async ({ children, params }: LayoutProps) => {
-  const { lng } = await params;
+export const RootLayout = async ({
+  children,
+  params,
+}: LayoutProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
   const menuLinks = await getMenuLinks(lng);
-  const themeLabels = await getThemeLabels(lng);
 
   return (
     <Layout lng={lng}>
       <View variant='child-3'>
-        <Navbar
-          lng={lng}
-          menuLinks={menuLinks}
-          siteName={siteName}
-          {...themeLabels}
-        />
+        <Navbar lng={lng} menuLinks={menuLinks} siteName={siteName} />
         <Main>{children}</Main>
         <Footer copyright={copyright} lng={lng} />
       </View>
     </Layout>
   );
 };
-
-// export default RootLayout;

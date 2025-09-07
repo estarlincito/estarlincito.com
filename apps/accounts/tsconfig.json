@@ -6,18 +6,13 @@
       "@repo/*": ["../../packages/*"],
       "@/*": ["./src/*"],
       "dbschema/edgeql-js": ["dbschema/edgeql-js"]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    }
   },
   "include": [
-    "next-env.d.ts",
-    "next.config.mjs",
     "**/*.ts",
     "**/*.tsx",
+    "@repo/types",
+    "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

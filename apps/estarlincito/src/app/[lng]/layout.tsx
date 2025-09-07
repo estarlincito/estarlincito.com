@@ -1,7 +1,7 @@
-import '@/styles/globals.css';
+import '@repo/ui/themes/default.css';
 
 import { copyright } from '@repo/content/estarlincito/settings';
-import { generateStaticParams } from '@repo/content/utils/locales';
+import { generateStaticParams } from '@repo/content/shared/locales';
 import { SidebarProvider } from '@repo/ui/components/sidebar';
 import { Footer } from '@repo/ui/layouts/footer';
 import { Layout } from '@repo/ui/layouts/layout';
@@ -14,18 +14,16 @@ import { Navbar } from '@/features/layout/components/navbar';
 export { generateStaticParams };
 
 import { getMenuLinks } from '@repo/content/estarlincito/routes';
-import { getThemeLabels } from '@repo/content/shared/theme';
-import type { LayoutProps } from '@repo/types/layout';
+import { pickLng } from '@repo/utils/lng';
 
-const RootLayout = async ({ children, params }: LayoutProps) => {
-  const { lng } = await params;
+const RootLayout = async ({ children, params }: LayoutProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
   const menuLinks = await getMenuLinks(lng);
-  const themeLabels = await getThemeLabels(lng);
 
   return (
     <Layout lng={lng}>
       <SidebarProvider>
-        <AppSidebar {...menuLinks} {...themeLabels} />
+        <AppSidebar {...menuLinks} />
         <View variant='child-3'>
           <Navbar {...menuLinks} />
           <Main>{children}</Main>

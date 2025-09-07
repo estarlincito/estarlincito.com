@@ -1,12 +1,12 @@
 import type { MenuLinks } from '@repo/content/estarlincito/routes';
 import { host, siteName } from '@repo/content/estarlincito/settings';
-import { getPathname } from '@repo/lib/pathname';
 import { Breadcrumb } from '@repo/ui/components/breadcrumb';
 import { Button } from '@repo/ui/components/button';
 import { Link } from '@repo/ui/components/link';
 import { SidebarInset, SidebarTrigger } from '@repo/ui/components/sidebar';
 import { Flex } from '@repo/ui/layouts/flex';
 import { cn } from '@repo/ui/lib/utils';
+import { getPathname } from '@repo/utils/pathname';
 import { headers } from 'next/headers';
 
 const toBreadcrumb = (path: string, menuLinks: MenuLinks) => {

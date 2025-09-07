@@ -46,7 +46,6 @@ const useField = (
 
   const renderField = ({ name, variant = 'Input', ...rest }: Field) => {
     const errorKey = form.formState.errors[name]?.message;
-
     const Field = { DataTable, DatePicker, Input, Textarea }[variant];
 
     return (

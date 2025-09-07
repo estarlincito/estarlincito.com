@@ -1,9 +1,12 @@
-import { exec } from 'child_process';
-import path from 'node:path';
+/* eslint-disable no-console */
 import fs from 'node:fs';
+import path from 'node:path';
 
-const runCmd = (cmd, cwd) => {
-  return new Promise((resolve, reject) => {
+import { logError } from '@estarlincito/utils';
+import { exec } from 'child_process';
+
+const runCmd = (cmd, cwd) =>
+  new Promise((resolve, reject) => {
     exec(cmd, { cwd }, (error, stdout, stderr) => {
       if (error) {
         reject(stderr || error.message);
@@ -12,13 +15,13 @@ const runCmd = (cmd, cwd) => {
       }
     });
   });
-};
 
 const hasStagedChanges = async (cwd) => {
   try {
     await runCmd('git diff --staged --quiet', cwd);
     return false;
-  } catch {
+  } catch (error) {
+    logError(error);
     return true;
   }
 };
@@ -29,11 +32,11 @@ const pushContent = async () => {
 
     let didPushSubmodule = false;
 
-    //package.json
+    // package.json
     const pkgPath = path.resolve(
       process.cwd(),
       'packages/content',
-      'package.json'
+      'package.json',
     );
     const { version } = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
     const commitM = `@repo/content@${version}`;
@@ -54,7 +57,7 @@ const pushContent = async () => {
     if (await hasStagedChanges('.')) {
       await runCmd(
         `git commit -m "Update submodule pointer to ${commitM}"`,
-        '.'
+        '.',
       );
       console.log('✅ Submodule pointer updated locally (no push).');
     } else {
@@ -73,7 +76,7 @@ const pushContent = async () => {
 
 pushContent();
 
-//chmod +x .git/hooks/pre-push
+// chmod +x .git/hooks/pre-push
 
 /**
  *  to go back to the previw commit

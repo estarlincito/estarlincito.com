@@ -1,5 +1,5 @@
 import * as Icons from '@radix-ui/react-icons';
-import type { ArticleContent } from '@repo/content/imwriting/article';
+import type { ArticleContent } from '@repo/content/imwriting/articles/article';
 import { Text } from '@repo/ui/components/text';
 import { Flex } from '@repo/ui/layouts/flex';
 import { cn } from '@repo/ui/lib/utils';
@@ -20,20 +20,20 @@ const CheckContent = ({ className, label, children }: CheckContentProps) => (
   </Flex>
 );
 
-interface CheckProps extends Omit<ArticleContent['check'], 'check'> {
-  check: boolean;
-  readingTime: string;
-}
+type CheckProps = Pick<
+  ArticleContent,
+  'readingTime' | 'check' | 'underReview' | 'verified'
+>;
 
 export const ArticleCheck = ({
   check,
   readingTime,
   verified,
-  ...rest
+  underReview,
 }: CheckProps) => (
   <Flex className='flex-row gap-4 my-5'>
     {!check ? (
-      <CheckContent className='text-red-500' label={rest['under-review']}>
+      <CheckContent className='text-red-500' label={underReview}>
         <Icons.EyeOpenIcon />
       </CheckContent>
     ) : (

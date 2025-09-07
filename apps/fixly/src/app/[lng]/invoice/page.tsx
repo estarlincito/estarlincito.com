@@ -1,16 +1,11 @@
-import type { LocalesParams } from '@repo/content/estarlincito/locales';
 import { getInvoiceContent } from '@repo/content/fixly/invoice';
 import { Heading } from '@repo/ui/components/heading';
 import { Container } from '@repo/ui/layouts/container';
 
 import { InvoiceForm } from '@/features/invoice/invoice-form';
 
-// export { generateMetadata };
-
-const InvoicePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
-
-  const { form, title } = await getInvoiceContent(lng);
+const InvoicePage = async ({ params }: PageProps<'/[lng]/invoice'>) => {
+  const { form, title } = await getInvoiceContent(params);
 
   return (
     <Container size='3'>
@@ -20,4 +15,4 @@ const InvoicePage = async ({ params }: LocalesParams) => {
   );
 };
 
-export default InvoicePage;
+export { InvoicePage as default };

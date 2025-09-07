@@ -1,4 +1,4 @@
-import { type Translations } from '@repo/content/estarlincito/locales';
+import { type Translations } from '@repo/content/shared/locales';
 import { Heading } from '@repo/ui/components/heading';
 import { Container } from '@repo/ui/layouts/container';
 import { Section } from '@repo/ui/layouts/section';

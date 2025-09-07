@@ -1,4 +1,4 @@
-import type { Translations } from '@repo/content/estarlincito/locales';
+import type { Translations } from '@repo/content/shared/locales';
 import { Skeleton } from '@repo/ui/components/skeleton';
 import { Form } from '@repo/ui/pages/components/form';
 import { Suspense } from 'react';

@@ -1,6 +1,6 @@
-import { ApiResponse } from '@estarlincito/utils';
 import { compare } from 'bcrypt';
 import type { NextRequest } from 'next/server';
+import { Resuponsu } from 'resuponsu';
 
 import userDb from '@/lib/db';
 import { createSession } from '@/lib/session';
@@ -11,7 +11,7 @@ export const POST = async (req: NextRequest): Promise<Response | undefined> => {
   const password = body.get('password');
 
   if (!email || !password) {
-    return ApiResponse.json({
+    return Resuponsu.json({
       code: 400,
       message: 'Please provide both email and password',
       success: false,
@@ -21,7 +21,7 @@ export const POST = async (req: NextRequest): Promise<Response | undefined> => {
   const user = await userDb();
 
   if (!user) {
-    return ApiResponse.json({
+    return Resuponsu.json({
       code: 404,
       message: 'User not found',
       success: false,
@@ -32,7 +32,7 @@ export const POST = async (req: NextRequest): Promise<Response | undefined> => {
   const passwordMatch = await compare(password as string, user.password);
 
   if (!emailMatch || !passwordMatch) {
-    return ApiResponse.json({
+    return Resuponsu.json({
       code: 401,
       message: 'Invalid email or password',
       success: false,
@@ -42,7 +42,7 @@ export const POST = async (req: NextRequest): Promise<Response | undefined> => {
   if (emailMatch && passwordMatch) {
     await createSession('estarlincito');
   }
-  return ApiResponse.json({
+  return Resuponsu.json({
     code: 200,
     message: 'Session has been successfully created',
     success: true,

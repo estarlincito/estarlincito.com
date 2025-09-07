@@ -1,4 +1,5 @@
 'use client';
+import type { Translations } from '@repo/content/shared/locales';
 import { Button } from '@repo/ui/components/button';
 import {
   DropdownMenu,
@@ -6,15 +7,21 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@repo/ui/components/dropdown-menu';
+import { Text } from '@repo/ui/components/text';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@repo/ui/components/tooltip';
 import { useClient } from '@repo/ui/hooks/useClient';
+import { useTranslation } from '@repo/ui/hooks/useTranslation';
 import { Languages } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-
-const locales = { en: 'English', es: 'Español' };
 
 export const LocaleSwitcher = () => {
   const isClient = useClient();
   const router = useRouter();
+  const { translations } = useTranslation<Translations>();
 
   const setLocale = (lang: string) => {
     if (isClient) {
@@ -31,18 +38,29 @@ export const LocaleSwitcher = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button size='icon' variant='outline'>
-          <Languages />
-          <span className='sr-only'>Toggle language</span>
-        </Button>
-      </DropdownMenuTrigger>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <DropdownMenuTrigger asChild>
+            <Button size='icon' variant='outline'>
+              <Languages />
+              <span className='sr-only'>{translations.locales.tooltip}</span>
+            </Button>
+          </DropdownMenuTrigger>
+        </TooltipTrigger>
+        <TooltipContent>
+          <Text>{translations.locales.tooltip}</Text>
+        </TooltipContent>
+      </Tooltip>
+
       <DropdownMenuContent align='end'>
-        {Object.entries(locales).map(([key, value]) => (
-          <DropdownMenuItem key={key} onClick={() => setLocale(key)}>
-            {value}
-          </DropdownMenuItem>
-        ))}
+        {Object.entries(translations.locales).map(
+          ([key, value]) =>
+            key !== 'tooltip' && (
+              <DropdownMenuItem key={key} onClick={() => setLocale(key)}>
+                {value}
+              </DropdownMenuItem>
+            ),
+        )}
       </DropdownMenuContent>
     </DropdownMenu>
   );

@@ -1,24 +1,15 @@
 import {
   generateMetadata,
+  generateStaticParams,
   getProjectContent,
-} from '@repo/content/estarlincito/project';
-import type { Locale } from '@repo/content/utils/locales';
+} from '@repo/content/estarlincito/projects/project';
 import { About } from '@repo/ui/pages/about';
 import CatchAll from '@repo/ui/pages/catch-all';
 
-interface PageProps {
-  params: Promise<{ slug: string; lng: Locale }>;
-}
-
-export { generateMetadata };
-
-const ProjectPage = async ({ params }: PageProps) => {
-  const { slug, lng } = await params;
-  const content = await getProjectContent(lng, slug);
-
-  if (!content) return CatchAll;
-
+const ProjectPage = async ({ params }: PageProps<'/[lng]/projects/[slug]'>) => {
+  const content = await getProjectContent(params);
+  if (!content) return CatchAll({ params });
   return <About {...content} />;
 };
 
-export default ProjectPage;
+export { ProjectPage as default, generateMetadata, generateStaticParams };

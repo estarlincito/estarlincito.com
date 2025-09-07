@@ -1,5 +1,5 @@
 'use client';
-import type { Translations } from '@repo/content/estarlincito/locales';
+import type { Translations } from '@repo/content/shared/locales';
 import { Button } from '@repo/ui/components/button';
 import { Heading } from '@repo/ui/components/heading';
 import { Link } from '@repo/ui/components/link';
@@ -14,9 +14,11 @@ export type ErrorProps = Translations['error'] & {
 
 const Error = ({ error, reset }: ErrorProps) => {
   const {
-    translations: { body, contact, heading, tryAgain },
+    translations: {
+      error: { body, contact, heading, tryAgain },
+    },
     lng,
-  } = useTranslation<Translations['error']>();
+  } = useTranslation<Translations>();
 
   return (
     <Flex className='justify-center items-center'>

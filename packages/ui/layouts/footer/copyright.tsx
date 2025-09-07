@@ -1,4 +1,4 @@
-import type { Locale } from '@repo/content/utils/locales';
+import type { Locale } from '@repo/content/shared/locales';
 import { Link } from '@repo/ui/components/link';
 import { Text } from '@repo/ui/components/text';
 import { cn } from '@repo/ui/lib/utils';

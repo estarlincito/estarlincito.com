@@ -5,18 +5,18 @@
   "type": "module",
   "scripts": {
     "build": "NEXT_BUILD=true next build",
-    "check-types": "tsc --noEmit",
+    "check-types": "next typegen && tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
     "clean": "rm -rf .turbo .next",
     "dev": "next dev --turbopack --port 3009",
-    "lint": "next lint",
+    "lint": "ulint",
     "start": "next start --port 3009"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.6.1",
     "@repo/content": "workspace:*",
-    "@repo/lib": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@repo/utils": "workspace:*",
     "negotiator": "^1.0.0"
   },
   "devDependencies": {

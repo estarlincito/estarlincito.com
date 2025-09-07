@@ -4,4 +4,4 @@ const ContactPage = () => {
   redirect('/#contact');
 };
 
-export default ContactPage;
+export { ContactPage as default };

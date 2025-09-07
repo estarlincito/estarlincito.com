@@ -1,48 +1,23 @@
-# ⚡ Turborepo for [**estarlincito.com**](https://estarlincito.com)
+# ⚡ Turborepo — [**estarlincito.com**](https://estarlincito.com)
 
-This repository contains multiple projects under a **monorepo** setup using **Turborepo** 🚀.  
-Each project serves a unique purpose, enhancing productivity, creativity, and efficiency.
+Monorepo with multiple projects focused on **productivity**, **creativity**, and **efficiency**.
 
-## 🏗️ Projects
+## 🏗️ Apps
 
-### [![Estarlincito Logo](./apps/estarlincito/public/assets/favicons/favicon-32x32.png)](/apps/estarlincito/README.md) [Estarlincito](/apps/estarlincito/README.md)
-
-💻 The main platform, serving as the core hub for all projects.
-
-### [![ImWriting Logo](./apps/imwriting/public/assets/favicons/favicon-32x32.png)](/apps/imwriting/README.md) [ImWriting](/apps/imwriting/README.md)
-
-📝 A space for readers to discover, organize, and enjoy written content.
-
-### [![Quotely Logo](./apps/quotely/public/assets/favicons/favicon-32x32.png)](/apps/quotely/README.md) [Quotely](/apps/quotely/README.md)
-
-💬 A place to discover, share, and manage your favorite quotes.
-
-### [![Carly Logo](./apps/carly/public/assets/favicons/favicon-32x32.png)](/apps/carly/README.md) [Carly](/apps/carly/README.md)
-
-🤖 Your personal AI assistant.
-
-### [![MyEbook Logo](./apps/myebook/public/assets/favicons/favicon-32x32.png)](/apps/myebook/README.md) [MyEbook](/apps/myebook/README.md)
-
-📖 A digital library of ebooks.
-
-### [![Budget Logo](./apps/budget/public/assets/favicons/favicon-32x32.png)](/apps/budget/README.md) [Budget](/apps/budget/README.md)
-
-📊 A budgeting app to track expenses and improve financial planning.
-
-### [![Fixly Logo](./apps/fixly/public/assets/favicons/favicon-32x32.png)](/apps/fixly/README.md) [Fixly](/apps/fixly/README.md)
-
-🛠️ Fixly — your go-to service for tech support, device repair, and web development solutions.
-
-### [![Aniverse Logo](./apps/aniverse/public/assets/favicons/favicon-32x32.png)](/apps/aniverse/README.md) [Aniverse](/apps/aniverse/README.md)
-
-📺 A platform dedicated to anime lovers.
-
-### [![Accounts Logo](./apps/accounts/public/assets/favicons/favicon-32x32.png)](/apps/accounts/README.md) [Accounts](/apps/accounts/README.md)
-
-🛡️ A centralized authentication system for all apps.
+| Logo                                                                                         | Name                                             | Description                                                                              |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| ![Estarlincito](https://cdn.estarlincito.com/estarlincito/assets/favicons/favicon-32x32.png) | [**Estarlincito**](/apps/estarlincito/README.md) | 💻 The main platform, core hub for all projects.                                         |
+| ![Estarlin R](https://cdn.estarlincito.com/estarlincito/assets/favicons/favicon-32x32.png)   | [**Estarlin R**](/apps/estarlin-r/README.md)     | 🌐 Personal portfolio — [portfolio.estarlincito.com](https://portfolio.estarlincito.com) |
+| ![ImWriting](https://cdn.estarlincito.com/imwriting/assets/favicons/favicon-32x32.png)       | [**ImWriting**](/apps/imwriting/README.md)       | 📝 A space to discover and organize written content.                                     |
+| ![Quotely](https://cdn.estarlincito.com/quotely/assets/favicons/favicon-32x32.png)           | [**Quotely**](/apps/quotely/README.md)           | 💬 Discover, save, and manage your favorite quotes.                                      |
+| ![Carly](https://cdn.estarlincito.com/carly/assets/favicons/favicon-32x32.png)               | [**Carly**](/apps/carly/README.md)               | 🤖 Your personal AI assistant.                                                           |
+| ![iBukku](https://cdn.estarlincito.com/ibukku/assets/favicons/favicon-32x32.png)             | [**iBukku**](/apps/ibukku/README.md)             | 📖 A digital library for ebooks.                                                         |
+| ![Budget](https://cdn.estarlincito.com/budget/assets/favicons/favicon-32x32.png)             | [**Budget**](/apps/budget/README.md)             | 📊 Track expenses and improve financial planning.                                        |
+| ![Fixly](https://cdn.estarlincito.com/fixly/assets/favicons/favicon-32x32.png)               | [**Fixly**](/apps/fixly/README.md)               | 🛠️ Tech support, device repair, and web development.                                     |
+| ![Aniverse](https://cdn.estarlincito.com/aniverse/assets/favicons/favicon-32x32.png)         | [**Aniverse**](/apps/aniverse/README.md)         | 📺 A platform for anime lovers.                                                          |
+| ![Accounts](https://cdn.estarlincito.com/estarlincito/assets/favicons/favicon-32x32.png)     | [**Accounts**](/apps/accounts/README.md)         | 🛡️ Centralized authentication for all apps.                                              |
 
 ---
 
-💡 **More projects coming soon!** Stay tuned for updates. 🚀
-
-⚠️ © 2025 **Estarlin R**. All Rights Reserved.
+💡 **More projects coming soon!**  
+© 2025 **Estarlin R** — All rights reserved.

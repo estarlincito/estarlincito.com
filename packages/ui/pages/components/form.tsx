@@ -1,10 +1,9 @@
 'use client';
 import { apiFetch, type BodyInit, throwAppError } from '@estarlincito/utils';
 import { zodResolver } from '@hookform/resolvers/zod';
-import type { Translations } from '@repo/content/estarlincito/locales';
 import { host } from '@repo/content/estarlincito/settings';
+import type { Translations } from '@repo/content/shared/locales';
 import { createTranslator } from '@repo/content/utils/translator';
-import { type Contact, ContactSchema } from '@repo/lib/schemas/contact';
 import { Box } from '@repo/ui/components/box';
 import { Button } from '@repo/ui/components/button';
 import {
@@ -21,6 +20,7 @@ import { Textarea } from '@repo/ui/components/textarea';
 import { Flex } from '@repo/ui/layouts/flex';
 import { Grid } from '@repo/ui/layouts/grid';
 import { cn } from '@repo/ui/lib/utils';
+import { type Contact, ContactSchema } from '@repo/utils/schemas/contact';
 import { Loader2Icon } from 'lucide-react';
 import { useSearchParams } from 'next/navigation';
 import { useCallback, useEffect, useMemo } from 'react';

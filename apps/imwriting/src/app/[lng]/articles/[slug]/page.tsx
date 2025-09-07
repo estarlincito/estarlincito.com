@@ -1,56 +1,38 @@
-import { allArticles, findArticles } from '@repo/content/imwriting/utils';
-import type { Locale } from '@repo/content/utils/locales';
-import type { SearchParamsProps } from '@repo/types';
+import {
+  articleMetadata,
+  generateStaticParams,
+} from '@repo/content/imwriting/articles/article';
+import { categoryMetadata } from '@repo/content/imwriting/articles/cat';
+import {
+  checkArticle,
+  findArticle,
+} from '@repo/content/imwriting/utils/articles';
 import CatchAll from '@repo/ui/pages/catch-all';
+import { pickLng } from '@repo/utils/lng';
 
 import { ArticlePage } from './pages/article';
 import { CategoryPage } from './pages/category';
 
-interface Props extends SearchParamsProps {
-  params: Promise<{ lng: Locale; slug: string }>;
-  searchParams: SearchParamsProps['searchParams'];
-}
-
-export const generateStaticParams = () => {
-  const seen = new Set<string>();
-
-  for (const { slugs } of allArticles.en) {
-    seen.add(slugs.article);
-    seen.add(slugs.category);
-  }
-
-  return Array.from(seen).map((slug) => ({ slug }));
+const generateMetadata = async ({
+  params,
+}: PageProps<'/[lng]/articles/[slug]'>) => {
+  const { slug } = await params;
+  const check = checkArticle(slug);
+  if (!check) return {};
+  if (check === 'category') return categoryMetadata({ params });
+  return articleMetadata({ params });
 };
 
-export const generateMetadata = async ({ params }: Props) => {
-  const { slug, lng } = await params;
-  const articlesData = findArticles(slug, lng);
+const Page = async ({ params }: PageProps<'/[lng]/articles/[slug]'>) => {
+  const { slug } = await params;
+  const lng = await pickLng(params);
+  const check = checkArticle(slug);
+  if (!check) return CatchAll({ params });
+  if (check === 'category') return CategoryPage({ params });
+  const articleData = findArticle(lng, slug);
+  if (!articleData) return CatchAll({ params });
 
-  if (!articlesData) return {};
-
-  const { articles, type } = articlesData;
-
-  if (type === 'article') return articles[0].meta.article;
-  if (type === 'category') return articles[0].meta.category;
-  return {};
+  return ArticlePage({ params });
 };
 
-const Page = async ({ params, searchParams }: Props) => {
-  const { lng, slug } = await params;
-  const searchParamsData = await searchParams;
-  const articlesData = findArticles(slug, lng);
-
-  if (!articlesData) return CatchAll;
-  const { articles, type } = articlesData;
-
-  return (
-    <>
-      {type === 'article' && <ArticlePage {...articles[0]} />}
-      {type === 'category' && (
-        <CategoryPage articles={articles} {...searchParamsData} />
-      )}
-    </>
-  );
-};
-
-export default Page;
+export { Page as default, generateMetadata, generateStaticParams };

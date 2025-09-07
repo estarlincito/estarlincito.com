@@ -1,5 +1,4 @@
-import { loadTranslations } from '@repo/content/estarlincito/locales';
-import type { Locale } from '@repo/content/utils/locales';
+import { loadTranslations, type Locale } from '@repo/content/shared/locales';
 import { Toaster } from '@repo/ui/components/sonner';
 import { AppThemeProvider } from '@repo/ui/contexts/theme';
 import { TranslationProvider } from '@repo/ui/contexts/translation';
@@ -12,7 +11,7 @@ interface LayoutProps {
 }
 
 export const Layout = async ({ children, lng }: LayoutProps) => {
-  const { error } = await loadTranslations(lng);
+  const { error, share, copy, theme, locales } = await loadTranslations(lng);
 
   return (
     <html suppressHydrationWarning lang={lng}>
@@ -22,7 +21,10 @@ export const Layout = async ({ children, lng }: LayoutProps) => {
           strategy='beforeInteractive'
         /> */}
         <AppThemeProvider defaultTheme='system'>
-          <TranslationProvider lng={lng} translations={error}>
+          <TranslationProvider
+            lng={lng}
+            translations={{ copy, error, locales, share, theme }}
+          >
             {children}
           </TranslationProvider>
         </AppThemeProvider>

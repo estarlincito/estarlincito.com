@@ -43,10 +43,16 @@ yarn-error.log*
 *.tsbuildinfo
 
 # others
-jokelet
-support
+
 next-env.d.ts
 .mdxlayer
 dbschema/edgeql-js
 wrangler.toml
 wrangler.jsonc
+
+# apps
+apps/holdpass
+apps/jokelet
+apps/support
+apps/tyne
+apps/mdxlayer

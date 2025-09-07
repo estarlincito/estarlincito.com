@@ -1,14 +1,10 @@
 import { generateMetadata, getAboutContent } from '@repo/content/budget/about';
-import type { LocalesParams } from '@repo/content/utils/locales';
 import { About } from '@repo/ui/pages/about';
 
-export { generateMetadata };
-
-const AboutPage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
-  const content = await getAboutContent(lng);
+const AboutPage = async ({ params }: PageProps<'/[lng]/about'>) => {
+  const content = await getAboutContent(params);
 
   return <About {...content} />;
 };
 
-export default AboutPage;
+export { AboutPage as default, generateMetadata };

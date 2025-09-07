@@ -1,4 +1,4 @@
-import type { Locale } from '@repo/content/utils/locales';
+import type { Locale } from '@repo/content/shared/locales';
 import { Brand } from '@repo/ui/components/brand';
 
 interface NavbarProps {

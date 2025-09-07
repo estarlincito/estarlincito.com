@@ -1,44 +1,14 @@
-/* eslint-disable react/jsx-no-useless-fragment */
-
-import { throwAppError } from '@estarlincito/utils';
 import { Button } from '@repo/ui/components/button';
 import { cn } from '@repo/ui/lib/utils';
 import L from 'next/link';
 import type { ComponentProps } from 'react';
-
-const validateHref = (href: string | undefined) => {
-  const errorMessage = `Invalid locale in URL: ${href}. Expected to match "/es" or "/en".`;
-  if (href) {
-    if (href.startsWith('http')) {
-      const url = new URL(href);
-      const { hostname } = url;
-
-      const isOwn =
-        hostname.endsWith('.estarlincito.com') ||
-        hostname === 'estarlincito.com' ||
-        hostname === 'localhost';
-
-      if (isOwn) {
-        const locale = url.pathname.split('/')[1];
-
-        if (locale !== 'en' && locale !== 'es') {
-          throwAppError(errorMessage);
-        }
-      }
-    } else if (href.startsWith('/')) {
-      if (!href.startsWith('/en') && !href.startsWith('/es')) {
-        throwAppError(errorMessage);
-      }
-    }
-  }
-};
 
 interface LinkProps
   extends Pick<
     ComponentProps<typeof Button>,
     'children' | 'label' | 'className'
   > {
-  route?: string;
+  route?: Pick<ComponentProps<typeof L>, 'href'>['href'];
   target?: '_blank' | '_self';
   unstyled?: boolean;
   variant?: 'default';
@@ -55,17 +25,10 @@ export const Link = ({
 }: LinkProps) => {
   const href = route ?? undefined;
 
-  if (
-    process.env.NEXT_BUILD === 'true' ||
-    process.env.NODE_ENV === 'development'
-  ) {
-    validateHref(href);
-  }
-
   return variant === 'default' ? (
     <a
       className={cn(className)}
-      {...(href ? { href } : {})}
+      {...(href ? ({ href } as { href: string }) : {})}
       target={target ?? '_self'}
     >
       {children ?? label}
@@ -81,7 +44,7 @@ export const Link = ({
           {children ?? label}
         </L>
       ) : (
-        <>{children ?? label}</>
+        <Button variant='link'>{children ?? label}</Button>
       )}
     </Button>
   );

@@ -1,9 +1,9 @@
-import { handleAuth } from '@repo/lib/middleware/auth';
-import { handleLocale } from '@repo/lib/middleware/locale';
+import { handleAuth } from '@repo/utils/middleware/auth';
+import { handleLocale } from '@repo/utils/middleware/locale';
 import { type NextRequest } from 'next/server';
 
 export const config = {
-  matcher: ['/((?!_next|api|assets|favicon.ico).*)'],
+  matcher: ['/((?!_next|api|assets|favicon.ico|shortcut-icon.png).*)'],
 };
 
 export default (req: NextRequest) => {

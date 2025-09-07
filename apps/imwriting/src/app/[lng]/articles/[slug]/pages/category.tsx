@@ -1,46 +1,34 @@
-import { type Articles } from '@repo/content/.mdxlayer/imwriting/generated';
-import { loadTranslations } from '@repo/content/imwriting/locales';
-import type { Locale } from '@repo/content/utils/locales';
-import type { SearchParams } from '@repo/types';
+import {
+  type ArticlesCatProps,
+  getArticlesCatContent,
+} from '@repo/content/imwriting/articles/cat';
+import { Pagination } from '@repo/ui/components/pagination';
 import { Container } from '@repo/ui/layouts/container';
 import { Header } from '@repo/ui/layouts/header';
+import CatchAll from '@repo/ui/pages/catch-all';
 
 import { ArticlesList } from '@/features/articles/components/article-list';
 
-interface CategoryProps extends SearchParams {
-  articles: [Articles, ...Articles[]];
-}
-
-export const CategoryPage = async ({
-  articles,
-  limit,
-  offset,
-}: CategoryProps) => {
-  const {
-    lang,
-    urls,
-    meta: {
-      category: { title, description },
-    },
-  } = articles[0];
-
-  const { labels } = await loadTranslations(lang as Locale);
+export const CategoryPage = async ({ params }: ArticlesCatProps) => {
+  const content = await getArticlesCatContent(params);
+  if (!content) return CatchAll({ params });
 
   return (
-    <Container className='p-0'>
+    <Container className='flex flex-col gap-y-10 justify-center'>
       <Header
-        active={title}
+        active={content.title}
         className='px-5'
-        links={[{ label: labels.nav.articles, route: urls.articles }]}
-        summary={description}
-        title={title}
+        links={content.links}
+        summary={content.summary}
+        title={content.title}
       />
 
-      <ArticlesList
-        items={articles}
-        limit={limit}
-        offset={offset}
-        route={urls.category}
+      <ArticlesList articles={content.articles} />
+      <Pagination
+        page={content.page}
+        pagination={content.pagination}
+        route={content.route}
+        totalPages={content.totalPages}
       />
     </Container>
   );

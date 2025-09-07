@@ -2,7 +2,7 @@ import { Box } from '@repo/ui/components/box';
 import { cn } from '@repo/ui/lib/utils';
 import type { ComponentProps } from 'react';
 
-interface ContainerProps extends ComponentProps<typeof Box> {
+export interface ContainerProps extends ComponentProps<typeof Box> {
   size?: '1' | '2' | '3' | '4';
   center?: boolean;
 }

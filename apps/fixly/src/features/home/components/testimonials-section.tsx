@@ -1,4 +1,3 @@
-import { getRandomItems } from '@repo/lib/randomItems';
 import { Blockquote } from '@repo/ui/components/blockquote';
 import {
   Card,
@@ -10,6 +9,7 @@ import { Heading } from '@repo/ui/components/heading';
 import { Gallery } from '@repo/ui/layouts/gallery';
 import { Section } from '@repo/ui/layouts/section';
 import { cn } from '@repo/ui/lib/utils';
+import { getRandomItems } from '@repo/utils/randomItems';
 
 interface TestimonialsProps {
   title: string;

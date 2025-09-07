@@ -1,31 +1,34 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import type { Services } from '@repo/content/.mdxlayer/fixly/generated';
-import { loadTranslations } from '@repo/content/fixly/locales';
-import type { Locale } from '@repo/content/utils/locales';
-import type { SearchParams } from '@repo/types';
-import { Breadcrumb } from '@repo/ui/components/breadcrumb';
+import {
+  type CategoryProps,
+  getCategoryContent,
+} from '@repo/content/fixly/services/cat';
+import { Pagination } from '@repo/ui/components/pagination';
 import { Container } from '@repo/ui/layouts/container';
 import { Header } from '@repo/ui/layouts/header';
+import CatchAll from '@repo/ui/pages/catch-all';
 
 import { ServiceList } from '@/features/services/components/service-list';
 
-interface CategoryProps {
-  services: Services[];
-  search: SearchParams;
-}
-
-const Category = async ({ services, search }: CategoryProps) => {
-  const { category, meta, lang, urls } = services[0]!;
-  const { labels } = await loadTranslations(lang as Locale);
+const Category = async ({ params }: CategoryProps) => {
+  const content = await getCategoryContent(params);
+  if (!content) return CatchAll({ params });
 
   return (
-    <Container>
-      <Breadcrumb
-        active={category}
-        links={[{ label: labels.nav.services, route: urls.services }]}
+    <Container className='flex flex-col gap-y-10'>
+      <Header
+        blockquote
+        active={content.title}
+        links={content.links}
+        summary={content.summary}
+        title={content.title}
       />
-      <Header blockquote summary={meta.category.description} title={category} />
-      <ServiceList {...search} route={urls.category} services={services} />
+      <ServiceList cta={content.cta} services={content.services} />
+      <Pagination
+        page={content.page}
+        pagination={content.pagination}
+        route={content.route}
+        totalPages={content.totalPages}
+      />
     </Container>
   );
 };

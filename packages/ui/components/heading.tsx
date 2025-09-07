@@ -22,22 +22,16 @@ export const Heading = ({
 }: HeadingProps) => {
   const Comp = asChild ? Slot : as;
 
+  const classVariant = {
+    h1: 'text-4xl font-extrabold tracking-tight lg:text-5xl',
+    h2: 'text-3xl font-semibold tracking-tight',
+    h3: 'text-2xl font-semibold tracking-tight',
+    h4: 'text-xl font-semibold tracking-tight',
+    h5: 'text-base font-semibold tracking-tight',
+  };
+
   return (
-    <Comp
-      className={cn(
-        !unstyled && 'scroll-m-20',
-        className,
-        as === 'h1' &&
-          !unstyled &&
-          'text-4xl font-extrabold tracking-tight lg:text-5xl',
-        as === 'h2' &&
-          !unstyled &&
-          'border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0',
-        as === 'h3' && !unstyled && 'text-2xl font-semibold tracking-tight',
-        as === 'h4' && !unstyled && 'text-xl font-semibold tracking-tight',
-        as === 'h5' && !unstyled && 'text-base font-semibold tracking-tight',
-      )}
-    >
+    <Comp className={cn(!unstyled && classVariant[as], className)}>
       {children ?? content}
     </Comp>
   );

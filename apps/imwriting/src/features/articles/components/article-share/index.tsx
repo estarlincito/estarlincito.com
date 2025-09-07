@@ -1,4 +1,4 @@
-import type { ArticleContent } from '@repo/content/imwriting/article';
+import type { ArticleContent } from '@repo/content/imwriting/articles/article';
 import { Box } from '@repo/ui/components/box';
 import { Heading } from '@repo/ui/components/heading';
 import { Flex } from '@repo/ui/layouts/flex';
@@ -7,21 +7,20 @@ import { FaThreads, FaWhatsapp, FaXTwitter } from 'react-icons/fa6';
 import { ShareLink } from '@/features/articles/components/article-share/share-link';
 import { ShareUrl } from '@/features/articles/components/article-share/share-url';
 
-interface ShareProps extends Omit<ArticleContent['share'], 'share'> {
-  description: string;
+interface ShareProps
+  extends Pick<ArticleContent, 'description' | 'category' | 'share'> {
   url: string;
-  category: string;
 }
 
 export const ArticleShare = ({
   category,
   description,
   url,
-  title,
+  share,
 }: ShareProps) => (
   <Box>
     <Heading as='h3' className='my-4'>
-      {title}
+      {share}
     </Heading>
 
     <Flex className='gap-3'>

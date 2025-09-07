@@ -1,8 +1,9 @@
 import { Base64, GenerateMetadata, toSlug } from '@estarlincito/utils';
-import type { LocalesParams } from '@repo/content/estarlincito/locales';
 import { getPrintContent } from '@repo/content/fixly/invoice/print';
 import { host, siteName } from '@repo/content/fixly/settings';
+import type { LocalesParams } from '@repo/content/shared/locales';
 import { Container } from '@repo/ui/layouts/container';
+import { pickLng } from '@repo/utils/lng';
 
 import {
   InvoicePrint,
@@ -13,7 +14,7 @@ export const generateMetadata = async ({
   searchParams,
   params,
 }: PrintProps) => {
-  const { lng } = await params;
+  const lng = await pickLng(params);
 
   const data = JSON.parse(
     Base64.decode((await searchParams).data),
@@ -41,8 +42,7 @@ interface PrintProps extends LocalesParams {
 }
 const PrintPage = async ({ params, searchParams }: PrintProps) => {
   const data = JSON.parse(Base64.decode((await searchParams).data));
-  const { lng } = await params;
-  const content = await getPrintContent(lng);
+  const content = await getPrintContent(params);
 
   return (
     <Container className='print-only' size='3'>
@@ -51,4 +51,4 @@ const PrintPage = async ({ params, searchParams }: PrintProps) => {
   );
 };
 
-export default PrintPage;
+export { PrintPage as default };

@@ -1,25 +1,30 @@
 {
   "name": "estarlincito.com",
-  "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build --concurrency=1",
-    "dev": "turbo dev",
     "check-types": "turbo check-types",
-    "lint": "turbo lint -- --fix",
+    "check-unused": "turbo run check-unused",
     "clean": "turbo clean && rm -rf .turbo",
+    "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-unused": "turbo run check-unused"
+    "lint": "turbo lint -- --fix"
   },
   "dependencies": {
     "@estarlincito/utils": "^2.5.16",
-    "next": "^15.3.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "fecchi": "^0.0.1",
+    "lucide-react": "^0.475.0",
+    "next": "^15.5.2",
+    "obj-compose": "^0.0.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.56.2",
+    "react-icons": "^5.5.0",
+    "resuponsu": "^0.0.1",
     "server-only": "^0.0.1",
-    "zod": "^3.25.67",
-    "obj-compose": "^0.0.2"
+    "zod": "^3.25.67"
   },
   "devDependencies": {
     "@estarlincito/eslint": "^1.9.0",
@@ -27,16 +32,16 @@
     "@turbo/gen": "^2.5.5",
     "@types/node": "^24.0.3",
     "@types/nodemailer": "^6.4.17",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "eslint": "^9.29.0",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
     "glob": "^11.0.3",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.15",
     "ts-prune": "^0.10.3",
-    "turbo": "^2.5.5",
+    "turbo": "^2.5.6",
     "tyne": "^1.0.13",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "ulint": "^0.0.1"
   },
   "packageManager": "pnpm@10.12.1",
   "engines": {

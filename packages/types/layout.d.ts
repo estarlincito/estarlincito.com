@@ -1,6 +1,6 @@
-import { LocalesParams } from '@repo/content/utils/locales';
+import type { LocalesParams } from '@repo/content/shared/locales';
 import type { ReactNode } from 'react';
 
-export interface LayoutProps extends LocalesParams {
+export interface LayoutProps_ extends LocalesParams {
   children: ReactNode;
 }

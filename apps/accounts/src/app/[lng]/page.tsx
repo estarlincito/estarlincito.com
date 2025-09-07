@@ -1,9 +1,9 @@
-import type { LocalesParams } from '@repo/content/estarlincito/locales';
+import { pickLng } from '@repo/utils/lng';
 import { redirect } from 'next/navigation';
 
-const HomePage = async ({ params }: LocalesParams) => {
-  const { lng } = await params;
+const HomePage = async ({ params }: PageProps<'/[lng]'>) => {
+  const lng = await pickLng(params);
   redirect(`${lng}/profile`);
 };
 
-export default HomePage;
+export { HomePage as default };
