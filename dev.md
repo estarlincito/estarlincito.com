@@ -14,6 +14,18 @@ pnpm turbo build --filter=estarlincito... --dry-run
 npx tsc --showConfig
 ```
 
+### delete last commit
+
+```bash
+git reset --soft HEAD~1
+```
+
+### modify commit message
+
+```bash
+git commit --amend -m "new-message"
+```
+
 ## To set a new repo
 
 ```bash
@@ -29,3 +41,5 @@ git branch -M main
 git remote add origin https://github.com/estarlincito/estarlincito.com.git
 git push -u origin main
 ```
+
+<!-- # git reset --soft HEAD~1 -->

@@ -1,2 +1,30 @@
 #!/bin/sh
-# sh deply --estarlincito
+
+setup_repo() {
+  echo "🔧 Setting up repo (submodules, auth)"
+  sed -i "s|https://github.com/|https://${GITHUB_TOKEN}@github.com/|" .gitmodules
+  git submodule sync
+  git submodule update --init --recursive
+ echo "✅ Repo setup complete"
+}
+
+
+if [ "$VERCEL" = "1" ]; then
+APP=$(node -p "require('./package.json').name")
+
+if git diff HEAD^ HEAD --quiet -- "apps/$APP" || git diff HEAD^ HEAD --quiet -- "packages"; then
+  echo "🚀 Changes found in '$APP'. Starting deploy..."
+  setup_repo
+  exit 1
+else
+  echo "⚡ No updates in '$APP'. Build skipped."
+  exit 0
+fi
+
+else
+  echo "ℹ️ Not running on Vercel. Skipping repo setup."
+fi
+
+
+
+
