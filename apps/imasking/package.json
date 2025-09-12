@@ -1,10 +1,10 @@
 {
-  "name": "imasking",
+  "name": "imasking.estarlincito.com",
   "version": "v1.3",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "NEXT_BUILD=true next build",
+    "build": "next build",
     "check-types": "next typegen && tsc --noEmit",
     "check-unused": "pnpm exec check-unused",
     "clean": "rm -rf .turbo .next",

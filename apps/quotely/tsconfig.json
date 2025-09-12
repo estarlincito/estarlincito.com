@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@repo/*": ["../../packages/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./app/*"]
     }
   },
   "include": [

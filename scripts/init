@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP=$(echo "$VERCEL_PROJECT_NAME" | cut -d'.' -f1)
+APP_DIR="apps/$APP"
+
+# Verify that the app directory exists
+if [ ! -d "$APP_DIR" ]; then
+    echo "❌ The app directory '$APP_DIR' does not exist"
+    exit 1
+fi
+
+# Verify changes status
+if git diff HEAD^ HEAD --quiet -- "$APP_DIR" && git diff HEAD^ HEAD --quiet -- "packages"; then
+    echo "⚡ No updates in '$APP' or packages. Build skipped."
+    exit 0
+else
+    echo "🚀 Changes found in '$APP' - starting deploy..."
+    exit 1
+fi

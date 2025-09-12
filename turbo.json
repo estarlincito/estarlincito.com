@@ -1,6 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "concurrency": "1",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -11,18 +12,23 @@
         "EDGEDB_SECRET_KEY",
         "SECRET",
         "NODE_ENV",
+        "ADMIN_TOKEN",
         "MAIL_PASSWORD",
         "MAIL_ADDRESS",
         "GITHUB_TOKEN"
       ]
     },
+    "release": {
+      "dependsOn": ["build"],
+      "cache": false
+    },
 
-    "@repo/content#build": { "outputs": [".mdxlayer/**"] },
-    "estarlincito#build": { "dependsOn": ["@repo/content#build"] },
-    "imwriting#build": { "dependsOn": ["@repo/content#build"] },
-    "fixly#build": { "dependsOn": ["@repo/content#build"] },
-    "ibukku#build": { "dependsOn": ["@repo/content#build"] },
-    "imasking#build": { "dependsOn": ["@repo/content#build"] },
+    "@repo/content#build": {
+      "outputs": [".mdxlayer/**", "quotely/.quotes/**"]
+    },
+    "@repo/release#build": {
+      "outputs": ["dist/**"]
+    },
 
     "check-unused": {
       "dependsOn": ["^check-unused"],

@@ -3,6 +3,10 @@ pnpm why <name-of-pkg>
 ```
 
 ```bash
+pnpm install --frozen-lockfile
+```
+
+```bash
 npx turbo run build --filter=estarlincito
 ```
 
@@ -43,3 +47,20 @@ git push -u origin main
 ```
 
 <!-- # git reset --soft HEAD~1 -->
+
+## Vercel
+
+```bash
+vercel link --repo
+vercel pull
+vercel build
+vercel dev
+
+VERCEL_PROJECT_ID=""
+VERCEL_PROJECT_NAME=""
+VERCEL_ORG_ID=""
+
+vercel --pwc
+vercel dev
+vercel build --cwd ./apps/quotely
+```

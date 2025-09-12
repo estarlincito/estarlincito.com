@@ -1,0 +1,21 @@
+{
+  "name": "@repo/release",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "release": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "check-unused": "pnpm exec check-unused",
+    "clean": "rm -rf dist",
+    "dev": "tsc -watch",
+    "lint": "ulint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@vercel/sdk": "^1.11.0"
+  }
+}

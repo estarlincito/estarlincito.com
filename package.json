@@ -4,17 +4,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "turbo build --concurrency=1",
+    "build": "turbo build",
     "check-types": "turbo check-types",
     "check-unused": "turbo run check-unused",
     "clean": "turbo clean && rm -rf .turbo",
     "dev": "turbo dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo lint -- --fix"
+    "lint": "turbo lint -- --fix",
+    "release": "pnpm install && turbo release"
   },
   "dependencies": {
     "@estarlincito/utils": "^2.5.16",
+    "@hookform/resolvers": "^5.1.1",
     "fecchi": "^0.0.1",
+    "globby": "^14.1.0",
     "lucide-react": "^0.475.0",
     "next": "^15.5.2",
     "obj-compose": "^0.0.2",
@@ -27,14 +30,14 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
-    "@estarlincito/eslint": "^1.9.0",
+    "@repo/release": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@turbo/gen": "^2.5.5",
     "@types/node": "^24.0.3",
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19.1.12",
     "@types/react-dom": "^19.1.9",
-    "glob": "^11.0.3",
+    "lenv": "^0.0.2",
     "prettier": "^3.5.3",
     "prettier-plugin-packagejson": "^2.5.15",
     "ts-prune": "^0.10.3",

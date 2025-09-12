@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# echo "🔧 Setting up repo (submodules, auth) and installing dependencies..."
+# git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+# git submodule sync
+# git submodule update --init --recursive
+# pnpm install --frozen-lockfile
+# echo "✅ Setup and installation complete"
+
+
+pnpm install --frozen-lockfile
+
+
